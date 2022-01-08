@@ -63,7 +63,7 @@ $$
 $$
 \mathbb{E}_{p(\mathbf{x})}[\| \nabla_\mathbf{x} \log p(\mathbf{x})y - \mathbf{s}_\theta(\mathbf{x})  \|_2^2] .
 $$
-我们不知道样本真实分布$\nabla_\mathbf{x} \log p(\mathbf{x})$，但我们可以用score matching的方式去估计其Fishel散度，见后文。
+我们不知道样本真实分布$\nabla_\mathbf{x} \log p(\mathbf{x})$，但我们可以用 #score_matching 的方式去估计其Fishel散度，见后文。
 
 ## Langevin dynamics-MCMC采样
 在本模型中的目的：从一个已知的$\nabla_\mathbf{x} \log p(\mathbf{x})$(包括训出来的$\mathbf{s}_\theta (\mathbf{x})$)中采样数据点，使其收敛到目标概率密度$p(x)$。
@@ -113,6 +113,13 @@ $$
 现在我们得到了综合了多级噪声的估计$\mathbf{s}_\theta(\mathbf{x}, i)$，其中噪声序列为$\sigma_1 < \sigma_2 < \cdots < \sigma_L$.
 现在基于此估计运行Langevin dynamics的MCMC采样。根据退火的思想，我们从高噪声往低噪声采样，以使得最终分布受到的扰动尽可能小。即：依次生成样本$i = L, L-1, \cdots, 1$，使得噪声尺度随时间而减小，如图。
 ![](images/ald.gif)
+
+## 接下来要补充的内容
+- [ ] SDE score based模型
+- [ ] score matching具体方法
+- [ ] sliced score matching
+- [ ] annealed score-matching
+
 
 
 
