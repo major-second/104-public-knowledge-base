@@ -115,10 +115,10 @@ $$
 ![](images/ald.gif)
 
 ## 接下来要补充的内容
-- [ ] SDE score based模型
-- [ ] score matching具体方法
-- [ ] sliced score matching
-- [ ] annealed score-matching
+- [ ] SDE score based模型 - [[Score-based model with SDE]]
+- [ ] score matching具体方法 - [[Score matching]]
+- [ ] sliced score matching - [[sliced score matching]]
+- [ ] annealed score-matching - [[annealed score-matching]]
 
 
 
