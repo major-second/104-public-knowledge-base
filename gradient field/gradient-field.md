@@ -25,7 +25,7 @@ VAE(https://www.sohu.com/a/226209674_500659)等
 ## 我们的方法
 不是对概率密度进行建模，而是对概率密度函数的对数的梯度建模！即建模
 $$\nabla_\mathbf{x} \log p(\mathbf{x})$$
-即 #score function.
+即 score function.
 至于为啥更好呢，且听本文细细道来~
 
 # score-based model优势分析
@@ -115,10 +115,9 @@ $$
 ![](images/ald.gif)
 
 ## 接下来要补充的内容
-- [ ] SDE score based模型
-- [ ] score matching具体方法
-- [ ] sliced score matching
-- [ ] annealed score-matching
+- [ ] SDE score based模型 - [[Score-based model with SDE]]
+- [ ] sliced score matching - [[sliced score matching]]
+- [ ] annealed score-matching - [[annealed score-matching]]
 
 
 
