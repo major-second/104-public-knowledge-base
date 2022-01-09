@@ -1,5 +1,5 @@
 ---
-title: Score-based model with SDE
+title: Score-based model+SDE
 type: knowledge
 ---
 
@@ -50,7 +50,7 @@ $$
 $$
 \mathbb{E}_{t \in \mathcal{U}(0, T)}\mathbb{E}_{p_t(\mathbf{x})}[\lambda(t) \| \nabla_\mathbf{x} \log p_t(\mathbf{x}) - \mathbf{s}_\theta(\mathbf{x}, t) \|_2^2]
 $$
-注意我们要最小化的是在整个时间分布[0, T]中L2 loss的期望，其中$\lambda(t)$是与时间相关的权重。可以使用denoising score matching或 [[sliced score matching]]来做这件事。
+注意我们要最小化的是在整个时间分布[0, T]中L2 loss的期望，其中$\lambda(t)$是与时间相关的权重。可以使用[[denoising score matching]]或 [[sliced score matching]]来做这件事。
 
 通过score matching得到$\mathbf{s}_\theta(\mathbf{x}, t)$后，用$\mathbf{s}_\theta(\mathbf{x}, t)$替换(3)式中的$\nabla_\mathbf{x} \log p_t(\mathbf{x})$，使用数值SDE求解器求解即可。
 

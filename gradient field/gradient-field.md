@@ -115,8 +115,9 @@ $$
 ![](images/ald.gif)
 
 ## 接下来要补充的内容
-- [ ] SDE score based模型 - [[Score-based model with SDE]]
+- [ ] SDE score based模型 - [[Score-based model+SDE]]
 - [ ] sliced score matching - [[sliced score matching]]
+- [ ] denoising score matching - [[denoising score matching]]
 - [ ] annealed score-matching - [[annealed score-matching]]
 
 
