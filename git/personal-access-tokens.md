@@ -6,4 +6,3 @@
 1. github右上角头像 - Settings - Developer settings - Personal access tokens - Generate new token, 按提示生成token，复制住并自己妥善保存
     0. 注意过程中要给token赋予适当的权限和有效期
 2. `git clone`验证身份时，账号还是填账号，密码处改填生成的token即可
-3. 
