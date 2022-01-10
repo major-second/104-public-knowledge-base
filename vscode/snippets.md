@@ -8,9 +8,9 @@ snippets就是打包好的常见代码段，可以提升 #编辑 的 #工作效�
 - #vscode 中有适当插件时，使用`Ctrl + Space`快捷键可以插入snippets
   - 如果输入法占用了`Ctrl + Space` #快捷键 需要手动关掉
 - 对于 #中文支持 不好的环境，由于分词问题，会把没有空格分开的都当成一个词，所以你先打入几个汉字，然后`Ctrl + Space`并不能给出正常的snippets建议，而是在之前的汉字基础上给snippets建议。例如
-![](chinese-issue.png)
+![](snippets/chinese-issue.png)
 - 比如在`.tex`环境中，按`Ctrl + Space`可以调出
-![](tex-snippets.png)
+![](snippets/tex-snippets.png)
 （需要`LaTeX Workshop`插件）
   - 上面的`BFI`（`figure`）回车，就出现了
 ```latex
