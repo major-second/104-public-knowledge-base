@@ -1,0 +1,10 @@
+https://www.jianshu.com/p/a09a9b40ad20
+可以参考
+比如
+```text
+__pycache__
+*.pkl
+path/to/a/folder
+```
+等等（即：可以匹配文件夹，也可以匹配后缀名，等等）
+注意`github`上有一些模板。往往不需要自己纯手动写。
