@@ -8,6 +8,6 @@
 ## `python -m`例子
 比如想要用`launch.json`中的一套配置去表示一个`python -m 某某`命令以方便复用，就可以
 - `Ctrl + Shift + D` - 左侧create a launch.json file - 上方Module - 输入文件名
-- 进去`launch.json`之后，可以看到`"name"`字段，可以自定义名称，就能显示在左上角绿色播放键旁边![](launch/name.png)
+- 进去`launch.json`之后，可以看到`"name"`字段，可以自定义名称，就能显示在左上角绿色播放键旁边![](launch.png)
 ## 解释器
 比如`conda activate <名字>`，`which python`找到python解释器，然后左下角选解释器
