@@ -8,7 +8,7 @@ type: operations
 前置：
 - Linux系统
 
-本篇是[[0-metadata]]读书笔记第7章部分。
+本篇是[[linux-and-shell/0-metadata]]读书笔记第7章部分。
 我们大致了解 #Linux 的 #权限 系统。避免权限不够无法运行程序/写入下载数据，或者权限太强导致私钥用不了等问题
 ## 7.1 Linux的安全性
 - `cat /etc/passwd`
