@@ -17,6 +17,8 @@ tags: #双系统 #Linux #Windows10
 4. 插入U盘启动盘，重启电脑[[进入BIOS]]，在boot manager里将secure boot设置为disabled，并选择boot设备为U盘，保存退出
    1. 注：由于型号不同，选择boot设备为U盘的具体操作可能不同。有的是调整优先级使得U盘排第一，有的是直接选择U盘。
 5. 进入ubuntu安装界面。一步步按照指示进行。其中分区参考[[dual-boot-partition]]
+6. （可选）如果按照[[dual-boot-partition]]顺利做了设置使得windows boot manager和ubuntu的boot在同一块盘，则之后boot始终让ubuntu优先级最高就非常方便。每次开机的时候只需上下键选择即可切换ubuntu和windows
+反之，默认windows则不方便切换至ubuntu
 ## Troubleshooting
 1. 在“安装类型”步骤出错：安装类型列表为空，如图。
    ![](./dual-boot/installation-type.jpg)(图片来自网络)
