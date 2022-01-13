@@ -27,9 +27,12 @@ tags: #双系统 #Linux #Windows10
    2. 之后为保证Windows系统能够运行，使用安全模式运行一次Windows系统，并重启，切换回ubuntu.
 注：有些比较新的机型就没有这个问题，BIOS甚至找不到SATA选项。那就不用设，直接可以用
 2. 没有进入安装界面，直接ACPI错误，花屏。这是独显 #GPU 的锅
-   1. 如果是台式，可以直接把显示器接到集显，装好系统再配置独显驱动
-   2. 如果没法这么做，就在**出现`Try Ubuntu`，`Install`等选项的那个界面**，根据界面下方提示，按小写`e`，进入编辑界面
-   3. 在里面把某一行末尾的`---`改成`nomodeset`，然后根据下方提示按`Ctrl + X`或者`F10`继续安装
-   4. 安装进入系统后，运行`sudo gedit /etc/default/grub`（或`sudo vim /etc/default/grub`）
-   5. 找到`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash`，改成`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash nomodeset`，保存文件退出
-   6. 运行命令`sudo update-grub`
+   如果是台式，可以直接把显示器接到集显，装好系统再配置独显驱动
+   1. before installation:
+      如果没法这么做，就在**出现`Try Ubuntu`，`Install`等选项的那个界面**，根据界面下方提示，按小写`e`，进入编辑界面
+      在里面把某一行末尾的`---`改成`nomodeset`，然后根据下方提示按`Ctrl + X`或者`F10`继续安装
+   2. after installation and rebooting, we could see an additional boot option. before booting, we do almost the same as 1.
+   3. 进入系统后，运行`sudo gedit /etc/default/grub`（或`sudo vim /etc/default/grub`）
+      找到`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash`，改成`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash nomodeset`，保存文件退出
+      运行命令`sudo update-grub`
+      remark: 1.2.3. are essentially the same!

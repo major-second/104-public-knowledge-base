@@ -8,7 +8,7 @@ type: operations
 前置：
 - [[11-basic-scripting-partB]]
 
-本篇是[[0-metadata]]读书笔记第12章。
+本篇是[[linux-and-shell/0-metadata]]读书笔记第12章。
 我们大致了解 #Linux 的 #shell 脚本的条件结构，方便做自动化提高 #工作效率
 ## 12.1 使用`if-then`语句
 ```sh

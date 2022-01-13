@@ -8,7 +8,7 @@ type: operations
 前置：
 - [[12-condition]]
 
-本篇是[[0-metadata]]读书笔记第13章。
+本篇是[[linux-and-shell/0-metadata]]读书笔记第13章。
 我们大致了解 #Linux 的 #shell 脚本的循环结构，方便做自动化提高 #工作效率
 循环结构是最典型的利用脚本做自动化的结构。比如批量重命名，打包解包，调整目录等等
 ## 13.1 `for`命令
