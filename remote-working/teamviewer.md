@@ -4,6 +4,7 @@ teamviewer可以在远程主机没有公网ip时也能远程操控
 注：截至2022.1.14，`sudo apt install <文件名>.deb`或者`sudo apt install teamviewer*`都是不行的。
 使用前可能需要注册一个账号，还需要邮箱和手机，略烦
 ## 远程ssh打开
+首先`ssh`上远程机器
 ```sh
 # 停止teamviewer
 sudo teamviewer --daemon stop
@@ -16,3 +17,4 @@ sudo teamviewer --passwd <password>
 # 设置开机启动
 sudo systemctl enable teamviewerd.service
 ```
+待补全
