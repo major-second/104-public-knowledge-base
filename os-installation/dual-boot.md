@@ -36,3 +36,4 @@ tags: #双系统 #Linux #Windows10
       找到`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash`，改成`GRUB_CMDLINE_LINUX_DEFAULT=quiet splash nomodeset`，保存文件退出
       运行命令`sudo update-grub`
       之后再启动就都没问题了
+      注：可以和[[ubuntu-nvidia-brightness]]和[[ubuntu-nvidia-drivers]]的重启一起进行
