@@ -63,7 +63,7 @@ $$
 $$
 \mathbb{E}_{p(\mathbf{x})}[\| \nabla_\mathbf{x} \log p(\mathbf{x})y - \mathbf{s}_\theta(\mathbf{x})  \|_2^2] .
 $$
-我们不知道样本真实分布$\nabla_\mathbf{x} \log p(\mathbf{x})$，但我们可以用 #score_matching 的方式去估计其Fishel散度，见后文。
+我们不知道样本真实分布$\nabla_\mathbf{x} \log p(\mathbf{x})$，但我们可以用 #score_matching 的方式去估计其Fishel散度，包括原始的[[original score matching]]方法与之后的[[sliced score matching]], [[annealed score-matching]]方法等。
 
 ## Langevin dynamics-MCMC采样
 在本模型中的目的：从一个已知的$\nabla_\mathbf{x} \log p(\mathbf{x})$(包括训出来的$\mathbf{s}_\theta (\mathbf{x})$)中采样数据点，使其收敛到目标概率密度$p(x)$。
