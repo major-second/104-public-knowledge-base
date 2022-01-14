@@ -10,3 +10,6 @@
 - Some notes don't end up making sense the next day
 - That's ok, you can just delete them!
   - You can always find them in your git history, if you really need it!
+
+
+- ubuntu装软件不能同时多个。会报错“锁”啥的自己看
