@@ -66,8 +66,6 @@ http://localhost:8080/
 ### 2022.1.8更新
 新的安装nucleus教程链接
 https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/workstation/installation.html
-### 2022.1.14更新
-现在如果Vulkan出问题，会在安装时及时报错，而不是之后viewport看不到显示。这很好！解决方法参考[[vulkan-issue]]
 ## Adding Sample Assets
 按照[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做即可。
 （即：首先访问
@@ -81,9 +79,10 @@ http://localhost:8080/
 根据[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)顺利添加Assets.
 按道理现在应该可以用isaac了，成功后应当看到显示如下。
 ![](installation/final-result.png)
-如果viewport显示全灰，参考[[vulkan-issue]]，可能是这个问题
+如果viewport显示全灰，参考[官网troubleshooting](https://docs.omniverse.nvidia.com/app_isaacsim/prod_kit/linux-troubleshooting.html#)
+- 比如之前有一次是在终端看到错误信息`VK_INITIALIZATION...`之类的。谷歌搜索错误信息，然后按谷歌指示重装Vulkan SDK，重启即可
 ### 11.28更新
-最新有效的这部分教程链接是
+最新有效Adding Sample Assets教程链接是
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#isaac-sim-first-run
 ### 12.11更新
 ![](installation/tackle-download-issue.png)
@@ -96,3 +95,6 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#i
 0. Q: AppImage和Docker Image有什么异同？
 A: 核心思想都是独立成体系和外界隔离。对外界“不敏感”，副作用小。
 AppImage实际上更像docker的“容器”概念
+1. Q: 这样问问题好吗？!
+![](installation/question.png)
+A: 我们先不吐槽垃圾英语和语法错误了。首先这截图，别人不方便查。其次明明完整的错误提示（日志）有很多关键信息，但这个提问都没放进来（事实上，这个错误是Vulkan出错的结果。光看这个根本看不出根本原因。而Vulkan那个错谷歌一下能解决）。

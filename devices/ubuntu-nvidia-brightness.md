@@ -1,5 +1,6 @@
 （关于`.d`文件，请参考[[settings-and-configurations]]）
-直接在`/usr/share/X11/xorg.conf.d/10-nvidia-brightness.conf`里，添加以下内容，`Ctrl + Alt + Del`重新登录即可
+直接在`/usr/share/X11/xorg.conf.d/10-nvidia-brightness.conf`里，添加以下内容，重启即可
+（可以和[[ubuntu-nvidia-drivers]]的重启一起进行）
 ```text
 Section "Device"
     Identifier     "Device0"
