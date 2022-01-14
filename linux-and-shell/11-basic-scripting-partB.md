@@ -8,7 +8,7 @@ type: operations
 前置：
 - [[11-basic-scripting-partA]]
 
-本篇是[[0-metadata]]读书笔记第11章下半部分。
+本篇是[[linux-and-shell/0-metadata]]读书笔记第11章下半部分。
 我们大致了解 #Linux 的 #shell 脚本的编写方式，方便做自动化提高 #工作效率
 本篇包括管道记号`|`，数学运算，退出脚本
 ## 11.6 管道记号

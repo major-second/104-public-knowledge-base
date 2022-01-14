@@ -10,7 +10,7 @@ type: operations
 - [[7-permissions]]
 - [[10-editting]]
 
-本篇是[[0-metadata]]读书笔记第11章上半部分。
+本篇是[[linux-and-shell/0-metadata]]读书笔记第11章上半部分。
 我们大致了解 #Linux 的 #shell 脚本的编写方式，方便做自动化提高 #工作效率
 本篇包括基本的脚本文件编写知识（例如变量、三种引号、重定向等）
 ## 11.1 使用多个命令
