@@ -50,7 +50,7 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 ## Launcher中安装组件
 - 到EXCHANGE选项卡，安装CACHE
 ![](installation/install-cache.png)
-注：这些安装的prepare有时挺久的，视网络情况而定。需要耐心。多试几次吧。
+注：这些安装的prepare过程有时挺久的，视网络情况而定。需要耐心。多试几次吧。
 注：本节三个组件可以**一起按安装，让它排队**。这么做有个关键好处：“趁着现在网络状态好赶紧全搞定”。
 ![](installation/downloading.png)
 - 到NUCLEUS选项卡，按
@@ -66,39 +66,33 @@ http://localhost:8080/
 ### 2022.1.8更新
 新的安装nucleus教程链接
 https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/workstation/installation.html
+### 2022.1.14更新
+现在如果Vulkan出问题，会在安装时及时报错，而不是之后viewport看不到显示。这很好！解决方法参考[[vulkan-issue]]
 ## Adding Sample Assets
-按照
-https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets
-指示做即可。
-（首先访问
+按照[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做即可。
+（即：首先访问
 http://localhost:8080/
 并使用账号密码都为omniverse的账号登录）
 ![](installation/omniverse-login.png)
-（网页右上角有切换账号按钮）
-![](installation/omniverse-switch.png)
-继续根据网页指示做。其中需要打开isaac.
+网页右上角有切换账号按钮如图![](installation/omniverse-switch.png)
+继续根据[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做。其中需要打开isaac.
 ==截至2021.11.20，第一次打开isaac sim时，它的装包过程会被误当成“无响应”。我们可以`Ctrl + Alt + Delete`再Cancel脱离卡顿状态，观察其装包过程==
 ![](installation/isaac-install-packages.png)
-根据网页指示顺利添加Assets.
+根据[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)顺利添加Assets.
+按道理现在应该可以用isaac了，成功后应当看到显示如下。
+![](installation/final-result.png)
+如果viewport显示全灰，参考[[vulkan-issue]]，可能是这个问题
 ### 11.28更新
-最新有效教程链接是
+最新有效的这部分教程链接是
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#isaac-sim-first-run
 ### 12.11更新
 ![](installation/tackle-download-issue.png)
 如果Download一直卡在0%，就更新Cache版本。（来自nvidia官网论坛的isaac相关版面）
 可以看到Isaac 2021.2.0确实很新。这个工作人员回复日期在11.30
 ### 12.14更新
-非常有趣的是：如果你删除Isaac文件夹，并重装Isaac Sim 2021.1.1（旧版本），那么第一次启动他让你参考doc下载Assets时，会把你导向一个失效的链接（可以认为这是更新疏忽）。这时不理会他，直接安装Isaac Sim 2021.2.0并下载使用新版本的Assets即可。2021.2.0的Assets在2021.1.1版本也能用
-## 查找和解决错误
-成功打开了isaac sim，但是viewport没有显示。（全灰）
-**查看isaac sim终端上显示的错误信息**`VK_ERROR_INITIALIZATION_FAILED`，发现是Vulkan炸了，直接谷歌解决方法，知道**重装Vulkan SDK，再重启一下就能解决**。具体怎么重装自行搜索。
-总之NVIDIA问题确实多，但是这个ISAAC终端错误输出很详细，倒是不会太让人觉得崩溃
-我们看到显示了
-![](installation/final-result.png)
+非常有趣的是：如果你删除Isaac文件夹，并重装Isaac Sim 2021.1.1（旧版本），那么第一次启动他让你参考doc下载Assets时，会把你导向一个失效的doc链接（可以认为这是更新疏忽）。
+这时不理会他，直接安装Isaac Sim 2021.2.0并下载使用新版本的Assets即可。即：2021.2.0的Assets在2021.1.1版本也能用
 ## 自我总结问答
 0. Q: AppImage和Docker Image有什么异同？
 A: 核心思想都是独立成体系和外界隔离。对外界“不敏感”，副作用小。
 AppImage实际上更像docker的“容器”概念
-1. Q: 这样问问题好吗？!
-![](installation/question.png)
-A: 我们先不吐槽垃圾英语和语法错误了。首先这截图，别人不方便查。其次明明完整的错误提示（日志）有很多关键信息都没放进来（事实上，这个错误是Vulkan出错的结果。光看这个根本看不出根本原因。而Vulkan那个错谷歌一下能解决）。
