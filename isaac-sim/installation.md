@@ -31,21 +31,22 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 2021.2.0推荐的驱动版本是470
 注：该图"Settings"处还有卸载按钮
 ![](installation/uninstall.png)
-## Omniverse Launcher
-https://www.nvidia.com/en-us/omniverse/
-点击![](installation/download-omniverse.png)
-出来问卷，简单填一下。
-点击下图的Download here for `Linux`
-![](installation/download-omniverse-linux.png)
-下载到`.AppImage`
-![](installation/appimage.png)
-在其所在文件夹打开终端，`chmod a+x omniverse`然后`Tab`补全，回车，赋予其运行权限。
-双击它打开
-登录NVIDIA账号（如果是新装的电脑，对以前登录过的账号，可能有Security Challenge，需要邮箱验证）
-![](installation/login-security.png)
- 登录之后同意一个协议
- ![](installation/agreement.png)
- 然后一路continue
+### 2022.1.14更新
+现在已经有2021.2.1了
+## Omniverse Launcher安装
+- https://www.nvidia.com/en-us/omniverse/
+    - 点击![](installation/download-omniverse.png)
+    - 出来问卷，简单填一下。
+    - 点击下图的Download here for `Linux`![](installation/download-omniverse-linux.png)
+- 下载到`.AppImage`![](installation/appimage.png)
+    - 在其所在文件夹打开终端，`chmod a+x omniverse`然后`Tab`补全，回车，赋予其运行权限。
+    - 双击它打开
+    - 登录NVIDIA账号（如果是新装的电脑，对以前登录过的账号，可能有Security Challenge，需要邮箱验证。注意在邮箱中查看骚扰邮件和垃圾邮件避免错过）![](installation/login-security.png)
+    - 登录之后同意一个协议（需要下拉）![](installation/agreement.png)
+    - 之后一路continue
+### 2022.1.14更新
+ omniverse launcher下载页面的beta字样现在已经没了
+ 现在安装launcher时会默认“捆绑”上CACHE了。我们需要这个捆绑，否则等下手动安装也行
 ## Launcher中安装组件
 - 到EXCHANGE选项卡，安装CACHE
 ![](installation/install-cache.png)
