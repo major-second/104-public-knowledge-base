@@ -1,10 +1,10 @@
 ---
-title: isaac sim安装
+title: isaac sim主体安装
 type: tools
 ---
 
 [toc]
-# isaac sim安装
+# isaac sim主体安装
 前置：
 - 有 #NVIDIA #GPU 和驱动
 - 有NVIDIA账号
@@ -14,12 +14,13 @@ type: tools
 Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04))
 有 #时效性 。随着Isaac更新，一些细节可能会发生变化==
 本篇安装 #isaac-sim 是使用GPU加速的先进的 #模拟器 ，方便做 #机器人 任务和 #RL .
+本篇没有加上sample assets. 下一篇加。
 ## 确认满足需求
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/requirements.html
-首先确认硬件和驱动（`nvidia-smi`查看）要求
+确认硬件和驱动要求（注：`nvidia-smi`查看显卡相关信息）
 太老的显卡装不了。配置不够装不了（很多笔记本都不行）。对Ubuntu系统版本也有要求。
-注意：其==2021.11.20==推荐驱动版本460倒并不是必须的。至少我用470版本可以装。
-这里官方教程的“栈深度”有点深（为了装Isaac要装Nucleus，进而要先装Launcher，然后装Launcher又要登录，登录又要邮箱确认……）容易把配环境的人劝退……
+注意：==2021.11.20==推荐驱动版本460倒并不是必须的。至少我用470版本可以装。
+这里**官方教程的“栈深度”有点深**（为了装Isaac要装Nucleus，进而要先装Launcher，然后装Launcher又要登录，登录又要邮箱确认……）容易把配环境的人劝退……
 ### 11.28更新
 Isaac现已从之前本文描述的2021.1.1更新至2021.2.0版本。之前本文的许多链接和文字将在新版本失效。
 官方文档也更新了。非常令人高兴的是**栈不再那么深**了。
@@ -28,7 +29,7 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 已经装了旧版本的可以在下图这里升级。
 ![](installation/update-isaac.png)
 2021.2.0推荐的驱动版本是470
-注：该图"Settings"处还有卸载按钮
+注：上图"Settings"处还有卸载按钮
 ![](installation/uninstall.png)
 ### 2022.1.14更新
 现在已经有2021.2.1了
@@ -36,12 +37,14 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 - https://www.nvidia.com/en-us/omniverse/
     - 点击![](installation/download-omniverse.png)
     - 出来问卷，简单填一下。
-    - 点击下图的Download here for `Linux`![](installation/download-omniverse-linux.png)
-- 下载到`.AppImage`![](installation/appimage.png)
+    - 点击下图的Download here for `Linux`
+  ![](installation/download-omniverse-linux.png)
+- 下载到`.AppImage`
+![](installation/appimage.png)
     - 在其所在文件夹打开终端，`chmod a+x omniverse`然后`Tab`补全，回车，赋予其运行权限。
     - 双击它打开
     - 登录NVIDIA账号（如果是新装的电脑，对以前登录过的账号，可能有Security Challenge，需要邮箱验证。注意在邮箱中查看骚扰邮件和垃圾邮件避免错过）![](installation/login-security.png)
-    - 登录之后同意一个协议（需要下拉）![](installation/agreement.png)
+    - 登录之后同意一个协议（需要下拉才能按continue）![](installation/agreement.png)
     - 之后一路continue
 ### 2022.1.14更新
  omniverse launcher下载页面的beta字样现在已经没了
@@ -60,39 +63,12 @@ https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/installation/worksta
 http://localhost:8080/
 并用账号密码都为admin登录。
 - 到EXCHANGE选项卡，安装ISAAC SIM
-结果
+安装结果
 ![](installation/installation-result.png)
+此时可以launch isaac，但是缺assets
 ### 2022.1.8更新
 新的安装nucleus教程链接
 https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/workstation/installation.html
-## Adding Sample Assets
-按照[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做即可。
-（即：首先访问
-http://localhost:8080/
-并使用账号密码都为omniverse的账号登录）
-![](installation/omniverse-login.png)
-网页右上角有切换账号按钮如图![](installation/omniverse-switch.png)
-继续根据[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做。其中需要打开isaac.
-==截至2021.11.20，第一次打开isaac sim时，它的装包过程会被误当成“无响应”。我们可以`Ctrl + Alt + Delete`再Cancel脱离卡顿状态，观察其装包过程==
-![](installation/isaac-install-packages.png)
-根据[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)顺利添加Assets.
-按道理现在应该可以用isaac了，成功后应当看到显示如下。
-![](installation/final-result.png)
-如果viewport显示全灰，参考[官网troubleshooting](https://docs.omniverse.nvidia.com/app_isaacsim/prod_kit/linux-troubleshooting.html#)
-- 比如之前有一次是在终端看到错误信息`VK_INITIALIZATION...`之类的。**谷歌搜索错误信息**，然后按谷歌指示重装Vulkan SDK，重启即可
-### 11.28更新
-最新有效Adding Sample Assets教程链接是
-https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#isaac-sim-first-run
-### 12.11更新
-![](installation/tackle-download-issue.png)
-如果Download一直卡在0%，就更新Cache版本。（来自nvidia官网论坛的isaac相关版面）
-可以看到Isaac 2021.2.0确实很新。这个工作人员回复日期在11.30
-### 12.14更新
-非常有趣的是：如果你删除Isaac文件夹，并重装Isaac Sim 2021.1.1（旧版本），那么第一次启动他让你参考doc下载Assets时，会把你导向一个失效的doc链接（可以认为这是更新疏忽）。
-这时不理会他，直接安装Isaac Sim 2021.2.0并下载使用新版本的Assets即可。即：2021.2.0的Assets在2021.1.1版本也能用
-不过我们也没必要执着于旧版本
-### 2022.1.14更新
-目前会卡进度在99.99%，但是Isaac Utils - Nucleus Check又说没问题，那就先不管吧
 ## 自我总结问答
 0. Q: AppImage和Docker Image有什么异同？
 A: 核心思想都是独立成体系和外界隔离。对外界“不敏感”，副作用小。
