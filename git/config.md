@@ -8,5 +8,5 @@ git config --global http.proxy 127.0.0.1:端口
 git config --global https.proxy 127.0.0.1:端口
 # 设置代理
 
-git config --list # 查看列表
+git config --list # 查看列表, 可以用q退出
 ```
