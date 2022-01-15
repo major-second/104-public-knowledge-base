@@ -17,10 +17,9 @@ Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubun
 ## 确认满足需求
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/requirements.html
 首先确认硬件和驱动（`nvidia-smi`查看）要求
-太老的显卡装不了。对Ubuntu系统版本也有要求。
+太老的显卡装不了。配置不够装不了（很多笔记本都不行）。对Ubuntu系统版本也有要求。
 注意：其==2021.11.20==推荐驱动版本460倒并不是必须的。至少我用470版本可以装。
-这里官方教程的“栈深度”有点深（为了装Isaac要装Nucleus，进而要先装Launcher，然后装Launcher又要登录，登录又要邮箱确认……）
-容易把配环境的人劝退……
+这里官方教程的“栈深度”有点深（为了装Isaac要装Nucleus，进而要先装Launcher，然后装Launcher又要登录，登录又要邮箱确认……）容易把配环境的人劝退……
 ### 11.28更新
 Isaac现已从之前本文描述的2021.1.1更新至2021.2.0版本。之前本文的许多链接和文字将在新版本失效。
 官方文档也更新了。非常令人高兴的是**栈不再那么深**了。
@@ -80,7 +79,7 @@ http://localhost:8080/
 按道理现在应该可以用isaac了，成功后应当看到显示如下。
 ![](installation/final-result.png)
 如果viewport显示全灰，参考[官网troubleshooting](https://docs.omniverse.nvidia.com/app_isaacsim/prod_kit/linux-troubleshooting.html#)
-- 比如之前有一次是在终端看到错误信息`VK_INITIALIZATION...`之类的。谷歌搜索错误信息，然后按谷歌指示重装Vulkan SDK，重启即可
+- 比如之前有一次是在终端看到错误信息`VK_INITIALIZATION...`之类的。**谷歌搜索错误信息**，然后按谷歌指示重装Vulkan SDK，重启即可
 ### 11.28更新
 最新有效Adding Sample Assets教程链接是
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#isaac-sim-first-run
@@ -91,6 +90,9 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#i
 ### 12.14更新
 非常有趣的是：如果你删除Isaac文件夹，并重装Isaac Sim 2021.1.1（旧版本），那么第一次启动他让你参考doc下载Assets时，会把你导向一个失效的doc链接（可以认为这是更新疏忽）。
 这时不理会他，直接安装Isaac Sim 2021.2.0并下载使用新版本的Assets即可。即：2021.2.0的Assets在2021.1.1版本也能用
+不过我们也没必要执着于旧版本
+### 2022.1.14更新
+目前会卡进度在99.99%，但是Isaac Utils - Nucleus Check又说没问题，那就先不管吧
 ## 自我总结问答
 0. Q: AppImage和Docker Image有什么异同？
 A: 核心思想都是独立成体系和外界隔离。对外界“不敏感”，副作用小。

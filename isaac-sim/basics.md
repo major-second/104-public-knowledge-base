@@ -15,7 +15,7 @@ Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubun
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/first_run.html
 ## 12.4更新
 Isaac Sim版本已升级至2021.2.0，因此上面的链接失效了。后面的旧链接和旧说明文字也大多失效了。
-现在的新手教程链接（即官方文档Required Tutorials部分）
+现在的新手教程最初部分的链接
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_required_interface.html#isaac-sim-app-tutorial-required-interface
 ## 键盘控制Sample
 - 先试试键盘控制小车Sample
@@ -55,3 +55,5 @@ transform表示的是相对于父节点的。
 注：旧版本Assets，地面会出问题
 正常运行的效果
 ![](./basics/normal-jetbot.png)
+### 2022.1.14更新
+现在下载新Assets有删除旧Assets的选项了。勾选即可
