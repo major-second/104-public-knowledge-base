@@ -29,8 +29,38 @@ cd standalone_examples/api/omni.isaac.jetbot/stable_baselines_example
 - 官网给的是`~/.local/share/ov/pkg/isaac_sim-2021.2.1/python.sh train.py`
 - 但是如果你加了`$PATH`（参考[[6-env]]）那就可以直接`python.sh train.py`
 - 进一步如果你按照[[dev-env]]中`anaconda`一节相关的设置了，就可以`isaac-sim-py`之后直接`python train.py`
+注：显然根据[这个](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_required_workflows.html#standalone-application)，本脚本属于standalone application
 
 然后同一个目录另开一个终端（`Ctrl + Shift + T`）
 - 按照官网，`<某某> ~/.local/share/ov/pkg/isaac_sim-2021.2.1/tensorboard --logdir ./`启动tensorboard
 - 其中`<某某>`是什么和之前是同理的。比如`isaac-sim-py`之后直接`python`就行
 - tensorboard用法参见[[tensorboard]]
+## 验证
+耐心等它训完
+```text
+| rollout/                |              |
+|    ep_len_mean          | 1e+03        |
+|    ep_rew_mean          | 0.181        |
+| time/                   |              |
+|    fps                  | 119          |
+|    iterations           | 50           |
+|    time_elapsed         | 4185         |
+|    total_timesteps      | 500000       |
+| train/                  |              |
+|    approx_kl            | 0.0034707766 |
+|    clip_fraction        | 0.00994      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.36        |
+|    explained_variance   | -1.19e-07    |
+|    learning_rate        | 0.00025      |
+|    loss                 | 0.352        |
+|    n_updates            | 490          |
+|    policy_gradient_loss | -0.000848    |
+|    std                  | 0.787        |
+|    value_loss           | 0.752        |
+```
+- tensorboard可以看到不错的结果!![](rl-example-tensorboard.png)
+- 然后运行跟前面`train.py`同一路径的`eval.py`即可看到GUI中运行结果
+  - 其中要手动改`eval.py`里的文件名去看具体哪个epoch
+  - 例如改成`policy_path = "./mlp_policy/jetbot_policy_checkpoint_300000_steps.zip"`
+感觉这不太规范啊233
