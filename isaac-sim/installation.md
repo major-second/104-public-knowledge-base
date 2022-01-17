@@ -31,7 +31,6 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 2021.2.0推荐的驱动版本是470
 注：上图"Settings"处还有卸载按钮
 ![](installation/uninstall.png)
-截至2022.1.16，同时存在多个版本可能造成问题。比如有时跑standalone无法读取usd. 重装并重下assets即可
 ### 2022.1.14更新
 现在已经有2021.2.1了
 ## Omniverse Launcher安装

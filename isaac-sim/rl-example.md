@@ -1,7 +1,7 @@
 前置：
 - [[dev-env]]
 - [[anaconda]]和[[pip]]（推荐把源设置成清华源等国内的）
-- isaac sim只能有单一版本（干净的本体和assets），多版本共存可能有问题，参见[[installation]]
+- 时至2022.1.17，不要拿vscode集成终端或者`launch.json`跑，也不要让`.py`离开默认位置！否则都不能跑。原因暂未知。可能是isaac不够成熟。
 
 ## 准备包
 - [pytorch](https://pytorch.org/)
