@@ -25,3 +25,5 @@
                 assert isinstance(item, self.HistoryItem)
                 self.history[i] = {"frame": item.f_idx, "G": item.G, "state": item.state}
 - f2静态行，动态不行！留兼容性！！
+
+- timeshift和挂载的关系（发现没挂载，开timeshift试试）

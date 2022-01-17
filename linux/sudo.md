@@ -7,3 +7,4 @@ sudo -u `whoami` `which python`
 ```
 才行
 原因todo
+`sudo -u <用户名> -i` todo!（子命名空间问题）
