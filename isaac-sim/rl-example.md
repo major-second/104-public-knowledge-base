@@ -1,6 +1,7 @@
 前置：
 - [[dev-env]]
 - [[anaconda]]和[[pip]]（推荐把源设置成清华源等国内的）
+- isaac sim只能有单一版本（干净的本体和assets），多版本共存可能有问题，参见[[installation]]
 
 ## 准备包
 - [pytorch](https://pytorch.org/)

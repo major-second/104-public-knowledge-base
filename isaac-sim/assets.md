@@ -28,4 +28,9 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html#i
 这时不理会他，直接安装Isaac Sim 2021.2.0并下载使用新版本的Assets即可。即：2021.2.0的Assets在2021.1.1版本也能用
 不过我们也没必要执着于旧版本
 ## 2022.1.14更新
-目前会卡进度在99.99%，但是Isaac Utils - Nucleus Check又说没问题，那就先不管吧
+有时候网络状况不好，可能会下不了。多试几次发现就行了
+当然最好翻墙
+## 自我总结问答
+0. Q: 这样问问题好吗？!
+![](installation/question.png)
+A: 我们先不吐槽垃圾英语和语法错误了。首先这截图，别人不方便查。其次明明完整的错误提示（日志）有很多关键信息，但这个提问都没放进来（事实上，这个错误是Vulkan出错的结果。光看这个根本看不出根本原因。而Vulkan那个错谷歌一下能解决）。

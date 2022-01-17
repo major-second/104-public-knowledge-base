@@ -31,7 +31,7 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
 2021.2.0推荐的驱动版本是470
 注：上图"Settings"处还有卸载按钮
 ![](installation/uninstall.png)
-存疑#todo 2022.1.16 目前看起来几个版本隔离，实际上卸载旧版也会让新版用不了，连重装都不行
+截至2022.1.16，同时存在多个版本可能造成问题。比如有时跑standalone无法读取usd. 重装并重下assets即可
 ### 2022.1.14更新
 现在已经有2021.2.1了
 ## Omniverse Launcher安装
@@ -74,6 +74,3 @@ https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/workstation/installa
 0. Q: AppImage和Docker Image有什么异同？
 A: 核心思想都是独立成体系和外界隔离。对外界“不敏感”，副作用小。
 AppImage实际上更像docker的“容器”概念
-1. Q: 这样问问题好吗？!
-![](installation/question.png)
-A: 我们先不吐槽垃圾英语和语法错误了。首先这截图，别人不方便查。其次明明完整的错误提示（日志）有很多关键信息，但这个提问都没放进来（事实上，这个错误是Vulkan出错的结果。光看这个根本看不出根本原因。而Vulkan那个错谷歌一下能解决）。

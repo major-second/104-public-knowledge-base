@@ -2,4 +2,3 @@
 导致过回档的情况
 - apt重装，autoremove，把想要的东西删了太多，不知道怎么弄回来
 - nvidia驱动一装就黑屏
-- isaac sim[[installation]] # todo 存疑
