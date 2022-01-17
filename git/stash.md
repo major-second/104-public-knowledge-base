@@ -1,0 +1,1 @@
+https://medium.com/@shrirammano/understanding-git-stash-and-using-it-easily-in-vscode-7da049160097
