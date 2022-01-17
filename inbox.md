@@ -13,7 +13,6 @@
 
 
 - ubuntu装软件不能同时多个。会报错“锁”啥的自己看
-- 只有#的，可以apt install sudo
 - python3-dev带上pip（依赖！），autoremove会被搞掉
 
 - python typing np.dtype, namedtuple
