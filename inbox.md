@@ -15,3 +15,14 @@
 - ubuntu装软件不能同时多个。会报错“锁”啥的自己看
 - 只有#的，可以apt install sudo
 - python3-dev带上pip（依赖！），autoremove会被搞掉
+
+- python typing np.dtype, namedtuple
+  - dtype=namedtuple...: same as `dtype=object`
+
+-           # todo: in dev for compatibility
+            self.history = list(self.history)
+            for i in range(len(self.history)):
+                item = self.history[i]
+                assert isinstance(item, self.HistoryItem)
+                self.history[i] = {"frame": item.f_idx, "G": item.G, "state": item.state}
+- f2静态行，动态不行！留兼容性！！
