@@ -15,8 +15,10 @@
 - ubuntu装软件不能同时多个。会报错“锁”啥的自己看
 - python3-dev带上pip（依赖！），autoremove会被搞掉
 
-- python typing np.dtype, namedtuple
+- python typing, np.dtype, namedtuple
   - dtype=namedtuple...: same as `dtype=object`
+  - recordtype(要pip装),可以修改
+  - np.dtype
 
 -           # todo: in dev for compatibility
             self.history = list(self.history)
@@ -27,3 +29,6 @@
 - f2静态行，动态不行！留兼容性！！
 
 - timeshift和挂载的关系（发现没挂载，开timeshift试试）
+
+
+- 展开函数前外层先重命名`node_outer`等
