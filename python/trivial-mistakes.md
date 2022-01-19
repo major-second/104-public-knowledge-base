@@ -10,3 +10,18 @@ elif a == 2:
     a = 3
 ```
 结果是`a = 2`
+- 对于
+```python
+if foo:
+    <被删除>
+else:
+    if bar:
+        ...
+```
+改写成了
+```python
+if foo:
+    if bar:
+        ...
+```
+（恰恰反了）
