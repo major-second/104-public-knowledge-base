@@ -22,6 +22,7 @@
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
   "spellright.notificationClass": "warning",
+  "spellright.language": ["en", "zh-cn"],
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
   "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
 }

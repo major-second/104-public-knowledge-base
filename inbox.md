@@ -32,3 +32,5 @@
 
 
 - 展开函数前外层先重命名`node_outer`等
+
+- `&&` and `; \` are different! `rm -r build && mkdir build && cd build`: bad!
