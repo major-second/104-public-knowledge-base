@@ -1,0 +1,4 @@
+- 静默安装可以用于连续运行很多行脚本，非常方便。
+- 对于`apt install`，直接`-y`就是静默
+- [miniconda](https://www.codenong.com/49338902/)
+  - `-b -p <PREFIX>`
