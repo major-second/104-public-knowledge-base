@@ -6,7 +6,7 @@ type: tools
 [toc]
 # isaac sim初体验
 前置：
-- [[installation]]
+- [[assets]]
 
 ==本篇撰写时间为2021.11.23
 Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04))
@@ -15,7 +15,7 @@ Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubun
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/first_run.html
 ## 12.4更新
 Isaac Sim版本已升级至2021.2.0，因此上面的链接失效了。后面的旧链接和旧说明文字也大多失效了。
-现在的新手教程链接（即官方文档Required Tutorials部分）
+现在的新手教程最初部分的链接
 https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_required_interface.html#isaac-sim-app-tutorial-required-interface
 ## 键盘控制Sample
 - 先试试键盘控制小车Sample
@@ -45,13 +45,13 @@ transform表示的是相对于父节点的。
 - 新教程虽然脉络有所不同，但是到了1.5处也讲了视图设置相关的东西。
 ![](./basics/view.png)
 - 1.6讲插件时也涉及到了播放按钮的功能。
-- 之前说的小车例子在菜单“Isaac Examples - Input Devices”里还找得到。只不过升级2021.2.0后为了让他work，需要
-	- 升级CACHE
-	- 删除之前的旧Assets（`Isaac`文件夹）
-	- 然后![](./basics/re-download-assets.png)
-重新下载Assets
-具体参见[[installation]]
-
-注：旧版本Assets，地面会出问题
+- 之前说的小车例子在菜单“Isaac Examples - Input Devices”里还找得到。只不过如果用2021.1.1旧版本Assets，地面会出问题。为了升级2021.2.0后为了让他work，需要
+    - 升级CACHE
+    - 删除之前的旧Assets（`Isaac`文件夹）
+	- 重新下载Assets
+具体参见[[assets]]
+	- 注：
 正常运行的效果
 ![](./basics/normal-jetbot.png)
+### 2022.1.14更新
+现在下载新Assets有删除旧Assets的选项了。勾选即可

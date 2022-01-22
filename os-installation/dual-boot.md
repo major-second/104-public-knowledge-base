@@ -2,6 +2,7 @@
 title: Windows+Ubuntu双系统安装
 type: operations
 ---
+- 前置：[[bit-locker]]（必须看！否则可能数据丢失）
 
 本篇是基于Win10装Ubuntu18.04. 其它系统安装中，有些操作是类似的。
 # Windows+Ubuntu双系统安装
