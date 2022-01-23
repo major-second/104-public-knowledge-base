@@ -3,9 +3,9 @@
 - [[anaconda]]和[[pip]]（推荐把源设置成清华源等国内的）
 - 时至2022.1.17
   - 开跑之前先打开omniverse launcher，否则localhost:8080等不上
-  - 不要拿vscode集成终端或者`launch.json`跑
+  - 不要拿vscode集成终端或者`launch.json`跑，否则没法加载assets
     - 推测：和electron的权限有关，参见[[7-permissions]]
-    - 如果偏要用vscode跑，参见[[placeholder]]
+    - 如果偏要用vscode调试，可以用[[attach]]
   - 不要让standalone的`.py`脚本离开默认位置！
     - 否则不能跑。原因暂未知。可能是isaac不够成熟。
 
