@@ -1,6 +1,6 @@
 前置：
 - 参考[[4-more-commands]]了解进程、进程号的基本知识。
-- vscode中的python调试
+- vscode中的python调试，例如[[launch]]
 - [[yama-ptrace-scope]]
 
 # 对python进程的attach
