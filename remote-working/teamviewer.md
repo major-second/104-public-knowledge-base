@@ -23,4 +23,9 @@ sudo systemctl enable teamviewerd.service
 ## 坑
 - 想远程连，设的分辨率很低，则现场看，界面显示可能不全（特别地，登录窗口都有可能看不到）。不过远程看正常
 在现场使用的人可以鼠标移到“边上”，让他过去即可。像一些战略游戏一样。
-- 不会传递`Ctrl + Shift + T`，`Ctrl + Shift + Del`等
+- teamviewer不会传递`Ctrl + Shift + T`，`Ctrl + Shift + Del`等
+## 建议
+再怎么样，远程还是有点卡，不建议用远程桌面写代码。
+建议只用`teamviewer`作监视（比如有GUI的 #机器人模拟器 状态）
+用vscode的[[remote-ssh]]过去调比较方便
+也可以在那边终端启动一个进程之后[[attach]]
