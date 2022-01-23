@@ -3,4 +3,4 @@
 sudo sed -i 's/kernel.yama.ptrace_scope = 1/kernel.yama.ptrace_scope = 0/g' /etc/sysctl.d/10-ptrace.conf; \
 sudo sysctl -p /etc/sysctl.d/10-ptrace.conf
 ```
-（先编辑再更新）
+（即：先编辑再更新）
