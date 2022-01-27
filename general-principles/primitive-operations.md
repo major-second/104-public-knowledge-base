@@ -9,3 +9,4 @@
 ![](assets.png)
 - 比如上层整合可能引入额外的错误
   - 比如2022.1.17，vscode默认集成终端中跑[[rl-example]]就是不行。直接`Ctrl + Alt + T`的就是可以
+  - `pickle`可以，`torch`不行：https://github.com/dmlc/dgl/issues/458
