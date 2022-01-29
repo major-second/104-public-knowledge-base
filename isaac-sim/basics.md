@@ -36,7 +36,7 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_required_in
 - 多次按`W, E`: 切换“全局”与“局部”坐标系。如下图是局部坐标系。
 ![](./basics/local-coordinate.png)
 之后都可依教程进行。不过我们此处并不给GUI操作太多注意力了。自己看教程即可。
-- 小常识：表示键盘快捷键时，用`LMB`表示鼠标左键。
+- 小常识：表示键盘快捷键时，用`LMB`表示鼠标左键。RMB右键同理
 - Pan此处意为摇镜头（来自Panoramic）
 ![](./basics/tutorial.png)
 `Ctrl`, `Alt`, `Opt`分别在Linux对应了什么健？请自己试试。
