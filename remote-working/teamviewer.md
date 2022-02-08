@@ -3,6 +3,7 @@ teamviewer可以在远程主机没有公网ip时也能远程操控
 [下载](https://www.teamviewer.com/en/download/linux/)，用`sudo apt install ./<文件名>.deb`即可安装（或：`sudo apt install <拖动.deb文件到终端>`）
 注：截至2022.1.14，`sudo apt install <文件名>.deb`或者`sudo apt install teamviewer*`都是不行的。
 使用前可能需要注册一个账号，还需要邮箱和手机，略烦
+而且它发验证邮件有时很久（一两个小时）才能收到……
 ## 提速
 ![](speed.png)
 连接上去之后，上方`View`处改分辨率，并设置“速度优先”
