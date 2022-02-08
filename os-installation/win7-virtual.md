@@ -25,3 +25,4 @@
 - 根据跳出提示，可能需要手动安装。即手动选择CD/DVD加载vmware安装目录处提供的vmware tools的`.iso`镜像，如图![](win7-vmware-tools.png)
 - 虚拟机中手动选择光驱，并安装
 ![](win7-vmware-tools2.png)
+- 终于可以拖拽复制文件了
