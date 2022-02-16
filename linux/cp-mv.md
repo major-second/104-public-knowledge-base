@@ -1,0 +1,3 @@
+- [cp合并](https://blog.csdn.net/u011109356/article/details/77716439)
+  - `mv`不能合并
+- `cp`和`mv`原理不同。`mv`快得多

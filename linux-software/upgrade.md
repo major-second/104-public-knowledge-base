@@ -1,0 +1,4 @@
+- 不要随便`upgrade`，小心软件突然用不了！重要升级版本前请备份系统！
+- 有时，想升级到最新提示依赖不满足，那就：
+  - 例如，可以`apt-cache madison docker-ce`
+  - 出来的字符串（比如`5:18.09.0~3-0~ubuntu-bionic`这种东西）拿去试（比如`apt install docker-ce=5:18.09.0~3-0~ubuntu-bionic`），看什么时候能装即可
