@@ -45,3 +45,8 @@ print(sim.data.qpos)
 - 其它就类似了。直接`pip`安装或者用其他人写的`requirements`安装就都可以了
   - 当然，`pip`安装的版本也就不能是刚刚的`2.1`了
   - 当然，环境变量加的也不一样
+# issue
+一个常见的github issue: 锁住，死循环
+https://github.com/openai/mujoco-py/issues/424
+解决方法：删除
+`your-virtualenv/lib/python3.7/site-packages/mujoco_py/generated/mujocopy-buildlock.lock`
