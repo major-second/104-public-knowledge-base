@@ -19,7 +19,7 @@ type: operations
 - 实用应用：
   - `ps -ef | grep 'python' | grep -v grep | awk '{print $2}'`
   - `python_pid=$(ps -ef | grep 'python' | grep -v grep | awk '{print $2}')`
-  - `find . -type f -print0 | sort -z | xargs -0 md5sum | md5sum`
+  - `find . -type f -print0 | sort -z | xargs -0 md5sum | md5sum`，参考[[md5sum]]
 ## 11.7 执行数学运算
 ### `expr`整数运算
 - `expr 2 \* 3`：注意转义和空格
