@@ -44,6 +44,7 @@ https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_basic.html
     - 在其所在文件夹打开终端，`chmod a+x omniverse`然后`Tab`补全，回车，赋予其运行权限。
     - 双击它打开
     - 登录NVIDIA账号（如果是新装的电脑，对以前登录过的账号，可能有Security Challenge，需要邮箱验证。注意在邮箱中查看骚扰邮件和垃圾邮件避免错过）![](installation/login-security.png)
+      - 他在你点击验证之后到验证成功还稍微有点慢（几分钟），这时候请耐心等待，不要把登录页面关了
     - 登录之后同意一个协议（需要下拉才能按continue）![](installation/agreement.png)
     - 之后一路continue
 ### 2022.1.14更新
