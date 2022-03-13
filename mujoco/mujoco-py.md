@@ -4,10 +4,10 @@
   - 不用翻墙，是个镜像
 > Download the MuJoCo version 2.1 binaries for Linux or OSX
 > Extract the downloaded `mujoco210` directory into `~/.mujoco/mujoco210`
-- `sudo apt install libosmesa6-dev libgl1-mesa-glx libglfw3 libglew-dev patchelf`
+- 先看官网troubleshooting补包和`ln`一下
   - 否则一会编译缺东西
   - 其实缺啥就去百度谷歌看装啥能补就行
-  - 这里比较坑的是它的troubleshooting列举不全。很多缺的要自己补
+  - 这里比较坑的是它的troubleshooting列举不全。有个缺的要自己补（`apt install patchelf`他没写）
 - 在`~/.bashrc`（或`~/.zshrc`，如果你用`zsh`）中，添加一些环境变量
   - 具体添加什么，一会`import mujoco_py`的时候会看到。他让你加啥你就加啥
   - 并`. ~/.bashrc`
@@ -45,3 +45,9 @@ print(sim.data.qpos)
 - 其它就类似了。直接`pip`安装或者用其他人写的`requirements`安装就都可以了
   - 当然，`pip`安装的版本也就不能是刚刚的`2.1`了
   - 当然，环境变量加的也不一样
+  - 当然，验证安装的`python`代码也不一样
+# issue
+一个常见的github issue: 锁住，死循环
+https://github.com/openai/mujoco-py/issues/424
+解决方法：删除
+`your-virtualenv/lib/python3.7/site-packages/mujoco_py/generated/mujocopy-buildlock.lock`
