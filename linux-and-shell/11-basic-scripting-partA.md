@@ -105,3 +105,21 @@ wc << EOF
 结果是`4 4 12`
 `EOF`可以是任何你想要的字符串
 注意输完第一行后，后面的提示符改成了“次提示符”，例如`$`变成了`>`
+## 转义专题
+https://www.cnblogs.com/loki717/p/7358125.html
+> 在双引号内，不被忽略的符号：` $ \
+
+应用：[[ssh-env-var]]中需要往文件输入
+```sh
+for item in `cat /proc/1/environ | tr '\0' '\n'`
+do
+ export $item
+done
+```
+那么你可以
+```sh
+echo "for item in \`cat /proc/1/environ | tr '\\0' '\\n'\`
+do
+ export \$item
+done" >> <文件>
+```
