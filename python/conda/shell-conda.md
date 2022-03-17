@@ -1,2 +1,6 @@
-https://blog.csdn.net/u013171226/article/details/118209462
-`.sh`中如何使用`conda`环境！
+`.sh`中使用`conda`和交互式不一样。需要先
+```sh
+CONDA_DIR="$(conda info --base)"
+source "${CONDA_DIR}/etc/profile.d/conda.sh"
+```
+参考docker中的[[conda]]，里面也有交互式和非交互式不一样的一些体现
