@@ -19,5 +19,4 @@ $$\mathbb{E}_{p_\text{data}}\bigg[\operatorname{tr}( \nabla_{\mathbf{x}}^2 \log 
 其中$\nabla_\mathbf{x}^2\log p_\theta(\mathbf{x})$即为变量x在函数$\log p_\theta(\mathbf{x})$中的Hessian矩阵。
 
 但是计算Hessain矩阵的开销非常非常大，并且随数据维度上升而飞速增长！对于高维数据来说绝对行不通！
-
-(参考资料：https://ermongroup.github.io/blog/ssm/#hyvarinen2005estimation )
+从海瑟矩阵到它的trace的推导（这是个近似）：参见：https://ermongroup.github.io/blog/ssm/#hyvarinen2005estimation

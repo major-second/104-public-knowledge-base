@@ -61,7 +61,7 @@ $$
 ## score matching
 我们通常通过最小化Fishel散度(即L2 loss)来训练，即最小化
 $$
-\mathbb{E}_{p(\mathbf{x})}[\| \nabla_\mathbf{x} \log p(\mathbf{x})y - \mathbf{s}_\theta(\mathbf{x})  \|_2^2] .
+\mathbb{E}_{p(\mathbf{x})}[\| \nabla_\mathbf{x} \log p(\mathbf{x}) - \mathbf{s}_\theta(\mathbf{x})  \|_2^2] .
 $$
 我们不知道样本真实分布$\nabla_\mathbf{x} \log p(\mathbf{x})$，但我们可以用 #score_matching 的方式去估计其Fishel散度，包括原始的[[original score matching]]方法与之后的[[sliced score matching]], [[annealed score-matching]]方法等。
 

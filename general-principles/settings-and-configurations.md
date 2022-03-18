@@ -6,7 +6,7 @@
 2. 编辑特定文件。比如`~/.bashrc`，`~/.condarc`，`/etc/ssh/sshd_config`，Windows的`known_hosts`
    1. `.d`的作用：比如`source.list`和`source.list.d`的关系，你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`，放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
    所以直接在`.d`文件夹里加文件，其实相当于编辑某个特定文件。
-3. 用命令。比如`git config`，`pip config set`命令（很多时候等价于封装了的方法2.）
+3. 用命令。比如`git config`，参考[[config]]，`pip config set`命令（很多时候等价于封装了的方法2.）
    1. 注：不同版本可能具有的方式还不同。比如老版本`pip`就没有`config`命令。需要装新版本。
 4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等
 ## “临时设置”和其作用
