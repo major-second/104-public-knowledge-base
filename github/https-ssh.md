@@ -42,3 +42,10 @@ ssh-agent bash ; \
 ssh-add ~/.ssh/id_rsa
 ```
 即可
+
+如ssh-agent未自启动，可输入‵vim ~/.bashrc‵, 
+在末尾添加以下两行：
+```sh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
