@@ -1,6 +1,6 @@
 参考http://zhaoxuhui.top/blog/2021/02/20/ubuntu-linux-kernel-installation.html
-- 内核和硬件密切相关，比如实时内核，对机械臂非常有用
-需要实时内核，我们就需要先下载一般内核，解压打补丁，打包再安装
+- 内核和硬件密切相关，比如实时内核，对机械臂非常有用。实时内核参考https://blog.csdn.net/huangjunsheng123/article/details/116202848和https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_install_apollo_kernel_cn.md
+如果需要实时内核，我们就需要先下载一般内核，解压打补丁，打包再安装
 - 操作系统是内核态和用户态工具的总称，内核只是一部分
 内核层和用户层是两个东西（比如重装内核肯定不影响你`~`里存的音乐和`git`库等）
 - 拓展知识：同时在CPU Ring0上跑的只能有一个内核
@@ -59,3 +59,10 @@ troubleshooting:
 - `TRUSTED_KEYS`相关
 参考https://wiki.gentoo.org/wiki/Signed_kernel_module_support
 简单的办法就是在`make menuconfig`界面中`/`搜索`SYSTEM_TRUSTED_KEYS`，定位到该字段，去除其内容
+打包完成之后，`..`中有一些`.deb`
+现在直接
+`sudo dpkg -i ../<文件名>.deb <后面还有3个>`（所有`.deb`都要写上）
+重启，`uname -a`可以看到`PREEMPT_RT`字符串
+`cat /sys/kernel/realtime`内容为`1`
+
+这时，`nvidia-smi`用不了了，直接参考[[linux-kernel-gpu]]即可
