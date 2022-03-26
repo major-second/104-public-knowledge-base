@@ -6,6 +6,8 @@
 - 参数（各种`--<参数名> <参数内容>`之类的。这样就不用每次重新复制长串命令）
   - 例如`--id 1 --learning-rate 0.0001`，对应的要写成`["--id", "1", "--learning-rate", "0.0001"]`
 - `"justMyCode": false`：逐步进第三方库
+- `"python"`: 指定python解释器（可以结合`which`命令快速找到解释器）
+- `"env"`: [[6-env]]环境变量
 ## `python -m`例子
 比如想要用`launch.json`中的一套配置去表示一个`python -m 某某`命令以方便复用，就可以
 - `Ctrl + Shift + D` - 左侧create a launch.json file - 上方Module - 输入文件名

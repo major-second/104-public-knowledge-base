@@ -2,6 +2,8 @@
     - 注意，工作空间（文件夹的`.vscode`子文件夹下）的设置`.json`会覆盖“通用”的。例如foam默认的`Paste Image`路径是`attachments`
 - 当然，也有图形界面。例如插件右键 - Extension Settings
 - 一些用到了的设置项：
-`"git.terminalAuthentication": false`修复自动Authentication导致的无法连接
-`"workbench.editor.openPositioning": "left"`调整默认打开左右，在`.md`预览时很方便
+    - `"git.terminalAuthentication": false`修复自动Authentication导致的无法连接
+    - `"workbench.editor.openPositioning": "left"`调整默认打开左右，在`.md`预览时很方便
     - 注：怎么找到的？在`File - Preferences - Settings`里搜索。我搜`left`就直接看到了。
+    - `"terminal.integrated.defaultProfile.linux"`调整linux环境中默认用什么终端
+- 当然，这些设置项的名称和细节可能随着版本和系统不同而变化
