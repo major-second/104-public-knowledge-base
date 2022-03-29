@@ -10,6 +10,17 @@ https://oiwiki.org/lang/csl/sequence-container/
 - `[]`, `front()`, `back()`都是引用，`data()`指针，`begin()`迭代器
 - `vector<bool>`会导致坑。可以换成`deque`等
 - `back`表示末尾。如`push_back`. 对于`deque`也就有`push_front`
+- `insert`例子
+
+```cpp
+   vector<int> v = {3, 4, 5};
+
+   auto it = v.insert(v.begin(), 2);
+   v.insert(it, 1);
+```
+得到`1,2,3,4,5`
+- `erase`：可以单参数，也可以双参数（一个左闭右开区间）
+- 关注`.reserve(3)`和`vector<int> v(3)`的异同
 
 应用
 https://leetcode-cn.com/problems/two-sum/
