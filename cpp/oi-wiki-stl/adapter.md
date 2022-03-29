@@ -10,3 +10,27 @@
 默认从小到大，`top()`是最大
 默认比较类型`less<T>`（比较类型是一个类型不是一个函数，参考[[associative]]里的指定比较方法）
 不可跳过`Container`参数（底层容器）直接传入`Compare`
+调包应用：
+https://leetcode-cn.com/problems/kth-largest-element-in-an-array/submissions/
+```cpp
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int, vector<int>, greater<int>> q;
+        int n = nums.size();
+        for (int i=0; i<n; i++){
+            if(i<k){
+                q.push(nums[i]);
+            }
+            else{
+                int min_ele = q.top();
+                if (min_ele < nums[i]){
+                    q.pop();
+                    q.push(nums[i]);
+                }
+            }
+        }
+        return q.top();
+    }
+};
+```
