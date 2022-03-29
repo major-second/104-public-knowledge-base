@@ -1,3 +1,3 @@
-- [cp合并](https://blog.csdn.net/u011109356/article/details/77716439)
-  - `mv`不能合并
+- 常用参数：`cp -v`输出具体（verbose）信息，还有参见[cp合并](https://blog.csdn.net/u011109356/article/details/77716439)
+  - 注：`mv`不能做“合并”
 - `cp`和`mv`原理不同。`mv`快得多

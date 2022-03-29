@@ -1,6 +1,15 @@
 tensorboard本来是用于tensorflow的可视化，但也可以用于pytorch
 [官方教程](https://pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html)
-- 完成以上之后，另开一个终端
+代码中参考这个来写
+```python
+import torch
+from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
+writer.add_scalar("Loss/train", loss, epoch)
+writer.flush()
+writer.close()
+```
+- 完成`.py`文件中代码书写之后，运行`.py`文件，并另开一个终端
   - 到有`eventtf`那些文件的目录
   - `tensorboard --logdir . --port <端口>`
   - 注：如果要远程看，需要`--bind_all`参数（注意是下划线不是横杠）
