@@ -59,3 +59,4 @@ snippets就是打包好的常见代码段，可以提升 #编辑 的 #工作效�
 	// 	"description": "Log output to console"
 	// }
 ```
+也就是编号从1开始，然后依次tab直至转至`$0`处。到了`$0`，再tab就会发现真的输入了制表符
