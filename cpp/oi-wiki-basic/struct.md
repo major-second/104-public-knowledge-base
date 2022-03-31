@@ -13,3 +13,13 @@ struct Object {
 ```
 `a.b`
 `a->b`相当于`(*a).b`
+
+Bonus：如何设置构造函数
+```cpp
+struct MyListNode{
+    pair<int, int> pa;
+    MyListNode* prev;
+    MyListNode* next;
+    MyListNode(pair<int, int> a, MyListNode* p, MyListNode* n): pa(a), prev(p), next(n){};
+};
+```

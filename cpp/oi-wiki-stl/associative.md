@@ -15,7 +15,7 @@ set<int, cmp> s;
 ```
 
 其它注意
-- `count`看有无
+- `count`看有无（这说明`set<pair<>>`不能代替`map`）
 - `map`迭代器解引用是`pair<Key, T>`
   - 插入时比较麻烦，需要插入`pair<Key, T>(...)`
   - 也可以通过下标插入
