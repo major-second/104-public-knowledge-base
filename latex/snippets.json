@@ -18,5 +18,10 @@
 		"prefix": "COL",
 		"body": "\\begin{columns}[$1]\n  \\column{$2\\textwidth}\n  \\column{$3\\textwidth}\n\\end{columns}",
 		"description": "Insert multi columns (the default case is 2 columns)"
-	}
+	},
+    "Resize": {
+        "prefix": "RSZ",
+        "body": "\\resizebox{\\linewidth}{!}{\n$0\n}",
+        "description": "Resize an object. (Set width=\\linewidth)"
+    }
 }
