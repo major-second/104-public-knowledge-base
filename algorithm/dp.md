@@ -6,4 +6,4 @@
 比如Floyd，选择“中转站”编号
 - https://leetcode-cn.com/problems/longest-palindromic-substring/
 如果普通动规，需要$n^2$
-注：Manacher算法通过加`#`把偶数化归到奇数。然后通过一个技巧（记录最右侧长回文子串，看对称位置）使得只需要$O(n)$
+注：[[manacher]]只需要$O(n)$
