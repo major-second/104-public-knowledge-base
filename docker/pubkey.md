@@ -1,5 +1,5 @@
 docker的密钥登录参考（模仿以下命令）
-1. 静默创建公钥
+1. 静默创建公钥[[generate-key-pair]]
 `ssh-keygen -t rsa -N '' -f <path>/id_rsa`
 2. 运行时往容器传入环境变量
 <code>docker run -it -e AUTHORIZED_KEYS="$(cat <path>/id_rsa.pub)" <其它选项> <镜像名></code>
