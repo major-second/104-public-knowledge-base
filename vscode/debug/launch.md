@@ -15,3 +15,4 @@
 ## 解释器
 比如`conda activate <名字>`，`which python`找到python解释器
 然后`Ctrl + Shift + P`，打`interpreter`，就找到选解释器的命令了。对照着刚刚`which python`的输出选解释器即可
+- 注：刚刚说`launch.json`中的`"python"`字段会覆盖这里的设置。当两者不同时，可能造成vscode无法解析你的`import`. 所以不推荐两者不同

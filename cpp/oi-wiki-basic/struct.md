@@ -21,5 +21,5 @@ struct MyListNode{
     MyListNode* prev;
     MyListNode* next;
     MyListNode(pair<int, int> a, MyListNode* p, MyListNode* n): pa(a), prev(p), next(n){};
-};
+}; // 一句话记忆：括号内呼应括号内（都是a, p, n）
 ```

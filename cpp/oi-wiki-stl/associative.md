@@ -17,19 +17,20 @@ set<int, cmp> s;
 其它注意
 - `count`看有无（这说明`set<pair<>>`不能代替`map`）
 - `map`迭代器解引用是`pair<Key, T>`
-  - 插入时比较麻烦，需要插入`pair<Key, T>(...)`
+  - 插入时可以插入`pair<Key, T>(...)`
   - 也可以通过下标插入
-  - `multimap`的`erase(pos)`（用迭代器）很有用，因为`key`会删除所有
+  - `multimap`删除
     - `multimap`没法直接删除`pair`. 需要`erase(pos)`
-    - 当然，有时可以用`set<pair<>>`，那就可以直接删除。
+    - `erase(pos)`（用迭代器）很有用，因为用`key`删除会删除所有
+    - 当然，有时可以改用`set<pair<>>`，那就可以直接删除。但不是所有时候`set<pair<>>`都能代替`multimap`
 - 下标访问可能引入无意义新元素。所以`find()`很好
-- 范围`for`：`(auto x:s)`，或者`(auto& x:s)`（传引用），`x`类型就是`<>`里面填的。
+- 范围`for`：`(auto x:s)`，或者`(auto& x:s)`（传引用），`x`类型就是`<>`里面填的那个。
 
 无序的https://oiwiki.org/lang/csl/unordered-container/
-里面讲到了哈希高级玩法（防hack）
+- 里面讲到了哈希高级玩法（防hack）
 codeforces hack你的哈希函数，有意思
-利用哈希，平均情况下大多数操作常数复杂度
-
+- 利用哈希，平均情况下大多数操作常数复杂度
+- 当然，填的类型必须hashable，比如`set`就不能往里填。相比之下，有序的那些容器，只要能比较大小即可。
 ## 应用
 https://leetcode-cn.com/problems/two-sum/submissions/
 ```cpp
@@ -53,9 +54,12 @@ public:
     }
 };
 ```
-注意判断不能相等。
+注意要判断脚标不能相等。
 注意`->second`，`map`中的`pair`等等
 
+https://leetcode-cn.com/problems/4sum/submissions/
+这题如果参考刚刚的“两数之和”用哈希的做法：注意题目要求！需要的数据结构是`set<multiset<int>>`，内层先`set`检脚标重复，然后造一个`multiset`，再塞进外层`set`.
+当然，这其实是个假的哈希，因为用的是有序的（无序的没法往`<>`里填）……直接这么做搞不好反而会超时。
 ## 有序集和`lower_bound`应用
 https://leetcode-cn.com/problems/container-with-most-water/submissions/
 ```cpp
