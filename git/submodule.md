@@ -11,3 +11,6 @@
 
 ![](submodule-update.png)
 像这种就说明子模块更新了，父模块没更新子模块版本。所以你之后在其它地方`git clone --recursive`就不能得到最新子模块
+
+## 删改
+https://www.jianshu.com/p/ed0cb6c75e25

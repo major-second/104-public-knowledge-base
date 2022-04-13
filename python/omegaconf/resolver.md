@@ -1,5 +1,6 @@
 py中
 ```python
+# 开头import的时候
 from omegaconf import DictConfig, OmegaConf
 OmegaConf.register_new_resolver('eq', lambda x, y: x.lower()==y.lower(), replace=True)
 ```
