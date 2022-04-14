@@ -10,3 +10,6 @@
 - 比如上层整合可能引入额外的错误
   - 比如2022.1.17，vscode默认集成终端中跑[[rl-example]]就是不行。直接`Ctrl + Alt + T`的就是可以。可能和权限有关
   - `pickle`可以，`torch`不行：https://github.com/dmlc/dgl/issues/458
+  - 比如vscode的[[remote-ssh]]时，对面服务器的要求可能不满足（https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites
+）
+但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了

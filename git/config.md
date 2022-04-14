@@ -10,3 +10,5 @@ git config --global https.proxy 127.0.0.1:端口
 
 git config --list # 查看列表, 可以用q退出
 ```
+注：如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是CLI没设置代理但浏览器自动走了浏览器代理
+参考[[zoom]]，也有类似问题
