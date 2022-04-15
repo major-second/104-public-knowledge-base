@@ -12,7 +12,6 @@ index也被称为staging area，是指一整套即将被下一个提交的文件
 注：如果在[[head-detached]]，就有可能“产生新的（临时）分支”
 ### Working Copy
 working copy代表你正在工作的那个文件集
-
 ### 操作过程
 (https://www.cnblogs.com/kidsitcn/p/4513297.html)
 - 当你第一次checkout一个分支，HEAD，Index，Working Copy都相同

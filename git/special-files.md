@@ -25,5 +25,7 @@ path/to/a/folder
 *
 !.gitignore
 ```
+## `.gitmodule`
+参考[[submodule]]
 ## issues
 当然，对文件夹中文件遍历时，小心这些特殊文件引发问题
