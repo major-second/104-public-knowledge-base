@@ -1,2 +1,2 @@
-run`conda create -n [a new name] python=x.x`<br />
+run`conda create -n <env name> python=x.x`
 and install some necessary libs.
