@@ -51,3 +51,4 @@ print(sim.data.qpos)
 https://github.com/openai/mujoco-py/issues/424
 解决方法：删除
 `your-virtualenv/lib/python3.7/site-packages/mujoco_py/generated/mujocopy-buildlock.lock`
+（和[[file-baton]]同一道理，都是用临时文件加锁）
