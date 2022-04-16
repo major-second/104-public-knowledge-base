@@ -9,3 +9,6 @@ export http_proxy="localhost:<端口号>"
 ```
 然后重启终端或`source ~/.bashrc`一下，就好了
 （也就是[[6-env]]中说的的添加环境变量）
+# pip走代理
+`pip`自动读取系统的代理设置
+但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头（如果不这样，报错信息会看到）
