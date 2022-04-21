@@ -10,8 +10,4 @@ sudo apt install v2raya
 sudo systemctl start v2raya.service
 sudo systemctl enable v2raya.service
 ```
-## 上手操作
-https://v2raya.org/docs/prologue/quick-start/
-浏览器访问`localhost:2017`，然后安装官网提示操作。其中“导入节点”一步需要找实验室管理员（或者自己买）神秘二维码或神秘分享链接
-
-这里启动了只是让2017端口可以翻。但真正要翻，还需要使得你的应用走这个端口。参考[[settings-and-configurations]]. 比如使用`git config`，比如设置环境变量[[6-env]]等
+安装后的具体操作参考[[linux]]，[[settings-and-configurations]]等等
