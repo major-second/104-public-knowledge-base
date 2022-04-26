@@ -69,4 +69,4 @@ troubleshooting:
 - 关于实时内核
 重启，`uname -a`可以看到`PREEMPT_RT`字符串
 `cat /sys/kernel/realtime`内容为`1`
-这时，`nvidia-smi`用不了了，直接参考[[linux-kernel-gpu]]即可
+这时，`nvidia-smi`用不了了，直接参考[[rt-kernel-gpu]]即可

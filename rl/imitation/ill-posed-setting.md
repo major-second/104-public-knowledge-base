@@ -1,0 +1,4 @@
+- 给定一些traj $\zeta$，其中每个traj包含许多state $s$
+- 每个$s$中和我们要学的东西相关的用若干维的向量feature $f$表示
+- reward是$f$的线性组合。weight未知（要学）
+- 学weight（weight使得traj最佳）是一个ill-posed问题。比如全0的退化情况也能
