@@ -4,6 +4,7 @@
 - [[assets]]中vulkan相关错误在**重装**vulkan sdk后需要**重启**
 - [[timeshift备份镜像]]和tmux的互动可能把tmux弄崩，**重装**tmux并**重启**即可
 - [[special-files]]提到`git rm --cache`命令删除已经被track的文件，并更新`.gitignore`，可能需要**重启**vscode才生效
+- [[windows/env-var]]的添加需要**重启**vscode才在vscode集成的powershell中生效（只重启powershell没用）
 - `d3dx9_42.dll`出错？重装DX即可
 - 还有最经典的设置东西之后要更新。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
