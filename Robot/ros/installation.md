@@ -9,4 +9,4 @@
 ## 验证安装成功
 一个终端`roscore`
 另一个终端`rqt_graph`，去掉hide中的勾选，看到`/rosout`
-![](graph.png)
+![](installation-rqt-graph.png)
