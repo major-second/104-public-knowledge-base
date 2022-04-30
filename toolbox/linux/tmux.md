@@ -1,0 +1,4 @@
+- `sudo apt install tmux`即可
+- 坑：不同用户能看到的`tmux ls`是各自独立的。如果你`sudo su`了，就要注意！
+- 不同人可以attach同一个tmux session，互相看到彼此操作
+- 可以和vscode的[[launch]]结合使用（终端开着tmux按F5）

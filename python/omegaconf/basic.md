@@ -14,6 +14,7 @@ https://omegaconf.readthedocs.io/en/2.1_branch/index.html
   - `.from_cli()`: 使用`k=v`格式的参数，参考[[simulate]]来模拟
     - `k`中可以有`.`表示层级
 - 支持类型：`str, int, bool, float`和[[enum]]
+  - 注意`str`类型的作用：日期`0301`，你要是不加引号，就变成了`193`了（八进制）
 - `.to_yaml()`: 序列化成yaml！
 - `.merge()`合并
 - `???`表示必须填（mandatory）
