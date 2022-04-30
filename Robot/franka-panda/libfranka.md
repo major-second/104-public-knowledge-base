@@ -1,5 +1,6 @@
 前置
 - [[linux-kernel]]（需要实时内核），[[rt-kernel-gpu]]
+  - 参考[这个](https://frankaemika.github.io/docs/installation_linux.html#allow-a-user-to-set-real-time-permissions-for-its-processes)给用户实时权限，注意要重启（参考[[7-permissions]]）
 - [[ros/installation]]
 - 知道机械臂中软件版本号（比如可以[[connect-controller]]上去看）
 
