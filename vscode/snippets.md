@@ -9,6 +9,7 @@ snippets就是打包好的常见代码段，可以提升 #编辑 的 #工作效�
   - 如果输入法占用了`Ctrl + Space` #快捷键 需要手动关掉
 - 对于 #中文支持 不好的环境，由于分词问题，会把没有空格分开的都当成一个词，所以你先打入几个汉字，然后`Ctrl + Space`并不能给出正常的snippets建议，而是在之前的汉字基础上给snippets建议。例如
 ![](snippets-chinese-issue.png)
+	- 所以需要先敲一个空格，才能用snippets
 - 比如在`.tex`环境中，按`Ctrl + Space`可以调出
 ![](snippets-tex.png)
 （需要`LaTeX Workshop`插件）
@@ -28,7 +29,8 @@ snippets就是打包好的常见代码段，可以提升 #编辑 的 #工作效�
 - 一般是`Files > Preferences`（在MacOS上`Code > Preferences`），然后`User Snippets`
 - 然后上方框中输入语言名称（比如`markdown`）
 - 然后看到打开了一个`.json`（比如`markdown.json`）
-- 举例：如果输入了如下配置
+  - 所以输入时需要[[json转义]]
+- 举例：如果输入了如下配置（[[markdown/snippets]]）
 ```json
 	"Text Back Quote":{
 		"prefix": "BQ",

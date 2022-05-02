@@ -1,0 +1,17 @@
+{
+	"Text Back Quote":{
+		"prefix": "BQ",
+		"body": "<code>&#96;</code>",
+		"description": "Use HTML to insert a text back quote"
+	},
+	"Text Back Quotes":{
+		"prefix": "BQs",
+		"body": "<code>&#96;$0&#96;</code>",
+		"description": "Use HTML to insert 2 text back quotes"
+	},
+	"PMatrix":{
+		"prefix": "PMat",
+		"body": "$$\\left(\\begin{matrix}$1\\end{matrix}\\right)$$",
+		"description": "Insert a matrix with `()`"
+	}
+}
