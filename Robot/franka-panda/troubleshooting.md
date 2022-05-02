@@ -1,0 +1,2 @@
+- 如果![](hand-uninitialized.png)（比如你手动动了gripper，或者重启电脑等），就需要在END-EFFECTOR选项卡处Homing
+  - 尽量不要手动动gripper

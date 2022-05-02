@@ -2,6 +2,7 @@
 - [[ros/installation]]
 - 已有或新建[[create-catkin-ws]]
 
+安装
 - 文档
 http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html
 `sudo apt install ros-melodic-moveit`
@@ -30,3 +31,9 @@ source devel/setup.sh
 - 当然可以看到文档的命令和我们这里的命令有对应关系
   - `-DCMAKE_BUILD_TYPE=Release`对应了
   - `rosdep`那句运行的地方，此处和文档不同
+
+rviz可视化
+- 直接对着[文档](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/quickstart_in_rviz/quickstart_in_rviz_tutorial.html#getting-started)即可
+  - 命令`roslaunch panda_moveit_config demo.launch rviz_tutorial:=true`，之后参考文档进行操作
+  - 注意可以保存界面设置，方便下次复现
+- 不过这个不是真机
