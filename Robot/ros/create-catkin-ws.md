@@ -1,4 +1,5 @@
-[官网教程](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
+[官网教程1](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
+[官网教程2](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
 - 注意先`source /opt/ros/melodic/setup.bash`（以melodic为例）
   - 此命令不能在`sudo su`中运行
   - 之后`catkin_ws`不能在必须要[[sudo]]权限的地方
