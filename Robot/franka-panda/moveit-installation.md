@@ -1,18 +1,21 @@
 前置
 - [[ros/installation]]
 - 已有或新建[[create-catkin-ws]]
+- 如果是用于控制真机需要[[franka-ros]]
 
 安装
 - 文档
 http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html
 `sudo apt install ros-melodic-moveit`
-- 之后不要照文档，而是应该微调[[franka-ros]]的安装步骤，增加
+- 之后（如果你需要控制真机）不要照文档，而是应该微调[[franka-ros]]的安装步骤，增加
 ```sh 
 git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
 git clone https://github.com/ros-planning/panda_moveit_config.git -b melodic-devel
 ```
 - 原理是[[catkin-make]]一般来说都是一次make所有。我们应该全部准备好，一起`make`
-参考[[install-ros-package]]
+  - 参考[[install-ros-package]]
+  - 总之就是这里的教程只是告诉你通过什么命令可以多装这个包。如果你有原来就需要装的包那么就是incremental改动命令
+  - 注意`-D`参数也是incremental添加的。参考阅读[[basic-syntax]]
 - 具体地，如果你已经初始化了
 那么就
 ```sh
