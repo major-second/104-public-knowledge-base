@@ -7,3 +7,4 @@
 - 比如报错信息
   - `make`时多线程，可能导致真正错误信息被埋起来
   - 很多时候最后输出的不是本质的错误，而只是一些警告。一个示例：[[recipe]]中博客中提到的`-pdf`选项在某次`xelatex`更新后，不需要加了，但加了只是报个警告。有的时候会看到它在最后，但它并不essential
+- 一个有意思的例子：[[linux-software/v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`

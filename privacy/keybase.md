@@ -15,3 +15,5 @@ https://keybase.io/
 想要传文件，当然要多设备登录
 典型验证界面：比如你先在手机登录（或注册），命名你的手机为`Honor`，然后电脑登录时就选择用它验证，根据提示操作即可
 ![](keybase.png)
+# troubleshooting
+- 如果你电脑时间不对，需要联网同步时间，确保安全性。比如win10的![](keybase-sync-time.png)
