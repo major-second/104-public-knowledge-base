@@ -9,3 +9,4 @@
 - 还有最经典的设置东西之后要更新。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
+- 硬件层面的重置或初始化：例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
