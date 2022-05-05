@@ -5,6 +5,8 @@ https://oiwiki.org/lang/basic/
 - `cstdio`就是`stdio.h`的意思
 - 自己的头文件用`"文件名.h"`，引号而不是尖括号
   - 放到`.cpp`同一个目录，或者通过编译命令`-I`指定路径
+- 注：实际应用中缺头文件常常用`sudo apt install 某某-dev`解决。比如[[mpi4py]]的`sudo apt install libopenmpi-dev`
+  - linux在`/usr/include`看头文件
 ## 输入输出snippet
 ```cpp
 int a;
