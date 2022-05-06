@@ -2,7 +2,7 @@
 - vpn在第二层或第三层，代理在第七层。两者完全不同。
 - vpn一般用于远程翻进某些地方，比如学校、公司内网。当然也可能用于翻墙，因为公司网（有的）可以翻墙
 - 可能的用法
-  - 下载GlobalProtect，安装
+  - 下载[GlobalProtect](https://www.updatestar.com/zh-cn/directdownload/globalprotect/2338326)，安装
   - 输入公司/学校提供的vpn用的网址（长得类似：`msftvpn.ras.microsoft.com`）
   - 认证身份
   - 选择Gateway（例如Beijing. 这个选错了可能导致无法访问你想要的资源）
