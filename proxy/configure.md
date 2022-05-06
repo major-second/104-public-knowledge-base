@@ -23,7 +23,7 @@ export http_proxy="localhost:<端口号>"
 - 终端
   - `curl cip.cc`看结果
   - `curl ipinfo.io`看结果
-  - `curl www.google.com | grep .toString`看结果
+  - `curl www.google.com | grep script`看结果
 - 浏览器浏览
   - `cip.cc`看结果
   - `ipinfo.io`看结果

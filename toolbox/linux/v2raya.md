@@ -1,5 +1,6 @@
 大概过程是先安装`v2ray`，再安装`v2raya`. 过程中需要[[linux-software/source]]提到的添加源
 参考官网教程https://v2raya.org/docs/prologue/installation/debian/
+参考[[systemd]]
 ```sh
 curl -Ls https://mirrors.v2raya.org/go.sh | sudo bash
 sudo systemctl disable v2ray --now
