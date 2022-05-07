@@ -1,19 +1,4 @@
-1.首先`git clone https://github.com/EGO4D/forecasting.git`这是forecasting的代码<br />
-2.创建虚拟环境`conda create -n ego4d_forecasting python=3.7`<br />
-3.`conda activate ego4d_forecasting`<br />
-4.install requerements`cat requirements.txt | xargs -n 1 -L 1 pip install`，这一步要先翻墙<br />
-5.为了让ego4d模块可以被加载，运行`export PYTHONPATH=$PWD:$PYTHONPATH`<br />
-6.下载ego4d数据集和pretrained models，可以直接scp过来，在212的位置是`/raid/wuruihai/forecasting/data/long_term_anticipation/`，在16的位置是`/DATA/disk1/ego4d/long_term_anticipation/`<br />
-7.新创建data文件夹并链接数据集和预训练模型过来
-```sh
-mkdir -p data/long_term_anticipation/annotations/ data/long_term_anticipation/clips_hq/
-ln -s ${EGO4D_DIR}/v1/annotations/* data/long_term_anticipation/annotations/
-ln -s ${EGO4D_DIR}/v1/clips/* data/long_term_anticipation/clips_hq/
-
-mkdir -p pretrained_models
-ln -s ${EGO4D_DIR}/v1/lta_models/* pretrained_models/
-```
-8.配置slurm.conf文件，具体操作如下面步骤所示<br />
+todo
 9.换源`echo "deb http://archive.ubuntu.com/ubuntu bionic universe" | sudo tee -a /etc/apt/sources.list`<br />
 10.`sudo apt update`<br />
 11.安装slurm-wlm`sudo apt install slurm-wlm -y`<br />
