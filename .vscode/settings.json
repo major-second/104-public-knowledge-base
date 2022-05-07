@@ -20,6 +20,7 @@
   "git.postCommitCommand": "sync",
   "markdown.preview.breaks": true,
   "pasteImage.showFilePathConfirmInputBox": true,
+  "pasteImage.defaultName": "hhmm",
   "prettier.singleQuote": false,
   "spellright.notificationClass": "warning",
   "spellright.language": ["en", "zh-cn"],

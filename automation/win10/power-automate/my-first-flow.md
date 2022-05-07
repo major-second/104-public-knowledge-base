@@ -10,5 +10,5 @@
 - 再继续跟着教程了解一下管理flow用的console
 - 结果：
   - 得到我们的第一个flow
-    - 例如：阻止微软[[auto-update]]![](prevent-auto-update.png)
+    - 例如：阻止微软[[auto-update]]![](prevent-update.png)
   - 通过教程，简单理解了Power Automate的基本概念和用法
