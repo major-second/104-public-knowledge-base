@@ -26,7 +26,7 @@ Linux version 5.4.0-84-generic (buildd@lcy01-amd64-007) (gcc version 7.5.0 (Ubun
 - 在刚刚说的“安装目录”下尝试`ls .vscode`，应该是能看到一些配置文件的。直接vscode打开安装目录，就能用上它们
 - 为了打开隐藏文件夹（`.`开头），需要在vscode打开文件夹的界面右键，选择显示隐藏文件![](dev-env/vscode-hidden.png)
 - 为了使用`(Linux) isaac-sim`，在vscode中需要安装`C/C++ Extension Pack`，vscode才能识别`launch.json`中的`cppdbg`
-  - 然而目前，这样打开还不能识别assets，说明仍不成熟。还是老老实实launcher启动（参考[[installation]]）吧
+  - 然而目前，这样打开还不能识别assets，说明仍不成熟。还是老老实实launcher启动（参考[[my-first-flow]]）吧
 - 并且截至2022.1.17，[[rl-example]]中还会发现vscode终端会带来[[7-permissions]]权限的一些问题。所以目前其实比较好的调试方法还是[[attach]]
 ## anaconda环境
 [anaconda环境](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/install_python.html#advanced-running-with-anaconda)
