@@ -1,6 +1,5 @@
 前置：
 - [[create-catkin-ws]]
-- [[ros/installation]]
 
 步骤
 - 举例体会：比如[[franka-ros]]的安装流程（具体参考[[franka-ros]]）

@@ -17,5 +17,6 @@
   - /, primary, ext4, 20G
     - just like `Program Files` in windows
   - swap, logical, swap, 2 * RAM size
+    - 设置swap的方法: https://flyzto.com/ubuntu-add-swap.html
   - /home, logical, ext4, 100G
     - just like `Data (D:)` in windows

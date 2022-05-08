@@ -1,3 +1,6 @@
+前置：
+- [[ros/installation]]
+
 [官网教程1](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 [官网教程2](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
 - 注意先`source /opt/ros/melodic/setup.bash`（以melodic为例）

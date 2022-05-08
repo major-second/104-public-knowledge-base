@@ -1,5 +1,4 @@
 前置
-- [[ros/installation]]
 - 已有或新建[[create-catkin-ws]]
 - 如果是用于控制真机需要[[franka-ros]]
 
@@ -39,4 +38,4 @@ rviz可视化
 - 直接对着[文档](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/quickstart_in_rviz/quickstart_in_rviz_tutorial.html#getting-started)即可
   - 命令`roslaunch panda_moveit_config demo.launch rviz_tutorial:=true`，之后参考文档进行操作
   - 注意可以保存界面设置，方便下次复现
-- 不过这个不是真机
+- 这个不是真机。但和真机区别很小，参考[[moveit-real-robot]]
