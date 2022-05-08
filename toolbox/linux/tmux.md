@@ -1,6 +1,19 @@
 - `sudo apt install tmux`即可
-- 坑：不同用户能看到的`tmux ls`是各自独立的。如果你`sudo su`了，就要注意！
-- 不同人可以attach同一个tmux session，互相看到彼此操作
-- 一个坑
+- 命令
+  - `tmux ls`列表
+  - `tmux new -s <名字>`新建
+  - `tmux a -t <名字>` attach
+- 坑
+  - **不同用户**（比如`root`和非`root`）能看到的`tmux ls`是各自独立的
+    - 如果你`sudo su`了，就要注意！
   - 表面上，可以和vscode的[[launch]]结合使用，即在`F5`之后自动弹出的终端中`tmux`，再次`F5`
-  - 但实际上，这个并没完全隔离，还是需要vscode，remote-ssh等相关的信息。所以关掉vscode还是会停止程序！
+    - 但实际上，这个并没完全隔离，还是需要vscode，remote-ssh等相关的信息。所以关掉vscode还是会停止程序！
+- **不同人**（登录**同一个用户**）可以attach同一个tmux session，互相看到彼此操作
+- 快捷键
+  - `Ctrl + B`
+    - `D`脱离
+    - `"`（也就是`Shift + '`）上下分pane
+    - `方向键`移动pane
+    - `C`新窗口
+    - `数字键`移动window（比pane大一级）
+  - `Ctrl + D`关闭当前pane（window只有一个pane就关window，session只有一个pane就关session）
