@@ -1,6 +1,6 @@
 # 17.1
 ```sh
-function name{
+function name {
     commands
 }
 ```
@@ -10,6 +10,9 @@ name() {
     commands
 }
 ```
+注意`function name {`大括号前空格！
+这不能少，太丑了！
+联想[[11-basic-scripting-partB]]中的`expr 2 \* 3`
 # 17.2
 - 返回值：默认最后一条的返回值，参考`$?`，[[11-basic-scripting-partB]]
 - `return`：数值范围有限！而且原始目的不是那种“数学函数”返回值。是标记是否正常运行之类的。

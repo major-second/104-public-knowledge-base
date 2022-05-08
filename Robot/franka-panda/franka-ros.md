@@ -1,6 +1,7 @@
 前置
 - 知道机械臂中软件版本号（比如可以[[connect-controller]]上去看）
 - [[libfranka]]
+- [[ros/installation]]
 
 步骤
 - 就像[[libfranka]]. 有就直接`apt`装，没有就[[build-from-source]]

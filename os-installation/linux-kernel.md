@@ -46,7 +46,7 @@ https://www.kernel.org/pub/linux/kernel/projects/rt/4.14/older/patch-4.14.12-rt1
 我们在已有config的基础上进行修改，避免出现问题
 `cp -v /boot/config-$(uname -r) .config`
 参考[[11-basic-scripting-partA]]中`$()`的含义
-[[cp-mv]]中`-v`的含义
+[[cp-mv-rm]]中`-v`的含义
 在此基础上手动调整`.config`. 直接操作不太方便。不如使用一定的界面。比如
 `sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev`
 `make menuconfig`
