@@ -6,7 +6,7 @@
 - 尝试用[[recording]]新建第一个flow
   - 可尝试修改它
     - 比如`Wait`的时间多退少补
-    - 比如把`Click UI element`命令改成对应位置的`Move mouse - Send mouse click`命令。这在UI element可能变化时非常有用，例如右下角语言可能处于中文或英文时
+    - 比如[[selector-builder]]提到的
 - 再继续跟着教程了解一下管理flow用的console
 - 结果：
   - 得到我们的第一个flow

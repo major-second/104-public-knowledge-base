@@ -8,9 +8,6 @@
   - 设置若干个Subflow后在Main里左侧`Flow control`加入写好的Subflow（按顺序执行）
     - **Main里面如果啥都没有，你在Subflow界面按播放键也不会有任何动作！**
 - 稍微复杂：可以作为子过程，用条件、循环等控制
-- 更复杂：含有input variable，根据不同输入微调其功能
-  - 例如![](subflow-input.png)
-    - 输入不同`query`就在开始菜单搜索不同值并打开
-    - 外界调用：![](subflow-input-external.png)
-  - 这里两个`query`，一个在内使用，一个在外使用。其实在创建时可以设置成不一样的标识符
-  - 注：最外层如果没设好默认值，运行时它会要求你输入变量初始值
+- 更复杂：含有[[power-automate/var]]，根据变量值不同微调功能
+  - ![](subflow-var.png)
+  - 也就是“执行函数`f(x)`”在这里需要两个动作！先设置变量，再说“要执行什么函数”。参考[[power-automate/var]]所说的“只有全局变量”
