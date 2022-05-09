@@ -1,0 +1,5 @@
+- flow编辑器的这里![](recording.png)
+- 打开之后傻瓜式操作
+  - 过程中可以暂停，删除动作，拖动recorder窗口防遮挡等
+- 一般会自动记录出很多`Click UI element`
+- 记录完了也可以修改

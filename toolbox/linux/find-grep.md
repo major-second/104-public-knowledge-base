@@ -1,0 +1,13 @@
+- 基本用法
+  - `grep <内容> <文件名> `，文件中找内容
+    - `-e`[[regex]]，`-i`不区分大小写，`-v`反向（“不匹配”）
+    - 参考[[11-basic-scripting-partB]]的经典句子`ps -ef | grep 'python' | grep -v grep | awk '{print $2}'`
+  - `find <目录>`把目录下文件列成表
+  - `find <目录> -name "*.txt"`找所有`.txt`文件，列成表（注意引号）
+- 结合用法
+  - `find <目录> | grep <字符串>`，找文件/文件夹名包含某某的
+  - `find <目录> -name dummy.txt | xargs grep <内容>`
+  - 刚刚后两者都是把（单个或多个）文件给`grep <内容>`，参考[[11-basic-scripting-partB]]的管道记号
+    - 直接管道记号是把那个文件名列表整个作为（一个）文本文件（“metadata”的感觉）
+    - [[xargs]]是传多个文件
+      - 完整（最少bug版）的`xargs`命令用法：参考[[md5sum]]的`find . -type f -print0 | sort -z | xargs -0`. 一是排序，二是人为指定分隔符，避免空格出问题

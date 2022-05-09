@@ -6,5 +6,7 @@
     - `"workbench.editor.openPositioning": "left"`调整默认打开左右，在`.md`预览时很方便
       - 注：怎么找到的？在`File - Preferences - Settings`里搜索。我搜`left`就直接看到了。
     - `"terminal.integrated.defaultProfile.linux"`调整linux环境中默认用什么终端
-    - `"pasteImage.path"`调整用`pasteImage`插件时默认粘贴到哪（比较方便的：`${currentFileDir}`）
+    - `"pasteImage.path"`调整用`pasteImage`插件时默认粘贴到哪（比较方便的：`${currentFileDir}`），参考[[paste-images-from-clipboard]]
+    - `"pasteImage.defaultName"`调整名称。比如`"hhmm"`可以使得你修改时按一下`Ctrl+Backspace`就能删掉，相比原来的有`-`的默认名方便很多
+      - 参考[[built-in-keyboard-shortcuts-editting]]中关于`Ctrl`的部分
 - 当然，这些设置项的名称和细节可能随着版本和系统不同而变化
