@@ -4,11 +4,10 @@
   - ![](new-flow.png)新建flow
   - 跟着教程简单了解一下如何新建flow
 - 尝试用[[recording]]新建第一个flow
-  - 可尝试修改它
-    - 比如`Wait`的时间多退少补
-    - 比如把`Click UI element`命令改成对应位置的`Move mouse - Send mouse click`命令。这在UI element可能变化时非常有用，例如右下角语言可能处于中文或英文时
+  - 可尝试修改它，比如根据[[failures]]提到的，加强泛化性
 - 再继续跟着教程了解一下管理flow用的console
 - 结果：
   - 得到我们的第一个flow
     - 例如：阻止微软[[auto-update]]![](prevent-update.png)
   - 通过教程，简单理解了Power Automate的基本概念和用法
+- 之后你可以保存它到线上（**不能到本地**），之后联网时就可复用它（第一次下载可能会比较慢）
