@@ -1,4 +1,14 @@
-总之务必充分了解bitlocker再重装系统或者捣鼓主板（否则数据可能全部丢失）
+- 好处：加密保护数据
+- 坏处：
+  - 让你的数据全部被加密丢失
+  - 让[[dual-boot]]时容易出现[[文件系统损坏]]需要[[fsck]]
+- 反正：只有
+  - 特别希望加密
+  - 且不用[[dual-boot]]
+  - 且你能保护好recover key时
+  - 才可以用bitlocker，否则就关掉！
+- 平时自己关：开始菜单搜索bitlocker很容易看到
+
 必看教程
 - https://www.bilibili.com/video/BV1uP4y1s7e9/
 - https://www.bilibili.com/read/cv12791018
