@@ -12,9 +12,11 @@
     - 管理员可以对此加以限制
 - `sudo`不是万能的！
   - 有时必须以某个账户的身份运行命令
-    - 比如[[conda/installation]]只是给一个用户装的）
-  - 这就只能`sudo chmod -R 777`之后，回到非超级用户再执行命令。而不能`sudo conda`之类的
+    - 比如[[conda/installation]]只是给一个用户装的
+  - 这就只能`sudo chmod -R 777`之后，在非超级用户执行命令
     - 当然这很危险，参考[[7-permissions]]
+    - 反正不能`sudo conda`之类的
+  - 有时一些环境变量只对一个用户生效，比如你可能把`http_proxy`写到了`~/.bashrc`，参考[[configure]]
   - 例如
     - 如果你在一个**当前（非超级）用户没权限的**地方下载了`python`脚本，然后有个sh脚本里面有`python <某某python脚本>`命令
     - 那就不能`sudo bash <sh脚本>`，否则肯定会用系统自带python 2.7运行python脚本，而不是conda里的python

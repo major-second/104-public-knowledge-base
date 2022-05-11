@@ -5,4 +5,9 @@
   - 文档版本号、用户名等等常常需要自己填。文档中经常有`/your/path`这种字样，不要傻傻抄
     - 惯例：`<path>`，`<ip>`等`<>`符号表示你要自己填东西
   - 文档可能略去一些特别简单的步骤比如`cd`，需要你自己补上
+- 可能需要提取文档核心信息
+  - 选择性忽视一些不重要（乃至错误）的信息
+    - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做
+      - 而且这个`upgrade`还有可能导致[[software-management/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
+  - 识别出一些东西是选择性的，不要也没啥关系（而且可能要的过程很艰难，跑不通……）。那就直接舍弃
 - 硬件更要读文档保证安全！可不是只有软件才有文档！比如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题

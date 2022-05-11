@@ -26,4 +26,4 @@ sys.path = path_old
 - linux中的`PYTHONPATH`环境变量对应着python脚本里的`sys.path`
   - 区别于`shell`脚本运行时的`PATH`
   - 但可以看到两者的确有共同点：“去哪里找程序/脚本”
-- 拓展：
+- 拓展：使用vscode中的[[launch]]自动加`PYTHONPATH`
