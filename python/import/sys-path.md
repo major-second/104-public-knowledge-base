@@ -22,3 +22,8 @@ sys.path = path_old
   - 如果`.`中直接`import sub_dir.a`，vscode能解析，但是下级文件之间导入（`a`中导入`b`）时就报错了
     - 参考[[module-launch]]，所以说`python -m subdir.a`也会遇到同样的问题
   - 如果不想动`path`，那就要在下级那里`import b`的`b`前面用`.`分隔，写出根目录到那儿的相对路径（即改成`import sub_dir.b`）。这样vscode能解析，导入也不报错，但缺点是原来下级目录那里能跑的程序现在不能跑了
+## 和[[6-env]]的联系
+- linux中的`PYTHONPATH`环境变量对应着python脚本里的`sys.path`
+  - 区别于`shell`脚本运行时的`PATH`
+  - 但可以看到两者的确有共同点：“去哪里找程序/脚本”
+- 拓展：
