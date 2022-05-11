@@ -1,6 +1,8 @@
 前置
 - usb 3.0 [[interface]]
 - 我的设备：Intel RealSense D435I（可能其他设备步骤也相同）
+  - 原理介绍：https://blog.csdn.net/lemonxiaoxiao/article/details/109297834
+  - 这是深度相机，可能得到点云[[pointcloud/basics]]
 
 过程
 - [安装文档](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)
