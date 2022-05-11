@@ -9,14 +9,21 @@
     - 也就是本来按顺序123，你HEAD在2，然后再stage并commit一下这种情况
 - Working Copy代表你正在工作的那个文件集
 ## 操作过程
-(https://www.cnblogs.com/kidsitcn/p/4513297.html)
+[参考](https://www.cnblogs.com/kidsitcn/p/4513297.html)
 - 当你第一次[[checkout]]一个分支，HEAD，Index，Working Copy都相同
   - 特别注意，如[[head-detached]]时，[[checkout]]可能导致丢失！
-- 当你对一个文件执行一次修改（比如编辑器打两行字然后`Ctrl + S`保存），Git感知到了这个修改，并且说：“嘿，文件已经变更了！你的working copy不再和index,head相同！”，随后GIT标记这个文件是修改过的
+- 当你对一个文件执行一次修改（比如编辑器打两行字然后`Ctrl + S`保存），Git感知到了这个修改，并且说：“嘿，文件已经变更了！你的working copy不再和index, head相同！”，随后GIT标记这个文件是修改过的
     - 可以理解成`git`相当于比文本编辑器“高一层”，是“文件夹编辑器”
-    - 这里文件夹中“修改文件没保存”相当于文件中“文本没保存”
-- 然后，当你执行一个git add，它就stages the file in the index，并且GIT说：“嘿，OK，现在你的working copy和index区是相同的，但是他们和HEAD区是不同的！”
+    - 这里文件夹中“修改文件但没有`git add`到index”相当于文件中“文本没保存”
+- 然后，当你执行一个`git add`（即stage的一种），它就stages the file in the index，并且GIT说：“嘿，OK，现在你的working copy和index区是相同的，但是他们和HEAD区是不同的！”
     - 这里类比文本编辑器的按保存
-- 当你执行一个git commit,GIT就创建一个新的commit，随后HEAD就指向这个新的commit，而index,working copy的状态和HEAD就又完全匹配相同了，GIT又一次HAPPY了。
+- 当你执行一个git commit, GIT就创建一个新的commit，随后HEAD就指向这个新的commit，而index,working copy的状态和HEAD就又完全匹配相同了，GIT又一次HAPPY了
 - 以上都在本地进行。如果要远程，则再`pull`和`push`
   - 类比文本编辑器的传递上云盘
+  - 一般过程
+    - 先`pull`，发现别人和你修改了同样的一些文件，出现conflict
+    - 解决conflict，`git add`解决后的结果到index
+    - `push`结果到远程
+  - 注：用vscode集成的相关功能
+    - 如果没有任何index，按commit就同时对所有working copy中变了的文件做stage和commit，比较快捷方便
+    - 但如果有一些index，就只commit这部分。方便选择性做commit
