@@ -8,3 +8,4 @@
   - 常见模式
     - code是`/home`，data是`/DATA/disk1`（外接的TB级的硬盘）
     - code是`/`，data是`/home`（参考[[dual-boot-partition]]）
+- 有自己独占的就不要用和别人共用的。万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
