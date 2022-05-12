@@ -23,3 +23,7 @@ https://keybase.io/
 - 如果你电脑时间不对，需要联网同步时间，确保安全性。比如win10的![](keybase-sync-time.png)
 # 操作
 - 删除记录：有延迟，但你按过了删除的一定会被删掉（存疑todo）
+# teams
+- 相比微信群好处
+  - 拉进来直接看到所有历史
+  - 一个team有许多channel（通知、灌水etc）
