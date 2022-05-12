@@ -10,6 +10,7 @@
 - `"env"`: [[6-env]]环境变量
   - 一个用途：设置`PYTHONPATH`环境变量（参考[[sys-path]]），防止找不到包
   - 此处也可以使用`${workspaceFolder}`变量
+- `"logToFile": true`选项：[[logs]]中提到过
 ## `python -m`例子
 比如想要用`launch.json`中的一套配置去表示一个`python -m 某某`命令以方便复用，就可以
 - `Ctrl + Shift + D` - 左侧create a launch.json file - 上方Module - 输入文件名
