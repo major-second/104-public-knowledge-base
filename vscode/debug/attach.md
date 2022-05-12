@@ -16,7 +16,8 @@
             "processId": "${command:pickProcess}",
         }
 ```
-（如果你**把104-public-knowledge-base作为工作目录**打开，那么你应该已经可以使用这个库里现成的了，如图）
+- 还有些可用选项这里没展示，比如`justMyCode`，参考[[launch]]
+- 如果你**把104-public-knowledge-base作为工作目录**打开，那么你应该已经可以使用这个库里现成的`.json`了，如图
 ![](attach-json.png)
 - 直接`python`本目录下的`sample.py`，然后
   - 新开个终端`ps -ef | grep ...`到进程号
@@ -26,3 +27,4 @@
 - 如果你打好断点，那么一`F5`他就停在断点处
   - 并且有时会终端输出`The threading module was not imported by user code in the main thread. The debugger will attempt to work around https://bugs.python.org/issue37416.`
   - 所以说出现问题可以看看https://bugs.python.org/issue37416
+- 进阶应用：在你的python程序本身有子进程时，可以一边`watch 'ps -ef ...'`，一边运行脚本，看到想要的进程就开始attach

@@ -5,7 +5,7 @@
   - 例如`"cwd": "${workspaceFolder}/anticipation"`，就不在项目根目录运行
 - 参数（各种`--<参数名> <参数内容>`之类的。这样就不用每次重新复制长串命令）
   - 例如`--id 1 --learning-rate 0.0001`，对应的要写成`["--id", "1", "--learning-rate", "0.0001"]`
-- `"justMyCode": false`：逐步进第三方库
+- `"justMyCode": false`：逐步运行进第三方库
 - `"python"`: 指定python解释器（可以结合`which`命令快速找到解释器）
 - `"env"`: [[6-env]]环境变量
   - 一个用途：设置`PYTHONPATH`环境变量（参考[[sys-path]]），防止找不到包

@@ -8,6 +8,7 @@
 - 再继续跟着教程了解一下管理flow用的console
 - 结果：
   - 得到我们的第一个flow
-    - 例如：阻止微软[[auto-update]]![](prevent-update.png)
+    - 例如：阻止微软[[prevent-auto-update]]![](prevent-update.png)
+    - 当然，这其实也就图个乐，因为这样做其实没法阻止它每隔35天强制更新。参考[[prevent-auto-update]]
   - 通过教程，简单理解了Power Automate的基本概念和用法
 - 之后你可以保存它到线上（**不能到本地**），之后联网时就可复用它（第一次下载可能会比较慢）
