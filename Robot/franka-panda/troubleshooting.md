@@ -7,9 +7,8 @@
 - 如果`communication_constraints_violation`那么
   - 可能是通信问题，[参考这个](https://frankaemika.github.io/docs/troubleshooting.html#motion-stopped-due-to-discontinuities-or-communication-constraints-violation)提升CPU，网络性能等
     - 并且换个好的网线！实践证明好的网线可能让`ping`延迟直接变为三分之一
-    - [官网说](https://frankaemika.github.io/docs/troubleshooting.html#simple-ping-tests)`ping`延迟1ms以下就行。但实践证明需要0.2ms左右，否则`communication_test`无法运行
-  - 可能是物理原因导致的`reflex`错误（提示信息会写），[参考](https://frankaemika.github.io/docs/libfranka.html#errors)可能解决
-  - 注：这种报错有时甚至会导致之后各种让机械臂运动的命令都用不了，连软件recovery也没用，[[fci]]的`communication_test`一直提示`libfranka: Set Joint Impedance command rejected: command not possible in the current mode!`，这时必须手动白灯再蓝灯（哈哈，于是联系了下一条）
+    - [官网说](https://frankaemika.github.io/docs/troubleshooting.html#simple-ping-tests)`ping`延迟1ms以下就行。**但实践证明需要0.2ms左右**，否则`communication_test`无法运行
+  - 可能是物理原因导致的`reflex`错误（提示信息会写），[参考这个](https://frankaemika.github.io/docs/libfranka.html#errors)可能解决
+  - 注：这种报错有时甚至会导致之后各种让机械臂运动的命令都用不了，连软件recovery也没用，[[fci]]的`communication_test`一直提示`libfranka: Set Joint Impedance command rejected: command not possible in the current mode!`，这时必须手动白灯再蓝灯（哈哈，于是联系了下一条troubleshooting）
 - 白灯再蓝灯后，[[moveit-real-robot]]的`roslaunch`命令需要重新启动
-- 到了诡异的位置，可能需要白灯，复位到合理位置，再蓝灯
-  - 红灯重启时可能也需要白灯复位到合理位置
+- 红灯重启时可能也需要手动白灯复位到合理位置
