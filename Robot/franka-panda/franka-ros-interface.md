@@ -34,6 +34,25 @@
     - 然后在`py2.7`环境跑这个文件夹的`moveit_python/franka_ros_interface_keyboard.py`之类的
 - 进一步懒人包
   - `pip install panda-robot`，[github页面](https://github.com/justagist/panda_robot)
-  - 然后直接逐行运行官网命令都行
+  - 然后直接逐行运行官网命令都行（当然前提也是上一节的`roslaunch`）
     - 没`scipy numba`则会警告精确度下降。不过可以先不管
   - 这个运动速度有点快。需要注意安全
+```python
+>> python # or `python3` # start interactive python session; make sure the correct ros workspace is sourced.
+>> import rospy
+>> from panda_robot import PandaArm
+>> rospy.init_node("panda_demo") # initialise ros node
+
+>> r = PandaArm() # create PandaArm instance
+
+>> r.move_to_neutral() # moves robot to neutral pose; uses moveit if available, else JointTrajectory action client
+
+>> pos,ori = r.ee_pose() # get current end-effector pose (3d position and orientation quaternion of end-effector frame in base frame)
+
+>> r.get_gripper().home_joints() # homes gripper joints
+>> r.get_gripper().open() # open gripper
+
+>> r.move_to_joint_position([-8.48556818e-02, -8.88127666e-02, -6.59622769e-01, -1.57569726e+00, -4.82374882e-04,  2.15975946e+00,  4.36766917e-01]) # move robot to the specified pose
+
+>> r.move_to_cartesian_pose(pos,ori) # move the robot end-effector to pose specified by 'pos','ori'
+```
