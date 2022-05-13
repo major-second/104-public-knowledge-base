@@ -13,6 +13,9 @@
     - 所以`move_group_python_interface_tutorial.py`中，`publish`出计划再`execute`当然能提高安全性：你先看看对不对劲，有没有“大回环”！
   - 对于真机，最好直接执行目前（`franka-panda`）文件夹下比较安全的`moveit-python/minimum_example*.py`
     - 而且不妨先在虚拟中看效果！并虚拟中比较两个`.py`的区别！
+    - 上了真机，`moveit-python/minimum_example*.py`也更安全，一个是速度慢，一个是有预览traj
+    - 不过这个预览traj可能和实际traj未必一样。只能做参考
+    - 但是话又说回来实际动之前也有一个快速预览，如果你现在速度足够慢，就可以看这个预览捏手刹
 - 注：`set_max_velocity*`（限速）函数我们怎么找到的？参考[[find-grep]]
   - `cd /opt/ros/melodic`
   - `find . -type f -name "*.py" -print0 | xargs -0 grep set_max_velocity`
