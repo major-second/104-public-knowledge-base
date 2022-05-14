@@ -6,14 +6,12 @@ type: tools
 [toc]
 # 把pytorch当高级计算器使用
 前置：
-- [[python基础]]
 - 有 #GPU
-- 已经安装好 #CUDA , #pytorch 等
-  - 当然可以不在本地安装，而直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
+- [[pytorch/installation]]
+  - 当然可以不在本机安装，而直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
 
-==本篇撰写时间为2021.12.21，由于计算机技术日新月异，库中许多内容都有时效和版本限制，具体做法不一定总行得通，链接可能改动失效，各种软件的用法可能有修改。但是其中透露的思想往往是值得学习的。==
 ## pytorch初体验
-假设已经在linux环境安装好了pytorch（例如使用[[深度学习镜像deepo]]）
+[[pytorch/installation]]完了之后就可以（你的版本可能不同）
 ```sh
 $ python
 >>> import torch
@@ -29,10 +27,18 @@ https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html
 
 - 常见构造方法：
   - 来自其它对象。例如`list`（这个效率低下），`numpy`数组，其它tensor，等等。总之就是`torch.tensor(<对象>)`
-  - `torch.ones_like`，`torch.zeros_like`，`torch.zeros`等（**形状来自实参，内容根据函数名确定**。另可指定数据类型`dtype=`）
+    - 注：反向操作：`my_tensor.cpu().numpy()`把GPU张量变成numpy数组
+  - `torch.ones_like`，`torch.zeros_like`，`torch.zeros`等
+    - 形状来自实参，内容根据函数名确定
     - 注意有没有`like`是不一样的。有`like`的生成张量和实参的大小相同，而没有`like`的实参是直接写大小是多少（比如`(2,2)`这种就表示2*2）
-- 张量的常见属性：`dtype`数据类型，`shape`形状，`device`所处设备（CPU，还是第几号GPU等）
+    - 另可指定数据类型`dtype=某`
+    - 常见坑：直接`tensor(0)`，0后面没有小数点，当然是整型
+- 张量的常见属性
+  - `dtype`数据类型
+  - `shape`形状
+  - `device`所处设备（CPU，还是第几号GPU等）
   - 这些属性直接用`<变量名>.shape`这样取用即可
+  - 更详见[[device]]
 
 举例
 ```python
@@ -51,7 +57,9 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: zeros(): argument 'size' (position 1) must be tuple of ints, not Tensor
 ```
-注意`size`类型和`tensor`类型是不同的。这一点是一个良好 #规范的设计 （洗脸布和擦脚布分开。同一种数据结构不同“本质”的不放到一个类）
+注意`size`类型和`tensor`类型是不同的
+- 这一点是一个良好规范的设计
+- “洗脸布和擦脚布分开”，同一种数据结构不同“本质”的不放到一个类
 ## 当成高级计算器
 ```python
 >>> mat_A = torch.tensor(([1,2],[3,4.]))
