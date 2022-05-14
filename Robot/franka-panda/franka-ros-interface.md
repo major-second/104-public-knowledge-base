@@ -27,16 +27,20 @@
   - 之后也在`bash`运行这个包相关的东西（比如`bash`运行`./franka.sh master`）
   - 运行后效果是这样的，`bash`多东西![](franka-ros-interface-bash.png)
 - 简要用法
-  - 一个有`[franka <Master> - Robot@172.16.0.2]`这种东西的终端`roslaunch franka_interface interface.launch`
-  - 另一个（可以是普通）终端直接跑`python`脚本即可比如
+  - 一个有`[franka <Master> - Robot@172.16.0.2]`这种东西（且处于`python2.7`）的终端
+  - `roslaunch franka_interface interface.launch`
+  - 另一个（可以是普通）终端直接跑`python2.7`脚本即可比如：
     - `sudo apt install ros-melodic-rospy-message-converter`之后
-      - （[参考](https://github.com/uos/rospy_message_converter/issues/25)这个：不要用`pip`装）
-    - 然后在`py2.7`环境跑这个文件夹的`moveit_python/franka_ros_interface_keyboard.py`之类的
+      - （[参考这个](https://github.com/uos/rospy_message_converter/issues/25)：不要用`pip`装）
+    - 在`py2.7`环境跑这个文件夹的`moveit_python/franka_ros_interface_keyboard.py`
 - 进一步懒人包
   - `pip install panda-robot`，[github页面](https://github.com/justagist/panda_robot)
-  - 然后直接逐行运行官网命令都行（当然前提也是上一节的`roslaunch`）
-    - 没`scipy numba`则会警告精确度下降。不过可以先不管
+  - 然后直接逐行运行官网命令都行（当然前提也是上一节的`roslaunch`那个终端。所以这里的`python`是在第二个终端）
+    - 此处没`scipy numba`则会警告精确度下降。不过可以先不管
   - 这个运动速度有点快。需要注意安全
+    - 可以[文档](https://projects.saifsidhik.page/panda_robot/DOC.html)上全文搜索`velocity`找到：
+    - 只需`<PandaArm对象>.set_joint_position_speed(0.05)`（数字可变）即可设置最高速的比例
+  - `<PandaArm对象>.enable_robot`：出错了恢复，能恢复一部分错（参考[[troubleshooting]]）
 ```python
 >> python # or `python3` # start interactive python session; make sure the correct ros workspace is sourced.
 >> import rospy
