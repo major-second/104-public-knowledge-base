@@ -52,7 +52,7 @@ if __name__ == '__main__':
     planning_frame = move_group.get_planning_frame()
     eef_link = move_group.get_end_effector_link()
     group_names = robot.get_group_names()
-    raw_input()
+    raw_input("Move to the initial point.")
 
     joint_goal = move_group.get_current_joint_values()
     joint_goal[0] = 0
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     move_group.stop()
     current_joints = move_group.get_current_joint_values()
     print all_close(joint_goal, current_joints, 0.01)
-    raw_input()
+    raw_input("Show the cartesian goal.")
 
     pose_goal = geometry_msgs.msg.Pose()
     pose_goal.orientation.w = 1.0
@@ -74,7 +74,7 @@ if __name__ == '__main__':
     pose_goal.position.y = 0.1
     pose_goal.position.z = 0.4
     print pose_goal
-    raw_input()
+    raw_input("Show the planned trajectory in Moveit.")
 
     (plan, fraction) = move_group.compute_cartesian_path(
                                        [pose_goal],   # waypoints to follow
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     display_trajectory.trajectory_start = robot.get_current_state()
     display_trajectory.trajectory.append(plan)
     display_trajectory_publisher.publish(display_trajectory)
-    raw_input()
+    raw_input("Slowly move to the point according to the trajectory.")
 
     move_group.set_pose_target(pose_goal)
     move_group.go(wait=True)
@@ -93,7 +93,7 @@ if __name__ == '__main__':
     move_group.clear_pose_targets()
     current_pose = move_group.get_current_pose().pose
     print all_close(pose_goal, current_pose, 0.01)
-    raw_input()
+    raw_input("Complete.")
   except rospy.ROSInterruptException:
     exit()
   except KeyboardInterrupt:
