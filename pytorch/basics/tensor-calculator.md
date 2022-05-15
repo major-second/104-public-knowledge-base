@@ -1,17 +1,13 @@
----
-title: 把pytorch当高级计算器使用
-type: tools
----
-
 [toc]
 # 把pytorch当高级计算器使用
 前置：
 - 有 #GPU
-- [[pytorch/installation]]
-  - 当然可以不在本机安装，而直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
+  - 或者使用在线的，[比如微软](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/)
+- [[pytorch/basics/installation]]
+  - 当然，也可直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
 
 ## pytorch初体验
-[[pytorch/installation]]完了之后就可以（你的版本可能不同）
+[[pytorch/basics/installation]]完了之后就可以（你的版本可能不同）
 ```sh
 $ python
 >>> import torch
@@ -19,7 +15,7 @@ $ python
 '1.9.0+cu102'
 ```
 本篇对pytorch的计算功能做简单上手
-不涉及神经网络的训练，只是把pytorch当成高级计算器，即只涉及正问题，不涉及反问题。
+不涉及神经网络的训练，只是把pytorch当成高级计算器，即只涉及正问题，不涉及反问题
 ## 获得张量（tensors）
 来到官网教程tensors一节
 https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html

@@ -24,8 +24,9 @@ cat ~/.ssh/id_ed25519.pub # 最后那里ssh-ed开头的就是要复制的
 - github - 右上角头像 - Settings - 左侧SSH and GPG keys - New SSH key
 - 把内容粘贴进文本框并确认（Title可以自定）
 - 确认完密码之后，发现我们多了一个SSH key，之后就可以`git clone`需要`ssh`验证的东西了
-
+  - 可以`ssh git@github.com`简单验证
 ## Troubleshooting
-- 若出现ED25519 key fingerprint提示，说明需要创建的是ED25519密钥，其他密钥不行！
-- 如果做了所有步骤，github访问仍提示无法验证，先检查ssh agent是否打开！
+- 对于github，需要创建的是`ed25519`密钥，其他密钥不行！
+  - [[other-hubs]]可能不同
+- 如果做了所有步骤，github访问仍提示无法验证，linux请先检查ssh agent是否打开！
     - 输入`eval "$(ssh-agent -s)"`即可

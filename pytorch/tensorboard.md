@@ -21,4 +21,5 @@ writer.close()
   - 但是可以`A`直接[[ssh连接docker容器]]`C`并使用`ssh -L`转发端口到`A`
 - 用完即时清空文件，并停下`tensorboard`命令，免得下次用造成混乱
 - issue: 如果装了多个版本可能报错duplicate啥的，参考[这个](https://stackoverflow.com/questions/57228487/valueerror-duplicate-plugins-for-name-projector)解决
-- #vscode 集成：`Ctrl + Shift + P`然后`Python: Launch TensorBoard`. 可以自动搜索所有子文件夹中的记录，并启动网页
+- #vscode 集成：`Ctrl + Shift + P`然后`Python: Launch TensorBoard`
+  - 可以自动搜索所有子文件夹中的记录，并启动网页

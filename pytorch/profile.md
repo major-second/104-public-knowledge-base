@@ -31,7 +31,7 @@ $ python
 此时各种东西被记录到`prof`中了
 可以尝试`print(prof.key_averages().table())`
 可以看到计时
-![](profile-images/first-trial.png)
+![](first-trial.png)
 ## GPU对时间的影响
 ### 负面例子
 - 为了实验可靠性，我们需要重复足够多次，让大数定律导致实验结果相对可复现（下面的10000要是改成100你就发现随机因素太大了）
@@ -54,8 +54,8 @@ with torch.profiler.profile(
 print(p.key_averages().table())
 ```
 - 对于10000次，可以看到大数定律加持下还是相当稳定的
-![](profile-images/cpu-tensor-calculation.png)
-	- 注：以上三条代码在有GPU的情况下，**第一次运算时会慢很多**，涉及到CUDA的初始化等。之后就正常了（“正常”即这个![](profile-images/normal-execution.png)几乎没占时间）
+![](cpu-tensor-calculation.png)
+	- 注：以上三条代码在有GPU的情况下，**第一次运算时会慢很多**，涉及到CUDA的初始化等。之后就正常了（“正常”即这个![](normal-execution.png)几乎没占时间）
 	- 注：其中`activities`表示记录CPU也记录CUDA的运算。但是目前全是CPU运算
 	- 注：官网https://pytorch.org/docs/stable/profiler.html#torch-profiler
 有详细说明
@@ -80,7 +80,7 @@ with torch.profiler.profile(
 print(p.key_averages().table())
 ```
 - 仍然是10000次，仍然忽略第一次运行这些代码的结果，我们看到
-![](profile-images/gpu-tensor-calculation.png)
+![](gpu-tensor-calculation.png)
 CUDA计算本身很快，但各种辅助的CPU操作反而使得计算结果变慢了
 ### 正面例子
 ```python
