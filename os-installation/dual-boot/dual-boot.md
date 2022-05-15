@@ -2,7 +2,7 @@
 title: Windows+Ubuntu双系统安装
 type: operations
 ---
-- 前置：[[bit-locker]]（必须看！否则可能数据丢失）
+- 前置：[[risk]]必须了解！
 
 本篇是基于Win10装Ubuntu18.04. 其它系统安装中，有些操作是类似的。
 # Windows+Ubuntu双系统安装
@@ -21,7 +21,7 @@ tags: #双系统 #Linux #Windows10
 反之，默认boot为windows则不方便切换至ubuntu
 ## Troubleshooting
 1. 在“安装类型”步骤出错：安装类型列表为空，如图。
-   ![](./dual-boot/installation-type.jpg)(图片来自网络)
+   ![](./installation-type.jpg)(图片来自网络)
    1. [参考资料](https://blog.csdn.net/weixin_43644231/article/details/105944192)
 在BIOS中将SATA Controller Mode设置为AHCI模式。
    2. 之后为保证Windows系统能够运行，使用安全模式运行一次Windows系统，并重启，切换回ubuntu.
