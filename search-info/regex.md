@@ -5,5 +5,7 @@ https://www.runoob.com/regexp/regexp-syntax.html
 - 只看后4张卡占用：`grep '[4-7]\s\+T'`
 
 使用
-- [[find-grep]]中用，比如`nvidia-smi | grep '[4-7]\s\+T'`（注意双引号）
+- [[find-grep]]中用，比如
+  - `nvidia-smi | grep '[4-7]\s\+T'`
+  - `du -h | grep '[0-9]G\s'`
 - vscode全文搜索，看最右侧按钮![](vscode-regex.png)
