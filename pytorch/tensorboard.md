@@ -1,5 +1,5 @@
 前置：
-- [[train-network]]
+- todo
 
 tensorboard本来是用于tensorflow的可视化，但也可以用于pytorch
 [官方教程](https://pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html)

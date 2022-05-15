@@ -1,8 +1,6 @@
 [toc]
 # 把pytorch当高级计算器使用
 前置：
-- 有 #GPU
-  - 或者使用在线的，[比如微软](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/)
 - [[pytorch/basics/installation]]
   - 当然，也可直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
 
@@ -29,8 +27,15 @@ https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html
     - 注意有没有`like`是不一样的。有`like`的生成张量和实参的大小相同，而没有`like`的实参是直接写大小是多少（比如`(2,2)`这种就表示2*2）
     - 另可指定数据类型`dtype=某`
     - 常见坑：直接`tensor(0)`，0后面没有小数点，当然是整型
+  - `torch.from_numpy`：特点是和numpy可共享内存
 - 张量的常见属性
   - `dtype`数据类型
+    - `torch.float64`和`torch.float32`是不同的类型
+    - 你可以
+      - `torch.tensor(1, dtype=torch.float)`试试结果`dtype`是啥
+      - `torch.tensor(1, dtype=float)`试试结果`dtype`是啥
+      - 再`torch.tensor(1.)`看看是啥
+      - 不一定一样哦
   - `shape`形状
   - `device`所处设备（CPU，还是第几号GPU等）
   - 这些属性直接用`<变量名>.shape`这样取用即可
