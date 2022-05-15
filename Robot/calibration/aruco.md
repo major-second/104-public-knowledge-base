@@ -1,7 +1,7 @@
 前置：
 - ros中使用相机，即[[realsense-ros]]，[[usb-camera-ros]]等中一个
 - 了解[[roslaunch]]修改和传递参数
-- 打印机（todo）
+- 打印机
 
 fiducial markers是什么？[维基](https://en.wikipedia.org/wiki/Fiducial_marker)
 ArUco就是一种fiducial marker
@@ -23,12 +23,21 @@ ArUco就是一种fiducial marker
   - 注意`grep`区分大小写
   - 最后显然不要用源码`/src`里的，要用`/usr/local/lib`里的
 
+实体准备
+- 下一节所说`single.launch`里能看到id为582，所以我们去https://chev.me/arucogen/
+- ![](aruco-582.png)
+- 100mm对应0.1m，在`single.launch`中需要改
+- 点下方open打印成pdf
+  - pdf再去打印机打印。注意不能缩放，完了之后要确认大小对不对
+
 使用
 - `roscd aruco_ros/launch`，`vim single.launch`
 - 启动相机（比如[[realsense-ros]]）
-  - `rostopic`找话题，填到`launch`文件中相应地方
-  - 先找`/camera_info`和`/image`
+- `rostopic`找相机相关的两个话题，填到`launch`文件中相应地方
+  - 找`/camera_info`和`/image`
   - 如果你找不着`rect`的topic，可能还要改`image_is_rectified`为`False`
-  - （py2环境）`rosrun rqt_tf_tree rqt_tf_tree`，知道`camera_frame`，`reference_frame`参数应该填`camera_color_optical_frame`（因为这是单目相机）
+- （py2环境）`rosrun rqt_tf_tree rqt_tf_tree`
+  - 看图，知道`camera_frame`，`reference_frame`参数应该填`camera_color_optical_frame`（因为这是单目相机）
   - 注意这里是最简单的setting：标定一个marker相对相机位置cd
+- 根据上一节“实体准备”填写id和大小（注意单位是m）
 - `rqt_image_view`看效果
