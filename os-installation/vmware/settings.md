@@ -7,5 +7,5 @@
 - 比如扩充硬盘空间
   - 扩充完，多了unallocated状态的空间
   - 得进操作系统去划分、利用才能实际用到
-  - 在[[dual-boot-partition]]中也有讲到![](setting-harddisk.png)
+  - 在[[partition]]中也有讲到![](setting-harddisk.png)
 - 比如[[network]]

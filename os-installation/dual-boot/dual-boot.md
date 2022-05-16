@@ -10,14 +10,14 @@ type: operations
 参考资料：https://www.cnblogs.com/xlpc/p/12324535.html
 tags: #双系统 #Linux #Windows10
 
-1. 参考[[dual-boot-partition]]在Win10中重分区
+1. 参考[[partition]]在Win10中重分区
 2. `Win+R`，输入`msinfo32`并运行，看到BIOS模式
    新电脑基本都是UEFI. 以下都针对UEFI
 3. [[制作U盘启动盘]]
 4. 插入U盘启动盘，重启电脑[[进入BIOS]]，在boot manager里将secure boot设置为disabled，并选择boot设备为U盘，保存退出
    1. 注：由于机器型号不同，选择boot设备为U盘的具体操作可能不同。有的是调整优先级使得U盘排第一，有的是直接选择U盘。
-5. 进入ubuntu安装界面。一步步按照指示进行。其中分区参考[[dual-boot-partition]]
-6. （可选）如果按照[[dual-boot-partition]]顺利做了设置使得windows boot manager和ubuntu的boot在同一块盘，则之后boot始终让ubuntu优先级最高就非常方便。每次开机的时候只需上下键选择即可切换ubuntu和windows
+5. 进入ubuntu安装界面。一步步按照指示进行。其中分区参考[[partition]]
+6. （可选）如果按照[[partition]]顺利做了设置使得windows boot manager和ubuntu的boot在同一块盘，则之后boot始终让ubuntu优先级最高就非常方便。每次开机的时候只需上下键选择即可切换ubuntu和windows
 反之，默认boot为windows则不方便切换至ubuntu
 ## Troubleshooting
 1. 在“安装类型”步骤出错：安装类型列表为空，如图。
