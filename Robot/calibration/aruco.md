@@ -26,9 +26,12 @@ ArUco就是一种fiducial marker
 实体准备
 - 下一节所说`single.launch`里能看到id为582，所以我们去https://chev.me/arucogen/
 - ![](aruco-582.png)
-- 100mm对应0.1m，在`single.launch`中需要改
+- 如果选择默认的100mm，对应0.1m，在`single.launch`中需要改
+  - 当然也可选择其它id和大小，相应改即可
 - 点下方open打印成pdf
   - pdf再去打印机打印。注意不能缩放，完了之后要确认大小对不对
+  - 对的：![](aruco-original-size.jpg)
+  - 不对的：![](aruco-zoomed.jpg)
 
 使用
 - `roscd aruco_ros/launch`，`vim single.launch`
