@@ -17,4 +17,6 @@
 - 其它`grep`用法
   - `-C`看上下文（比如[[fsck]]的emergency mode中救命，可关键了）
   - 使用[[regex]]
-    - 比如`nvidia-smi | grep '[4-7]\s\+T'`只看后4张卡（注意引号）
+    - 比如`nvidia-smi | grep '[4-7]\s\+T'`只看后4张卡
+      - 注意引号
+    - 比如`du -h | grep '[0-9]G\s'`只看较大的文件夹

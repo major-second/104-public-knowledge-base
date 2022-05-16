@@ -30,3 +30,5 @@ export http_proxy="localhost:<端口号>"
   - `www.google.com`看能不能上
 - `cip.cc`好处是中文且墙内较快
 - `cip.cc`有时用不了，就试试`ipinfo.io`呗
+# 读取自己设置的软件
+有些软件读取自己设置而非系统设置。参考[[cmake]]
