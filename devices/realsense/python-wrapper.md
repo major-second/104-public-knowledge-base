@@ -38,4 +38,4 @@ https://github.com/IntelRealSense/librealsense/blob/master/wrappers/python/examp
   - 直接输出`.ply`（是特殊文本文件）
   - 注意拷过来才能用（否则在`/usr/local`这种地方可能没权限）
     - 这个玩意没权限也不报错，太屑了
-    - 这又是[[primitive-operations]]的例子
+    - 这又是[[leaky-abstraction]]的例子

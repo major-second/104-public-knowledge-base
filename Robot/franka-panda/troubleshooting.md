@@ -3,7 +3,7 @@
   - 尽量不要手动动gripper
 - [[moveit-real-robot]]的命令无法运行时，可以看[[fci]]的`communication_test`怎么样，再进一步看`ping <fci-ip>`延迟是否压到0.2ms左右，还能用[[control-using-desk]]看看情况
   - 逐级排查！看问题到底出在哪
-  - 这是[[primitive-operations]]的思想
+  - 这是[[leaky-abstraction]]的思想
 - 如果`communication_constraints_violation`那么
   - 可能是通信问题，[参考这个](https://frankaemika.github.io/docs/troubleshooting.html#motion-stopped-due-to-discontinuities-or-communication-constraints-violation)提升CPU，网络性能等
     - 并且换个好的网线！实践证明好的网线可能让`ping`延迟直接变为三分之一
