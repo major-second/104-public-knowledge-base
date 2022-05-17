@@ -1,7 +1,7 @@
-前置：[[禁用nouveau]]，[[timeshift备份镜像]]
+前置：[[禁用nouveau]]，[[timeshift]]
 
 - 选择版本
-  - nvidia大屑，官方推荐可能不对（可能黑屏），务必[[timeshift备份镜像]]！
+  - nvidia大屑，官方推荐可能不对（可能黑屏），务必[[timeshift]]备份
   - 反而
 `sudo apt install ubuntu-drivers-common`
 `ubuntu-drivers devices`

@@ -1,10 +1,11 @@
 表象会迷惑你233
 - 比如[[primitive-operations]]提到的没有把底层报错给出
 - 比如进度条
-  - [[timeshift备份镜像]]时会在0%狂卡，一旦开始就走的不慢
+  - [[timeshift]]时会在0%狂卡，一旦开始就走的不慢
   - git按文件个数来计算进度，所以可能某个百分点卡很久，一过去就巨快
     - 真正的原因是git本来就是为了同步一堆小文件，而不是存储大文件，参考[[push-eliminate-big-files]]
+  - [[timeshift]]备份时，乃至[[cp-mv-rm]]等时，文件大小和文件数量显然也都是重要影响因素
 - 比如报错信息
   - `make`时多线程，可能导致真正错误信息被埋起来
   - 很多时候最后输出的不是本质的错误，而只是一些警告。一个示例：[[recipe]]中博客中提到的`-pdf`选项在某次`xelatex`更新后，不需要加了，但加了只是报个警告。有的时候会看到它在最后，但它并不essential
-- 一个有意思的例子：[[linux-software/v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`
+- 一个有意思的例子：[[v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`

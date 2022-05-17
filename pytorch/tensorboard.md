@@ -23,3 +23,7 @@ writer.close()
 - issue: 如果装了多个版本可能报错duplicate啥的，参考[这个](https://stackoverflow.com/questions/57228487/valueerror-duplicate-plugins-for-name-projector)解决
 - #vscode 集成：`Ctrl + Shift + P`然后`Python: Launch TensorBoard`
   - 可以自动搜索所有子文件夹中的记录，并启动网页
+- 网页中操作
+  - 可以自动以一定时间间隔reload
+  - `Alt`+滚轮缩放，`Alt`+拖拽移动
+  - 普通拖个框：看框里的
