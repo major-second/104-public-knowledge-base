@@ -1,3 +1,35 @@
+## 总述
+- File - Preferences - Keyboard Shortcuts看列表（快捷键`Ctrl+K Ctrl+S`）
+  - 此处
+    - 可以搜索
+    - 查看命令对应快捷键
+    - 设置快捷键
+    - 删除已有的
+    - 可以看到自定义了的快捷键但看不到已经删除Default的
+  - 但![](keybindings-json.png)这个右侧按钮看`json`可以看所有自己修改过的
+  - 比如一个例子
+```json
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "git.viewHistory"
+    },
+    {
+        "key": "ctrl+shift+alt+t",
+        "command": "python.launchTensorBoard"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    }
+]
+```
+这里`Ctrl+B`是为了防止和[[tmux]]冲突
+- `Ctrl+K`后接别的键的快捷键称为chor
+  - 如果接的是单字母，那么在中文输入法或者只读编辑窗口会用不了。比如`Ctrl+K U`关闭所有已保存的标签
+  - 所以不妨把这类快捷键自定义修改了
+- `Ctrl+Alt+Shift`一起按的往往都给你留着了
 ## 调试相关
 - `Ctrl + Shift + D`到调试面板
   - 此时默认在左上角绿色播放按钮处。可以按右键，再按上下键，调整使用的`launch`设置，然后直接`F5`（纯键盘操作，爽！）

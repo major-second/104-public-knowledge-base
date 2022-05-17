@@ -2,10 +2,12 @@
     - 注意，工作空间（文件夹的`.vscode`子文件夹下）的设置`.json`会覆盖“通用”的。例如foam默认的`Paste Image`路径是`attachments`
 - 当然，也有图形界面。例如插件右键 - Extension Settings. 下面说的设置项很多在图形界面也容易找到。
 - 一些用到了的设置项：
+    - `"editor.wordWrap": "on"`打开自动换行
+      - 可能需要删除`"editor.accessibilitySupport": "on"`才能用
+    - `"terminal.integrated.defaultProfile.linux"`调整linux环境中默认用什么终端
     - `"git.terminalAuthentication": false`去除自动Authentication
       - 当然，这样就导致每次都要输入账号和[[personal-access-tokens]]
       - 如果自动的Authentication不符合要求（比如不是你要的账号等等），当然就要如此去除
-    - `"terminal.integrated.defaultProfile.linux"`调整linux环境中默认用什么终端
     - `"pasteImage.path"`调整用`pasteImage`插件时默认粘贴到哪（比较方便的：`${currentFileDir}`），参考[[paste-images-from-clipboard]]
     - `"pasteImage.defaultName"`调整名称。比如`"hhmm"`可以使得你修改时按一下`Ctrl+Backspace`就能删掉，相比原来的有`-`的默认名方便很多
       - 参考[[built-in-keyboard-shortcuts-editting]]中关于`Ctrl`的部分
