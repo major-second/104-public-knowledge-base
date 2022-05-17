@@ -1,0 +1,4 @@
+- 从traj学出reward funciton是个[[ill-posed-setting]]，怎么办呢？
+  - 之前的方法：利用prior，maximize the margin等
+  - [[maximum-entropy-irl]]
+  - [[relative-entropy-irl]]

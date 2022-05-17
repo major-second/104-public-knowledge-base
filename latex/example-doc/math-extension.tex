@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bussproofs}
+
+\title{Example}
+\author{You}
+\date{Today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\begin{prooftree}
+    \AxiomC{$\phi$}
+    \AxiomC{$\psi$}
+    \LeftLabel{(a)}
+    \RightLabel{($\wedge$I)}
+    \BinaryInfC{$( \phi \wedge \psi )$}
+    \RightLabel{($\wedge$E)}
+    \UnaryInfC{$\phi$}
+\end{prooftree}
+\end{document}

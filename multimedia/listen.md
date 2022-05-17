@@ -1,0 +1,5 @@
+- 参考[[sound-devices]]：开始菜单Sound settings，设置输入设备为麦克风
+- 在刚刚选择的下面一点找到Device properties
+- 进去右侧Additional device properties，这个图中选择侦听![](listen.png)
+- 如果你选择了扬声器，那么麦克风收到的音自动在扬声器中播放
+- 当然没有声卡等设备，延迟可能非常感人2333

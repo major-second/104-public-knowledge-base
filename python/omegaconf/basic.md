@@ -1,0 +1,21 @@
+https://omegaconf.readthedocs.io/en/2.1_branch/index.html
+- 初始
+  - 安装`pip install omegaconf`
+  - `from omegaconf import OmegaConf`
+- 输入
+  - `.create()`: 可以输入
+    - 空
+    - 字典
+    - 表
+    - 嵌套结构
+    - yaml字符串
+  - `.load()`yaml文件名（或文件对象）
+  - `.from_dotlist()`: dotlist就是扁平化的树
+  - `.from_cli()`: 使用`k=v`格式的参数，参考[[simulate]]来模拟
+    - `k`中可以有`.`表示层级
+    - 注意转义。比如你需要单引号（如下面所述），那么命令行中就要`\'`
+- 支持类型：`str, int, bool, float`和[[enum]]
+  - 注意`str`类型的作用：日期`0301`，你要是不加引号，就变成了`193`了（八进制）
+- `.to_yaml()`: 序列化成yaml！
+- `.merge()`合并
+- `???`表示必须填（mandatory）

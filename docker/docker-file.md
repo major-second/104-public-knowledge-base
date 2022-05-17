@@ -1,6 +1,6 @@
 基础：https://zhuanlan.zhihu.com/p/114033550
 使用环境变量和参数：https://www.jianshu.com/p/ae634ffb21ff
-并参考[[env-var]]
+并参考[[docker/env-var]]
 ## `SHELL`命令
 用于改变`RUN`用的是什么SHELL，以及是否`--login`
 其中使用`SHELL ["/bin/bash", "--login", "-c"]`前

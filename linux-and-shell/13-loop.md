@@ -54,6 +54,8 @@ $ for var in `cat 1`; do echo $var; done
   - 有趣的是：`echo $IFS`一定输出全空，你需要`echo "$IFS"`做验证！
 - 使用通配符的例子：`for file in /home/<用户名>/test/*.a /home/<用户名>/newtest/*.b`（可以“多个”目录通配符）
   - 文件名可以有空格，所以后续处理时需要`"$file"`
+- 实用示例：结合[[find-grep]]对所有某类型文件做处理。比如对所有视频统一做某些处理（参考[[ffmpeg]]）
+`for CLIP in $(find data/long_term_anticipation/clips_hq -name "*.mp4"); do ffmpeg -y -i $CLIP -c:v libx264 -crf 28 -vf "scale=320:320:force_original_aspect_ratio=increase,pad='iw+mod(iw,2)':'ih+mod(ih,2)'" -an data/long_term_anticipation/clips/$(basename $CLIP); done`
 ## 13.2 C语言风格的`for`命令
 C语言的`for`命令:
 ```C

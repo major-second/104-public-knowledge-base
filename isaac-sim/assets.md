@@ -1,7 +1,7 @@
 [toc]
 # Adding Sample Assets
 前置：
-- [[installation]]
+- [[isaac-sim/installation]]
 
 按照[指示](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/setup.html#adding-sample-assets)做即可。
 - 其中要求你访问[8080端口](http://localhost:8080/)

@@ -1,0 +1,27 @@
+{
+    "Insert Figure": {
+        "prefix": "FIG",
+        "body": "\\begin{figure}[htbp]\n  \\centering\n  \\includegraphics[width=$1\\textwidth]{$2}\n  \\caption{$0}\n  \\label{fig:$3}\n\\end{figure}",
+        "description": "Insert a figure"
+    },
+    "Insert Table": {
+        "prefix": "TAB",
+        "body": "\\begin{table}\n\\begin{tabular}{$1}\n  \\toprule\n  $2\\\\\n  \\midrule\n  $0\\\\\n  \\\\\n  \\bottomrule\n\\end{tabular}\n\\caption{$3}\n\\label{tab:$4}\n\\end{table}",
+        "description": "Insert a table"
+    },
+    "Insert Multi-row Subgrid": {
+        "prefix": "MUL",
+        "body": "\\begin{tabular}[c]{@{}l@{}}$1\\ $2\\end{tabular}",
+        "description": "Insert a multi-row subgrid"
+    },
+	"Insert Multi Columns": {
+		"prefix": "COL",
+		"body": "\\begin{columns}[$1]\n  \\column{$2\\textwidth}\n  \\column{$3\\textwidth}\n\\end{columns}",
+		"description": "Insert multi columns (the default case is 2 columns)"
+	},
+    "Resize": {
+        "prefix": "RSZ",
+        "body": "\\resizebox{\\linewidth}{!}{\n$0\n}",
+        "description": "Resize an object. (Set width=\\linewidth)"
+    }
+}
