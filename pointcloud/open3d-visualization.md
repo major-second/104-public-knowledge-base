@@ -9,7 +9,7 @@ o3d.visualization.draw_geometries([pcd])
 ```
 即可看到效果
 懒人版：结合[[python-wrapper]]，在连接着realsense（并activate指定环境，有指定包）时可以直接
-`cd <path/to/>python-examples`
+`cd <path/to/>python-examples`（注：这是[[python-wrapper]]的示例代码所在文件夹）
 `python export_ply_example.py; python -c "import open3d as o3d; o3d.visualization.draw_geometries([o3d.io.read_point_cloud('1.ply')])"`
 出来窗口中鼠标拖拽和滚轮可以操作
 这里默认着色策略是蓝色最近，暗红最远

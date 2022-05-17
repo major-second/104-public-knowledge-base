@@ -1,0 +1,5 @@
+- 常见控制结构（包括`goto`）都可拖拽设置
+- `case`也有，只不过要手动拖动`switch`, `case`两类东西
+    - 结合[[subflow]]，用`case`识别输入的[[power-automate/var]]，可以比较灵活地管理几个**有同有异**的程序
+- 无限循环：类似[[13-loop]]，直接条件循环取一个`1=1`
+- break和continue那种操作也有
