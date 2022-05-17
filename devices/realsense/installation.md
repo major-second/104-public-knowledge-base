@@ -31,3 +31,4 @@ sudo make install
 - 测试命令：`realsense-viewer`
   - 弹出GUI中左侧开开关（RGB，Stereo）等试试，可以看到2D，3D图像等
   - ![](installation-2D.png)
+- 之后请始终注意[[share-lock]]问题，不能多个程序同时access相机
