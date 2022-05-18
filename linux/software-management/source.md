@@ -1,3 +1,6 @@
-常见流程：添加新的源，用`sudo apt update`更新，并在新的源上获取软件。举例：
-[[v2raya]]安装流程
-如果certificate出问题，可以先参考https://blog.csdn.net/Chaowanq/article/details/121559709 试试。注意这里有[[settings-and-configurations]]中“临时”的思想
+- 默认源：安装ubuntu时选择where you are时选择中国，才能使用中国快的服务器
+  - 所以这时别装外宾
+  - 如果选错了，之后可以在ubuntu的设置中改
+- 常见流程：添加新的源，用`sudo apt update`更新，并在新的源上获取软件
+  - 举例：[[v2raya]]安装流程
+  - 如果certificate出问题，可以先参考https://blog.csdn.net/Chaowanq/article/details/121559709 试试。注意这里有[[temp-solution]]的思想

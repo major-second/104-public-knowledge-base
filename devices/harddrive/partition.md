@@ -34,11 +34,11 @@
 - for all, choose "from the beginning"
   - efi, primary, efi system, 200M
     - in `C:\\` in windows there's also such a partition.
+  - swap, logical, swap, 2 * RAM size
+    - 中文“交换分区”，和内存有关
   - /, primary, ext4, at least 20G
     - just like `C:\\` in windows ("system")
     - 如果你需要装很多东西到系统盘，当然就要变大
-  - swap, logical, swap, 2 * RAM size
-    - 中文“交换分区”，和内存有关
   - /home, logical, ext4, 100G
     - just like `Data (D:)` in windows
 - 当然，也不排除外接大硬盘[[mount]]到`/opt`，`/DATA`等

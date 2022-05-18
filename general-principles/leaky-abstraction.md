@@ -20,7 +20,7 @@
   - 比如vscode的[[remote-ssh]]时，对面服务器的要求可能不满足（https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites
 ）
 但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了
-（但这里要小心，因为升级`gcc`版本等可能有[[upgrade]]所描述的问题。总之升级到最新不一定是可行的！）
+（但这里要小心，因为升级`gcc`版本等可能有[[software-management/upgrade]]所描述的问题。总之升级到最新不一定是可行的！）
 - 比如上层封装太死，不灵活
   - 比如证明[[相合性]]在无法使用强大数律时，拆一层包装直接用[[borel-cantelli]]
   - 比如面试：“python是传值还是传引用”
