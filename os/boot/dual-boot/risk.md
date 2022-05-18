@@ -5,5 +5,5 @@
   - [[bit-locker]]也会引起两个系统互相影响
 - 删除第二系统千万不能直接删除分区，否则第一个系统也开不了！小心[[leaky-abstraction]]
   - 原因是调整了boot优先级
-  - linux那边的grub是想用一个管所有（回忆[[dual-boot]]）
+  - linux那边的grub是想用一个管所有（回忆[[dual-boot/steps]]）
   - 其实你进bios让windows原本的boot优先级最高就好了
