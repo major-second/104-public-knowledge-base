@@ -6,5 +6,7 @@
   - 这是安全的，和[[software-management/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
 - 常见流程：添加新的源，用`sudo apt update`更新，并在新的源上获取软件
   - 举例：[[v2raya]]，[[ros/installation]]
-  - 如果certificate出问题，可以先参考https://blog.csdn.net/Chaowanq/article/details/121559709 试试。注意这里有[[temp-solution]]的思想
+- 如果certificate出问题，可以重装`ca-certificates`试试
+  - 如果可以正常重装那就正常重装
+  - 否则[参考](https://blog.csdn.net/Chaowanq/article/details/121559709)用[[temp-solution]]思想（临时`http`而非`https`）试试能不能解决
 - 换源可以命令行操作，也可以九个点 - Software & Updates换
