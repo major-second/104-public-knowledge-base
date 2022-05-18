@@ -1,5 +1,7 @@
 前置：
-- [[linux翻墙]]（否则`githubusercontent`用不了）
+- 修改[[hosts]]或[[linux]]翻墙
+  - 否则`githubusercontent`用不了
+  - 当然前者比较简单
 # `zsh`
 0. 输入命令
 ```sh
@@ -17,7 +19,10 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 ```
 - 对于服务器或docker容器，需要先`apt install -y sudo git`这俩
 - `sed`一行中，`zsh-syntax-highlighting`必须在最后！
-- 跑完上述命令，最后要把`~/.bashrc`必要的设置放到`~/.zshrc`（并更新），比如`export`，比如`CUDA`，`conda`设置，`ssh`服务打开等七七八八
+- 跑完上述命令，最后要把`~/.bashrc`必要的设置放到`~/.zshrc`（并更新），比如
+  - `export`的[[configure]]
+  - [[ros/installation]]中的
+  - `CUDA`，`conda`设置，`ssh`服务打开等七七八八
 - 注意`zsh`平常能提高效率，但有时关键时刻会造成麻烦。有些奇怪错误产生了，可以换回`bash`试试。参见[[non-standard]]
 ## `chsh`
 - `chsh -s /bin/zsh`可以手动改默认`zsh`

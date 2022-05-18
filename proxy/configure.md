@@ -15,7 +15,7 @@ export http_proxy="localhost:<端口号>"
 ```
 然后重启终端或`source ~/.bashrc`一下，就好了
 （也就是[[6-env]]中说的的添加环境变量）
-环境变量和ubuntu的设置是两回事
+环境变量和ubuntu的（gui）设置是两回事
 # pip走代理
 `pip`自动读取环境变量中的代理设置
 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样（如果不这样，会报错，且在报错信息中可以看到应该怎么改）
@@ -31,4 +31,5 @@ export http_proxy="localhost:<端口号>"
 - `cip.cc`好处是中文且墙内较快
 - `cip.cc`有时用不了，就试试`ipinfo.io`呗
 # 读取自己设置的软件
-有些软件读取自己设置而非系统设置。参考[[cmake]]
+有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]
+有时嫌改这种设置太麻烦，可以[[hosts]]作[[temp-solution]]
