@@ -1,7 +1,8 @@
 - 制作U盘启动盘
 - 开机进入bios，选择，启动
 - 用途
-  - 装系统
+  - [[try-ubuntu]]
+  - 装系统, e.g. [[dual-boot]]
   - 作为[[temp-solution]]
     - 给主硬盘上系统恢复[[timeshift]]镜像
     - 调整主硬盘上[[partition]]

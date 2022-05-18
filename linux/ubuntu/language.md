@@ -1,0 +1,11 @@
+- install a language
+  - settings - Region & Language - Manage Installed Languages - (automatically installing languages according to the choice of your location during the installation)
+  - In this interface you could continue to install other languages
+- (If you're not `Try without installing` in [[u-disk-boot]], you should re-login to make the next step work)
+  - press `Ctrl+Alt+Del` to log out.
+- add an IME
+  - settings - Region & Language - `+` key below the `Input Sources` tag - Chinese - Chinese (Intelligent Pinyin) - Add
+- configure an IME
+  - Just below the aforementioned `Input Sources` tag - your target IME - gears icon
+  - e.g. you could change full Pinyin to [[double-pinyin]]
+  - some settings (e.g. full/half) could be accessed through the icon at the right-top.

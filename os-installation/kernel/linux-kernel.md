@@ -1,3 +1,5 @@
+[toc]
+## basics
 参考
 http://zhaoxuhui.top/blog/2021/02/20/ubuntu-linux-kernel-installation.html
 - 内核和硬件密切相关，比如实时内核，对机械臂非常有用。实时内核参考
@@ -50,19 +52,45 @@ https://www.kernel.org/pub/linux/kernel/projects/rt/4.14/older/patch-4.14.12-rt1
 在此基础上手动调整`.config`. 直接操作不太方便。不如使用一定的界面。比如
 `sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev`
 `make menuconfig`
-在界面中上下左右和回车操作。非常方便。
+- 在界面中上下左右和回车操作 to modify the configs. 非常方便
+  - press `/` to search
 - 例如实时内核就需要找到`General Step -> Preemption Model`，改成`Fully ...`使得实时性最强
 - 例如有时`SYSTEM_TRUSTED_KEYS`字段造成麻烦，需要编辑（参见下一节）
-
-（保存退出等操作也都可用上下左右和回车操作）
+- 保存退出等操作也都可用上下左右和回车操作
 ## 打包安装内核
+### get `.deb`
 `sudo make -j4 deb-pkg`
 注：`make`的`-j4`表示并行（更快）。但其可能让报错不容易找。比如刚刚说的`SYSTEM_TRUSTED_KEYS`造成的问题，就可能被埋起来。有利有弊
-troubleshooting: 
-- `BTF`相关，参见https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available
+ref: [[make]]
+### troubleshooting
+- `BTF`相关，[reference](https://stackoverflow.com/questions/61657707/btf-tmp-vmlinux-btf-pahole-pahole-is-not-available)
+```text
+  │ Symbol: DEBUG_INFO_BTF [=n]                                                                                                                                                         │  
+  │ Type  : bool                                                                                                                                                                        │  
+  │ Prompt: Generate BTF typeinfo                                                                                                                                                       │  
+  │   Location:                                                                                                                                                                         │  
+  │     -> Kernel hacking                                                                                                                                                               │  
+  │       -> Compile-time checks and compiler options                                                                                                                                   │  
+  │ (1)     -> Compile the kernel with debug info (DEBUG_INFO [=y]) 
+```
+change to `n`
+i.d. `[*]` -> press `n` key -> `[ ]`
 - `TRUSTED_KEYS`相关
-参考https://wiki.gentoo.org/wiki/Signed_kernel_module_support
-简单的办法就是在`make menuconfig`界面中`/`搜索`SYSTEM_TRUSTED_KEYS`，定位到该字段，去除其内容
+[参考](https://wiki.gentoo.org/wiki/Signed_kernel_module_support)
+简单的办法就是搜索`SYSTEM_TRUSTED_KEYS`，定位到该字段，去除其内容
+```text
+  │ Symbol: SYSTEM_TRUSTED_KEYS [=]                                                                                                                                                     │  
+  │ Type  : string                                                                                                                                                                      │  
+  │ Prompt: Additional X.509 keys for default system keyring                                                                                                                            │  
+  │   Location:                                                                                                                                                                         │  
+  │     -> Cryptographic API (CRYPTO [=y])                                                                                                                                              │  
+  │       -> Certificates for signature checking                                                                                                                                        │  
+  │ (5)     -> Provide system-wide ring of trusted keys (SYSTEM_TRUSTED_KEYRING [=y])  
+```
+remove it
+
+After modifying those configs, run `sudo make -j4 deb-pkg` again.
+### install `.deb`
 打包完成之后，`..`中有一些`.deb`
 现在直接
 `sudo dpkg -i ../<文件名>.deb <后面还有3个>`（所有`.deb`都要写上）
