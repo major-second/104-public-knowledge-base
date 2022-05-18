@@ -8,7 +8,7 @@ Could serve as some [[temp-solution]]s.
 - 桌面左边一排是最常用软件
   - 比如第二个Firefox浏览器，第四个资源管理器等
 - 左下角九宫格，点进有更多软件
-  - 其中可以搜索
+  - 其中可以搜索（有时上下滚动也找不着你要的软件，那就要搜索）
   - 设置也在里面(可能需要滚轮翻页)![](more-softwares.png)
 - Settings - Wi-Fi设置无线网或Network设置有线网
 ![](wifi.png)

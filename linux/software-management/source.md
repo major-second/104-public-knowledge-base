@@ -1,6 +1,10 @@
 - 默认源：安装ubuntu时选择where you are时选择中国，才能使用中国快的服务器
   - 所以这时别装外宾
   - 如果选错了，之后可以在ubuntu的设置中改
+  - 当然，默认源也有可能不够好（比如装[[ros/installation]]缺过包。换阿里云搞定）
+- 更新列表：`sudo apt update`
+  - 这是安全的，和[[software-management/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
 - 常见流程：添加新的源，用`sudo apt update`更新，并在新的源上获取软件
-  - 举例：[[v2raya]]安装流程
+  - 举例：[[v2raya]]，[[ros/installation]]
   - 如果certificate出问题，可以先参考https://blog.csdn.net/Chaowanq/article/details/121559709 试试。注意这里有[[temp-solution]]的思想
+- 换源可以命令行操作，也可以九个点 - Software & Updates换

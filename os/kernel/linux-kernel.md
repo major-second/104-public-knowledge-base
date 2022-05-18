@@ -12,6 +12,8 @@ https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_install_apoll
 - 拓展知识：同时在CPU Ring0上跑的只能有一个内核
 所以得在启动的时候就决定好启动哪个（开机时，在[[grub-menu]]中可以选择！）
 像Linux装多个内核就可以用不同的内核启动，但是用户态的东西都是共享的。一般多个内核，可以称为“同一个系统”
+- 内核安装：本篇主要都是编译打包等等花时间。其实安装很快
+  - 其实可以一次打包以后到处安装，很方便
 ## 下载内核（可能还有补丁）
 去
 www.kernel.org/pub/linux/kernel
