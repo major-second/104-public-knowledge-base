@@ -2,7 +2,8 @@
 - [[franka-panda/on-off]]启动到黄灯常亮
 - 有网口的电脑。需要**直连**电脑和机械臂（如果用转接头等可能会影响速度等，导致不给连接）
   - 机械臂有网口，控制柜也有网口
-  - 我们这次先连机械臂网口进行配置，是[[temp-solution]]，此时只能[[control-using-desk]]
+  - 我们这次先连机械臂网口进行配置，是[[temp-solution]]
+    - 此时只能[[control-using-desk]]
   - 如果[[franka-ros]]，需要连[[connect-controller]]
 
 步骤

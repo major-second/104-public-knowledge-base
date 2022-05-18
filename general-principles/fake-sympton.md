@@ -7,5 +7,9 @@
   - [[timeshift]]备份时，乃至[[cp-mv-rm]]等时，文件大小和文件数量显然也都是重要影响因素
 - 比如报错信息
   - `make`时多线程，可能导致真正错误信息被埋起来
-  - 很多时候最后输出的不是本质的错误，而只是一些警告。一个示例：[[recipe]]中博客中提到的`-pdf`选项在某次`xelatex`更新后，不需要加了，但加了只是报个警告。有的时候会看到它在最后，但它并不essential
+  - 很多时候最后输出的不是本质的错误，而只是一些警告或者可忽略的错误
+    - [[recipe]]中博客中提到的`-pdf`选项在某次`xelatex`更新后，不需要加了，但加了只是报个警告
+      - 有的时候会看到它在最后，但它并不essential
+    - [[moveit-installation]]中`[ERROR] [1652916881.887429384]: Exception while loading planning adapter plugin 'default_planner_request_adapters`可以忽略，[参考](https://github.com/ros-planning/moveit_tutorials/issues/564)
+      - 我当时实际上是[[libfranka]]中给予实时权限时加文字到`*.conf`的部分忘了
 - 一个有意思的例子：[[v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`

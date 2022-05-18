@@ -1,7 +1,5 @@
 前置：
-- 修改[[hosts]]或[[linux]]翻墙
-  - 否则`githubusercontent`用不了
-  - 当然前者比较简单
+- [[linux]]翻墙
 # `zsh`
 0. 输入命令
 ```sh

@@ -15,4 +15,5 @@
   - 比如看懂文档在做啥之后，把所有步骤换成[[silent]]的，使得可以把安装过程变成跑一个脚本
   - 比如写[[docker-file]]
   - 比如[[fiducial-markers]]中，把[[cmake]]简化成更高级的[[catkin-make]]
+  - 但有时，又不要太自以为是，比如[[moveit-installation]]中自以为有`catkin_make`命令就无需`sudo apt-get install ros-melodic-catkin python-catkin-tools`
 - 硬件更要读文档保证安全！可不是只有软件才有文档！比如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
