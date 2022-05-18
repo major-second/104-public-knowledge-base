@@ -5,5 +5,5 @@ https://zhuanlan.zhihu.com/p/265933454
 - fast startup
   - 控制面板这个地方![](fast-startup.png)
   - 点完盾，可以选择开关
-  - 在[[dual-boot]]时可能造成Ubuntu18网卡出问题
+  - 在[[dual-boot/steps]]时可能造成Ubuntu18网卡出问题
     - 注意这个选项在重启时没用。所以重启也不会引发Ubuntu18网卡问题
