@@ -12,3 +12,4 @@
   - 前者可以github提issue说不定会有人回。后者就自求多福吧！觉得不行，请谨慎follow工作
   - 像[这种](https://github.com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
 - 有些时候作者没空维护了，比如[[franka-ros-interface]]，各种文档和现象不对应
+- [[mujoco-py]]官方文档的troubleshooting补的包不够

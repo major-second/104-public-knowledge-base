@@ -12,4 +12,5 @@
       - 有的时候会看到它在最后，但它并不essential
     - [[moveit-installation]]中`[ERROR] [1652916881.887429384]: Exception while loading planning adapter plugin 'default_planner_request_adapters`可以忽略，[参考](https://github.com/ros-planning/moveit_tutorials/issues/564)
       - 我当时实际上是[[libfranka]]中给予实时权限时加文字到`*.conf`的部分忘了
+  - [[mujoco-py]]安装时先提示失败一次是正常的，之后自动成功
 - 一个有意思的例子：[[v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`
