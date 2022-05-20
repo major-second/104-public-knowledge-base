@@ -44,3 +44,5 @@
   - 不过这个有时会被占用。比如![](keyboard-ubuntu.png)
   - 右键，把所有复选框去掉勾并删除字母`f`就能去掉这一快捷键
 - 当然文档里普通的`Ctrl+F`查找还是有的
+## troubleshooting
+一些特殊地方可能会用不了快捷键。比如[[tensorboard]]在vscode中的窗口，比如vscode中pdf预览窗口
