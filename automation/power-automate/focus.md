@@ -1,0 +1,6 @@
+- 要Focus Window
+  - [[features]]中的xbox录像才正常
+  - [[wait-for]]中寻找foreground window的图文的功能才能用
+- 有些时候调试和正常运行表现不同
+  - 如xbox可能在调试模式会录power automate的窗口。不过正常运行时是正常的
+- 为了[[化归]]，可以一来就发送“回到桌面”
