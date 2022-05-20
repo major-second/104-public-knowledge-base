@@ -3,7 +3,8 @@
 - [[create-catkin-ws]]
 
 步骤
-- `catkin_ws/src`中额外`git clone https://github.com/intel-ros/realsense.git`即可。其它参考[[moveit-installation]]
+- `sudo apt-get install ros-$ROS_DISTRO-realsense2-camera`即可
+  - [参考](https://github.com/IntelRealSense/realsense-ros)，[[build-from-source]]肯定很麻烦
 - 验证
   - `roslaunch realsense2_camera rs_camera.launch`
   - `rostopic list`看发布的topic

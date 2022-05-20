@@ -24,14 +24,14 @@
 - 用法也看文档
   - 这个对[[zsh]]支持不好（参考[[non-standard]]）。应当
   - 修改`franka.sh`最后一行的`${SHELL}`为`/bin/bash`（否则如果用户默认[[zsh]]就会默认`/bin/zsh`，从而就不行了）
-  - 之后也在`bash`运行这个包相关的东西（比如`bash`运行`./franka.sh master`）
+  - 不过之后运行`./franka.sh master`可以用`zsh`或`bash`，反正运行完进入`bash`环境
   - 运行后效果是这样的，`bash`多东西![](franka-ros-interface-bash.png)
 - 简要用法
   - 一个有`[franka <Master> - Robot@172.16.0.2]`这种东西（且处于`python2.7`）的终端
   - `roslaunch franka_interface interface.launch`
-  - 另一个（可以是普通）终端直接跑`python2.7`脚本即可比如：
+  - 另一个（可以是普通）（可以是`zsh`）终端直接跑`python2.7`脚本即可比如：
     - `sudo apt install ros-melodic-rospy-message-converter`之后
-      - （[参考这个](https://github.com/uos/rospy_message_converter/issues/25)：不要用`pip`装）
+      - （[参考这个](https://github.com/uos/rospy_message_converter/issues/25)：该包不要用`pip`装）
     - 在`py2.7`环境跑这个文件夹的`moveit_python/franka_ros_interface_keyboard.py`
 - 进一步懒人包
   - `pip install panda-robot`，[github页面](https://github.com/justagist/panda_robot)
@@ -40,6 +40,7 @@
   - 这个运动速度有点快。需要注意安全
     - 可以[文档](https://projects.saifsidhik.page/panda_robot/DOC.html)上全文搜索`velocity`找到：
     - 只需`<PandaArm对象>.set_joint_position_speed(0.05)`（数字可变）即可设置最高速的比例
+      - 已知issue：这无法调整`move_to_neutral()`的速度
   - `<PandaArm对象>.enable_robot`：出错了恢复，能恢复一部分错（参考[[troubleshooting]]）
 ```python
 >> python # or `python3` # start interactive python session; make sure the correct ros workspace is sourced.

@@ -5,7 +5,10 @@
 安装
 - 文档
 http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html
-  - 必做的：`sudo apt install ros-melodic-moveit`
+  - 必做的：文档的
+  - `sudo apt-get install ros-melodic-catkin python-catkin-tools`
+  - `sudo apt install ros-melodic-moveit`
+  - 我犯了的错误：想当然以为有`catkin_make`命令就说明`sudo apt-get install ros-melodic-catkin python-catkin-tools`可以省略。其实不行！
 - 之后（如果你需要控制真机）不要照文档，而是应该微调[[franka-ros]]的安装步骤，增加
 ```sh 
 git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
@@ -40,3 +43,5 @@ rviz可视化
   - 命令`roslaunch panda_moveit_config demo.launch rviz_tutorial:=true`，之后参考文档进行操作
   - 注意可以保存界面设置，方便下次复现
 - 这个不是真机。但和真机区别很小，参考[[moveit-real-robot]]
+- `[ERROR] [1652916881.887429384]: Exception while loading planning adapter plugin 'default_planner_request_adapters/ResolveConstraintFrames': According to the loaded plugin descriptions the class default_planner_request_adapters/ResolveConstraintFrames with base class type planning_request_adapter::PlanningRequestAdapter does not exist`错误可以忽略，[参考](https://github.com/ros-planning/moveit_tutorials/issues/564)
+  - 但`[ERROR] [1652919874.854839823]: Could not load controller 'position_joint_trajectory_controller' because controller type 'position_controllers/JointTrajectoryController' does not exist.`不可忽略，[参考](https://answers.ros.org/question/254084/gazebo-could-not-load-controller-jointtrajectorycontroller-does-not-exist-mastering-ros-chapter-10/)，也就是缺了包，要补包`sudo apt-get ros-<版本>-joint-trajectory-controller`

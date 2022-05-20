@@ -1,6 +1,6 @@
 前置
 - [[on-off]]打开，[[connect-base]]中可以连接上底座
-  - 注意目前仍是连机械臂网口。但是这是临时的，目的是使得控制柜网口能用。参考[[temp-solution]]
+  - 注意目前先是连机械臂网口。但是这是临时的，目的是使得控制柜网口能用。参考[[temp-solution]]
 
 步骤
 - 官方文档，从[这里](https://frankaemika.github.io/docs/getting_started.html#installing-the-fci-feature)开始看

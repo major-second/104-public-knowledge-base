@@ -9,12 +9,12 @@
 注意不要全听，参考[[read-doc]]
     - 比如`upgrade`是很危险的，参考[[software-management/upgrade]]
     - 比如Build and apply patched kernel modules这步其实略过也可以
-      - 而且有些时候，可能跑不通这部分。那就直接算了
+      - 而且有些时候，可能跑不通这部分。那就直接算了（更应该略过了）
 
 懒人总结版
 - 先拔相机
 - 逐行运行这几行脚本（Ubuntu 18.04）
-  - 给强迫症：源码clone到哪？可以和[[libfranka]]类似，到`/usr/local/src`等等
+  - 给强迫症：源码clone到哪？可以和[[libfranka]]类似，到`/usr/local/src`，`/opt`等等。参考[[partition]]提到的[linux文件规范](https://blog.csdn.net/chenlixiao007/article/details/109152565)
 ```sh
 sudo git clone https://github.com/IntelRealSense/librealsense.git
 sudo apt-get install git libssl-dev libusb-1.0-0-dev libudev-dev pkg-config libgtk-3-dev

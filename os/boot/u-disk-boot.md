@@ -28,7 +28,8 @@ What makes this project special is that we are going to be creating live disks w
 ## 使用
 - 开机进入bios，选择u盘对应[[efi]]，启动
 - 用途
-  - 装系统
+  - [[try-ubuntu]]
+  - 装系统, e.g. [[dual-boot]]
   - 作为[[temp-solution]]
     - 给主硬盘上系统恢复[[timeshift]]镜像
     - 调整主硬盘上[[partition]]

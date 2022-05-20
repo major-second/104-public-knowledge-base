@@ -2,3 +2,4 @@
 - 对于`apt install`，直接`-y`就是静默
 - [miniconda](https://www.codenong.com/49338902/)
   - `-b -p <PREFIX>`
+- [[generate-key-pair]]也有静默生成

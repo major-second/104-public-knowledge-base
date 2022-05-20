@@ -1,5 +1,5 @@
 - `pip`本身来源：`python3-dev`带上。或者`python2`环境中的`sudo apt install python-pip`
-- 普通：直接`pip install 包名`
+- 普通使用：直接`pip install 包名`
 - 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
     - clone源码，进去
     - `pip install -e .`

@@ -38,9 +38,11 @@ ArUco就是一种fiducial marker
 - 启动相机（比如[[realsense-ros]]）
 - `rostopic`找相机相关的两个话题，填到`launch`文件中相应地方
   - 找`/camera_info`和`/image`
-  - 如果你找不着`rect`的topic，可能还要改`image_is_rectified`为`False`
+  - 如果你找不着`rect`的topic，也不需要改`image_is_rectified`为`False`. 这里的raw其实一般内参是标定过的（即使没标定过误差也不大）
+    - 改了`False`反而会导致误差很大
 - （py2环境）`rosrun rqt_tf_tree rqt_tf_tree`
   - 看图，知道`camera_frame`，`reference_frame`参数应该填`camera_color_optical_frame`（因为这是单目相机）
   - 注意这里是最简单的setting：标定一个marker相对相机位置cd
 - 根据上一节“实体准备”填写id和大小（注意单位是m）
+- 调好所有后，`roslaunch aruco_ros single.launch`
 - `rqt_image_view`看效果
