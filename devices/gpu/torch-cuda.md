@@ -3,7 +3,7 @@
 - [[pytorch/basics/installation]]
 - 了解[[6-env]]，[[os]]
 
-[[pytorch/basics/installation]]时自动加入`cudatoolkit`，所以可以直接
+[[pytorch/basics/installation]]时可加入`cudatoolkit`，所以可以直接
 ```python
 import torch
 torch.cuda.is_available()

@@ -1,17 +1,28 @@
 注：mujoco原先收费，现在开源。200之前的版本需要激活key（但现在官方公开了免费的激活key了），之后的不需要
 # 开源版本安装
-- 下载安装MuJoCo到标准位置（参考[repo](https://gitcode.net/mirrors/openai/mujoco-py)）
-  - 不用翻墙，是个镜像
+- 下载安装MuJoCo到标准位置（参考[repo](https://github.com/openai/mujoco-py)）
 > Download the MuJoCo version 2.1 binaries for Linux or OSX
 > Extract the downloaded `mujoco210` directory into `~/.mujoco/mujoco210`
 - 先看官网troubleshooting补包和`ln`一下
   - 否则一会编译缺东西
   - 其实缺啥就去百度谷歌看装啥能补就行
-  - 这里比较坑的是它的troubleshooting列举不全。有个缺的要自己补（`apt install patchelf`他没写）
+  - 这里比较坑的是它的troubleshooting列举不全
+    - 有个缺的要自己补（`apt install patchelf`他没写）
+  - 装的过程可能“先失败再成功”，像是
+```text
+  ERROR: Failed building wheel for mujoco-py
+  Running setup.py clean for mujoco-py
+Failed to build mujoco-py
+Installing collected packages: pycparser, pillow, lockfile, imageio, glfw, Cython, cffi, mujoco-py, robosuite
+    Running setup.py install for mujoco-py ... done
+  DEPRECATION: mujoco-py was installed using the legacy 'setup.py install' method, because a wheel could not be built for it. A possible replacement is to fix the wheel build issue reported above. You can find discussion regarding this at https://github.com/pypa/pip/issues/8368.
+  Running setup.py develop for robosuite
+Successfully installed Cython-0.29.30 cffi-1.15.0 glfw-2.5.3 imageio-2.19.2 lockfile-0.12.2 mujoco-py-2.0.2.2 pillow-9.1.1 pycparser-2.21 robosuite-0.3.0
+```
 - 在`~/.bashrc`（或`~/.zshrc`，如果你用`zsh`）中，添加一些环境变量
   - 具体添加什么，一会`import mujoco_py`的时候会看到。他让你加啥你就加啥
   - 并`. ~/.bashrc`
-- 交互验证安装（以下步骤来自[repo](https://gitcode.net/mirrors/openai/mujoco-py)）
+- 交互验证安装（以下步骤来自[repo](https://github.com/openai/mujoco-py)）
   - （在这之前可能要先`conda activate <你的环境>`）
 ```shell
 $ pip3 install -U 'mujoco-py<2.2,>=2.1'
