@@ -1,3 +1,9 @@
+前置
+- [[aruco]]
+  - 附着在硬纸板上，让机械臂夹住
+- “抓紧”物体的命令，例如[[franka-ros-interface]]的
+  - `grasp(width, force, speed=None, epsilon_inner=0.005, epsilon_outer=0.005, wait_for_result=True, cb=None)`
+  - 实用中可以`grasp(0.02, 100, epsilon_inner=0.1, epsilon_outer=0.1)`即确保夹住
 ### 1 打开标定相关package
 ```Shell
 roslaunch easy_handeye panda_rs_calibration.launch

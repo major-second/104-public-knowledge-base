@@ -50,7 +50,10 @@
 
 >> r = PandaArm() # create PandaArm instance
 
+>> import rospy; from panda_robot import PandaArm; rospy.init_node("panda_demo"); r = PandaArm(); r.set_joint_position_speed(0.05) # 这个是我自己整合的，懒人版命令
+
 >> r.move_to_neutral() # moves robot to neutral pose; uses moveit if available, else JointTrajectory action client
+# 这句有bug，无法限速。最好不要运行。运行要特别小心
 
 >> pos,ori = r.ee_pose() # get current end-effector pose (3d position and orientation quaternion of end-effector frame in base frame)
 
@@ -60,4 +63,6 @@
 >> r.move_to_joint_position([-8.48556818e-02, -8.88127666e-02, -6.59622769e-01, -1.57569726e+00, -4.82374882e-04,  2.15975946e+00,  4.36766917e-01]) # move robot to the specified pose
 
 >> r.move_to_cartesian_pose(pos,ori) # move the robot end-effector to pose specified by 'pos','ori'
+
+>> r.get_gripper().grasp(0.02, 1000, epsilon_inner=0.1, epsilon_outer=0.1) # 自己加的，用于夹紧物体
 ```
