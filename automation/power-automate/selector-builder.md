@@ -13,3 +13,4 @@
 - 某个变量名对应的selector变量在哪里用到了呢？可以右键selector变量查看
   - 三个点处还有Remove unused选项，可以避免太多无用UI selector变量占位置
 - 最终必杀技：[[ocr]]等更能[[generalization]]的技术
+- 注：点击ui时可以选择所处部位。例如那种资源管理器地址栏选右侧才是“文字”部分

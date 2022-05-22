@@ -7,3 +7,11 @@
   - `gal`自身是`Get-Alias`，2333
 - 很多命令是为了让linux的人好用所以做了alias
   - 你可以`gal`一下`mv cp ls rm cat diff`等
+- `New-Item -type Directory`相当于了`mkdir`（不加参数就是`touch`）
+  - 其alias通过`help`查到是`ni`
+- `scp, ssh`当然可以用
+  - 不过可能有一些[[non-standard]]的东西（路径的`~`记号）就用不了了（毕竟`scp`了，还想啥自行车？233）
+- 基本的字符串操作：
+  - `"1|2".split("1")`（之后还能中括号取下标）
+  - `.trim()`函数去除空白
+  - 这在[[features]]中有重要作用
