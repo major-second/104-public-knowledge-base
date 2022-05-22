@@ -49,8 +49,11 @@ git clone https://github.com/IFL-CAMP/easy_handeye
 - 配置完，放到`$(rospack find easy_handeye)/launch`下，任取名字
   - 示例：本文件夹里的那个`.launch`
 ## 启动标定
-- 首先机械臂夹紧码，在一个比较适中（角度+相机画面位置适中）的地方，方便之后运动时相机始终能拍到码
-- py2.7环境，`roslaunch easy_handeye <刚刚的名字>.launch`
+- 首先机械臂夹紧码，在一个比较适中（机械臂位置+角度+相机画面位置适中）的地方，方便之后运动时相机始终能拍到码
+  - 次序：首先安排机械臂位置必须是非常“好”的，接近于“neutral”值，非常“中正”
+  - 其次再放相机，保证marker在视野中央，角度合适，同时该角度拍到[[get-pointcloud]]质量好
+  - 如果机械臂位置不好，可能在之后点某个按钮过程中终端弹错误说这个位置不能标，导致只能重新来
+- py2.7环境，机械臂处于**蓝灯**，`roslaunch easy_handeye <刚刚的名字>.launch`
   - 跳出很多GUI，下面的大称为**1号**，小称为**2号**
   - ![](hand-eye.png)
   - 1号用于采集
@@ -65,4 +68,5 @@ git clone https://github.com/IFL-CAMP/easy_handeye
 - 2号`Check ...`，之后`Next, Plan, Execute`循环，每次循环让机械臂运动到新的位置
   - 每运动到一个新的位置，点（可以是很多次）1号GUI中的**Take Sample**，看到数据被记录
   - 以此类推，直到点全部采完
+  - **不要不Check直接点Next**，否则无法正常开始流程
 - 全部检测完成后，点击1号GUI中的**Compute**得到结果（xyz+四元数）
