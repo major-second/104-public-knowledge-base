@@ -11,6 +11,7 @@
   - [[assets]]中的这个![](assets.png)
   - [[moveit-real-robot]]的命令不能运行，要[[fci]]里的底层命令才能传递出真正的错误原因
   - [[aruco]]中`clone`错分支导致运行时会process died，然后没任何日志，你要是不会底层操作就只能仔细检查，猜哪里出错。猜到是分支错算你厉害
+  - [[franka-ros-interface]]是非官方库，没有特别好的维护。[[troubleshooting]]说的gripper disconnected需要插拔网线的错误没法传出来（即明明失败还返回`True`）
 - 拓展：可能从上到下逐级看（或级太多时二分看），精确看到底是哪一级出错
   - 比如[[moveit-real-robot]]，[[fci]]的`communication_test`，直接`ping`就是三级
   - 比如[[check-connectivity]]
