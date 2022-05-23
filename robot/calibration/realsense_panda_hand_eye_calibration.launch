@@ -34,7 +34,7 @@
         <arg name="robot_effector_frame" value="panda_EE" />
         <arg name="move_group" value="panda_arm" />
         <arg name="freehand_robot_movement" value="false" />
-        <arg name="robot_velocity_scaling" value="0.5" />
-        <arg name="robot_acceleration_scaling" value="0.2" />
+        <arg name="robot_velocity_scaling" value="0.05" />
+        <arg name="robot_acceleration_scaling" value="0.05" />
     </include>
 </launch>

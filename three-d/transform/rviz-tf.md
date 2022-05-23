@@ -8,6 +8,7 @@
 - py2环境中`rosrun rqt_tf_tree rqt_tf_tree`看`tf_tree`
 - `TF`结合`rqt_tf_tree`，可以直观在[[hand-eye-calibration]]等复杂过程中看到各个frame的关系
   - 有相机的一系列frame，有机械臂的一系列frame，如果没有标定，那么自然就各自独立，没法在rviz的`TF`中标出，强行打开`TF`会有警告
+  - 标定后[[hand-eye-calibration]]中publish出来，根节点连根节点，就可以可视化了
 - 实践：查看`camera_link`和其他相机frame的关系
   - `Global Options`中改Fixed Frame为`camera_link`
   - 其它地方比如`Grid`等相应修改

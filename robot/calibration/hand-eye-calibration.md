@@ -41,18 +41,20 @@ git clone https://github.com/IFL-CAMP/easy_handeye
   - `tracking_base_frame`直观含义上，当然要和`ArUco`一节的`reference_frame`一致
   - `tracking_marker_frame`要和`ArUco`一节`marker_frame`一致
   - 刚刚两个对应关系意思很显然
-  - 注：我们往往不选用`camera_link`，原因和[[aruco]]相同
+  - 注：我们选用`camera_link`，方便[[rviz-tf]]
+    - ![](tf-tree.png)
+    - 如果选择`*optical_frame`，好处是如果你无需可视化，则直接得到这个在[[get-pointcloud]]时方便；坏处是不连根节点，没法可视化
   - `robot_base_frame`和`robot_effector_frame`可以参考[[moveit-real-robot]]里面的`launch`一下，在rviz里打开`Axes`的显示，就方便看是啥（参考[[rviz-tf]]）
     - ![](axes.png)
     - 结果：是`panda_link0`和`panda_EE`
     - `panda_EE`其实还有多种选择，比如`panda_link8`，本质上根据手眼标定原理，只要相对marker的transform稳定即可
   - 还有一个参数`move_group`可能需要override一下
-    - ~可以看`<path/to/>easy_handeye/easy_handeye/src/easy_handeye/handeye_calibration.py`
+    - 可以看`<path/to/>easy_handeye/easy_handeye/src/easy_handeye/handeye_calibration.py`
     - 默认是`manipulator`，这可能是不存在的，需要改成`panda_arm`之类
 - 配置完，放到`$(rospack find easy_handeye)/launch`下，任取名字
   - 示例：本文件夹里的那个`.launch`
 ## 启动标定
-- 首先机械臂夹紧码（如果纸板太薄可以考虑加本书**配厚**）
+- 首先机械臂夹紧码（如果纸板太薄可以考虑加本书**配厚**）（还可以在之后`.launch`里减小速度）
   - ![](hand-eye-arm-pose.png)
   - 次序：**首先**安排机械臂位置必须是非常“好”的，接近于“neutral”值，非常“中正”
     - 这样机械臂才可以在周围一圈自由运动
@@ -88,4 +90,5 @@ git clone https://github.com/IFL-CAMP/easy_handeye
 - 1号save保存，保存结果会到一个隐藏文件夹下的`.yaml`，之后就可以使用`publish.launch`，参数写法参见本文件夹中的文件
   - 注：以后就可以直接publish使得该transform可被[[rviz-tf]]使用并可视化
 - 退出刚刚手眼标定的`.launch`，重新`rqt_tf_tree`，看到不再是dummy了（不过目前tree上只有一个transform）
-- 这时再launch[[realsense-ros]]和[[moveit-real-robot]]，即可可视化标定结果
+- 这时再launch[[realsense-ros]]，[[moveit-real-robot]]，[[aruco]]，即1+3共4个transform broadcaster，也就得到了`world`中`camera_marker`的位置，即可可视化标定结果
+  - ![](camera_marker.png)
