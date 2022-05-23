@@ -13,3 +13,4 @@
   - 像[这种](https://github.com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
 - 有些时候作者没空维护了，比如[[franka-ros-interface]]，各种文档和现象不对应
 - [[mujoco-py]]官方文档的troubleshooting补的包不够
+- franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
