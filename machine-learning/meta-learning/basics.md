@@ -1,0 +1,4 @@
+- machine learning: iteratively adjusting parameters (weight, bias, ...) under a given update rule, such as SGD
+- MetaL: optimize the (parametrized) rule
+  - perform the rule: costly!
+    - 一种方法：只能走几步，希望提升得多。可能有short-horizon bias
