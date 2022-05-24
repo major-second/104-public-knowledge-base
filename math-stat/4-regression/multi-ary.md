@@ -25,6 +25,9 @@
 性质
 - $Q(\hat \beta)(即“二乘”)=||Y-X\hat \beta||^2=||Y||^2-||X\hat\beta||^2=Y^TY-\hat\beta^TX^TX\hat\beta=Y^TY-Y^TX\beta=(Y,Y-X\beta)$，几何意义也很明显
   - 满秩则进一步$=Y^T(I-X(X^TX)^{-1}X^T)Y:=Y^TAY$
+    - 应用：$X_{n\times p},rank(X)=p$，而$Y$是$X$一些列组成的
+    - $X(X'X)^{-1}X' - Y(Y'Y)^{-1}Y'$非负定
+    - 原因是$X\beta:=X(X'X)^{-1}X'y$是$y$在$Im(X)$上的正交投影，$Y\alpha:=Y(Y'Y)^{-1}Y'y$是$y$在$Im(Y)\subset Im(X)$上的正交投影
 - 进一步利用之前“弱”假设
   - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$（需要[[transform]]）
     - 这里记忆：$(X^TX)^{-1}X^TY$中“两负一正”，所以结果最后“负”

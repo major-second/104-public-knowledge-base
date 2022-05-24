@@ -7,7 +7,9 @@
   - 当然有$\hat y_i - \bar y = \hat b(x_i-\bar x)$，这对后面拆平方和有作用
 - 关系强不强呢？
   - 对于给定数据集，$l_{yy}=\sum (y_i-\bar y)^2$为常量
-  - 其可拆成两部分$\sum (y_i-\hat y_i)^2$和$\sum (\hat y_i - \bar y)^2$（证明：把交叉项往$l$记号上凑）
+  - 其可拆成两部分$\sum (y_i-\hat y_i)^2$和$\sum (\hat y_i - \bar y)^2$
+    - 证明：把交叉项往$l$记号上凑
+    - 即：$y_i-\hat y_i = y_i - bx_i-a=y_i-\bar y+\bar y -bx_i-a=y_i-\bar y +b\bar x-bx_i$，这样就都表示成了$x_i-\bar x$和$y_i-\bar y$
   - 希望第一部分$Q$小，第二部分$U$大
   - 由于$b=0$时$\frac{U}{Q/(n-2)}\sim F(1,n-2)$，故可以用$F:=\frac{U}{Q/(n-2)}=\frac{\hat b l_{xy}}{(l_{yy}-U)/(n-2)}$在[[f]]分布中处于多少分位数做假设检验
     - 回忆：[[UMP]]提到了我们要考虑零假设成立时某统计量的分布
