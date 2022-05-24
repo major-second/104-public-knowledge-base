@@ -30,3 +30,5 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - 虽然`sudo`和不`sudo`的`chsh`都要求输入密码，但是其本质是不同的
   - 不`sudo`的输入密码类似于[[7-permissions]]中说过的`passwd`命令的原理。即用户还是自己（非`root`），“临时”获得了高级权限。
 - `chsh`设定需要重新登录，才生效！
+## 特性
+- `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果

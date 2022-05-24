@@ -2,6 +2,7 @@
   - 参考[issue](https://github.com/frankaemika/franka_ros/issues/16)
   - 尽量不要手动动gripper
   - 如果直接显示红色（未连接），那homing可能没用，重新插拔网线试试。如果变黄就再homing
+  - 也有可能是[[franka-panda/limit]]问题
 - [[moveit-real-robot]]的命令无法运行时，可以看[[fci]]的`communication_test`怎么样，再进一步看`ping <fci-ip>`延迟是否压到0.2ms左右，还能用[[control-using-desk]]看看情况
   - 逐级排查！看问题到底出在哪
   - 这是[[leaky-abstraction]]的思想

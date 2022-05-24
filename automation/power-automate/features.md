@@ -7,7 +7,7 @@
   - 可以用`scp, ssh`等
   - 可以输出东西作为[[power-automate/var]]存起来
     - 输出的一般带回车，所以在输出之后需要在power automate中trim
-    - powershell里trim没用的！
+    - powershell里trim没用的！出来还有回车（回车发生在`.trim()`之后）
 - 可以使用[[xbox-bar]]的`Win+Alt+R`录屏
   - 不过要考虑[[focus]]问题
   - 并且有时会玄学没反应，按第二次`Win+Alt+R`就行（真的玄学）

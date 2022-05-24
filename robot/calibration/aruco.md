@@ -43,7 +43,16 @@ ArUco就是一种fiducial marker
     - 改了`False`反而会导致误差很大
 - （py2环境）`rosrun rqt_tf_tree rqt_tf_tree`
   - 看图，知道`camera_frame`，`reference_frame`参数应该填`camera_color_optical_frame`（因为这是单目相机）
-  - 注意这里是最简单的setting：标定一个marker相对相机位置cd
+  - 注意这里是最简单的setting：标定一个marker相对相机`*optical_frame`的位置
+- 注：其实`reference_frame`不一定得是`camera_color_optical_frame`
+  - 它可以是`camera_link`
+    - 这是相机的“base”，类比[[moveit-installation]]中机械臂的`panda_link0`
+    - 注意它和`*optical_frame`不一定相同
+    - 标定`*optical_frame`对于[[get-pointcloud]]等应用是最方便的。毕竟拍照对应的是`*optical_frame`
+      - 也就是可以用结果直接[[mul-inverse]]等
+  - 它甚至可以是任何其他能找到确定联系的坐标系。比如你可以标定两个`ArUco`码的关系
+  - camera自己的各个坐标系间关系对应真实世界中深度镜头和rgb镜头的位移等等。在[[rviz-tf]]中可以看到它们原点很近但不完全重合
+  - 应用：[[hand-eye-calibration]]中如果希望[[rviz-tf]]可视化出来，那就要选`camera_link`（根连根）
 - 根据上一节“实体准备”填写id和大小（注意单位是m）
 - 调好所有后，`roslaunch aruco_ros single.launch`
 - `rqt_image_view`看效果

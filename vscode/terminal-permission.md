@@ -1,1 +1,0 @@
-vscode的terminal会缺少权限。所以一个命令如果在这里跑不通，就去桌面的终端试试，参考[[7-permissions]]
