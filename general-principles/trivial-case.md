@@ -1,0 +1,2 @@
+- [[6-serial/basics]]的$\tau\equiv 0$情况
+- 算法题的[[特判]]
