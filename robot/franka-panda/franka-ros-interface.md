@@ -42,6 +42,7 @@
     - 只需`<PandaArm对象>.set_joint_position_speed(0.05)`（数字可变）即可设置最高速的比例
       - 已知issue：这无法调整`move_to_neutral()`的速度
   - `<PandaArm对象>.enable_robot`：出错了恢复，能恢复一部分错（参考[[troubleshooting]]）
+    - 比如撞东西，默认会停下。如果要“推物体”，那么需要`.enable_robot()`
   - 注：自己指定orientation需要[[quaternion]]提到的`pyquaternion`，注意`w`在前
 ```python
 >> python # or `python3` # start interactive python session; make sure the correct ros workspace is sourced.

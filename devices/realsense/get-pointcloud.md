@@ -7,3 +7,5 @@
   - 光滑塑料箱效果差（很多破洞）
 - 抖动会降低质量
 - 拍摄角度影响质量。所以涉及相机[[hand-eye-calibration]]时要先确认该角度点云质量可以再进行标定
+
+- 注：[[realsense/installation]]的`realsense-viewer`窗口中，通过打开开关看到点云预览，可以鼠标旋转，也可以右上角导出`.ply`，出来的效果比`open3d`更好（可能是因为intel的算法工程师）

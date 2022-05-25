@@ -39,3 +39,4 @@ https://github.com/IntelRealSense/librealsense/blob/master/wrappers/python/examp
   - 注意拷过来才能用（否则在`/usr/local`这种地方可能没权限）
     - 这个玩意没权限也不报错，太屑了
     - 这又是[[leaky-abstraction]]的例子
+  - 注：效果不如[[realsense/installation]]中`realsense-viewer`导出效果好
