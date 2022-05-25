@@ -56,3 +56,8 @@ ArUco就是一种fiducial marker
 - 根据上一节“实体准备”填写id和大小（注意单位是m）
 - 调好所有后，`roslaunch aruco_ros single.launch`
 - `rqt_image_view`看效果
+
+结果获取
+- `rostopic list`看到topic名，所以可以`rostopic echo /aruco_single/pose`
+  - 可以用手遮挡让它停下。这样可以“人走过去，标定个位置，再回到电脑前”一人搞定而不需要两人
+  - 不过如果不是直接的而是间接的（比如你的`launch`写的是`camera_link`为ref，但想要`camera_color_optical_frame`为ref的结果，那么就不能这么操作，因为只有`/aruco_single/pose`实时有值才可以`rosrun tf tf_echo`

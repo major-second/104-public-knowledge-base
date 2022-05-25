@@ -55,14 +55,21 @@ git clone https://github.com/IFL-CAMP/easy_handeye
 - 配置完，放到`$(rospack find easy_handeye)/launch`下，任取名字
   - 示例：本文件夹里的那个`.launch`
 ## 启动标定
-- 首先机械臂夹紧码（如果纸板太薄可以考虑加本书**配厚**）（还可以在之后`.launch`里减小速度加速度）
+- 首先机械臂夹紧码
+  - 如果纸板太薄可以考虑加点轻厚泡沫**配厚**
+  - 还可以在之后`.launch`里减小速度加速度，使得更保险
   - ![](hand-eye-arm-pose.png)
-  - 次序：**首先**安排机械臂位置必须是非常“好”的，接近于“neutral”值，非常“中正”
-    - 这样机械臂才可以在周围一圈自由运动
+  - 次序：**首先**安排机械臂位置必须是非常“好”的，接近于“neutral”值，非常“中正”（如上图）
+    - 这样机械臂end-effector才可以在附近自由运动
     - 如果机械臂位置不好，可能在之后第一次点`Next Pose`时终端出错误说这个位置不能标，导致只能重新来
-  - **其次**再放相机，保证marker在视野中央，marker角度合适（尽量“正”，有空间），同时该角度拍到物体效果好
+    - 当然，如果处于neutral位置不方便，可以转最底下的link1（但上面保持不变）
+  - **其次**再放相机，保证marker在视野中央，marker角度合适（尽量“正”，有空间），同时该角度拍到待操作物体效果好
     - 比如肯定要正常拍到目标物体
     - 比如该角度下[[get-pointcloud]]质量好
+  - 当然还需要
+    - 机械臂能够到待操作物体（物体不能太靠近base也不能太远离）
+    - 机械臂base不遮挡物体等
+    - 依赖项很多！
   - 确认没问题再开始标定
 - py2.7环境，机械臂处于**蓝灯**，`roslaunch easy_handeye <刚刚的名字>.launch`
   - 跳出很多GUI，下面的大称为**1号**，小称为**2号**
@@ -96,4 +103,7 @@ git clone https://github.com/IFL-CAMP/easy_handeye
 - 退出刚刚手眼标定的`.launch`，重新`rqt_tf_tree`，看到不再是dummy了（不过目前tree上只有一个transform）
 - 这时再launch[[realsense-ros]]，[[moveit-real-robot]]，[[aruco]]，即1+3共4个transform broadcaster，也就得到了`world`中`camera_marker`的位置，即可可视化标定结果
   - ![](camera_marker.png)
+  - 还可以和[[rqt]]中的`rqt_image_view`一起使用，非常直观
+    - ![](viz-rqt-image-view.png)，marker确实在EE下面一点
+    - 当然这里可能有小问题：有的地方认为marker法向量是x，有的认为是z
   - 看起来marker位置挺对劲的
