@@ -1,0 +1,4 @@
+- 参考[[paste-images-from-clipboard]]
+- 当然，有一些使用技巧，比如[[vscode/settings]]
+  - 调整`"pasteImage.path"`等等
+- 比如编辑器中选中一段文字，然后按`Ctrl+Alt+V`，则粘出的图片就是按此文件名

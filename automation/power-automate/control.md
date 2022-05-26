@@ -3,3 +3,4 @@
     - 结合[[subflow]]，用`case`识别输入的[[power-automate/var]]，可以比较灵活地管理几个**有同有异**的程序
 - 无限循环：类似[[13-loop]]，直接条件循环取一个`1=1`
 - break和continue那种操作也有
+- `else`是一个单独的可以拖动的小模块。可以接多种if（普通的if或if text等都行）
