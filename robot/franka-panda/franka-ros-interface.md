@@ -52,7 +52,8 @@
 
 >> r = PandaArm() # create PandaArm instance
 
->> import rospy; from panda_robot import PandaArm; rospy.init_node("panda_demo"); r = PandaArm(); r.set_joint_position_speed(0.05) # 这个是我自己整合的，懒人版命令
+>> import rospy; from panda_robot import PandaArm; rospy.init_node("panda_demo"); r = PandaArm(); r.set_joint_position_speed(0.05); r.get_gripper().home_joints() # 这个是我自己整合的，懒人版命令
+>> import rospy; from panda_robot import PandaArm; rospy.init_node("panda_demo"); r = PandaArm(); r.set_joint_position_speed(0.05) # 这个不动gripper
 
 >> r.move_to_neutral() # moves robot to neutral pose; uses moveit if available, else JointTrajectory action client
 # 这句有bug，无法限速。最好不要运行。运行要特别小心
