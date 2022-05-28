@@ -22,3 +22,4 @@
   - 备份完Manage*选项可以看到文件路径。我们可以拷贝保存
   - 保存这三个即可![](wechat-backup-files.png)
   - 之后想要时拷回来到指定路径即可还原
+- 微信运动等等东西也可以设置mute notifications，防止骚扰
