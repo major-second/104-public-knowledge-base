@@ -1,0 +1,2 @@
+https://www.bananaspace.org/wiki/Beta_%E5%87%BD%E6%95%B0#:~:text=%E5%AE%9A%E4%B9%89%201.1.%20B%20%E5%87%BD%E6%95%B0%20%E5%AE%9A%E4%B9%89%E4%B8%BA%20B%28a%2Cb%29%20%3D%20%E2%88%AB,01%20ta%E2%88%921%281%20%E2%88%92%20t%29b%E2%88%921dt%2C%20%E5%85%B6%E4%B8%AD%20a%2Cb%20%E2%88%88%20C.
+联系[[calculus/gamma]]
