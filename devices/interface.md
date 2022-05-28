@@ -15,3 +15,8 @@
   - 不对称
   - 机箱（数据源）有多个可以插，但有些是HDMI输出有些是VGA输出。看清楚再插
   - 显示器有时也有多个可以插，编号HDMI1，HDMI2等等，可以在显示器菜单选
+- 有时重新插拔接口可以解决一些问题
+  - 比如有时显示器熄屏了需要重新插拔
+  - [[wired-connection]]
+  - [[troubleshooting]]
+  - 重启或[[timeshift]]之类后，插在主机上的各种附属物有些可能要重新插拔，比如[[connect-controller]]和[[realsense/installation]]

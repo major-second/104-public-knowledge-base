@@ -9,5 +9,6 @@
 - 还有最经典的设置东西之后要更新。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
-- 重启或[[timeshift]]之类后，插在主机上的各种附属物有些可能要重新插拔，比如[[connect-controller]]和[[realsense/installation]]
+  - [[source]]的`sudo apt update`
+- [[interface]]提到的重新插拔接口。比如[[wired-connection]]，[[troubleshooting]]
 - 硬件层面的重置或初始化：例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
