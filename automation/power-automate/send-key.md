@@ -18,6 +18,8 @@
   - [参考](https://docs.microsoft.com/en-us/power-automate/desktop-flows/actions-reference/mouseandkeyboard#sendkeys)
   - 这里面有些映射关系可能有点问题，不是你想的那样。比如时至5.17，`{Oem5}`不能对应数字5
   - 那可以用`as hardware keys`选项，写不带花括号的`5`凑合一下
+  - 大小写敏感！这个挺坑的。请看网页。比如`{OemMinus}`
+    - 这大小写还带不统一的……
 > To use a key as a modifier, use the curly brackets notation for both keys: e.g. for Ctrl + A, use {Control}({A})
 
 - 当然平时数字模拟输入命令倒是不需要花括号

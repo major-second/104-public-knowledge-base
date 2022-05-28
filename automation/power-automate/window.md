@@ -1,0 +1,3 @@
+- 可以`Run application`后直接保存handle等，参考[[application]]
+- 可以根据标题、类名等
+  - 可以打开着窗口，然后用power automate读取标题、类名
