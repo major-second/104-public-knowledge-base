@@ -28,4 +28,4 @@ class ObservationWrapper(gym.ObservationWrapper):
         # modify obs
         return obs
 ```
-注意继承之后，wrapper仍然是输入环境，输出环境
+注意继承之后，wrapper仍然是“输入的是环境，输出的也是环境”
