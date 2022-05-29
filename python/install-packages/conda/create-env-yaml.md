@@ -1,4 +1,8 @@
-用yaml写好环境需要的东西，典型的是下面这种感觉。可以看到名称，[[channel]]，`conda`和[[pip]]装的包等等。
+用yaml列举好某个环境需要的包。示例：下面这样
+可以看到
+- 环境名称
+- [[channel]]
+- `conda`和[[pip]]各自装的包等等。
 ```yaml
 name: dummy
 channels:

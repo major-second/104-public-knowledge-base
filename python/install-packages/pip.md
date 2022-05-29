@@ -10,7 +10,7 @@
   - 然后`pip install -r requirements.txt`即可
   - 注：`requirements.txt`有时还能看到`git`开头的一些行，表示一些从git下载源码安装的包
 - 当然，`pip install`有时需要一些更底层的依赖。也就是python包只是一些上层接口而已
-  - 其实这个有点像vscode插件和python解释器的关系，参见[[general]]
+  - 其实这个有点像vscode插件和python解释器的关系，参见[[extensions/general]]
   - 比如[[mujoco-py]]中的mujoco
   - 比如[[mpi4py]]中需要
     - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
