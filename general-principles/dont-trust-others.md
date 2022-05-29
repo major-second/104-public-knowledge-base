@@ -2,7 +2,7 @@
 - 骂微软
   - [[bit-locker]]就是为了商业利益（推广一个东西）经常损害用户利益
   - [[prevent-auto-update]]里提到微软自动更新让你文档丢失，还不给你关
-  - [[win7-virtual]]讲到为了推广win10，给win7设置各种障碍
+  - [[win7-virtual]]讲到为了推广win10，微软给win7设置各种障碍
 - 骂英伟达
   - [[ubuntu-nvidia-drivers]]提到由于垄断，不好好维护文档导致推荐版本不对让服务器黑屏
 - 骂苹果
@@ -11,6 +11,10 @@
   - 有些无意疏忽，也有些有意疏漏（无法复现）
   - 前者可以github提issue说不定会有人回。后者就自求多福吧！觉得不行，请谨慎follow工作
   - 像[这种](https://github.com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
-- 有些时候作者没空维护了，比如[[franka-ros-interface]]，各种文档和现象不对应
-- [[mujoco-py]]官方文档的troubleshooting补的包不够
-- franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
+- 有些时候作者没空维护了（毕竟开源用爱发电）
+  - 比如[[franka-ros-interface]]，各种文档和现象不对应
+  - 比如[[windows]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
+- 官方文档可能有疏漏，不准确
+  - [[mujoco-py]]官方文档的troubleshooting补的包不够
+  - franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
+  - [[franka-ros-interface]]文档一堆现象不对应实际
