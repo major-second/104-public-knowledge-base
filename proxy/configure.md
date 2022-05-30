@@ -1,6 +1,6 @@
 首先打开代理，比如[[linux]]，[[windows]]
 但打开之后还需要配置才能让应用实际走代理，而不是走直连
-参考[[vscode/proxy]]，[[settings-and-configurations]]，[[zoom]]等等都有提到
+参考[[vscode/settings]]，[[settings-and-configurations]]，[[zoom]]等等都有提到
 # 系统设定、浏览器走代理
 - 浏览器preference等地方可能使用系统设定，也可能手动设置浏览器走的代理
 - 总之一般就是设置ip和端口号
