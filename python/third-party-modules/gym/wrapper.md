@@ -69,3 +69,4 @@ array([-0.01258566, -0.00156614,  0.04207708, -0.00180545])
 >>> env_s.unwrapped.step(0)
 (array([-0.01261699, -0.19726549,  0.04204097,  0.30385076]), 1.0, False, {})
 ```
+查看[源码](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py)，发现返回的observation不是numpy数组，但是通过[[numpy/magic]]即可得到数组（也就是`array(返回对象)`是numpy数组
