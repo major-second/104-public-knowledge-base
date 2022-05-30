@@ -1,0 +1,5 @@
+- `Box`
+    - 例如：`self.observation_space = spaces.Box(low=-50, high=50, shape=(10,), dtype=np.float32)`
+    - 例如：`self.observation_space = spaces.Box(low=array([-1,-2,-3]), high=array([1,2,3]), dtype=np.float32)`
+      - 注：所以说[[gym/wrapper]]往往可以读取unwrapped环境的`observation_space.high`和`observation_space.low`然后做[[numpy/basic]]数组操作，再构造出新的space
+      - 例如`FrameStack`的`np.repeat`操作

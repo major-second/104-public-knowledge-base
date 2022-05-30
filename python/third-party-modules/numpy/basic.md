@@ -6,6 +6,7 @@
 - `np.vstack`
   - 把`[(1,2),(3,4)]`变成`2*2`的
   - 把`np.ndarray((2,), dtype=object)`这类的变成正常的（类型为数值）的array
+  - [各种stack](https://blog.csdn.net/csdn15698845876/article/details/73380803)
 - 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
   - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
   - 甚至原生list的`l[:]`还是浅拷贝的一种方式
