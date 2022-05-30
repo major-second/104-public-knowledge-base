@@ -8,7 +8,6 @@
     - `"git.terminalAuthentication": false`去除自动Authentication
       - 当然，这样就导致每次都要输入账号和[[personal-access-tokens]]
       - 如果自动的Authentication不符合要求（比如不是你要的账号等等），当然就要如此去除
-    - `"pasteImage.path"`调整用`pasteImage`插件时默认粘贴到哪（比较方便的：`${currentFileDir}`），参考[[paste-images-from-clipboard]]
-    - `"pasteImage.defaultName"`调整名称。比如`"hhmm"`可以使得你修改时按一下`Ctrl+Backspace`就能删掉，相比原来的有`-`的默认名方便很多
-      - 参考[[built-in-keyboard-shortcuts-editting]]中关于`Ctrl`的部分
+    - `"http.proxy": "http://<ip>:<port>"`：设置代理
+      - 默认可能继承了[[6-env]]的环境变量
 - 当然，这些设置项的名称和细节可能随着版本和系统不同而变化
