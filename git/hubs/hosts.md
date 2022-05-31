@@ -12,5 +12,4 @@
 - 这种操作的重要作用
   - 除了[[temp-solution]]
   - 还可能是[[configure]]很麻烦时用于连接一些没被强力墙的网站
-  - 如 raw.githubusercontent.com
-  - 有些时候（如[[zsh]]，[[ros/installation]]），只需改hosts就够了
+    - 如raw.githubusercontent.com，有些时候（如[[zsh]]，[[ros/installation]]），只需改hosts就足够能上了
