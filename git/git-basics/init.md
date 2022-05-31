@@ -1,5 +1,5 @@
 前置：
-- [[git/installation]]
+- [[git-basics/installation]]
 
 如何初始化一个git库？几种方法！
 - `github`或者[[other-hubs]]在线新建库，然后`git clone`到本地

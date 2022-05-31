@@ -1,6 +1,6 @@
 git和github是什么关系？
 - git本身只是一套管理系统，你可以只在本地用，比如[[stash]]，[[reset]]等等
-  - 无论用什么托管平台（hub），[[git/installation]]都是需要的
+  - 无论用什么托管平台（hub），[[git-basics/installation]]都是需要的
 - github是一个托管平台，可以一定程度上理解为网盘。除了github肯定还有其他的提供商
   - 例如你没有代理[[node]]，那就可以找国内的类似物，比如gitee等
   - 例如你在公司内，就要用公司内部的托管平台

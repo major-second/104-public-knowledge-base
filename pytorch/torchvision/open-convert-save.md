@@ -1,5 +1,5 @@
 前置
-- [[basics/installation]]中，可选择安装`torchvision`，你装了就有
+- [[git-basics/installation]]中，可选择安装`torchvision`，你装了就有
 
 核心：`from PIL import Image`，`open(文件名)`，`save(文件名)`，`convert('RGB')`
 ```python

@@ -9,7 +9,7 @@ type: tools
 mixed为默认参数，上图中未出现
 注：[[git-history]]只是一种可视化工具，你直接上github.com看或者用github desktop看也行
 
-- soft告诉Git重置HEAD (见[[basics/basics]]) 到另外一个commit，这意味着index, working copy都不会变化，所有的在original HEAD和你重置到的那个commit之间的所有变更集都放在stage(index)区域中
+- soft告诉Git重置HEAD (见[[git-basics/basics]]) 到另外一个commit，这意味着index, working copy都不会变化，所有的在original HEAD和你重置到的那个commit之间的所有变更集都放在stage(index)区域中
 ![](soft-reset.png)
   - 应用：[[discard-local]]中，aggregate一系列commit成一个，push到remote，避免remote的commit数量太多
 - hard将重置HEAD返回到另外一个commit，重置index以便反映HEAD的变化，并且重置working copy也使得其完全匹配起来。这是一个比较危险的动作，具有破坏性，数据因此可能会丢失！
