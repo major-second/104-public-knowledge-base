@@ -2,7 +2,7 @@
 - 开发结束（一个阶段）后
   - 把`tag`清除
   - soft [[reset]]回旧版本
-  - 整理一起commit
-  - 再[[push]]到服务器
-  - 可以防止服务器传一大堆commit
+  - 整理，并一起[[commit]]
+  - 再push到服务器（参考[[push-pull]]）
+  - 这可以防止服务器上有一大堆commit，看着烦人
 - 如果`main`位置不对，可以[[rebase]]然后疯狂`--skip`
