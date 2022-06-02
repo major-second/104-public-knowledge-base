@@ -1,3 +1,5 @@
 - 可以`Run application`后直接保存handle等，参考[[application]]
+- 可以`Get window`（比如前置窗口）直接到某个instance，之后可用
+  - 比如`Set window state`其状态到最大化等
 - 可以根据标题、类名等
   - 可以打开着窗口，然后用power automate读取标题、类名

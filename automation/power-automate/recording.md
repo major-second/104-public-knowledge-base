@@ -14,3 +14,5 @@
     - 或用[[selector-builder]]更改查找UI元素的方法（比如只要求窗口包含`Telegram`字符串）
     - 或[[ocr]]、找图
     - 参考[[generalization]]
+- 什么时候泛化性强，比较好用？不同地方显然泛化性不同
+  - 经验：比如windows自带设置界面，outlook邮箱等地方，就很好用
