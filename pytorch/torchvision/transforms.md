@@ -15,5 +15,6 @@
       - ![](rotate.png)
     - 一或二元`resized = tfs.Resize((800, 1000))(ori)`
       - ![](resize.png)
+      - 注：crop和resize常常配套使得大小确定！
     - 一至四元均可`jittered = tfs.ColorJitter(contrast=0.5, brightness=0.5, hue=0.5)(ori)`
       - ![](color-jitter.png)
