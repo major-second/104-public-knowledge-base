@@ -5,4 +5,5 @@ http://static.latexstudio.net/article/2019/0204/amsmath-guide-zh-cn.pdf
 - `chinese`：使用`ctexart`文档类，可以用中文。
 - 关于引用
   - `citation-base`：基础。和[[beamer-with-citations/README]]道理是相同的
-  - `citation-multi-id-for-one-paper`：一篇paper，多个id. 比如正文和rebuttal不同，用于rebuttal省空间
+  - `citation-multi-id-for-one-paper`：一篇paper，多个id
+    - 比如同一篇，正文和rebuttal赋予id不同，对应item的长度不同，用于在rebuttal省空间

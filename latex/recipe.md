@@ -7,10 +7,10 @@
 "xelatex",
 "xelatex"
 ```
-- 不需要的是
+- 不需要引用参考文献时是
 ```
 "xelatex"
 ```
-注意：如果你文中没有任何引用`\cite`，那么不可以使用`bibtex`. 至少要有一个`\cite`，才行！对比[[minimum-beamer/README]]和[[beamer-with-citations/README]]
-参考
-https://tex.stackexchange.com/questions/442519/truly-ignore-bibtex-error-no-citation-commands
+- 如果你文中没有任何引用`\cite`，那么不可以使用`bibtex`（[参考](https://tex.stackexchange.com/questions/442519/truly-ignore-bibtex-error-no-citation-commands)）
+    - 至少要有一个`\cite`，才可以使用`bibtex`
+    - 举例：对比[[minimum-beamer/README]]和[[beamer-with-citations/README]]
