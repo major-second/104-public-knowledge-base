@@ -1,0 +1,15 @@
+前置
+- [[powershell/basics]]
+- 了解[[windows/env-var]]
+
+内容
+- 环境变量都是字符串
+- 直接`$env:<名字>`可以查询。和[[windows/env-var]]查询结果相同
+  - 如
+```powershell
+> $env:windir
+C:\Windows
+```
+- 直接`$env:<k> = "<v>"`改动
+  - 改动成空就是删除
+- 应用：`$env:http_proxy = "http://127.0.0.1:<端口号>"`
