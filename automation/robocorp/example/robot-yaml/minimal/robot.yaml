@@ -1,0 +1,4 @@
+tasks:
+  Hello World:
+    shell: echo hello world
+artifactsDir: output

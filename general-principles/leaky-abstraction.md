@@ -32,6 +32,7 @@
     - 实际上，难以用二元对立简单概括python行为。因为python传引用但是赋值是重新绑定
     - 不能用简单的term来概括！
   - 比如[[import]]中提到的[[omegaconf/basic]]和其上下级的关系
+  - 比如[[robocorp/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境）
 - 有时上层抽象不如你想象的clean
   - [[risk]]提到了直接删除第二系统的分区是不行的
   - [[partition]]中，直接移动系统盘分区是不行的

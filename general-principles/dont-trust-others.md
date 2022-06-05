@@ -3,6 +3,7 @@
   - [[bit-locker]]就是为了商业利益（推广一个东西）经常损害用户利益
   - [[prevent-auto-update]]里提到微软自动更新让你文档丢失，还不给你关
   - [[win7-virtual]]讲到为了推广win10，微软给win7设置各种障碍
+  - [[windows/env-var]]中爹味自作主张弄了个假的`python.exe`，除非你手动把`env:path`中最靠前的路径改成python的否则用不了真正的`python.exe`
 - 骂英伟达
   - [[ubuntu-nvidia-drivers]]提到由于垄断，不好好维护文档导致推荐版本不对让服务器黑屏
 - 骂苹果

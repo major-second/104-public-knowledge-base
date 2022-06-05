@@ -39,5 +39,9 @@ export http_proxy="localhost:<端口号>"
   - `cip.cc`看结果
   - `ipinfo.io`看结果
   - `www.google.com`看能不能上
-- `cip.cc`好处是中文且墙内较快
-- `cip.cc`有时用不了，就试试`ipinfo.io`呗
+  - `cip.cc`好处是中文且墙内较快
+  - `cip.cc`有时由于未知原因用不了，就试试`ipinfo.io`呗
+- powershell
+  - `curl cip.cc`不行（和linux表现不同）
+  - `curl ipinfo.io`可以
+  - `curl google.com`看有没有内容也可以

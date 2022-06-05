@@ -1,6 +1,8 @@
 - `pip`本身来源：
-  - `python3-dev`安装时自动附带
-  - `python2`环境中的`sudo apt install python-pip`
+  - linux
+    - `python3`：`apt install python3-dev`安装时自动附带
+    - `python2`：`apt install python-pip`
+  - windows：[官网下载](https://www.python.org/downloads/windows/)安装时可选
 - 普通使用：直接`pip install 包名`
 - 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
     - clone源码，进去
