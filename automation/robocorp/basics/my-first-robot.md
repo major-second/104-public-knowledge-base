@@ -14,6 +14,7 @@
 - 左侧出现robocorp图标（那个机器人）
   - 点它，现在开始加载![](my-first-robot.png)
   - 过程可能需要一定时间（主要是下载装包等）
+    - 可能需要为vscode配置代理
 - 开始运行
   - vscode左侧robocorp图标
   - ![](start.png)中三角播放按钮

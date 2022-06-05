@@ -29,7 +29,7 @@
 - 效果是使用默认`python`解释器`print`一行`hello world`
 ## 使用`conda.yaml`和`.gitignore`
 - 查看`104-public-knowledge-base\automation\robocorp\example\robot-yaml\conda`，可以看到多了一个`conda.yaml`文件。书写格式参考[[create-env-yaml]]
-运行这个robot可以`rcc run`或用vscode集成的插件。和没有`conda.yaml`的robot不同
+  - 由于指定了`conda.yaml`，故运行这个robot可以`rcc run`或用vscode集成的插件两种方式
   - `robot.yaml`中增加`condaConfigFile`字段来使用`conda.yaml`
 - `ignoreFiles`字段用于指定忽略的文件。参考[[special-files]]
 - 此robot输出python版本是`conda.yaml`指定的版本

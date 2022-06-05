@@ -9,13 +9,15 @@
     - `pip install -e .`
     - 此时`pip list`可以看到有的包是在本地某个源码文件夹装的
 - 批量安装依赖
-  1. 有个`requirements.txt`里面一行一行写需要什么包，比如长得像
+  1. 原生方法：有个`requirements.txt`里面一行一行写需要什么包，该文件内容形如
 `gym==0.19`
 `termcolor`
     - 然后`pip install -r requirements.txt`即可
     - 注：`requirements.txt`有时还能看到`git`开头的一些行，表示一些从git下载源码安装的包
-  2. [[create-env-yaml]]中的`pip`子树
-- 当然，`pip install`有时需要一些更底层的依赖。也就是python包只是一些上层接口而已
+  2. 和conda结合：[[create-env-yaml]]中的`dependencies - pip`子树
+    - 当然为了更加保险，`dependencies`子树中可以增加`python=版本`和`pip=版本`
+- 一般来说`pip`效率不如`conda`，但有些`pip`有的包`conda`没有
+- 当然，`pip install`得到的包有时需要一些更底层的依赖。也就是python包只是一些上层接口而已
   - 其实这个有点像vscode插件和python解释器的关系，参见[[extensions/general]]
   - 比如[[mujoco-py]]中的mujoco
   - 比如[[mpi4py]]中需要
