@@ -22,3 +22,5 @@ Minimal task
   - 也就是在`robot.yaml`中`robotTaskName`字段
   - 写`.robot`文件中的`Tasks`字段下的task名称
   - 比如刚刚的`Minimal task`
+- 这样运行之后在`output`文件夹就除了之前的`stdout.log, stderr.log, *.yaml`，还有`*.xml, *.html`
+  - 其中`html`可以用浏览器打开。可以本地资源管理器处，也可以安装`open in browser`插件后`Alt+B`快捷键
