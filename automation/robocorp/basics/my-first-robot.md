@@ -1,5 +1,5 @@
 前置
-- [[robocorp/installation]]
+- [[robocorp/basics/installation]]
 - 其中`google-image-search`robot需要[[configure]]代理
   - windows使用[[windows/env-var]]
 

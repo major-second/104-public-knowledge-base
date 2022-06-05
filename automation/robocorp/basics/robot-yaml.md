@@ -1,5 +1,5 @@
 前置：
-- [[robocorp/installation]]中的命令行工具`rcc`
+- [[robocorp/basics/installation]]中的命令行工具`rcc`
   - 否则只能用vscode集成的不够灵活的rcc，于是不能使用这里的部分robot
 - 对于windows需要[[powershell/basics]]可以使用`python`命令
   - 即安装了`python`

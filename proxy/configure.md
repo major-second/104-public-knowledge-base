@@ -26,7 +26,7 @@ export http_proxy="localhost:<端口号>"
 # win环境变量
 参考[[windows/env-var]]，[[powershell/var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
-有些软件比如[[robocorp/installation]]会用到
+有些软件比如[[robocorp/basics/installation]]会用到
 # 读取自己设置
 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]
 有时嫌改这种设置太麻烦，可以[[hosts]]作[[temp-solution]]
