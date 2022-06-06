@@ -9,6 +9,10 @@ Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序�
     - 因为如果你没加[[windows/env-var]]之类的，那么powershell就没法`conda`
     - 但powershell可以`ls`
   - 如果又想`ls`（或者其它[[powershell/basics]]命令）怎么办？有个`Anaconda Powershell Prompt`
+- 注：即使安装了conda，在[[powershell/basics]]也可能无法直接使用`python`命令
+  - 如果你想在windows做出和linux类似的“不用conda时是‘默认裸’python，用conda时可选环境”的效果，需要自行[下载安装](https://www.python.org/downloads/windows/)并加一条到`path`这个[[windows/env-var]]
+  - 且必须放到靠前的位置，参考[[dont-trust-others]]对微软爹味的控诉
+  - ![](windows-add-path.png)
 ## Linux
 - [官网](https://www.anaconda.com/)下载（可能浏览器下也可能找到对应链接后`wget`下载）
   - 总之得到某个`.sh`

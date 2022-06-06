@@ -1,0 +1,35 @@
+## 基本概念
+- HEAD
+    - 一般情况下是当前分支顶端的别名
+      - 也就是在当前分支你最新的一个[[commit]]
+    - 注：另有detach状态：[[head-detached]]，此时不一定在某个分支的顶端
+- Index，也称为staging area
+  - 指一整套即将被下一个提交的文件集合
+  - 也是将成为HEAD的子节点的那个commit
+    - 如果没有[[head-detached]]，那么commit后当前分支“往前走一步”，顶端更新了
+    - 如果目前在[[head-detached]]状态，就有可能“产生新的（临时）分支”
+      - 也就是本来按顺序是123三个commit，你[[head-detached]]在2，然后再stage并commit，那么就2二叉树连接3和3'
+- Working Copy代表你正在工作的那个文件集
+  - 比如你用记事本修改了一个文件，保存之后，working copy就变化
+## 操作过程
+[参考](https://www.cnblogs.com/kidsitcn/p/4513297.html)
+- 当你第一次[[checkout]]一个分支，HEAD，Index，Working Copy都相同
+  - 特别注意，如[[head-detached]]时，[[checkout]]可能导致丢失！
+- 当你对一个文件执行一次修改（比如编辑器打两行字然后`Ctrl + S`保存）
+    - working copy变化，不再和index，HEAD相同！
+    - Git感知到这个修改，标记这个文件是修改过的
+    - 可以理解成Git相当于比文本编辑器“高一层”，是“文件夹编辑器”
+    - 这里文件夹中“修改文件但没有`git add`到index”类比编辑文件中“文本没保存”
+- 然后，当你执行一个`git add`（即stage的一种），Git就stages the file in the index
+    - 现在你的working copy和index是相同的，但是他们和HEAD区是不同的！
+    - 这里类比文本编辑器的按保存
+- 当你执行一个git commit，Git就创建一个新的commit，随后HEAD就指向这个新的commit，而index, working copy的状态和HEAD就又完全匹配相同了
+- 以上都在本地进行。如果要远程，则再增加`pull`和`push`操作
+  - 类比文本编辑器的传递上云盘
+  - 一般过程
+    - 先`pull`，发现别人和你修改了同样的一些文件，出现conflict
+    - 解决conflict，`git add`解决后的结果到index
+    - `push`结果到远程
+- 注：用vscode集成Git的一个feature
+  - 如果没有任何index，按commit就同时对所有working copy中变了的文件做stage和commit，比较快捷方便
+  - 但如果有一些index，就只commit这部分。这方便选择性做commit

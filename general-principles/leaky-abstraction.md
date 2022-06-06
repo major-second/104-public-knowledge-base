@@ -6,7 +6,11 @@
 - 你完全不了解原始操作，肯定不行。原始操作需要有所理解，但高级包你也得会调，这样效率才最高
 - 比如上层整合可能有的时候不把底层的错误传递出来（或者传递不清晰），需要直击底层才能找到错误所在
   - vscode的[[remote-ssh]]插件在远程公钥变了的时候不把错误传递出来，这时你就得知道底层命令`ssh`，才能发现错误所在
-  - vscode的[[git-history]]插件在有untracked文件冲突时checkout没反应且不报错。这是你就得知道底层命令`git`，才能发现错误所在
+  - vscode的[[git-history]]插件在有untracked文件冲突时checkout没反应且不报错。这是你就得知道底层命令`git checkout`，尝试一下，才能发现错误所在
+  - vscode的git功能遇到[[submodule]]作为changes出现conflict时
+    - ![](submodule-changes-conflict.png)
+    - gui无法正常stage和commit
+    - 必须手动命令行`git add <submodule文件夹名>`
   - [[ssh-config]]中提到注释必须单独成行。如果没有做到，那么直接`ssh`连接会报错，但vscode会吃掉报错信息
   - [[assets]]中的这个![](assets.png)
   - [[moveit-real-robot]]的命令不能运行，要[[fci]]里的底层命令才能传递出真正的错误原因
@@ -28,6 +32,7 @@
     - 实际上，难以用二元对立简单概括python行为。因为python传引用但是赋值是重新绑定
     - 不能用简单的term来概括！
   - 比如[[import]]中提到的[[omegaconf/basic]]和其上下级的关系
+  - 比如[[robocorp/basics/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境）
 - 有时上层抽象不如你想象的clean
   - [[risk]]提到了直接删除第二系统的分区是不行的
   - [[partition]]中，直接移动系统盘分区是不行的

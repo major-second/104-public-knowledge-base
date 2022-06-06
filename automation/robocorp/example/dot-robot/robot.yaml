@@ -1,0 +1,7 @@
+tasks:
+  Hello World:
+    robotTaskName: Minimal Task
+artifactsDir: output
+condaConfigFile: conda.yaml
+ignoreFiles:
+  - .gitignore

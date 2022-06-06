@@ -1,0 +1,4 @@
+tasks:
+  Hello World:
+    shell: python -c "print('hello world')"
+artifactsDir: output

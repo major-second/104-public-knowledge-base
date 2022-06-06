@@ -1,6 +1,5 @@
-- `Box`
-    - 例如：`self.observation_space = spaces.Box(low=-50, high=50, shape=(10,), dtype=np.float32)`
-    - 当然，你的env可以在给出observation前，都作[[normalization]]到$[-1, 1]$。示例：涉及机器人的
-        - position用3个数表示（三维空间中），具体范围当然跟你的环境有关
-        - 你可以把范围的上限，下限分别对应1和-1
-        - 而orientation常用[[quaternion]]，本来范围就是$[-1,1]$
+- gym实现参考[[spaces]]
+- 注：当然，你的env可以在给出observation前，都作[[normalization]]到$[-1, 1]$。示例：涉及机器人的
+    - position用3个数表示（三维空间中），具体范围当然跟你的环境有关
+    - 你可以把范围的上限，下限分别对应1和-1
+    - 而orientation常用[[quaternion]]，本来范围就是$[-1,1]$

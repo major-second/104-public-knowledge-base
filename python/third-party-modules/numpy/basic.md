@@ -1,11 +1,13 @@
 `import numpy as np`
 - `np.array([2])`这种得到`[2]`，但`np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
-  - 注意不要少打一对括号。
+  - 注意不要少打一对括号
   - 元组当然可以大于2个元素
+  - 除了接受元组，当然也能接受`numpy`数组（例如输入二维数组，就是对一列一维数组作concatenate）
 - `np.vstack`
   - 把`[(1,2),(3,4)]`变成`2*2`的
   - 把`np.ndarray((2,), dtype=object)`这类的变成正常的（类型为数值）的array
+  - [各种stack](https://blog.csdn.net/csdn15698845876/article/details/73380803)
 - 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
   - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
   - 甚至原生list的`l[:]`还是浅拷贝的一种方式

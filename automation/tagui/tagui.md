@@ -24,3 +24,4 @@ https://tagui.readthedocs.io/en/latest/setup.html
 - `tagui <某> -n`无需浏览器
 - 由于`hover`的漂移和`ocr`不太行，所以只能多使用找图和键盘操作。参考本文件夹的连接wifi机器人
 - 可以作为bootstrap的[[temp-solution]]，用它定时启动/双击启动一些商业RPA如[[my-first-flow]]
+- 举例：本文件夹的`connect-wifi`可用于在win11连接第一个wifi

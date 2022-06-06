@@ -1,8 +1,0 @@
-- 在使用`git`管理的项目中，`git clone`下来的文件表面只有HEAD的，但实际上有一个分支的所有版本
-  - 非HEAD的版本都存放在一些隐藏的地方。[[checkout]]可以显现
-  - 当然不是傻傻存全部，而是增量存的。[[push]]中也有提到
-  - vscode相关：用[[keyboard-shortcuts]]中的`Ctrl + P`可以看到这些隐藏文件。用[[git-history]]的compare也能看到。但它们和你自己工作区里的文件不是一个东西
-    - 也就是，在[[git-history]]处比较时无法很方便地修改
-    - 相比之下，vscode资源管理区ctrl选择两个文件compare可以方便修改
-    - vscode在`Ctrl + Shift + G`区预览时也可以
-    - 拓展：[[pycharm比较]]

@@ -8,3 +8,6 @@
 调试模式和“正常运行”区别
 - 比如[[features]]中的xbox录屏，调试时会错误录power automate自身，好在“正常运行”时正常
 - 在console有个settings可以设置一些“正常运行”时最常用设置，比如是否有monitor window，是否有一键停下的应急快捷键等
+
+其它
+- 调试停下后，[[power-automate/var]]还是存着的，方便紧接着下一次调试
