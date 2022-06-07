@@ -1,6 +1,7 @@
 前置：
 - [[robot-yaml]]
 - [[pip]]
+- 会用浏览器或vscode插件查看[[html]]
 
 内容
 - 在[[robot-yaml]]提到`tasks - <任务名称> - <command | shell | robotTaskName>`
@@ -29,5 +30,5 @@ Minimal task
   - 比如刚刚的`Minimal task`
 - 这样运行之后在`output`文件夹就除了之前的`stdout.log, stderr.log, *.yaml`，还有`*.xml, *.html`
   - 其中`html`可以用浏览器打开
-    - 可以本地资源管理器处
+    - 可以本地资源管理器打开
     - 也可以安装vscode`open in browser`插件后`Alt+B`快捷键

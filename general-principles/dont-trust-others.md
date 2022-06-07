@@ -16,6 +16,11 @@
   - 比如[[franka-ros-interface]]，各种文档和现象不对应
   - 比如[[windows]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
 - 官方文档可能有疏漏，不准确
-  - [[mujoco-py]]官方文档的troubleshooting补的包不够
-  - franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
-  - [[franka-ros-interface]]文档一堆现象不对应实际
+  - 疏漏
+    - [[mujoco-py]]官方文档的troubleshooting补的包不够
+  - 不准确
+    - franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
+    - [[franka-ros-interface]]文档一堆现象不对应实际
+  - 过时
+    - [[desktop/basics]]中`Desktop`包给出提示要求配置环境变量`TESSDATA_PREFIX`到`tessdata`的上级
+    - 但时至2022.6，其实应该配置到`tessdata`的路径本身
