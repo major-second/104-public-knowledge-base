@@ -3,8 +3,8 @@ title: Win10自带编辑用快捷键
 type: efficiency
 ---
 
-# Win10自带编辑用快捷键
-本期从 #Windows10 的 #快捷键 的
+# 官方
+从 #Windows10 的 #快捷键 的
 [官方列表](https://support.microsoft.com/zh-cn/windows/windows-%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-dcc61a57-8ff0-cffe-9796-cb9706c75eec#WindowsVersion=Windows_10)
 中，列举一些常规通用的 #编辑 用快捷键，目的是提高工作自动化程度，提高 #工作效率。
 这些快捷键都是某种程度上通用的，在大多数情况，大多数应用中都可用（因为应用开发者当然要照顾大家习惯嘛）
@@ -20,3 +20,6 @@ type: efficiency
   - `Ctrl + 上下`官方教程说按段落移动，然而实际上有些编辑器里可能不支持（比如VSCode里是“整体平移视窗”但不改变光标位置）
 - `Shift + 方向键`选中文本（而不是仅仅移动光标）
   - 可以和刚刚的`Ctrl`结合使用。这样一来`Ctrl + Shift + 左右`这种就可以以“单词”为单位选中文本
+# 其它
+选中一系列文本然后`tab`让它们缩进，`shift + tab`回缩。写python很有用
+- 注意一定要选中整行，否则会把这段文本整个变成一个`\t`字符而不是进行缩进
