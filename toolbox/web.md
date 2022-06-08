@@ -1,0 +1,18 @@
+在线工具，无需下载，就是好！
+- [[leetcode]]
+- [[dida]]网页版
+- https://www.pdf2go.com/
+  - 可以做的：![](pdf2go.png)
+  - 可以联合[[download-resource]]使用
+- https://tool.lu/
+  - 不要用这个的dns查询，因为是被国内污染的，参考[[hosts]]
+  - 下面列举实用的
+  - https://tool.lu/holiday/
+  - https://tool.lu/diff/
+    - 对比和**归并**
+  - https://tool.lu/zhconvert/
+  - https://tool.lu/qrcode/
+    - 繁简转换
+  - https://tool.lu/ocr/
+  - https://tool.lu/coderunner/
+    - ocr（可以上传电脑图片或手机微信扫码上传图片。需要登录）
