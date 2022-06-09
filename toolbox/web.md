@@ -8,6 +8,8 @@
   - 不要用这个的dns查询，因为是被国内污染的，参考[[hosts]]
   - 下面列举实用的
   - https://tool.lu/holiday/
+  - https://tool.lu/wordcount/
+    - 字数计算，包括中英，标点，空白等等
   - https://tool.lu/diff/
     - 对比和**归并**
   - https://tool.lu/zhconvert/
