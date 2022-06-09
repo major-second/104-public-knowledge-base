@@ -4,4 +4,4 @@
 参考
 - github的[[https-ssh]]
 - docker的[[docker/pubkey]]
-- 如何关闭密码登录？[[ssh-server-config]]
+- 如何关闭密码登录？[[server-config]]

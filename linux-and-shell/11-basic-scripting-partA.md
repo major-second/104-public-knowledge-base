@@ -123,7 +123,7 @@ wc << EOF
 https://www.cnblogs.com/loki717/p/7358125.html
 > 在双引号内，不被忽略的符号：` $ \
 
-应用：[[ssh-env-var]]中需要往文件输入
+应用：[[ssh/env-var]]中需要往文件输入
 ```sh
 for item in `cat /proc/1/environ | tr '\0' '\n'`
 do

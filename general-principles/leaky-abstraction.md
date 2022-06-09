@@ -11,7 +11,7 @@
     - ![](submodule-changes-conflict.png)
     - gui无法正常stage和commit
     - 必须手动命令行`git add <submodule文件夹名>`
-  - [[ssh-config]]中提到注释必须单独成行。如果没有做到，那么直接`ssh`连接会报错，但vscode会吃掉报错信息
+  - [[client-config]]中提到注释必须单独成行。如果没有做到，那么直接`ssh`连接会报错，但vscode会吃掉报错信息
   - [[assets]]中的这个![](assets.png)
   - [[moveit-real-robot]]的命令不能运行，要[[fci]]里的底层命令才能传递出真正的错误原因
   - [[aruco]]中`clone`错分支导致运行时会process died，然后没任何日志，你要是不会底层操作就只能仔细检查，猜哪里出错。猜到是分支错算你厉害

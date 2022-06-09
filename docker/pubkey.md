@@ -1,6 +1,6 @@
 前置
 - [[generate-key-pair]]
-- [[ssh-server-config]]
+- [[server-config]]
 
 docker的密钥登录参考（模仿以下命令）
 1. 静默创建公钥[[generate-key-pair]]

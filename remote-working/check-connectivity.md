@@ -7,4 +7,4 @@ https://blog.csdn.net/guweiyu_thinker/article/details/79391495
   - `telnet <ip> 2017`（[[v2raya]]登录界面）可以看到输出
   - `telnet <ip>`（即默认`23`端口）可以登录
   - `telnet <ip> 22`不行
-  - 实际上是没装`openssh-server`，参考[[ssh-server-config]]
+  - 实际上是没装`openssh-server`，参考[[server-config]]
