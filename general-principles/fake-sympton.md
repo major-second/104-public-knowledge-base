@@ -14,3 +14,4 @@
       - 我当时实际上是[[libfranka]]中给予实时权限时加文字到`*.conf`的部分忘了
   - [[mujoco-py]]安装时先提示失败一次是正常的，之后自动成功
 - 一个有意思的例子：[[v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`
+- [[brightness]]提到手机亮度太低让人以为没有显示
