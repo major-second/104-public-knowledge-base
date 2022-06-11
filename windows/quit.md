@@ -7,3 +7,4 @@
     - 托盘图标-右上角图标-quit Keybase
   - 如[[windows]]翻墙用的`geph`，Log Out账户就是退出
 - 任务管理器杀掉很多时候管用，但是碰到[[vpn]]里的GlobalProtect这种流氓软件就不管用了……
+  - 而且可能有负面效果，比如[[process]]提到的

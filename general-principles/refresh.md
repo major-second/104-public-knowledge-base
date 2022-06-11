@@ -12,3 +12,4 @@
   - [[source]]的`sudo apt update`
 - [[interface]]提到的重新插拔接口。比如[[wired-connection]]，[[troubleshooting]]
 - 硬件层面的重置或初始化：例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
+- 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
