@@ -11,5 +11,6 @@
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
   - [[source]]的`sudo apt update`
 - [[interface]]提到的重新插拔接口。比如[[wired-connection]]，[[troubleshooting]]
+- 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
 - 硬件层面的重置或初始化：例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
