@@ -1,0 +1,4 @@
+- [什么是睡眠sleep和休眠hibernate](https://zhuanlan.zhihu.com/p/352659027)
+  - 睡眠-内存-快-耗电。休眠-硬盘-慢-不耗电。
+  - 睡眠后如果断电或笔记本没电会转为休眠
+- [找回“休眠”功能](https://zhuanlan.zhihu.com/p/118032699)

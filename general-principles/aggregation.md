@@ -4,6 +4,7 @@
   - 比如[[partition]]几种工具都不完美覆盖所有需求。但几种工具的并能覆盖所有需求
   - 比如[[flyele]]适用于团队协作，[[dida]]适用于自己个人日程管理（循环比较方便）
   - 比如[[wechat-tips]]和长辈沟通，[[keybase]]和能接受新事物的技术合作者沟通，[[telegram]]“干坏事”
+  - 比如[[settings-and-configurations]]中windows10的Setting和Control Panel各有优劣
 - 有时可结合使用多种工具（把问题分解，并观察各个部分适用于什么）
   - 这时往往有一个“入口”“胶水”“最表层”“开始一公里”。它可能是`python`, `shell`等
   - 不妨联系[[temp-solution]]和[[bootstrap]]

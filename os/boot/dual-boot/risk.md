@@ -1,8 +1,9 @@
 - [[bit-locker]]（必须看！否则可能数据丢失）
   - 即使保存好它的recover key，也请千万关闭bitlocker，否则[[fsck]]等着你
 - [[partition]]不慎，误操作，有可能弄坏硬盘
-- 两个系统之间可能还有其它的互相影响，比如[[power-options]]中的fast startup影响Ubuntu网卡
-  - [[bit-locker]]也会引起两个系统互相影响
+- 两个系统之间可能还有其它的互相影响
+  - 比如[[power-options]]中的fast startup影响Ubuntu网卡
+  - [[bit-locker]]也会引起两个系统互相影响（让ubuntu文件系统损坏需要[[fsck]]）
 - 删除第二系统千万不能直接删除分区，否则第一个系统也开不了！小心[[leaky-abstraction]]
   - 原因是调整了boot优先级
   - linux那边的grub是想用一个管所有（回忆[[dual-boot/steps]]）
