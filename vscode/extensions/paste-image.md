@@ -3,4 +3,4 @@
   - `"pasteImage.path"`调整用`pasteImage`插件时默认粘贴到哪（比较方便的：`${currentFileDir}`），参考[[paste-images-from-clipboard]]
   - `"pasteImage.defaultName"`调整名称。比如`"hhmm"`可以使得你修改时按一下`Ctrl+Backspace`就能删掉，相比原来的有`-`的默认名方便很多
     - 参考[[editting]]中关于`Ctrl`的部分
-- 比如编辑器中选中一段文字，然后按`Ctrl+Alt+V`，则粘出的图片就是按此文件名
+- 比如编辑器中选中一段文字，然后按`Ctrl+Alt+V`，（过一秒作用让它反应），再回车，则粘出的图片就是按此文件名
