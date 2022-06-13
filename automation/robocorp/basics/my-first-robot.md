@@ -11,6 +11,7 @@
 - vscode打开此库
     - 此时对于windows系统可能自动出现[此troubleshooting](https://robocorp.com/docs/troubleshooting/windows-long-path)，和长路径名有关
     - 照[链接](https://robocorp.com/docs/troubleshooting/windows-long-path)做即可，按指示重启之后可以进入下一步
+    - 注：如果有[[administrator]] powershell，就可以一行命令`rcc configure longpaths --enable`搞定
 - 左侧出现robocorp图标（那个机器人）
   - 点它，现在开始加载![](my-first-robot.png)
   - 过程可能需要一定时间（主要是下载装包等）

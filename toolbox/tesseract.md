@@ -1,4 +1,6 @@
-- [官网](https://digi.bib.uni-mannheim.de/tesseract/)找安装包下载安装
+- windows: [官网推荐](https://digi.bib.uni-mannheim.de/tesseract/)找安装包下载安装（参考[tesseract官网](https://tesseract-ocr.github.io/tessdoc/Home.html)）
+  - github官方页面可能只有源码，必须[[build-from-source]]，就比较麻烦
+  - 尽可能找高级版本，识别率更高
 - 安装过程需要联网。需要选择额外装哪些语言（比如你额外选择了Japanese，就会联网下载Japanese数据）
 ![](download-other-languages.png)
 - 安装之后可能需要设定[[windows/env-var]]才能满足一些程序的要求
