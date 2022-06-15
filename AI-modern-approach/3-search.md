@@ -205,3 +205,29 @@
 - 之前一直使用“直线距离”
 - 还例如8-puzzle中摆错的数量/曼哈顿距离和（显然都是乐观的）
 - 一个评判标准：$b^*$，“等效地”用了几叉树，$N+1=1+\cdots+(b^*)^d$
+  - 另一个：相比无启发，降低了等效深度
+- 曼哈顿距离和$\ge $摆错数量，dominates，那当然展开的node更少，更高效（除非“平局”时运气不好）
+  - 但是你heuristic太难算也不行哈
+- 如何自动发明$h$？如放松规则（可以一步到位/可以重叠，给图连更多边），看放松规则下的步数。还能证明consistency
+  - 规则中的限制可以被自动去除，从而自动发明$h$
+  - 例如本来：相邻空白格子。有两个约束。可以分别去掉或都去掉
+  - 还能$h = max(h_1,h_2)$或random选或学习预测哪个$h$最大等（注意后两种更快但不保持好性质）
+- subproblem：相当于放松goal，增大goal集合，也能作为$h$
+  - pattern databases：存储这种subproblem结果的打表（构建表就是反向从goal搜）
+  - 增大考察的pattern数（比如考察`1234****`的复位又考察`****5678`的复位）：边际效用递减
+  - max当然可以，相加当然不行
+  - 但如果考察1234时认为5678消失（而不是标记成星号）那又可以了（disjoint pattern databases）
+- precomputation and landmark point
+  - 极端情况：完美缓存所有（如[[shortest-path]]中弗洛伊德算法）
+  - 好一些的：设置landmark points，计算所有$C(非地标顶点,地表顶点)$（如果有向图需要再计算反过来的），再取min得到$h$（不是乐观）
+    - 如果想要乐观性质，可以$max_L |C^*(n,L)-C^*(goal,L)|$
+    - 直观：两边之差小于第三边
+  - 好性质：如果真的要经过landmark是最佳（实际中很常见），那$h$是精确的，就真的能找到最佳
+  - shortcuts：先计算一些打包好的两点间路径
+  - 选择landmark：靠边，散开，结合用户实际等
+- 学习搜索
+  - metalevel state space：把低级搜索问题中的运行状态当作状态
+  - 这些经验可被用来学习（“一些展开是没用的”）
+- 学习$h$（估计）
+  - `This leads to an inevitable tradeoff between learning time, search run time, and solution cost`
+  - 例如手造特征（puzzle中多少个摆错了？多少个倒转？）跑[[multi-ary]]线性回归

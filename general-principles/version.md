@@ -20,6 +20,9 @@
     - `amd64`只是说架构是AMD发明，并没有说intel的芯片就用不了
   - 操作系统名：`win, linux, mac`等
   - `portable`可以到处移动，而不是“安装了就动不了”
+  - 商业软件的`perfessional` `extreme`等区分等级
+    - 不同等级序列号不能混用（比如[[pro-license]]）
+    - 有时，有序列号可以[[windows/upgrade]]到高等级
 - 版本依赖相关
   - 参考[[software-management/upgrade]]
     - 一般来说，很多依赖都是要求`>=`某某版本，而且上层版本越高，需求的底层版本也越高
