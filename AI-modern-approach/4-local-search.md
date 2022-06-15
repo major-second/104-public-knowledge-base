@@ -1,0 +1,49 @@
+## 4.1 Local Search and Optimization Problems
+- 比如八皇后，比如芯片设计，不需过程只需结果。每次看邻居（例如爬山）
+- 优势：开销小，在大空间和无限空间中可以执行
+- 还能解决optimization problems
+  - 例如在state-space landscape中找最大值：爬山。最小值：GD（gradient descent）
+- complete state formulation：每个state具有所有要素，但不在正确位置（比如有8个皇后，每列一个）
+  - 要不然你怎么爬山？突然放进一个皇后/去除一个？不太好吧
+- 爬山
+  - heuristic（用来做出landscape的函数）：比如“能攻击的皇后个数”
+  - 也称为greedy local search
+  - 简单粗暴 快
+  - 可能卡在局部最值，山谷山脊鞍点，高原
+  - 改进：sideways move（惯性，限制惯性大小，引入随机，successor多时“苏格拉底麦穗”，引入随机重开
+  - 如果局部最值少，挺好的，但如果一堆`miniature porcupines living on the tip of each porcupine needle`刺猬套刺猬就不好弄了
+- 模拟退火
+  - 先随机，后慢慢温度下降，更加“爬山”
+  - 需要一个`schedule(t)`指定每个iteration的温度
+- local beam search
+  - 相比[[3-search]]中beam search其实没有太多区别？反正都是一直保持最佳的若干状态
+  - 注意不是并行跑多个普通的local search，因为有的线程可以把别人的“叫”过来
+  - 防止$k$个到一起多样性不足：加随机
+- 进化算法
+  - 有随机的beam search，且包含自然选择（按概率……），交叉互换（组合），变异等
+  - 基因可能是字符串序列、实数序列、程序（复杂表示）等
+  - 组合个数：1就是无性生殖，普通的有随机beam search. 大于1就是有性生殖，有交叉互换
+  - 2个父母：常见办法是字符串中随机选一crossover point
+    - crossover的部分中可能有有用的pattern（如不攻击的若干个皇后）
+    - 理论依据：“schema”，`246*****`类instance更适宜生存，进化中更多留下
+    - 所以问题表示要小心，使得相邻的schema发挥作用
+  - 精英elite，淘汰cull
+  - 可以搜网络
+  - 超级黑：`It is not clear how much of the appeal of genetic algorithms arises from their superiority on specific tasks, and how much from the appealing metaphor of evolution.`
+## 4.2 Local Search in Continuous Spaces
+- 需要微积分
+- 在learning, vision, robotics都用到
+- landscape的函数表达式可能分段（“最近的机场”）
+- naive想法：离散化
+  - 可计算empirical gradient，像是爬steepest方向的思想
+  - 离散化的大小$\delta$可随时间衰减
+- 直接计算导数当然更好
+  - 全局=0好解直接解
+  - 否则$x\leftarrow x+\alpha\nabla f(x)$
+  - line search: 不断翻倍$\alpha$直到$f$开始下降，然后选择新的方向
+  - Newton-Raphson: $x\leftarrow x - H_f^{-1}(x)\nabla f(x)$，$H$是海色矩阵
+  - 高维情况计算海色那些二阶导比较慢
+- 也有局部最值问题，可以类比离散空间的问题和做法
+- constraint optimization
+  - 典型：线性规划，当constraints是凸集，objective function线性
+  - 线性规划是凸优化特例（多项式，实际中可行）

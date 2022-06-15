@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[boxed,linesnumbered]{algorithm2e}
+
+\title{Example}
+\author{You}
+\date{Today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\begin{algorithm}
+\caption{Caption}\label{alg}
+\KwIn{$x^2$}
+\KwOut{$y^3$}
+\For(//comment){condition}{block}
+\ForEach{condition}{block}
+\If{condition}{block}
+\eIf(//`e' means else){condition}{if-block}(//comment){else-block}
+\lIf(//`l' means inline){condition}{block}
+\end{algorithm}
+
+Algorithm \ref{alg} is our first example.
+
+
+\verb+boxed+ and \verb+linesnumbered+ are self-explanatory.
+\end{document}
