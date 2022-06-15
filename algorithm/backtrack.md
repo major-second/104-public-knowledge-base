@@ -11,7 +11,7 @@ class Solution {
             backtrack(ans_list, cur, 添加甲后参数);
             cur.pop_back();
         }
-        if (乙){类似...}
+        if (cur可以尝试添加乙){类似上面...}
     }
 };
 ```
