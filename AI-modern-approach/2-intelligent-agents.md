@@ -66,7 +66,10 @@
 - 本书第一个伪码例子要点
   - 定义：`function FOO-BAR(percept) returns an action`
     - 注意大小写
-  - `persistent`表示“局部变量”（可能const如table，或非const如percepts列表）
+  - `persistent`表示“全局变量”（可能const如table，或非const如percepts列表），下次call function还是它
+    - 所以需要memory存储
+    - 所以可以学
+    - 举例：`rules`, `transition_model`
   - 用`<-`箭头表示赋值
 ```text
 funciton TABLE-DRIVEN-AGENT(percept) returns an action
@@ -126,8 +129,8 @@ funciton TABLE-DRIVEN-AGENT(percept) returns an action
 ### 如何表示状态？
 - 一对一地（MDP等）
 - 分成一些attribute地（CSP等）
-  - 两个状态间不是“离散拓扑”一定毫无联系！
-- 分成复杂结构看影响地（图）（FOL，NLP等）
+  - 两个状态间不是如同“离散拓扑”一样毫无联系！
+- 分成复杂结构看影响地（如建图）（FOL，NLP等）
 - 以上表达能力越来越强（强的能表达弱的，反之不行）
   - 例如下棋规则，两页FOL规则能表达千页factorized命题逻辑规则，天文数字的打表规则
   - 但推理和学习过程越来越复杂
