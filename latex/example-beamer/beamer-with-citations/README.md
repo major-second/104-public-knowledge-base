@@ -1,6 +1,6 @@
 参考[[recipe]]，必须使用`bibtex`命令，且总共是指定的4个命令序列，才能正常显示参考文献
 和[[minimum-beamer/README]]的区别：
-- `\usepackage[bookmarks=true]{hyperref}`使得可使用`hyperref`跳转
+- `\usepackage{hyperref}`使得可使用`hyperref`跳转
 - 最后加上
 ```tex
 \bibliography{ref}
