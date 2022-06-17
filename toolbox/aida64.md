@@ -1,6 +1,8 @@
 [下载](https://www.aida64.com/downloads)
 序列号（2022.6.15可用）`UK4F4-3F2D6-FJD9J-C4D34-FYY12`
+找不到就百度搜搜
 实用功能（找不到在哪的自己探索，也可以[参考](https://zhuanlan.zhihu.com/p/349488218)
+- 右键某个条目可以快速导出[[logs]]或add to收藏
 - 看电池状态![](battery.png)
   - wear level就是电池寿命的损耗
   - 看功率非常实用！

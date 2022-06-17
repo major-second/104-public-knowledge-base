@@ -4,6 +4,8 @@
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)
   - 可以联合[[download-resource]]使用
+  - 免费版有功能限制（比如图片转pdf的图片数量）
+    - 哈哈，图片转pdf其实用[[markdown-preview-enhanced]]非常好
 - https://tool.lu/
   - 不要用这个的dns查询，因为是被国内污染的，参考[[hosts]]
   - 下面列举实用的
