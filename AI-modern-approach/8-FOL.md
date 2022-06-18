@@ -1,0 +1,135 @@
+- PL简单基本，表达能力有限
+## 8.1 Representation Revisited
+- [[declarative]]编程优势：声明一些东西，然后inference engine自动处理。容易处理partial information
+- PL就是一种声明式语言
+- PL还具有compositionality，句子意思是各部分意思的函数，而不是毫不相关的东西
+- 缺点：啰嗦，需要说一大堆表示结构化的信息“坑边有风”
+- 语言本质？
+  - representation？
+  - communication？比如“Look!”一句，让你去看了某个地方，你获得了相应知识，但这知识是context给你的而不是这句话给你的。Look!本身并不变成representation进入KB
+- 一些哲学讨论
+  - 某个概念在语言中是否存在影响人们的观念，行为，擅长做某事……
+    - 有意思的：只知东南西北，不知左右
+  - 人们对语言表示有一定抽象，不关注exact words
+  - 阴阳性影响观念
+  - 诱导性语言，改变对世界的认识
+  - fMRI扫描大脑和单词间可能学出模型
+  - deduction：没区别。非deduction任务（如induction归纳）：语言不同可能导致性能不同的结果
+- 借鉴自然语言设计FOL
+  - objects，relations, functions
+  - 一元关系：is red
+  - 多元关系：is adjacent to
+  - functions：father of
+- PL和FOL主要区别：ontological commitment
+    - `What exists in the world`
+    - `that is, what it assumes about the nature of reality`
+    - 一阶逻辑：`the world consists of objects with certain relations among them that do or do not hold`，而不是一系列命题
+    - 更复杂的：例如时序逻辑。世界上就存在了更多东西
+      - 本质上不表达更多，但`Thus, special-purpose logics give certain kinds of objects (and the axioms about them) “first class” status within the logic`
+    - 高阶逻辑：relation和function又当成object. 表达能力确实更强了
+- PL和FOL共同的一点：epistemological commitment
+  - `What an agent believes about facts`
+  - PL和FOL都不模糊，不适用于很多现实场景
+  - 模糊逻辑就不同了
+    - 举例：给某命题赋值0.8
+    - 连接符和推理会造成麻烦
+    - 还比如把“巴黎”和“大城市”都编码入某空间，看距离决定真值
+  - 真值不是0或1区别于概率
+    - 例如“怪兽不在这就在那，概率各0.5”，用了概率，但没用模糊
+    - 概率和模糊也可以一起用
+## 8.2 Syntax and Semantics of First-Order Logic
+- 语义需要连结符号和实际。命题逻辑连结命题，一阶逻辑需要object, relation等更复杂的
+- 为了object，需要非空domain
+  - domain的基数（几个，有限/无限）才重要，具体是啥不重要
+- relation：（一个或多个）object组成的**有序**tuple可能有……关系
+  - 有些relation（确定单个输出的）可以写成函数
+  - 函数定义域不是整个domain时形式地引入一个垃圾桶对象
+- 定义语法：可以用[[BNF]]很方便地表示
+  - 核心：可以通过连接词/量词造出长句子
+  - Atomic sentence由谓词包裹项（等词是特殊的谓词）得到
+  - 项可以由函数包裹其它项，归纳定义。最后出口是常元/变元
+  - 函项符和谓词符都需要指定arity（多少元）
+- 解释：指定常元符、函项符、谓词符等的语义，不需指定变元的语义
+  - 区分概念！function **symbols**的解释是functions
+  - 不同常元的解释可能是相同object
+- 模型
+  - 模型包含解释，但还需要一个前提：论域domain！
+  - 蕴涵和有效的定义和PL类似（考察所有可能模型）
+  - 模型是无限多的（即使限制论域大小，模型数量也太多了），没法暴力检查
+- 函项符是抽象的，用来构造名字（可能只是个形式记号，且能脱离实质存在和被推理），区别于一定有具体（程序）含义的程序设计中的函数
+- 原子的真值：考察其谓词的解释（关系）中是否包含指定的tuple
+- 量词
+  - 例如$\forall x King(x)\Rightarrow Person(x)$
+  - 变量：小写
+  - 没变量的term：ground term
+  - 何时为真？一切extended interpretations（解释的基础上，对变元也赋予值）都成立
+    - 有限定义域时，有时可以看真值表，枚举验证
+  - $\forall$一般和$\Rightarrow$联系
+  - 存在量词$\exists$，只要一个extended interpretation成立即可
+    - 注意自然语言翻译问题：有一顶皇冠如果直译$\exists$那就有多顶也行（没说“唯一”）
+    - “唯一”的记号：$\exists!$
+    - 需要用等词定义
+  - 存在一般和$\wedge$联系。和$\Rightarrow$连用会造出特别“弱”的句子
+- 多层嵌套：$\forall x \forall y$能交换，能写成$\forall x,y$，而$\forall x \exists y$不行
+  - 有时会出现变量名遮蔽的问题（$\forall x (A(x)\vee \exists xB(x))$）
+- $\forall$和$\exists$通过适当地方加否定可互相转化
+  - 可以联系$\forall$和合取
+  - 可以联想德摩根定律
+- 等词
+  - 可以处理涉及“不同”的语句。如$\exists x,y (B(x)\wedge B(y))$不能起到想要的效果（两个不同），但是加上$\wedge x\ne y$就可以
+  - 说“恰好两个哥哥，是A和B”仅用（带等词）FOL是很烦的
+- database semantics
+  - 常元代表object各不相同（unique-names assumption）
+  - 没说真的原子公式就是假（closed-world assumption）
+  - 所有论域中元素都用常元表示（domain closure）
+  - 这样$B(A1,A2)\wedge B(A3,A2)$就说明$A2$恰好两个不同哥哥，是$A1,A3$了
+  - model数少很多（例如4个常元一个3元谓词，则只有$2^{4^3}$种模型）
+- 不同语义取舍：没有通用的永远正确的语义
+  - 表达知识方便
+  - 推理规则好用
+  - database semantics只在所有identity已知，所有事实已知时好用，否则往往怪异不好用
+## 8.3 Using First-Order Logic
+- 可以问一个公式是否真
+- 或找到一个满足条件的object（形如$ASKVARS(KB,Person(x))$）
+  - 这种的答案$\{x/John\}$这种称为substitution或binding list（联系[[substitution]]. 注意那是另一本书，记号可能不同）
+  - 常常只能对全horn clauses用（比如$A(B)\vee A(C)$，则$\exists x A(x)$成立，但没法ASKVAR）
+- 举例：kinship domain
+  - objects: 人
+  - 一元关系：性别等
+  - 二元关系：很多，如父母，兄弟姐妹Sibling
+  - function：如Father，一人一个（biologically）
+  - 举例：$\forall x,y Sibling(x,y)\Leftrightarrow x\ne y \wedge \exists p Parent(p,x)\wedge Parent (p,y)$
+  - 有一些（特定于该domain的）公理
+  - 有一些公理是definition：用$\Leftrightarrow$表示。于是用一些基本的（basic set）可以构造出引申的（如指定$Child$关系，推导$Parent$关系）
+    - 有点像软件的组织
+  - 公理能推出定理，例如siblinghood is symmetric
+  - 理论上不需要定理。实际中可以缓存定理节省开销
+  - 有些东西没法用$\Leftrightarrow$做定义，但不影响我们把它当形式记号用于推理东西（例如$Person(x)$）
+  - 公理也可以是plain facts例如$Male(Jim)$
+  - 公理可能不足导致推不出想要结果（一夫一妻？）
+- 形式数论
+  - 常元0，一元函项$S$（后继）
+  - 皮亚诺公理的一部分：0是自然数，自然数的后继是自然数，无“环”，无“分叉”
+    - 其实还有涉及高阶逻辑的数学归纳法原理，但这里先不说
+  - 定义加法：归纳定义。先定义$+(0,m)$再定义$+(S(m),n)=S(+(m,n))$
+  - 前缀，中缀表达式转化：例如$+(m,n)$和$m+n$（语法糖，不改变语义，可以desugared）
+    - 其它语法糖例子：多种括号，$\forall x,y$写法等
+  - 于是很容易定义乘法，指数，整数除法，余数，质数等
+- 形式集论
+  - 用一般的集合论符号做语法糖
+  - 常元：空集
+  - 谓词：$Set$
+  - 二元谓词：属于，包含于
+  - 二元函项：交，并，增加一个元素等
+  - 可能的一些公理：递归定义$Set$，空集不是$Add$的结果……等等
+  - 在这里的形式集论中，$\{1,2\}$是$Add(Add(\{\},1),2)$的意思
+- Lists：有顺序，可重复。有常元$Nil$，函数$Append$等
+- wumpus world
+  - percept显然必须带时间！否则不符合FOL的ontology（如导致推翻已有结论）
+  - $Percept$是二元谓词，$Stench$是常元，$[Stench, Breeze,Glitter,None,None]$是list
+  - query：$ASKVARS(KB,BestAction(a,5))$
+  - 我们需要适当KB使得可以推理出$BestAction(某,t)$
+  - perception过程：例如$\forall t,s,g,w,c Percept([s,Breeze,g,w,c],t)\Rightarrow Breeze(t)$（注意带上$t$）
+  - 简单reflex：$\forall t Glitter(t)\Rightarrow BestAction(Grab,t)$
+  - 合理选择表示：如用整数作为元素的list（是term的一种）表示格子（从而保留拓扑结构），用一元谓词而不是常元表示坑，用常元表示怪物
+  - 所以典型句子$\forall t At(Wumpus,[1,3],t)$，$\forall s Breezy(s)\Leftrightarrow \exists r Adjacent(r,s)\wedge Pit(r)$等。有时间/空间的任意，所以非常简洁
