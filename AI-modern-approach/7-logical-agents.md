@@ -1,0 +1,138 @@
+- [[3-search]]和[[4-local-search]]的知识都很有限，不本质，不通用
+- [[3-search]]主要使用的atomic representation也会给表示带来不便
+- 所以要使用逻辑作为表示
+## 7.1 Knowledge-Based Agents
+- 知识库KB，由一系列（满足一定语法的）句子组成。有些不言自明的公理
+- 一般的KB-based agent
+  - 一个persistent变量KB，每次接收percept和做action都（相应制造句子）进入KB
+  - action由percept（和时间t）和当前KB共同决定
+  - 初始：background KB
+- KB中知识（句子）可以增（除了percept和action直接加，还有各个过程中推理产生）
+  - 但不推翻已经被明确告诉了的知识
+- KB agent的程序在knowledge level上必须触及本质。在implementation level上可以有各种表现方式（像素？字符串？）
+- 不停增加知识直到知识足够，可以开动：declarative，和procedural相对
+> a successful agent often combines both declarative and procedural elements in its design, and that declarative knowledge can often be compiled into more efficient procedural code
+
+- 知识当然可以学习（请区分于简单的逻辑推理），使得agent具有autonomy，参考[[2-intelligent-agents]]
+## 7.2 The Wumpus World
+- 是个简单电子游戏。performance标准：金子+1000，死-1000，走-1，射箭-10
+- sequential, partially observable**或**unknown（取决于看的角度）
+- 大部分随机生成的局能通关
+  - 有时必须冒险才能通关
+  - 有时无法通关（比如坑包住金子）
+- 使用小学生在纸上玩游戏打草稿的方法（如记录“OK”，“Pit?”等信息）就能通关。这就是朴素的KB agent
+- 这里没有噪音，所有知识保证正确。这是接下来很长一部分本书内容关注问题的特点
+## 7.3 Logic
+- syntax：纯形式符号，不告诉你有什么实际意义。有一定法则判断是否合法（比如用归纳法定义哪些算合法）
+- semantics：对合法句子（在每个“世界”）指定真值
+  - “世界”：比如$x+y=4$，$x=2,y=2$是一个为真的“世界”，$x=1,y=1$是一个为假的“世界”
+  - 标准的：真或假，二元
+  - **world被抽象**成数学上的对象：model. 通过一定规则（比如归纳地）给所有合法句子赋真值
+    - 其赋真值的原理可能是“模拟”真实世界（如$[1,1]$有坑，故$[1,2]$有breeze），也可能不是。可能**和真实世界相对独立**
+    - 比如在恰当定义下，每个格子随机概率breeze也能生成model
+  - model $m$满足$\alpha$，或$m\in M(\alpha)$，表示$\alpha$被$m$赋予真
+  - model是从真实世界抽象出来的，所以如果已知对世界有些了解（如只有一个wumpus），那么model的全集就有所限制
+    - 另一个角度，可以认为model全集无限制，但“只有一个wumpus”是必须为真的句子，这样也能rule out很多不合理的models
+- entailment $\models$
+  - $\alpha\models \beta$表示$M(\alpha)\subset M(\beta)$
+  - $\alpha$更强，即rules out更多可能的worlds (models)
+  - $KB$可以看成句子集合，也能看成一个句子。所以也能定义$KB\models \alpha$
+- logical inference: 得到$KB\models$结论
+  - 一种方法：model checking，对$M(KB)$中的$m$逐个检查是否$\in M(\alpha)$
+- $\vdash$：用$KB$的形式句子推理出$\alpha$（稻草堆/稻草比喻：KB已经决定了能推出的东西，你就是要找到它）
+> Logical reasoning should ensure that the new configurations represent aspects of the world that actually follow from the aspects that the old configurations represent.
+
+- 目标：用形式推理（比较简单干净快速）的$\vdash$说明$\models$关系，从而反映真实世界
+  - 需要性质：可靠性：$\vdash$的一定$\models$
+  - 如果model checking看作形式推理，那它一定可靠
+    - 有时弄不了，比如整数定义域上$x+y=4$的模型有无限个
+> So, while an inference process operates on “syntax”—internal physical configurations such as bits in registers or patterns of electrical blips in brains—the process corresponds to the real-world relationship whereby some aspect of the real world is the case by virtue of other aspects of the real world being the case.
+
+- 即真实世界的一些方面决定另一些方面，反映到形式上是一些句子推出另一些
+- 真实和形式的联系如何保证？
+  - 感受器，信念，学到的，可能出错
+  - 所以KB其实也有可能和real world不符合（但可以学嘛）
+## 7.4 Propositional Logic: A Very Simple Logic
+- syntax（语法，语形）
+  - （毫无联系的）atomic sentences：只有一个proposition symbol
+    - symbol间可能有mnemonic助记用联系但不本质
+    - True和False也是特殊的proposition symbol
+  - 以上是递归出口（atomic sentences是sentences）
+    - 以下还可以递归地组合出复杂句子（与或非，单箭头双箭头）
+    - 一些名字：正文字，负文字，rules，biconditional……等
+  - 很容易写出[[BNF]]语法
+- 语义
+  - 定义原子的真值，然后递归定义所有复杂句子的
+  - 可以用真值表查（语义的）递归定义
+  - 区分或和异或
+  - “蕴含”可能反直觉（空虚的真，前后件“无逻辑关联”等）
+- 构建KB：有些是immutable（如“$[1,1]$有breeze说明$[1,2]$或$[2,1]$有坑”），有些mutable（如$[2,1]$有坑）
+- KB能否推出$\alpha$：最暴力就model checking
+  - 伪码中and是伪码语言（元语言）的东西，不是对象语言的东西，参考[[meta-programming]]
+  - 具体算法：递归地遍历所有可能组合
+  - 如果能保证停机，那model checking除了可靠还有完全性：即所有$\models$的一定能被推出
+  - 开销大（余NP）
+## 7.5 Propositional Theorem Proving
+- theorem proving: 通过操作形式符号，比model checking快
+- 逻辑等价$\equiv$：即互相$\models$，（针对所有模型）要么同时为真要么同时为假
+- 有效，重言式：对所有models成立
+- 可满足：存在model使得成立。判定：SAT问题，NP完全
+  - 显然和有效性联系密切（考虑否定）
+- 容易知道证明$\alpha\Rightarrow \beta\equiv True$能得到$\alpha\models \beta$
+  - 证明过程可以纯玩符号，例如De Morgan: $\neg (\alpha\wedge \beta)\equiv (\neg\alpha \vee \neg \beta)$这种
+- 反证法的依据：$\alpha\wedge \neg \beta$不可满足等价于$\alpha\models \beta$
+- 推理规则：如分离规则：$\frac{\alpha\Rightarrow\beta,\alpha}{\beta}$等
+  - 有效性：考察真值表
+  - 相当于把枚举工作做一次，之后再也不用做
+  - 德摩根等定律当然也能写成规则
+- 用规则证明。可以用[[3-search]]搜索证明
+- 证明的一个好处：忽略无关命题，避免指数爆炸影响
+- 单调性：信息只会越来越多
+- 证明的完全性
+  - 和搜索的完全性是两个层面。如果规则不好，那么即使搜索完全也没用
+  - 举例：resolution规则+完全的搜索算法得到完全的证明算法
+    - unit resolution rule: 一个文字的析取（clause）+一个文字，得到一个新clause. 新clause“排除了”那个单独文字对应的可能性
+    - full resolution rule: 两个clause，各出一个分量，形成互为否定关系。则新clause排除了这两个文字对应的可能性，把其它的$\vee$起来
+    - 典型错误：不能同时resolve多个文字（出现多“对”互为否定）
+- $A\vee A$变成$A$：factoring
+- CNF：clause（析取）的合取
+  - 任何句子都可以一定算法转化为CNF
+- 特殊的clause（可以用[[BNF]]定义）
+  - Definite：若一系列正文字合取成立，则某个正文字成立（或看成……的析取）
+  - Goal：若一系列正文字合取成立，则False成立（即保证至少某个正文字不成立）
+  - Horn：Definite或Goal
+- 想证明$KB\models \alpha$，就证明$KB\wedge \neg \alpha$不成立
+  - 即CNF通过resolution能推出empty clause（等价于False）
+  - 所以联系了刚才Goal clause定义
+  - 试运行有些结论：如出现两个互为否定的文字的clause没用
+- 完全性
+  - resolution closure $RC(S)$：所有能被推出的clause
+    - 显然能证明是有限的（回忆factoring）
+  - 完全性证明：证明逆否命题：若$RC(S)$不包含空，则$S$可被满足
+  - 构造一个满足的模型：从$1$到$k$，逐个指定真值“能真则真，存在clause指定不能真则假”
+    - 证明略
+- 特制算法：特殊情况下更高效
+  - 两个Horn clause在resolution下仍得到Horn clause
+  - 简单拓展：$k-CNF$，最多$k$个正文字
+  - 只有definite clause的KB的好处
+    - 可以写成$\Rightarrow$形式，容易理解，有body, head, fact等概念
+    - 有高效算法（线性）
+    - forward-chaining或backward-chaining等容易被人理解
+- forward-chaining
+  - 联系[[4-local-search]]的AND-OR graph，从叶子向上推导
+  - 完全性：只需注意最终fixed（不动点）结果（即推出的为真，没推出的指定为假）一定是个模型
+    - 所以没推出的就一定不是$\models$关系（可能为假嘛）
+  - 伪码
+    - 管理每个clause的count，拿到新确定为真的premise就减少count
+    - 管理inferred，避免重复处理
+    - clause列表（KB）不会增多，只有inferred会增多
+      - 容易看出线性复杂度
+    - queue用于保存“暂未处理的新推出结论”
+  - data-driven：由已有input开始推理，不需要query
+  - 人类可能会筛选，避免做无谓计算推理出很多无用结论
+- backward-chaining
+  - 从query开始倒推（goal-directed reasoning）
+  - 注意用图结构而不是简单的树，避免重复处理
+  - 也是线性复杂度
+  - 本质上是[[4-local-search]]的AND-OR-GRAPH-SEARCH算法
+  - 直抓主题，效率高

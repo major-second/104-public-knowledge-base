@@ -54,6 +54,7 @@
   - Known: 指的是是否知道物理规律
     - 军棋暗棋：Known, partially observable
     - 不知道按钮功能的fully observable电子游戏：恰恰相反
+      - 具体哪些部分算作“物理规律”其实有那么点模糊。参考[[7-logical-agents]]的wumpus world. 大概图一乐有这个意识就行
     - metric不知道也是unknown（和multi-agent联系紧密）
     - 这个严格来说不纯是环境性质，和agent有关（有些agent知道规则，有些agent不知道但可能也能表现好）
   - 最难的就是`partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, and unknown`
