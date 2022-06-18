@@ -61,6 +61,7 @@
   - 什么点值得考察？用个函数$f$表示。之后说
     - $g$之后表示取`path-cost`属性
   - `function EXPAND`有`yield`，所以是某种迭代器，可以被`for each ... in`
+    - 参考[[yield]]
 - queue此处是广义的，包括优先队列，栈，队列，都有`IS-EMPTH, POP, TOP, ADD`等操作
   - 实践参考[[adapter]]
 - cycle和redundant path

@@ -1,0 +1,118 @@
+## 9.1 Propositional vs. First-Order Inference
+- FOL变成PL
+  - universal instantiation (UI)：由$\forall$变出一堆ground term
+  - substitution：$SUBST(\{\nu /g\},\alpha)$表示把$\alpha$中的$\nu $换成具体的项$g$
+    - 显然有规则$\frac{\forall \nu \quad\alpha}{SUBST(\{\nu/g\},\alpha)}$
+    - 和extended interpretation（给变元指定domain里的object）不同！
+  - EI：引入其他地方都不出现的一个新常元符号（斯科伦常元）
+    - 额，如果$\exists$套在$\forall$里可能需要引入新函项符（斯科伦函项）
+    - 和UI区别：一个推出一个，旧的此时不再需要了
+- reduction to propositional inference
+  - 和EI一样把UI完全替换成PL的东西（一变多）
+  - 函项可能导致无限嵌套。但Herbrand证明了一定存在有限长度用命题逻辑KB的证明。所以可以参考[[3-search]]中iterative deepen的思想
+  - 该过程完全，但不一定能停机（如果一直不停，你就不知道是真的不行还是没到时候）（半可判定）
+## 9.2 Unification and First-Order Inference
+- Generalized MP
+  - $\frac{p_1',\cdots, (p_1\wedge \cdots \Rightarrow q)}{SUBST(\theta,q)}$
+    - $\theta$作用体现在两点
+    - 首先unify各个$p'_i$和$p_i$，使得有premise可用（虽然不是原始的$p_i$）
+    - 其次限制结论的范围（因为你毕竟不是已知$p_i$，而只是已知$SUBST(\theta,p_i)$，所以结论也就只有$SUBST(\theta,q)$
+  - 相比普通MP，窄化的点：只允许原子的合取作为premise，原子作为consequence
+  - general体现在$p_i$和$p_i'$不必严格相同，只需可以unify
+  - 是一种lifted version（相比PL，允许通过substitution，“推理一部分情况”）
+- unify能做，那很多query就能直接出来了
+- 有时unify之前需要重命名（standardizing apart）
+- 多种可能的unifier？有一个most general
+  - unifier中可能变元替换成变元（不一定替换成常元，只要替换成项就行）
+  - general的含义：再增加替换操作，能变成别的，就比别的更general. general关系形成偏序，有“最”，就是most
+  - 算法
+    - 有一步最贵的occur check确保不会$x$匹配$f(x)$导致无解。导致出现二次项
+      - 可以忽略这步/使用特制算法，使得线性
+    - 具体步骤：递归展开不断增加$\theta$
+    - 若出现无法处理的情况（如两个常元，$x$对$f(x)$等）就failure
+- 使用KB（retrieval检索）
+  - TELL, ASK等的底层操作：STORE和FETCH
+  - FETCH是设法unify query和已有sentence
+  - 最暴力的：STORE往表里加句子，FETCH逐个比对试图unify
+- 稍微不暴力：哈希表管理一下，保存哪些谓词开头的是哪些句子，避免完全没必要的考察
+  - 想更快，就得缓存更多张表（谓词+第二元素？谓词+第一元素？等等）
+  - 出现[[lattice]]结构：subsumption lattice
+  - 比如$B(A,A)$，你就要考察$B(A,x),B(x,A),B(x,x)$都可能是检索时需要的，lattice就有这三个节点
+  - 节点指数爆炸
+  - 所以要取舍，不能啥都存
+  - 可能过程中学出什么更值得存
+  - 商业数据库核心技术！
+## 9.3 Forward Chaining
+- definite clause定义仍然看正负文字数量
+  - 所以没有量词。$\forall$是隐式的。$A(x)$和$A(B)$两类文字都可能出现
+- datalog：一阶definite clause，没有函项符
+  - 关系型数据库常用
+- 算法
+  - 和PL区别
+    - 需要重命名（standardize）
+      - 注意：只是重命名变量并没有本质变化
+    - 使用Generalized MP
+    - 得到结果后看能否UNIFY来判断是不是query
+  - 可靠
+- 完全性证明
+  - 没有函项符时和PL情形很类似
+  - 也可以说明有限次内会停止
+  - 有些相比PL变化的内容参考9.5
+- 一般情况，有函项符，出现无限。此时回忆9.1的Herbrand，iteratively deepening和半可判定等东西
+- 提升效率
+  - 回忆retrieval，可以只管那些可能和premise能unify的facts
+    - premise是conjuncts，那matching中先考察什么可以使得效率最高？conjunct ordering
+    - 这种matching和CSP联系紧密（所以当然也是NP难）
+      - 但这个NP难是针对rule个数，predicate arity等，不是针对facts个数
+      - 即“data complexity”是多项式
+    - 可以用启发式方法确定考察conjuncts顺序，回忆[[5-constraint-satisfaction]]的fail-first
+      - 因为这里conjunct是迟早跑不掉，不如先多剪点！
+    - 而且有些特殊的CSP（如树状）也对应了一些tractable的matching问题
+  - 直接省去多余rule-matching：只需观察到下一iteration可能得到的新结论至少包含一个“最新”premise
+  - 通过适当indexing，可以做到新得到fact后快速知道它符合哪些规则，然后用它们forward一下就行
+    - 大大提高效率，因为大多数时候fact只符合极少数的规则
+    - Rete (拉丁语net) algorithm: [[lazy]]思想。几个premise只满足一部分时不要扔，先等着，说不定过会那个剩下的就来了呢？
+    - production systems：历史悠久的，应用广泛的forward-chaining systems，可有大量商业用途，也在cognitive architecture中火爆（那些lazy的暂时不扔的是短期记忆，最终结果是长期记忆）
+    - 典型情况：rule很多，fact很少
+  - 减少推出无关facts：如用backward chaining，或限制rules子集
+    - deductive databases：增加magic set，例如可强行只考查一部分object，相当于在forward中融入部分backward的优势
+## 9.4 Backward Chaining
+- 核心还是AND-OR search，和[[7-logical-agents]]类似
+- OR处任何一个都行，所以出现了`for each rule in FETCH-RULES-FOR-GOAL(...)`
+- AND处要求全部满足，所以拆分成`first`和`rest`递归调用
+- 使用yield（生成），可以多次返回，参考[[3-search]]，[[yield]]
+- 是DFS算法，所以具有线性空间，效率高，可能有状态重复/不完全（钻牛角尖）等特点
+- Logic Programming：你给知识（声明），不用反复造推理引擎
+  - 语法示例：`c(X) :- a(X), w(Y), s(X,Y,Z), h(Z)`，是definite clause
+  - `[A|B]`，`A`是首元素，`B`是其余（递归定义），所以可以递归定义`append`
+  - 定义`append`为三元关系而非二元函数，使得不但可以由input求output，还可以求其他方向
+  - 执行过程：backward chaining
+  - 一些妥协使提高效率：database semantics（参考[[8-FOL]]）, 使用一部分算术, 一些有副作用（修改KB）的谓词, 忽略occur check但实际中往往没影响, 不能避免无限循环
+- prolog的backward失效的例子：为了证明`path(a, c)`，去证明`path(a, Y)`且`link(Y, c)`，然后为了证明`path(a, Y)`又出现`path(a, Y')`，以此类推
+  - 反之，forward是[[dp]]的例子，`in which the solutions to subproblems are constructed incrementally from those of smaller subproblems and are cached to avoid recomputation.`
+  - tabled logic programming，利用forward的一些好处，提升效率，减少无限循环（但也没完全避免）
+- 使用database semantics
+  - 根据[[8-FOL]]的定义，这就无法assert某句子为假（推不出就是假）
+  - 可以把这种翻译成普通FOL句子再用牛刀解（但很烦，效率低）
+- CLP
+  - 回忆：解definite clause和[[5-constraint-satisfaction]]关系密切
+  - 所以出现了无法逐个考察[[backtrack]]（无限定义域）时，可能需要CLP
+  - 变量除了bound（确认是啥），还可以被constrained
+    - bindings就是equality constriants
+  - CLP结果可能是“解集”
+  - 根据问题不同，可能用线性规划，[[5-constraint-satisfaction]]中各种启发等，提升效率
+  - 有时还能让用户写metarules指定启发
+## 9.5 Resolution
+- 不只适用definite
+- CNF：相比PL，多了重命名(standardize)和斯科伦化（引入新常元/函项去除存在量词）
+  - 函项的元数：就是外层多少个$\forall$
+  - 斯科伦化保持可满足性（但显然不保证有效性）
+  - 可能结果难以直接理解
+- 相比[[7-logical-agents]]不同
+  - 两个文字被$\theta$代入后互为否定，结果就$SUBST(\theta,\vee\cdots)$. 和MP的lifted版本道理类似
+  - factoring也需要加入unification（整个clause都应用$\theta$，然后出现了一些相同的文字）
+- backward看成resolution特例：画出图很有意思。一定是一条主干，每次加入一个“辅助”
+- 对于$ASKVARS$问题
+  - goal是“不存在某某”，有时可以过程中记录bindings得到结果
+  - 有时出现非构造性证明，导致没法得到结果
+- 9.5.4之后略（todo）
