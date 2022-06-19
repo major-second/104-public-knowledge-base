@@ -1,0 +1,134 @@
+## 11.1 Definition of Classical Planning
+- classical planning解决[[3-search]]，[[7-logical-agents]]中的那些“好问题”
+  - 离散，确定，静态，全可见……
+- [[3-search]]需要$h$，[[7-logical-agents]]需要手写规则
+- 现在我们使用factored representation（参考[[2-intelligent-agents]]）：PDDL，用模式schema表达许多条具体规则
+  - 其拓展能解决更坏的问题
+  - 基于Lisp（那个年代人工智能不都……）
+- state：conjunction of ground atomic fluents
+  - ground没有变量
+  - atomic对应factored的基本单位
+  - fluent表示可变（区别于[[7-logical-agents]]中的命题不会被推翻）
+  - 使用database semantics（没提到的fluent为假）
+  - 不能有函数
+- action schema
+  - 语法：$Action(Fly(p,from,to),$
+  - $PRECOND: At(p,from),\cdots$
+  - $EFFECT:\neg At(p,from),\cdots)$
+  - 标准语法：三行
+  - Action看作某种“复合结构”，接收关键字参数
+  - EFFECT当然可以有$\neg$（删除一些fluent）
+  - schema有变量，可以实例化
+  - 指定schema就指定了domain（相比[[3-search]]枚举边肯定更简洁）
+- domain中具体问题：需要initial state和goal，这和[[3-search]]一致
+  - init需要ground，但goal可能有变量
+  - 举例：飞机运货问题
+    - 由于PDDL表达能力不如FOL，所以需要变通。比如$At$表示“在某地但不在飞机上”
+  - 生活例子：换车胎
+    - $LeaveOvernight$导致被偷
+  - 例子：blocks world（桌上叠方块）
+    - “上面不存在方块”不能用FOL表示，所以需要引入谓词$Clear$
+    - 问题：如果出现用了$Move(b,x,Table)$而不是我们想用户用的$MoveToTable$函数怎么办（导致$Clear$不好维护）
+    - 可以不管（增大开销，但不会不可靠。因为桌子错误地“不Clear”只会导致无解）
+    - 可以增加$Block$谓词
+## 11.2 Algorithms for Classical Planning
+- 可以从前往后[[3-search]]
+- 由schema的泛化性，有时也能从后往前[[3-search]]（即使goal不是单点）
+- 可以转化成[[7-logical-agents]]，[[9-inference-in-FOL]]问题
+- 由于schema有变量，可能需要[[9-inference-in-FOL]]中的unification使得能判断哪些能进行
+- 暴力搜空间太大了！backward当然能减小空间
+  - relevant action：（在能unify意义下）能帮助得到goal的一个部分，且不否定已得到的
+  - 例如已知$Action(Buy(i),PRECOND:ISBN(i),EFFECT:Own(i))$，你需要结果$Own(978xxxxxxxxxx)$，就应该backward，找到unification即$\theta = \{i'/978xxxxxxxxxx\}$
+  - 缺点：使用带变量的state，而不是ground state，难以使用heuristics
+- 转化成PL
+  - 类似[[9-inference-in-FOL]]中UI，暴力写出一堆命题符
+  - 表示“一次只有一个action”
+    - 在图灵机转化为3SAT时也有类似思想
+  - 表示precondition关系（蕴涵）
+  - 表示初态（有些命题确定为真，有些确定为假）
+  - 表示goal
+  - successor-state axioms：如果没变，那就维持fluent
+  - SAT很成熟，所以这种做法效率还行
+- 其他方法
+  - graphplan：使用某种新结构planning graph
+  - situation calculus：使用FOL，使用successor-state axioms，用FOL表达使得更简洁。但不实用（FOL求解器不成熟）
+  - 确定$k$步：那就是$k$个变量的CSP
+  - partial-order planning：“并行”解决，不一定“串行”
+    - 把plan表达成graph而非序列
+    - 但后面没用了（经典方法也会并行+摩尔定律）
+    - 有时还有点用（运筹学，high-level plans等）
+    - 方便人类验证
+## 11.3 Heuristics for Planning
+- 相比atomic，factored表示当然容易得到domain-independent heuristics
+- 回忆[[3-search]]用relaxed problem制造$h$
+  - 两大类：增加边/捏点
+  - 增加边
+    - 可去除precondition要求
+    - 实际中，还往往用set-cover problem：一系列动作能达成goal，且忽略它们相互拆台
+    - 解这种问题的最小步数难以精确求。贪心？误差不大，但admissibility没了
+    - 也可能去除部分precond而非全部（[[3-search]]中15-puzzle有提到）
+    - 对于所有goal和precond都只有正文字：可以忽略负文字“拆台”。爬山可以多项式近似解（没有dead end不用回溯）
+      - 不满足这样的问题可以改成满足这样
+- symmetry reduction剪枝：对称的只考虑一个
+- preferred action剪枝：对relaxed问题给出relaxed plan，你的plan和relaxed plan有关（其中动作/使得状态满足其precond）
+- serializable subgoals：一个一个完成，不取消之前的。如开一连串灯
+  - NASA项目竟然也具有这个好性质（系统是被设计出来的，这其实很自然）
+  - 可以节省大量时间，实时控制
+- 图中捏点法（或直接减少点）
+  - 比如暴力捏合所有在同一机场的包裹（一起移动）。估计地求解，由此制造$h$（是乐观的）
+  - 起止都“被捏”，只要从initial被捏的“大点”达到goal被捏后的“大点”就行
+  - 定义抽象问题，解决抽象问题：联想[[3-search]]的地标
+    - 这里甚至可能打表（pattern databases）
+- decomposition
+  - 问题分成子问题，忽略它们间可能的互相干扰或互相促进，也能作为估计
+  - 求和：可能乐观可能悲观。最大：一定乐观（参考[[3-search]]）
+- 一个$h$：$FASTFORWARD$，综合使用planning graph, ignore-delete-lists, hill climbing, greedy best-first等
+  - 说明开发算法时，快速低质解/快速低质低难度问题解有时也很有用，毕竟能作为heuristic
+## 11.4 Hierarchical Planning
+- 参考[[leaky-abstraction]]思想
+- 逐级向下规划，`until we reach the low-level motor control actions like a button-press`
+  - 要点：每一级都不太难
+- HTN
+  - HLA (high-level action) 能细化成更低级HLA或primitive action
+  - 有时还有递归
+  - refinement包含了“如何做”的信息
+- 如果只有primitive: implementation
+  - 更高层的implementation是低层implementation的concatenation
+  - 可能不唯一。可能每种实际情况只有一个真正起作用
+    - 如vacuum例子，第一步可能上下左右走
+    - 递归出口是到位了，直接啥都不做
+  - 只要至少一个implementation能达成目标就行（比如说你的concat可能有些狗尾续貂的不匹配，那种没关系）
+- 简单等价于暴力搜的
+  - $Act$作为总体
+  - 可以被refine成$[a_i,Act]$
+  - 然后还有一个precond就是goal的什么都不做
+- 但是即使你refine不这么trivial，也还是可以这么搜
+  - 也可以BFS, DFS, IDS等，参考[[3-search]]
+  - 这样的搜包含了大量的领域知识（如何做、precond等）
+  - 应用：日立汽车装配
+  - 容易被人理解
+  - 大幅加速其实不是很常见：因为“打包好的经常用的长动作序列”可能没那么多
+- HTN的核心："plan library"（调包）
+  - 可以学和总结
+- 另一种方法：不需搜到底层，和人的思维方式更像
+  - HLA也有precond和effect！
+  - 这样就要求答应到的必须完成（downward refinement property）
+  - 最极端的：每种实现都要达成承诺
+  - demonic nondeterminism: 一个adversary故意刁难，选最坏的动作
+  - angelic nondeterminism: 随机应变，你总能完成，选好的动作
+  - reachable set: 逐步递归定义，就是所有能到的状态
+  - angelic nondeterminism对应着reachable set只要和goal有交集就行
+- 如果搜到可以了，就commit to that abstract plan，之后无需关注这里的细节
+  - effect怎么表示？变真/变假/一定不变/一定变/任选（需要angelic，自己选好的动作）等等
+  - 其实共9种组合（原始是真/假都可能出现真/假/任选）
+  - 如果多种实现precond，effect都很复杂，综合计算还是有点麻烦
+  - 所以可能需要reachable set的乐观/悲观估计
+  - 这样可能出现“我没法保证它一定/一定不能实现”的情况，就需要进一步refine
+  - 算法实现
+    - 如果一定不能，就忽略该plan
+    - 如果一定能，就开始细化（告诉你大概……，之后的“留给下属自己解决”，即调用$DECOMPOSE$函数）
+    - 不知道能不能，就在$REFINEMENT$中抽出东西到queue，进一步考察
+- 清理房间例子和8-puzzle例子证明了人类擅长什么、不擅长什么
+  - 擅长分层归纳！
+- 涉及cost的：也可能有乐观、悲观估计提高优化效率。回忆[[6-adversarial-search]]中$\alpha-\beta$剪枝
+- `some parts of the plan are left quite abstract until execution time`比如在夏威夷某个岛怎么享受
