@@ -6,3 +6,6 @@ Teams: 微软Office一部分
 - 和onenote，outlook等微软的联系紧密
 - 可以方便多设备进入
 - 方便传文件，相当于聊天和开会结合
+
+安卓版
+- 很流氓，还需要安装Company Portal和Microsoft Defender才能用

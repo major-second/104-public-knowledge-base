@@ -4,8 +4,11 @@
 ## 内容
 - 某个本地文件或文件夹
 - 网页
-- “非平凡”内容。例如[加上命令行参数](https://blog.csdn.net/lianghecai52171314/article/details/120112196)
+- “非平凡”内容。例如[[pro-license]] vmware[加上命令行参数](https://blog.csdn.net/lianghecai52171314/article/details/120112196)
   - 在2022.2.3的vmware最新版本，上述链接讲的不对。现在已经没有`-x`参数了。直接`"*.exe" "*.vmx"`这样就可以了
-  - 参考[[vmware快捷方式]].
+  - 参考[[vmware快捷方式]]
 ## 快捷键
 - “属性”处，设置快捷键
+  - 只能设置`Ctrl+Alt+某某`
+  - 一种典型操作：按qwerty键盘排列，在桌面上排好所有确定了快捷键的快捷方式，方便查阅
+  - 例如用一些快捷键上常用网站，一些快捷键打开常用应用，一些快捷键对应[[desktop/basics]]的桌面自动化流程等
