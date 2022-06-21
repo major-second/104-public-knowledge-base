@@ -1,6 +1,8 @@
-https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop
-搜索`keyboard`
-看到各个键盘键的名称
-- 不区分大小写
-- 可以带一个空格，如`page up`
-- windows徽标键是`cmd`
+- 官方文档
+  - [简单示例](https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop/keywords#press-keys)
+  - 功能键：[去这](https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop)
+    - 搜索`function keys`
+    - 看到各个键盘键的名称
+    - 不区分大小写
+    - 可以带一个空格，如`page up`
+    - windows徽标键是`cmd`

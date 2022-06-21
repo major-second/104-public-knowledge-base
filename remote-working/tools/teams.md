@@ -1,11 +1,15 @@
-Teams: 微软Office一部分
-[官网](https://www.microsoft.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion)
-注意区分`work or school`版还是另一版。两版并不同
-可能不允许[[usage]]代理
-相比腾讯会议好处
-- 和onenote，outlook等微软的联系紧密
-- 可以方便多设备进入
-- 方便传文件，相当于聊天和开会结合
-
-安卓版
-- 很流氓，还需要安装Company Portal和Microsoft Defender才能用
+- Teams是微软Office一部分
+- [官网](https://www.microsoft.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion)
+- 注意
+  - 区分`work or school`版还是另一版。两版并不同
+  - 不允许[[usage]]代理否则连不上
+- 相比腾讯会议好处
+  - 和onenote，outlook等微软的联系紧密
+  - 可以开会，且方便多设备进入，一个设备分享屏幕大家看等
+  - 方便传文件，且是持久的“会话”，相当于聊天和开会结合
+    - 传文件时电脑版把文件拖到下方聊天框即可，且能实时显示上传进度
+- 安卓版
+  - 很流氓！
+    - 还需要安装Company Portal和Microsoft Defender才能用
+    - Microsoft Defender可以[[optimize]]时杀后台，但你完全卸了不行，它过一段时间可能会要用一下
+    - Company Portal必须一直安装着且[[optimize]]时不能杀后台，否则形如杀Teams的后台
