@@ -1,2 +1,7 @@
-参考[这个](https://zhidao.baidu.com/question/1994522362031423347.html#:~:text=windows10%20%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97%E8%A2%AB%E5%8D%B8%E8%BD%BD%E4%BA%86%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%9A%84%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4%E5%A6%82%E4%B8%8B%EF%BC%9A,%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%87%86%E5%A4%87%E7%9A%84%E6%9D%90%E6%96%99%E5%88%86%E5%88%AB%E6%98%AF%EF%BC%9A%E7%94%B5%E8%84%91%E3%80%81%201%E3%80%81%E9%A6%96%E5%85%88%E6%88%91%E4%BB%AC%E7%82%B9%E5%87%BB%E5%B7%A6%E4%B8%8B%E8%A7%92%E7%9A%84%E6%90%9C%E7%B4%A2%E6%A1%86%EF%BC%8C%E6%90%9C%E7%B4%A2%E2%80%9CWindows%20Powershell%E2%80%9D%EF%BC%8C%E7%82%B9%E5%87%BB%E6%89%93%E5%BC%80%E3%80%82)重装删除了的内置应用
-（即：[[administrator]]权限运行powershell，运行命令`Get-AppxPackage -allusers | Select Name, PackageFullName`）
+重装删除了的内置应用（以应用商店为例）
+- [[administrator]]权限运行powershell
+- 运行命令`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`
+  - 注：`Select-String`后可跟[[regex]]，参考[[powershell/string]]
+- 找到名称（形如`PackageFullName=Microsoft.WindowsStore_<某某>`）
+- 复制
+- `Add-appxpackage -register "C:\Program Files\WindowsApps\Microsoft.WindowsStore_<某某>\appxmanifest.xml" -disabledevelopmentmode`

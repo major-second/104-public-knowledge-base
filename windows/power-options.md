@@ -23,6 +23,8 @@
   - [[win-disable]]独显
   - 关掉不要的应用，清理托盘，参考[[quit]]
 - 省电结果可以用[[aida64]]看目前功率
-- 电池健康：比如不要长期充满，参考[[battery]]
+- 电池健康：比如不要长期充满，参考[[devices/battery]]
   - 这个管理功能和厂家有关，没有通用软件
   - 大品牌都有自己的电池管理软件，如联想、戴尔等
+  - 联想：Lenovo Vantage，需要Microsoft Store（如果删了就去[[app]]找回来）
+    - ![](lenovo-vantage.png)
