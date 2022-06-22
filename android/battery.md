@@ -15,15 +15,20 @@
 ## 如何延长电池寿命
 - 参考[[devices/battery]]
 - 设置Battery的角落里可能有80%或接近满时暂停的选项，如图![](more-settings.png)
-  - 这里只是暂停，没法保证，也没法灵活调节
+  - 这里只是暂停，没法保证，也没法灵活调节todo
   - 而且也不是所有品牌手机都有
 - 所以可以使用App: AccuBattery
   - ![](accu-battery.png)
-  - 给予适当权限（如应用使用情况`usage`等）
-  - [[optimize]]允许后台运行
+  - 给予适当权限和信任
+    - 如应用使用情况`usage`等）
+    - [[optimize]]允许后台运行
+      - 否则![](kill-background.jpg)
+      - 可以看到没有正常记录$87\% \Rightarrow 62\%$的所有部分
+      - 设置不被杀后可以正常记录了（图中$80\%\Rightarrow 70\%$）
   - 就可以查看用电情况 + 到一定阈值震动响铃提醒拔电
-  - 也不能自动停止充
-  - 用其估计电池健康水平：[参考](https://accubattery.zendesk.com/hc/en-us/articles/209507189-Tab-3-battery-health-screen)
-    - 要允许后台运行
-    - 举例：从15%到超过100%，这样才能获取可靠的数据点
-    - 获取足够多数据点才能给出相对靠谱的结论（刚开始数据点太少可能根本没法给出任何结果）
+  - 其不能自动停止充，只会震动响铃提醒
+  - 用其估计电池健康水平
+    - [参考](https://accubattery.zendesk.com/hc/en-us/articles/209507189-Tab-3-battery-health-screen)
+    - 这也要允许后台运行
+    - 多些优良数据点（举例：从15%充到超过100%）才能获取可靠的测试结果
+    - 刚开始数据点太少可能根本没法给出任何结果

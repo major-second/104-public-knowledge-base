@@ -30,7 +30,8 @@
   - 大品牌都有自己的电池管理软件，如联想、戴尔等
   - 联想：Lenovo Vantage
     - 下载需要Microsoft Store
-      - 如果删了就去[[app]]找回来
+      - 如果删了就参考[[app]]找回来
       - ![](lenovo-vantage.png)
     - 养护模式
       - ![](conservation-mode.png)
+      - ![](conservation-mode-result.png)
