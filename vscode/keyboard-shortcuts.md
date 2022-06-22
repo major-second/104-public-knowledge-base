@@ -36,6 +36,8 @@
 - `F11`进入
 - `Shift+F11`跳出当前（函数等等）
 ## 搜索
+- `Ctrl + Shift + P`搜索命令（称为Command Palette）
+  - 参考[[extensions/general]]，安装插件可能出现新的命令
 - `Ctrl + P`搜索文件名
 - `Ctrl + Shift + F`全文查找
   - 不过这个有时会被占用。比如![](keyboard-ubuntu.png)
