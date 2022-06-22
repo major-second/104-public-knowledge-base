@@ -6,4 +6,5 @@
   - [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)
 - 词典
   - [查词根词源](https://www.etymonline.com/)
-  - 也有浏览器[[extension]]
+    - 也有浏览器[[extension]]，在其官网上找
+  - [欧路词典在线版](https://dict.eudic.net/)
