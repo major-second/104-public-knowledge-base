@@ -14,8 +14,10 @@
   - 导入位置可能不同，使用方法也可能不同
     - [[v2raya]]如图![](node.png)
     - [qv2ray官网教程](https://qv2ray.net/lang/zh/getting-started/step3.html#%E8%AE%A2%E9%98%85)
-  - 导入SUBSCRIPTION之后需要Update，这里需要联网。而且有可能必须翻墙才能上，这就形成了死锁……祈祷好运吧
-    - SUBSCRIPTION得到SERVER集合，所以之后的用法和SERVER并没有本质区别
+  - 第一次导入SUBSCRIPTION之后需要Update，这里需要联网
+    - 搞笑的是：这里有可能必须翻墙才能上，这就形成了死锁……祈祷好运吧
+    - SUBSCRIPTION是得到SERVER集合，所以之后的用法和SERVER并没有本质区别
+    - 如果发现很多SERVER都被干烂了就更新一下，说不定就发现又给了很多好的
 - 节点可能被铁拳干烂（如果你看了太多反动网站。或者节点太公交车）
   - 干烂的表现：要不然ping直接不通，要不然ping通但是没法通过它上谷歌
   - 所以说ping只能做一遍筛选

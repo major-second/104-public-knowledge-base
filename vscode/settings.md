@@ -11,6 +11,7 @@
     - `"git.terminalAuthentication": false`去除自动Authentication
       - 当然，这样就导致每次都要输入账号和[[personal-access-tokens]]
       - 如果自动的Authentication不符合要求（比如不是你要的账号等等），当然就要如此去除
+      - 确认正确了（能正常用了）再设回`true`
     - `"http.proxy": "http://<ip>:<port>"`：设置代理
       - 默认可能继承了[[6-env]]的环境变量
 - 当然，这些设置项的名称和细节可能随着版本和系统不同而变化
