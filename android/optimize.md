@@ -6,7 +6,10 @@
       - 例如微信近邻宝使得可以一键开快递
     - 其它：比如位置，相机等权限有时是必要的，你要是不小心关了导致应用用不了就在这里开
 - 应用启动、杀后台（“生杀大权”）
-    - 也是在关于“应用”的部分，找关于“启动”“launch”的部分
+    - 也是在关于“应用”的部分找。不同系统版本和厂商的位置不同
+    - 比如找关于“launch”的位置
+    - 比如找关于“battery”的位置![](launch-settings.png)
+      - 注：这个“battery”指的是设置项叫battery，和AccuBattery这个app没有直接关系
     - Auto-launch：开机启动
     - Secondary launch：被其它应用启动
     - Run in background：后台运行
