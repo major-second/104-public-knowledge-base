@@ -25,7 +25,8 @@
       - 否则![](kill-background.jpg)
       - 可以看到没有正常记录$87\% \Rightarrow 62\%$的所有部分
       - 设置不被杀后可以正常记录了（图中$80\%\Rightarrow 70\%$）
-  - 就可以查看用电情况 + 到一定阈值震动响铃提醒拔电
+  - 上网查你的手机型号的标称电池容量，写到designed capacity处
+  - 就可以查看用电情况、电池健康，并到一定阈值震动响铃提醒拔电
   - 其不能自动停止充，只会震动响铃提醒
   - 用其估计电池健康水平
     - [参考](https://accubattery.zendesk.com/hc/en-us/articles/209507189-Tab-3-battery-health-screen)
