@@ -20,7 +20,7 @@
 ## 用一次性locators尝试进行基本鼠标操作
 - `.robot`中，我们首先学习`Click`和`Wait For Element`命令
   - 很多时候要`Wait For Element`出现了再`Click`
-  - 有时可以直接`Sleep`一小段时间
+  - 有时可以直接`Sleep`一小段时间等待其反应
 - 参考[rpa-desktop文档](https://robocorp.com/docs/libraries/rpa-framework/rpa-desktop)，综合运用`image:<路径>`，`offset:<x>,<y>`和`ocr:<文本>`等一次性locators，即可完成许多简单任务
   - 参考`104-public-knowledge-base\automation\robocorp\example\desktop\turn-on-wi-fi`中的robot，可自动连接已保存的`eduroam`wifi
     - 这个没有做[[化归]]，是只适用于关闭状态打开wifi并连接指定网络`eduroam`

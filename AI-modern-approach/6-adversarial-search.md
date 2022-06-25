@@ -101,3 +101,39 @@
   - 可以搜
   - 还能retrograde，从终局往前倒推
   - 这里目的往往是推出一个**有特征的子集**的所有输赢情况（比如王象马对王），之后方便查表
+## 6.4 Monte Carlo Tree Search
+- 围棋难估值，所以需要MCTS
+- 用模拟结果期望作为估值函数
+- simulation/payout/rollout同义
+- 最naive版本
+  - 没有中途的估值，必须下出输赢结果
+  - 且是随机一人一步模拟
+- 随机地一人一步没那么好：需要playout policy
+  - 这个playout可能使用NN或一些启发（如逃打吃）
+- **什么时候开始**playout？
+  - 最简单的思想：pure MC search
+  - 第一步不经过playout而是任选
+  - 后面使用playout
+  - 看哪个第一步（对应后面使用playout引出的结果）最好
+- selection policy：并不是后面全用playout，也不是第一步纯随机
+  - explore states that have had few playouts
+  - exploit已有获得更精确估值
+  - 两者需要平衡
+- 先有search tree，然后每个iteration四步
+  - selection：在已有树上（无论根据explore原则还是exploit原则）走几步到叶子
+  - expansion: 叶子下新增一至多个新叶子
+  - simulation: 用新生成的叶子为起点模拟（但不放入树，模拟完就扔）
+  - back-propagation: 更新所有祖先的总rollout数字段、胜利rollout数字段
+- selection policy例子
+  - $UCB1(n)=U(n)/N(n)+C\sqrt{logN(PARENT(n))/N(n)}$
+  - 第一项对应利用，第二项对应探索
+  - log使得到后来越来越倾向于利用
+  - $C$可调。纯理论最好是$\sqrt 2$
+  - AlphaZero还加入move probability项
+- 最终返回UCB1高的，而不是单纯“胜率高”（否则不确定性大）
+- 经验：围棋这种空间大的/eval不好写的不适合$\alpha-\beta$适合mcts
+  - 很多随机playout也更稳定，不会被一个误区坑死
+- mcts也可以用eval（playout到一定步数不模拟了）
+- 可以从零开始自走凭空获取知识，并用NN进行distill
+- 属于type B，很深，所以可能会忽略一些唯一关键手
+- `The general idea of simulating moves into the future, observing the outcome, and using the outcome to determine which moves are good ones is one kind of reinforcement learning`
