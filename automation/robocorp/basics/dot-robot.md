@@ -23,6 +23,13 @@ Minimal task
     - “参数”可能也有空格，比如[[press-keys]]中
   - 在mandatory参数后可能有optional参数，也用$\ge 2$个空格隔开
     - 例如`104-public-knowledge-base\automation\robocorp\example\desktop\turn-on-wi-fi\tasks.robot`中的`timeout=3`可选参数
+    - 例如`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy\tasks.robot`中的`Wait for...`按位置填入了`reason`可选参数
+      - 即：填入可选参数不一定要写`key=value`形式
+  - `*** Settings ***`模块中，`Library`语句导入Keywords
+    - 这个相当于python导入[[import/basics]]时的`from ... import *`所以很容易重名
+    - 此时需要写出全名，比如`RPA.Desktop.Click`
+  - 更多语法直接看[cheat sheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)，基本现用现查即可
+    - 例如使用了`TRY`的`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy`
 - `robotTaskName`的用法：需要修改两个`.yaml`，同时存在`.robot`文件
   - 参考`104-public-knowledge-base\automation\robocorp\example\dot-robot`
   - 也就是在[[robot-yaml]]中提到的`robot.yaml`中`robotTaskName`字段

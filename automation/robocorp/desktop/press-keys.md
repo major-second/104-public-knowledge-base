@@ -7,3 +7,9 @@
     - 可以带一个空格，如`page up`
     - windows徽标键是`cmd`
 - 注意：如果只输入文本可以使用`Type text`
+- 如何尽可能少使用鼠标？
+  - [[keyboard-shortcuts]]，[[fn]]，[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[misc]]等等快捷键
+  - `cmd`键打开开始菜单，输入程序名来打开
+- 参考例子：`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy`
+- 目前`alt + space`快捷键功能不正常，原因未知，但可以通过[[built-in-keyboard-shortcuts/window]]的`win + 方向键`凑合一下
+  - 这就是[[alternative-method]]的思想
