@@ -20,7 +20,7 @@ Minimal task
   - `robotframework`用$\ge 2$个空格分隔“命令”和“参数”
     - “命令”本身可能含有空格，比如`Wait For Element`
     - “命令”在vscode中可以补全
-    - “参数”可能也有空格，比如[[press-key]]中
+    - “参数”可能也有空格，比如[[press-keys]]中
   - 在mandatory参数后可能有optional参数，也用$\ge 2$个空格隔开
     - 例如`104-public-knowledge-base\automation\robocorp\example\desktop\turn-on-wi-fi\tasks.robot`中的`timeout=3`可选参数
 - `robotTaskName`的用法：需要修改两个`.yaml`，同时存在`.robot`文件

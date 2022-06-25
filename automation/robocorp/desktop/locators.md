@@ -10,3 +10,8 @@
     - 之后就可以使用`${region}`作为alias
     - 注：`alias:`可以省略，也就是之后可以直接<code>Click&nbsp;&nbsp;${region}</code>
   - 参考`104-public-knowledge-base\automation\robocorp\example\desktop\turn-on-wi-fi-alias`中的robot
+- 运算（chaining）
+  - `+, |, &, !`四种运算
+    - 也可以用`then, not`等单词表示
+  - 举例`image:logo.png + offset:600,0 + size:400,200`
+  - 举例`!<某图片>`就是某图片不存在
