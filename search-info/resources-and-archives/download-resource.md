@@ -1,5 +1,10 @@
 - 手机apk
-  - m.apkpure.com
+  - m.apkpure.com（电脑手机都可访问该网址）
+    - 也可以[手机上下载apkpure app](https://apkpure.com/how-to/how-to-install-xapk-apk)
+      - 当应用商店、管理器使用
+      - 可以下载一些国内应用市场没有的东西比如[[keybase]]、[[android]]代理客户端SSR等
+      - 当电脑网址m.apkpure.com给出apkpure特有的`.xapk`格式文件，就可以考虑使用手机apkpure app而不是电脑下载`.xapk`传给手机。这样比较方便
+    - 官网图：![](install-xapk.png)
 - 电子书
   - [z-lib](https://zh.z-lib.org/)官网（各种语言，各种格式）
     - 可能需要[[usage]]代理
