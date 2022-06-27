@@ -35,6 +35,7 @@
     - 可以设置是否提醒
     - 注意普通信息提醒和语音电话提醒是分开设置的
   - Service Notifications处可以用各个方块右上角的三个点Block掉通知
+    - 比如专门block掉便利蜂的优惠券通知![](block-wechat-service-notifications.png)
   - Weixin Pay之类玩意也可以点进去齿轮设置不提醒
 - stickers
   - 新表情：任意聊天窗口 - 表情图标（笑脸） - 加号图标 - 加号图标 - 选图
