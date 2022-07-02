@@ -1,6 +1,6 @@
 - 有时可以先临时解决，然后再永久解决
   - 比如先[[connect-base]]中连机械臂网口，设置好控制柜ip后[[connect-controller]]连控制柜网口
-  - [[source]]中县临时改成不安全的`http`，装个包再改回来，解决证书的问题
+  - [[software-management/source]]中县临时改成不安全的`http`，装个包再改回来，解决证书的问题
   - 比如[[grub-menu]]中按小写`e`编辑设置，这在[[dual-boot/steps]]中做了应急，起到核心作用！
     - 这里临时解决方案是“一次性的”，做了配置设置之后就可以永久。但是你不做临时解决，那连系统都进不去
   - 比如先用`23`端口`telnet`去装`openssh-server`，之后再用`ssh`
