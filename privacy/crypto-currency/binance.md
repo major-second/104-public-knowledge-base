@@ -4,14 +4,14 @@
   - 美国不行：![](us-ip.png)
 
 ## 注册
-- [注册binance的网址](https://accounts.binance.com/en/register)
+- [注册binance的网址](https://accounts.binance.com/en/register?ref=IW76A547)
+  - 这里已经自动加入了推荐ID，有费率优惠
 - 截至2022.7，中国内地法律不允许加密货币交易所，所以随便选个居住地（如香港）
   - 但这个其实目前有点灰色
   - 之后的各个步骤就又可以用内地手机和身份证了
 - 选择create personal account
-- 填邮箱，密码，推荐人ID（以减少佣金费率）
-  - 一个可选的推荐人ID：
-  - ![](commission-kickback.png)
+- 填邮箱，密码，推荐ID（以减少佣金费率）
+  - 一个可选的推荐ID：`IW76A547`
 - 邮箱收邮件，验证邮箱（建议主流邮箱如outlook）
 - 手机收验证码，验证手机（可以使用内地手机）
 ## 认证
