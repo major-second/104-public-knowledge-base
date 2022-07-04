@@ -74,3 +74,5 @@ tensor([[ 5., 11.],
 ```
 就地（in-place）操作：例如`tensor.add_(5)`，用`_`标记
 > In-place operations save some memory, but can be problematic when computing derivatives because of an immediate loss of history. Hence, their use is discouraged.
+
+在[[autograd]]中的`.requires_grad_(True)`和`.zero_()`都是in-place就地操作
