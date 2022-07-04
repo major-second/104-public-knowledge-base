@@ -14,3 +14,4 @@
 - 刚进来在“资金账户”（Funding）
 - 可以中英对照一下这些账户![](all-accounts.png)
 - 典型功能：转入理财账户。需要[先转到现货账户](https://www.binance.com/zh-CN/support/faq/b10712050ff945089aea7160f5e8f6b6/)
+- 2000USDT以下活期10%哦
