@@ -1,6 +1,5 @@
 前置：
 - [[tensor-calculator]]
-- [[dataloader]]
 - [[device]]（如果需要GPU）
 
 [参考](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/4-model)

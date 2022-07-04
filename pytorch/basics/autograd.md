@@ -18,7 +18,8 @@
   - 更深入理解上面两点：虽然一张图一次导数，但可以多张图。可以多次调用`.backward()`
     - `a=torch.tensor([[1.,2]], requires_grad=True); b=torch.tensor([[3.],[4]], requires_grad=True); c=a*a*a@b; c.backward(); c=a*a*a@b; c.backward(); print(a.grad)`就会**积累**2次导数，得到结果`tensor([[18., 96.]])`
     - 如果需要清零，需要`optimizer.zero_grad()`
-      - 在这节课你还不会[[optimizer]]就急着想清零？可以`a.grad.zero_()`
+      - 在这节课你还不会[[optimization]]就急着想清零？可以`a.grad.zero_()`
 - 如果只需正向[[tensor-calculator]]无需反向，可以在`with torch.no_grad():`辖域内写代码
   - 有时用于冻结网络的一部分
   - 有时用于验证、测试时加快运行速度
+- 注：直接重载`.backward()`没用，[参考](https://cloud.tencent.com/developer/article/1134257)
