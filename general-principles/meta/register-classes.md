@@ -1,0 +1,15 @@
+- 前置
+  - [[meta-programming]]
+- 很多时候我们[[command-line-arguments/basics]]传入命令行参数后，读入了字符串
+- 且很多时候该字符串直接对应一个类，例如`--model-type MyBackbone`这种，意为指定名为 `MyBackbone`的类
+- 如果纯手动编程，往往需要一个字典做映射，例如`{ MyBackbone": MyBackbone}`，其中 `MyBackbone`是类
+- 如果不想手动写这种东西，往往可以使用“注册”的思想。这是一种[[meta-programming]]
+  - 比如`https://github.com/facebookresearch/fvcore/blob/main/fvcore/common/registry.py`
+  - 第一步创建全局变量（往往大写表示）例如`BACKBONE_REGISTRY = Registry('BACKBONE')`
+  - 第二步在定义类时进行注册
+    - 例如`BACKBONE_REGISTRY.register(MyBackbone)`
+    - 或
+      - `@BACKBONE_REGISTRY.register()`
+      - `class MyBackbone():`
+  - 此时相当于自动创建了`{"MyBackbone": MyBackbone}`这种形式的字典，因此第三步可以使用`BACKBONE_REGISTRY.get("MyBackbone")`获取类`MyBackbone`
+- 这种做法方便扩展。如果你写了新的Backbone，只需在你的文件中`import`全局变量`BACKBONE_REGISTRY`，再调用`BACKBONE_REGISTRY.register()`即可

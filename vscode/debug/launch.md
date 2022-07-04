@@ -3,8 +3,9 @@
 - 运行什么文件
 - 在什么目录下运行（防止`python`找不到包）
   - 例如`"cwd": "${workspaceFolder}/anticipation"`，就不在项目根目录运行
-- 参数（各种`--<参数名> <参数内容>`之类的。这样就不用每次重新复制长串命令）
-  - 例如`--id 1 --learning-rate 0.0001`，对应的要写成`["--id", "1", "--learning-rate", "0.0001"]`
+- 参数`"args"`
+  - 这样就不用每次重新复制长串命令
+  - 例如本来的参数列表为`--id 1 --learning-rate 0.0001`，对应的要写成`"args": ["--id", "1", "--learning-rate", "0.0001"]`
 - `"justMyCode": false`：逐步运行进第三方库
 - `"python"`: 指定python解释器（可以结合`which`命令快速找到解释器）
 - `"env"`: [[6-env]]环境变量

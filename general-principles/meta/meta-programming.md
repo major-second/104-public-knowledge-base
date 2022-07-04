@@ -17,7 +17,7 @@ p[9]
 
 print(my_interactive_py2_command)
 ```
-然后查找`$`替换成` + '; raw_input("Press Enter"); \\\n' + \`，替换完成后保存，再运行上述`python3`脚本
+然后查找`$`替换成` + '; raw_input("Press Enter"); \\\n' + \`，替换完成后保存，再运行保存后的`python3`脚本（本文件夹的`meta_prog_example.py`）
 得到一个字符串，是可用于[[interact]]的`python2`片段：即
 ```python
 print 1; raw_input("Press Enter"); \
@@ -30,3 +30,4 @@ print 9
 - 总结
   - 这里使用查找替换（“元语言”。如果你用[[sed]]做的替换那么元语言是shell）修改目标语言python3代码
   - 使用元语言python3生成目标语言python2代码
+  - 总共套了两层“meta”

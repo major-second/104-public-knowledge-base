@@ -1,7 +1,7 @@
+- 前置
+  - [[command-line-arguments/basics]]
 - 有时需要测试或者是为了照顾一些包（比如[[hydra]]）的用法，需要模拟出命令行参数
     - 其实只需要`import sys`之后改`sys.argv`即可
 - 参考[[omegaconf/basic]]
     - https://omegaconf.readthedocs.io/en/2.1_branch/usage.html#from-command-line-arguments
     - 中为了测试，模拟出命令行参数
-- 当然，`import sys`后直接读取`sys.argv`列表也可以直接得到命令行参数列表
-  - 实际中，读取列表往往可结合[[debug-console]]，[[attach]]使用
