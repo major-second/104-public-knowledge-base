@@ -1,7 +1,8 @@
-前置：
+前置
 - [[tensor-calculator]]
-- 有GPU（才能体会至少有两个不同设备）
+- 有GPU（才能体会至少有两个不同设备，CPU和GPU）
 
+内容
 - 常见做法：`device = 'cuda' if torch.cuda.is_available() else 'cpu'`，之后使用`device`变量。参考[[torch-cuda]]
 - 对于张量，`.to(device)`转换设备
   - `.device`就可看到设备在哪

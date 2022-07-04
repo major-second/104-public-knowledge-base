@@ -1,0 +1,10 @@
+-  Efficient Market Hypothesis (EMH): `securities markets are efficient in incorporating all information that determines the value of a security`
+   -  无套利空间
+   -  weakest: based on past market prices无套利空间
+      -  但可以分析公共信息比如产业发展等
+   -  semi-strong: based on publicly available info无套利空间
+   -  strong: 任何时候无套利空间
+      -  这个一般认为不成立。但前两个有争议
+      -  赞同：会被套利(arbitraged away)
+-  所以：很多人一直致力于怎么挖掘信息获利
+-  批评：人是非理性的，割韭菜就能获利

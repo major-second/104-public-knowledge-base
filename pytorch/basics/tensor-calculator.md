@@ -1,6 +1,5 @@
 [toc]
-# 把pytorch当高级计算器使用
-前置：
+## 前置
 - [[pytorch/basics/installation]]
   - 当然，也可直接使用[[深度学习镜像deepo]]。这样非常方便，开箱即用
 
