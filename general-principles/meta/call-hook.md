@@ -1,0 +1,2 @@
+- `call_hook(<方法名>)`是一种常用的[[meta-programming]]手段
+- 在实现层面上，例如python可以使用[[setattr-getattr]]中`getattr(<对象>, <方法名>)`得到方法
