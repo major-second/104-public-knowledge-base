@@ -6,8 +6,10 @@
 - 新建`.ipynb`即可编辑和调试
   - 参考[[jupyter-notebook/basics]]
   - 参考`python/jupyter-notebook/example.ipynb`
-  - 需要指定解释器，并`conda install -n pytorch_test ipykernel --update-deps --force-reinstall`补包
+  - 需要指定解释器，并`pip install ipykernel`补包
 - [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码
 - 实用功能
   - `+`新建两种block
   - `Outline`给出提纲（注：`[toc]`是不能用的，参考[[enhanced]]）
+- feature
+  - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径，参考[[sys-path]]

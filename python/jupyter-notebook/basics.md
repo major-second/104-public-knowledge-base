@@ -1,3 +1,6 @@
+- 前置
+  - [[pip]]
+  - `pip install ipykernel`补包
 - 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
   - `markdown` block可以有数学公式、图片等作为注释
   - `python` block可以运行`python`代码

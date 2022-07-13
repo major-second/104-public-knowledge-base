@@ -1,0 +1,20 @@
+- 前置
+  - [[file-format]]
+  - [[11-basic-scripting-partA]]重定向输出
+- 用`with open('filename', <模式>) as f:`得到一个file handler `f`
+  - `<模式>`默认是`"r"`读取
+  - `"w"`表示写入，`"b"`表示二进制格式文件（参考[[file-format]]）
+- 基础读取方法
+  - 可以`lines = f.readlines()`取出文件行组成的表
+    - 表的元素不会去除回车
+    - 最简单举例
+      - `echo "1" > example.txt; echo "2" >> example.txt; echo "3" >> example.txt`
+      - `python -c 'with open("example.txt") as f: print(f.readlines())'`
+      - 输出：`['1\n', '2\n', '3\n']`
+  - 可以`content = f.read()`读取全部内容
+    - 接上，`python -c 'with open("example.txt") as f: print(f.read())'`
+    - 输出三行`1`，`2`，`3`
+- 进阶
+  - 使用`json`包：`import json`
+    - 然后`json.load(f)`即可从file handler得到想要的对象
+    - 是内置的`dict`或`list`结构对象
