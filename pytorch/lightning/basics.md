@@ -19,3 +19,5 @@
   - 使用trainer: 例如`trainer.fit(model, train_loader, val_loader)`
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法
     - 原始代码来自[[optimization]]中提到的`pytorch/basics/minimum.ipynb`
+  - [[tensorboard]]需要的信息、checkpoint等都会被自动存到`lightning_logs`文件夹
+    - tensorboard会自动记录`train_loss`, `val_loss`等
