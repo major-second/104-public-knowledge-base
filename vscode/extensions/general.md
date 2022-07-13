@@ -12,7 +12,7 @@
     - 这时可以结合[[keyboard-shortcuts]]设置快捷键
   - 可能是右键菜单出现选项，如[[git-history]]
 - 管理插件：`Ctrl+Shift+X`出来的界面，可以卸载或禁用等
-- 注：有时若干个插件是打成包的，比如`python`
+- 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]
   - 卸载也是一起卸载
 # 插件的作用说明
 - Some extensions needs some softwares as dependencies.

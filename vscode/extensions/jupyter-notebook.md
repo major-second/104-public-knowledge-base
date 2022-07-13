@@ -1,0 +1,7 @@
+- 前置
+  - [[extensions/general]]
+  - 了解jupyter notebook
+  - [[commands]]
+- 搜索插件名`python`并安装一个套装，就自动有了jupyter notebook所需的插件
+- 新建`.ipynb`即可编辑和调试（参考`python/jupyter-notebook/example.ipynb`，可能需要给特定解释器安装一些包）
+- [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码
