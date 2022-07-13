@@ -1,18 +1,24 @@
----
-title: git history插件
-type: tools
----
-
-# 基于git history插件的git历史管理
-
-- #vscode 安装 #git history 插件后
+# git history
+- 插件名：git history
 - 查看一个文件或文件夹的历史记录
   - 左边文件栏中右键点击某个文件/文件夹
-  - ![](git-history1.png)
+    - ![](git-history1.png)
   - 点击git: view file history
-  - ![](git-history2.png)
+    - ![](git-history2.png)
   - 文件编辑者和branch一目了然！
 - 查看整个库
   - 法一：`Ctrl+Shift+P`搜索`history`
   - 法二：`Ctrl+Shift+G`出来的那个界面（左侧git图标那个界面）每个库标题右边有个“时钟”图标
-    - 这个方便选择你要看[[submodule]]中的哪个
+    - 法二方便选择你要看[[submodule]]中的哪个
+# GPM
+- 插件名：git project manager
+- 设置
+  - 打开`settings.json`（参考[[vscode/settings]]）
+  - 根据你git库在什么位置，加上`"gitProjectManager.baseProjectsFolders"`字段，才能正常使用该插件
+    - 其需要一个表，即`"gitProjectManager.baseProjectsFolders": ["foo", "bar"]`
+    - 填写时可以直接填文件夹路径（例如`~/my-git-project`）
+    - 也可以填上级目录（例如`~`）
+    - 默认递归搜索层数有限制：为`4`
+- `Ctrl + Shift + P`，`GPM`看到可用命令
+  - 常用：`Refresh`刷新，然后`Open`就可以打开
+  - 还有默认`Ctrl + Shift + Q`打开最近的

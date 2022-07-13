@@ -28,7 +28,8 @@ training_data = datasets.FashionMNIST(
     - 实用的：`target_transform=Lambda(lambda y: torch.zeros(10, dtype=torch.float).scatter_(dim=0, index=torch.tensor(y), value=1))`，变成浮点one-hot向量，参考[[manipulation]]
 ## 自己的dataset
 常见的：[map式数据集](https://zhuanlan.zhihu.com/p/105507334)，本质上抽象成一个数组（“索引”）
-至少要重载`__getitem__, __len__`
+- 继承`torch.utils.data.Dataset`
+- 至少要重载`__getitem__, __len__`
 ## 个人理解：dataset的作用
 - 防止一开始构造时不必要的耗时太长
   - 典型操作：一开始`__init__`只读取一个图片路径列表，之后需要时再[[open-convert-save]]中的open和convert图片。而不是一开始打开所有图片

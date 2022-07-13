@@ -2,16 +2,18 @@
     - 注意，工作空间（文件夹的`.vscode`子文件夹下）的设置`.json`会覆盖“通用”的。例如foam默认的`Paste Image`路径是`attachments`
 - 当然，也有图形界面
   - 例如插件右键 - Extension Settings
-  - 下面说的设置项很多在图形界面也容易找到
+  - json设置项很多在图形界面也容易找到
+  - 图形界面的一些设置项在json可以找到，一些找不到，即为使用默认
   - 但直接修改json和gui中设置可能有些不同。例如`\`转义是写一个还是两个，参考[[excel-viewer]]
 - 一些用到了的设置项：
     - `"editor.wordWrap": "on"`打开自动换行
       - 可能需要删除`"editor.accessibilitySupport": "on"`才能用
+    - `"editor.fontFamily"`：设置字体
     - `"terminal.integrated.defaultProfile.linux"`调整linux环境中默认用什么终端
     - `"git.terminalAuthentication": false`去除自动Authentication
       - 当然，这样就导致每次都要输入账号和[[personal-access-tokens]]
       - 如果自动的Authentication不符合要求（比如不是你要的账号等等），当然就要如此去除
       - 确认正确了（能正常用了）再设回`true`
     - `"http.proxy": "http://<ip>:<port>"`：设置代理
-      - 默认可能继承了[[6-env]]的环境变量
+      - 默认情况：可能是继承了[[6-env]]的环境变量
 - 当然，这些设置项的名称和细节可能随着版本和系统不同而变化
