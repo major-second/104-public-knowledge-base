@@ -1,7 +1,13 @@
 - 前置
   - [[extensions/general]]
-  - 了解jupyter notebook
+  - [[jupyter-notebook/basics]]
   - [[commands]]
 - 搜索插件名`python`并安装一个套装，就自动有了jupyter notebook所需的插件
-- 新建`.ipynb`即可编辑和调试（参考`python/jupyter-notebook/example.ipynb`，可能需要给特定解释器安装一些包）
+- 新建`.ipynb`即可编辑和调试
+  - 参考[[jupyter-notebook/basics]]
+  - 参考`python/jupyter-notebook/example.ipynb`
+  - 需要指定解释器，并`conda install -n pytorch_test ipykernel --update-deps --force-reinstall`补包
 - [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码
+- 实用功能
+  - `+`新建两种block
+  - `Outline`给出提纲（注：`[toc]`是不能用的，参考[[enhanced]]）

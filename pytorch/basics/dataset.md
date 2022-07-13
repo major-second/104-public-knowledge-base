@@ -30,6 +30,8 @@ training_data = datasets.FashionMNIST(
 常见的：[map式数据集](https://zhuanlan.zhihu.com/p/105507334)，本质上抽象成一个数组（“索引”）
 - 继承`torch.utils.data.Dataset`
 - 至少要重载`__getitem__, __len__`
+- 参考`minimum.ipynb`
+  - 这里的启示：数据集有可能是完全online生成的，不事先存储任何数据
 ## 个人理解：dataset的作用
 - 防止一开始构造时不必要的耗时太长
   - 典型操作：一开始`__init__`只读取一个图片路径列表，之后需要时再[[open-convert-save]]中的open和convert图片。而不是一开始打开所有图片
