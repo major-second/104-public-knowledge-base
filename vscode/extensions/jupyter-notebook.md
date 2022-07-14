@@ -12,4 +12,5 @@
   - `+`新建两种block
   - `Outline`给出提纲（注：`[toc]`是不能用的，参考[[enhanced]]）
 - feature
-  - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径，参考[[sys-path]]
+  - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径
+  - 解决方法参考[[sys-path]]
