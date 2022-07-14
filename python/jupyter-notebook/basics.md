@@ -9,4 +9,5 @@
 - 可以使用vscode [[jupyter-notebook]]插件调试编辑
   - 比如常见操作：新建一个`python block`，`print`你想要的东西
     - 该操作类似于一般语言的[[debug-console]]，非常方便
-  - 一个feature：即使代码块都没改变，但运行结果不同了，也会认为你编辑了`.ipynb`文件
+- feature
+  - 即使代码块都没改变，但运行结果不同了，git也会认为你编辑了`.ipynb`文件
