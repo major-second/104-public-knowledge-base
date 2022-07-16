@@ -13,6 +13,7 @@
   - `Outline`给出提纲（注：`[toc]`是不能用的，参考[[enhanced]]）
   - `Restart`清空变量，重新启动
     - 如果你的`.ipynb`引用的一些`.py`中的东西变化了，你应该`Restart`才能使得生效
+    - 注：`.ipynb`中代码变化当然不需要`Restart`
 - feature
   - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径
   - 解决方法参考[[sys-path]]和[[vscode/settings]]中有关`pylance`的部分
