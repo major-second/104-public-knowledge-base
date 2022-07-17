@@ -6,6 +6,7 @@
 - 写注释/文档时要换位思考考虑别人读的场景
   - 比如不要默认别人正在编辑器(vscode)中读。别人有可能在github上读呢
   - 所以出现的引用github代码的网址要明确tag（版本号），使得别人可以复制粘贴网址就阅读（而不是指望别人`Ctrl+左键`点击类名/函数名读）
+- [[jupyter-notebook/basics]]本质就是可以用`markdown`注释，非常爽
 - 硬件处的注释：来举个反例，某款迷惑机箱
   - ![](hardware-comment-HDMI.jpg)处有注释`HDMI`
     - 参考[[interface]]

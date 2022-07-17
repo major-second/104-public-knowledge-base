@@ -4,6 +4,7 @@
   - `from time import sleep`
   - `for i in tqdm(range(100)):`
     - `sleep(0.01)`
+- 描述性文字：`desc=<描述>`
 - [[jupyter-notebook/basics]]中使用
   - 需要`tqdm.tqdm_notebook`
   - 参考[[jupyter-notebook/tqdm]]
