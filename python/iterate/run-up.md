@@ -1,0 +1,2 @@
+- 在`zip`函数等中，可能出现多个迭代器中一个先用光，整个迭代过程就停止
+  - 例如[[third-party-modules/tqdm]]中`for i in zip(tqdm(range(100)), list(range(80))):`显然导致`tqdm`进度条走不完

@@ -1,5 +1,5 @@
 - 直接在运行python脚本时，后用空格分隔增加参数即可
   - 例如`python example.py arg`或`python -m path.to.my_module arg`
-  - 使用vscode自动添加参数参考[[launch]]中的`"args"`
+  - 使用vscode自动添加参数参考[[launch]]中的`"args"`关键字
 - python脚本运行中，`import sys`后直接读取`sys.argv`这个list可以直接得到命令行参数列表
-  - 实际中，读取列表往往可结合[[debug-console]]，[[attach]]使用
+  - 实际中，想读取此`sys.argv`列表，往往可结合[[debug-console]]，[[attach]]使用
