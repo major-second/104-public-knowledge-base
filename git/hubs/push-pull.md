@@ -5,9 +5,14 @@
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
 # troubleshooting
 - push和pull涉及remote托管平台，所以可以参考[[https-ssh]]，[[personal-access-tokens]]，[[settings-and-configurations]]等设置代理、ssh、token，排除坑
-- `OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443`可能是代理[[node]]挂了，需要更换代理[[node]]
+  - 注：如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是CLI没设置代理但浏览器自动走了浏览器代理
+  - 参考[[configure]]
+  - `OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443`可能是代理[[node]]挂了，需要更换代理[[node]]
+- `clone`，`fetch`等需要下载，很多时候和`pull`共享一些相同的trouble
+  - 也有一些自己的技巧，例如`git clone --depth=1`可以避免`clone`全部历史
+- pull如果因为conflict不能执行，可以参考[[stash]]
 - 没有先pull，可能不给你push
-  - 需要先pull别人写的代码，人工解决conflict（参考pull一节），再push
+  - 需要先pull别人写的代码，人工解决conflict（参考上面一条），再push
   - 典型报错信息：
 ```text
  ! [rejected]        master -> master (fetch first)
@@ -18,7 +23,7 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
-- pull如果因为conflict不能执行，可以参考[[stash]]
+- 关于大文件导致`push`不成功参考[[push-eliminate-big-files]]
 # 其它
 - 一般来说不要为了看起来舒服就[[reset]]再`push --force`，因为[看起来一堆commit并不占多少空间](https://segmentfault.com/q/1010000003089251)
 - `git push --tags`可以让远程能看到tags

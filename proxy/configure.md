@@ -45,3 +45,5 @@ export http_proxy="localhost:<端口号>"
   - `curl cip.cc`不行（和linux表现不同）
   - `curl ipinfo.io`可以
   - `curl google.com`看有没有内容也可以
+# 举例
+- [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败

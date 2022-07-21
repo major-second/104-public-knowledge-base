@@ -5,4 +5,6 @@
   - 整理，并一起[[commit]]
   - 再push到服务器（参考[[push-pull]]）
   - 这可以防止服务器上有一大堆commit，看着烦人
-- 如果`main`位置不对，可以[[rebase]]然后疯狂`--skip`
+- 如果发现local branch（例如`main`）位置不对
+  - 可以`git rebase`调整其所在位置
+  - 然后疯狂`--skip`
