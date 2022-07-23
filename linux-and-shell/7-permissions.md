@@ -89,3 +89,5 @@ For directories, when a directory's sticky bit is set, the filesystem treats the
 `ls`
 `cd .. && sudo rm -rf ./a`
 `ls`
+3. Q: 天天权限不够，那权限是越高越好吗？
+A: 不是。首先会导致危险，其次[[private-key-permissions]]和[[dot-ssh]]都提到了有时系统会强制让太高权限的用不了
