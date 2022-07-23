@@ -14,3 +14,8 @@ push一步遇到问题：remote: repository not found
 使用`git config --global --unset credential.helper`取消保存
 ## vscode相关
 vscode记住的authentication可能也会导致问题，参考[[vscode/settings]]中有关`git.terminalAuthentication`条目
+这种出错的典型示例：
+```text
+Missing or invalid credentials.
+Error: connect ECONNREFUSED
+```

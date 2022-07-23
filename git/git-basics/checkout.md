@@ -5,4 +5,4 @@
 
 注意这不是强制的。你可能需要[[stash]]之后才能顺利进行操作
 checkout的原理参考[[hidden-files]]（把一些隐藏文件拿出来！）
-[[head-detached]]的checkout可能导致数据丢失
+[[detached]]的checkout可能导致数据丢失
