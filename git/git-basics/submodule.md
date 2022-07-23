@@ -14,3 +14,5 @@
 - 如果最外层忘了`--recursive`，那么对于内层模块，手动`clone`一下也是可以的
 ## 删改
 https://www.jianshu.com/p/ed0cb6c75e25
+## 问题
+- 有子模块经常会带来杂七杂八麻烦，比如[[vscode/settings]]中提到的`authentication`相关

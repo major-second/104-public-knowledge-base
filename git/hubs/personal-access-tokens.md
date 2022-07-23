@@ -13,8 +13,8 @@ push一步遇到问题：remote: repository not found
 可能是credential helper的问题，即git自动记住了以前输过的用户名密码，但是以前的用户名密码不是我这个仓库需要的用户名密码！
 使用`git config --global --unset credential.helper`取消保存
 ## vscode相关
-vscode记住的authentication可能也会导致问题，参考[[vscode/settings]]中有关`git.terminalAuthentication`条目
-这种出错的典型示例：
+- vscode记住的authentication可能也会导致问题，参考[[vscode/settings]]中有关`git.terminalAuthentication`条目
+  - 这种出错的典型示例：
 ```text
 Missing or invalid credentials.
 Error: connect ECONNREFUSED
