@@ -1,12 +1,23 @@
 - 前置
   - [[pip]]
   - `pip install ipykernel`补包
-- 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
-  - `markdown` block可以有数学公式、图片等作为注释
-  - `python` block可以运行`python`代码
-- 把`python`代码按照`cell`为单位排列
-  - 可以方便调试
-- 可以使用vscode [[jupyter-notebook]]插件调试编辑
-  - 比如常见操作：新建一个`python block`，`print`你想要的东西
-    - 该操作类似于一般语言的[[debug-console]]，非常方便
-  - 一个feature：即使代码块都没改变，但运行结果不同了，也会认为你编辑了`.ipynb`文件
+- 好处
+  - 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
+    - `markdown` block可以有数学公式、图片等作为“高级[[comment]]”
+    - `python` block可以运行`python`代码
+  - 把`python`代码按照`cell`为单位排列
+    - 可以方便模块化
+    - 还有一种常见操作：新建一个（临时）`python block`，`print`你想要的东西
+      - 该操作类似于一般的调试中的[[debug-console]]，非常方便
+- feature
+  - 即使代码块都没改变，但运行结果不同了，git也会认为你编辑了`.ipynb`文件
+  - 运行block时，有一些自动生成的[[command-line-arguments/basics]]命令行参数
+- 如何运行
+  - 原始方法：[参考](https://docs.jupyter.org/en/latest/running.html)
+    - 使用浏览器
+      - `jupyter notebook <名字>.ipynb`可以在浏览器中打开相应页面
+      - 注：如果你使用[[remote-ssh]]中的终端，则可以看到它会提示`http://localhost:8888/?token=<一串字符>`这种字样
+      - 我们只需[[forward-port]]这个端口，然后即可在本地浏览器中粘贴`http://localhost:8888/?token=<一串字符>`进行浏览页面和使用jupyter notebook
+  - 也可以使用vscode [[jupyter-notebook]]插件调试编辑
+  - `jupyter nbconvert --to python <名字>.ipynb`可以把`.ipynb`转化成`.py`文件，之后`python`命令运行即可
+    - 但涉及到[[jupyter-notebook/tqdm]]等时可能有麻烦

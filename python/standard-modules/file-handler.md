@@ -18,3 +18,5 @@
   - 使用`json`包：`import json`
     - 然后`json.load(f)`即可从file handler得到想要的对象
     - 是内置的`dict`或`list`结构对象
+    - `json.dump(<对象>, f)`即可写入
+      - 当然这个file handler必须是`open(..., 'w')`这样得到的（写模式）

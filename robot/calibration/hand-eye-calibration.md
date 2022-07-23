@@ -95,7 +95,7 @@ git clone https://github.com/IFL-CAMP/easy_handeye
   - **不要不Check直接点Next**，否则无法正常开始流程
 - 全部检测完成后，点击1号GUI中的**Compute**得到结果[[quaternion]]
   - 可以根据[[quaternion]]判断结果是否靠谱
-  - 不过过程中也可以compute，一来看“收敛性”，二来可以作[[before-long-run]]的小测试
+  - 不过过程中也可以compute，一来看“收敛性”，二来可以作[[general-principles/debug]]的小测试
   - 但大于等于3个sample才能“小测试”，否则直接crash
 ## 保存 可视化
 - 1号save保存，保存结果会到一个隐藏文件夹下的`.yaml`，之后就可以使用`publish.launch`，参数写法参见本文件夹中的文件

@@ -4,4 +4,4 @@
 - [[docker]]当然对隔离很有用
 - 虚拟机（比如vmware [[pro-license]]）也是隔离的好方法
   - 特别是把[[baidu-net-disk]]，[[wechat-tips]]，[[aliyun]]等国产软件扔虚拟机里，巨爽，类似于窗外很多虫子，你关窗
-- [[new-branch]]提到了[[]]协作开发过程中的新分支和pull request
+- [[git-basics/branch]]提到了[[]]协作开发过程中的新分支和pull request

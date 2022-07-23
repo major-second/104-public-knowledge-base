@@ -6,12 +6,16 @@
 - [[special-files]]提到`git rm --cache`命令删除已经被track的文件，并更新`.gitignore`，可能需要**重启**vscode才生效
 - [[windows/env-var]]的添加需要**重启**vscode才在vscode集成的powershell中生效（只重启powershell没用）
 - [[dot-ssh]]中的**重新创建文件夹**
+- [[jupyter-notebook/basics]]中提到的用`Restart`使得`.py`文件的改动生效
 - `d3dx9_42.dll`出错？重装DX即可
 - 还有最经典的设置东西之后要更新。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
-  - [[source]]的`sudo apt update`
-- [[interface]]提到的重新插拔接口。比如[[wired-connection]]，[[troubleshooting]]
+  - [[software-management/source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
-- 硬件层面的重置或初始化：例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
+- 硬件层面的重置或初始化
+  - [[interface]]提到的重新插拔接口
+    - 比如[[wired-connection]]
+    - [[troubleshooting]]
+  - 例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决

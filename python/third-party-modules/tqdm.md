@@ -1,0 +1,22 @@
+- [参考](https://www.pythonpool.com/python-tqdm/)
+- 基础用法
+  - `from tqdm import tqdm`
+  - `from time import sleep`
+  - `for i in tqdm(range(100)):`
+    - `sleep(0.01)`
+- 描述性文字：`desc=<描述>`
+- [[jupyter-notebook/basics]]中使用
+  - 需要`tqdm.tqdm_notebook`
+  - 参考[[jupyter-notebook/tqdm]]
+  - 有意思的feature：没正常结束会红色
+  - 比如下一节`zip`例子中就能看到
+- 涉及`map`时为了可以估测总大小，需要先`tqdm`包裹再`map`包裹
+  - [参考](https://www.pythonpool.com/python-tqdm/)里有说
+  - 例子：续上
+  - `for i in zip(tqdm(range(100)), list(range(80))):`
+    - `sleep(0.01)`
+    - 注：`zip`以最先用完的对象为准
+  - `for i in zip(tqdm(range(100)), list(range(800))):`
+    - `sleep(0.01)`
+  - 如果先用`map, zip`等包裹，再用`tqdm`包裹，则显然无法识别总个数
+    - 本质上可以参考[[iterable-iterator]]
