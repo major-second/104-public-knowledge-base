@@ -4,4 +4,4 @@
   - `git fetch <项目地址，以.git结尾>`
     - 可以重复多次，断点续传
     - 完成之后，输出有`FETCH_HEAD`字样，但文件夹中表面上没有东西
-  - `git cehckout FETCH_HEAD; git remote add <一般填origin> <项目地址，以.git结尾>; git pull <一般填origin> <分支名>; git checkout <分支名>`
+  - `git checkout FETCH_HEAD; git remote add <一般填origin> <项目地址，以.git结尾>; git pull <一般填origin> <分支名>; git checkout <分支名>`
