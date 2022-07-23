@@ -9,3 +9,4 @@
 - branch的一个应用
   - 参考[[temp-solution]]
   - 可以临时创建一个branch再`-d`删除，从而解除[[detached]]状态
+- 注：github默认branch以前是`master`，现在是`main`，因为种族歧视黑人（……）
