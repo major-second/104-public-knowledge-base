@@ -9,6 +9,4 @@ git config --global http.proxy 127.0.0.1:端口
 git config --global https.proxy 127.0.0.1:端口
 
 git config --list # 查看列表, 可以用q退出
-
-git config --global http.postBuffer 2000000000 # 一次push太多文件时必须加大这个缓存大小
 ```

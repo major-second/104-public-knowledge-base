@@ -1,0 +1,7 @@
+- `git fetch`相比[[push-pull]]可以断点续传
+- 流程
+  - 新文件夹`git init`使得隐藏文件夹`.git`建立（参考[[hidden-files]]）
+  - `git fetch <项目地址，以.git结尾>`
+    - 可以重复多次，断点续传
+    - 完成之后，输出有`FETCH_HEAD`字样，但文件夹中表面上没有东西
+  - `git cehckout FETCH_HEAD; git remote add <一般填origin> <项目地址，以.git结尾>; git pull <一般填origin> <分支名>; git checkout <分支名>`
