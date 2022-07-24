@@ -12,8 +12,12 @@
    3. [[vscode/settings]]：`settings.json`文件
    4. 有时还需要结合[[find-grep]]找到到底去哪里设置
       1. 比如franka机器人的`xacro`文件，参考[[franka-panda/limit]]
-   5. `.d`的作用：比如`source.list`和`source.list.d`的关系，你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`，放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
-   所以直接在`.d`文件夹里加文件，其实相当于编辑某个特定文件。
+   5. `.d`的作用
+      1. 比如`source.list`和`source.list.d`的关系
+      2. 你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`
+      3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
+      4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件
+      5. 删除也可以方便地删除一部分，这在[[software-management/source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
 3. 用命令。比如`git config`，参考[[config]]，`pip config set <key> <value>`命令（很多时候等价于封装了的方法2.）
    1. 注：不同版本可能具有的方式还不同。比如老版本`pip`就没有`config`命令。需要装新版本。
 4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等

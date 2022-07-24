@@ -14,11 +14,15 @@
     - 换阿里云搞定
 - 更新软件源列表：`sudo apt update`
   - 这是安全的，和[[software-management/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
-- 如果certificate出问题，可以重装`ca-certificates`试试
+- 换源可以命令行操作
+  - 具体地：在文件`/etc/apt/sources.list`中。可参考[[settings-and-configurations]]
+  - 也可以九个点 - Software & Updates换
+## troubleshooting
+- 如果certificate（证书）出问题，可以重装`ca-certificates`试试
   - 如果可以正常重装，那就正常重装
   - 否则[参考这篇](https://blog.csdn.net/Chaowanq/article/details/121559709)
     - 这是用[[temp-solution]]思想（临时使用`http`而非`https`，装好了再换回`https`）
     - 当然如果适当舍弃安全，也可以一直用`http`而非`https`
-- 换源可以命令行操作
-  - 具体地：在文件`/etc/apt/sources.list`中。可参考[[settings-and-configurations]]
-  - 也可以九个点 - Software & Updates换
+- `Conflicting values set for option Signed-By regarding source ...`问题参考[这个](https://askubuntu.com/questions/1329308/sudo-apt-get-returns-conflicting-values-set-for-option-signed-by-regarding-s)，只需要把出问题的`gpg`和`list`都删掉就可以了
+  - 这是[[refresh]]的一个例子
+  - 删除`某某.d/.list`文件的操作参考[[settings-and-configurations]]中涉及`.d`的部分进行理解

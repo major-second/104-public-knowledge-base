@@ -7,6 +7,7 @@
 - [[windows/env-var]]的添加需要**重启**vscode才在vscode集成的powershell中生效（只重启powershell没用）
 - [[dot-ssh]]中的**重新创建文件夹**
 - [[jupyter-notebook/basics]]中提到的用`Restart`使得`.py`文件的改动生效
+- [[software-management/source]]中处理`Conflicting values set for option Signed-By regarding source ...`
 - `d3dx9_42.dll`出错？重装DX即可
 - 还有最经典的设置东西之后要更新。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
