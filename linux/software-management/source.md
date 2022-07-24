@@ -1,16 +1,24 @@
+- `apt`是从软件源上下载软件的
+  - `ubuntu`官方源，清华，阿里云等有一般、通用的软件
+  - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]等可能不被这些官方收录
+    - 所以需要自己添加
+    - 再用`sudo apt update`更新
+    - 之后即可以在新的源上获取软件
+    - 这个添加的过程往往都在装软件的官方文档中写出
+  - 除了添加`ubuntu`官方、软件开发者官方的源，还可能有一些个人维护的源，即“ppa”
 - 默认源：安装ubuntu时选择where you are时选择中国，才能使用中国快的服务器
-  - 所以这时别装外宾
+  - 这时别装外宾！否则慢的是你自己
   - 如果选错了，之后可以在ubuntu的设置中改
   - 当然，默认源也有可能不够好
     - 比如装[[ros/installation]]缺过包
     - 换阿里云搞定
-- 更新列表：`sudo apt update`
+- 更新软件源列表：`sudo apt update`
   - 这是安全的，和[[software-management/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
-- 常见流程：添加新的源，用`sudo apt update`更新，并在新的源上获取软件
-  - 举例：[[v2raya]]，[[ros/installation]]，[[docker/installation]]
 - 如果certificate出问题，可以重装`ca-certificates`试试
-  - 如果可以正常重装那就正常重装
-  - 否则[参考](https://blog.csdn.net/Chaowanq/article/details/121559709)，用[[temp-solution]]思想（临时使用`http`而非`https`）试试能不能解决
-  - 如果适当舍弃安全，也可以一直用`http`而非`https`
-- 换源可以命令行操作，也可以九个点 - Software & Updates换
-  - 具体地：在文件`/etc/apt/sources.list`中
+  - 如果可以正常重装，那就正常重装
+  - 否则[参考这篇](https://blog.csdn.net/Chaowanq/article/details/121559709)
+    - 这是用[[temp-solution]]思想（临时使用`http`而非`https`，装好了再换回`https`）
+    - 当然如果适当舍弃安全，也可以一直用`http`而非`https`
+- 换源可以命令行操作
+  - 具体地：在文件`/etc/apt/sources.list`中。可参考[[settings-and-configurations]]
+  - 也可以九个点 - Software & Updates换

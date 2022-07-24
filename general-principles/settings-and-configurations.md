@@ -7,9 +7,11 @@
 1. 参考[[6-env]]，设置环境变量，乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等（使得开终端时自动设置）
 2. 编辑特定文件
    1. 比如Linux的`~/.bashrc`，`~/.condarc`，`/etc/ssh/sshd_config`
+      1. 参考：[[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]
    2. Windows的`known_hosts`
-   3. [[vscode/settings]]：可以用`.json`文件进行
-   4. 有时还需要结合[[find-grep]]找去哪里设置（比如franka机器人的`xacro`文件等）
+   3. [[vscode/settings]]：`settings.json`文件
+   4. 有时还需要结合[[find-grep]]找到到底去哪里设置
+      1. 比如franka机器人的`xacro`文件，参考[[franka-panda/limit]]
    5. `.d`的作用：比如`source.list`和`source.list.d`的关系，你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`，放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
    所以直接在`.d`文件夹里加文件，其实相当于编辑某个特定文件。
 3. 用命令。比如`git config`，参考[[config]]，`pip config set <key> <value>`命令（很多时候等价于封装了的方法2.）
