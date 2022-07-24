@@ -1,29 +1,11 @@
 # SoftGym配置方法
-
-SoftGym git主页：https://github.com/Xingyu-Lin/softgym
-
+[git主页](https://github.com/Xingyu-Lin/softgym)
 如果当前环境为Ubuntu 16.04 LTS以及CUDA 9.2，则按照主页进行配置
-
 由于当前大多数环境不满足上述要求，此处主要介绍使用docker的配置方法
-
-## 下载部分
-
-首先clone下来
-
-```
-git clone https://github.com/Xingyu-Lin/softgym.git
-```
-
-按照https://github.com/Xingyu-Lin/softgym/blob/master/docker/docker.md下载[docker-ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/) [nvidia-docker](https://github.com/NVIDIA/nvidia-docker#quickstart) [Anaconda](https://www.anaconda.com/distribution/) 
-
-完成后执行
-
-```
-sudo docker pull xingyu/softgym
-```
-
-获得配置的softgym环境
-
+## 准备
+- `git clone https://github.com/Xingyu-Lin/softgym.git`
+- 并完成[[docker/installation]]，[[nvidia-docker]]，[[conda/installation]]
+- `sudo docker pull xingyu/softgym`获得配置好的[[docker/image]]
 ## 环境配置部分
 
 先执行
