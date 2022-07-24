@@ -63,6 +63,7 @@ echo 3
 - 引号相关初步
   - 只有一种引号（比如单引号）就用另一种括起来（比如双引号）
     - 例如[[wc]]中的`find . -type f -name "*.mp4" | wc`如果需要`watch`（每两秒看一次），那就用单引号，即`watch 'find . -type f -name "*.mp4" | wc'`
+      - 注意这个`find`语句需要双引号，参考[[find-grep]]
   - 若末尾需要空格，那也需要引号括起来，例如[[sudo]]有应用这种引号
 - `-n`参数可以不换行
   - 应用：`echo -n 'date: '; date`

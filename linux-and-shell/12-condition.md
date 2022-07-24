@@ -19,7 +19,13 @@ fi
 ```
 （或者`if command; then`，可少用一行）
 `command`正常以0退出（参考[[11-basic-scripting-partB]]），则执行`then`中的
-- 举例：`echo 11 | grep 2; echo $?`，输出1. 即`grep`找不到会“非正常退出”
+- 举例：`echo 11 | grep 2; echo $?`，输出1
+  - 即`grep`找不到时会是“非正常退出”，返回值非零
+- `if-then`常用场景：如果运行环境不是想要的，就`exit`退出该脚本
+  - 比如`if echo 11 | grep 2; then echo ok; fi`无输出
+  - `if echo 11 | grep 1; then echo ok; fi`有2行输出
+  - `if echo 11 | grep 1 > /dev/null; then echo ok; fi`有1行输出
+    - 参考[[linux-devices]]
 ## 12.2 `if-then-else`语句
 只需
 ```sh
@@ -38,7 +44,7 @@ fi
 if command
 then
     commands
-elif commend
+elif command
 then
     commands
 else
