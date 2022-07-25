@@ -1,4 +1,9 @@
 - 静默安装可以用于连续运行很多行脚本，非常方便。
+  - [[docker-file]]是最极端的情况：所有都必须静默，不能交互式设置
+  - 其中的
+    - `ARG DEBIAN_FRONTEND=noninteractive`
+    - `ENV TZ=Asia/Shanghai`
+    - 都是为了这个目的
 - 对于`apt install`，直接`-y`就是静默
 - [miniconda](https://www.codenong.com/49338902/)
   - `-b -p <PREFIX>`

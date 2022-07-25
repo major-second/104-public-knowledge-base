@@ -26,3 +26,7 @@
 - `Conflicting values set for option Signed-By regarding source ...`问题参考[这个](https://askubuntu.com/questions/1329308/sudo-apt-get-returns-conflicting-values-set-for-option-signed-by-regarding-s)，只需要把出问题的`gpg`和`list`都删掉就可以了
   - 这是[[refresh]]的一个例子
   - 删除`某某.d/.list`文件的操作参考[[settings-and-configurations]]中涉及`.d`的部分进行理解
+- `is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:20`
+  - 字面意思
+  - 无伤大雅，你重复写了两遍某一行就会这样
+  - 反正只是个警告，看着不爽删掉就行
