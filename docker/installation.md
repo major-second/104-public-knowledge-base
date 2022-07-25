@@ -23,5 +23,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 - 过程中可能重启某些重要服务，因此会在终端给出提示。按提示操作即可
 - 验证安装成功：`sudo docker run hello-world`
-  - 此时会自动下载并运行此[[image]]
+  - 此时会自动下载`hello-world`这个[[docker/image]]，并自动创建运行[[container]]
   - 输出`Hello from Docker!`等

@@ -1,0 +1,17 @@
+- container是[[docker/image]]基础上衍生的，和[[docker/image]]是具体对象和类的关系
+- 典型操作
+  - `docker run hello-world`：最简单的运行，非交互式
+    - 类名是`hello-world`
+    - 我们自动创建一个该类的container（对象），结果是输出`Hello from Docker!`等，无法交互
+  - `docker run -it ubuntu bash`：交互式
+    - 类名是`ubuntu`
+    - 我们自动创建一个该类的container（对象）并运行`bash`命令
+    - 参数`-it`表示（前台）交互式运行
+  - `docker ps -a`查看容器列表
+  - `docker stop <hash码或其一部分或容器名>`停止
+  - `docker rm <hash码或其一部分或容器名>`删除（需要先停止）
+  - 对刚刚的交互式的容器
+    - 比如刚刚`docker run -it ubuntu bash`，则一个终端窗口是容器中的`bash`
+    - 你可以在另外一个终端`docker stop`它
+    - 然后又可以`docker start`重新启动，`docker attach`连接
+    - `Ctrl + D`退出并停止

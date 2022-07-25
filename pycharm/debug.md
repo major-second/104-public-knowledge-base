@@ -1,5 +1,3 @@
 - `Shift + F9`或右上角绿色虫子调试
 - 可以左侧打断点，断到断点
-- 下方Debugger此时可以监测变量
-  - 监测区右键可以新增监测的变量
-- 想要在过程中输入命令、求值等（类似于vscode的[[debug-console]]），参考[[console]]
+- 想要在过程中监测、输入命令、求值等（类似于vscode的[[debug-console]]），参考[[downside-tabs]]
