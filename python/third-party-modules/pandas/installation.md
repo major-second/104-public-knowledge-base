@@ -1,0 +1,2 @@
+- 最简单方式：[[conda/installation]]有了，你在你的`conda`环境中`conda install pandas`即可
+- [完整文档](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)

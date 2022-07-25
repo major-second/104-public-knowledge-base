@@ -6,6 +6,8 @@
     - 使用yaml文件创建：参考[[create-env-yaml]]
     - 区别于[[pip]]中的双等号`==`
 - install packages: `conda install <name>`
-  - `-c <名字>`指定channel，参考[[pytorch/basics/installation]]，有指定过`-c pytorch`或`-c pytorch-lts`
+  - `-c <名字>`指定channel，参考[[pytorch/basics/installation]]，那里有指定过`-c pytorch`或`-c pytorch-lts`
 - enter an env: `conda activate <env name>`
 - leave an env: `conda deactivate`
+- 已经装过的包列表：`conda list`，可以结合[[find-grep]]中`grep`使用
+  - 举例：`conda list | grep torch`
