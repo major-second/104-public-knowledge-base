@@ -1,3 +1,4 @@
+- 表格（结构化数据）参考[[category]]，是机器学习、统计中常用的数据类型
 - 了解`tab`制表符（[[regex]]：`\t`）
   - 如果Excel选中复制
   - 或者一些网页表格选中复制（比如[这篇文章](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1608#:~:text=Generative%20models%20offer%20a%20promising,that%20will%20satisfy%20those%20properties%3F)中的）
@@ -6,8 +7,7 @@
 - 后处理
   - 可以把`\t`替换成`|`，用于markdown
   - 或可以把`\t`替换成`,`，存储成`.csv`，方便一些软件读取
-    - 参考[[file-format]]
+    - 参考[[file-format]]，[[input]]
     - 例如excel就能打开：![](from-csv.png)
     - 注意选择编码，分隔符等选项
     - 默认分隔符是逗号。所以刚刚提到的`\t`替换成`,`就使得这里方便了
-- vscode中[[excel-viewer]]可以打开预览`.csv`，`.xlsx`并作简单处理（如过滤、排序）

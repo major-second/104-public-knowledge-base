@@ -15,8 +15,9 @@
   - https://tool.lu/diff/
     - 对比和**归并**
   - https://tool.lu/zhconvert/
-  - https://tool.lu/qrcode/
     - 繁简转换
+  - https://tool.lu/qrcode/
   - https://tool.lu/ocr/
-  - https://tool.lu/coderunner/
     - ocr（可以上传电脑图片或手机微信扫码上传图片。需要登录）
+    - 亲测效果在2022.7好于[[tesseract]]
+  - https://tool.lu/coderunner/
