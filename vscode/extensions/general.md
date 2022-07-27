@@ -4,17 +4,17 @@
   - ![](extension-item.png)
 - 打开其主页
   - 看其中教程学习使用方法
-- 做出适当config配置
-  - 比如[[settings-and-configurations]]里面说的
+- 做出适当配置
+  - 比如[[vscode/settings]]，[[settings-and-configurations]]等提到的方法
 - 使用插件
-  - 可能是vscode界面出现按钮例如[[robocorp/basics/installation]]
+  - 可能是vscode界面（左侧）出现按钮例如[[robocorp/basics/installation]]，[[remote-ssh]]
   - 可能是`Ctrl + Shift + P`的command palette中出现新命令，如[[git-history]]
-    - 这时可以结合[[keyboard-shortcuts]]设置快捷键
+    - 这时可以结合[[vscode/keyboard-shortcuts]]设置快捷键
   - 可能是右键菜单出现选项，如[[git-history]]
 - 管理插件：`Ctrl+Shift+X`出来的界面，可以卸载或禁用等
 - 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]
   - 卸载也是一起卸载
-# 插件的作用说明
+# vscode插件和其它软件的关系
 - Some extensions needs some softwares as dependencies.
   - e.g. [[paste-images-from-clipboard]] needs `sudo apt install xclip` in Ubuntu.
   - e.g. [[conda/installation]]安装后（或者直接下载安装`python`），vscode的python相关插件才有用

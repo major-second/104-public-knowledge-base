@@ -42,4 +42,4 @@ Minimal task
 - 这样运行之后在`output`文件夹就除了之前的`stdout.log, stderr.log, *.yaml`，还有`*.xml, *.html`
   - 其中`html`可以用浏览器打开
     - 可以本地资源管理器打开
-    - 也可以安装vscode`open in browser`插件后`Alt+B`快捷键
+    - 也可以安装vscode`open in browser`插件后`Alt+B`快捷键，参考[[browser]]
