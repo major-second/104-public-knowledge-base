@@ -5,6 +5,7 @@
     - 再用`sudo apt update`更新
     - 之后即可以在新的源上获取软件
     - 这个添加的过程往往都在装软件的官方文档中写出
+    - 添加之后，如果嫌之后每次`apt update`太慢，可以删掉不需要的
   - 除了添加`ubuntu`官方、软件开发者官方的源，还可能有一些个人维护的源，即“ppa”
 - 默认源：安装ubuntu时选择where you are时选择中国，才能使用中国快的服务器
   - 这时别装外宾！否则慢的是你自己
@@ -17,6 +18,34 @@
 - 换源可以命令行操作
   - 具体地：在文件`/etc/apt/sources.list`中。可参考[[settings-and-configurations]]
   - 也可以九个点 - Software & Updates换
+## 举例
+[参考](https://blog.csdn.net/sigmarising/article/details/84778296)
+如阿里云（是`http`）
+```text
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+```
+清华（是`https`，就可能出现证书问题）
+```text
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+```
 ## troubleshooting
 - 如果certificate（证书）出问题，可以重装`ca-certificates`试试
   - 如果可以正常重装，那就正常重装
