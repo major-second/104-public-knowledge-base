@@ -6,4 +6,7 @@
   - 如果有刚刚说的现象（只有中间某些版本能用），那就`apt-cache madison <包名>`（例如尝试`apt-cache madison docker-ce`）
   - 把拿出来的字符串（比如`5:18.09.0~3-0~ubuntu-bionic`这种东西）拿去从高版本到低版本，一个一个试（比如`apt install docker-ce=5:18.09.0~3-0~ubuntu-bionic`），看什么时候能装即可
   - 当然，不一定要一个一个试。二分也行
-- 但是大部分情况下，当然是新的好。比如[[tesseract]]，新的识别率高
+- 但是大部分情况下，当然是新的好
+  - 比如[[tesseract]]，新的识别率高
+  - 比如`python3`有[[f-string]]
+  - 比如[[pip]]升级后才有一些高级的包，否则根本装不了新包

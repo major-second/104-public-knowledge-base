@@ -1,6 +1,10 @@
 - `pip`本身来源：
   - linux
-    - `python3`：`apt install python3-dev`安装时自动附带
+    - `python3`：`apt install python3-pip`
+        - 此时`pip3 --version`查看版本
+        - `pip --version`一下发现也在`/usr/lib/python3`而不在`python2.7`
+          - 和`apt install python-pip`结果完全不同
+        - `pip3 install --upgrade pip`做[[software-management/upgrade]]
     - `python2`：`apt install python-pip`
   - windows：[官网下载](https://www.python.org/downloads/windows/)安装时可选
 - 普通使用：直接`pip install 包名`
