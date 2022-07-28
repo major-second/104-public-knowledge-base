@@ -18,22 +18,27 @@
   - [[aruco]]中`clone`错分支导致运行时会process died，然后没任何日志，你要是不会底层操作就只能仔细检查，猜哪里出错。猜到是分支错算你厉害
   - [[franka-ros-interface]]是非官方库，没有特别好的维护。[[troubleshooting]]说的gripper disconnected需要插拔网线的错误没法传出来（即明明失败还返回`True`）
 - 拓展：可能从上到下逐级看（或级太多时二分看），精确看到底是哪一级出错
-  - 比如[[moveit-real-robot]]，[[fci]]的`communication_test`，直接`ping`就是三级
+  - 比如[[moveit-real-robot]]，[[fci]]的`communication_test`，直接`ping`，一共就是三级
   - 比如[[check-connectivity]]
 - 比如上层整合可能引入额外的错误
   - 比如2022.1.17，vscode默认集成终端中跑[[rl-example]]就是不行。直接`Ctrl + Alt + T`的就是可以。可能和权限有关
   - 有的对象`pickle`可以，`torch`的[[save]]不行：https://github.com/dmlc/dgl/issues/458
-  - 比如vscode的[[remote-ssh]]时，对面服务器的要求可能不满足（https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites
-）
-但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了
-（但这里要小心，因为升级`gcc`版本等可能有[[software-management/upgrade]]所描述的问题。总之升级到最新不一定是可行的！）
+  - 比如vscode的[[remote-ssh]]时，对面服务器环境可能不满足要求，[参考](https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites)
+    - 但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了
+      - 题外话：但这里`apt install`动作要小心，因为升级`gcc`版本等可能有[[software-management/upgrade]]所描述的问题。总之升级到最新不一定是可行的
 - 比如上层封装太死，不灵活
   - 比如证明[[相合性]]在无法使用强大数律时，拆一层包装直接用[[borel-cantelli]]
   - 比如面试：“python是传值还是传引用”
     - 实际上，难以用二元对立简单概括python行为。因为python传引用但是赋值是重新绑定
     - 不能用简单的term来概括！
-  - 比如[[import]]中提到的[[omegaconf/basic]]和其上下级的关系
-  - 比如[[robocorp/basics/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境）
+  - 比如python有一大堆包可以调，怎么取舍呢？
+    - 要想清楚这个包能带来什么，代价是什么，如何替代
+    - 比如做config
+      - 有字典 - yaml - omegaconf - [[hydra]]这一链条
+      - 如果你只使用hydra的compose功能，那完全可以不调它，只用原生（下层）的[[omegaconf/basic]]. 因为hydra的使用限制太多，有很多tricky的东西
+      - 但是[[interpolation]]（惰性求值），[[resolver]]这些omegaconf的功能，原生yaml没有，所以我们要调omegaconf，所以到这一层就是不错的选择
+    - 比如数学绘图，有[[matplotlib/basics]] - [[seaborn]]两层。很多时候直接[[seaborn]]好看，但有时需要更底层的[[matplotlib/basics]]指定一些细节
+  - 比如[[robocorp/basics/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境，但底层`rcc.exe`比较灵活，不用）
 - 有时上层抽象不如你想象的clean
   - [[risk]]提到了直接删除第二系统的分区是不行的
   - [[partition]]中，直接移动系统盘分区是不行的

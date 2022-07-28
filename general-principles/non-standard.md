@@ -4,5 +4,5 @@
   - 在[[dev-env]]中也会带来错误
   - 对`echo "\\n"`的输出结果也和[[11-basic-scripting-partA]]讲的不同
   - 对`sudo apt remove *nvidia*`的结果也不同
+  - [[franka-ros-interface]]只能用`bash`
 - 比如[[proxy/usage]]讲到有些地方开了代理就上不了
-- 比如[[franka-ros-interface]]只能用`bash`

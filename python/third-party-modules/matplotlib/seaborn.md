@@ -1,0 +1,4 @@
+- 前置
+  - [[matplotlib/basics]]
+  - [[leaky-abstraction]]帮助理解和[[matplotlib/basics]]的关系
+- 
