@@ -1,13 +1,14 @@
 前置：
 - [[linux]]翻墙
 # `zsh`
-0. 输入命令
+- 输入命令
 ```sh
-sudo apt install -y sudo git && \
+sudo apt install -y git && \
 sudo apt install -y zsh && \
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 现在已经到`zsh`里面了
+- 然后
 ```sh
 sudo apt install -y autojump; \
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting; \
@@ -22,6 +23,9 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - [[ros/installation]]中的`source`命令
   - `CUDA`，`conda`设置，`ssh`服务打开等七七八八的东西
 - 注意`zsh`平常能提高效率，但有时关键时刻会造成麻烦。有些奇怪错误产生了，可以换回`bash`试试。参见[[non-standard]]
+- 如果想要[[silent]]（即全程在`bash`完成`zsh`安装），需要
+  - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended`
+  - 参考这个`https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`本身的注释
 ## `chsh`
 - `chsh -s /bin/zsh`可以手动改默认`zsh`
   - 这里的`chsh`是不是让你想到[[7-permissions]]的`chmod`？

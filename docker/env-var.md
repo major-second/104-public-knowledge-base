@@ -1,4 +1,7 @@
-- build [[docker/image]]时用`ARG`标记build期变量，命令行`docker build`时可传入
+- build [[docker/image]]时用`ARG`标记build期变量，[参考](https://cloud.tencent.com/developer/article/1896359)
+  - 除了几个特例，[[docker-file]]都必须声明`ARG KEY[=DEFAULT_VALUE]`才能使用`$KEY`这个build期变量
+  - 接上，命令行`docker build`时可传入`--build-arg KEY=VALUE`
+  - 例如build过程中使用代理，建立完成之后不残留环境变量，则可用`ARG http_proxy=某某`
 - `ENV`则是build [[docker/image]]时和run [[container]]时都可用
 - `docker run -e`是这次run能用
 - 关于`ssh`会清除变量的解决方法：[[ssh/env-var]]
