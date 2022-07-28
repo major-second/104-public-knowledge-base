@@ -7,6 +7,7 @@
       - `https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/`
       - `defaults`
   - 使用[[yaml]]语法
+- 参考[[channel]]
 - 也可以手动创建并设置内容
 - 典型例子：设置代理
 ```yaml

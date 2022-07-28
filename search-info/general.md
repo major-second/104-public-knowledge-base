@@ -8,7 +8,7 @@
 - 很多地方`Ctrl+F`查找
 - 很多地方可以使用[[regex]]
 - linux系统的[[find-grep]]
-- vscode的[[keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
+- vscode的[[vscode/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
 - [[resources-and-archives/aliyun]]，[[resources-and-archives/baidu-net-disk]]等资源站
 - 暗网
 - [[telegram]]频道
