@@ -1,13 +1,26 @@
 - `pip`本身来源：
+  - windows：[官网下载](https://www.python.org/downloads/windows/)安装python时，可选
   - linux
+    - `python2`：`apt install python-pip`
+      - `pip --version`一下看到版本和所在位置（看到`python2.7`字样）
     - `python3`：`apt install python3-pip`
         - 此时`pip3 --version`查看版本
-        - `pip --version`一下发现也在`/usr/lib/python3`而不在`python2.7`
-          - 和`apt install python-pip`结果完全不同
+        - `pip --version`一下，发现这个在`/usr/lib/python3`而不在`python2.7`
+          - 这和`apt install python-pip`后现象完全不同
         - `pip3 install --upgrade pip`做[[software-management/upgrade]]
-    - `python2`：`apt install python-pip`
-  - windows：[官网下载](https://www.python.org/downloads/windows/)安装时可选
+    - 关于`python3 -m pip`和`pip3`区别，[参考](https://stackoverflow.com/questions/41307101/difference-between-pip3-and-python3-m-pip)
+      - 举例：
+```sh
+(<conda环境>) <用户>@<服务器名>:~/<路径>$ which pip
+/home/<用户>/.local/bin/pip
+(<conda环境>) <用户>@<服务器名>:~/<路径>$ which python3
+/home/<用户>/anaconda3/envs/<conda环境>/bin/python3
+(<conda环境>) <用户>@<服务器名>:~/<路径>$ python -m pip --version; pip --version
+pip 22.2.1 from /home/<用户>/anaconda3/envs/<conda环境>/lib/python3.7/site-packages/pip (python 3.7)
+pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.6)
+```
 - 普通使用：直接`pip install 包名`
+  - 根据前述讨论，当你在`conda`环境中，有可能需要`python3 -m pip install`
 - 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
     - clone源码，进去
     - `pip install -e .`

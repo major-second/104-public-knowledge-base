@@ -1,5 +1,9 @@
--  notebook级cache (todo)
+- 参考[[general-principles/cache]]
+- notebook级cache (todo)
    - https://jupyter-cache.readthedocs.io/en/latest/
 - 变量级cache
   - [看这个](https://libraries.io/pypi/ipython-cache)
   - 一图说明：![](cache-install.png)
+- 也可以使用一般`.py`中也常用的[[cache-decorator]]
+  - 刚刚的`ipython-cache`以变量为键，而这个以函数（以及输入的实参）为键
+  - 比如典型的：`{function_name}/{<一个形参>}`

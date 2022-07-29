@@ -13,6 +13,7 @@
 - feature
   - 即使代码块都没改变，但运行结果不同了，git也会认为你编辑了`.ipynb`文件
   - 运行block时，有一些自动生成的[[command-line-arguments/basics]]命令行参数
+  - 改变函数定义要运行block才生效
 - 如何运行
   - 原始方法：[参考](https://docs.jupyter.org/en/latest/running.html)
     - 使用浏览器
