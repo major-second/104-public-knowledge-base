@@ -1,0 +1,1 @@
+- [参考](https://www.pyrosetta.org/downloads)得到学术license（免费），并配置[[channel]]，从而可以直接`conda install -y pyrosetta`
