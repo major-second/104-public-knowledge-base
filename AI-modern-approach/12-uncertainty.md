@@ -110,6 +110,8 @@
   - 所以合理安排顺序可以更大量地减少存储数字数
     - 参考[[概率图]]
 - `Conceptually, Cavity separatesSeparation Toothache and Catch because it is a direct cause of both of them`，实际中找条件独立可以从这里入手
+- [拓展阅读](https://zhuanlan.zhihu.com/p/397796913)
+  - ![](causal.png)，用条件独立判断“无（直接）因果”！
 ## 12.6 Naive Bayes Models
 - 全都条件独立！$P(c,e_1,\cdots,e_n)=P(c)\prod_i P(e_i|c)$
 - 使用[[概率图]]表示：一因所有果

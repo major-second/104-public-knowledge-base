@@ -13,3 +13,4 @@
     - 还需要安装Company Portal和Microsoft Defender才能用
     - Microsoft Defender可以[[optimize]]时杀后台，但你完全卸了不行，它过一段时间可能会要用一下
     - Company Portal必须一直安装着且[[optimize]]时不能杀后台，否则形如杀Teams的后台
+- 可以绑定邮箱，这样在无法使用应用的场景下可以临时用邮件看看有没有人找你

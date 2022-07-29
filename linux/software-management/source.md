@@ -1,6 +1,6 @@
 - `apt`是从软件源上下载软件的
   - `ubuntu`官方源，清华，阿里云等有一般、通用的软件
-  - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]等可能不被这些官方收录
+  - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]，[[vscode/command-line]]等可能不被这些官方收录
     - 所以需要自己添加
     - 再用`sudo apt update`更新
     - 之后即可以在新的源上获取软件
@@ -46,6 +46,9 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restri
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
+## `ppa`
+- 个人、非官方。对于不主流软件，不主流版本等可能需要添加`ppa`. 当然有安全风险
+- 举例`apt install -y software-properties-common; add-apt-repository -y ppa:jonathonf/ffmpeg-4; apt update; apt install -y ffmpeg`
 ## troubleshooting
 - 如果certificate（证书）出问题，可以重装`ca-certificates`试试
   - 如果可以正常重装，那就正常重装
