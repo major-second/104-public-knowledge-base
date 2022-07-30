@@ -1,0 +1,7 @@
+- 前置
+  - [[11-basic-scripting-partA]]（我们先考虑linux下的）
+  - [[common-func]]的`split`很有用
+- [文档](https://docs.python.org/3/library/subprocess.html)
+- `import subprocess`
+- 直接`subprocess.run('ls -l'.split(), shell=True)`即可执行命令，并获得返回的`CompletedProcess`对象（此时不得到结果，但命令确已执行）
+- `cp = subprocess.run('ls -l'.split(), shell=True, capture_output=True); print(cp.stdout, cp.returncode)`取结果

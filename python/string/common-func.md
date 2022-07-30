@@ -1,0 +1,6 @@
+- `split`
+  - 默认使用空白符做split
+  - 例如`'ls -lR'.split()`输出`['ls', '-lR']`
+    - 这就可用于[[subprocess]]处构造`run`接收的list
+  - `'2_3_4'.split('_')`输出`['2', '3', '4']`
+  - `'a.b.c.txt'.rsplit('.', 1)`输出`['a.b.c', 'txt']`（从右到左只切一次，用来取[[file-format]]很管用）

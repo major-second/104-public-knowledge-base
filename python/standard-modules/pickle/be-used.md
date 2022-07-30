@@ -1,2 +1,5 @@
-多进程时会被用到
-- 所以多进程之间只能传简单的对象，参考[[pickle/availability]]
+- [[minimum]]时会被用到
+  - [文档](https://docs.python.org/3.9/library/multiprocessing.html#multiprocessing-programming)原文：`Ensure that the arguments to the methods of proxies are picklable.`
+  - 所以必须参考[[pickle/availability]]，确保参数可pickle，比如`p.map(f, l)`不能使用**用`lambda`定义**的`f`
+- [[cache-decorator]]中可能用到（缓存结果）
+  - 所以此时当然不能保存太复杂的`return`结果
