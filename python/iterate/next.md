@@ -1,0 +1,3 @@
+- `next()`取下一个值
+- 可结合`iter()`使用：如`next(iter(dic.values()))`
+  - 本来`dic.values()`对象是无法直接`next`的！

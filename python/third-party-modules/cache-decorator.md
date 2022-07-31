@@ -18,3 +18,4 @@ print(foo(1))
 - 注：大括号中除了可填`function_name, _hash`（当实参[[hashable]]时），还可填许多别的东西
   - 如：有`str`类型参数时可以`{形参名}`这样
 - 注意需要检查函数`return`结果是否可以存成指定格式！如`.pkl`要参考[[availability]]. 否则用不了
+- 存完之后可以看到[[metadata]]

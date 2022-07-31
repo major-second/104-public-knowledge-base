@@ -1,7 +1,12 @@
 - 前置
   - [[11-basic-scripting-partA]]（我们先考虑linux下的）
+  - 可以了解[[11-basic-scripting-partB]]的“管道记号”
   - [[common-func]]的`split`很有用
+  - [[encoding]]中解码`b'某某'`这样字节数组的方法
 - [文档](https://docs.python.org/3/library/subprocess.html)
 - `import subprocess`
-- 直接`subprocess.run('ls -l'.split(), shell=True)`即可执行命令，并获得返回的`CompletedProcess`对象（此时不得到结果，但命令确已执行）
-- `cp = subprocess.run('ls -l'.split(), shell=True, capture_output=True); print(cp.stdout, cp.returncode)`取结果
+- 直接`subprocess.run('ls -l'.split())`即可执行命令，并获得返回的`CompletedProcess`对象（此时不得到结果，但命令确已执行）
+- `cp = subprocess.run('ls -l'.split(), capture_output=True); print(cp.stdout, cp.returncode)`取结果
+  - 这时，不能使用管道记号！`ls`是命令，后面都是参数
+- `cp = subprocess.run('ls -l | grep md', shell=True, capture_output=True); print(cp.stdout, cp.returncode)`使用不安全的`shell=True`，且输入直接是字符串而不是list，可以使用[[11-basic-scripting-partB]]管道记号
+- 总之，这可以看成[[meta-programming]]的案例，即可用`python`操作`shell`语言字符串
