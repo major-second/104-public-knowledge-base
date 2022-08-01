@@ -22,7 +22,13 @@ mixed为默认参数，上图中未出现
 ![](mixed-reset.png)
 - 综合应用：对于想在`A`这个commit上加上一些`B`commit的东西，可以先hard到`B`，再soft或mixed到`A`，然后看着挑哪些变动留下即可
 ## 和远程服务器相关的重置
-[强行回退远程服务器上的版本](https://blog.csdn.net/wjrenxinlei/article/details/106473068)
-- 大概就是hard reset后`git push origin HEAD:master --force`
-  - 这是不推荐的行为，会被团队成员吐槽
-  - 而且有时可能你没有这个权限
+- [强行回退远程服务器上的版本](https://blog.csdn.net/wjrenxinlei/article/details/106473068)
+  - 即：`git reset --hard <版本>`后`git push origin HEAD:master --force`
+    - 这在团队合作中是不推荐的行为
+    - 而且有时可能你没有这个权限
+  - 危害
+    - 别人本地是他的`master`，里面没有你的commit
+    - 别人没有pull，直接push之后，远程`master`就会完全没有你的commit的内容
+    - 这时你要是再pull，就会丢失东西
+  - 避免危害：做强行回退时，即告诉所有人，让他们（保存好自己修改后）`git pull`，保证所有人本地版本一致
+  - 补救时：本地有的那份一定要备份好，不要轻易`pull`就好

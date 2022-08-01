@@ -15,6 +15,8 @@
   - 运行block时，有一些自动生成的[[command-line-arguments/basics]]命令行参数
   - 改变（block中定义的）函数定义要重新运行block才生效
   - 改变`import`了`.py`文件中东西的定义要`Restart`才生效
+  - `Restart`清除不用的显存
+  - 多进程无法打[[breakpoint]]调试
 - 如何运行
   - 原始方法：[参考](https://docs.jupyter.org/en/latest/running.html)
     - 使用浏览器
