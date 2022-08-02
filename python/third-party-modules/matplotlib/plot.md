@@ -1,0 +1,7 @@
+- 输入两个`list`，画折线图，例如`plt.plot([1,2,3],[4,5,6])`
+  - 典型是`x`单调增，画（狭义）函数的图像
+  - 但也不一定
+- 输入的第一个`list`可以非数值类型
+  - 例如[[matplotlib/basics]]里的最基础例子就是这个`x = ['Mon', 'Tue']; y = [0, 1]; plt.plot(x, y, marker='*', markersize=10); plt.savefig('minimum.jpg')`
+- 也可以只输入`y`，此时自动生成`x`（从0开始）
+- 关键字参数：`linewidth, color, marker, markersize`等
