@@ -20,6 +20,7 @@
 - `.shape`形状（第0维往往表示多少条数据，第1维表示多少维）
 - `.dtypes`类型
 - `.head(3)`, `.tail(3)`, `.sample(3)`看示例
+- `.concat(<DataFrame组成的表，元组等>)`：参考[[manipulation]]，有点像，在时间维上拼起来
 ### `index`
 - 行是数据条目，列是属性。默认先行再列
   - 少部分例外，例如可以`data[0:1]`在“列”处切片
@@ -47,6 +48,8 @@
   - 可以是单个数，也可以是序列
   - 不要直接`data['key']`，否则可能是增加行（数据条目）而不是加列（属性）
     - 先行再列！
+- 取出多个键作为“子”数据集：`df[[key0, key1]]`
+  - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop
 ## 进阶
 - [一个参考](https://blog.csdn.net/weixin_42033491/article/details/108104305)
 - `groupby`和`shift`，`diff`
