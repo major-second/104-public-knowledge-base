@@ -1,7 +1,7 @@
 前置：
 - [[ubuntu-nvidia-drivers]]
 - [[pytorch/basics/installation]]
-- 了解[[6-env]]，[[os]]
+- 了解[[6-env]]，[[os-shutil]]
 
 - 基础用法
 [[pytorch/basics/installation]]时可加入`cudatoolkit`，所以可以直接

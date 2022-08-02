@@ -27,6 +27,7 @@ https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html
     - 另可指定数据类型`dtype=某`
     - 常见坑：直接`tensor(0)`，0后面没有小数点，当然是整型
   - `torch.from_numpy`：特点是和numpy可共享内存
+  - `torch.arange`：从`0`开始的连续自然数。经常用于调试，比如[[reshape]]
 - 张量的常见属性
   - `dtype`数据类型
     - `torch.float64`和`torch.float32`是不同的类型

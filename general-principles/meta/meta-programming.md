@@ -8,8 +8,19 @@
 - 把变量名`foo`和字符串`foo`关联起来也属于
   - 例如[[register-classes]]自动由字符串找到类名
   - [[call-hook]]自动由字符串找到方法名
-## 一个具体举例
-例如：你在编辑器中写
+## 具体举例
+### `python -> markdown`
+- 由于`markdown`是标记语言，所以自动生成markdown文档也勉强算元编程吧。而且这是比较简单的例子
+- 本例子前置知识[[file-format]]，[[enhanced]]，[[common-func]]，[[f-string]]
+```python
+''.join([f'\t- 长度：${l}$\n![](length-{l}.jpg)\n' for l in lengths])
+```
+- 可以看到，用[[f-string]]的大括号结合推导式`for`生成了一个列表，然后拼接在一起可得到想要的字符串
+- 使用了<code>\t-&nbsp;</code>的“二级item”，`$$`包裹数学公式，`![](<图片名.jpg>)`等常见markdown功能，有的还是[[enhanced]]功能
+- 之后只需`open`一个`.md`文件写进去即可
+### `shell -> python3 -> python2`
+- 本例子前置知识[[sed]]，[[f-string]]，[[version]]，[[interact]]
+- 你在编辑器中写
 ```python
 p = []
 for i in range(10):
@@ -23,8 +34,8 @@ p[9]
 
 print(my_interactive_py2_command)
 ```
-然后查找`$`替换成` + '; raw_input("Press Enter"); \\\n' + \`，替换完成后保存，再运行保存后的`python3`脚本（本文件夹的`meta_prog_example.py`）
-得到一个字符串，是可用于[[interact]]的`python2`片段：即
+- 然后查找`$`替换成` + '; raw_input("Press Enter"); \\\n' + \`，替换完成后保存，再运行保存后的`python3`脚本（本文件夹的`meta_prog_example.py`）
+- 得到一个字符串，是可用于[[interact]]的`python2`片段：即
 ```python
 print 1; raw_input("Press Enter"); \
 print 2; raw_input("Press Enter"); \

@@ -6,7 +6,7 @@
 - 新建`.ipynb`即可编辑和调试
   - 参考[[jupyter-notebook/basics]]
   - 参考`python/jupyter-notebook/example.ipynb`
-  - 需要指定解释器，并`pip install ipykernel`补包
+  - 需要指定解释器（vscode相应面板右上角），并`pip install ipykernel`补包
 - [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码
 - 实用功能
   - `+`新建两种block
