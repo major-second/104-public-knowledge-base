@@ -21,11 +21,15 @@
 - `.dtypes`类型
 - `.head(3)`, `.tail(3)`, `.sample(3)`看示例
 ### `index`
+- 行是数据条目，列是属性。默认先行再列
+  - 少部分例外，例如可以`data[0:1]`在“列”处切片
+  - 但`data[0]`可不行
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
   - 如果日期字段名是`Date`
   - 则`opsd_daily = opsd_daily.set_index('Date')`
   - 此时可再看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
+  - 还能`.index.start`等取出具体值。应用：参考[[others-on-plt]]，添加水平竖直分界线
 - 二合一过程（读取和设置`index`）：`opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
 - 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
@@ -38,5 +42,14 @@
     - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
   - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
     - 所以对两种出来结果再切片时效果也当然不同
+- `values`取出具体数值
+- 增加列：`data.loc[:, 'key'] = value`
+  - 可以是单个数，也可以是序列
+  - 不要直接`data['key']`，否则可能是增加行（数据条目）而不是加列（属性）
+    - 先行再列！
 ## 进阶
-- [参考](https://blog.csdn.net/weixin_42033491/article/details/108104305)
+- [一个参考](https://blog.csdn.net/weixin_42033491/article/details/108104305)
+- `groupby`和`shift`，`diff`
+  - 首先把`df`分成互相间没关系的若干组，有一列`name`表示
+  - 然后例如`df.loc[:, 'value_shift'] = df.groupby('name')['value'].shift(1)`，就新增一列，每一个“组”之内进行平移
+  - `diff`作差同理

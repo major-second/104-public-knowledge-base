@@ -9,6 +9,11 @@
           - 这和`apt install python-pip`后现象完全不同
         - `pip3 install --upgrade pip`做[[software-management/upgrade]]
     - 关于`python3 -m pip`和`pip3`区别，[参考](https://stackoverflow.com/questions/41307101/difference-between-pip3-and-python3-m-pip)
+      - 产生该现象的原因：可能是本地`python`版本比`conda`虚拟环境版本低
+        - 此时，本地`pip`能为虚拟环境装包，但可能缺包！
+        - 例如`python3.6`无法装`pip22`从而无法装`tensorflow2.9`
+          - 即使`pip3 install --upgrade pip`也不行
+        - 需要`python3 -m pip`
       - 举例：
 ```sh
 (<conda环境>) <用户>@<服务器名>:~/<路径>$ which pip

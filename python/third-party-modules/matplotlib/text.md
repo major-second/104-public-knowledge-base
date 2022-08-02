@@ -1,0 +1,19 @@
+- 前置
+  - [[matplotlib/basics]]
+  - [[add-axes]]
+- 基础`plt.text(x, y, string)`
+  - [文档](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html#matplotlib.pyplot.text)原文：`The default transform specifies that text is in data coords`，也就是`x, y`都表示实际数据坐标
+- 相对坐标？`plt.text(0.5, 0.5, 'matplotlib', transform=ax.transAxes)`
+  - 你只有`plt`没有`ax`需要参考[[add-axes]]，搞一个`ax = plt.axes()`
+  - 可以和[[add-axes]]结合，在子图的指定比例出写文字
+- 常用关键字参数
+  - 对齐方式`horizontalalignment='center', verticalalignment='center'`
+    - 可简写为`ha, va`
+    - 常用值如`'left', 'right', 'top', 'bottom'`
+  - `size, color`
+  - 加框`bbox=dict(facecolor='red', alpha=0.5)`
+- 用`$`包裹可以打数学公式
+  - 使用latex语法
+  - 参考[[example-doc/README]]
+  - 由于latex语法很多`\`，所以建议使用[[r-string]]
+  - 也可以和[[f-string]]结合使用

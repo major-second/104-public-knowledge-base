@@ -1,0 +1,4 @@
+- 前置[[matplotlib/basics]]
+- 在`plt`上的一些常见操作，多学一个多会一个
+  - `plt.axhline(<y>), plt.axvline(<x>)`水平竖直线
+    - 常用参数`color, linestyle`等

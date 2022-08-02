@@ -24,6 +24,7 @@
     - 不同等级序列号不能混用（比如[[pro-license]]）
     - 有时，有序列号可以[[windows/upgrade]]到高等级
 - 版本依赖相关
+  - 举例体验：[[pip]]中提到本地`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`. 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
   - 参考[[software-management/upgrade]]
     - 一般来说，很多依赖都是要求`>=`某某版本，而且上层版本越高，需求的底层版本也越高
     - 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低
