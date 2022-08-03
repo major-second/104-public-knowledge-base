@@ -25,6 +25,7 @@
       - 我们只需[[forward-port]]这个端口，然后即可在本地浏览器中粘贴`http://localhost:8888/?token=<一串字符>`进行浏览页面和使用jupyter notebook
     - 注：也可以直接`--ip <本地机器ip> --no-browser`，出现`http://<ip>:<port>/?token=<一串字符>`这种字样，复制到本地的浏览器即可本地调试远程代码
       - 这种方法节省了[[forward-port]]步骤
+    - 这类地方的终端有`Ctrl+C`自动保护。为了防止你误以为是复制结果停下server，在停止前强行让你确认！
   - 也可以使用vscode [[jupyter-notebook]]插件调试编辑
   - `jupyter nbconvert --to python <名字>.ipynb`可以把`.ipynb`转化成`.py`文件，之后`python`命令运行即可
     - 但涉及到[[jupyter-notebook/tqdm]]等时可能有麻烦

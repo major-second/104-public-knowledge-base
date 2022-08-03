@@ -22,37 +22,37 @@
 - `.head(3)`, `.tail(3)`, `.sample(3)`看示例
 - `.concat(<DataFrame组成的表，元组等>)`：参考[[manipulation]]，有点像，在时间维上拼起来
 ### `index`
-- 行是数据条目，列是属性。默认先行再列
-  - 少部分例外，例如可以`data[0:1]`在“列”处切片
-  - 但`data[0]`可不行
+- 一行是一个数据条目，一列是一种属性（feature）
+  - 默认先说属性再说时间范围（数据条目）
+  - 少部分例外，例如可以`data[0:1]`取出（时间范围）切片
+  - 但`data[0]`可不行，因为此时会把`0`解释为属性名
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
-  - 如果日期字段名是`Date`
-  - 则`opsd_daily = opsd_daily.set_index('Date')`
+  - 如果日期字段名是`Date`，则`opsd_daily = opsd_daily.set_index('Date')`
   - 此时可再看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
   - 还能`.index.start`等取出具体值。应用：参考[[others-on-plt]]，添加水平竖直分界线
 - 二合一过程（读取和设置`index`）：`opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
+- `values`取出具体数值
+  - 是[[numpy/basic]]的数组，于是可进行`numpy`的索引操作
+- 增加列：`data[key] = value`
+  - 可以是赋予单个数，也可以是序列
+- 取出多个键作为“子”数据集：`df[[key0, key1]]`
+  - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
+# `.loc`
 - 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
 - loc很多坑，[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
   - 和普通的`[]`不同，`.loc[]`**切片含两端**
-  - 普通的`[]`只能取`[start:end]`这样，不能单取一个`[0]`这样（因为单取针对的是取键, key）
+  - 普通的`[]`只能取`[start:end]`这样，不能单取一个`[0]`这样，但`.loc`可以
   - `.loc`默认是“绝对”的索引，而不是相对
-    - `.loc[0]`中的0是某个数据条目的一个属性，而不是其在某个序列中的排序
+    - `.loc[0]`中的0是某个数据条目的一个属性（`index`），相当于某种特殊feature，而不是其在某个序列中的排序
     - 也就是“二次”切片时不能“相对”切。例如`d.loc[3:4]`的结果就不能再`.loc[0]`了！
     - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
   - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
     - 所以对两种出来结果再切片时效果也当然不同
-- `values`取出具体数值
-- 增加列：`data.loc[:, 'key'] = value`
-  - 可以是单个数，也可以是序列
-  - 不要直接`data['key']`，否则可能是增加行（数据条目）而不是加列（属性）
-    - 先行再列！
-- 取出多个键作为“子”数据集：`df[[key0, key1]]`
-  - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop
 ## 进阶
 - [一个参考](https://blog.csdn.net/weixin_42033491/article/details/108104305)
 - `groupby`和`shift`，`diff`
   - 首先把`df`分成互相间没关系的若干组，有一列`name`表示
-  - 然后例如`df.loc[:, 'value_shift'] = df.groupby('name')['value'].shift(1)`，就新增一列，每一个“组”之内进行平移
+  - 然后例如`df['value_shift'] = df.groupby('name')['value'].shift(1)`，就新增一列，每一个“组”之内进行平移
   - `diff`作差同理

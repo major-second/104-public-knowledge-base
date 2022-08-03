@@ -1,3 +1,4 @@
+- 前置[[settings-and-configurations]]
 - `apt`是从软件源上下载软件的
   - `ubuntu`官方源，清华，阿里云等有一般、通用的软件
   - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]，[[vscode/command-line]]等可能不被这些官方收录
@@ -62,3 +63,6 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restri
   - 字面意思
   - 无伤大雅，你重复写了两遍某一行就会这样
   - 反正只是个警告，看着不爽删掉就行
+## 包管理器源
+- `pip`，`conda`和`apt`类似，也是包管理器，当然也有源
+- 设置方法参考[[condarc]]和[[pip]]

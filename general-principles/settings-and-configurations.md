@@ -18,8 +18,11 @@
       3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
       4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker/source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
       5. 删除也可以方便地删除一部分，这在[[software-management/source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
-3. 用命令。比如`git config`，参考[[config]]，`pip config set <key> <value>`命令（很多时候等价于封装了的方法2.）
-   1. 注：不同版本可能具有的方式还不同。比如老版本`pip`就没有`config`命令。需要装新版本。
+3. 用命令
+   1. 比如`git config`，参考[[config]]
+   2. 比如`pip config set <key> <value>`命令，参考[[pip]]
+      1. 注：不同版本可能具有的方式还不同。比如老[[version]] `pip`就没有`config`命令。需要装新版本。
+   3. 用命令很多时候等价于封装了的方法2（直接编辑文件）
 4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全

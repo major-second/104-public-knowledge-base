@@ -46,3 +46,7 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
   - 比如[[mpi4py]]中需要
     - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
     - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)
+- [[settings-and-configurations]]
+  - 要不然直接编辑文件
+  - 要不然使用`pip config`命令（需要较新[[version]]）
+  - 比如`pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`使用清华源
