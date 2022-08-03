@@ -1,0 +1,5 @@
+- 离线安装[参考](https://www.hangge.com/blog/cache/detail_3191.html#:~:text=%EF%BC%881%EF%BC%89%E9%A6%96%E5%85%88%E4%BD%BF%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80%20VSCode%20%E6%8F%92%E4%BB%B6%E5%B8%82%E5%9C%BA%EF%BC%88%20%E7%82%B9%E5%87%BB%E8%AE%BF%E9%97%AE%20%EF%BC%89%EF%BC%8C%E8%BE%93%E5%85%A5%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E7%9A%84%E6%8F%92%E4%BB%B6%E5%90%8D%E7%A7%B0%E5%B9%B6%E6%90%9C%E7%B4%A2%E3%80%82,%EF%BC%882%EF%BC%89%E8%BF%9B%E5%85%A5%E6%8F%92%E4%BB%B6%E4%B8%BB%E9%A1%B5%EF%BC%8C%E7%82%B9%E5%87%BB%E5%8F%B3%E4%BE%A7%E7%9A%84%20Download%20Extension%20%E9%93%BE%E6%8E%A5%EF%BC%8C%E5%B0%86%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E5%8C%85%E4%B8%8B%E8%BD%BD%E4%B8%8B%E6%9D%A5%EF%BC%88%E6%96%87%E4%BB%B6%E5%90%8E%E7%BC%80%E4%B8%BA.vsix%20%EF%BC%89%202%EF%BC%8C%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6)
+- [官网](https://marketplace.visualstudio.com/vscode)搜索插件名
+- 不要直接点安装，而是右侧找到`Download`等字样，下载`.vsix`
+- 拷到离线机器上，然后`code --install-extension <名称>.vsix`
+  - 参考[[command-line]]

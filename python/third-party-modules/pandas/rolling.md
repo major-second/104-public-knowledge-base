@@ -1,0 +1,10 @@
+- 前置[[time-series]]
+- [参考](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rolling.html)
+- 最主要参数
+  - `window`可以填整数表示多少个数据或者offset表示时间（例如`'2s'`
+  - `center`默认否表示在“右边缘”
+  - `closed`默认`right`表示左开右闭
+  - 填整数例如`import pandas as pd; import numpy as np; df = pd.DataFrame({'B': [0, 1, 2, np.nan, 4]}); df.rolling(2).sum()`，结果`NaN, 1.0, 3.0, NaN, NaN`
+  - `min_periods`：填整数默认就是这个整数，填offset默认是1. 如果达不到指定数据个数则出现`np.nan`
+- 默认不传`win_type`得到`Rolling`对象
+  - 比如`.mean()`求均值，`.sum()`求和等

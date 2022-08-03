@@ -1,0 +1,12 @@
+- [参考](https://blog.csdn.net/weixin_39532362/article/details/93854780)
+- 基础使用（自动推断格式）
+  - `pd.to_datetime('2018-01-15 3:45pm')`
+  - `pd.to_datetime('7/8/1952')`
+  - `pd.to_datetime('7/8/1952', dayfirst=True)`
+  - `pd.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])`
+    - 返回一个序列`DatetimeIndex`
+    - 底层：64-bit的整数（纳秒）
+- 加速：指定格式如`format='%m/%d/%y'`
+- 构造间隔`td = pd.Timedelta(weeks=2,days=10,hours=12,minutes=2.4,seconds=10.3)`
+  - 使用：可以直接`date1 = date0 + td`
+  - 示例：`2.5 * d1 - 1.5 * d2`报错（时刻不能乘法），但`d1 + 1.5 * (d1 - d2)`可以

@@ -8,3 +8,12 @@
       -  赞同：会被套利(arbitraged away)
 -  所以：很多人一直致力于怎么挖掘信息获利
 -  批评：人是非理性的，割韭菜就能获利
+   - overconfidence: 投资者过于自信自己的能力，冒风险
+   - anchoring effect: 锚定于自己相信的权威，或被极大影响
+   - confirmation bias: 依赖既往经验，favor their beliefs
+     - 被谣言轻易影响, under-reaction or over-reaction to new information
+   - loss aversion: twice the impact as a gain of equal magnitude
+     - for portfolio managers: it's hard to explain underperformance versus peers
+   - disposition effect: 卖飞，套牢
+     - unrealized losses will remain just paper losses 
+     - a bird in hand is worth two in the bush, lock in gains
