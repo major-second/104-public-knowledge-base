@@ -22,6 +22,8 @@
 3. $O(k)$ feature作MLP
 4. 把两个氨基酸 (`r`, residue) 对应的信息转化成pairwise信息，核心是向量变成矩阵的所谓outer-product ![](outer-product.png)
 5. 对pairwise也做和刚才类似的attention，计算过程一样，但意义不同
+- 根据几何意义，这个矩阵可以看作图（graph），因此这里的self-attention和“三角”关系非常密切
+- ![](triangle.png)
 # structure模块
 - 8层，共享权重（联想[[rnn]]）
 - ![](structure.png)

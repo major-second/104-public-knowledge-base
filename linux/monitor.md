@@ -1,0 +1,9 @@
+- 前置[[4-more-commands]]，里面有`ps`，`watch`等常用指令
+- `top`看cpu和内存，含义[参考](https://blog.csdn.net/xiaoxiao_chen945/article/details/121038280)
+  - `q`退出
+- `nvidia-smi`看显卡使用情况
+  - 需要[[ubuntu-nvidia-drivers]]
+- 爱好者写的可交互看显卡、cpu、内存的[工具](https://www.zhihu.com/question/376875425/answer/1728922058)：`nvitop`
+  - 安装：`pip3 install git+https://github.com/XuehaiPan/nvitop.git#egg=nvitop`
+  - 使用：`nvitop`
+  - 也是`q`退出
