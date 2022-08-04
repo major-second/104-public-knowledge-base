@@ -9,6 +9,8 @@
 - [[model]]改成继承`pl.LightningModule`
   - 回忆：继承`nn.Module`需要重载`__init__()`, `forward()`
   - 现在它的官方示例还继承了`configure_optimizers()`, `training_step()`, `validation_step()`
+    - 具体找`lib\python3.7\site-packages\pytorch_lightning\overrides\base.py`，看到以下代码，就知道这些方法分别在何时被调用
+    - ![](lightning-module-methods.png)
   - 这里的一个`LightningModule`相比原始`torch.nn.Module`来说更为宏观
     - 例如auto encoder的整个结构，我们称为一个model
     - forward时只需要过encoder，计算loss需要encoder和decoder
