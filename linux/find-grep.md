@@ -20,4 +20,6 @@
     - 比如`nvidia-smi | grep '[4-7]\s\+T'`只看后4张卡
       - 注意引号
     - 比如`du -h | grep '[0-9]G\s'`只看较大的文件夹
-    - 比如`"/pip$"`可找到`pip`这个可执行程序，而不显示`/pip/`这种结构，其中`$`表示结束
+    - 比如匹配`"/pip$"`可找到`pip`这个可执行程序，而不显示`/pip/`这种结构，其中`$`表示结束
+    - 比如`while [[ 1 -eq 1 ]]; do sleep 2; nvidia-smi | grep "[4-7]\s\+N/A\s\+N/A" | awk '{print $5}' | xargs sudo kill -9; done`定期清理后4张卡程序
+      - 哈哈这个多少有点[[map-reduce]]的意味（狗头）
