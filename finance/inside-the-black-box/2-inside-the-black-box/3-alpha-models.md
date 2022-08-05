@@ -1,0 +1,72 @@
+[toc]
+- `Prediction is very difficult, especially about the future`
+- $\alpha$: `independently of the moves in the broader market`，不能甩锅给市场指数的
+  - 比如市场指数10，他12，那$\alpha$就是+2（假设$\beta$就是1，和市场一样）
+- `Our definition of alpha—which I stress is not conventional—is skill in timing the selection and/or sizing of portfolio holdings`
+  - 价值投资和择时择量都有skill和alpha，而且不是非黑即白的，你价值投资低买高卖也可以说是择时
+- 很多名字，总之就是预测模型，正确率要cover错误率和交易成本
+# Types
+- quant很多半路出家，可能从theoretical或empirical来
+## Theory-driven
+- why it is the way it is
+- more common!
+- 假说演绎
+- 没有想象中那么神秘，那么多数学
+- 六大种类：trend, reversion, technical sentiment, value/yield, growth, and quality
+  - 和discretionary找$\alpha$手段一样！
+- 使用price-related / fundamental data
+  - 第一种：trend, mean reversion, technical sentiment
+  - 第二种：value/yield, growth/sentiment, quality
+- 可以合并，但为了清晰讲解，先单独看
+### price
+- We call the first idea trend following or momentum, and we call the second idea counter‐trend or mean reversion
+- 第三种technical sentiment比较少见
+- trend的基础
+  - consensus building among market participants：纷乱市场中，有一群人初步觉得要熊
+  - 或：追涨杀跌，不要做最后的傻子
+  - 找显著移动！
+  - 讨厌锯齿whipsawing action
+  - 什么叫显著？过滤/条件等
+  - moving average crossover indictor: 两个不同长度的均值交叉
+  - 有一些著名例子！如Renaissance
+  - 高风险！
+  - 其实每一种都是这样，不能永远成立，unstable and episodic
+  - 很多人都会追涨杀跌
+- reversion
+  - 回归！
+  - 比如标普500，如果要跟踪指数就要强制买它，但有时可能恰好没人卖，就导致高估值，moves up somewhat abruptly
+  - 比如不知道别人也和你想的一样导致**overshoot**
+  - being paid to provide liquidity! 如果看实践就更明显
+  - discretionary: 称为contrarians
+  - 和trend可合在一起用：长期trend，短期波动（也不绝对）
+  - stat arb: A公司相对B公司是否高估值
+  - 为什么两种相反的都work？结合其它择时、风险管控等，并不是完全相反抵消
+- technical sentiment
+  - 从价、量、volatility找到情绪
+  - 没有通用理论基础。有人认为情绪过了要反，有人认为会持续推动
+  - 一般作为“辅助”，作为“条件变量”等，有时也有单独用的
+  - 期权市场两种显然想法例子
+    - 看挂出单数量
+    - 已知涨的volatility（易变性）更小，涨得慢。故两个方向开价距离有固定比值，偏离比值能反映市场估计的volatility，作为情绪
+  - 也可看
+    - 多档盘口数据形状（短期）
+    - volume, turnover, openInterest（稍微长点）
+  - 大部分contrarian
+### fundamental
+- discretionary：长期用
+  - quant在这里相对年轻
+- Fama and French: beta, historical data about the book-to-price ratio, market capitalization
+  - ironic：一整个**alpha策略**领域来源于他们，和他们主要工作 (advanced the idea that markets are **efficient**) 表意恰恰**相反**
+- value
+  - 常用于equity
+  - 往往是比值（比如price和earning，比如dividend）
+  - E/P, D/P常用，higher yield当然就是高性价比
+    - 这个分子分母方向方便分析（否则负数、0讨厌）
+  - 提取数据给电脑的过程挺复杂的（相比之前三种）
+  - 一种理论解释：高风险，期望相同的资产天生就要更便宜，being paid to take on the risk of standing in the way of momentum
+  - carry trade, 美国国债换墨西哥国债，相当于墨西哥国债的“储备金”“保证金”了（厌恶风险的人potentially可以用墨西哥国债换到美国国债）
+  - 先到这
+## Data-driven (empirical)
+- The scientists in the Human Genome Project did not believe that it was necessary to theorize what genes were responsible for particular human traits
+- *derisively*, "data miners"
+- 不要可解释性，可能找到spurious

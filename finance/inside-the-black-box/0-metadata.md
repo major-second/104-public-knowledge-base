@@ -18,9 +18,9 @@
     - `Alpha strategies attempt to generate returns by skillfully timing the selection and/or sizing of various portfolio holdings`
   - 不搞金融工程，不是弄“quantitative analysis”
 - 主要部分
-  - 1 - 2背景
-  - 3 - 9 contents of the black box
-  - 10 - 12 high-freq trading
-  - 13 - 16 技术分析评估等
+  - 1 - 2 背景，简介
+  - 3 - 9 contents of the black box（一个交易系统包括哪些组分）
+  - 10 - 12 评估，评价指标等
+  - 13 - 16 高频交易（注：看目录和看preface好像不一致）
   - 17 总结
 > My aim is to demonstrate that what many call a black box is in fact transparent, intuitively sensible, and readily understandable

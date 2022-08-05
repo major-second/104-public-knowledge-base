@@ -1,6 +1,7 @@
 - 前置
   - [[pip]]
   - `pip install ipykernel`补包
+    - 注：当然也可以在`conda`环境中`pip install ipykernel`做
 - 好处
   - 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
     - `markdown` block可以有数学公式、图片等作为“高级[[comment]]”
