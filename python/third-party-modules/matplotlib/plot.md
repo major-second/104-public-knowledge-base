@@ -7,4 +7,5 @@
 - 也可以只输入`y`，此时自动生成`x`（从0开始）
 - 还可以一次性多条`y`，例如`plt.plot([5,6],[[1,2],[3,4]])`
   - 还能和[[time-series]]中`index`取出多个键一起使用
+  - 但这样没法精确控制颜色，linestyle等
 - 关键字参数：`linewidth, color, marker, markersize`等

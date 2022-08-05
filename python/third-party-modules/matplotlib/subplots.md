@@ -10,3 +10,5 @@ fig, axs = plt.subplots(2, 2)
 axs[1, 0].plot([1, 2], [3, 4])
 plt.show()
 ```
+- 关键字参数
+  - `figsize=<元组>`设置大小，注意单位是英寸以及`dpi`问题，参考[[fig]]

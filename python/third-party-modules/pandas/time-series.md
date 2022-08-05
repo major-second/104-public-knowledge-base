@@ -9,10 +9,10 @@
 ### 基础命令
 - `opsd_daily = pd.read_csv('opsd_germany_daily.csv')`
   - 读取`.csv`
-- `.shape`形状（第0维往往表示多少条数据，第1维表示多少维）
-- `.dtypes`类型
-- `.head(3)`, `.tail(3)`, `.sample(3)`看示例
-- `.concat(<DataFrame组成的表，元组等>)`：参考[[manipulation]]，有点像，在时间维上拼起来
+- `df.shape`形状（第0维往往表示多少条数据，第1维表示多少维）
+- `df.dtypes`类型
+- `df.head(3)`, `df.tail(3)`, `df.sample(3)`看示例
+- `pd.concat(<DataFrame组成的表，元组等>)`：参考[[manipulation]]，有点像，在时间维上拼起来
 ### `index`
 - 一行是一个数据条目，一列是一种属性（feature）
   - 默认先说属性再说时间范围（数据条目）
