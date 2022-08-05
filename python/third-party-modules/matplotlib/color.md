@@ -1,5 +1,7 @@
 - 基础：[参考](https://matplotlib.org/stable/tutorials/colors/colors.html)
   - 示例：如[[plot]]加关键字参数`c`或`color`，里面可能写`'b'`，`'black'`，`(1, 0.5, 0.2)`等多种格式
+  - 还可以`plt.scatter([1,2], [4,5], c=['r','b'])`这样（[[plot]]不行）
+- 应用：[[visualization]]
 - `cmap`和渐变色应用（使用内置`cmap`把0到1数映射到颜色）
   - [参考](https://www.codenong.com/8500700/)
   - 参考[[line-collection]]

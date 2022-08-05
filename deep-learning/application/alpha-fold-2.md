@@ -14,7 +14,7 @@
 1. row-wise类似于[[transformer]]，往上增加[[lstm]]类似的gate，以及整个矩阵形状的bias
 - ![](row-wise.png)
 2. 列：换个方向，也是类似的
-- insight: 一个方向是氨基酸间关系，一个方向是channel间关系
+- insight: 一个方向是残基间关系，一个方向是channel间关系
 - 注意氨基酸间关系这个方向有利于得到 phylogenesis 相关信息
   - ![](phylo.png)
   - ![](phylogenesis.png)

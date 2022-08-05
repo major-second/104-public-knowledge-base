@@ -11,7 +11,7 @@
 - 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
   - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
   - 甚至原生list的`l[:]`还是浅拷贝的一种方式
-- `max`和`amax`分别求最大值的值和下标
+- `np.max`和`np.amax`分别求最大值的值和下标
 - array做`< > ==`等运算得到布尔的array
   - 直接用作判断条件是“ambiguous”
   - 可以`np.where()`筛出真的那些下标
@@ -22,3 +22,4 @@
   - `-1`就是自动由其它维计算得到
 - `np.linspace(start, stop, num)`生成等差数列
   - 如应用：[[color]]
+- `np.clip([1,2], 0, 1.5)`输出`array([1. , 1.5])`
