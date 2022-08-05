@@ -1,6 +1,7 @@
 - 前置
   - [[matplotlib/basics]]
   - 可了解[[subplots]]
+- 注：当一个`plt`出现多个`ax`时，尽量都使用`ax.某`方法如`ax.plot()`，就比较不容易出错，`plt.某`方法就不太靠谱了
 # 按一定模式添加子图`ax`
 - [[subplots]]
 - `ax2 = ax.twinx()`：x轴共用，y轴出现在右侧的另一个子图（即：子图间可以重叠）

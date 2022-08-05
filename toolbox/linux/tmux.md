@@ -18,4 +18,5 @@
     - `方向键`移动pane
     - `C`新窗口
     - `数字键`移动window（比pane大一级）
+    - `[`进入可上下、`Page up`等翻页的模式，`q`退出
   - `Ctrl + D`关闭当前pane（window只有一个pane就关window，session只有一个pane就关session）

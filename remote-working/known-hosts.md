@@ -3,6 +3,6 @@
   - 如果其中已有对方信息，则正常连接
   - 如果没有，则给出提示符让你输入`yes`信任对方
     - 如第一次`ssh`某个服务器时有一个警告，说你添加了新的主机到`known_hosts`
-    - 如`ssh -T git@github.com`，使得`git`可以上传下载
+    - 如`ssh -T git@github.com`，`yes`确认，使得之后`git`可以正常[[push-pull]]等
   - 如果有错的，则拒绝连接，需要删除对应内容，重新连接并选择`yes`
     - 例如远程`rm`掉docker [[container]]重新建立（在相同用户，ip和端口）之后，你需要删除`known_hosts`的对应行，否则会不给你连

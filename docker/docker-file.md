@@ -20,3 +20,8 @@ Dockerfile加上
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Shanghai
 ```
+## `COPY`命令
+复制文件。典型用途
+1. 前面说过了，有时转义烦了，不如直接拷文件
+2. 保持文件[[7-permissions]]，例如[[ssh]]需要`600`权限
+3. 在文件有多行时，直接`VAR=$(cat ...)`，再传给[[docker/env-var]]会导致不再是多行，此时复制文件靠谱！

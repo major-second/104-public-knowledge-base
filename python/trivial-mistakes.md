@@ -38,6 +38,8 @@ if foo:
         ...
 ```
 （恰恰反了）
+## 循环
+- `for a, b in zip(a_list, b_list):`忘了写`zip`导致拿到`a_list`里的数据并尝试unpack
 ## `try`
 - `except`包含一切错误一定要小心！
   - 比如测试，你想检验两个东西相等，认为比较出错就是不等，用`except`包含一切错误并`return False`
@@ -54,3 +56,6 @@ if foo:
   - 但是`torch.load`又可以正常load，就容易导致迷惑
   - 参考[[exception-warning]]：这非常危险！
 - `max(max([1,2,3],[0,4,5]))`结果是`3`（因为内层是两个list比较，内层输出`[1,2,3]`）
+- 把已有的变量名覆盖了
+  - 例如`print = 1; print(1)`显然不行
+  - [[dynamic]]提到的`xlim`就有可能出现这种情况，本来应该是`plt.xlim(...)`，你要是写成`plt.xlim = ...`就会这样

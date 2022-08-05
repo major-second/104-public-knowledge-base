@@ -23,6 +23,8 @@
   - 此时可再看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
   - 还能`.index.start`等取出具体值。应用：参考[[others-on-plt]]，添加水平竖直分界线
+  - `df.index = df[<key>]`还能设置谁是index（注意可结合`sort_index()`方法使用进行排序）
+  - [[dataframe]] naive生成的`DataFrame`默认`index`是从0开始的连续整数
 - 二合一过程（读取和设置`index`）：`opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
 - `values`取出具体数值
@@ -31,7 +33,9 @@
   - 可以是赋予单个数，也可以是序列
 - 取出多个键作为“子”数据集：`df[[key0, key1]]`
   - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
-# `.loc`
+- `.sort_index()`返回按索引排序的结果（但自己不就地改变）
+  - 这里返回的结果显然默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
+### `.loc`
 - 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
 - loc很多坑，[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
   - 和普通的`[]`不同，`.loc[]`**切片含两端**
