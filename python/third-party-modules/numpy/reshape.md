@@ -1,9 +1,10 @@
 - 前置[[numpy/basic]]
-- 参考[[pytorch/misc/reshape]]，可作比较
+- 参考[[pytorch/misc/reshape]]，两种可做比较
 - 一个应用：[[line-collection]]
-- `array.repeat()`：可以和[[misc/reshape]]中的`expand`比较异同
+- `array.repeat()`常常和`reshape`一起使用
+  - 可以和[[misc/reshape]]中的`expand`比较异同
   - `np.array([2,3]).repeat(3,axis=0)`输出`array([2, 2, 2, 3, 3, 3])`
-  - 即`np.array([2,3]).reshape(-1, 2).repeat(3,axis=0) `输出
+  - `np.array([2,3]).reshape(-1, 2).repeat(3,axis=0) `输出
 ```python
 array([[2, 3],
        [2, 3],

@@ -1,0 +1,13 @@
+- 前置[[matplotlib/basics]]
+- 区别于[[axes]]
+  - 字面上`axes`是`axis`的复数
+  - 但实际上这里`axes`表示子图（可以理解成子图有x, y轴）
+  - 而我们这里的`axis`就是字面意义上的坐标轴
+  - 联系：`ax.`的方法往往根据`x, y`成对出现，比如`ax.twinx(), ax.twiny()`
+- 常见操作
+  - [[axes]]中的`twinx()`，`twiny()`
+    - 使两张子图共用一根轴，另一根轴不共用而分布在左右 / 上下
+    - 这两根轴不一定同单位
+  - `ax.set_yscale("log")`对数坐标
+  - `.yticks([])`去除`y`刻度
+  - `.invert_xaxis()`：`x`轴反向
