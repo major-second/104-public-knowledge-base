@@ -24,8 +24,12 @@
 - 操作系统名：`win, linux, mac`等
 - `portable`可以到处移动，而不是“安装了就动不了”
 - 商业软件的`perfessional`，`extreme`等区分等级
-  - 不同等级序列号不能混用（比如[[pro-license]]）
-  - 有时，有序列号可以升级到高等级（[[windows/upgrade]]）
+  - 如[[aida64]]
+  - 不同等级序列号不能混用
+    - 比如[[pro-license]]
+  - 有时，有序列号可以升级到高等级
+    - [[windows/upgrade]]
+  - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
 # 版本依赖相关
 - 举例体验：[[pip]]中提到本地`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`
   - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`

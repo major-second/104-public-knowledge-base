@@ -17,3 +17,11 @@
     - 例如![](isbn.png)，可以看到有10位和13位。有重合之处。校验码不同
   - 比如计算机等领域论文如果会放arxiv预印本，那就有arxiv序列号
   - 比如学术著作的doi号
+- 盗版软件（破解[[version]]）
+  - 上网找序列号，如[[pro-license]]，[[aida64]]
+  - [[search-info/general]]中提到暗网海盗湾，[[telegram]]等地方可能有盗版安装包或序列号
+  - [[internet-archive]]等地方可能有一些老古董已经公布免费序列号了
+    - 参考[[win98-virtual]]
+  - 专业工具站
+    - 参考[[win7-virtual]]
+    - [实用工具站点](https://msdn.itellyou.cn/)）
