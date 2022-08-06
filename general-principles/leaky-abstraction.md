@@ -42,6 +42,8 @@
     - 比如数学绘图，有[[matplotlib/basics]] - [[seaborn]]两层。很多时候直接[[seaborn]]好看，但有时需要更底层的[[matplotlib/basics]]指定一些细节
   - 比如[[robocorp/basics/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境，但底层`rcc.exe`比较灵活，不用）
 - 有时上层抽象不如你想象的clean
-  - [[risk]]提到了直接删除第二系统的分区是不行的
-  - [[partition]]中，直接移动系统盘分区是不行的
-  - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
+  - 关于[[dual-boot/steps]]的坑
+    - [[risk]]提到了直接删除第二系统的分区是不行的
+    - [[partition]]中，直接移动系统盘分区是不行的
+    - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
+  - 在[[container]]中的程序占用内存过多可能导致[[container]]外的也因为内存不足崩溃

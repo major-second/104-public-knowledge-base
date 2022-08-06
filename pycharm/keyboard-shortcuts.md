@@ -1,5 +1,8 @@
 - 示例的`main.py`所说的两个最有用快捷键
   - `Shift + F10`运行
-  - `Shift`两次全局搜索
+  - `Shift`两次全局搜索文件名
 - 其它
+  - `Ctrl + Shift +`
+    - `F`全局搜索内容
+    - `A`万能命令行（类似于vscode的`Command Palette`）
   - `Shift + F9` debug（调试），可以打断点
