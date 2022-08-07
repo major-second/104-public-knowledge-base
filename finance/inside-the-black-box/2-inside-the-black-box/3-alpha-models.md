@@ -64,8 +64,10 @@
     - 这个分子分母方向方便分析（否则负数、0讨厌）
   - 提取数据给电脑的过程挺复杂的（相比之前三种）
   - 一种理论解释：高风险，期望相同的资产天生就要更便宜，being paid to take on the risk of standing in the way of momentum
-  - carry trade, 美国国债换墨西哥国债，相当于墨西哥国债的“储备金”“保证金”了（厌恶风险的人potentially可以用墨西哥国债换到美国国债）
-  - 先到这
+  - carry trade, 美国国债换墨西哥国债，相当于墨西哥国债的“储备金”“保证金”了
+    - 厌恶风险的人potentially可以用墨西哥国债换到美国国债
+    - `Buy euros against the U.S. dollar.`
+    - 债券评级！很常见吧
 ## Data-driven (empirical)
 - The scientists in the Human Genome Project did not believe that it was necessary to theorize what genes were responsible for particular human traits
 - *derisively*, "data miners"

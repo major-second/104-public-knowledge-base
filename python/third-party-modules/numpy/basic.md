@@ -23,3 +23,4 @@
 - `np.linspace(start, stop, num)`生成等差数列
   - 如应用：[[color]]
 - `np.clip([1,2], 0, 1.5)`输出`array([1. , 1.5])`
+- `np.power(底数, 指数)`

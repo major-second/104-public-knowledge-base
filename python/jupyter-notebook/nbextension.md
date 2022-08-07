@@ -1,0 +1,13 @@
+- 前置[[jupyter-notebook/basics]]，[[hotkeys]]
+- [参考](https://sspai.com/post/55402)
+- 只需
+  - `pip install jupyter_contrib_nbextensions`
+  - `jupyter contrib nbextension install --user`
+- 之后重启notebook主页（就是你选文件那个界面），可看到`Nbextensions` tab
+- 这里可以点击查看插件说明，打勾启用
+- 实用插件
+  - codefolding折叠代码
+  - ExecuteTime记录运行时间
+    - [[vscode/extensions/jupyter-notebook]]是自动有的，我们网页版原生还要手动装
+  - Hinterland每次按键都自动补全
+  - Scratchpad相当于[[debug-console]]，可以按`Ctrl+B` toggle一个临时“调试器”cell

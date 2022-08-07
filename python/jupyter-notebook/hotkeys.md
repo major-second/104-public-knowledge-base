@@ -1,6 +1,13 @@
 [参考](https://blog.csdn.net/lawme/article/details/51034543)
-- 重要：绿色编辑模式，蓝色命令模式，`Ctrl+M`或`Esc`到命令模式，`Enter`到编辑模式
+- 切换模式：
+  - 绿色编辑模式，蓝色命令模式
+  - `Ctrl+M`或`Esc`到命令模式，`Enter`到编辑模式
+  - 运行任何cell后之后进入命令模式
 - `Ctrl+Enter`运行当前，`Alt+Enter`运行且插入，`Shift+Enter`运行且到下一个cell是通用的
-- 运行任何cell后之后进入命令模式
-  - 命令模式`H`展示所有快捷键
+- 编辑模式
+  - `Ctrl+Shift+Minus(-)`切分cell
+  - `Tab`打开自动补全备选，`Enter`选择
+- 命令模式
+  - `H`展示所有快捷键
+    - [[nbextension]]插件带来的新快捷键也会显示在这
   - 常用：`A, B, C, X, Z, V, Shift+V, 双击I, 双击0`等
