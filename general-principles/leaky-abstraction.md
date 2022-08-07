@@ -41,9 +41,17 @@
       - 但是[[interpolation]]（惰性求值），[[resolver]]这些omegaconf的功能，原生yaml没有，所以我们要调omegaconf，所以到这一层就是不错的选择
     - 比如数学绘图，有[[matplotlib/basics]] - [[seaborn]]两层。很多时候直接[[seaborn]]好看，但有时需要更底层的[[matplotlib/basics]]指定一些细节
   - 比如[[robocorp/basics/installation]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境，但底层`rcc.exe`比较灵活，不用）
-- 有时上层抽象不如你想象的clean
+# 抽象不如你想象的clean
+- 例如：“隔离”做得不好
   - 关于[[dual-boot/steps]]的坑
     - [[risk]]提到了直接删除第二系统的分区是不行的
     - [[partition]]中，直接移动系统盘分区是不行的
     - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
   - 在[[container]]中的程序占用内存过多可能导致[[container]]外的也因为内存不足崩溃
+- 例如：你以为应该表现一样的实则不一样
+  - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug是[[undefined-behavior]]
+    - ![](pandas-tricky.png)
+    - 同样的操作，有的时候是`copy`，有的时候是`view`，导致你无法确认赋值是否赋到了原对象上！
+    - 所以要用`.loc`才保险
+  - 例如[python对小整数缓存](https://www.cnblogs.com/luoheng23/p/11023848.html#:~:text=%E5%B0%8F%E6%95%B4%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%B1%A0,%E4%B8%BA%E4%BA%86%E5%BA%94%E5%AF%B9%E5%B0%8F%E6%95%B4%E6%95%B0%E7%9A%84%E9%A2%91%E7%B9%81%E4%BD%BF%E7%94%A8%EF%BC%8Cpython%E4%BD%BF%E7%94%A8%E5%AF%B9%E5%B0%8F%E6%95%B4%E6%95%B0%E8%BF%9B%E8%A1%8C%E4%BA%86%E7%BC%93%E5%AD%98%EF%BC%8C%E9%BB%98%E8%AE%A4%E8%8C%83%E5%9B%B4%E4%B8%BA%20%5B-5%2C256%5D%EF%BC%8C%E5%9C%A8%E8%BF%99%E4%B8%AA%E8%8C%83%E5%9B%B4%E5%86%85%E7%9A%84%E6%89%80%E6%9C%89%E6%95%B4%E6%95%B0%E8%A2%ABpython%E5%AE%8C%E5%85%A8%E5%9C%B0%E7%BC%93%E5%AD%98%EF%BC%8C%E5%BD%93%E6%9C%89%E5%8F%98%E9%87%8F%E4%BD%BF%E7%94%A8%E8%BF%99%E4%BA%9B%E5%B0%8F%E6%95%B4%E6%95%B0%E6%97%B6%EF%BC%8C%E5%A2%9E%E5%8A%A0%E5%AF%B9%E5%BA%94%E5%B0%8F%E6%95%B4%E6%95%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BC%95%E7%94%A8%E5%8D%B3%E5%8F%AF%E3%80%82)
+    - ![](python-tricky.png)

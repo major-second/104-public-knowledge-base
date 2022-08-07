@@ -11,3 +11,4 @@
     - [[vscode/extensions/jupyter-notebook]]是自动有的，我们网页版原生还要手动装
   - Hinterland每次按键都自动补全
   - Scratchpad相当于[[debug-console]]，可以按`Ctrl+B` toggle一个临时“调试器”cell
+  - Runtools：先安装，再在notebook编辑界面齿轮按钮处打开Runtools工具条，可以运行全部，运行上方，运行下方等等（[[vscode/extensions/jupyter-notebook]]自带）

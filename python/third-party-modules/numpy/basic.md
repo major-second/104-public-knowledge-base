@@ -1,5 +1,13 @@
-`import numpy as np`
-- `np.array([2])`这种得到`[2]`，但`np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
+- `import numpy as np`
+- 创建array
+  - `np.array([2])`这种直接得到`[2]`
+  - `np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
+    - 默认随机初始化。如果想不随机需要`zeros`
+  - `np.arange(整数)`得到0开始的连续整数，可以调试用
+    - 往往结合[[numpy/reshape]]得到想要的形状
+    - `-1`就是自动由其它维计算得到
+  - `np.linspace(start, stop, num)`生成等差数列
+    - 如应用：[[color]]
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
   - 注意不要少打一对括号
   - 元组当然可以大于2个元素
@@ -17,10 +25,5 @@
   - 可以`np.where()`筛出真的那些下标
   - 结合[[quantile]]，`max`等可以找到分位数位置
     - 求分位数时会在靠近的数间作插值，所以必须先用`<`，不能一来就用`==`
-- `np.arange(整数)`得到0开始的连续整数，可以调试用
-  - 往往结合[[numpy/reshape]]得到想要的形状
-  - `-1`就是自动由其它维计算得到
-- `np.linspace(start, stop, num)`生成等差数列
-  - 如应用：[[color]]
 - `np.clip([1,2], 0, 1.5)`输出`array([1. , 1.5])`
 - `np.power(底数, 指数)`

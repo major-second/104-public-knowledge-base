@@ -23,7 +23,7 @@
   - 此时可再看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
   - 还能`.index.start`等取出具体值
-  - `df.index = df[<key>]`还能设置谁是index
+  - `df.index = df[key]`还能设置谁是index
     - 可结合`sort_index()`方法使用，进行排序
     - `.sort_index()`返回按索引排序的结果（但自己不就地改变）
     - 这里返回的结果默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
@@ -33,8 +33,9 @@
   - `0`号栏此时对应`Date`
 - `values`取出具体数值
   - 是[[numpy/basic]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basic]]
-- 增加列：`data[key] = value`
+- 增加列：`data.loc[:, key] = value`
   - 可以是赋予单个数，也可以是序列
+  - 时至2022.8`data[key] = value`有时可以，有时不行！不要冒险。这是pandas官方的一个tricky bug，参考[[leaky-abstraction]]
 - 取出多个键作为“子”数据集：`df[[key0, key1]]`
   - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
 ### `.loc`
