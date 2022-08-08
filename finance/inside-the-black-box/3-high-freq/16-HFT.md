@@ -1,0 +1,14 @@
+- 本章：strategies + relation to the infrastructure
+- 分类（大致）
+  - contractual market making
+  - noncontractual market making
+  - arbitrage
+  - fast alpha
+# CMM
+- 和传统的类比关系是最强的！
+- 做市商概念
+  - A卖5000，B买2000，那剩下的3000要不然就unfilled，要不然就有做市商接盘
+  - 日常生活比喻：厂商 - 中间商 - 零售
+- 小单
+  - 散户要买200，则broker让CMM直接满足散户，卖给散户200
+  - 不进入交易所order book

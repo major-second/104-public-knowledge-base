@@ -49,7 +49,7 @@
     - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
   - 在[[container]]中的程序占用内存过多可能导致[[container]]外的也因为内存不足崩溃
 - 例如：你以为应该表现一样的实则不一样
-  - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug是[[undefined-behavior]]
+  - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug
     - ![](pandas-tricky.png)
     - 同样的操作，有的时候是`copy`，有的时候是`view`，导致你无法确认赋值是否赋到了原对象上！
     - 所以要用`.loc`才保险

@@ -1,5 +1,6 @@
 - `pip`本身来源：
-  - windows：[官网下载](https://www.python.org/downloads/windows/)安装python时，可选
+  - windows：[官网下载](https://www.python.org/downloads/windows/)安装python时，可选同时带上pip
+    - 之后有可能出现`pip`不行但`python -m pip`可以
   - linux
     - `python2`：`apt install python-pip`
       - `pip --version`一下看到版本和所在位置（看到`python2.7`字样）

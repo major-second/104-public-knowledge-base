@@ -1,0 +1,3 @@
+- `pip install scikit-opt`
+- [参考文档](https://scikit-opt.github.io/scikit-opt/#/en/README?id=install)
+- 用处：优化用户自己定义的黑箱函数等，常用来调参，参考[[finetune]]

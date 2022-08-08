@@ -1,4 +1,6 @@
-- 获取示例`DataFrame`（本质是二维数组）
+- 获取示例`DataFrame`
+  - 本质是二维数组
+  - 参考[[numpy/basic]]中创建`numpy`数组的过程，可以方便造出一些测试用的`DataFrame`
 ```python
 import numpy as np
 import pandas as pd

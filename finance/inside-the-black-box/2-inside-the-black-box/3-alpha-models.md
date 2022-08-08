@@ -68,6 +68,7 @@
     - 厌恶风险的人potentially可以用墨西哥国债换到美国国债
     - `Buy euros against the U.S. dollar.`
     - 债券评级！很常见吧
+    - todo（看到这）
 ## Data-driven (empirical)
 - The scientists in the Human Genome Project did not believe that it was necessary to theorize what genes were responsible for particular human traits
 - *derisively*, "data miners"

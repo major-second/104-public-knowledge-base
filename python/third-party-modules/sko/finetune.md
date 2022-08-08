@@ -1,0 +1,7 @@
+- 本篇是一个使用`sko`调参的例子，前置
+  - [[quick-start]]
+  - [[regression]]
+  - [[time-series]]
+  - [[numpy/basic]]
+  - 注意要防止[[trivial-case]]报错
+- 参见同名`.ipynb`

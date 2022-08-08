@@ -17,6 +17,8 @@
 - 一行是一个数据条目，一列是一种属性（feature）
   - 默认先说属性再说时间范围（数据条目）
   - 少部分例外，例如可以`data[0:1]`取出（时间范围）切片
+    - 注：若index是时间，则`data[0:1]`取出的是第0条，但若index是数，则`data[0:1]`取出index在该范围内的，而不是“第几条”
+    - [[finetune]]中的例子其实就可以使用`[low: high]`取范围内的，只不过我没用
   - 但`data[0]`可不行，因为此时会把`0`解释为属性名
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
   - 如果日期字段名是`Date`，则`opsd_daily = opsd_daily.set_index('Date')`
@@ -57,3 +59,6 @@
   - 默认省略参数`1`
   - `diff`作差同理
     - 注：所以如果要未来减现在，那就`-df['key'].diff(-interval)`
+- 之前说过排序用`sort_index()`，那想获取序号作为数据怎么办？
+  - 可以`data['sorted'] = data['key'].rank(ascending=False, method='first')`
+  - 其中`ascending`（布尔）决定排序方向，`method`表示相同的怎么处理，`pct`表示是否以“相对”值展现（在机器学习中要是作为特征，则特别实用）
