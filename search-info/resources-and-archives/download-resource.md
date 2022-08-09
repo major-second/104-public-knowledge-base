@@ -17,6 +17,9 @@
     - 例如![](isbn.png)，可以看到有10位和13位。有重合之处。校验码不同
   - 比如计算机等领域论文如果会放arxiv预印本，那就有arxiv序列号
   - 比如学术著作的doi号
+    - 一个例子：`10.1002/9781119571278`
+    - 就方便去[Sci-Hub](https://www.sci-hub.st/)找
+    - 也可以去[doi官网](https://www.doi.org/)看
 - 盗版软件（破解[[version]]）
   - 上网找序列号，如[[pro-license]]，[[aida64]]
   - [[search-info/general]]中提到暗网海盗湾，[[telegram]]等地方可能有盗版安装包或序列号
