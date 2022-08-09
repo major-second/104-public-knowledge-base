@@ -5,8 +5,8 @@ git config --global user.name <名字>
 git config --global user.email <邮箱>
 
 # 设置代理
-git config --global http.proxy 127.0.0.1:端口
-git config --global https.proxy 127.0.0.1:端口
+git config --global http.proxy http://127.0.0.1:端口
+git config --global https.proxy http://127.0.0.1:端口
 
 git config --list # 查看列表, 可以用q退出
 ```

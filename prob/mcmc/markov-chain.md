@@ -13,4 +13,4 @@
   - 初始一个分布（如高斯）
   - 转移$n_1$次，开始采样
   - 再转移$n_2$次，这样得到了$n_2$组样本
-- 细致平稳条件：$\pi P=\pi$
+- 细致平稳条件：$\pi_i P_{ij} = \pi_j P_{ji} \Rightarrow \sum_i \pi_i P_{ij} = \sum_i \pi_j P_{ji}=\pi_j\sum_i P_{ji}=\pi_j\Rightarrow \pi P=\pi$，是一个找到$P$的充分条件
