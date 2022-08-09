@@ -6,9 +6,10 @@
 # troubleshooting
 - push和pull涉及remote托管平台（即和在线平台进行数据上传下载），所以有一些和下载、联网有关的问题
   - 可以参考[[https-ssh]]，[[known-hosts]]，[[personal-access-tokens]]，[[settings-and-configurations]]等设置代理、ssh、token，排除坑
-  - 注：如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是CLI没设置代理但浏览器自动走了浏览器代理
+  - 关于代理
+    - 如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是命令行没设置代理但浏览器自动走了浏览器代理
     - 参考[[configure]]
-  - `OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443`可能是代理[[node]]挂了，需要更换代理[[node]]
+    - `OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443`或`gnutls_handshake() failed: The TLS connection was non-properly terminated.`：可能是代理[[node]]挂了，需要更换代理[[node]]
 - `clone`，[[fetch]]等需要下载，很多时候和`pull`共享一些相同的trouble
   - 也有一些自己的技巧
   - 例如`git clone --depth=1`可以避免`clone`全部历史
@@ -33,6 +34,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 # 其它
 - 一般来说不要为了看起来舒服就[[reset]]再`push --force`，因为[看起来一堆commit并不占多少空间](https://segmentfault.com/q/1010000003089251)
 - `git push --tags`可以让远程能看到tags
+- `git push origin <branch_name>`到指定分支
 - `git pull`命令变种
   - `--recursive`选项：可递归pull [[submodule]]
   - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
