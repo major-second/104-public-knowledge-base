@@ -1,2 +1,4 @@
-必须使用`tqdm.tqdm_notebook`（且根据`tqdm`的不同版本，其接口可能不同）而不是普通的`tqdm.tqdm`
-可能需要[参考这个](https://stackoverflow.com/questions/67998191/importerror-iprogress-not-found-please-update-jupyter-and-ipywidgets-although)装`ipywidgets`才能用
+- 推荐使用`tqdm.tqdm_notebook`（且根据`tqdm`的不同版本，其接口可能不同）
+  - 可能需要[参考这个](https://stackoverflow.com/questions/67998191/importerror-iprogress-not-found-please-update-jupyter-and-ipywidgets-although)装`ipywidgets`才能用
+  - 而不是普通的`tqdm.tqdm`
+- 除非有些时候[[nbextension]]和`tqdm_notebook`不兼容

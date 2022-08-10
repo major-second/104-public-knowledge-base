@@ -10,6 +10,7 @@
 - 那系统设定在哪呢？
   - 比如ubuntu的九宫格-齿轮（Settings）
   - Win10的开始菜单搜索proxy
+- 开关都在这，很方便
 # linux环境变量相关
 ## linux终端走代理
 在`~/.bashrc`（当然如果用[[zsh]]就是`~/.zshrc`）中加上
@@ -19,7 +20,8 @@ export http_proxy="localhost:<端口号>"
 ```
 然后重启终端或`source ~/.bashrc`一下，就好了
 （也就是[[6-env]]中说的的添加环境变量）
-环境变量和ubuntu系统设定是两回事
+注：环境变量和ubuntu系统设定是两回事
+注：临时要关就`unset http_proxy https_proxy`
 ## pip走代理
 `pip`自动读取环境变量中的代理设置
 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样（上节那样会报错，且在报错信息中可以看到应该怎么改）

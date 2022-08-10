@@ -6,3 +6,4 @@
   - 对`sudo apt remove *nvidia*`的结果也不同
   - [[franka-ros-interface]]只能用`bash`
 - 比如[[proxy/usage]]讲到有些地方开了代理就上不了
+- 比如[[nbextension]]可能导致[[jupyter-notebook/tqdm]]中`tqdm_notebook`用不了（不兼容）

@@ -14,3 +14,6 @@
   - Scratchpad相当于[[debug-console]]，可以按`Ctrl+B` toggle一个临时“调试器”cell
     - 这里的代码不会被保存！！
   - Runtools：先安装，再在notebook编辑界面齿轮按钮处打开Runtools工具条，可以运行全部，运行上方，运行下方等等（[[vscode/extensions/jupyter-notebook]]自带）
+  - execution_dependencies：使用`#A`, `=>A`等标记（tag）表示依赖关系，自动维护并运行
+    - 网页版`View - Cell Toolbar`看到加tag方式
+    - 可能带来兼容性问题：对于正在跑的程序，只能先停再启动，不能直接`Ctrl+Enter`重启了！
