@@ -28,7 +28,7 @@
   - 不同等级序列号不能混用
     - 比如[[pro-license]]
   - 有时，有序列号可以升级到高等级
-    - [[windows/upgrade]]
+    - 如[[windows/upgrade]]
   - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
 # 版本依赖相关
 - 举例体验：[[pip]]中提到本地`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`

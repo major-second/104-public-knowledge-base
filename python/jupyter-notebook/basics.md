@@ -19,6 +19,7 @@
   - 会丢失全部变量（但有时这就是我们想要的，因为可能之前变量会一直放着形成干扰）
   - 改变`import`了`.py`文件中东西的定义要`Restart`才生效
   - `Restart`可清除不用的显存
+- 服务器卡和本地流畅不矛盾。有可能你远程连`jupyter`服务器，服务器卡死了（[[vnc]]或者[[teamviewer]]看桌面，发现没反应），本地编辑却很流畅，但运行不了
 # 原始方法运行
 - [参考](https://docs.jupyter.org/en/latest/running.html)
 - 命令行`jupyter-notebook <名字>.ipynb`可以在浏览器中打开相应页面

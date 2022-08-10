@@ -3,10 +3,10 @@
 
 ## 典型用法
 - 我们这里的wrapper是一种典型的[[python/wrapper]]：比如自己写的时候，输入一个环境，输出一个环境，有`self.env`这个attribute
-常见重载`reset`和`step`，比如下面的。就是改一下输出类型。
+常见重载`reset`和`step`
+比如某个类中有下面的方法，就是一个典型的`wrapper`
+其作用：改一下输出类型
 ```python
-from torch import Tensor
-from numpy import ndarray
 def __init__(self, env):
     self.env = env
 
@@ -22,7 +22,7 @@ def step(self, action: ndarray):
     done = done.detach().cpu().numpy()
     return next_state, reward, done, info
 ```
-## 现成
+## 现成wrapper
 - 为了减少重复造轮子，也可以让你的wrapper继承`gym`里的。比如
 ```python
 class ObservationWrapper(gym.ObservationWrapper):
@@ -69,4 +69,4 @@ array([-0.01258566, -0.00156614,  0.04207708, -0.00180545])
 >>> env_s.unwrapped.step(0)
 (array([-0.01261699, -0.19726549,  0.04204097,  0.30385076]), 1.0, False, {})
 ```
-查看[源码](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py)，发现返回的observation不是numpy数组，但是通过[[numpy/magic]]即可得到数组（也就是`array(返回对象)`是numpy数组
+查看[源码](https://github.com/openai/gym/blob/master/gym/wrappers/frame_stack.py)，发现返回的observation不是numpy数组，但是通过[[numpy/magic]]即可得到数组（也就是`array(返回对象)`是numpy数组）
