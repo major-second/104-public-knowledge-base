@@ -28,3 +28,6 @@
 - $second\_last\_interval\_close - last\_interval\_close$
 - 不是简单用，而是用给流动性前五百，有买有卖，dollar neutral
 - 进阶：乘以一个标准差，表示波动大的更容易回调
+  - 也可以除
+  - “乘”：激进，期望高，但波动性大，Sharpe小
+  - 标准差可以用绝对数值，也可以用sector的相对排名
