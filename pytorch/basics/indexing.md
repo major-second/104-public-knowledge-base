@@ -1,6 +1,7 @@
 - 基础
   - `a = torch.tensor([[1,2], [3,4]]); print(a[0, 0], a[:, 0], a[0])`
   - 输出`tensor(1) tensor([1, 3]) tensor([1, 2])`
+  - 也可以`a[:, 0] = <某某>`进行赋值
 - 所谓“映射”
   - `a = torch.tensor([5, 6, 7, 8]); print(a[[1,2,3,0,1]])`
   - 输出`tensor([6, 7, 8, 5, 6])`
@@ -9,7 +10,7 @@
   - 即
     - 本来`[]`中填一个数的，现在变成填一个list
     - 本来填3个数的，现在变成填三个长度相同的list
-    - 也可以有`:`
+    - 也不一定三个list. 可以有`:`表示这一维不“过滤”
 - 上下三角矩阵
   - `a = torch.zeros(3, 3, dtype=torch.long)`
   - `a[list(torch.triu_indices(3, 3))] = torch.arange(6) # 即上三角处依次0至5`

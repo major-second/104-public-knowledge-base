@@ -1,6 +1,4 @@
-- 本篇是读书笔记，[参考书的一章](https://www.sci-hub.st/10.1002/9781119571278.ch27)
-  - 来源：[[download-resource]]中提到的scihub
-- 还能参考[[16-HFT]]
+- 参考[[16-HFT]]
 ## 总述
 - 日内交易，收盘前停
 - 可能作为overall strategies一部分

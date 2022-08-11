@@ -1,0 +1,50 @@
+- 总述
+  - 输入相关数据（自己定义数据集是啥），输出和价格、交易有关的信号
+  - 可以被编程语言计算
+  - 历史悠久，从纸笔到计算机
+- PHDS ON THE STREET
+  - 人挤人 -> 数字化 -> 可以数字化预测管理 -> 需要PHD了！
+- A NEW INDUSTRY
+    - 名人：Simons，石溪，Renaissance
+    - Shaw
+    - 市场中性，dot-com market crash中尤其表现好
+    - 1/3被量化管着！
+    - 07 08大危机挫折
+    - 市场环境变化，quant方法还是很灵活
+- STATISTICAL ARBITRAGE
+    - 无风险套利：同时买卖
+    - stat arb：有少量风险，根据统计信息买卖
+    - 找学界，当然有用。如CAPM，分成market component and an idiosyncratic component
+    - 包含了Sharpe, Fama & French等
+    - 学界（不管什么学，数学统计学……）还是和业界不完全搭
+      - 比如最小化平方和，这就不一定好用
+    - 所以很多因子还是商业机密，口耳相传
+- EXISTENCE OF ALPHAS
+    - 为什么存在？有学界依据，有不同假设
+      - 如EMH假设：反映所有信息，没有套利机会，参考[[market-efficiency]]
+      - 比如它的反驳：心理、认知，也参考[[market-efficiency]]
+    - 谁都喜欢“存在”这个回答，但真的能work，不太弱，谈何容易！
+- IMPLEMENTATION
+    - 用编程语言实现
+    - 数据来源：现在、历史。量价、财报现金流、社交媒体新闻
+    - 小心数据格式、技术问题、人为错误
+    - 解耦可以降低难度：行业相对于世界，单只相对于行业
+    - 实际用这种赚钱：市场中性策略！
+- EVALUATION
+    - 说几个点
+    - 不同场景，要求强度不同
+    - 训练(in-sample)不一定代表测试(out-sample)表现
+      - 划分比例需要tradeoff
+    - outliers可能ruin a model
+    - 多sift数据，多考虑alternative，就不容易找到好模型（这句没看懂todo）
+- LOOKING BACK
+  - 历史！回测！
+  - 计算可以算很多，如果你不知道本质，那真正有用的不一定有多少
+  - 模拟比实盘简单！原因：如数据、历史上的算力、历史上人们观念先进程度等
+- THE OPPORTUNITY
+    - 不同人消息面，能力等不一样，可能给其它人机会
+    - 也有“术业有专攻”，如只关注短期的人
+    - 大杠杆，忍受不了波动
+    - 计算力不同
+    - 唯一不变的就是永远在变，所以总有机会找alpha（但alpha也可能inexorably消失）
+    - 生命不息，alpha不止

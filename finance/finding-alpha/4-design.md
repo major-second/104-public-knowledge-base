@@ -1,0 +1,52 @@
+- 总述
+  - 全过程！raw data to signal
+- DATA INPUTS TO AN ALPHA
+    - 量价
+    - fundamental
+    - 宏观经济
+    - 文本，多媒体
+    - 参考[[3-alpha-models]]的分类
+    - 不一定直接针对价格！有些数据可以减少噪声，辅助其它数据（risk factor），还有些可用来套利
+    - nonconvex, discontinuous, and dynamic
+    - 在已有的附近做！
+    - 限制深度！不要太深！参考[[3-search]]，IDA等思想
+    - 用已证实的线索
+    - 狂野理论偏方也可以偶尔尝试？哈哈
+- ALPHA UNIVERSE
+    - 讨论问题范围！
+    - 投资标的，地区，行业
+    - 和data，idea都相关
+    - 也可以把泛用的进行精调
+- ALPHA PREDICTION FREQUENCY
+    - tick，事件驱动
+    - intraday，一天多次
+    - 日频，可能delay 1不用今天的，也可能用。还可能集中在开收盘
+    - 周，月
+    - 还是data起重要决定作用
+- VALUE OF AN ALPHA
+    - 强调risk-adjusted利润！
+    - “边际”作用！
+    - 精确衡量是困难的。如没有完美对照组，非线性不好归因等
+- PRACTICAL ALPHA EVALUATION
+    - 回测！看回测的特征，如[[1-intro]]提到的的评判标准：info ratio等
+    - 把alpha简单映射成交易策略！
+      - 但这里可能就要过一个gap
+    - info ratio: return比上其标准差
+      - 建立一个数值基本概念：年化的info ratio，针对一个基于五年观察的，没怎么fit的alpha：1.0左右
+      - 实际中alpha间相关，所以往往比这高
+    - margin：利润比交易量，反映对交易成本的敏感程度
+      - 这个太低：那除非有很多相互独立的cancel out，否则就没啥用
+      - 典型日频margin：5
+    - correlation：和已知的相关性
+      - 0.7以上：除非真的很强，否则……
+      - 0.5到0.7：borderline
+      - 0.3到0.5：总体不错
+      - 0.3以下：好！
+    - 其它指标：如是否只能针对高流动性做。这样就限制了交易规模，[[27-intra-day]]提到这一点
+- FUTURE PERFORMANCE
+  - 前一节一直讲回测
+  - 其实有时构建过程本身有参考价值
+  - 另外，最终肯定是要看未来！
+  - 比如：一堆参数，无经济学意义，很容易过拟合！
+    - 如1 - 12月给12个参数，你能拟合几年，那明年还能吗？
+  - 所以加参数优化前千万小心过拟合！

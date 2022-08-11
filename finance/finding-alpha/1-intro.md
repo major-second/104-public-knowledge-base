@@ -1,0 +1,19 @@
+- 总述
+  - $\alpha$含义：独立于市场的超额收益
+    - 参考[[2-intro]]
+    - 和$\beta$（放大市场）相对
+  - "beat the market"
+  - 也可以指代信号（数据特征）
+  - 抓住市场中噪声，浮现出的机会。手慢市场就回到平衡了！
+- DESIGNING ALPHAS BASED ON DATA
+  - 从数据中找！
+  - 可用的操作：如四则运算，`diff, shift, rank, corr`（参考[[time-series]]，[[rolling]]等进行实操）
+- DEFINING QUALITY IN ALPHAS
+  - ratio of an alpha's daily return to daily volatility: information ratio
+  - 一般的要求：idea简单，表达式优雅，好的Sharpe比，不要过于敏感，多个地方work
+- ALPHA CONSTRUCTION, STEP BY STEP
+    - 分析数据
+    - 分析欲建模的价格变化的方面（建模对象）
+    - 建模
+    - 测试
+    - 如果好，提交！
