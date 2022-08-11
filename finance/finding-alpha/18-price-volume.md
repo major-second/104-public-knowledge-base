@@ -1,0 +1,27 @@
+- 量价因子和EMH当然天生敌对！
+  - 参考[[market-efficiency]]，[[2-perspectives]]等
+- Trading Frequencies
+  - 高频，每天多次调整portfolio
+  - 充分利用统计显著性，参考[[large-numbers]]大数定律
+  - 使IR更高
+  - 充分捕捉异常事件带来的机会
+  - 但要和trading cost平衡
+- Momentum-Reversion
+  - 很多时候看多个标的：之间关系，总体运动，异常值等
+  - 单个标的
+    - MACD, moving average convergence-divergence
+      - 两个不同均值相减
+    - ATR, average true range
+  - 很多时候单个体现trend，多个（一个industry内相对）体现reversion，参考[[3-alpha-models]]的分类
+  - 时间尺度决定是否revert，[[3-alpha-models]]也提到
+  - 举例：一个日内策略：前一天波动太过分了，今天就开盘收盘时（反前一天方向）进出一下
+  - 举例：趋势策略：连续若干天都高于均值就买 / 短期均值向上金叉长期均值 / 均值达到“$x-$天内最高”
+  - 年化return 10多点，shapre在0.54到0.62，不错不错
+- Integer Effect
+  - 心理作用
+  - 整数处有很多人
+  - “卖飞”，“套牢”，亏钱不舍得抛
+- Price–Volume with Other Types of Data
+    - 和其他结合！
+    - 如果能推测量价变化的原因，那就好了。例如看财报发布对量价影响
+- 总结：生命不息，循环往复，挖量价因子不止

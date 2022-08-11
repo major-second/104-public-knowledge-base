@@ -1,0 +1,19 @@
+- 总述
+  - 例子：均值回归思想，参考[[3-alpha-models]]
+  - 信息流向：数据 -> 信号 -> 具体交易操作，[[4-design]]也提到了
+  - 又一个例子：5天变化相对值
+- 评价指标
+  - return（“收益率”，正比于PnL比上booksize，表示利用效率）
+  - IR
+  - 最大drawdown回撤：最大的从局部极大值掉下来的亏损
+  - 胜率：多少天赢
+  - daily turnover：多快地换手，换手金额与booksize之比
+  - 每一交易的美元对应的pnl
+- 修正反馈过程
+  - 刚刚例子IR1左右，回报率30%多，最大回撤也30%多，风险太大
+  - 加上平衡风险的东西，就好看很多
+  - 还可以使用rank
+    - 比如Alpha3 = rank(Alpha1), Sum(Alpha3 value within same industry) = 0，虽然不严谨但你也知道什么意思
+  - 还可以一段时间内取mean，平滑
+    - turnover变少，IR，return提高，最大回撤不再剧烈
+  - 总之就是不断“反馈”，“调节”的过程
