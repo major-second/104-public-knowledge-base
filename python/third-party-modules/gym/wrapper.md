@@ -34,7 +34,7 @@ class ObservationWrapper(gym.ObservationWrapper):
         return obs
 ```
 注意继承之后，wrapper仍然是“输入的是环境，输出的也是环境”
-- 来看一个现成轮子：
+- 来看一个现成轮子：`FrameStack`
 ```python
 >>> import gym
 >>> env = gym.make('CartPole-v0')

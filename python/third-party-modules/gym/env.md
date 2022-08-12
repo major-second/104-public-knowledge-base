@@ -1,7 +1,8 @@
+[toc]
 ## 前置
 - `pip install gym[all]`
-  - 你如果只`pip install gym`就只能使用一部分功能，比如`render()`用不了
-## 调用现成
+  - 你如果只`pip install gym`就只能使用一部分功能，比如`CartPole-v1`环境的`.render()`用不了
+## 调用现成环境
 ### 初体验
 ```python
 >>> import gym
@@ -29,7 +30,7 @@ AssertionError: 2 (<class 'int'>) invalid
 ...  _ = env.render() # 避免print出许多True
 ```
 可以看到不停`1`意为一直往右
-## 自己的环境
+## 写自己的环境
 - [参考](https://blog.csdn.net/qq_33446100/article/details/118249795)
 ### 最简单：重载`__init__, step, reset`
 - 定义环境
