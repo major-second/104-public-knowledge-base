@@ -2,12 +2,17 @@
   - `git branch -m new_name`
     - 参考`git branch -h`帮助[[help]]
     - 结果：`-m, --move            move/rename a branch and its reflog`
+    - 这样就把本地的`main` branch直接重命名成了你自己的branch
+  - 当然，也可以`git branch new_name`直接新建
   - 然后始终用自己的branch
   - `git push <一般是origin> new_name`就可以指定push到自己的branch
   - 觉得告一段落了，就给团队管理者发pull request
     - 在github或[[other-hubs]]的网页上发
+- 删除branch
+  - 如果fully merged，可以`git branch -d name`安全删除
+  - 确认不要，则可以`git branch -D name`强制删除
 - branch的一个应用
   - 参考[[temp-solution]]
-  - 可以临时创建一个branch再`-d`删除，从而解除[[detached]]状态
-- 注：github默认branch以前是`master`，现在是`main`，因为种族歧视黑人（……）
+  - 即：可以临时创建一个branch再`-d`删除，从而解除[[detached]]状态
+- 注：github默认branch以前是`master`，现在是`main`，因为`master`和slave涉嫌种族歧视黑人（……）
 - [[checkout]]和branch密切相关

@@ -47,7 +47,10 @@
   - 所以有可能人工求解一下，然后确定几个重要节点，以帮助求解器解决
   - 碰到过的例子：`mmaction`（高级）依赖于`sklearn`（低级），`sklearn`依赖于python版本。`pip`自动求解出`sklearn`版本`1.1.1`，结果不行。于是手动在安装`mmaction`之前`pip install sklearn==1.0.2`，之后即可正常安装高层的`mmaction`
 # 查看版本号
-- 往往是`--version, -V, -version`等
+- 命令行：往往是`--version, -V, -version`等
   - 如`ffmpeg -version`
   - `python -V`
   - 特殊：`uname -a`看`ubuntu`版本
+- `python`包经常有`__version__`属性，如`torch.__version__`
+- 有时可以使用[[pip]]这种包管理器查看所有包信息，自然也包括版本
+  - 注意结合[[find-grep]]使用，如`pip list | grep torch`

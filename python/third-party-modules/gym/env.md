@@ -3,6 +3,7 @@
 - `pip install gym[all]`
   - 你如果只`pip install gym`就只能使用一部分功能，比如`CartPole-v1`环境的`.render()`用不了
 ## 调用现成环境
+- 有些字符串作为标识符，是[[register-classes]]了的。比如这里的例子`CartPole-v1`
 ### 初体验
 ```python
 >>> import gym

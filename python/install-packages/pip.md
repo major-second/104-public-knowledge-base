@@ -25,8 +25,10 @@
 pip 22.2.1 from /home/<用户>/anaconda3/envs/<conda环境>/lib/python3.7/site-packages/pip (python 3.7)
 pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.6)
 ```
-- 普通使用：直接`pip install 包名`
+- 普通使用
+  - 一般直接`pip install 包名`
   - 根据前述讨论，当你在`conda`环境中，有可能需要`python3 -m pip install`
+  - 有时（如[[gym/env]]，[[rllib/basics]]等）可能出现`包名[额外说明]`格式，例如`gym[atari]`
 - 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
     - clone源码，进去
     - `pip install -e .`
