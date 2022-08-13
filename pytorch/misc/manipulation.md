@@ -4,14 +4,15 @@
 ## 一元
 ### 切片参考[[indexing]]
 ### `where`
-- 一元`where`一个布尔张量，输出为`True`的那些指标。输出是个元组，元组每个元素对应原始张量一个维度
+- 一元`where`一个`uint8`张量，输出为`True`的那些指标。输出是个元组，元组每个元素对应原始张量一个维度
 - 如`torch.where(torch.arange(8).reshape(2,2,2) % 3 == 0)`
 - 输出三元组`(tensor([0, 0, 1]), tensor([0, 1, 1]), tensor([0, 1, 0]))`
 - 也就是`[0,0,0], [0,1,1], [1,1,0]`三个地方
 - 分别对应`0, 3, 6`
 - 结合“切片”，容易验证`t = torch.arange(8).reshape(2,2,2); s = torch.where(t % 3 == 0); t[s]`结果就是`0, 3, 6`
+- 注：有些`torch`版本里，`where`只有三元的那个，那就用`nonzero`
 ## 三元
-`where`和`scatter_`有点类似，都是把两个张量通过第三个张量指示进行“合并”
+三元`where`、三元`scatter_`有点类似，都是把两个张量通过第三个张量指示进行“合并”
 ### `where`
 - `torch.where(condition, x, y)`
 逐元素判断condition是否成立，若成立，该元素取x中对应元素，否则取y中对应元素.

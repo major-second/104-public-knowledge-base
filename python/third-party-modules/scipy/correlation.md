@@ -1,0 +1,5 @@
+- `scipy.stats.pearsonr(x, y)`
+  - 参考[[unary]]中相关系数部分
+- `scipy.stats.spearmanr(x, y)`
+  - 应用：例如[[12-robust]]中，使用`rank`排序，并计算Spearman相关系数，作为一种考察相关性的方式
+- `x, y`例如可以都是同样长度的`list`

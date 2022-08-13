@@ -32,3 +32,4 @@
 - `np.power(底数, 指数)`
   - 注意妥善处理涉及负数的问题。比如`np.power((a > 0) * a, alpha) - np.power((a < 0) * -a, alpha)`
 - `arr`有`.mean(), .min(), .max(), .sum()`等常用方法可以直接求常用值
+- `np.linalg.norm(向量)`求模长，也可以`np.linalg.norm(a - b)`求距离

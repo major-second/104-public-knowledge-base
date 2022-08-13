@@ -10,6 +10,7 @@
   - ranking
     - [[time-series]]中常用的`.rank()`就是。一般`pct=True`，搞到$[0,1]$
     - 可用来计算[[spearman]]相关系数
+      - 实现：如参考[[scipy/correlation]]
     - 单调变换保持不变
   - quantiles approximation：如最小化平方残差的分位数（"median squares minimization）
 - Approximation to Normal Distribution

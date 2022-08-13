@@ -38,4 +38,4 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 - `git pull`命令变种
   - `--recursive`选项：可递归pull [[submodule]]
   - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
-- 如果你有多个分支，`git pull`可能只是把远程数据拉下来，但本地的`main`这种tag还在原位。需要`git pull origin main`才把本地的`main`也同步到对应`origin/main`的位置
+- 如果你有多个分支，那需要指定`git pull origin main`这种，才把本地的`main`也同步到对应`origin/main`的位置

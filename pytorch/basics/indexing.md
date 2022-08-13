@@ -16,6 +16,7 @@
   - `a[list(torch.triu_indices(3, 3))] = torch.arange(6) # 即上三角处依次0至5`
   - `a[list(torch.triu_indices(3, 3, 1))] = torch.arange(7, 10) # 偏离1，即对角线不算入`
     - 注：`list()`一下感觉是个tricky issue，反正一些版本pytorch如`1.1.0`中不`list()`会导致结果不是预期的上三角部分
+    - 注：`tril_indices()`相应是下三角，“偏离”方向仍然是正向“右上”，负向“左下”。所以`tril_indices`中`-1`比较常用
   - `a`结果为
 ```python
 tensor([[0, 7, 8],
