@@ -1,0 +1,24 @@
+- 总述
+  - 涨了还涨，跌了还跌
+  - 用的人多？总之表现逐渐下降，大家开始refine
+- 理论
+  - 行为模型：conservatism bias，遇到新信息没有马上反应过来
+  - 有时：上涨早于利好
+  - analysts也会reluctant，怕枪打出头鸟
+  - abnormal momentum理论：短期动量，长期还要回归！
+  - 有人认为momentum的投资者高风险，所以值得高回报
+  - 实践中
+    - 高spread（买一卖一差）的收益高（但有流动性风险、交易成本）
+    - 没太多人关注分析的动量效应高（显然）
+    - growth stocks（账面价值相对市值低）动量效应高（因为难估计价值）
+    - 高量：产生public info，交易成本低，大家难估计它的价值，很多人愿意交易
+- 和其它因子关系
+  - 有时它（给其他alpha）造成风险exposure，所以可以中性掉
+  - 有时它是主要贡献（如seasonality）
+  - momentum本身具有周期性，和财报等有关
+- 其它方法
+  - 可以使用宏观经济factor回归，认为回归结果有动量。逆向工程出factor等
+  - 可以看一组的动量
+  - 可以看industry returns
+  - lead-lag effect: 轮流动
+    - 还可能和供应链有关

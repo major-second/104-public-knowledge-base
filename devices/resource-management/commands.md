@@ -1,0 +1,8 @@
+- 查看硬件资源占用等
+  - 参考[[monitor]]
+  - [[4-more-commands]]提到的`ps`：有哪些进程
+  - [[ubuntu-nvidia-drivers]]提到的`nvidia-smi`：看gpu
+  - 还有交互式的`top`，`nvitop`
+    - `htop`可以看有多少核，多少内存等
+    - `nvitop`是爱好者写的同时看CPU，GPU，内存等的包
+  - `fdisk -l`，`df -h`，`du -h`等看和硬盘相关
