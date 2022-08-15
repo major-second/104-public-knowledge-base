@@ -2,13 +2,14 @@
 - [[git-basics/installation]]
 - linux需要`apt install openssh-client`
   - windows在安装git时应该默认安装好了（要是没有就自己补）
-- 了解[[generate-key-pair]]
+- 了解[[generate-key-pair]]，[[check-connectivity]]
 
 ## 概述
-- `git clone`https链接不需要加ssh密钥
-- 但ssh链接需要
-  - `--recursive`地`git clone`子模块时，默认用ssh链接！所以需要添加密钥
-具体操作：参考[官方教程](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+- `git clone`https链接不需要加ssh密钥，但ssh链接需要
+- 何时需要ssh链接？
+  - `--recursive`地`git clone`子模块时，默认用ssh链接
+  - 有时`https`链接玄学`clone`不了，那就要用`ssh`链接
+- 具体增加ssh密钥的操作参考[官方教程](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 ## 得到文本
 查看是否有公钥`ls -al ~/.ssh`
 - 有`id_ed25519.pub`的话跳过生成，直接`cat`它

@@ -1,0 +1,34 @@
+- 总述
+  - 流动性，价格及其不确定性，订单簿形状，bid-ask距离等
+  - 会影响成交量（成交结构）（从而直接影响其它alpha性能）
+  - 间接影响其它alpha性能
+  - 甚至自己做alpha
+  - market microstructure
+    - 分几类投资者，分析行为！
+    - 如平衡处spread产生的原理
+- DATA IN MARKET MICROSTRUCTURE
+  - 市场种类
+    - quote-driven：market makers or dealers说我能以什么价买到，保证投资者可以来买。
+      - 流动性：投资者是否能短时间执行一个接近共识价格的单
+    - order-driven：看到别人量价数据，自己可以出价，公开透明
+    - 有杂交版
+    - alpha research重点关注后者
+  - order种类
+    - 两种。limit限价，不到什么价我不买/卖，market市价，吃现在的
+    - 前者提供流动性，后者消耗流动性
+    - 看order book形状自然可计算marginal execution price和order size的关系（单调），从而得到average execution price（单调，有bid-ask spread），total transaction cost（size越大cost越多且一般比线性增长快）
+- THE ILLIQUIDITY PREMIUM IN ASSET PRICES
+    - bid-ask speard越大（流动性弱），return高！理由：因为交易成本高，没有免费午餐，所以一定要cover交易者的这部分损失
+      - 要拿这个赚钱，需要持仓久，少调仓
+    - 还有其他proxy（代理）指标，如Amihud illiquidity, the average daily ratio of the absolute stock return to dollar volume
+      - 这个大就说明价格变动多，成交量不大，当然就说明流动性低
+      - 有正向效果（premium）
+    - liquidity横向纵向比较都有变化
+      - 如金融危机导致speard突变，liquidity突变
+    - 这也有risk premium：流动性敏感的那些风险高，相对应收益高
+    - 小盘股和大盘股可能在应对liquidity shock时反应是正交的
+    - liquidity与intra-day
+      - 可以利用intra-day的一些稳定模式提升alpha性能，如开收盘附近U形（成交量大，return波动率大），bid-ask spreads倒J形
+      - 之前是经验，现在我们考察一些市场微观结构的理论
+- MARKET MICROSTRUCTURE AND EXPECTED RETURNS
+  - 

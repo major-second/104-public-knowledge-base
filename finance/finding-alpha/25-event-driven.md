@@ -1,0 +1,2 @@
+- 总述
+  - opportunities created by significant transactional events，如关停并转

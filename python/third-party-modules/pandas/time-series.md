@@ -51,6 +51,11 @@
     - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
   - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
     - 所以对两种出来结果再切片时效果也当然不同
+## 迭代
+- 直接`for k in df`得到的是键的列表，类似于迭代字典
+- 如果`for k in df.iterrows()`可以按行迭代
+  - 但如果你（经常）用这个，不妨先看看怎么[[parallelism]]并行，要不然你pandas约等于白学233
+- `for k in series`当然是按顺序一个一个来，这点可以看出有1个字段的`DataFrame`和`Series`不同
 ## 进阶
 - [一个参考](https://blog.csdn.net/weixin_42033491/article/details/108104305)
 - `groupby`和`shift`，`diff`
