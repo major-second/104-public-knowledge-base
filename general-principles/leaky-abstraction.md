@@ -48,6 +48,9 @@
     - [[partition]]中，直接移动系统盘分区是不行的
     - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
   - 在[[container]]中的程序占用内存过多可能导致[[container]]外的也因为内存不足崩溃
+  - 例如[[vpn]]被[[proxy/usage]]影响
+    - 你以为[[proxy/usage]]客户端开着，不[[configure]]就没事？那不一定
+    - 你以为代理和有些vpn能一起用了，那我关掉代理就能“正交”切换不影响vpn？那不一定
 - 例如：你以为应该表现一样的实则不一样
   - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug
     - ![](pandas-tricky.png)

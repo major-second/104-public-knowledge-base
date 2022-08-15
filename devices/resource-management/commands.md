@@ -1,8 +1,16 @@
-- 查看硬件资源占用等
-  - 参考[[monitor]]
-  - [[4-more-commands]]提到的`ps`：有哪些进程
-  - [[ubuntu-nvidia-drivers]]提到的`nvidia-smi`：看gpu
-  - 还有交互式的`top`，`nvitop`
-    - `htop`可以看有多少核，多少内存等
-    - `nvitop`是爱好者写的同时看CPU，GPU，内存等的包
-  - `fdisk -l`，`df -h`，`du -h`等看和硬盘相关
+- `fdisk -l`，`df -h`，`du -h`等看和硬盘相关
+- [[4-more-commands]]，里面有`ps`，`watch`等常用指令
+  - `ps`看进程情况
+  - `watch`可以结合本篇的其它指令，每隔一定时间自动更新。往往结合[[tmux]]挂着使用
+- `top`看cpu和内存，含义[参考](https://blog.csdn.net/xiaoxiao_chen945/article/details/121038280)
+  - `q`退出
+- `htop`：改进版`top`
+  - 安装：`sudo apt install htop`
+  - `htop`使用，`q`退出
+  - 很方便看多少核，多少内存，使用情况等
+- 爱好者写的可交互看显卡、cpu、内存的[python包](https://www.zhihu.com/question/376875425/answer/1728922058)：`nvitop`
+  - 需要[[pip]]
+  - 安装：`pip3 install git+https://github.com/XuehaiPan/nvitop.git#egg=nvitop`
+  - `nvitop`使用，`q`退出
+- `nvidia-smi`看显卡使用情况
+  - 需要[[ubuntu-nvidia-drivers]]
