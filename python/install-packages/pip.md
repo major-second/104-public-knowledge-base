@@ -53,4 +53,5 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
   - 要不然直接编辑文件
   - 要不然使用`pip config`命令（需要较新[[version]]）
   - 比如`pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`使用清华源
+  - 比如`pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple`使用科大源
 - `sudo rm -r ~/.cache/pip`清除[[general-principles/cache]]

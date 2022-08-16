@@ -51,11 +51,17 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restri
 - 个人、非官方。对于不主流软件，不主流版本等可能需要添加`ppa`. 当然有安全风险
 - 举例`apt install -y software-properties-common; add-apt-repository -y ppa:jonathonf/ffmpeg-4; apt update; apt install -y ffmpeg`
 ## troubleshooting
-- 如果certificate（证书）出问题，可以重装`ca-certificates`试试
+- 如果certificate（证书）出问题
+  1. 重装`ca-certificates`试试
   - 如果可以正常重装，那就正常重装
-  - 否则[参考这篇](https://blog.csdn.net/Chaowanq/article/details/121559709)
+  - 如果死锁了（重装`ca-certificates`本身需要证书
+    - 则[参考这篇](https://blog.csdn.net/Chaowanq/article/details/121559709)
     - 这是用[[temp-solution]]思想（临时使用`http`而非`https`，装好了再换回`https`）
     - 当然如果适当舍弃安全，也可以一直用`http`而非`https`
+  2. 如果重装`ca-certificates`无效，则可能是[[nat]]，[[proxy/usage]]等中间过程引起的问题，例如在docker容器中使用`apt`，或物理机通过[[nat]]服务，[[proxy/usage]]服务时，都会导致`Certificate verification failed: The certificate is NOT trusted.`
+    - [参考](https://askubuntu.com/questions/1095266/apt-get-update-failed-because-certificate-verification-failed-because-handshake/1210812#1210812)
+    - 此时，如果你信任你的源（例如在没有[[nat]]服务的机器上可以正常使用该源，说明其安全），就可以手动信任它
+    - 即在`/etc/apt/apt.conf.d/99verify-peer.conf`（`.d`的含义参考[[settings-and-configurations]]）中增加一行`Acquire { https::Verify-Peer false }`
 - `Conflicting values set for option Signed-By regarding source ...`问题参考[这个](https://askubuntu.com/questions/1329308/sudo-apt-get-returns-conflicting-values-set-for-option-signed-by-regarding-s)，只需要把出问题的`gpg`和`list`都删掉就可以了
   - 这是[[refresh]]的一个例子
   - 删除`某某.d/.list`文件的操作参考[[settings-and-configurations]]中涉及`.d`的部分进行理解
