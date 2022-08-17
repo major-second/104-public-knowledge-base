@@ -17,7 +17,9 @@
   - 首先新GPU（如3090）不能使用老cuda如10.x
     - 否则可能`torch.cuda.is_available()`是`True`，但是跑起来就报`RuntimeError: NCCL error in: /pytorch/torch/lib/c10d/ProcessGroupNCCL.cpp:38, unhandled cuda error, NCCL version 2.7.8`这种东西
   - 其次[[ubuntu-nvidia-drivers]]中`nvidia-smi`显示的版本（一般）是你能用的cuda版本上限，[参考](https://www.jianshu.com/p/eb5335708f2a)，[具体参考nvidia官网文档](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#cuda-intro)
-  - 再次，新创立的环境是最保险的。已经装了其它东西的环境可能会干扰[[dependencies]]的求解，导致解出cpu版本的torch（在conda安装确认的界面能看到是否准备装cpu版本的）
+  - 再次，新创立的环境是最保险的
+    - 已经装了其它东西的环境可能会干扰[[dependencies]]的求解，导致解出cpu版本的torch（在conda安装确认的界面能看到是否准备装cpu版本的）
+    - 有时用[[pip]]和[[find-grep]]结合，`pip list | grep torch`，然后把能看到的torch版本全部卸载，即可正常重装。这就是一个[[refresh]]的例子
 - 一个坑：[[non-standard]]的[[channel]]里可能缺少一些版本，导致只能给你cpu版本的
 # 改环境变量，指定用卡
 - 必须在access相关东西之前，就改[[6-env]]环境变量才行

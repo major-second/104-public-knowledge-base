@@ -1,22 +1,33 @@
 俗话说得好，重启，重装，重买
-- [[zsh]]中更新默认shell需要**重新登录**
-- [[6-env]]中**重开终端**相当于`. ~/.bashrc`了，可以作更新
-- [[assets]]中vulkan相关错误在**重装**vulkan sdk后需要**重启**
-- [[timeshift]]和tmux的互动可能把tmux弄崩，**重装**tmux并**重启**即可
-- [[special-files]]提到`git rm --cache`命令删除已经被track的文件，并更新`.gitignore`，可能需要**重启**vscode才生效
-- [[windows/env-var]]的添加需要**重启**vscode才在vscode集成的powershell中生效（只重启powershell没用）
-- [[dot-ssh]]中的**重新创建文件夹**
+## 重启
+- [[zsh]]中设置默认shell为`zsh`需要**重新登录**
+- [[special-files]]提到
+  - `git rm --cache`命令停止track某些**已经被track的**文件
+  - 并更新`.gitignore`，使得**接下来它们被忽略**
+  - 这可能需要**重启**vscode才能让vscode识别此事实
+- [[windows/env-var]]的添加：需要**重启**vscode才在vscode集成的powershell中生效
+  - 只重启终端不重启vscode还没用
 - [[jupyter-notebook/basics]]中提到的用`Restart`使得`.py`文件的改动生效
-- [[software-management/source]]中处理`Conflicting values set for option Signed-By regarding source ...`
-- `d3dx9_42.dll`出错？重装DX即可
-- 还有最经典的设置东西之后要更新。包括但不限于
+## 重装（可能也要重启）
+- [[assets]]中vulkan相关错误在**重装**vulkan sdk后需要**重启**
+- [[timeshift]]和[[tmux]]的互动可能把tmux弄崩，**重装**tmux并**重启**即可
+- 打开游戏时`d3dx9_42.dll`出错？**重装**DX即可
+- [[torch-cuda]]中提到有时[[conda/commands]]和[[pip]]**卸载**已有的[[pytorch/basics/installation]]就能**重装**成功GPU版本的`torch`
+## 更新文件
+- [[dot-ssh]]中的**重新创建文件夹**
+- [[software-management/source]]中处理`Conflicting values set for option Signed-By regarding source ...`的方法：删掉并**重新写文件**
+- 及时**删除**[[general-principles/cache]]并**重新生成**，防止接下来使用错误的缓存文件
+## 硬件层面
+- [[interface]]提到的重新插拔接口
+  - 比如[[wired-connection]]
+  - 比如[[troubleshooting]]
+- 例如[某款耳机控制键用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
+- 手机[[android/battery]]不耐用了直接换电池
+## 其它
+- [[settings-and-configurations]]设置东西之后要**更新**。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
+    - [[6-env]]中**重开终端**相当于`. ~/.bashrc`了，可以作更新
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
   - [[software-management/source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
-- 硬件层面的重置或初始化
-  - [[interface]]提到的重新插拔接口
-    - 比如[[wired-connection]]
-    - [[troubleshooting]]
-  - 例如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
