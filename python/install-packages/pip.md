@@ -52,6 +52,8 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
 - [[settings-and-configurations]]
   - 要不然直接编辑文件
   - 要不然使用`pip config`命令（需要较新[[version]]）
-  - 比如`pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`使用清华源
+  - 比如`pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`使用清华源（不翻墙时更快）
   - 比如`pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple`使用科大源
+  - 但是清华、中科大等源可能缺东西。可以`-i https://pypi.python.org/simple/`使用`pypi`源
+    - 只要下载一次[[general-principles/cache]]了，以后就可以在本地用
 - `sudo rm -r ~/.cache/pip`清除[[general-principles/cache]]

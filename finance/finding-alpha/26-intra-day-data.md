@@ -1,11 +1,11 @@
 - 总述
   - 流动性，价格及其不确定性，订单簿形状，bid-ask距离等
   - 会影响成交量（成交结构）（从而直接影响其它alpha性能）
-  - 间接影响其它alpha性能
+  - 会间接影响其它alpha性能
   - 甚至自己做alpha
   - market microstructure
     - 分几类投资者，分析行为！
-    - 如平衡处spread产生的原理
+    - 如：平衡处spread产生的原理
 - DATA IN MARKET MICROSTRUCTURE
   - 市场种类
     - quote-driven：market makers or dealers说我能以什么价买到，保证投资者可以来买。
@@ -31,4 +31,22 @@
       - 可以利用intra-day的一些稳定模式提升alpha性能，如开收盘附近U形（成交量大，return波动率大），bid-ask spreads倒J形
       - 之前是经验，现在我们考察一些市场微观结构的理论
 - MARKET MICROSTRUCTURE AND EXPECTED RETURNS
-  - 
+  - `intraday data enables analysis of the interaction among market participants`
+  - 为经验模式提供理论解释！
+  - price discovery
+  - informed, uninformed, specialist等的差异
+    - informed：估值，高卖低买
+    - uninformed：存钱取钱一样，没有特别思考（liquidity purposes）
+    - 专家：做市、套利等
+  - 比如一个模型：假设专家风险中性，以及给出一堆假设，能找到买卖价、spread的平衡点
+    - 专家从uninformed赚钱，但送给informed钱
+  - 比如一个模型：$\delta$概率有利好，带来额外的informed交易，也有可能有利空，也有可能没消息（那就泊松发生交易），极大似然估计[[mle]]一些隐变量，然后发现return和spread正相关
+  - 还能引入更多种类的交易者，例如heuristic，然后发现这部分越多，return也越高
+  - 但是这些一般都要[[mle]]，很花时间，且低频。改进：DPIN模型等
+    - DPIN想法：informed交易量大且抓住涨跌方向
+    - FSRV：daily returns unexplained by market movements，由刚刚的模型得到和PIN正相关！
+  - 改善alpha性能：如利用PIN，预测避免大回撤
+    - 如VPIN逃顶flash crash
+    - 如dot-com泡沫，雷曼兄弟破产等前都有征兆
+  - PIN多的：反转多，时间序列不平稳且技术能解释的少，不适合纯技术分析的quant
+    - 但基本面的那些因子倒是更有用了
