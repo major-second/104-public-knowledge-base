@@ -30,6 +30,8 @@
   - 有时，有序列号可以升级到高等级
     - 如[[windows/upgrade]]
   - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
+- 有时出现有趣现象：标记变成本体
+  - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种
 # 版本依赖相关
 - 举例体验：[[pip]]中提到：本地（非虚拟环境）用的是`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`
   - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
