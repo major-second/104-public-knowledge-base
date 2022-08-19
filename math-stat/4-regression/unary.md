@@ -3,8 +3,10 @@
   - 恒成立的：$\bar y = \hat a + \hat b \bar x$
   - 记$l_{xy}=\sum (x_i-\bar x)(y_i-\bar y)$，同理$l_{xx},l_{yy}$
     - 参考[[character/var]]中的处理手法，还可以写成$l_{xy}=\sum x_iy_i -n\bar x\bar y$
+    - 其实这里的$l_{xx}$就是[[character/var]]的$n$倍嘛，$l_{xy}$对应[[cov]]
 - 公式：$\hat b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum (x_i-\bar x)^2}=l_{xy}/l_{xx}$
   - 当然有$\hat y_i - \bar y = \hat b(x_i-\bar x)$，这对后面拆平方和有作用
+  - 其和[[character/var]]，[[cov]]当然有联系：就是协方差除以方差
 - 关系强不强呢？
   - 对于给定数据集，$l_{yy}=\sum (y_i-\bar y)^2$为常量
   - 其可拆成两部分$\sum (y_i-\hat y_i)^2$和$\sum (\hat y_i - \bar y)^2$

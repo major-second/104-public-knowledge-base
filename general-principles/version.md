@@ -52,7 +52,10 @@
   - 适当放宽
     - 有些时候原始的库会指定很多版本约束，但实际上能跑的范围比它的要宽，你就可以手动放宽
     - 有些时候适当舍弃部分功能/微调部分代码即可大幅放宽约束，那就自己动动手吧（很多时候无非就是把`deprecated`的去掉而已
+    - 举例：`tape_proteins=0.5`这个包要求`pytorch=1.10.2`，这种严格要求甚至在部分显卡型号（参考[[torch-cuda]]）上会导致解出cpu版本的torch，但实际上不一定要是这个版本
+      - 所以可以用[[temp-solution]]思想，先装cpu torch把`tape_proteins`的检测应付掉，再`pip`装一个gpu的torch（过程中会卸载旧的torch）
   - 可能被已有的东西干扰，在新环境就能很好求解，参考[[torch-cuda]]在非全新conda环境装`torch`可能导致解出cpu版本，重装[[refresh]]可能解决
+  - 可能直接换个求解器（包管理器）就解决了。比如[[conda/installation]]不行就换成[[pip]]
 # 查看版本号
 - 命令行：往往是`--version, -V, -version`等
   - 如`ffmpeg -version`

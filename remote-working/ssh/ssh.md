@@ -1,0 +1,13 @@
+- 基础：`ssh user@ip`
+  - `ip`也可能是域名
+  - 参考[[dns]]，[[公网ip]]等
+- 使用指定[[generate-key-pair]]中的私钥：`-i <文件名>`
+  - 请参考[[private-key-permissions]]
+- 指定端口：`-p`（默认`22`）
+  - 注意区别于[[scp]]
+- 远程[[forward-port]]：远程访问某个端口变成访问本地的端口：`-R`
+  - 例如`ssh -R 18889:localhost:8889 user@ip`，你本地`8889`有个[[configure]]好的代理，那远程就可以用`18889`端口使用代理
+  - 当然可用于翻墙的[[temp-solution]]
+- 本地[[forward-port]]：本地访问某个端口变成访问远程的端口：`-L`
+  - 例如`ssh -L localhost:11111:localhost:20171 user@ip`，你远程`20171`有个[[configure]]好的代理，那本地就可以用`11111`端口使用代理
+  - 当然可用于翻墙的[[temp-solution]]

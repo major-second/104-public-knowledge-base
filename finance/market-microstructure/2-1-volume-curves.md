@@ -1,0 +1,3 @@
+- 监管部门开新渠道，不是所有人都用
+- 不同投资人的倾向 -> volume patterns, 乃至intraday patterns
+- 一些事件会invoke（如就业报告）

@@ -20,6 +20,7 @@
   - 再次，新创立的环境是最保险的
     - 已经装了其它东西的环境可能会干扰[[dependencies]]的求解，导致解出cpu版本的torch（在conda安装确认的界面能看到是否准备装cpu版本的）
     - 有时用[[pip]]和[[find-grep]]结合，`pip list | grep torch`，然后把能看到的torch版本全部卸载，即可正常重装。这就是一个[[refresh]]的例子
+  - 这些兼容性问题除了你直接安装引起，还有可能是上层包指定的版本依赖引起的，参考[[version]]中`tape_proteins`的例子
 - 一个坑：[[non-standard]]的[[channel]]里可能缺少一些版本，导致只能给你cpu版本的
 # 改环境变量，指定用卡
 - 必须在access相关东西之前，就改[[6-env]]环境变量才行

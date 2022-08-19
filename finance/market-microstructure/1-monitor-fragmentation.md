@@ -20,3 +20,5 @@
 - 兵分几路，最小化总的impact
 - agnostic: 不可知
 - SOR当然要和数据仓库连，有合规要求，与execution policy一致等
+# 1.3: tick size
+# 1.4: dark pool黑市

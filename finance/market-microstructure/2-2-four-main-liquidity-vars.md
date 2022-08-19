@@ -1,0 +1,12 @@
+- 交易额当然反映流动性。流动性好，你挂限价单方便
+  - 但这当然不能反映全部
+- 交易额的natural counterpart: 一档量
+  - 回忆[[1-monitor-fragmentation]]：大tick下看一档就够，否则多看几档
+  - 实际上，一档量可能回复，你吃了又回复。也可能“一下砸穿”
+  - 总之，一档量反映流动性提供者的意愿
+- spread
+  - [[1-monitor-fragmentation]]有详细说明
+  - 有一个$a+b\sigma_i/\sqrt {N_i}$的经验模型：$\sigma$是volatility，$N_i$是一天交易数
+  - tick太大，公式会有调整
+- volatility
+- 四大变量在一天内都有模式

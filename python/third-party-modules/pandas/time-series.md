@@ -13,6 +13,7 @@
 - `df.dtypes`类型
 - `df.head(3)`, `df.tail(3)`, `df.sample(3)`看示例
 - `pd.concat(<DataFrame组成的表，元组等>)`：参考[[manipulation]]，有点像，在时间维上拼起来
+- `df.append(df1)`：在后面拼接
 ### `index`
 - 一行是一个数据条目，一列是一种属性（feature）
   - 默认先说属性再说时间范围（数据条目）
