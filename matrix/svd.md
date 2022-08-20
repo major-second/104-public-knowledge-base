@@ -1,7 +1,18 @@
-直观几何思想：正交变换，伸缩同时升降维，再正交变换
+- 直观几何思想：正交变换，伸缩同时升降维，再正交变换
+- 表示成式子：$A = U\Sigma V$，$U,V$是正交阵，$\Sigma$是（伪）对角阵
+  - 哪个是长方形哪个是正方形都可以商量哈
+  - 对角，那就往往是降维、伸缩
+  - 而正交阵有可能用作升维，具体地，在$n$维空间中放$m$个（$m<n$）向量组成的单位正交基
+- 例：[[11-feature-selection]]中我们需要使$X-ba$的Frobenius范数最小，即找和$X$离得最近的秩为1矩阵
+  - 写成$X-ba = U(\Sigma - Y)V$，那$Y$就很明显了，应该把最大奇异值干掉
+    - 这个“应该”证明留作练习
+    - 提示：[[euler-angle]]
+    - 比如$diag(2,1)$，对应了最小化$(2sin\alpha)^2 + (sin\beta)^2,s.t. cos^2\alpha+cos^2\beta=1$
+  - 当然为了稀疏性，并没有直接用奇异值分解结果
 - 例题：$A_{m\times n}A^T=I,m<n$，证明$||Ax||\le ||x||$
   - $A$几何上相当于$n$维空间中$m$个正交单位向量
   - 现在$Ax$这样弄，结果直观上相当于把正交坐标系“弄歪”，然后每一维求和，然后每一维依次$x_i$的比例伸缩
-  - 那么你就把它扶正，也就是$$\left (\begin{matrix} A\\B \end{matrix}\right )$$是正交方阵，记为$T$，那么$Ax$就是$$\left(\begin{matrix}I&0\end{matrix}\right)Tx$$
+  - 刚刚的正交坐标系“不全”（“轴数量小于空间维数”），所以我们补全
+  - $$\left (\begin{matrix} A\\B \end{matrix}\right )$$是正交方阵，记为$T$，那么$Ax$就是$$\left(\begin{matrix}I&0\end{matrix}\right)Tx$$
   - 所以$||Ax||\le ||Tx||=||x||$
   - 当然，这里是[[leaky-abstraction]]. 你也可以直接调奇异值分解包，认为$A = U\Sigma V$，那么$||Ax||=||\Sigma Vx||\le ||Vx||=||x||$
