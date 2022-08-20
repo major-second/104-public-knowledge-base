@@ -2,6 +2,7 @@
   - [[docker/installation]]
   - 宿主机有[[ubuntu-nvidia-drivers]]
   - 了解[[software-management/source]]和[[systemd]]有助于理解本文档内容
+    - 本文命令针对[[systemd]]，不能使用[[sysvinit]]
 
 [参考文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 对于官方文档一来的`Setting up Docker`一节，如果你已经[[docker/installation]]过，就可以省略

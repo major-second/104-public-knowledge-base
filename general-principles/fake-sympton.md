@@ -2,9 +2,10 @@
 - 比如[[leaky-abstraction]]提到的没有把底层报错给出
 - 比如进度条
   - [[timeshift]]时会在0%狂卡，一旦开始就走的不慢
+  - [[timeshift]]备份时，乃至[[cp-mv-rm]]等时，文件大小和文件数量显然也都是进度条走动的重要影响因素
   - git按文件个数来计算进度，所以可能某个百分点卡很久，一过去就巨快
-    - 真正的原因是git本来就是为了同步一堆小文件，而不是存储大文件，参考[[push-eliminate-big-files]]
-  - [[timeshift]]备份时，乃至[[cp-mv-rm]]等时，文件大小和文件数量显然也都是重要影响因素
+    - 注：这么设计是因为git本来就是为了同步一堆小文件，而不是存储大文件，参考[[push-eliminate-big-files]]
+  - [[tmux]]的剩余时间是按已经跑过的部分进行计算的，所以涉及到GPU运算时可能需要先“预热”或cudnn加速等，要过一段时间稳定后才有参考价值
 - 比如报错信息
   - `make`时多线程，可能导致真正错误信息被埋起来
   - 很多时候最后输出的不是本质的错误，而只是一些警告或者可忽略的错误
@@ -15,3 +16,5 @@
   - [[mujoco-py]]安装时先提示失败一次是正常的，之后自动成功
 - 一个有意思的例子：[[v2raya]]中提到的`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`
 - [[brightness]]提到手机亮度太低让人以为没有显示
+- [[resource-management/commands]]看到的资源占用率因云服务器管理商的半虚拟化而可能不实
+  - 表面上只占了30%，但实际上到了虚拟界，导致你程序被kill

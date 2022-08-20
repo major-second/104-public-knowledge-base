@@ -1,0 +1,34 @@
+- CLOB系统：中心化，订单簿，撮合交易
+- RFQ：交易者向做市商要求数量，做市商报价，交易者比价成交
+  - 这个比价自动完成相当于有个LOB出来了（LOB-like）
+  - 典型：fixed income市场（债券等）
+  - 软件让RFQ变得越来越all-to-all，像CLOB了
+  - 然而变化需要时间
+- LOB好处
+  - 匿名多边交易
+  - 快速、同步，支持fragmentation，竞争比价
+  - 对买方（asset managers）、监管者有利，对卖方（broker等）不利
+  - 现代，没必要因为可能的逆向选择给做市商补偿了
+  - 做市商现在也知道orderbook dynamics了，不像五十年代，买方有很多很多信息，做市商没有
+  - 而且现在这种，交易者和做市商很难区分了
+- 不管哪一方，都需要分析orderbook dynamics！
+  - 本章内容不仅可用于LOB
+# Information reaching orderbooks
+- 一天开始，空
+- 出现卖价小于等于买价，则发生一笔公开交易，两笔（双方各自）private
+  - 在数据中心（所以数据中心地理位置重要，决定延迟）
+- 安全性：使用很多法语缩略语
+  - SLE：private，和你有关的order和应答信息
+  - SLC：每个人都能看到。orderbook state
+  - 交易所肯定会give an advantage to客户，所以SLE更快
+## A toy example
+- fair price 10，典型交易者可能设定9买11卖
+- 中途可能增删改
+- 出现匹配就进行交易，发出两私一公信息
+- 一些超出目前范围的讨论：order的附加信息。如阴阳order（iceberg），有效时间，immediate or cancel等
+- 与流动性密切相关：如市价吃单/撤单减少流动性，挂单增加流动性
+- 成交只能在第一档
+- 我们当然要考察order book当前状态对增删改的影响
+  - 更复杂的：考察外生变量
+  - 但现在暂时不管
+# Understanding via conditioning

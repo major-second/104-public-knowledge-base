@@ -5,3 +5,8 @@
 - impact和stock一些性质、order一些性质都有关
 - participation rate越大、**相同participation rate**时间越长，影响越大
   - 模型$Impact$正比于$Duration^{\alpha} * Participation^{\gamma}$
+  - 注意凹凸性
+  - 经过calibration，$\gamma$约为0.5
+# Market impact on a longer horizon: Price anticipation and permanent market impact
+- 考虑更长期（日频左右）
+- todo

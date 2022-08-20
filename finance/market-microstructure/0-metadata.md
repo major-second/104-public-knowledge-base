@@ -40,6 +40,7 @@
 > In the end, we might have gained from automated markets as costly human intermediaries are replaced by computers. And when a robot monitors the market for us, we will have more time to go out and enjoy the farmer’s market
 # Introduction
 ## Liquidity in Question
+- 注：实践中理解：[[3-3-orderbook]]信息与流动性关系。例如撤单/吃单减少流动性
 - 定性定义：容易买卖
 - 流动性风险：涨了卖不出去，然后价格降了
 - 为了流动性，牺牲利益（降价卖），改变价格：market impact

@@ -7,7 +7,7 @@
     - 分几类投资者，分析行为！
     - 如：平衡处spread产生的原理
 - DATA IN MARKET MICROSTRUCTURE
-  - 市场种类
+  - 市场种类（可参考[[3-3-orderbook]]）
     - quote-driven：market makers or dealers说我能以什么价买到，保证投资者可以来买。
       - 流动性：投资者是否能短时间执行一个接近共识价格的单
     - order-driven：看到别人量价数据，自己可以出价，公开透明
