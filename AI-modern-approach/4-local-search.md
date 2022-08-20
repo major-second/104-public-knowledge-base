@@ -38,10 +38,12 @@
   - 可计算empirical gradient，像是爬steepest方向的思想
   - 离散化的大小$\delta$可随时间衰减
 - 直接计算导数当然更好
-  - 全局=0好解直接解
+  - $全局=0$好解直接解（如[[3-linear-regression]]中最原始的最小二乘回归）
   - 否则$x\leftarrow x+\alpha\nabla f(x)$
+    - 拓展版本：[[11-feature-selection]]的近端梯度下降
   - line search: 不断翻倍$\alpha$直到$f$开始下降，然后选择新的方向
   - Newton-Raphson: $x\leftarrow x - H_f^{-1}(x)\nabla f(x)$，$H$是海色矩阵
+    - 如[[3-linear-regression]]中逻辑回归中优化那个凸函数
   - 高维情况计算海色那些二阶导比较慢
 - 也有局部最值问题，可以类比离散空间的问题和做法
 - constraint optimization

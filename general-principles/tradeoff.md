@@ -4,6 +4,7 @@
     - 如[[2-eval]]所述，在tradeoff训练集占多大时，天然的[[utility-function]]就是模型最终表现
   - 有时需要自己定义[[utility-function]]
     - 如[[2-eval]]中由P-R曲线计算$F_1$
+    - 如正则化项乘以$\lambda$，典型的如[[11-feature-selection]]的岭回归
   - 指定越大越好的[[utility-function]]后（或越小越好的成本cost后），如果可加，往往出现一个增函数，一个减函数，相加得到一个极小值点，使得成本最小
     - 如[[1-monitor-fragmentation]]
     - 如[[偏差-方差分解]]
