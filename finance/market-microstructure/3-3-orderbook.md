@@ -32,3 +32,6 @@
   - 更复杂的：考察外生变量
   - 但现在暂时不管
 # Understanding via conditioning
+- 条件分布，less random
+- 比如只看一档大单
+  - condition on这种，到底是否带来很大差别？学术界不同观点

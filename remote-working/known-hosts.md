@@ -6,3 +6,6 @@
     - 如`ssh -T git@github.com`，`yes`确认，使得之后`git`可以正常[[push-pull]]等
   - 如果有错的，则拒绝连接，需要删除对应内容，重新连接并选择`yes`
     - 例如远程`rm`掉docker [[container]]重新建立（在相同用户，ip和端口）之后，你需要删除`known_hosts`的对应行，否则会不给你连
+  - 注：有时会[[leaky-abstraction]]
+    - 明明是一个yes就解决的事，vscode就是要报错而且不提示
+    - 那就手动`git`命令行操作吧

@@ -1,2 +1,13 @@
-- 如[[1-monitor-fragmentation]]，[[偏差-方差分解]]等，都出现一个增函数，一个减函数，相加得到一个极小值点，使得成本最小
-- 有时为了可以加，需要自行定义[[utility-function]]效用函数，明确你想要什么
+# 总体原则
+- 多目标优化，需要[[utility-function]]效用函数，明确你想要什么
+  - 有时有天然的[[utility-function]]
+    - 如[[2-eval]]所述，在tradeoff训练集占多大时，天然的[[utility-function]]就是模型最终表现
+  - 有时需要自己定义[[utility-function]]
+  - 指定越大越好的[[utility-function]]后（或越小越好的成本cost后），往往出现一个增函数，一个减函数，相加得到一个极小值点，使得成本最小
+    - 如[[1-monitor-fragmentation]]
+    - 如[[偏差-方差分解]]
+- 如果不定义，则往往可以考察指定一维（甲）不变时，另一维（乙）的表现，如[[UMP]]
+  - 还可以指定多个甲取值，看各个情况下最佳的乙，这就是[[pareto-efficient]]
+  - 例：[[2-eval]]的average precision
+# 时空tradeoff
+- 如[[general-principles/cache]]空间换时间
