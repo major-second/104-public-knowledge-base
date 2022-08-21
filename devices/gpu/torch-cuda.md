@@ -36,3 +36,4 @@ torch.cuda.device_count() # 输出0
 - 编号从0开始。比如8卡机器，`'4,5,6,7'`就是后面四张卡
 # 其它
 - 清除不用的显存`torch.cuda.empty_cache()`
+- 具体怎么在torch中使用GPU参考[[device]]

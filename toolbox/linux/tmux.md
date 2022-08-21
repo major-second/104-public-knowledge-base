@@ -8,7 +8,10 @@
     - 如果你`sudo su`了，就要注意！
   - 表面上，可以和vscode的[[launch]]结合使用，即在`F5`之后自动弹出的终端中`tmux`，再次`F5`
     - 但实际上，这个并没完全隔离，还是需要vscode，remote-ssh等相关的信息。所以关掉vscode还是会停止程序！
-- **不同人**（登录**同一个用户**）可以attach同一个tmux session，互相看到彼此操作
+- 关于合作
+  - **不同人**（登录**同一个linux账户**）可以attach同一个tmux session，互相看到彼此操作
+  - 当然也会互相干扰，请事先先协调好！参考[[isolation]]
+  - 如果一个人终端特别小，所有人看到的终端都会小 ![](tmux-terminal-size.png)
 - 快捷键
   - `Ctrl + B`
     - `?`帮助（`q`退出）
