@@ -8,6 +8,7 @@
   - `ps -ef | grep python | grep run`这种：两个关键词的查询
   - `ps -ef | grep 'python' | grep -v grep | awk '{print $2}'`（进一步输出进程号）
   - 出来一个列表之后，`| xargs kill -9`：大屠杀！参考[[xargs]]
+  - 注：这里`ps -ef`给出列表，然后不断管道进行操作，最后一起[[xargs]]，具有[[functional-programming]]的[[map-reduce]]思想
 - `watch 'ps -ef'`等等：每隔2秒输出一次
   - 比如`watch nvidia-smi`，也行。上面那些命令都可以组合上`watch`
 - 顺带：其它和监视有关的指令[[monitor]]
