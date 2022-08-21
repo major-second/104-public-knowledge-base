@@ -1,18 +1,28 @@
-- 基本语句
-  - `import <包名> [as <别名>]`
-  - `from <包名> import <函数名、变量名等> [as <别名>]`
-    - 这里的包名经常是用`.`隔开的路径（且不含`.py`后缀），能找到对应包源码的文件
-    - 参考[[module-launch]]
-    - 例如`torch.nn`对应`.../site-packages/torch/nn`文件夹，参考[[commands]]安装第三方包后的源码
-  - `from <包名> import *`（非常不推荐，很有可能导致重名）
-  - `import a.b.c as d`，例如经常约定俗成的`import matplotlib.pyplot as plt`，参考[[matplotlib/basics]]
-- 特性
-  - `import`后再`import`，已经导入的值默认不会动态变化
-  - 如果需要变化，那就要使用`importlib.reload(包名)`
-    - 注意仅仅`del 变量名`无效
-    - 注意不能`reload(变量名)`
-    - 并且`from 包名 import 变量名`的变量也无法通过`reload(包名)`来reload
-    - 参考下面例子
+# 基本语句
+- `import <包名> [as <别名>]`
+  - 例如经常约定俗成的`import pandas as pd`，`import numpy as np`
+- `from <包名> import <函数名、变量名等> [as <别名>]`
+  - 这里的包名经常是用`.`隔开的路径（且不含`.py`后缀）
+  - 参考[[module-launch]]
+  - 此规则常能找到对应源码在哪个文件
+    - 比如[[conda/commands]]中“找源码位置”就要参考这点
+    - 举例：`torch.nn`对应`.../site-packages/torch/nn`文件夹
+- `from <包名> import *`（非常不推荐，很有可能导致重名）
+- `import a.b.c as d`
+  - 例如经常约定俗成的`import matplotlib.pyplot as plt`，参考[[matplotlib/basics]]
+# 特性
+## 关于路径
+- 即使你`import`了非本路径的东西，整个程序运行的路径也还是本路径
+  - 例如：你`import sub_dir.a`，那里面有torch的[[save]]函数等
+    - 你调用了那里的进行[[save]]，相对路径基于的并不是`./sub_dir`，而是当前路径`./`
+  - `import`的文件里还有`import`时，也要注意此规则，例如[[sys-path]]中的现象
+## 关于重新`import`
+- `import`后再`import`，已经导入的值默认不会动态变化
+- 如果需要变化，那就要使用`importlib.reload(包名)`
+  - 注意仅仅`del 变量名`无效
+  - 注意不能`reload(变量名)`
+  - 并且`from 包名 import 变量名`的变量也无法通过`reload(包名)`来reload
+  - 参考下面例子
 ```sh
 echo "from time import time; t = time()" > a.py; \
 python -c "from a import t; print(t); del t; print(t); print()"; sleep 2; \

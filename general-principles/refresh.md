@@ -24,6 +24,10 @@
   - 比如[[troubleshooting]]
 - 例如[某款耳机控制键用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
 - 手机[[android/battery]]不耐用了直接换电池
+## 覆盖
+- 有时直接“刷新”不够彻底，或做不了，则需要覆盖
+- 比如清空回收站可能还能找回，但重新写入就会彻底把文件覆盖
+- 比如[[vscode/keyboard-shortcuts]]中`Ctrl+P`覆盖（打断）其它“上方跳出界面”
 ## 其它
 - [[settings-and-configurations]]设置东西之后要**更新**。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
