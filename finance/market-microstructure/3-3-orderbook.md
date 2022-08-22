@@ -33,5 +33,38 @@
   - 但现在暂时不管
 # Understanding via conditioning
 - 条件分布，less random
-- 比如只看一档大单
-  - condition on这种，到底是否带来很大差别？学术界不同观点
+  - 例子：只看一档大单
+  - condition on一些东西，到底是否带来很大差别？学术界不同观点
+  1. Zero-intelligence：很少conditioning
+  2. Game theoretic：建模参与者间行为
+  3. empirical：如PDE等，看变量间关系
+- [[poisson-process]]
+  - $\lambda=lim_{\Delta t\to 0} \frac{\mathbb E(\Delta N)}{\Delta t}$
+    - 在一段小时间内，$N$上升1的概率无穷小（和时间长度成正比）
+  - $\lambda \Delta t$当然就是接下来一段时间内$N$上升的期望
+  - 常见分析建模方式：三个intensity: $\lambda^+,\lambda^c,\lambda^\chi$（挂限价单、撤单、交易发生）
+- homogeneous（没有“条件”）
+  - 三个$\lambda$都是和context无关的
+  - 估算$\lambda$很简单：确定每个事件是挂单、撤单还是交易，然后在一段时间内根据$\lambda \Delta t = E$即可计算
+  - （当然，选择起始点是个非平凡问题。一天的开始，还是一个事件开始，还是什么？）
+  - 效果当然不好，算出概率分布和实际相差很大
+- Model I of the Queue Reactive Model
+  - 所有intensity的计算条件于AES（Average Event Size）这个数字
+  - 例如5：表示queue size（某一档的大小）取整的话是5倍某个“平均事件大小”
+  - 每次从某个时间$t$开始，到下个时间（比如某个取消$c$在$\tau^c$发生）结束
+- 拓展Model II, III: 还condition on某个档的俩neighbors
+  - 合理性：比如一边一档比另一边大很多，则会吃那边；比如一档很大，二档很有可能取消很多
+  - predictive power of the imbalance: 一般来说不足以搞出有套利价值的波动。但是包含进交易算法是可以的！
+- Asymptotic behaviors of the first two queues
+  - $A/R$：到达比出发（挂单比撤单）
+  - 常见的：一档消失，二档爆炸（增加）
+  - 一档消失，二档成了新的一档
+  - stable, (更技术地说) ergodic
+- Liquidity dynamics vs. price dynamics
+  - 用这些volume dynamics生成，发现价格volatility相比实际太低了
+  - 问题：模拟出的二档爆炸，导致每次一个一档消失后，就要面对一座大山……，price reversion了
+  - 一个可能的解决方案：[[hawkes-process]]代替[[poisson-process]]
+  - 另一种，每次一个一档deplete了，有一定概率设置新价格为新fair price然后（从某个分布中随机取）重置订单簿状态
+# Conclusion on orderbook dynamics
+- tick大小当然很重要
+- 有时可以用event做标尺，而非物理时间
