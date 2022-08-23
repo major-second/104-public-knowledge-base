@@ -1,2 +1,2 @@
 - 日志会被自动存到`lightning_logs`文件夹
-  - 有[[tensorboard]]需要的信息、checkpoint等
+- 里面有[[tensorboard]]需要的信息、[[checkpoint]]等

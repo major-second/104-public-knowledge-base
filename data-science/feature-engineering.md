@@ -33,12 +33,14 @@
   - 有时通过某种变化强行变成正态/均匀分布
     - 例如排序取分位数变为均匀分布（但千万小心info leak问题。可以考虑[[rolling]]在前一段时间内做rank看分位数）
     - 例如[[12-robust]]提到Fisher变换$F(x)=\frac 12 ln(\frac{1+x}{1-x})$就是把某个量变为近似的正态分布
-    - 有时还要在某个**范围**内做正规化（如**batch** norm）使得[[character/var]], [[expectation]]为指定值。参考[[transform]]
+    - 有时还要在某个**范围**内做正规化（如[[batchnorm]]）使得[[character/var]], [[expectation]]为指定值
 - 凡是涉及除以的，都要注意非负性。常见可用的
   - 本身物理意义非负，如路程、交易量
   - 平方、绝对值或其和等
   - [[character/var]]方差，标准差等
-  - 注意如果可能出现0，还要考虑加一个常数。[[nan]]中有提到
+  - 注意如果可能出现0，还要考虑加一个常数
+    - [[nan]]中有提到
+    - [[batchnorm]]的官方[文档](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)中也有提到
 - 衍生手段
   - 两个相同量纲量的加减
   - 两个量的乘除（很多时候乘除某个无量纲量）

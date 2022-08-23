@@ -15,6 +15,8 @@
 - 注
   - 参考[[availability]]，由于不能pickle太复杂的东西，所以这里的`f`不能用`lambda`定义
   - 不能不写`if __name__ == "__main__":`这行“保护”，否则多进程时会“导入模块”，引发副作用，导致`Runtime Error`，参考[文档](https://docs.python.org/3.9/library/multiprocessing.html#multiprocessing-programming)
+  - 这个`p.map`可能不能像普通的`map`一样有多元输入（todo）
+  - 有些复杂情况比如[[lightning/basics]]中的启动训练就不能用这种简单方式并行了
 - 如果你使用[[launch]]，打个断点可以看到`Pool(5)`后左侧[[call-stack]]就出现5个进程及相应进程号
   - 如果在`if __name__`一句打断点，则可以进入子进程的[[call-stack]]如图
   - ![](subprocess-call-stack.png)
