@@ -10,7 +10,7 @@
   - 参考[[jupyter-notebook/tqdm]]
   - 有意思的feature：没正常结束会红色
   - 比如下一节`zip`例子中就能看到
-- 涉及`map`时为了可以估测总大小，需要先`tqdm`包裹再`map`包裹
+- 涉及`map`, `zip`等时为了可以估测总大小，需要先`tqdm`包裹再`map`包裹
   - [参考](https://www.pythonpool.com/python-tqdm/)里有说
   - 例子：续上
   - `for i in zip(tqdm(range(100)), list(range(80))):`

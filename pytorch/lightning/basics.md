@@ -16,9 +16,10 @@
     - forward时只需要过encoder，计算loss需要encoder和decoder
     - 如果是原始的pytorch，肯定要把encoder和decoder分开
 - 使用
-  - 初始化trainer: 例如`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`，详见[[trainer]]
+  - 初始化trainer: 例如官网给出的`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`，详见[[trainer]]
     - 此处还可以指定`max_epochs`，`plugins=DDPPlugin(find_unused_parameters=False)`等一系列参数
     - 例如`gpus=4, plugins=DDPPlugin(find_unused_parameters=False)`就可以使用4卡分布式训练，参考[[ddp]]
   - 使用trainer: 例如`trainer.fit(model, train_loader, val_loader)`
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法
     - 原始代码来自[[optimization]]中提到的`pytorch/basics/minimum.ipynb`
+  - 存取用checkpoint参考[[checkpoint]]

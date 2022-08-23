@@ -10,3 +10,4 @@
 - 比如对于[[pytorch/basics/installation]]
   - 不常用的conda [[channel]]可能缺少最新版本
   - 非[pytorch官方](https://pytorch.org/get-started/previous-versions)指定`-f`的[[pip]]源也可能没有对应版本等
+- 比如[[adapter-cable]]中提到的“诱骗线”不是原装线，寿命显然没有原装适配器长，你出差在外要是彻底不带原装适配器，还是有风险的。一种可能的解决方案是随身包带诱骗线，行李箱还是放原装适配器

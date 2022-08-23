@@ -1,0 +1,10 @@
+- 前置：[[lightning/basics]], [[log]]（[[log]]里就有checkpoints）
+- [参考文档](https://pytorch-lightning.readthedocs.io/en/latest/starter/introduction.html#use-the-model)
+- 首先根据[[log]]里的路径，指定一个字符串，再用你自己的类`load_from_checkpoint`
+    - `checkpoint = "./lightning_logs/version_0/checkpoints/epoch=0-step=100.ckpt"`
+    - `autoencoder = LitAutoEncoder.load_from_checkpoint(checkpoint, encoder=encoder, decoder=decoder)`
+- 然后把这个`LightningModule`里需要`eval`的那部分`eval()`，即可使用。参考[[lightning/basics]]
+    - `encoder = autoencoder.encoder`
+    - `encoder.eval()`
+    - `fake_image_batch = Tensor(4, 28 * 28)`
+    - `embeddings = encoder(fake_image_batch)`
