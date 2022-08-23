@@ -26,8 +26,9 @@ training_data = datasets.FashionMNIST(
     - 自己写一个`lambda`，并用`Lambda`包装
     - 比如一个dummy的：`target_transform=Lambda(lambda y: y * 100)`
     - 实用的：`target_transform=Lambda(lambda y: torch.zeros(10, dtype=torch.float).scatter_(dim=0, index=torch.tensor(y), value=1))`，变成浮点one-hot向量，参考[[manipulation]]
-## 自己的dataset
-常见的：[map式数据集](https://zhuanlan.zhihu.com/p/105507334)，本质上抽象成一个数组（“索引”）
+## 自己的数据集
+### map式数据集
+[map式数据集](https://zhuanlan.zhihu.com/p/105507334)，本质上抽象成一个数组（“索引”）
 - 继承`torch.utils.data.Dataset`
 - 至少要重载`__getitem__, __len__`
 - 参考`minimum.ipynb`
@@ -40,3 +41,6 @@ training_data = datasets.FashionMNIST(
   - 例如由$k$条数据组合出$C_k^2$条配对数据（如手写数字比大小）
     - 当然此时`__len__`就要相应改
   - `__getitem__`过程可能添加随机性，但这有时会带来困扰。所以做好注释！
+## 进阶：效率！
+- dataloader这边每次`__getitem__`的效率请格外注意
+  - 例如不要做很多[[numpy/basic]]和[[pandas/installation]]的复制操作

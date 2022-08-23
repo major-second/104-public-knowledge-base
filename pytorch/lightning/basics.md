@@ -18,8 +18,10 @@
 - 使用
   - 初始化trainer: 例如官网给出的`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`，详见[[trainer]]
     - 此处还可以指定`max_epochs`，`plugins=DDPPlugin(find_unused_parameters=False)`等一系列参数
-    - 例如`gpus=4, plugins=DDPPlugin(find_unused_parameters=False)`就可以使用4卡分布式训练，参考[[ddp]]
-  - 使用trainer: 例如`trainer.fit(model, train_loader, val_loader)`
+    - 例如`from pytorch_lightning.plugins import DDPPlugin`后`gpus=4, plugins=DDPPlugin()`就可以使用4卡分布式训练，参考[[ddp]]
+  - 使用trainer拟合（训练）: 例如`trainer.fit(model, train_loader, val_loader)`
+  - 测试：[参考](https://pytorch-lightning.readthedocs.io/en/latest/common/evaluation_basic.html#add-a-test-loop)，例如`trainer.test(model, test_loader)`
+    - 当然，相应的你的`LightningModule`也需要重载`test_step()`
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法
     - 原始代码来自[[optimization]]中提到的`pytorch/basics/minimum.ipynb`
   - 存取用checkpoint参考[[checkpoint]]

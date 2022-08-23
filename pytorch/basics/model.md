@@ -6,8 +6,8 @@
 - `from torch import nn`，然后`nn.<类名>(参数)`来造模型
   - 如无参数的`nn.Flatten()`，`nn.ReLU()`
   - 输入简单参数的`nn.Linear(<in>, <out>)`
-  - 拼接模块的`nn.Sequential(<直接逗号输入若干个模块>)`
-    - 这种拼接结果也可以下标取出，比如`m[0].weight`这种
+  - 拼接模块的`nn.Sequential(<直接逗号隔开输入若干个模块>)`
+    - 可下标取出子模块，比如`m[0].weight`这种
 - 每个模块（module）至少要重载两个函数
   - `__init__`：定义要用哪些“组件”。常见模式`self.flatten = nn.Flatten()`
   - `forward`：定义怎么使用组件计算。常见模式`output = self.<变量名>(input)`
