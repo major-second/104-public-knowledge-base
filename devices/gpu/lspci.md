@@ -1,0 +1,1 @@
+`lspci | grep VGA`一般就能查看显卡型号，进一步可用于[[torch-cuda]]中选择合适cuda版本等

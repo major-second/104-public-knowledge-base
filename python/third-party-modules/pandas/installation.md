@@ -1,2 +1,3 @@
 - 最简单方式：[[conda/installation]]有了，你在你的`conda`环境中`conda install pandas`即可
 - [完整文档](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
+- [一个知乎速成贴](https://www.zhihu.com/question/289788451/answer/1873472345?utm_source=wechat_session&utm_medium=social&utm_oi=870345690436497408&utm_content=group3_Answer&utm_campaign=shareopn)
