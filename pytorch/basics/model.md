@@ -7,9 +7,11 @@
   - 如无参数的`nn.Flatten()`，`nn.ReLU()`
   - 输入简单参数的`nn.Linear(<in>, <out>)`
   - 拼接模块的`nn.Sequential(<直接逗号隔开输入若干个模块>)`
+    - 不要输入模块的`list`
     - 可下标取出子模块，比如`m[0].weight`这种
 - 每个模块（module）至少要重载两个函数
   - `__init__`：定义要用哪些“组件”。常见模式`self.flatten = nn.Flatten()`
+    - 注意一定要先`super(<类名>, self).__init__()`，[参考](https://blog.csdn.net/qq_41475067/article/details/115572602)
   - `forward`：定义怎么使用组件计算。常见模式`output = self.<变量名>(input)`
     - 调用时直接`model(data)`即可，不需要`.forward()`
     - 注：很多时候调试时我们都把断点打到`forward`函数第一行，并打开[[launch]]中提到的`justMyCode`，这样效率很高，一下就定位到模型的核心之处

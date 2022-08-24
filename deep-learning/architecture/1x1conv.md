@@ -1,0 +1,4 @@
+- 思想：对于每个“元素”（如图片像素）单独操作
+- 例如在[[conv]]中，每个像素有64个channel，最后要得到1个channel的热力图，就可以使用in为64，out为1，kernel为`1x1`的卷积
+- 例如某个feature x和最终target y的关系分为两段，且并不线性，就可以使用in为1，out为$n>1$，kernel为`1x1`的卷积，对出来的`out`使用激活函数
+  - 比如激活函数为`Sigmoid`实际上就是[[feature-engineering]]的“把两边太高的收一收”
