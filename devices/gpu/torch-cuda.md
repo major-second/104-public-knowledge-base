@@ -37,4 +37,6 @@ torch.cuda.device_count() # 输出0
 - 编号从0开始。比如8卡机器，`'4,5,6,7'`就是后面四张卡
 # 其它
 - 清除不用的显存`torch.cuda.empty_cache()`
+  - 在你使用[[jupyter-notebook/basics]]时经常需要。否则显存会爆
+  - 注意对于模型的输出结果，有时需要`tensor.data`，否则梯度会一直被存着占地方（即使已经没有变量引用它了）
 - 具体怎么在torch中使用GPU参考[[device]]
