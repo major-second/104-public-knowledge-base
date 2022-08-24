@@ -5,3 +5,8 @@
   - 比如[[checkpoint]]中测试前`.eval()`一下某个model，就自动递归`.eval()`其attributes
 - 实操中有不同维数的batchnorm
   - `1d`例子：`t = Tensor([[1,2,1], [2,4,0]]); print(nn.BatchNorm1d(3)(t))`
+  - 结果
+```text
+tensor([[-1.0000, -1.0000,  1.0000],
+        [ 1.0000,  1.0000, -1.0000]], grad_fn=<NativeBatchNormBackward>)
+```

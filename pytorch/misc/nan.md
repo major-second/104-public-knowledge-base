@@ -15,3 +15,4 @@
   - 实际问题中本来就有
   - [[time-series]]处理中得到（例如`diff()`，[[rolling]]）
   - 注：$1/0$是`inf`不是`nan`
+  - 比如[[optimization]]中选用SGD（非Adaptive的），可能出现[梯度爆炸](https://stackoverflow.com/questions/65654279/nan-values-with-sgd-optimizer-in-keras-for-regression-nn#:~:text=The%20NaNs%20in%20the%20loss%20function%20is%20mostly,long%20as%20you%20don%27t%20have%20a%20specific%20reason.)
