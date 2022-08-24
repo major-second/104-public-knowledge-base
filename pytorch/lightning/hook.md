@@ -1,0 +1,9 @@
+- 前置[[lightning/basics]]
+- 基础
+  - 除了`training_step`等最常见的待重载函数外，还有一些为了提升灵活性的hook
+  - 在基类中运行到指定时刻，会调用hook，例如`on_validation_start`在每次`validation`开始前调用
+  - 这些hook很多都是可选的，不像`training_step`这种你必须重载
+  - 你要是不重载，那就相应时刻什么都不做
+- 例子
+  - [[linalg]]中最小二乘线性回归时，可以考虑每个`on_validation_start`计算训练集的斜率截距，然后`val`时和`test`时具体计算时不用重复计算
+    - 注：这里应该在`val`开始时计算。如果在`train`结束时计算，那么`sanity_check`（lightning在train前自动进行的val）可能出问题！参考[[general-principles/debug]]

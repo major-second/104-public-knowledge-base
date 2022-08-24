@@ -21,6 +21,8 @@
     - 例如`accelerator='gpu', devices=[0,1]`使用0，1两张卡
     - 当然现在有时多卡还是会有未知麻烦，莫名其妙报错。直接`devices=[0]`比较保险吧！参考[[alternative-method]]
   - 使用trainer拟合（训练）: 例如`trainer.fit(model, train_loader, val_loader)`
+    - 注意：默认设置在训练前会先`val`一下，称为`sanity_check`，可确保`val`可以正常进行，这是[[general-principles/debug]]的思想
+    - 有时会带来一点小麻烦，比如[[linalg]]中“最小二乘法”那里
   - 测试：[参考](https://pytorch-lightning.readthedocs.io/en/latest/common/evaluation_basic.html#add-a-test-loop)，例如`trainer.test(model, test_loader)`
     - 当然，相应的你的`LightningModule`也需要重载`test_step()`
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法

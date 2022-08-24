@@ -1,0 +1,16 @@
+- 前置[[tensor-calculator]]
+- 最小二乘法线性回归：`torch.linalg.lstsq(x, y)`，用`.solution`取出系数
+  - 参考[[4-regression]]
+  - 当神经网络输出的最后一层是linear，则可以考虑直接用（最后一层的feature）最小二乘而不是训出来
+  - 可以防止一些额外误差，参考[[optimization]]
+  - 联系[[lightning/basics]]，就知道怎么训练和验证
+    - 训练照常
+    - `eval`（`val`或`test`）时
+      - `coef = torch.linalg.lstsq(train_h, train_y).solution`
+      - `val_res = val_h @ coef - val_y`
+      - `train_res = train_h @ coef - train_y`
+      - `res = val_res - train_res.mean()`
+      - 得到残差，然后可计算残差平方和等
+    - 注意
+      - 千万别用`val_h, val_y`做线性回归，否则就information leak了
+      - 思想上是刚刚的几句，但实际上如果你使用`pytorch_lightning`，不应该把它们都写到`validation_step`，而应当在`on_validation_start`这个[[hook]]处计算一次斜率截距，之后不再重复计算
