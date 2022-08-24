@@ -1,4 +1,5 @@
 # 基本语句
+## `import`第三方库
 - `import <包名> [as <别名>]`
   - 例如经常约定俗成的`import pandas as pd`，`import numpy as np`
 - `from <包名> import <函数名、变量名等> [as <别名>]`
@@ -10,6 +11,23 @@
 - `from <包名> import *`（非常不推荐，很有可能导致重名）
 - `import a.b.c as d`
   - 例如经常约定俗成的`import matplotlib.pyplot as plt`，参考[[matplotlib/basics]]
+## `import`自己的文件
+在`./example`下运行命令`python -c "import a; print(a.a); import b; print(b.a_number); print(b.a); import c; print(c.b.a.a); import d; print(d.b); from d import b as db; print(db)"`
+输出
+```text
+1
+1
+<module 'a' from '<文件名>'>
+1
+error
+2
+2
+```
+- 说明
+  - 之前的基本语句，包括`from, as`等都能用
+  - 同一文件夹下的`name.py`可以用`import name`来导入
+  - 如果`import`的文件里也有`import`语句（或`from ... import`语句，等等），则可用`.`取出！比如`c.b`，`b.a_number`这样
+  - 不能`import name.varname`（体现在上文输出中的`error`，参考`d.py`），但是可以`from name import varname`
 # 特性
 ## 关于路径
 - 即使你`import`了非本路径的东西，整个程序运行的路径也还是本路径
