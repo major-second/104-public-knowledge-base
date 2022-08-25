@@ -1,0 +1,4 @@
+- `nn.Flatten()`谁都会用，但`nn.Unflatten()`可就稍微复杂一点了
+- [参考文档](https://pytorch.org/docs/stable/generated/torch.nn.Unflatten.html?highlight=unflatten#torch.nn.Unflatten)
+- 例如`nn.Unflatten(1, (2, 5, 5))`，就可以把形状`(2, 50)`变成形状`(2, 2, 5, 5)`
+- 有点像[[misc/reshape]]，`unsqueeze`等，但是使用这种模块方便放入`nn.Sequential`，参考[[model]]

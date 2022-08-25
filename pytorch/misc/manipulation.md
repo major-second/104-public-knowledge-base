@@ -54,5 +54,5 @@ tensor([[ 2.,  4.,  3.,  1.,  5.],
 - `torch.cat([若干张量形成的list], [还可以选dim=?，在哪一维])`
   - 例如`torch.cat([torch.tensor([2]),torch.tensor([3]),torch.tensor([4])])`
   - 注意不能直接`torch.cat(torch.tensor([2]),torch.tensor([3]),torch.tensor([4]))`漏了中括号
-- `torch.vstack`和`cat`总体类似。但维数不同
+- `torch.vstack`和`cat`总体类似。但方向不同
   - 两个`(2,)`的tensor，`cat`成`(4,)`，`vstack`则成`(2,2)`

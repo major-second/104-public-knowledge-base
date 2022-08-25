@@ -11,6 +11,7 @@
   - 注：这里`ps -ef`给出列表，然后不断管道进行操作，最后一起[[xargs]]，具有[[functional-programming]]的[[map-reduce]]思想
 - `watch 'ps -ef'`等等：每隔2秒输出一次
   - 比如`watch nvidia-smi`，也行。上面那些命令都可以组合上`watch`
+  - `-n <数字>`指定多少秒一次
 - 顺带：其它和监视有关的指令[[monitor]]
 ## 实践
 - 多进程和大括号的关系示例
