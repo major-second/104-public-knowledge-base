@@ -15,7 +15,7 @@
   - `forward`：定义怎么使用组件计算。常见模式`output = self.<变量名>(input)`
     - 调用时直接`model(data)`即可，不需要`.forward()`
     - 注：很多时候调试时我们都把断点打到`forward`函数第一行，并打开[[launch]]中提到的`justMyCode`，这样效率很高，一下就定位到模型的核心之处
-- 注意默认第0维是batch，所以`nn.Softmax()`需要`dim=1`才正确
+- 注意默认第0维是batch，所以`nn.Softmax()`往往需要`dim=1`才正确
   - 相比之下，`Linear`默认直接就这么搞了，不需要指定`dim=1`
   - `nn.Flatten`和`flatten`也因此默认不同。前者默认`start_dim=1`，后者默认为`0`
 - 参数

@@ -7,7 +7,7 @@
   - 这可能需要**重启**vscode才能让vscode识别此事实
 - [[windows/env-var]]的添加：需要**重启**vscode才在vscode集成的powershell中生效
   - 只重启终端不重启vscode还没用
-- [[jupyter-notebook/basics]]中提到的用`Restart`使得`.py`文件的改动生效
+- [[jupyter-notebook/basics]]中提到的用`Restart`内核使得`.py`文件的改动生效
 ## 重装（可能也要重启）
 - [[assets]]中vulkan相关错误在**重装**vulkan sdk后需要**重启**
 - [[timeshift]]和[[tmux]]的互动可能把tmux弄崩，**重装**tmux并**重启**即可
@@ -25,9 +25,9 @@
 - 例如[某款耳机控制键用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
 - 手机[[android/battery]]不耐用了直接换电池
 ## 覆盖
-- 有时直接“刷新”不够彻底，或做不了，则需要覆盖
+有时直接“刷新”不够彻底，或做不了，则需要覆盖
 - 比如清空回收站可能还能找回，但重新写入就会彻底把文件覆盖
-- 比如[[vscode/keyboard-shortcuts]]中`Ctrl+P`覆盖（打断）其它“上方跳出界面”
+- 比如[[vscode/keyboard-shortcuts]]中`Ctrl+P`覆盖（打断）其它的“上方跳出界面”
 ## 其它
 - [[settings-and-configurations]]设置东西之后要**更新**。包括但不限于
   - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
@@ -36,3 +36,4 @@
   - [[software-management/source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
+- python导入东西的重置：参考[[import/basics]]
