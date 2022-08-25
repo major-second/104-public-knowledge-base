@@ -1,3 +1,4 @@
 - `pickle`不能传`lambda`函数，module等等。只能传很有限的一些东西
     - 否则比如`Can't pickle local object`报错
-- 所以[[be-used]]中用到pickle这些场景，就必须注意不能有复杂东西（如lambda）
+- `pickle`可以传自定义类，但是前提是得先`import`相应定义
+- [[be-used]]中用到pickle这些场景，就必须注意不能有复杂东西（如lambda）
