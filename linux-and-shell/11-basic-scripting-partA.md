@@ -114,6 +114,7 @@ rm ./a.sh
   - 常见应用
     - `./my-script.sh > log`，则所有过程中的输出都到`log`处，方便监视脚本运行的情况
     - `echo contents > file`
+    - `> /dev/null &`：后台运行时不输出东西
 - `>>`：追加（没有则新建）
   - `echo contents >> file`，追加一行
 - `<`：读入文件内容（重定向输入）。例如`wc`计数

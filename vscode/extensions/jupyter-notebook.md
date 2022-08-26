@@ -1,7 +1,7 @@
 - 前置
   - [[extensions/general]]
   - [[jupyter-notebook/basics]]
-  - [[commands]]
+  - [[conda/commands]]或[[pip]]等包管理器
 - 搜索插件名`python`并安装一个套装，就自动有了jupyter notebook所需的插件
 - 新建`.ipynb`即可编辑和调试
   - 参考[[jupyter-notebook/basics]]

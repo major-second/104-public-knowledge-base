@@ -10,4 +10,7 @@ https://www.runoob.com/regexp/regexp-syntax.html
   - `nvidia-smi | grep '[4-7]\s\+T'`
   - `du -h | grep '[0-9]G\s'`
 - [[powershell/string]]中的`| Select-String`
-- vscode全文搜索，看最右侧按钮![](vscode-regex.png)
+- vscode全文搜索
+  - 看最右侧按钮
+  - ![](vscode-regex.png)
+- [[tensorboard]]左侧搜索可以用
