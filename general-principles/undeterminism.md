@@ -1,0 +1,19 @@
+# 概述
+- 一般人认为计算机一就是一，二就是二具有确定性
+- 但有时会有不确定性。有时有用，有时有麻烦
+# 现象
+- 多次训练神经网络，种子不同，效果不一致
+- [[pickle/basics]]存下来同一个对象，[[xxd-diff]]时告诉你两者不同。例如[[misc/equality]]
+# 引入和利用
+- 例如[[rand]]中提到的在C++中如何引入随机性，并利用它防止你的哈希被hack
+- 例如python的`random`和`np.random`等
+  - [[parallelism]]中提了一嘴用`numpy`生成随机数
+- 例如gym的[[seed]]设置，采随机trajectory喂给RL
+# 防止负面影响
+- 理论基础参考[[大数定律]]
+- 比如涉及神经网络等训练，跑多个随机种子取平均值，稳定地看结果
+  - 这时常见所需的操作和技能（请参考）
+    - 对于[[tensorboard]]的[[log]]文件夹的分开设定
+      - 不管你是调[[lightning/basics]]这种包还是自己存[[tensorboard]]
+    - [[command-line-arguments/basics]]传命令行参数
+    - [[isolation]]思想，例如[[torch-cuda]]指定用卡
