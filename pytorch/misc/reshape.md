@@ -13,3 +13,5 @@
   - 例如`torch.arange(30).view(5, 2, -1)`输出结果
   - ![](view.png)
 - 如果`view`不兼容（遇到`continguous`问题），则需要`reshape`
+- `view`和`reshape`时，尽量多使用原张量的`.shape`里的数字，少使用[[magic-number]]
+  - 比如你指定了`batch_size`为4096，可能以为所有输入的形状第0位都是4096，但实际上，最后可能除不尽，剩下某个不是的！

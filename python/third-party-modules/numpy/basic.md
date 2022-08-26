@@ -1,13 +1,14 @@
 - `import numpy as np`
-- 创建array
-  - `np.array([2])`这种直接得到`[2]`
-  - `np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
-    - 默认随机初始化。如果想不随机需要`zeros`
-  - `np.arange(整数)`得到0开始的连续整数，可以调试用
-    - 往往结合[[numpy/reshape]]得到想要的形状
-    - `-1`就是自动由其它维计算得到
-  - `np.linspace(start, stop, num)`生成等差数列
-    - 如应用：[[color]]
+# 创建array
+- `np.array([2])`这种直接得到`[2]`
+- `np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
+  - 默认随机初始化。如果想不随机需要`zeros`
+- `np.arange(整数)`得到0开始的连续整数，可以调试用
+  - 往往结合[[numpy/reshape]]得到想要的形状
+  - `-1`就是自动由其它维计算得到
+- `np.linspace(start, stop, num)`生成等差数列
+  - 如应用：[[color]]
+# 操作
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
   - 注意不要少打一对括号
   - 元组当然可以大于2个元素
@@ -16,9 +17,6 @@
   - 把`[(1,2),(3,4)]`变成`2*2`的
   - 把`np.ndarray((2,), dtype=object)`这类的变成正常的（类型为数值）的array
   - [各种stack](https://blog.csdn.net/csdn15698845876/article/details/73380803)
-- 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
-  - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
-  - 甚至原生list的`l[:]`还是浅拷贝的一种方式
 - `np.max`和`np.amax`分别求最大值的值和下标
 - array做`< > ==`等运算得到布尔的array
   - 直接用作判断条件是“ambiguous”，会报错，也就是不能直接`if <array>`
@@ -34,3 +32,8 @@
   - 注意妥善处理涉及负数的问题。比如`np.power((a > 0) * a, alpha) - np.power((a < 0) * -a, alpha)`
 - `arr`有`.mean(), .min(), .max(), .sum()`等常用方法可以直接求常用值
 - `np.linalg.norm(向量)`求模长，也可以`np.linalg.norm(a - b)`求距离
+# 特性
+- 速度快，更靠近底层（所以会有[[overflow]]问题！碰到很大的数做运算时小心）
+- 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
+  - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
+  - 甚至原生list的`l[:]`还是浅拷贝的一种方式
