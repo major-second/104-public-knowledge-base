@@ -23,7 +23,11 @@
   - 改变`import`了`.py`文件中东西的定义，则要`Restart`才生效（区别于改变block中定义东西）
 ## 编辑技巧
 - `Ctrl`按住可以光标选中多个地方，类似于[[vscode/edit]]的`Alt`
-- 更多和[[vscode/edit]]相同的技巧：`Ctrl + 方向键`，选中一串东西按一次`[`加括号等
+- 更多和[[vscode/edit]]相同的技巧
+  - `Ctrl + 方向键`
+  - 选中一串东西按一次`[`加括号等
+  - 选中一串东西按三次`"`注释（三引号）
+  - `Ctrl + /`注释
 - `Tab`键补全（如果有多个备选，则`Tab`出下拉菜单，回车选择）
 # 原始方法运行
 - [参考](https://docs.jupyter.org/en/latest/running.html)
