@@ -25,7 +25,7 @@
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法
     - 原始代码来自[[optimization]]中提到的`pytorch/basics/minimum.ipynb`
 - features
-  - 默认设置在训练前会先`val`一下，称为`sanity_check`
+  - 默认设置在训练前会先`val`一下（默认过俩batch，不是全过哈），称为`sanity_check`
     - 可确保`val`可以正常进行，这是[[general-principles/debug]]的思想
     - 有时会带来一点小麻烦，比如[[linalg]]中“最小二乘法”那里
   - 训练过程中自动调用[[third-party-modules/tqdm]]（或jupyter中的[[jupyter-notebook/tqdm]]）显示结果

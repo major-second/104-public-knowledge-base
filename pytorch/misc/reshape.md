@@ -7,7 +7,7 @@
 - `Tensor.unsqueeze()`提升张量维数，但不改变向量维数
   - 例如`torch.rand(3,3).unsqueeze(1).shape`为`(3, 1, 3)`
 - `Tensor.squeeze()`把`.shape`中`1`的那些压起来
-  - 一个使用场景：神经网络[[model]]输出很多时候是`(N, 1)`，如果你[[dataloader]]读取出Ground Truth `(N,)`形状，就不妨`squeeze()`以防止它老是报警告
+  - 一个使用场景：神经网络[[model]]输出很多时候是`(N, 1)`，如果你[[dataloader]]读取出Ground Truth `(N,)`形状，就需`squeeze()`，否则有时会出现[[broadcast]]导致的错误结果
 - `Tensor.expand()`改变形状（具体地，对于某维度只有`1`时，重复内容）但不拷贝相同的值
   - 例如`torch.rand(3,1,3).expand(-1,12,-1).shape`为`(3, 12, 3)`
 - 前两者可结合使用

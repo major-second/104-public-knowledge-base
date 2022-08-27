@@ -9,6 +9,7 @@
 - 例如python的`random`和`np.random`等
   - [[parallelism]]中提了一嘴用`numpy`生成随机数
 - 例如gym的[[seed]]设置，采随机trajectory喂给RL
+- 例如深度学习防止[[overfit]]的[[dataloader]] shuffle，随机dropout等
 # 防止负面影响
 - 理论基础参考[[大数定律]]
 - 比如涉及神经网络等训练，跑多个随机种子取平均值，稳定地看结果
