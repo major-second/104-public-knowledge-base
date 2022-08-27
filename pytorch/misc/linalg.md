@@ -7,10 +7,12 @@
     - 训练照常
     - `eval`（`val`或`test`）时
       - `coef = torch.linalg.lstsq(train_h, train_y).solution`
-      - `val_res = val_h @ coef - val_y`
-      - `train_res = train_h @ coef - train_y`
-      - `res = val_res - train_res.mean()`
+      - `intercept = (train_y - train_h @ coef).mean()`
+      - `res = val_h @ coef + intercept - val_y`
       - 得到残差，然后可计算残差平方和等
+        - **中过的坑：计算$R^2$**，可能会有$\mathbb E(\frac{a}{b}) \ne \frac{\mathbb E a}{\mathbb E b}$问题。所以不要每次`val_batch`计算一个再平均
     - 注意
       - 千万别用`val_h, val_y`做线性回归，否则就information leak了
-      - 思想上是刚刚的几句，但实际上如果你使用`pytorch_lightning`，不应该把它们都写到`validation_step`，而应当在`on_validation_start`这个[[hook]]处计算一次斜率截距，之后不再重复计算
+      - 思想上是刚刚的几句
+        - 但实际上如果你使用`pytorch_lightning`，不应该把它们都写到`validation_step`
+        - 而应当在`on_validation_start`这个[[hook]]处计算斜率截距，之后不再重复计算
