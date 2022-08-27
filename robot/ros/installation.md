@@ -1,7 +1,7 @@
 前置：
 - [[linux]]翻墙
 - 针对`raw.githubusercontent.com`修改[[hosts]]（因为`rosdep init`的代理[[configure]]很麻烦）
-- [[source]]
+- [[software-management/source]]
   - 除了需要加ros的源，可能还要改默认源为阿里云（默认源缺包
 
 这是`melodic`版本（比较古早）版本是按照字母`a`开始排列的

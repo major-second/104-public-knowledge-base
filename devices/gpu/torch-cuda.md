@@ -24,6 +24,7 @@
   - 这些兼容性问题除了你直接安装引起，还有可能是上层包指定的版本依赖引起的，参考[[version]]中`tape_proteins`的例子
 - 一个坑：[[non-standard]]的[[channel]]里可能缺少一些版本，导致只能给你cpu版本的
 # 改环境变量，指定用卡
+## `.py`中改
 - 必须在access相关东西之前，就改[[6-env]]环境变量才行
   - 具体地
     - 刚刚你验证是否安装成功时，跑了`import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count())`
@@ -35,6 +36,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 torch.cuda.device_count() # 输出0
 ```
 - 编号从0开始。比如8卡机器，`'4,5,6,7'`就是后面四张卡
+## `.sh`中改
+- 直接`CUDA_VISIBLE_DEVICES=0 python ...`即可，参考[[6-env]]
 # 其它
 - 清除不用的显存`torch.cuda.empty_cache()`
   - 在你使用[[jupyter-notebook/basics]]时经常需要。否则显存会爆

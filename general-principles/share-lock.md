@@ -1,6 +1,6 @@
 很多时候不能两个东西同时操作一个东西，否则导致意想之外的结果
 - 比如[[python/trivial-mistakes]]，[[numpy/basic]]提到的
-  - 所以经常要使用[[copy]]
+  - 所以经常要使用[[general-principles/copy]]
 - 比如共享内存很容易出错
 - 比如[[realsense-ros]]的`roslaunch`和[[python-wrapper]]中的不能同时使用
     - 否则报错`RuntimeError: xioctl(VIDIOC_S_FMT) failed Last Error: Device or resource busy`
