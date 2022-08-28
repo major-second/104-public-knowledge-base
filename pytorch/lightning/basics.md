@@ -15,10 +15,9 @@
       - forward时只需要过encoder，计算loss需要encoder和decoder
       - 如果是原始的pytorch，肯定要把encoder和decoder分开
 - 使用
-  - 初始化trainer: 例如官网给出的`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`，详见[[trainer]]
-    - 此处还可以指定`max_epochs`等一系列参数
-    - 例如`accelerator='gpu', devices=[0,1]`使用0，1两张卡
-    - 当然现在有时多卡还是会有未知麻烦，莫名其妙报错。直接`devices=[0]`比较保险吧！参考[[alternative-method]]
+  - 初始化trainer: 例如官网给出的`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`
+    - 详见[[trainer]]
+    - 此处还可以指定一系列参数
   - 使用trainer拟合（训练）: 例如`trainer.fit(model, train_loader, val_loader)`
   - 测试：[参考](https://pytorch-lightning.readthedocs.io/en/latest/common/evaluation_basic.html#add-a-test-loop)，例如`trainer.test(model, test_loader)`
     - 当然，相应的你的`LightningModule`也需要重载`test_step()`

@@ -1,3 +1,4 @@
+- 前置[[trainer]], [[tensorboard]]
 - 参考[官方文档](https://pytorch-lightning.readthedocs.io/en/stable/extensions/logging.html)
   - 默认使用`TensorBoardLogger`类
   - 默认路径是`lightning_logs`文件夹

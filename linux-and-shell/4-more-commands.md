@@ -7,6 +7,7 @@
   - `ps -ef | grep 'python' | grep -v grep`（查找含有`python`的进程，但排除自己）
   - `ps -ef | grep python | grep run`这种：两个关键词的查询
   - `ps -ef | grep 'python' | grep -v grep | awk '{print $2}'`（进一步输出进程号）
+    - 注：`awk`也可以换成适当的`cut -c`命令（切出指定位置的字符）
   - 出来一个列表之后，`| xargs kill -9`：大屠杀！参考[[xargs]]
   - 注：这里`ps -ef`给出列表，然后不断管道进行操作，最后一起[[xargs]]，具有[[functional-programming]]的[[map-reduce]]思想
 - `watch 'ps -ef'`等等：每隔2秒输出一次

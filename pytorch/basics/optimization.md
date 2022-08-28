@@ -23,7 +23,7 @@ optimizer.step() # 使用新导数进行一步优化
 - 全过程参考：[The full model building process](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/8-quickstart), [Summary](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/9-summary)
 - 举例：`minimum.ipynb`
 # 如何选用
-- Adaptive optimizer可以防止梯度爆炸导致[[nan]]问题等
+- Adaptive optimizer可以防止梯度爆炸导致[[nan]]问题等。相比之下，`SGD`容易出现[[nan]]问题
   - 解决方法[参考](https://stackoverflow.com/questions/65654279/nan-values-with-sgd-optimizer-in-keras-for-regression-nn#:~:text=The%20NaNs%20in%20the%20loss%20function%20is%20mostly,long%20as%20you%20don%27t%20have%20a%20specific%20reason.)
-  - 比如正则化、normalize输入值（参考[[feature-engineering]]和[[normalization]]、加大batchsize等方法
+  - 比如正则化、normalize输入值（参考[[feature-engineering]]和[[normalization]]）、加大batchsize等方法
 - 但会引入额外误差，比如`minimum.ipynb`中特别简单的玩具问题（线性函数），`Adam`会带来很大的额外误差

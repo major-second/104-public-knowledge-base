@@ -27,3 +27,5 @@
     - 可以看到这时`__name__`是`__mp_main__`了
     - 参考`minimum_name_mp_main.py`更加明确`if __name__`一句的作用
 - 可以用`os.getpid()`和`os.getppid()`得到进程号/父进程号
+- 可以外部启动一个终端通过[[4-more-commands]]、[[resource-management/commands]]等监测你的python进程fork出多少子进程
+  - 例如`Pool(N)`就会fork出`N`个

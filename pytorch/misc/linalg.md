@@ -1,4 +1,6 @@
 - 前置[[tensor-calculator]]
+- 2范数：`torch.linalg.norm`
+  - 请特别注意是否平方了！也就是，`norm`结果直接加没有什么意义，应该先平方再相加再开方才能得到有意义的东西
 - 最小二乘法线性回归：`torch.linalg.lstsq(x, y)`，用`.solution`取出系数
   - 参考[[4-regression]]
   - 当神经网络输出的最后一层是linear，则可以考虑直接用（最后一层的feature）最小二乘而不是训出来
