@@ -10,17 +10,30 @@
   - 可以方便模块化
   - 还有一种常见操作：新建一个（临时）`python block`，`print`你想要的东西
     - 该操作类似于一般的调试中的[[debug-console]]，非常方便
+  - 注：一颗语法糖：最后一个表达式不会被丢弃，而是被`print`出
+    - 例如cell中有两行
+      - `print(1)`
+      - `2`
+    - 那么`1`和`2`都会被输出
 - 可远程调试，媲美[[remote-ssh]]
 # feature
 - 即使代码块都没改变，但运行结果不同了，git也会认为你编辑了`.ipynb`文件
 - 运行block时，有一些自动生成的[[command-line-arguments/basics]]命令行参数
-- 服务器卡和本地流畅不矛盾。有可能你远程连`jupyter`服务器，服务器卡死了（[[vnc]]或者[[teamviewer]]看桌面，发现没反应），本地编辑却很流畅，但运行不了
-- 上方`Running` tag处可以方便地强制关闭已有笔记本，释放内存显存等
+- 服务器卡和本地流畅不矛盾
+  - 有可能你远程连`jupyter`服务器，服务器卡死了
+  - [[vnc]]或者[[teamviewer]]看桌面，发现没反应
+  - 本地编辑却很流畅，但运行不了
 ## 关于刷新
 - 改变（block中定义的）函数定义要重新运行block才生效
 - 关于`Restart`（原始方法运行的快捷键：两次`0`）
   - 会丢失全部变量（但有时这就是我们想要的，因为可能之前变量会一直放着形成干扰，或占用内存、显存）
   - 改变`import`了`.py`文件中东西的定义，则要`Restart`才生效（区别于改变block中定义东西）
+## 进程
+- 主体网页中，左侧笔记本为绿色的，每个对应[[4-more-commands]] `ps -ef | grep ipykernel`能看到的一个进程，对应正在运行的一个笔记本
+  - 当然，你如果在笔记本内部又有多进程[[multiprocessing/minimum/minimum]]等，就又会fork出子进程的子进程，在[[4-more-commands]]中可以看到
+- 这样的进程中，内存里[[general-principles/cache]]有变量值
+  - 新cell中可以取出变量值，相当于[[debug-console]]操作
+  - 停止运行该进程（`Running` tag处关闭或者`kill`等）自然就会丢失变量，释放内存显存等
 ## 编辑技巧
 - `Ctrl`按住可以光标选中多个地方，类似于[[vscode/edit]]的`Alt`
 - 更多和[[vscode/edit]]相同的技巧

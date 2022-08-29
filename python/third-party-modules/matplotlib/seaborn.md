@@ -18,7 +18,7 @@
 sns.barplot(x='a', y='b', data={'a':['1'] * 3 + ['2'] * 5, 'b': [True] * 5 + [False] * 3})
 sns.displot([1, 2, 3, 3, 3, 4, 4])
 ```
-- [[subplots]]
+- [[subplots]]示例：可以用`ax`关键字参数
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns

@@ -9,5 +9,6 @@ df = pd.DataFrame(arr)
 ```
 - 如果需要字段名
   - 则需`pd.DataFrame({'x': [1,2], 'y': [3,4]})`这样
-  - 也可以标量：需要`index`，`pd.DataFrame({'x': 1, 'y': 2}, index=[1])`这样
-  - 迭代`for k in df`时可以迭代字典的键，参考[[time-series]]中也有说明
+  - 也可以输入标量字典：但需要`index`，`pd.DataFrame({'x': 1, 'y': 2}, index=[1])`这样
+  - 还有一种：`columns`关键字：`pd.DataFrame(np.ones((4,2)), columns=['x','y'])`
+- 迭代`for k in df`时可以迭代字典的键，参考[[time-series]]中也有说明

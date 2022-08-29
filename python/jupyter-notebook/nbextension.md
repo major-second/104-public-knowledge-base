@@ -7,15 +7,21 @@
 - 这里可以点击查看插件说明，打勾启用
 - 实用插件
   - codefolding折叠代码
+    - 哈哈，此时`if __name__ == '__main__':`可就不再是多此一举了233
   - ExecuteTime记录运行时间
     - [[vscode/extensions/jupyter-notebook]]自己有类似功能的插件，我们网页版原生还要手动装
   - Hinterland每次按键都自动补全
-    - 但其实还不太好用，经常会反而搞乱你的标识符。建议先别开
+    - 但其实时至2022.8还不太成熟，有bug，经常会反而搞乱你的标识符。建议先别开
   - Scratchpad相当于[[debug-console]]，可以按`Ctrl+B` toggle一个临时“调试器”cell
     - 这里的代码不会被保存！！
+    - 有时这里会失灵
+      - 即：不管怎么按`Ctrl+B`，按`Ctrl+Enter`还是没法运行Scratchpad里的代码，而是运行了主体代码
+      - 此时可以按`Ctrl+S`保存当前笔记本（此时上方有提示），关闭窗口重进，就又可以用了
+      - 而不要Restart整个笔记本
+      - 参考[[refresh]]中“分级”思想
   - Runtools：先安装，再在notebook编辑界面齿轮按钮处打开Runtools工具条
     - 可以运行全部`Alt+X`，运行上方`Alt+A`，运行下方`Alt+B`等等
     - [[vscode/extensions/jupyter-notebook]]自己有类似功能的插件
   - execution_dependencies：使用`#A`, `=>A`等标记（tag）表示依赖关系，自动维护并运行
     - 网页版`View - Cell Toolbar`看到加tag方式
-    - 可能带来兼容性问题：对于正在跑的程序，只能先停再启动，不能直接`Ctrl+Enter`重启了！
+    - 可能带来兼容性问题：有时，对于正在跑的程序，只能先停再启动，不能直接`Ctrl+Enter`重启了！
