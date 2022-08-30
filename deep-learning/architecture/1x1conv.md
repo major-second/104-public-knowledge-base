@@ -1,4 +1,8 @@
 - 思想：对于每个“元素”（如图片像素）单独操作
 - 例如在[[conv]]中，每个像素有64个channel，最后要得到1个channel的热力图，就可以使用in为64，out为1，kernel为`1x1`的卷积
-- 例如某个feature x和最终target y的关系分为两段，且并不线性，就可以使用in为1，out为$n>1$，kernel为`1x1`的卷积，对出来的`out`使用激活函数
-  - 比如激活函数为`Sigmoid`实际上就是[[feature-engineering]]的“把两边太高的收一收”
+- 例如某个feature x和最终target y的关系（如y对x条件期望的曲线图）分为两段，且并不线性
+  - 就可以使用in为1，out为$n>1$，kernel为`1x1`的卷积，对出来的`out`使用激活函数
+  - 比如此时的激活函数为`Sigmoid`实际上能
+    - 截取出非线性中局部近似线性的那一段
+    - 同时起到[[feature-engineering]]“缩尾”（winsorize）作用，并引入凹凸性等
+    - 注：通常我们先batchnorm再激活，但你这个场景显然不能batchnorm再激活
