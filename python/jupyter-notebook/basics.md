@@ -23,6 +23,7 @@
   - 有可能你远程连`jupyter`服务器，服务器卡死了
   - [[vnc]]或者[[teamviewer]]看桌面，发现没反应
   - 本地编辑却很流畅，但运行不了
+- 网页版中，对于`.py`也可以使用分块调试，快捷键等，非常方便调试`.py`文件
 ## 关于刷新
 - 改变（block中定义的）函数定义要重新运行block才生效
 - 关于`Restart`（原始方法运行的快捷键：两次`0`）
@@ -42,6 +43,7 @@
   - 选中一串东西按三次`"`注释（三引号）
   - `Ctrl + /`注释
 - `Tab`键补全（如果有多个备选，则`Tab`出下拉菜单，回车选择）
+- `Ctrl+X`可删除当前行，类似于[[vscode/edit]]的`Ctrl+Shift+K`，但是会覆盖剪贴板
 # 原始方法运行
 - [参考](https://docs.jupyter.org/en/latest/running.html)
 - 命令行`jupyter-notebook <名字>.ipynb`可以在浏览器中打开相应页面

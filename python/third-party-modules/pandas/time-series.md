@@ -65,6 +65,9 @@
   - 默认省略参数`1`
   - `diff`作差同理
     - 注：所以如果要未来减现在，那就`-df['key'].diff(-interval)`
+- `groupby`和`mean`
+  - 比如典型操作：`new_df['x']`是旧的`df['x'].rank(pct=True) * 10 // 1`，即0到9整数，`'y'`也同理
+  - 然后`new_df.groupby(['x','y']).mean()`即可获得有二维`index`，针对每个`x,y`组合的均值
 - 之前说过排序用`sort_index()`，那想获取序号作为数据怎么办？
   - 可以`data['sorted'] = data['key'].rank(ascending=False, method='first')`
   - 其中`ascending`（布尔）决定排序方向，`method`表示相同的怎么处理，`pct`表示是否以“相对”值展现（在机器学习中要是作为特征，则特别实用）
