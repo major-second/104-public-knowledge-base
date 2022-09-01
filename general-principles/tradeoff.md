@@ -12,7 +12,10 @@
   - 还可以指定多个甲取值，看各个情况下最佳的乙，这就是[[pareto-efficient]]帕累托前沿
   - 例：[[2-eval]]的P-R曲线
 # 时空tradeoff
-- 存内存 -> 存硬盘 -> 啥也不存，三级
-- 如[[general-principles/cache]]空间换时间，能体现刚刚两个箭头
-- 体现第一个箭头的
-  - 如[[dataloader]] `pin_memory`空间换时间
+- 存显存 ->(`1`) 存内存 ->(`2`) 存硬盘 ->(`3`) 啥也不存
+- 如[[general-principles/cache]]空间换时间
+  - 体现`2, 3`
+- 如[[dataloader]] `pin_memory`空间换时间
+  - 体现`2`
+- 如[[parallelism]]讲到GPU -> CPU [[numpy/basic]] -> for循环三级
+  - 体现`1, 2`
