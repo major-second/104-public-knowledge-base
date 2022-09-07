@@ -1,0 +1,8 @@
+- 前置
+  - [[init/installation]]
+  - [[hubs/troubleshooting]]
+- [参考文档](https://git-scm.com/docs/git-clone)
+- 一般是在某文件夹下没有`bar`子文件夹时，`clone`名为`bar`的库
+  - 举例：`git clone git@github.com:foo/bar.git`
+- 其它技巧
+  - `git clone --depth=1`可以避免`clone`全部历史
