@@ -1,21 +1,29 @@
 如何阅读文档？
-- 优先阅读官方文档，而不是一来就打开CSDN等劣质网站
-  - 注意查看你的[[version]]，找对应版本的文档
+- 优先读什么？
+  - 官方文档：
+    - 好处：稳妥。零基础开始一步一步来一般总能找到想要的
+    - 坏处：有时没有翻译。有时不方便速查。有时零基础看不懂
+  - 爱好者整理的cheatsheet：一般正确率有保证，且方便速查。特别是已经看过官方文档有基础后速查
+    - 例如[[git-basics/installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
+    - 例如[[dot-robot]]中[cheatsheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)
+  - 总之，对于一些热门的东西，可能可以去CSDN之类查查速成、翻译等，并看看有没有cheat sheet. 对于冷门的，就去官方吧
+  - 注意查看你的[[version]]，必须找对应版本的文档！！
 - 不要教条。要做自己的一些小修改
   - 文档可能过时，导致需要改动个别点
   - 文档版本号、用户名等等常常需要自己填。文档中经常有`/your/path`这种字样，不要傻傻抄
-    - 惯例：`<path>`，`<ip>`等`<>`符号表示你要自己填东西
-  - 文档可能略去一些特别简单的步骤比如`cd`，需要你自己补上
-  - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了注释没改文档
-- 可能需要提取文档核心信息
+    - 惯例：`<path>`，`<ip>`等中`<>`符号表示你要自己填东西
+  - 文档可能略去一些特别简单的步骤比如`cd`到某些文件夹，需要你自己补上
+  - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了代码没改文档
+- 可能需要提取文档核心信息并做出合理取舍
   - 选择性忽视一些不重要（乃至错误）的信息
     - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做
       - 而且这个`upgrade`还有可能导致[[software-management/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
-  - 识别出一些东西是选择性的，不要也没啥关系（而且可能要的过程很艰难，跑不通……）。那就直接舍弃
+  - 识别出一些东西是可做可不做的，不要也没啥关系（而且可能过程很艰难，根本跑不通……）。那就直接舍弃
+  - 识别出一些东西间[[dependencies]]不是“串行”而是可能部分[[parallelism]]的（自己画[[DAG]]），从而加快安装效率
 - 可能在看懂文档基础上，适当整合和自动化让自己更方便
   - 比如看懂文档在做啥之后，把所有步骤换成[[silent]]的，使得可以把安装过程变成跑一个脚本
   - 比如写[[docker-file]]
-  - 比如[[fiducial-markers]]中，把[[cmake]]简化成更高级的[[catkin-make]]
+  - 比如[[aruco]]中，把[[cmake]]简化成更高级的[[catkin-make]]
   - 但有时，又不要太自以为是
-    - 反例：比如[[moveit-installation]]中自以为有`catkin_make`命令就无需`sudo apt-get install ros-melodic-catkin python-catkin-tools`
-- 硬件更要读文档保证安全！可不是只有软件才有文档！比如https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html 解决耳机控制键突然用不了的问题
+    - 反面教材：比如[[moveit-installation]]中自以为有`catkin_make`命令就无需`sudo apt-get install ros-melodic-catkin python-catkin-tools`了。实际上不是如此！
+- 硬件更要读文档（说明书）保证安全！可不是只有软件才有文档！比如[耳机控制键突然用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)

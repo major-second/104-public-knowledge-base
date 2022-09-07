@@ -15,11 +15,12 @@
 - 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]
   - 卸载也是一起卸载
 # vscode插件和其它软件的关系
-- Some extensions needs some softwares as dependencies.
+- 有时，本身完成实际功能的软件并不是vscode，也不集成在vscode插件中。vscode插件只是调用接口
+  - 这里参考系统的“内核”和“外壳”[[shell]]思想
   - e.g. [[paste-images-from-clipboard]] needs `sudo apt install xclip` in Ubuntu.
   - e.g. [[conda/installation]]安装后（或者直接下载安装`python`），vscode的python相关插件才有用
-    - **插件本身不能集成python解释器**！（你想想插件一共才多大呢）
+    - **插件本身当然不能集成python解释器**！（你想想插件一共才多大呢）
   - e.g. [[git-basics/installation]]安装后，`Ctrl+Shift+G`功能和[[git-history]]插件才能用，也是类似的
   - latex，cpp等也都是这样
-- markdown相关这种特别轻量级的可以“集成到vscode插件中”
-- 对于linux系统，shell的“解释器”当然内置在系统中了，所以[[bash-debug]]拿到就能用
+  - 特殊情况：对于linux系统，shell的“解释器”（“内核”）当然内置在系统中了，所以[[bash-debug]]拿到就能用
+- 有时，[[markdown-preview-enhanced]]这种特别轻量级的东西可以“集成到vscode插件中”，即插即用
