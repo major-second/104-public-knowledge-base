@@ -1,0 +1,17 @@
+- 前置[[git/basics/installation]]
+- [官方文档](https://git-scm.com/docs/git-config)
+- 参考[[settings-and-configurations]]
+- 常用命令
+  - 全局设置：`git config --global`
+    - 新增键值对：`git config --global key.subkey value`
+    - 例：必须有了这个才能commit：
+      - `git config --global user.name <名字>`
+      - `git config --global user.email <邮箱>`
+    - 例：设置代理
+      - `git config --global http.proxy http://127.0.0.1:<端口>`
+      - `git config --global https.proxy http://127.0.0.1:<端口>`
+  - 局部设置：`git config --local`，`--local`可省略
+  - `git config --list`：查看列表, 可以用`q`退出
+    - `git config --global --list`：查看全局那部分的列表
+    - 不加`--global`时出现的结果比`--global`多
+    - 参考[[settings-and-configurations]]的“优先级”思想

@@ -4,7 +4,7 @@
     - 好处：稳妥。零基础开始一步一步来一般总能找到想要的
     - 坏处：有时没有翻译。有时不方便速查。有时零基础看不懂
   - 爱好者整理的cheatsheet：一般正确率有保证，且方便速查。特别是已经看过官方文档有基础后速查
-    - 例如[[git-basics/installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
+    - 例如[[git/basics/installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
     - 例如[[dot-robot]]中[cheatsheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)
   - 总之，对于一些热门的东西，可能可以去CSDN之类查查速成、翻译等，并看看有没有cheat sheet. 对于冷门的，就去官方吧
   - 注意查看你的[[version]]，必须找对应版本的文档！！

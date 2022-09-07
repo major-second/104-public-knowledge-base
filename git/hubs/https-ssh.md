@@ -1,5 +1,5 @@
 前置
-- [[git-basics/installation]]
+- [[git/basics/installation]]
 - linux需要`apt install openssh-client`
   - windows在安装git时应该默认安装好了（要是没有就自己补）
 - 了解[[generate-key-pair]]，[[check-connectivity]]

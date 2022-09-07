@@ -32,7 +32,7 @@ export http_proxy="localhost:<端口号>"
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
 有些软件比如[[robocorp/basics/installation]]会用到
 # 读取自己设置的软件
-- 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[git-basics/config]]
+- 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
 - 有时嫌改这种设置太麻烦，可以[[hosts]]作[[temp-solution]]
 # 验证配置成功
 - linux终端

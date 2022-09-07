@@ -36,6 +36,7 @@ https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html
       - `torch.tensor(1, dtype=float)`试试结果`dtype`是啥
       - 再`torch.tensor(1.)`看看是啥
       - 不一定一样哦
+    - 注：`torch`张量转`numpy`数组转可能出现单精度转双精度，双精度有时无法通过`nn.Linear`等。总之要注意精度问题
   - `shape`形状
   - `device`所处设备（CPU，还是第几号GPU等）
   - 这些属性直接用`<变量名>.shape`这样取用即可

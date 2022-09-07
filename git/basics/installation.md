@@ -7,9 +7,10 @@
     - 相当于vscode只是一个表层接口
   - 安装时选项很多，但是一般全默认即可
     - 此时环境变量[[windows/env-var]]可能没正常设置，那么手动设置才能让powershell使用`git`命令
-- 当然，安装成功后还有一大堆坑，比如需要远程连接[[clone]]时，[[hosts]]，[[https-ssh]]，[[personal-access-tokens]]
+- 当然，安装成功后还有一大堆坑，比如需要远程连接如[[clone]]时，[[hosts]]，[[https-ssh]]，[[personal-access-tokens]]等坑
 - 注意`git`和`github`的边界
   - 参考[[other-hubs]]
 - 文档和帮助
   - [官方文档](https://git-scm.com/doc)
   - [可视化cheat sheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
+  - 帮助命令`git help`或`git --help pull`：例如`git help pull`：看`pull`的帮助
