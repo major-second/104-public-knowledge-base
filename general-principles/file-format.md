@@ -25,6 +25,14 @@
   - [[xxd-diff]]有提到把`.pkl`二进制文件`xxd`成文本`.hex`再使用`diff`，这就能体现出具体差别，而非简单地显示“differ”
   - 前者可以用通用编辑器如[[vim/basics]]，[[vscode/edit]]等编辑，所以很多时候可作为过渡，例如csv格式
   - [[file-handler]]读取文本文件（例如[[json]], [[yaml]]）就是“过渡”的例子
+- 序列化（编码）
+  - 有时文件本身表达的东西不是简单的文本序列，但可以用文本序列存储
+    - 例如[[jupyter-notebook/basics]]
+      - `.ipynb`文件如果直接`cat`出来，是[[json]]格式
+      - 但jupyter网页、插件等能读取这些[[json]]，显示出有结构的cell等
+    - 例如[[html]]
+    - 例如[[pointcloud/basics]]
+      - `.ply`用ascii字符串以人类可读形式存储所有信息，但可以用专门软件读出和可视化等
 - 因此，只要你知道你在干什么，就可以修改扩展名
   - 一般文本文件是可以的。比如你需要一个`.dll`，可以直接新建文本文件，粘贴所需文本，保存为`.dll`格式
   - 例如创建文本文件
@@ -38,3 +46,5 @@ print("python") #'
   - 改为`.md`用markdown编辑器打开，效果如下![](file-format-example/markdown.png)
   - 改为`.py`，语法高亮如下![](file-format-example/python.png)，用`python`运行结果`python`
   - 改为`.sh`，语法高亮如下![](file-format-example/shell.png)，用`bash`运行结果`shell`
+- 更广义的
+  - 一个文件夹中的文件组织格式等也是某种约定，也有类似文件格式的一些东西。例如[[clone]]的`--bare`就是clone了“序列化”结果

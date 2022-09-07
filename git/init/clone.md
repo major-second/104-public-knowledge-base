@@ -2,7 +2,22 @@
   - [[init/installation]]
   - [[hubs/troubleshooting]]
 - [参考文档](https://git-scm.com/docs/git-clone)
-- 一般是在某文件夹下没有`bar`子文件夹时，`clone`名为`bar`的库
-  - 举例：`git clone git@github.com:foo/bar.git`
 - 其它技巧
-  - `git clone --depth=1`可以避免`clone`全部历史
+  - `--depth=1`可以避免`clone`全部历史导致时间过长
+  - `--recursive`递归clone [[submodule]]
+  - `--bare`：clone bare repo
+    - 参考[[file-format]]中“序列化”思想
+    - 例如在[[fork-private]]用到
+- 做了的动作
+  - 下载文件到新的文件夹
+    - 一般是在某文件夹下没有`bar`子文件夹时，`clone`名为`bar`的库
+    - 举例：`git clone git@github.com:foo/bar.git`
+  - 初始化该git库
+  - [[git-basics/branch]]情况
+    - 如果远程有`origin/main, origin/dev`两个[[git-basics/branch]]，活跃的是`origin/main`
+    - 你clone结果就有
+      - `origin/main, origin/dev`
+      - `origin/HEAD`指向`origin/main`
+      - `main`
+      - `HEAD`指向`main`
+- 进一步操作：常见[[fetch]], [[push-pull]]等
