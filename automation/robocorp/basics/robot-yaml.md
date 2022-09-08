@@ -25,7 +25,7 @@
 - [官网教程](https://robocorp.com/docs/setup/robot-yaml-format)也很清楚
   - 至少需要`tasks - <任务名称> - <command | shell | robotTaskName>`和`artifactsDir`两个key
 - 所以我们写出最小的能用的`robot.yaml`：在`104-public-knowledge-base\automation\robocorp\example\robot-yaml\minimal\robot.yaml`（虽然会报警告）
-- 这个robot可以进`robot.yaml`所在目录用`rcc run`运行，不能用vscode运行（vscode不够灵活，要求用conda环境）
+- 这个robot可以**进`robot.yaml`所在目录**后，用`rcc run`运行，不能用vscode运行（vscode不够灵活，要求用conda环境）
 - 效果是使用默认`python`解释器`print`一行`hello world`
 ## 使用`conda.yaml`和`.gitignore`
 - 查看`104-public-knowledge-base\automation\robocorp\example\robot-yaml\conda`，可以看到多了一个`conda.yaml`文件。书写格式参考[[create-env-yaml]]

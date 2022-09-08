@@ -26,6 +26,7 @@
       3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
       4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker/source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
       5. 删除也可以方便地删除一部分，这在[[software-management/source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
+   6. 为了达成同一目的，可能有多个文件，之间可能具有“优先级”而出现一些值的覆盖，参考上一节“优先级”
 3. 用命令
    1. 比如`git config`，参考[[config]]
    2. 比如`pip config set <key> <value>`命令，参考[[pip]]
