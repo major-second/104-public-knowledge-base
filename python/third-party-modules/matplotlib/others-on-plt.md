@@ -3,3 +3,4 @@
   - `plt.axhline(<y>), plt.axvline(<x>)`水平竖直线
     - 常用参数`color, linestyle`等
   - `plt.style.use('seaborn')`设置主题，使得不要过丑
+  - `plt.fill_between(x, y_lower, y_upper)`画阴影
