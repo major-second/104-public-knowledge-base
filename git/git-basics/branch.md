@@ -5,7 +5,8 @@
     - 这样就把本地的`main` branch直接重命名成了你自己的branch
   - 当然，也可以`git branch new_name`直接新建
   - 然后始终用自己的branch
-  - `git push <一般是origin> new_name`就可以指定push到自己的branch
+    - 如果你在错误的branch，就`git checkout`一下你自己的branch，参考[[checkout]]
+  - `git push <一般是origin> new_name`就可以指定push到自己的branch的remote
   - 觉得告一段落了，就给团队管理者发pull request
     - 在github或[[other-hubs]]的网页上发
 - 删除branch
@@ -14,5 +15,4 @@
 - branch的一个应用
   - 参考[[temp-solution]]
   - 即：可以临时创建一个branch再`-d`删除，从而解除[[detached]]状态
-- 注：github默认branch以前是`master`，现在是`main`，因为`master`和slave涉嫌种族歧视黑人（……）
-- [[checkout]]和branch密切相关
+- 注：github默认branch以前是`master`，现在是`main`，因为`master`和slave涉嫌种族歧视黑人（啊这）
