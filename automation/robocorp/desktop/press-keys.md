@@ -8,8 +8,21 @@
     - windows徽标键是`cmd`
 - 注意：如果只输入文本可以使用`Type text`
 - 如何尽可能少使用鼠标？
-  - [[keyboard-shortcuts]]，[[fn]]，[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[misc]]等等快捷键
+  - [[vscode/keyboard-shortcuts]]，[[fn]]，[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[misc]]等等快捷键
   - `cmd`键打开开始菜单，输入程序名来打开
+  - 这时需要[[化归]]防止输入法带来麻烦（即切换为英文输入，参考[[automation/trivial-mistakes]]中的）
+  - 例如
+```robotframework
+    Log               Setting English typing.
+    TRY
+        Wait For Element    image:zhong.png
+        Press Keys    shift
+    EXCEPT  TimeoutException: No matches found for: image:zhong.png
+        Log           Now already using English typing
+    END
+    Type Text         proxy settings
+```
+其中`zhong.png`是右下角托盘中文状态的“中”字
 - 参考例子：`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy`
 - 目前`alt + space`快捷键功能不正常，原因未知，但可以通过[[built-in-keyboard-shortcuts/window]]的`win + 方向键`凑合一下
   - 这就是[[alternative-method]]的思想
