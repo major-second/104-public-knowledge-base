@@ -1,5 +1,7 @@
 # 一般流程
-- `Ctrl + Shift + X`搜索插件并点击Install安装
+- 安装
+  - gui：`Ctrl + Shift + X`搜索插件并点击Install安装
+  - 命令行：参考[[vscode/command-line]]
 - 点击左侧INSTALLED栏目中插件条目
   - ![](extension-item.png)
 - 打开其主页
