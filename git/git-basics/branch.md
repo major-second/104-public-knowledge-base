@@ -7,6 +7,8 @@
   - 然后始终用自己的branch
     - 如果你在错误的branch，就`git checkout`一下你自己的branch，参考[[checkout]]
   - `git push <一般是origin> new_name`就可以指定push到自己的branch的remote
+    - 此时有时可加`--set-upstream`参数，例如`git push --set-upstream origin new_name`，关联本地branch和远程branch
+    - 这样之后无需每次输入branch名称，直接`git push`即可
   - 觉得告一段落了，就给团队管理者发pull request
     - 在github或[[other-hubs]]的网页上发
 - 删除branch
