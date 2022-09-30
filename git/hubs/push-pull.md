@@ -8,6 +8,9 @@
 - 一般来说不要为了看起来舒服就[[reset]]再`push --force`，因为[看起来一堆commit并不占多少空间](https://segmentfault.com/q/1010000003089251)
 - `git push --tags`可以让远程能看到tags
 - `git push origin <branch_name>`到指定分支
+  - 注意前提是[[checkout]]到你想要的[[git-basics/branch]]
+  - 这时往往可加`--set-upstream`参数：关联本地branch和远程branch，之后就只需`git push`即可，在[[git-basics/branch]]也提到了
+  - `git pull`也是同理（包括`checkout`，`--set-upstream`等逻辑）
 - `git pull`命令变种
   - `--recurse-submodule`选项：可递归pull [[submodule]]
   - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
