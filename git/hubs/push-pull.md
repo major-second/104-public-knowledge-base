@@ -9,6 +9,6 @@
 - `git push --tags`可以让远程能看到tags
 - `git push origin <branch_name>`到指定分支
 - `git pull`命令变种
-  - `--recursive`选项：可递归pull [[submodule]]
+  - `--recurse-submodule`选项：可递归pull [[submodule]]
   - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
 - 如果你有多个分支，那需要指定`git pull origin main`这种，才把本地的`main`也同步到对应`origin/main`的位置
