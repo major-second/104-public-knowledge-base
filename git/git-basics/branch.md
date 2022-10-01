@@ -1,12 +1,14 @@
 - 有时候团队合作时，为了保险和隔离起见，开发时请用自己的branch，确认没问题再发pull request给管理者
+  - 假设你一开始在本地`main` branch
   - `git branch -m new_name`
     - 参考`git branch -h`帮助[[help]]
     - 结果：`-m, --move            move/rename a branch and its reflog`
     - 这样就把本地的`main` branch直接重命名成了你自己的branch
-  - 当然，也可以`git branch new_name`直接新建
+  - 当然，也可以`git branch new_name`直接新建，并且[[checkout]]到这个branch，效果也是类似的
+    - 且这么做，本地就仍然有原来的branch比如`main`
   - 然后始终用自己的branch
     - 如果你在错误的branch，就`git checkout`一下你自己的branch，参考[[checkout]]
-  - `git push <一般是origin> new_name`就可以指定push到自己的branch的remote
+  - `git push <一般是origin> new_name`就可以指定push到自己的branch的remote（前提是你已经在某个branch上）
     - 此时有时可加`--set-upstream`参数，例如`git push --set-upstream origin new_name`，关联本地branch和远程branch
     - 这样之后无需每次输入branch名称，直接`git push`即可
   - 觉得告一段落了，就给团队管理者发pull request
@@ -14,7 +16,6 @@
 - 删除branch
   - 如果fully merged，可以`git branch -d name`安全删除
   - 确认不要，则可以`git branch -D name`强制删除
-- branch的一个应用
-  - 参考[[temp-solution]]
-  - 即：可以临时创建一个branch再`-d`删除，从而解除[[detached]]状态
+- 解除detached状态：`git branch name; git checkout name`，这样就有了一个branch名
+  - 或：`git branch -D main; git branch main; git checkout main`指定当前commit对应已有的`main` branch
 - 注：github默认branch以前是`master`，现在是`main`，因为`master`和slave涉嫌种族歧视黑人（啊这）
