@@ -7,7 +7,7 @@ https://github.com/v2ray/v2ray-core/releases
 https://github.com/Qv2ray/Qv2ray/releases
 ## 配置
 - 解压`v2ray`内核
-- 安装`qv2ray`
+- 解压`qv2ray`，打开程序
 - Preferences - Kernel Settings处指定`v2ray`内核位置（有两个地方要设置）![](v2ray-core.png)
 - Inbound Settings处根据是否要灵活切换端口，去掉/勾选Set System Proxy（这是在帮你[[configure]]，会导致你自己没法灵活换）
   - 如果去掉，那么该界面右边`HTTP Settings - Port`要对的上你系统里的代理设置（开始菜单搜索proxy）![](proxy-port.png)

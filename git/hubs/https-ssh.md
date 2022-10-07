@@ -20,7 +20,10 @@ eval "$(ssh-agent -s)"; \
 ssh-add ~/.ssh/id_ed25519; \
 cat ~/.ssh/id_ed25519.pub # 最后那里ssh-ed开头的就是要复制的
 ```
-- windows生成公钥：只需刚刚的首行和末行
+- windows生成公钥
+  - 来到`~/.ssh`文件夹
+  - 然后只需刚刚的首行和末行
+  - 其中`ssh-keygen`可能带有后缀名`.exe`
 - 总之复制到密钥文本
 ## 后续操作
 - github - 右上角头像 - Settings - 左侧SSH and GPG keys - New SSH key

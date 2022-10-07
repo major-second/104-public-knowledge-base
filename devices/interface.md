@@ -8,7 +8,11 @@
     - 比如这个耳机一分二
       - 温柔插，只能到这里，可以勉强用但是不牢固，时不时就单声道![](not-stable.png)
       - 稍微用点力才能牢固![](stable.png)
-- [USB形态汇总](https://www.viewsonic.com/library/tech/usb-c-usb-b-and-usb-a-whats-the-difference/)
+- USB形态汇总
+  - [USB形态汇总](https://www.viewsonic.com/library/tech/usb-c-usb-b-and-usb-a-whats-the-difference/)
+  - [更详细介绍](https://zhuanlan.zhihu.com/p/447595295)
+    - 典型时代特征：USB mini往往相比USB micro年代更久远
+    - `Micro USB接口，属于Mini USB的下一代规格接口`
   - ![](usb.png)
 - 如果笔记本没有某些种类的接口就必须用[扩展坞](https://baike.baidu.com/item/%E6%89%A9%E5%B1%95%E5%9D%9E/9493210)
   - 比如其他接口转USB-A或USB-C，然后插到对应母口中
@@ -39,5 +43,5 @@
 - 有时重新插拔接口可以解决一些问题
   - 比如有时显示器熄屏了需要重新插拔
   - [[wired-connection]]
-  - [[troubleshooting]]
+  - [[franka-panda/troubleshooting]]
   - 重启或[[timeshift]]之类后，插在主机上的各种附属物有些可能要重新插拔，比如[[connect-controller]]和[[realsense/installation]]

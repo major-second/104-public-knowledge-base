@@ -1,0 +1,4 @@
+- 有三个commit 1 2 3，2相对1做了甲变动（如新增某个文件）。现在需要3也做甲变动，即可[[checkout]]到3，再`git cherry-pick <2的哈希码等>`
+- 如果1 2 3 4，3相对1做了甲变动。现在需要4也做甲变动
+  - 一种方法是hard [[reset]]到3，soft [[reset]]到1，造出一个临时commit 3'用于cherry-pick
+  - 还有利用cherry-pick本身的功能，参考[文档](https://git-scm.com/docs/git-cherry-pick)

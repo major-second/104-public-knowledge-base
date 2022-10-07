@@ -4,7 +4,8 @@
     - 可以搜索，可以增删改查快捷键
     - 这里可以看到自定义了的快捷键但看不到已经删除默认的
   - 但![](keybindings-json.png)这个右侧按钮看`json`可以看所有自己修改过的（包括增删改）
-  - 比如一个例子
+  - 比如本文件夹的`keybindings.json`就是一个实际例子
+  - 比如一个较简短的例子如下
 ```json
 // Place your key bindings in this file to override the defaultsauto[]
 [
@@ -22,7 +23,7 @@
     }
 ]
 ```
-这里`Ctrl+B`删掉是为了防止和[[tmux]]冲突
+注：这里`Ctrl+B`删掉是为了防止和[[tmux]]冲突
 - `Ctrl+K`后接别的键的快捷键称为chord快捷键
   - 如果接的是单字母，那么在中文输入法或者只读编辑窗口会用不了。比如`Ctrl+K U`关闭所有已保存的标签
   - 所以不妨把这类快捷键自定义修改了
