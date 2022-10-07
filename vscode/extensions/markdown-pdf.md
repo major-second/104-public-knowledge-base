@@ -5,7 +5,8 @@
   - 例如`"markdown-pdf.executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"`
   - 参考[[vscode/settings]]
 - 现在可以右键活动的`.md`编辑窗口，导出
-  - 也可以`Ctrl + Shift + P`导出
-- 不过，如果要[[enhanced]] features（如公式）
+  - 也可以`Ctrl + Shift + P`后找指定命令导出
+- 不过，这种导出没有[[enhanced]] features
+  - 如果要[[enhanced]] features（如公式）
   - 就得参考[[markdown-preview-enhanced]]中的导出方法
   - 即先预览再用[[markdown-preview-enhanced]]导出
