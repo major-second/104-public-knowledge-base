@@ -7,10 +7,11 @@
     - 例如[[git/basics/installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
     - 例如[[dot-robot]]中[cheatsheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)
   - 总之，对于一些热门的东西，可能可以去CSDN之类查查速成、翻译等，并看看有没有cheat sheet. 对于冷门的，就去官方吧
-  - 注意查看你的[[version]]，必须找对应版本的文档！！
+  - 注意查看你软件的[[version]]，必须找对应版本的文档！
+    - 例如[[rllib]]中针对的是`1.13.0`而不是`2.0.0`
 - 不要教条。要做自己的一些小修改
   - 文档可能过时，导致需要改动个别点
-  - 文档版本号、用户名等等常常需要自己填。文档中经常有`/your/path`这种字样，不要傻傻抄
+  - 脚本代码（命令）中版本号、用户名等等常常需要自己填。文档中经常有`/your/path`这种字样，不要傻傻抄
     - 惯例：`<path>`，`<ip>`等中`<>`符号表示你要自己填东西
   - 文档可能略去一些特别简单的步骤比如`cd`到某些文件夹，需要你自己补上
   - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了代码没改文档
