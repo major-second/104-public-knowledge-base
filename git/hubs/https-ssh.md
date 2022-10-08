@@ -23,10 +23,10 @@ cat ~/.ssh/id_ed25519.pub # 最后那里ssh-ed开头的就是要复制的
 - windows生成公钥
   - 只需刚刚的首行和末行
   - 其中`ssh-keygen`可能带有后缀名`.exe`
-  - 即以下（中途需要一个回车）
+  - 即以下（中途可能需要回车和`y`等）
 ```powershell
 cd ~/.ssh; `
-ssh-keygen.exe -t ed25519 -N 'foo'; `
+ssh-keygen.exe -t ed25519; `
 cat ~/.ssh/id_ed25519.pub
 ```
 - 总之复制到密钥文本
