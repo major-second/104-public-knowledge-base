@@ -4,5 +4,5 @@
   - `" 1 ".trim()`
   - 这在[[features]]中有重要作用
   - 脚标当然可以有负数，类似python
-  - `| Select-String <正则表达式>`：可以查找[[regex]]
-    - 参考[[11-basic-scripting-partB]]的管道记号
+- `| Select-String <正则表达式>`：可以查找[[regex]]
+  - 参考[[11-basic-scripting-partB]]的管道记号
