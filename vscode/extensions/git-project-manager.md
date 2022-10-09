@@ -1,0 +1,16 @@
+# GPM
+- 插件名：git project manager
+- 设置
+  - 打开`settings.json`（参考[[vscode/settings]]）
+  - 根据你git库在什么位置，加上`"gitProjectManager.baseProjectsFolders"`字段，才能正常使用该插件
+    - 其需要一个表，即`"gitProjectManager.baseProjectsFolders": ["foo", "bar"]`
+    - 填写时可以直接填文件夹路径（例如`~/my-git-project`）
+    - 也可以填上级目录（例如`~`）
+    - 默认递归搜索层数有限制：为`4`
+- `Ctrl + Shift + P`，`GPM`看到可用命令
+  - 常用：`Refresh`刷新，然后`Open`就可以打开
+  - 还有默认`Ctrl + Shift + Q`打开最近的
+- 可能的问题：有时以这种方式打开的文件夹窗口不正常
+  - 例如[[wikilinks]]用不了
+  - 资源管理器界面不显示更新情况（字母`M, U`等）等
+  - 而`Ctrl+K Ctrl+O`打开同一个文件夹就正常
