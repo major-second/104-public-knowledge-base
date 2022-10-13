@@ -1,0 +1,9 @@
+- https://leetcode.cn/problems/count-good-meals/submissions/
+  - 搞错下标和数据内容
+    - 第一次：判断`l[i] + l[j]`和`s`（和）的关系，错写成了`i + j`
+    - 第二次：题意中的不同菜品，是下标不同，而不是值不同
+      - 这还导致了边界情况：最大可能的和应该是最大数的2倍，而不是最大数的2倍减1
+    - 第三次：使用[[双指针]]，两边逼近时，是要看`i, j`两下标关系，而不是值小于等于或小于来停止
+- https://www.hackerrank.com/challenges/maximize-it/problem?isFullScreen=true
+  - 看清题意！他说每个list先有一个数字表示list长度
+  - 不过对于python来说就很简单，直接`input().split()[1:]`即可
