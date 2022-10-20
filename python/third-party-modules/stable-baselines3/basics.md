@@ -3,6 +3,7 @@
   - 安装：`pip install stable-baselines3`
   - 了解[[env]]
 - 使用：参考[教程](https://stable-baselines3.readthedocs.io/en/master/guide/quickstart.html)
+  - 注：`render`的要求比较麻烦，不想要就不要
 
 ```python
 import gym
