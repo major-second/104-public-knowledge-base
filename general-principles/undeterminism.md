@@ -8,13 +8,18 @@
 - 例如[[rand]]中提到的在C++中如何引入随机性，并利用它防止你的哈希被hack
 - 例如python的`random`和`np.random`等
   - [[parallelism]]中提了一嘴用`numpy`生成随机数
-- 例如gym的[[seed]]设置，采随机trajectory喂给RL
 - 例如深度学习防止[[overfit]]的[[dataloader]] shuffle，随机dropout等
 # 防止负面影响
+目的：比如[[general-principles/debug]]对拍用等
+## 去除随机性
+- 例如gym的[[seed]]设置，`<env>.seed(42)`
+- numpy的`np.random.seed(42)`
+- 原生`random`的`random.seed(42)`
+## 跑多几个取平均
 - 理论基础参考[[大数定律]]
 - 比如涉及神经网络等训练，跑多个随机种子取平均值，稳定地看结果
   - 这时常见所需的操作和技能（请参考）
     - 对于[[tensorboard]]的[[log]]文件夹的分开设定
-      - 不管你是调[[lightning/basics]]这种包还是自己存[[tensorboard]]
+      - 不管你是调[[lightning/basics]]这种包还是自己存[[tensorboard]]，都有办法让[[log]]文件夹分开
     - [[command-line-arguments/basics]]传命令行参数
     - [[isolation]]思想，例如[[torch-cuda]]指定用卡
