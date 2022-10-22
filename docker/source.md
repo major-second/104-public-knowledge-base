@@ -10,4 +10,4 @@
     - 参考[[settings-and-configurations]]中的`.d`
   - `https`也可能导致问题`Certificate verification failed: The certificate is NOT trusted.`
     - 参考[[software-management/source]]解决
-    - 即临时使用`http`源安装`apt install ca-certificates`
+    - 即临时使用`http`源安装`apt install ca-certificates`，再改回`https`
