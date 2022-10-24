@@ -61,6 +61,7 @@ https://leetcode-cn.com/problems/4sum/submissions/
 这题如果参考刚刚的“两数之和”用哈希的做法：注意题目要求！需要的数据结构是`set<multiset<int>>`，内层先`set`检脚标重复，然后造一个`multiset`，再塞进外层`set`.
 当然，这其实是个假的哈希，因为用的是有序的（无序的没法往`<>`里填）……直接这么做搞不好反而会超时。
 ## 有序集和`lower_bound`应用
+### 例1
 https://leetcode-cn.com/problems/container-with-most-water/submissions/
 ```cpp
 class Solution {
@@ -129,3 +130,12 @@ public:
     }
 };
 ```
+### 例2
+- 两组点A和B，若B中的点的$x,y$坐标都比A中某个点大，就称为支配。给定两组点，求最多多少支配对
+- 当然[[hungarian]]可以做，但是复杂度太高
+- [[greedy]]思想方法
+  - 对于B中$x$最小的点，看能被它支配的A中点中，$y$最大的点
+  - 简单思考原因
+    - 一方面，$x$大了小了都没用，反正现在被支配，以后都被支配，所以就应该考察$y$大
+    - 另一方面，现在这一对送上门不要白不要
+- 所以应该先各自排序，然后随着考察B中点的$x$坐标变大，也就不断地把更多A中的点加到平衡树（`set`）中
