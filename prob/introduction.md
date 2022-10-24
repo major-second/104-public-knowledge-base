@@ -1,3 +1,4 @@
+[toc]
 - 顶级量化外资Jane Street给出的对概率论的直观、直觉入门
 - [文档链接](https://www.janestreet.com/static/pdfs/trading-interview.pdf)
 # Randomness
@@ -56,4 +57,31 @@
   - take 'em, lift(buy)
   - partial, buy 5
   - filled, fully filled
-- 
+- 交易的目的：提高期望，降低方差
+  - 有时为了一个可以舍弃另一个
+  - 色子例子：期望不变，而增大风险，那当然不好
+  - 比如可能策略：3 at 4, 10 up.
+    - 这样，风险厌恶者可能以3卖给你丢色子机会这样
+- 问题例子：包括[[fermi-estimation]]，对[[character/var]]的概念思考等等。非常考察insight
+# Adverse Selection
+- 交易对手方？
+  - 对赌！一方对
+  - 对方不关心价格（急买急卖/长期投资）
+- 逆向选择概念
+  - 买的没有卖的精，你了解更少信息，被对方选择性坑，最后做差的交易
+  - 条件概率在此体现重要作用
+  - 因此你的交易一成功，就要更新信念
+> I don't want to belong to any club that will accept me as a member
+
+- 这个思想：没有说你坑了club，只有club坑你。只有坑的club会找你，所以是“逆向选择”
+# Problem Solving Tools
+- 自相似（参考[[general-principles/recursion]]）
+  - 例子：“第一次丢出硬币正面需要多少次投掷”
+- Edge cases
+  - 一种：[[trivial-case]]检查正确性
+  - 另一种：找最简单的作为[[general-principles/recursion]]出口，[[induction]]起始点等等
+# Interview Myths
+- 数感，速算，数量级可能有用，但不是那种快速计算乘法
+- 我们喜欢直觉，没必要会很多定理
+- 不是只有对错重要。敢于问、敢于表达过程，参考[[1-general-principles]]
+- 不要非不停说，过于自信。可以思考思考。不要急。可以换位思考其它面试者
