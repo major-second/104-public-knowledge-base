@@ -3,11 +3,13 @@
 # 2.1 Problem Simplification
 - 从简单情况开始考虑，逐步过渡
   - 其实这里的两个例子都是逆向归纳
+  - 参考[[general-principles/recursion]]
 - Screwy pirates
   - backward induction，逆向归纳。也就是从简单情况开始
 - Tiger and sheep
   - 还是backward induction
   - 但需加上合理假设：吃羊比不吃收益高
+    - 参考[[1-general-principles]]
 # 2.2 Logic Reasoning
 - river crossing
   - 第一感觉：1和10去，1回，1和5去，1回……这样是错的
@@ -51,7 +53,7 @@
 - last ball
   - 逆向思维：一个蓝球可能“产生”一个蓝球，或“转换成”两个红球。一个红球只会产生一个蓝球。所以就看红球奇偶数
   - 这个不要想复杂了，不涉及概率问题！
-  - 有平板，也可以列举出数值：$(B,R) \to (B-1,R)$这种
+  - 如果有手写板，也可以手写出式子：$(B,R) \to (B-1,R)$这种，帮助思考
 - light switches
   - 脑筋急转弯思路：可以使用温度，无大语
 - quant salary
