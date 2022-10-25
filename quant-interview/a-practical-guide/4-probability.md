@@ -1,0 +1,119 @@
+- 也可以参考[[introduction]]
+# 4.1
+- 基本
+  - outcome $\omega$
+  - sample space $\Omega$
+  - Probability of an outcome $P(\omega)$
+  - event, union, intersection, complement, mutually exclusive
+  - random variable: $\Omega \to \mathbb R$
+  - $E[I_A] = P(A)$
+- Coin toss game
+  - 设而不求！设$x,y$利用对称性（参考[[2-brain-teasers]]）
+- card game
+  - jack, queen, king, ace
+  - 也是利用对称性
+- drunk passenger
+  - 参考[[general-principles/recursion]]
+  - $x_{100} = 1/100 \cdot (1+x_{99}+...+x_2)$
+  - 最后发现是$1/2$
+  - 这个递推式也有直觉解释：1在100前被占还是100在1前被占
+- N points on a circle
+  - 法一：考虑$N$个互斥事件，于是$N/2^{N-1}$
+  - 法二：任取$N$条直径再每条直径二选一
+# 4.2 Combinatorial Analysis
+- 排列，组合，容斥原理，二项式
+- Poker hands
+  - value, suit
+  - 计数时，full house当然先要$A_{13}^2$，而两对是$C_{13}^2$
+- Hopping rabbit
+  - 可以[[general-principles/recursion]]
+- Screwy pirates 2
+  - 太tm精妙了，对于每个五人组都要有“特别锁”，这五人都没有，剩下6人都有
+  - 参考[[re-classification]]
+- chess tournament
+  - 法一：排除掉所有2提前碰1的可能性
+    - 即$1-1/(2^n-1)-(2^n-2)/(2^n-1)\cdot 1/(2^{n-1}-1)\cdots$
+    - $1-1/(2^n-1)-2/(2^n-1)-\cdots$
+    - 得$2^{n-1}/(2^n-1)$
+  - 法二：倒果为因，根据抽签序列总能模拟出“所有人一开始坐在指定位置，按位置钦定比赛”
+    - 直接得$2^{n-1}/(2^n-1)$
+- application letters
+  - 容斥原理
+  - 没有特别特别简单的做法！
+- 100th digit
+  - 1，1
+  - 3，2
+  - 7，5
+  - 17，12
+  - 规律：一个矩阵不停作用于一个向量
+  - 回忆[[3-linear-algebra]]
+  - 把矩阵对角化：
+$$\left(\begin{matrix}1&2\\1&1\end{matrix}\right) = ADA^{-1}$$
+$$D=\left(\begin{matrix}1+\sqrt 2&0\\0&1-\sqrt 2\end{matrix}\right)$$
+$$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}\sqrt 2&\sqrt 2\\1&-1\end{matrix}\right) $$
+草，没用，还是要计算3000次方……
+- 换个思路（参考[[re-classification]]），我们直接从最终结果看组合数合并同类项，而不是逐次计算
+  - $3000*1+C_{3000}^3*2+\cdots$，也就是想到二项式展开奇数项
+  - 草，那就$(1+\sqrt 2)^{3000} + (1-\sqrt 2)^{3000}$是整数
+  - 那不就答案是9
+- cubic of integer
+  - 结尾1立方结尾才是1
+  - 然后再看十位：$(10a+1)^3=...+30a+1$
+  - 所以71立方结尾才是1
+  - 用到了二项式原理
+# 4.3 Conditional, Bayes
+- 条件概率，multiplication rule
+- 全概率公式，分类讨论
+- 相互独立的定义和性质
+- 贝叶斯公式：分母使用全概率公式
+- Boys and girls
+  - 知道有一个男孩：条件概率！
+  - 看到一个男孩：跟刚才不一样，因为先生出两个，再随机一个给你看到
+- All-girl world
+  - 每个生出的都相互独立，所以女生占一半
+  - [[introduction]]也讲过投硬币直到抛出一个正面（自相似参考[[re-classification]]）
+- unfair coin：贝叶斯公式
+- fair probability from an unfair coin
+  - 画个$(a+b)^2$图示，发现$ab,ba$两项对称
+  - 当然这个可能低效（如果硬币过于不均）
+  - 这是拉斯维加斯随机算法
+- dart game
+  - 想象成均匀分布
+  - 那就六种可能，$2/3$
+  - 一般$n$支：第一支在前面$n$中最好这个事件和最后一支在所有中最好这个事件相互独立
+    - 直觉论证：先确定最后一支，再确定前面的
+    - 数字论证：直接$P(A)P(B)=P(AB)$
+- birthday line
+  - 乘法原理，作比看增减
+- dice order：简单组合题
+- monty hall problem
+  - 应该换，因为1/3概率，换是亏的，2/3概率，换是赚的
+- amoeba population
+  - 根据这个概率存在，就可以设为$x$，即[[exists]]思想
+  - $x = 1/4 (1+x+x^2+x^3)$
+    - 这个三次方程显然有个根1
+- candies in a jar
+  - 容斥原理。红比绿先完是$3/4$，红比蓝先完是$2/3$，红在蓝绿后是$1/6$，则$3/4+2/3-x=1-1/6$
+  - 标答：分类讨论，互斥事件
+- coin toss game
+  - 注：这是另一个，之前有一个
+  - $P_A= 1 - (P_H+P_A)/2,P_H = 1/2 (1+1-P_H)$，得$P_A=4/9$
+  - 当然我这符号为了简写，不严谨。严谨可以用条件概率写
+  - sanity check, 讲究
+- russian roulette series
+  - 不放回显然是等概率
+  - 放回：$P_1=5/6\cdot (1-P_1),P_1=5/11$
+  - 后面又是一些计算题
+- aces
+  - 可以计数做
+  - 也可以条件概率：先看第一张出现在哪，再看第二张剩下51个位置中有39个可行……
+    - 条件概率思想主要是抓住主干：四张A，忽略其余牌！
+- gambler's ruin problem
+  - [[exists]]思想，设数，递推
+  - 注意1/2是特例
+- basketball scores
+  - 可以用[[induction]]数学归纳法
+  - 分类讨论，全概率公式
+- cars on road
+  - 泊松过程[[poisson-process]]，无记忆性
+# 4.4 Discrete and Continuous Distributions
