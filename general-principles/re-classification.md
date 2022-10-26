@@ -3,3 +3,4 @@
   - 计算时合并同类项
   - 和[[forall]]有联系
   - [[4-probability]]的Screwy pirates 2有用到
+  - [[4-probability]]的card game也是个典型例子：把总的拆分成多个事件期望相加

@@ -117,3 +117,71 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
 - cars on road
   - 泊松过程[[poisson-process]]，无记忆性
 # 4.4 Discrete and Continuous Distributions
+- 离散
+  - [[poisson-process]]和[[poisson]]的关系：一段时间内事件发生次数就是泊松分布（极限情况的二项，小数定律）
+  - 几何分布：“直到第一次投出正面”
+  - 负二项分布：[[nega-binom]]
+- 连续
+  - 均匀，[[normal]]
+  - [[distribution/gamma]]
+    - 和指数、[[poisson-process]]都有联系
+    - 指数：发生一次所需。根据[[可加性]]，发生多次所需时间就是gamma
+  - beta可用于刻画一个区间内的分布形状
+    - 在[[conjugate]]中有重要应用
+- meeting probability
+  - 几何意义！
+- probability of triangle
+  - 方法一：几何意义，画正方形
+  - 方法二：几何意义，画三角形（即：第一段x，第二段y，第三段$1-x-y$）
+- property of poisson process
+  - 无记忆，所以期望当然是10（指数分布的期望）
+  - 至于已经走过的时间？
+    - 想象离散伯努利试验，已知前n个没成功作为条件，那么前$n+1$个没成功的概率是恒定的
+    - 所以和“之后时间”类似地，也是几何 -> 指数分布
+    - 所以也是10
+  - 一个subtlety: 为啥加起来是20了？因为你更容易在长时间间隔中来到
+- moments of normal distribution: [[normal]]
+# 4.5
+- [[expectation]], [[character/var]], [[cov]]
+- 加法，独立，乘法，协方差，相关系数（某种余弦）
+- law of total expectation
+  - $E_X[X] = E_Y[E_X[X|Y]]=\sum_y E_X[X|Y=y]p(Y=y)$
+- connecting noodles
+  - 1: 1
+  - 2: $1/3*2+2/3*1$，或者理解成$1+1/3*1$
+  - 3: $f(2)+\frac{3}{C_6^2}+1=1+1/3+1/5$
+- optimal hedge ratio
+  - 和的方差公式刚刚说过，注意需要考虑交叉项[[cov]]
+- dice game
+  - 自相似[[general-principles/recursion]]
+  - $x = 1/2*2+1/2*(5+x),x=7$
+- card game
+  - 法一：排成环，五段中的一段，则$52/5$
+  - 法二：[[re-classification]]，把总的拆分成多个事件期望相加。之前有多少张“闲”牌？重分类变成每张“闲”牌是否contribute to the whole
+- sum of random variables
+  - 几何意义显然
+  - 证明：归纳法，每次做一元积分，shrink the [[simplex]]
+- coupon collection
+  - A
+    - 还是拆成多个事件，每个都用几何分布，得到调和级数
+  - B
+    - 条件期望思想：$Ef(n+1)=\sum(m+1-m/N)P(f(n)=m)=(N-1)/N\cdot E(f(n))+1$
+    - 拆分事件思想：第i张是新的的概率是$(\frac{N-1}N)^n$
+- joint default probability
+  - default: 缺省，默认，违约
+  - 协方差$Cov(A,B)=EAB-EAEB=[-0.15,0.15]$，$\sqrt {VarAVarB}=0.5\sqrt {0.21}$，即得结果
+# 4.6 order statistics
+- 参考[[order-statistics]]
+- 一来的公式就是[[order-statistics]]的特例。有$n$种可能谁做领导，然后领导$f$一下，剩余的给面子$F^{n-1}$一下
+- expected value of max and min：直接引用
+  - 和刚刚card game也有相同思想
+- correlation of max and min
+  - 第一问直接画图（因为这里是二维，就不要盲目想着扩展一般）
+  - $E[YZ]$：也画图的话非常简单，因为$(y,z)$点处的“密度”恰好是$yz$，所以$\int yzdydz$即可
+  - 标答法一复杂了：使用$F$和$f$的关系
+  - 拓展：注意对称性$max(x,y)=1-min(1-x,1-y)$
+  - sanity check讲究
+- random ants
+  - 转头显然没用
+  - 朝左右对称
+  - 那就变成了最大值的期望$500/501$
