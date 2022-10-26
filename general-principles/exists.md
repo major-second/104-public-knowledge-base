@@ -2,3 +2,4 @@
 - 例如[[广义逆]]中的$\forall \alpha, \exists \beta, (X'X)(X'X)^-X'\alpha - X'\alpha=(X'X)(X'X)^-X'X\beta - X'X\beta=0$
   - 于是$ (X'X)(X'X)^-X' = X'$
 - 例如微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
+- 例如“设而不求”，[[4-probability]]，coin toss game有

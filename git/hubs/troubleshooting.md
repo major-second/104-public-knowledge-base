@@ -21,4 +21,7 @@ hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
+- 而如果你想直接用别人的，放弃自己的修改
+  - 那可以[[fetch]]但不`pull`. 先`git fetch`
+  - 然后`git checkout origin/<name>; git branch -D <name>; git branch <name>; git checkout <name>`，参考[[git-basics/branch]]和[[checkout]]
 - 关于大文件导致`push`不成功参考[[push-eliminate-big-files]]

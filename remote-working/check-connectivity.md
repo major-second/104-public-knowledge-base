@@ -9,3 +9,4 @@ https://blog.csdn.net/guweiyu_thinker/article/details/79391495
   - `telnet <ip>`（即默认`23`端口）可以登录
   - `telnet <ip> 22`不行
   - 实际上是没装`openssh-server`，参考[[server-config]]
+- 例子4：`ping`对方不行，`ping`学校内网其它机器可以，发现对方关了/内网ip变了

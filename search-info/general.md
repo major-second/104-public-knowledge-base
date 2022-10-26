@@ -16,6 +16,9 @@
   - [[resources-and-archives/baidu-net-disk]]
   - [[internet-archive]]
   - 一些专用站点如[msdn](https://msdn.itellyou.cn/)
+- 专用论坛或网站
+  - 如校内实名论坛，校内匿名论坛/表白墙/树洞，公司内部论坛等，和个人所处环境有关
+  - [一亩三分地](https://www.1point3acres.com/)，[品葱](https://pincong.rocks/)，[私募排排网](https://www.simuwang.com/)等专用网站
 - 灰色地带
   - 暗网（如海盗湾）
   - [[telegram]]频道

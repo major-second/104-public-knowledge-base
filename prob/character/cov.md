@@ -7,3 +7,4 @@
 - 常用技巧：展开配对相减求cov表达式
   - 如[[orthogonal]]中求$cov(\hat \alpha_i,\hat\beta_j)$
   - 如[[transform]]中求协方差矩阵变换后表达式
+  - 一般地，$Cov(\sum a_iX_i, \sum b_jY_j)=\sum\sum a_ib_jCov(X_i,Y_j)$，当然可以特殊化到[[character/var]]

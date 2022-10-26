@@ -2,6 +2,7 @@
 ## 理论
 todo
 ## 应用举例
+- [[oi-wiki-basic/recursion]]
 - 例如`torch`把复合对象递归地找到其中所有的`Tensor`并移至指定GPU（参考[[device]]）
 - 路径`lib\python3.7\site-packages\torch\nn\parallel\distributed.py`
 - 版本`'1.9.0+cu102'`
@@ -37,3 +38,7 @@ def to_map(obj):
         return [type(obj)(i) for i in zip(*map(to_map, obj.items()))]
     return [obj]
 ```
+# 无限循环和自相似
+- 递归没有出口/没考虑好情况可能导致无限递归循环，出现TLE等
+- 但数学中往往可以“自相似”，例如$x = 1-x$，并不会无限循环，而可以解出$x$
+  - 例如[[introduction]]中，“第一次丢出硬币正面需要多少次投掷”

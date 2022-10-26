@@ -1,0 +1,132 @@
+[toc]
+- 不超过高中数学知识，脑筋急转弯
+# 2.1 Problem Simplification
+- 从简单情况开始考虑，逐步过渡
+  - 其实这里的两个例子都是逆向归纳
+  - 参考[[general-principles/recursion]]
+- Screwy pirates
+  - backward induction，逆向归纳。也就是从简单情况开始
+- Tiger and sheep
+  - 还是backward induction
+  - 但需加上合理假设：吃羊比不吃收益高
+    - 参考[[1-general-principles]]
+# 2.2 Logic Reasoning
+- river crossing
+  - 第一感觉：1和10去，1回，1和5去，1回……这样是错的
+  - 应当1和2先去，1回，5和10去……
+  - 论证最佳：去的三次10，2，2都不能再压缩了，而返程的1，2如果换成1，1，必定增大去的时间
+- birthday problem
+  - 这个就是小学智力题逻辑推理了
+- card game
+  - casino赌场
+  - deck一副牌
+  - insidious阴险狡猾不怀好意
+  - 这题陷阱：边界情况平局算对方赢
+  - 而不是乍一眼看上去对称性双方相同
+- burning ropes
+  - 经典，通过同时烧两端表示一半
+- defective ball
+  - 直接判断$3^3 > 2*12$，所以有可能
+  - 第一步分成3个小于9的，所以当然必须4对4称
+  - 此时两种情况
+    - 若双方不等，根据对称性相当于只有一种，此时4左4右。应当留两个不称，三对三。那么想一想就知道三对三是两左一右对两左一右
+    - 若双方相等，那当然只能留一个不称，那么想一想就知道剩余四个放两左一右，右边填补一个
+  - 表达使用树，要不然过于wordy：面试中能画图要好好画图！
+- trailing zeros: 小学奥数（注意有些含有2个5的）
+- horse race
+  - 我思路走偏的原因：先想了一个naive解决方案12轮（12*2=24，每次淘汰2匹），想证明它最优
+  - 但实际上最优的是7
+  - 这个可能不用严格证明，就是直觉
+- infinite sequence: 自相似
+# 2.3 Thinking Out of the Box
+- Box packing
+  - 一开始错误思维：每层36，尝试空余2个位置，然后竖着插。但这当然不可能，因为34不能被4整除
+  - 每层32，空余4个位置，这又不行
+  - 结果应该是证明不行。把$6*6*6$分解成27个$2*2*2$，涂成黑白格，类似于国际象棋棋盘挖两个角那道题
+- calendar cubes
+  - 两边显然都要有012
+  - 然后6可以倒过来变成9（这就脑筋急转弯了）
+- door to offer: 经典智力题
+- message delivery
+  - put a second lock!
+  - 想不到就是想不到
+- last ball
+  - 逆向思维：一个蓝球可能“产生”一个蓝球，或“转换成”两个红球。一个红球只会产生一个蓝球。所以就看红球奇偶数
+  - 这个不要想复杂了，不涉及概率问题！
+  - 如果有手写板，也可以手写出式子：$(B,R) \to (B-1,R)$这种，帮助思考
+- light switches
+  - 脑筋急转弯思路：可以使用温度，无大语
+- quant salary
+  - 联想起以前说“性行为问卷”的设计：一半概率真实问卷，一半概率随机填
+  - 所以可以随机生成数字，让每个人加上去
+  - 实际中有应用！
+# 2.4 Application of Symmetry
+- coin piles
+  - 无需等分。只需拿出20个，把它们都翻面即可
+- mislabeled bags
+  - 显然只需要看mixed标签的是苹果还是橘子
+  - 大写`ALL`，讲究！
+  - 有点像文字游戏，考察了细心程度
+  - 注意对称性
+- wise men
+  - 表面上看一个人有两比特信息：即自己是否进去过，杯子什么状态
+  - 所以会3个人的就会50个的了
+  - 好吧，我没想出来。关键是49个人是对称的，他们只翻一次。有一个spokesman每次翻回来
+# 2.5 Series Summation
+- 可以用待定系数法找规律（或者错位相减等）得到$\sum n^k$的求和公式
+- clock pieces
+  - 做出合理假设！关键是可以3，4，9，10这样，这个形状不奇怪
+  - 说明有画面感的思维非常重要
+- missing integers
+  - 做出适当假设。这里的意思是用使用和列方程
+- conterfeit coins I
+  - 显然可以用硬币个数不同代表信息。求和即可
+- glass balls
+  - 要明确题意：不是无限个球（二分），而是你第一个球碎了之后第二个球就只能枚举
+# 2.6 the pigeon hole principle
+- matching socks: 不说了
+- handshakes: 每个人至少1次，至多25次
+- have we met before: 第一步就是抽屉原理和对称性
+- ants on a square
+  - 51, 7的关系非常微妙
+  - 抽屉原理得到有两个格子有两只
+    - 好吧这没有用
+  - 这题好玩：“方五弦七”，所以是分成25个格子
+- counterfeit coins II
+  - 三进制，$3^4=81$
+# 2.7 Modular Arithmetic
+- prisoner problem
+  - 第一问简单：第一个人分奇偶，后面人即可看到信息
+  - 第二问：需要至少2比特信息，但注意第一个人可以传递更多了，所以还是能救99个
+    - 简单版：三种颜色，第一个人如果看到两个同偶，那就报第三种奇的
+    - 但这个不够系统！系统性可扩展的做法：0 for red, 1 for green... and so on
+- division by 9: 简单，就看10的幂的余数
+- Chameleon colors
+  - 最暴力的：列三元一次方程组，解不是整数
+$$\left(\begin{matrix}-1&-1&2\\-1&2&-1\\2&-1&-1\end{matrix}\right)$$
+- 不那么暴力的
+  - 标准答案1好像不够严谨：这个充要吗？
+  - 标准答案2：看-1和+2，发现模三来看，两种颜色的数量总是不同余，那就肯定不行
+# 2.8 Math Induction
+- difficulty: formulate the problem and come up with the predicate
+- simplifying the problem may be helpful
+- coin split problem
+  - 注意题意：2分成1+1，后面的1再分成1+0不算，但2分成1+1的1*1算（合理假设！）
+  - 归纳法：$xy+sum(x)+sum(y)$为定值，且就是$\frac{(x+y)(x+y-1)}2$
+- chocolate bar problem
+  - 二维的归纳递推
+  - 或更简单的：直接每次分开都多一小块即可
+- race track
+  - 要先想到：特别简单的1个肯定可以
+  - n个可以，那么对于n+1个呢？
+    - 至少保证有两个相邻can满足在1充满后跑到2不会浪费即可。这样就把某个罐“整合到”下一个了（化归）
+    - 怎么证明这个？反证法
+  - 找到起始点的另一方法：“延拓”定义域（“到负数”），假设有一辆本来就能开完一圈的车，看全过程中“示数”最低点
+# 2.9 Proof by contradiction
+- irrational number: 经典智力题
+- rainbow hats
+  - 每个人都是6个input，1个output，故每个人可覆盖$7^6$种情况
+  - 这样所有人必须不重不漏才行
+  - 好吧，答案竟然是可以。设法让七个人站住七种余数（总量一定，每个人猜一种余数即可）
+  - 好吧，跟反证法关系没那么大
+  - 帽子依次编号0-6这个以前也出现过

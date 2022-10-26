@@ -1,0 +1,15 @@
+# five principles
+- broad knowledge base
+  - 照顾不同背景
+  - 体现个人能力
+  - basic understanding，而不是深入理解（PhD thesis?）
+- practice your interview skills
+  - 第一印象重要，好好表达自己！
+- listen carefully
+  - 可以重问
+  - 可以问线索
+- speak your mind
+  - 也不要太trivial
+  - 关注key concepts
+- make reasonable assumptions
+  - explain your reasonable assumptions to get immediate feedback
