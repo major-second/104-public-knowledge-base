@@ -1,11 +1,10 @@
-- 前置[[intro]]
-
-https://oiwiki.org/lang/csl/associative-container/
-这个`set`和数学的`set`不同，有序（默认从小到大）。所以有
-- `erase(pos)`（输入迭代器，不是输入整数）
-- `.lower_bound`（$O(logn)$）（如果没有，返回`end()`）（是大于等于）
-- 高效的`.find()`查找值
-- 重载比较snippet:
+- 前置[[container-intro]]
+- [原文](https://oiwiki.org/lang/csl/associative-container/)
+- 这个`set`和数学的`set`不同，有序（默认从小到大）。所以有
+  - `erase(pos)`（输入迭代器，不是输入整数）
+  - `.lower_bound`（$O(logn)$）（如果没有，返回`end()`）（是大于等于）
+  - 高效的`.find()`查找值
+  - 重载比较snippet:
 ```cpp
 struct cmp {
   bool operator()(int a, int b) { return a > b; }

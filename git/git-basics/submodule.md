@@ -6,12 +6,14 @@
 
 ## 之后使用
 - `git clone --recursive <链接>`
-- 父模块最新时，子模块不一定是最新。可能需要单独`cd`进去`pull`
+  - 如果最外层忘了`--recursive`，那么对于内层模块，手动`clone`一下也是可以的
+- 父模块是最新的，子模块不一定也是最新的。父模块完好，子模块也不一定完好
+  - 更新：可以单独`cd`进去`pull`，或者`--recurse-submodule`
+  - 检查：可以单独`cd`进去`checkout`，或者`--recurse-submodule`
   - 具体解说
     - 观察到有时出现![](submodule-update.png)这种情况
     - 这种就说明子模块（自己作为独立的模块）更新了，但父模块没更新子模块版本
-    - 你现在显示这样，那么之后在其它地方`git clone --recursive`时或`git pull`时就不能得到最新版本子模块
-- 如果最外层忘了`--recursive`，那么对于内层模块，手动`clone`一下也是可以的
+    - 你现在显示这样，那么之后在**其它地方**`git clone --recursive`时或`git pull`时就不能得到最新版本子模块
 ## 删改
 https://www.jianshu.com/p/ed0cb6c75e25
 ## 问题
