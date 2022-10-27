@@ -1,24 +1,34 @@
 检索信息的能力非常重要！下面的每多一点，你的能力就强一点
 - 搜索引擎
   - 百度
-    - 或者[[proxy/usage]]翻墙后谷歌
+    - 或者[[proxy/usage]]翻墙后谷歌，其质量大大提高
+    - 至2022.10无需翻墙，质量介于百度谷歌之间的：必应！
   - 重要技巧（以下均针对谷歌。其它搜索引擎可能不同）
     - 加引号表示“必须包含某某”
     - `-<字母>`这种会被理解成**不要某某**。所以搜索`python -m`这种东西，要加引号成`"python -m"`这样搜
     - `site:网址`限制网址
-- 很多地方`Ctrl+F`查找
-- 很多地方可以使用[[regex]]
-  - 如linux系统的[[find-grep]]
-- vscode的[[vscode/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
-- pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
+- 查找
+  - 快捷键
+    - 很多地方`Ctrl+F`查找
+    - vscode的[[vscode/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
+    - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
+  - 很多地方可以使用[[regex]]
+    - 如linux系统的[[find-grep]]
 - 资源站
   - [[resources-and-archives/aliyun]]
   - [[resources-and-archives/baidu-net-disk]]
   - [[internet-archive]]
   - 一些专用站点如[msdn](https://msdn.itellyou.cn/)
 - 专用论坛或网站
-  - 如校内实名论坛，校内匿名论坛/表白墙/树洞，公司内部论坛等，和个人所处环境有关
-  - [一亩三分地](https://www.1point3acres.com/)，[品葱](https://pincong.rocks/)，[私募排排网](https://www.simuwang.com/)等专用网站
+  - 论坛：如校内实名论坛，校内匿名论坛/表白墙/树洞，公司内部论坛，行业论坛等，和个人所处环境有关
+  - 举例一些专用网站
+    - 北美相关：[一亩三分地](https://www.1point3acres.com/)
+    - 政治相关：[品葱](https://pincong.rocks/)
+    - 行业专门：
+      - [私募排排网](https://www.simuwang.com/)
+      - [glassdoor](https://www.glassdoor.com/member/home/index.htm)
+- 在github或者[[other-hubs]]搜索库
+  - 例如搜索[[leetcode]]得到两个很有用的库（参见[[leetcode]]）
 - 灰色地带
   - 暗网（如海盗湾）
   - [[telegram]]频道

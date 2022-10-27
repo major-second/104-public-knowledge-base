@@ -1,5 +1,6 @@
 # 前置
-[[latex]]插件
+- [[latex]]插件
+- 本地安装[[texlive]]
 # 内容
 参考https://www.cnblogs.com/minor-second/p/15710893.html
 常见两种`"tools"`列表（写到`vscode`的`json`文件里的。和命令也是对应关系）

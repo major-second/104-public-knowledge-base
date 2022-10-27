@@ -1,10 +1,14 @@
 核心就是快速（$O(1)$地）查找
-- 索引可以看成特殊的哈希（比如
-https://leetcode-cn.com/problems/valid-sudoku/submissions/
-https://leetcode-cn.com/problems/check-permutation-lcci/
-）
+- 索引可以看成特殊的哈希，即键是整数，以**常数**时间复杂度查找
+  - https://leetcode-cn.com/problems/valid-sudoku/
+    - 81个格子，每个格子以**常数**时间找到对应的地方把相应计数器加一
+  - https://leetcode-cn.com/problems/check-permutation-lcci/
+    - 对于C++可以把字符方便转化成整数，从而可用索引
+    - 对于python，最简单的想法就是弄字典（哈希），这就不是索引了。这也看出索引和哈希的联系
 - 把字符串对应到一个数的方法：典型就是每次`*171`再`%1000000007`（十位数）。
-  - 要每个子串的哈希：$O(n)$弄每个前缀，这样每个子串就容易有了。
-- https://leetcode.cn/problems/count-good-meals/submissions/
-  - 这题说明涉及求和的，可以维护哈希表表示“某个数字出现多少次”
-  - 相比[[双指针]]，这不需要排序
+  - 要每个子串的哈希
+    - $O(n)$. 即先弄每个前缀
+    - 这样每个子串就相减可得
+- https://leetcode-cn.com/problems/count-good-meals/
+  - 这题说明涉及求和的，可以维护哈希表表示“某个数字出现多少次”，键是数字，值是多少次
+  - 相比[[双指针]]，这不需要排序，是更优方法
