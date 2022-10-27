@@ -6,6 +6,7 @@ for (vector<int>::iterator iter = data.begin(); iter != data.end(); iter++)
   cout << *iter << endl;  // 使用迭代器访问元素
 // 在C++11后可以使用 auto iter = data.begin() 来简化上述代码
 ```
+- 对`end()`解引用是啥我们不纠结他
 - 其它获得迭代器的函数
   - `.rbegin()`：反向的开始（即最后一个），和`.end()`不同
   - `.cbegin()`：常数

@@ -3,6 +3,7 @@
 https://oiwiki.org/lang/loop/
 `while(){}`
 `for(;;){}`（特别注意不是逗号）
+范围`for`：`for (auto x:s)`，在[[container-intro]]中用到
 `break`在`for`循环中也能用，但是是到“更新”（`i++`）那里，而非直接跳出，也就是最后`i`还会加一
 - 应用举例：循环同时，连续的重复元素只取一次
 https://leetcode-cn.com/problems/4sum/中可能用到
