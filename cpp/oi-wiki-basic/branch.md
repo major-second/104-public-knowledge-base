@@ -1,9 +1,11 @@
-前置[[var]]
+前置[[oi-wiki-basic/var]]
 
 https://oiwiki.org/lang/branch/
+# `if`
 `if(){}`
 `if(){}else{}`
 `if(){}else if(){}else{}`
+# `switch`
 ```cpp
 switch(整型){
     case 1:

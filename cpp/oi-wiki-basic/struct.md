@@ -1,25 +1,33 @@
-前置[[var]]
+前置[[oi-wiki-basic/var]]
 
 https://oiwiki.org/lang/struct/
 
 - C++和C的结构体不同
-
 
 ```cpp
 struct Object {
     int w;
     int v;
 } e[length];
+// 然后也可以
+Object a;
+Object b[l];
+Object *c;
 ```
 `a.b`
-`a->b`相当于`(*a).b`
+`a->b`相当于`(*a).b`（这里`a`是指针）
 
-Bonus：如何设置构造函数
+- 设置构造函数的例子
 ```cpp
-struct MyListNode{
-    pair<int, int> pa;
-    MyListNode* prev;
-    MyListNode* next;
-    MyListNode(pair<int, int> a, MyListNode* p, MyListNode* n): pa(a), prev(p), next(n){};
-}; // 一句话记忆：括号内呼应括号内（都是a, p, n）
+#include <iostream>
+using namespace std;
+struct Object {
+  int i;
+  double d;
+  Object(int i, double d): i(i), d(d) {}
+};
+int main() {
+  Object o(2.1, 3.1);
+  cout<<o.i<<endl<<o.d;
+} // 输出2和3.1
 ```
