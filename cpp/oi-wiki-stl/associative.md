@@ -46,6 +46,7 @@ set<int, cmp> s;
 ## 其它注意
 - `map`迭代器解引用是`pair<Key, T>`
   - 插入时可以插入`pair<Key, T>(...)`这种
+    - 也可以简化为`make_pair(...)`，参考[[pair]]
   - 也可以通过下标插入`s[k] = v;`
 - 删除
     - 用`erase(key)`删除会删除所有

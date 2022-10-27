@@ -1,0 +1,19 @@
+- 头文件：`<utility>`
+- 和[[struct]]对比
+  - 优点：不需额外定义
+  - 缺点：名字`first, second`比较丑陋，且不能两个以上
+- 初始化
+  - `pair<int, double> p0(1, 2.0);`
+  - `pair<int, double> p1;`
+    - 之后可`.first`，`.second`各自赋值
+  - `auto p = make_pair(两个变量);`
+- 字典序比较
+  - 所以`pair`可和[[associative]], [[adapter]]等中需要比较的数据结构结合
+- `=`赋值
+- `.swap(...)`交换
+- 应用
+  - 离散化[[algorithm/discretize]]
+    - 值做第一个变量，脚标做第二个变量
+    - 排序后，排名（排序后所在位置）赋给原来脚标
+  - [[shortest-path]]中dijkstra算法用到（todo）
+  - [[associative]]中`map`，`multimap`等用到

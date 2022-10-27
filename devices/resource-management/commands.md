@@ -10,7 +10,9 @@
   - 很方便看多少核，多少内存，使用情况等
 - 爱好者写的可交互看显卡、cpu、内存的[python包](https://www.zhihu.com/question/376875425/answer/1728922058)：`nvitop`
   - 需要[[pip]]
-  - 安装：`pip3 install git+https://github.com/XuehaiPan/nvitop.git#egg=nvitop`
+  - 安装
+    - `pip3 install git+https://github.com/XuehaiPan/nvitop.git#egg=nvitop`（github上获取最新版安装）
+    - 或者简单的`pip install nvitop`
   - `nvitop`使用，`q`退出
 - `nvidia-smi`看显卡使用情况
   - 需要[[ubuntu-nvidia-drivers]]

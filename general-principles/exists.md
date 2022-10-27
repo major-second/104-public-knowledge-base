@@ -3,3 +3,5 @@
   - 于是$ (X'X)(X'X)^-X' = X'$
 - 例如微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
 - 例如“设而不求”，[[4-probability]]，coin toss game有
+- 例如编程中的flag，是多少不重要，有这个记号重要
+  - [[oi-wiki-stl/string]]中的`string::npos`
