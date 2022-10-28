@@ -18,3 +18,6 @@
 - 例子
   - [[1-two-sum]]
   - [[18-4sum]]
+# 等于（临界）造成麻烦
+- 例子
+  - [[845-longest-mountain-in-array]]
