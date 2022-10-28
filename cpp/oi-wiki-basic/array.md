@@ -8,6 +8,7 @@ https://oiwiki.org/lang/array/
     - 总之别指望
     - 参考阅读[[exception-warning]]
     - 参考：https://zh.wikipedia.org/zh-cn/%E5%8F%AF%E5%8F%98%E9%95%BF%E6%95%B0%E7%BB%84
+    - 变长数组不能列表初始化！
 - 不能直接用`=`复制
 - 大数组在静态（堆）区创建，否则容易爆栈
   - `int *a = new int[1000];`

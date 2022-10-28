@@ -9,7 +9,8 @@ https://oiwiki.org/lang/func/
   - `main`的参数和返回值和外部（`shell`调用之类）有关
     - 比如命令行参数，命令行返回值
     - 例如用于[[12-condition]]判断
-  - 非`void`函数必须每个路径都有返回值（否则编译不通过）
+  - 非`void`函数，必须每个路径都有返回值（否则编译不通过）
+    - 比如[[1-two-sum]]中，即使你知道不会运行到那，也要补充写上
   - 返回：只要运行到`return`，后面的就都不管
     - 所以可以少很多`else`
     - 尽量减少`else`的典型例子：[[10-regular-expression-matching]]

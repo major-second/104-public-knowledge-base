@@ -69,4 +69,43 @@ public:
       - 不一定！比如`a`对应`c*a`，`c*`可以是0个c
   - 认为`p`和`s`一定同时为空或不为空才能match
       - 不一定！比如`a`对应`ac*`，那么递归一层，考察空字符串和`c*`
-  - 因为有`.`的存在，所以数组`match`中的`1`不一定是连续出现的！todo
+  - 因为有`.`的存在，所以容易找出反例说明：数组`match`中的`1`不一定是连续出现的！
+- [[dp]]解法中节省空间：把之前算出的不再需要的值扔掉！
+```cpp
+class Solution {
+public:
+    bool charIsMatch(char a, char b) {
+        return a == b || b == '.';
+    }
+    bool isMatch(string s, string p) {
+        int s_size = s.size();
+        bool match[s_size+1];
+        bool match_next[s_size+1];
+        int s_pointer=s_size;
+        match[s_pointer] = 1;
+        while(s_pointer--) match[s_pointer] = 0;
+
+        int p_pointer = p.size();
+        while(p_pointer){
+            int s_pointer=s_size;
+            if (p[p_pointer-1]=='*') {
+                p_pointer-=2;
+                match_next[s_pointer] = match[s_pointer];
+                while(s_pointer--){
+                    match_next[s_pointer] = match[s_pointer] || 
+                                            match_next[s_pointer+1] && charIsMatch(s[s_pointer], p[p_pointer]);
+                }
+            } else {
+                p_pointer--;
+                match_next[s_pointer] = 0;
+                while(s_pointer--){
+                    match_next[s_pointer] = match[s_pointer+1] && charIsMatch(s[s_pointer], p[p_pointer]);
+                }
+            }
+            for (int i=0;i<s_size+1;i++) match[i] = match_next[i];
+        }
+
+        return match[0];
+    }
+};
+```

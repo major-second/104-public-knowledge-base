@@ -41,26 +41,4 @@ https://oiwiki.org/lang/csl/sequence-container/
   - 用法没啥差别，但原理不同，故复杂度不同，且不能随机访问
   - 用访问慢换取插入快
 ### 应用
-- https://leetcode.cn/problems/two-sum/
-```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int l = nums.size();
-        for (int i = 0; i < l; ++i){
-            for (int j = i + 1; j < l; ++j){
-                if (nums[i] + nums[j] == target){
-                    vector<int> r{i, j}; //列表初始化
-                    return r;
-                }
-            }
-        }
-        vector<int> r{};
-        return r;
-    }
-};
-```
-- 可以看到
-  - `.size()`的应用（参考[[container-intro]]）
-  - 列表初始化
-  - 编译器检查每个分支都必须`return`才能过，参考[[func]]
+- [[1-two-sum]]
