@@ -35,4 +35,4 @@ for (int i=0;i<n;i++){
   - 在[[10-regular-expression-matching]]中能看到`while(s_pointer--) match[s_pointer] = 0;`
 ## 常用注意事项
 - 如果循环体中有获取结果的代码，要注意是否一定被执行了，是否需要结尾补获取结果
-  - 例[[845-longest-mountain-in-array]]
+  - 例[[845-longest-mountain-in-array]]，[[21-merge-two-sorted-lists]]

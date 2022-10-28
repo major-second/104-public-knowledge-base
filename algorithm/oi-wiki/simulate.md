@@ -1,0 +1,7 @@
+- https://oiwiki.org/basic/simulate/
+- 原则
+  - 模块化
+    - 调试也可模块化（参考[[general-principles/debug]]）
+  - 先草稿纸上写，再逐步转化成代码。过程中不要脱离草稿纸
+    - 例如[[21-merge-two-sorted-lists]]，没草稿纸就痛苦了
+  - 减少重复代码

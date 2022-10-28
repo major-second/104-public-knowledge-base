@@ -1,0 +1,8 @@
+- 分治很多时候用[[oi-wiki/recursion]]实现
+- 步骤
+  - 分解（为结构相同独立子问题）
+  - 解决
+    - 往往[[oi-wiki/recursion]]
+    - 并注意出口
+  - 合并
+- 例子：[[25-merge-k-sorted-lists]]
