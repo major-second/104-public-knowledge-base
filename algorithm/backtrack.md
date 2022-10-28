@@ -43,6 +43,6 @@ public:
 };
 
 作者：LeetCode-Solution
-链接：https://leetcode-cn.com/problems/generate-parentheses/solution/gua-hao-sheng-cheng-by-leetcode-solution/
+链接：https://leetcode.cn/problems/generate-parentheses/solution/gua-hao-sheng-cheng-by-leetcode-solution/
 来源：力扣（LeetCode）
 ```

@@ -1,4 +1,4 @@
-- https://leetcode-cn.com/problems/count-good-meals/submissions/
+- https://leetcode.cn/problems/count-good-meals/submissions/
   - 搞错下标和数据内容
     - 第一次：判断`l[i] + l[j]`和`s`（和）的关系，错写成了`i + j`
     - 第二次：题意中的不同菜品，是下标不同，而不是值不同

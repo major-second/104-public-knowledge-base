@@ -19,7 +19,7 @@
   - 不可跳过`Container`参数（底层容器）直接传入`Compare`参数
   - 也就是想要小根堆需要`priority_queue<int, vector<int>, greater<int> > pq;`
 ## 调包应用
-https://leetcode-cn.com/problems/kth-largest-element-in-an-array/
+https://leetcode.cn/problems/kth-largest-element-in-an-array/
 - 一个解法
 ```cpp
 class Solution {

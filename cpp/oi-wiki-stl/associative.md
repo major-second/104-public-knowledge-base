@@ -71,7 +71,7 @@ codeforces hack你的哈希函数，有意思
 ## 应用
 - [原文](https://oiwiki.org/lang/csl/associative-container/)所说和[[greedy]]密切相关在后面例子里有
 - 
-https://leetcode-cn.com/problems/two-sum/submissions/
+https://leetcode.cn/problems/two-sum/submissions/
 ```cpp
 class Solution {
 public:
@@ -96,12 +96,12 @@ public:
 注意要判断脚标不能相等。
 注意`->second`，`map`中的`pair`等等
 
-https://leetcode-cn.com/problems/4sum/submissions/
+https://leetcode.cn/problems/4sum/submissions/
 这题如果参考刚刚的“两数之和”用哈希的做法：注意题目要求！需要的数据结构是`set<multiset<int>>`，内层先`set`检脚标重复，然后造一个`multiset`，再塞进外层`set`.
 当然，这其实是个假的哈希，因为用的是有序的（无序的没法往`<>`里填）……直接这么做搞不好反而会超时。
 ## 有序集和`lower_bound`应用
 ### 例1
-https://leetcode-cn.com/problems/container-with-most-water/submissions/
+https://leetcode.cn/problems/container-with-most-water/submissions/
 ```cpp
 class Solution {
 public:

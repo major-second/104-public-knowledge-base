@@ -41,7 +41,7 @@ https://oiwiki.org/lang/csl/sequence-container/
   - 用法没啥差别，但原理不同，故复杂度不同，且不能随机访问
   - 用访问慢换取插入快
 ### 应用
-- https://leetcode-cn.com/problems/two-sum/
+- https://leetcode.cn/problems/two-sum/
 ```cpp
 class Solution {
 public:

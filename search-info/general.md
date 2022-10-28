@@ -28,7 +28,8 @@
       - [私募排排网](https://www.simuwang.com/)
       - [glassdoor](https://www.glassdoor.com/member/home/index.htm)
 - 在github或者[[other-hubs]]搜索库
-  - 例如搜索[[leetcode]]得到两个很有用的库（参见[[leetcode]]）
+  - 例如搜索leetcode得到两个很有用的库
+  - 参见[[leetcode-solutions/0-metadata]]
 - 灰色地带
   - 暗网（如海盗湾）
   - [[telegram]]频道

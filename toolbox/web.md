@@ -1,5 +1,6 @@
 在线工具，无需下载，就是好！
-- [[leetcode]]
+- [[leetcode-solutions/0-metadata]]
+- [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
 - [[dida]]网页版
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)

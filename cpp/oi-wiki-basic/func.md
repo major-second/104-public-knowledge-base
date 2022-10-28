@@ -10,7 +10,7 @@ https://oiwiki.org/lang/func/
   - 非`void`函数必须每个路径都有返回值（否则编译不通过）
   - 返回：只要运行到`return`，后面的就都不管
     - 所以可以少很多`else`
-    - 尽量减少`else`的[典型例子](https://leetcode-cn.com/problems/regular-expression-matching)，基本思想就是“特判直接返回”
+    - 尽量减少`else`的[典型例子](https://leetcode.cn/problems/regular-expression-matching)，基本思想就是“特判直接返回”
 ```cpp
 class Solution {
 public:
