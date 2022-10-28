@@ -8,7 +8,8 @@
 - https://leetcode.cn/problems/longest-palindromic-substring/
 如果普通动规，需要$n^2$
 注：[[manacher]]只需要$O(n)$
-- https://leetcode.cn/problems/regular-expression-matching/submissions/
-注意方向：从前往后（已知前，递推后）
-具体地：如果最后一位不是`*`，那么各退一步。否则要不然`p`退`a*`两个字符，要不然`s`退`a`一个字符
-注：其实也可以说是[[记忆化搜索]]
+# 状态压缩
+- 把不需要的扔掉，节省空间
+  - 例如[[10-regular-expression-matching]]
+# 其它
+- 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]

@@ -5,7 +5,9 @@ https://oiwiki.org/lang/loop/
 `for(;;){}`（特别注意不是逗号）
 范围`for`：`for (auto x:s)`，在[[container-intro]]中用到
 `break`在`for`循环中也能用，但是是到“更新”（`i++`）那里，而非直接跳出，也就是最后`i`还会加一
-- 拓展举例：循环同时，连续的重复元素只取一次，[[18-4sum]]中可能用到
+# 拓展
+## 连续重复元素只取一次
+- [[18-4sum]]中用到
 - 原始版本循环（这里没写反花括号）
 ```cpp
 for (int i=0;i<n;i++){
@@ -25,3 +27,9 @@ for (int i=0;i<n;i++){
         if (nums[j]==former_j_value) continue;
         former_j_value = nums[j];
 ```
+## 常用搭配
+- `while(i--) ...`
+  - `i`一来先减一，所以从初值减一开始执行
+  - 如果减一之前等于0，那么就不执行循环体，所以就执行到0（包含0）为止
+  - 结束之后`i`是`-1`
+  - 在[[10-regular-expression-matching]]中能看到`while(s_pointer--) match[s_pointer] = 0;`
