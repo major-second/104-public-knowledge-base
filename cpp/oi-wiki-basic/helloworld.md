@@ -23,4 +23,4 @@ https://app.coderpad.io/sandbox
   - 有snippets功能，类似于[[vscode/snippets]]
     - `Tab`操作也有
     - 可以自动补全方法、模块名
-  - 有类似[[vscode/edit]]的`Alt`多光标等
+  - 有类似[[vscode/edit]]的`Alt`多光标，`Shift+Alt+方向键`复制等功能

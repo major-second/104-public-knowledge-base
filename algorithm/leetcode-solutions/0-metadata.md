@@ -7,11 +7,14 @@
   - 可以直接使用`cout`，stl和`INT_MIN`这些
 ## 题解
 - 至2022.10，官方中文题解免费，英文收费
+  - 以后本文件夹中称“官方”
 - github上的（参考[[search-info/general]]）
   - https://github.com/azl397985856/leetcode
     - 详尽的leetcode解说（中文）
+    - 以后本文件夹中称“A库”
   - https://github.com/haoel/leetcode
     - 力扣题解，C++为主，有英文注释
+    - 以后本文件夹中称“H库”
 ## 调试
 - 下方“测试用例”那里输入，然后点白色运行就可以运行指定测试用例
 - 过程中可以`cout<<`一些东西，不影响`return`结果，会显示在下方`stdout`

@@ -7,3 +7,12 @@
 - https://www.hackerrank.com/challenges/maximize-it/problem?isFullScreen=true
   - 看清题意！他说每个list先有一个数字表示list长度
   - 不过对于python来说就很简单，直接`input().split()[1:]`即可
+# 去重
+- 典型方法
+  - 内层`j`从`i+1`开始而非`i`
+  - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
+    - 相同就跳过（往往体现为[[loop]]的`continue`）
+    - 不同，就正常运行，同时要更新“最近的值”
+  - [[algorithm]]中的`unique(begin, end)`，去除相邻重复的
+- 例子
+  - [[18-4sum]]
