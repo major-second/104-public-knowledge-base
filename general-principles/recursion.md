@@ -1,8 +1,8 @@
-# 递归
-## 理论
+# 理论
 todo
-## 应用举例
-- [[oi-wiki-basic/recursion]]
+# 算法题中的[[oi-wiki/recursion]]
+- 例如[[10-regular-expression-matching]]
+# 一般程序中的递归（提升可读性）
 - 例如`torch`把复合对象递归地找到其中所有的`Tensor`并移至指定GPU（参考[[device]]）
 - 路径`lib\python3.7\site-packages\torch\nn\parallel\distributed.py`
 - 版本`'1.9.0+cu102'`

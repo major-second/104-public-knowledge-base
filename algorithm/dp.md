@@ -12,4 +12,4 @@
 - 把不需要的扔掉，节省空间
   - 例如[[10-regular-expression-matching]]
 # 其它
-- 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
+- 和[[oi-wiki/recursion]]的关系：参考[[oi-wiki/recursion]]
