@@ -13,6 +13,8 @@
   - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
     - 相同就跳过（往往体现为[[loop]]的`continue`）
     - 不同，就正常运行，同时要更新“最近的值”
-  - [[algorithm]]中的`unique(begin, end)`，去除相邻重复的
+  - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
+  - 特事特办，例如[[1-two-sum]]的哈希做法
 - 例子
+  - [[1-two-sum]]
   - [[18-4sum]]

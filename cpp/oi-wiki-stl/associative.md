@@ -60,41 +60,17 @@ set<int, cmp> s;
   - 或者`(auto& x:s)`（传引用）
   - `x`类型就是`<>`里面填的那个东西
 ## 无序关联式
-参考[[hash-table]]
-https://oiwiki.org/lang/csl/unordered-container/
-- 里面讲到了哈希高级玩法（防hack）
-
-codeforces hack你的哈希函数，有意思
+- 参考[[hash-table]]
+- https://oiwiki.org/lang/csl/unordered-container/
+- 好玩的东西：hack哈希
+  - codeforces hack你的哈希函数，有意思
 - 利用哈希，平均情况下大多数操作常数复杂度
 - 当然，填的类型必须[[hashable]]，比如`set`就不能往里填
   - 相比之下，有序的那些容器，只要能比较大小即可往里填
+- 应用
+  - [[1-two-sum]]
 ## 应用
 - [原文](https://oiwiki.org/lang/csl/associative-container/)所说和[[greedy]]密切相关在后面例子里有
-- 
-https://leetcode.cn/problems/two-sum/submissions/
-```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> mp;
-        int l = nums.size();
-        for (int i = 0; i < l; ++i){
-            mp.insert(pair<int, int>(nums[i], i));
-        }
-        for (int i = 0; i < l; ++i){
-            auto it = mp.find(target - nums[i]);
-            if (it != mp.end()){
-                if (i != it->second){
-                    return vector<int> {i, it->second};
-                }
-            }
-        }
-        return vector<int> {};
-    }
-};
-```
-注意要判断脚标不能相等。
-注意`->second`，`map`中的`pair`等等
 
 https://leetcode.cn/problems/4sum/submissions/
 这题如果参考刚刚的“两数之和”用哈希的做法：注意题目要求！需要的数据结构是`set<multiset<int>>`，内层先`set`检脚标重复，然后造一个`multiset`，再塞进外层`set`.
