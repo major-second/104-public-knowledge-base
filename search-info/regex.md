@@ -14,3 +14,6 @@ https://www.runoob.com/regexp/regexp-syntax.html
   - 看最右侧按钮
   - ![](vscode-regex.png)
 - [[tensorboard]]左侧搜索可以用
+
+拓展：相关算法题。自己实现正则表达式的一些特点
+- [[10-regular-expression-matching]]

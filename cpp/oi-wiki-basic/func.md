@@ -12,4 +12,5 @@ https://oiwiki.org/lang/func/
   - 非`void`函数必须每个路径都有返回值（否则编译不通过）
   - 返回：只要运行到`return`，后面的就都不管
     - 所以可以少很多`else`
-    - 尽量减少`else`的典型例子：[[regular-expression-matching]]
+    - 尽量减少`else`的典型例子：[[10-regular-expression-matching]]
+    - 联系[[4-decision-tree]]思想！
