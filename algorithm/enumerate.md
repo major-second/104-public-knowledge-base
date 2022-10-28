@@ -1,3 +1,0 @@
-- 比如在写算法前先人肉思考
-  - https://www.hackerrank.com/challenges/magic-square-forming/problem
-    - 三阶幻方一共就8种可能性。可以先定5再定1再讨论8做出论证

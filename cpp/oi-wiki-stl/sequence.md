@@ -37,6 +37,9 @@ https://oiwiki.org/lang/csl/sequence-container/
 - `std::array`
   - 和[[array]]性能几乎一样，但有可以用`=`等前述优点
   - 显然`size()`始终等于`max_size()`
+- 典型初始化：`array<int, 3> a = {1,2,3};`
+  - 和[[bitset]]联想一下：`<>`中要写大小
+  - 注意`3`必须是常数，和[[bitset]]也一样
 - `list, forward_list`
   - 用法没啥差别，但原理不同，故复杂度不同，且不能随机访问
   - 用访问慢换取插入快
