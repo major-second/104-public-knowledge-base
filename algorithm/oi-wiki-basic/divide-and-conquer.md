@@ -5,4 +5,7 @@
     - 往往[[oi-wiki/recursion]]
     - 并注意出口
   - 合并
+  - 不同算法的各步骤难度不同
+    - [[quick-sort]]分解难，合并简单
+    - [[merge-sort]]相反
 - 例子：[[25-merge-k-sorted-lists]]
