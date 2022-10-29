@@ -1,6 +1,7 @@
 - 换个标准，重新分类
 - 如
   - 计算时合并同类项
-  - 和[[forall]]有联系
+  - 和[[forall]]有联系：每次考察“任意一个点”，也就是把（最基本）分类标准变成了针对一个点考察所有和它有关的
   - [[4-probability]]的Screwy pirates 2有用到
   - [[4-probability]]的card game也是个典型例子：把总的拆分成多个事件期望相加
+  - [[233-number-of-digit-one]]计数时用到

@@ -33,7 +33,7 @@ public:
     }
 };
 ```
-- 其实有点与其说是算法题更像在[[oi-wiki/simulate]]
+- 其实有点与其说是算法题更像在[[oi-wiki-basic/simulate]]
   - 故一定要在草稿纸上先画图
 - 特判[[special-case]]：`list1, list2`中有`nullptr`
 - 出现了结束时额外处理，参考[[loop]]
