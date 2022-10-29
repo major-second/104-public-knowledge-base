@@ -1,3 +1,20 @@
+# 概述
+- 对于[[trivial-case]]（空，0等）往往需要特判
+  - 特判既包括你代码的特判，也包括人肉输入特殊数据（空）等做测试集
+  - 参考[[general-principles/debug]]
+- 拿到问题，优先考虑特判的好处
+  - 助于严谨，防止特殊值报错
+    - 例如[[finetune]]有提到
+  - 助于[[oi-wiki/recursion]]，[[induction]]思考，作为“起步”
+  - 检查一些基本情况的正确性，防止特别低级错误
+  - 参考[[2-brain-teasers]]，[[introduction]]
+- 有时特判可以合并到一般情况，节省代码量
+  - 例如[[21-merge-two-sorted-lists]]有提到
+# 例子
+- 涉及空
+  - [[21-merge-two-sorted-lists]], [[25-merge-k-sorted-lists]]
+- 出口（空，0，1等等）
+  - [[25-merge-k-sorted-lists]]中，注意“1”是递归出口（[[divide-and-conquer]]的最底层）
 - https://leetcode.cn/problems/can-i-win/submissions/
 特判和为0（本来“不拿就够”一般指先手输，但和为0算先手赢）
 特判所有数之和小于待求

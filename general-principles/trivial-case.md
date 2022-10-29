@@ -1,5 +1,7 @@
 - [[6-serial/basics]]的$\tau\equiv 0$情况
-- 算法题的[[特判]]
-- [[finetune]]中的例子：取一段区间内的数据做[[regression]]
-  - 首先，有可能取出0条数据，导致[[regression]]报错
-  - 其次，那当中的“区间外”部分可能是0条，导致出现`0/0`的[[nan]]
+- 算法题的[[special-case]]
+- 实际程序也有特例！
+  - [[finetune]]中的例子：取一段区间内的数据做[[regression]]
+    - 首先，有可能取出0条数据，导致[[regression]]报错
+    - 其次，那当中的“区间外”部分可能是0条，导致出现`0/0`的[[nan]]
+  - 参考[[general-principles/debug]]

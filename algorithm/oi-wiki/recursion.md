@@ -12,7 +12,7 @@
   - 也就是递归和[[divide-and-conquer]]常常联系
 # 出口条件
 - 记住一定要写出口条件
-  - 这时要注意[[trivial-case]]！而且其实出口往往都是trivial case
+  - 这时要注意[[special-case]]！而且其实出口往往都是[[special-case]]
 # 使递推关系最简单
 - 比如出现二元递推时，经常出现“一动一不动”
 - 一个举例：[[10-regular-expression-matching]]

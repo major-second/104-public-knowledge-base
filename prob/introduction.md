@@ -78,7 +78,7 @@
 - 自相似（参考[[general-principles/recursion]]）
   - 例子：“第一次丢出硬币正面需要多少次投掷”
 - Edge cases
-  - 一种：[[trivial-case]]检查正确性
+  - 一种：用[[special-case]]检查正确性
   - 另一种：找最简单的作为[[general-principles/recursion]]出口，[[induction]]起始点等等
 # Interview Myths
 - 数感，速算，数量级可能有用，但不是那种快速计算乘法

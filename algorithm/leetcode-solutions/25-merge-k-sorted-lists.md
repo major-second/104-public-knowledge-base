@@ -1,5 +1,5 @@
 - 前置[[21-merge-two-sorted-lists]]
-- 注意特判[[trivial-case]]：0或1个链表
+- 注意特判[[special-case]]：0或1个链表
 # 分治法[[divide-and-conquer]]，[[oi-wiki/recursion]]
 ```cpp
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -37,6 +37,6 @@
     }
 ```
 - 对分治的分析
-  - 出口[[trivial-case]]：0或1个链表
+  - 出口[[special-case]]：0或1个链表
   - 分解：直接分成两个链表组成的vector，参考[[sequence]]中使用两个迭代器初始化
   - 这里的“各自解决”和“归并”非常简单，放到了`return`里一行搞定

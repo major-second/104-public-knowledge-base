@@ -3,5 +3,5 @@
   - [[regression]]
   - [[time-series]]
   - [[numpy/basic]]
-  - 注意要防止[[trivial-case]]报错
+  - 注意要防止[[special-case]]报错
 - 参见同名`.ipynb`
