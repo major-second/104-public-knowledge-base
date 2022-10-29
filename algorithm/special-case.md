@@ -8,8 +8,10 @@
   - 助于[[oi-wiki/recursion]]，[[induction]]思考，作为“起步”
   - 检查一些基本情况的正确性，防止特别低级错误
   - 参考[[2-brain-teasers]]，[[introduction]]
-- 有时特判可以合并到一般情况，节省代码量
-  - 例如[[21-merge-two-sorted-lists]]有提到
+- 有时特判可以合并[[化归]]到一般情况，节省代码量
+  - 往往规模加一，但合并了特判
+  - 例如[[21-merge-two-sorted-lists]]链表头
+  - 例如[[2216-minimum-deletions-to-make-array-beautiful]]末尾增加一个
 # 例子
 - 涉及空
   - [[21-merge-two-sorted-lists]], [[25-merge-k-sorted-lists]]
