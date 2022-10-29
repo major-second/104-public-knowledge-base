@@ -1,3 +1,4 @@
+- https://oiwiki.org/lang/csl/algorithm/
 # 有起止点的
 - 传入起止[[iterator]]
 - `sort, reverse, unique`
@@ -71,4 +72,7 @@
 1 1 3 4 5 5 6 9 14 20
 ```
 # 其它
-- `nth_element`, `inplace_merge`, todo
+- `nth_element`
+  - 传入三个迭代器：开头，中间，结尾，使中间成为第`n`个元素，左边都小右边都大
+  - 应用：调包直接解决[[973-k-closest-points-to-origin]]
+- `inplace_merge`, todo

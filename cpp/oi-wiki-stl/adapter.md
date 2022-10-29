@@ -3,6 +3,8 @@
 - 定义方式和[[sequence]]类似
 - 且也有复制构造
 - 常见：`top(), push(), pop(), size(), empty()`
+  - 这个`pop`和python不同，不返回值
+  - 取值需要`top`或`front`
 # 队列
 - 头文件`<queue>`
 - 像人排队，当然是队首`front`“露出”，马上被取出啦。不要老是记反
@@ -18,4 +20,6 @@
   - 默认从小到大，则默认的“比较类型”是`less<T>`
   - 不可跳过`Container`参数（底层容器）直接传入`Compare`参数
   - 也就是想要小根堆需要`priority_queue<int, vector<int>, greater<int> > pq;`
-- 直接调包解题：[[215-kth-largest-element-in-an-array]]
+- 直接调包解题
+  - [[215-kth-largest-element-in-an-array]]
+  - [[973-k-closest-points-to-origin]]
