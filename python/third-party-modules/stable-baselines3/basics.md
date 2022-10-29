@@ -19,4 +19,4 @@ for i in range(1000):
     if done:
         obs = env.reset()
 ```
-- `.learn`可能不够灵活，可以分别使用`.collect_rollouts`和`.train`
+- `.learn`可能不够灵活，可以分别使用`.collect_rollouts`和`.train`等函数
