@@ -5,7 +5,7 @@
 - 拿到问题，优先考虑特判的好处
   - 助于严谨，防止特殊值报错
     - 例如[[finetune]]有提到
-  - 助于[[oi-wiki/recursion]]，[[induction]]思考，作为“起步”
+  - 助于[[oi-wiki-basic/recursion]]，[[induction]]思考，作为“起步”
   - 检查一些基本情况的正确性，防止特别低级错误
     - 有时还能发现[[counter-examples]]
   - 参考[[2-brain-teasers]]，[[introduction]]
@@ -33,6 +33,8 @@
 - 例子
   - [[18-4sum]]
 # 其它
+- 除数不能为0
+  - 如[[679-24-game]]，需要非常仔细讨论0的影响
 - 等于（临界）造成麻烦
   - 例子：[[845-longest-mountain-in-array]]
   - [[sort-intro]]中稳定性也算这个的例子
@@ -43,7 +45,7 @@
     - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
     - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`
     - 但：如果`1`不出现，就崩了
-- [[oi-wiki/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
+- [[oi-wiki-basic/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
   - 空，0，1等等
   - [[25-merge-k-sorted-lists]]中，注意“1”是递归出口
 # 具体题目例子

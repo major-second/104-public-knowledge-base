@@ -1,6 +1,6 @@
 - 前置[[21-merge-two-sorted-lists]]
 - 注意特判[[special-case]]：0或1个链表
-# 分治法[[divide-and-conquer]]，[[oi-wiki/recursion]]
+# 分治法[[divide-and-conquer]]，[[oi-wiki-basic/recursion]]
 ```cpp
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         if (!list1) return list2;

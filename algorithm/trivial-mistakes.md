@@ -7,3 +7,6 @@
 - https://www.hackerrank.com/challenges/maximize-it/problem?isFullScreen=true
   - 看清题意！他说每个list先有一个数字表示list长度
   - 不过对于python来说就很简单，直接`input().split()[1:]`即可
+- [[overflow]]
+- [[float]]误差
+  - 如[[679-24-game]]

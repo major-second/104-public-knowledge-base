@@ -1,6 +1,6 @@
 # 理论
 todo
-# 算法题中的[[oi-wiki/recursion]]
+# 算法题中的[[oi-wiki-basic/recursion]]
 - 例如[[10-regular-expression-matching]]
 # 一般程序中的递归（提升可读性）
 - 例如`torch`把复合对象递归地找到其中所有的`Tensor`并移至指定GPU（参考[[device]]）

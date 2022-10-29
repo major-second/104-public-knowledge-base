@@ -2,7 +2,7 @@
 - 前置
   - [[oi-wiki-stl/string]]操作，例如`.size(), .substr()`等
 - 参考：[[regex]]，[[4-decision-tree]]
-# [[oi-wiki/recursion]]递归解法
+# [[oi-wiki-basic/recursion]]递归解法
 ```cpp
 class Solution {
 public:
@@ -22,8 +22,8 @@ public:
 };
 ```
 - `p`是`a*a`这种时，不能让`a*`消耗全部`s`中`a`，也就是不能[[greedy]]，需要[[dp]]
-- 注意`if (p_size==0) return s_size==0;`是[[oi-wiki/recursion]]出口
-- 注意[[oi-wiki/recursion]]中讲到的“使递推关系最简单”
+- 注意`if (p_size==0) return s_size==0;`是[[oi-wiki-basic/recursion]]出口
+- 注意[[oi-wiki-basic/recursion]]中讲到的“使递推关系最简单”
 - 参考[[func]]，参考[[4-decision-tree]]思想，“特判直接返回”，减少`else`使用
 # [[dp]]解法
 ```cpp
@@ -62,7 +62,7 @@ public:
     }
 };
 ```
-比[[oi-wiki/recursion]]快得多
+比[[oi-wiki-basic/recursion]]快得多
 # 拓展讨论
 - 一些[[counter-examples]]
   - 认为必须第一个字符就match

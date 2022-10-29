@@ -6,6 +6,7 @@ https://oiwiki.org/lang/func/
 - 也可以声明和定义放一起
 - 注意：
   - 传值vs**传引用**：`foo(int& x, int& y)`
+    - [[backtrack]]中常见传引用，积累所有可能结果
   - `main`的参数和返回值和外部（`shell`调用之类）有关
     - 比如命令行参数，命令行返回值
     - 例如用于[[12-condition]]判断

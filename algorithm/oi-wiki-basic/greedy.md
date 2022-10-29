@@ -1,6 +1,6 @@
 - https://oiwiki.org/basic/greedy/
 # 概述
-- 逻辑上，可以和[[oi-wiki/recursion]]，[[induction]]做联系，也就是对$n$, 考察规模$n-1$的问题
+- 逻辑上，可以和[[oi-wiki-basic/recursion]]，[[induction]]做联系，也就是对$n$, 考察规模$n-1$的问题
   - 注意需要具有“最优子问题”性质
 - 和[[dp]]区别：不能反悔（回溯），一条路走下去
 # 证明
