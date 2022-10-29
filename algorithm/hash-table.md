@@ -1,5 +1,6 @@
 核心就是快速（$O(1)$地）查找
 - 索引可以看成特殊的哈希，即键是整数，以**常数**时间复杂度查找
+  - [[counting-sort]]
   - https://leetcode.cn/problems/valid-sudoku/
     - 81个格子，每个格子以**常数**时间找到对应的地方把相应计数器加一
   - https://leetcode.cn/problems/check-permutation-lcci/

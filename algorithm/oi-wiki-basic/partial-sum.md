@@ -1,0 +1,2 @@
+- 实现：可以用标准库[[algorithm]]，参考：`partial_sum(v.begin(), v.end(), back_inserter(v2));`
+  - 注意定义是$S_0=a_0$

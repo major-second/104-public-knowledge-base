@@ -12,8 +12,9 @@
 - `=`赋值
 - `.swap(...)`交换
 - 应用
-  - 离散化[[algorithm/discretize]]
-    - 值做第一个变量，脚标做第二个变量
-    - 排序后，排名（排序后所在位置）赋给原来脚标
+  - 和排序相关（往往值做第一个变量，脚标做第二个变量）
+    - 离散化[[algorithm/discretize]]
+      - 排序后，排名（排序后所在位置）赋给原来脚标
+    - 防重，让相同值不同脚标的被视为不同东西，例如[[2343-query-kth-smallest-trimmed-number]]
   - [[shortest-path]]中dijkstra算法用到（todo）
   - [[associative]]中`map`，`multimap`等用到

@@ -1,0 +1,10 @@
+- https://oiwiki.org/basic/sort-intro/
+# 性质
+- 稳定性：相等元素是否被改变
+  - 基数排序、计数排序、插入排序、冒泡排序、归并排序是稳定排序
+    - 特别注意稳定性还是[[radix-sort]]正确的前提！
+  - 选择排序、堆排序、快速排序不是稳定排序
+# $O(n^2)$
+- [[n2-sort]]
+- 插入，选择，冒泡
+- ![](insertion-selection-bubble.png)

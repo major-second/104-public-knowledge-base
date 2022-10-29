@@ -1,5 +1,5 @@
 # 概述
-- 对于[[trivial-case]]（空，0等）往往需要特判
+- 对于[[special-case]]（空，0等）往往需要特判
   - 特判既包括你代码的特判，也包括人肉输入特殊数据（空）等做测试集
   - 参考[[general-principles/debug]]
 - 拿到问题，优先考虑特判的好处
@@ -13,7 +13,40 @@
   - 往往规模加一，但合并了特判
   - 例如[[21-merge-two-sorted-lists]]链表头
   - 例如[[2216-minimum-deletions-to-make-array-beautiful]]末尾增加一个
-# 例子
+# 去重
+- 带来问题
+  - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
+    - 例如[[parallelism]]中torch综合应用“算法题”示例中减去`torch.eye(p)`
+    - 例如[[1-two-sum]]
+  - [[sort-intro]]提到：重复元素可能带来“排序稳定性”问题
+- 去重方法
+  - 内层`j`从`i+1`开始而非`i`
+  - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
+    - 相同就跳过（往往体现为[[loop]]的`continue`）
+    - 不同，就正常运行，同时要更新“最近的值”
+  - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
+  - 特事特办，单独讨论
+    - 例如[[1-two-sum]]的哈希做法
+  - 多维护更多属性防止重复（看作不同的）
+    - 往往使用[[pair]]
+    - 例如[[2343-query-kth-smallest-trimmed-number]]
+- 例子
+  - [[18-4sum]]
+# 其它
+- 等于（临界）造成麻烦
+  - 例子：[[845-longest-mountain-in-array]]
+  - [[sort-intro]]中稳定性也算这个的例子
+- 考虑输入为空的情况
+  - [[21-merge-two-sorted-lists]]
+  - [[25-merge-k-sorted-lists]]
+  - 一个实际例子
+    - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
+    - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`
+    - 但：如果`1`不出现，就崩了
+- [[oi-wiki/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
+  - 空，0，1等等
+  - [[25-merge-k-sorted-lists]]中，注意“1”是递归出口
+# 具体题目例子
 - https://leetcode.cn/problems/can-i-win/submissions/
 特判和为0（本来“不拿就够”一般指先手输，但和为0算先手赢）
 特判所有数之和小于待求
@@ -39,16 +72,3 @@ else if (former!="."){
     - 根据题意，并不是说根目录`..`就直接输出`/`，而是根目录`..`就不动，但之后还可能到下级目录！（这是unix操作的常识）
   - 最后还需特判是否为空
     - 空串要手动加上`/`，其它情况末尾不能有`/`
-- 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
-  - 例如[[parallelism]]中torch综合应用“算法题”示例中减去`torch.eye(p)`
-  - 例如[[1-two-sum]]
-- 考虑输入为空的情况
-  - [[21-merge-two-sorted-lists]]
-  - [[25-merge-k-sorted-lists]]
-  - 一个实际例子
-    - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
-    - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`
-    - 但：如果`1`不出现，就崩了
-- [[oi-wiki/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
-  - 空，0，1等等
-  - [[25-merge-k-sorted-lists]]中，注意“1”是递归出口

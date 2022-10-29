@@ -1,0 +1,9 @@
+- 前置
+  - [[counting-sort]]
+  - [[sort-intro]]提到的“稳定性”
+- https://oiwiki.org/basic/radix-sort/
+# 做法
+- 个位排，然后再维持稳定地排十位
+  - 每次排一般用[[counting-sort]]等，否则直接基于比较地排序即可
+- 关键字值域不要太大（比如十进制），否则直接基于比较地排序即可
+- 举例[[2343-query-kth-smallest-trimmed-number]]
