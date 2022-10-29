@@ -64,7 +64,7 @@ public:
 ```
 比[[oi-wiki/recursion]]快得多
 # 拓展讨论
-- 一些[[反例]]
+- 一些[[counter-examples]]
   - 认为必须第一个字符就match
       - 不一定！比如`a`对应`c*a`，`c*`可以是0个c
   - 认为`p`和`s`一定同时为空或不为空才能match
