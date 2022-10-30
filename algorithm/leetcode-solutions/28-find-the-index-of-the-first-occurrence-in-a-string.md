@@ -3,7 +3,7 @@
 class Solution {
 public:
     vector<int> getPi(const string& p){
-        // badbagbadbad: 0000120123453
+        // badbagbadbad: -10000120123453
         int length = p.size();
         vector<int> pi {-1};
         
