@@ -24,7 +24,10 @@
   - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
     - 相同就跳过（往往体现为[[loop]]的`continue`）
     - 不同，就正常运行，同时要更新“最近的值”
-  - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
+  - 内置调包
+    - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
+    - [[associative]]中`unordered_set`等
+      - 例如[[200-number-of-islands]]中有
   - 特事特办，单独讨论
     - 例如[[1-two-sum]]的哈希做法
   - 多维护更多属性防止重复（看作不同的）
@@ -34,20 +37,22 @@
   - [[18-4sum]]
 # 其它
 - 除数不能为0
-  - 如[[679-24-game]]，需要非常仔细讨论0的影响
+  - 如[[679-24-game]]，需要非常仔细讨论0的影响（和搜索方向是前向还是后向有关，参考[[search/misc]]）
 - 等于（临界）造成麻烦
   - 例子：[[845-longest-mountain-in-array]]
   - [[sort-intro]]中稳定性也算这个的例子
 - 考虑输入为空的情况
   - [[21-merge-two-sorted-lists]]
   - [[25-merge-k-sorted-lists]]
+  - [[430-flatten-a-multilevel-doubly-linked-list]]
+  - [[4-median-of-two-sorted-arrays]]中，其中一个输入为空的情形
   - 一个实际例子
     - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
     - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`
     - 但：如果`1`不出现，就崩了
 - [[oi-wiki-basic/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
-  - 空，0，1等等
-  - [[25-merge-k-sorted-lists]]中，注意“1”是递归出口
+  - 往往是空，0，1等等
+  - 如[[25-merge-k-sorted-lists]]中，注意“1”也是递归出口
 # 具体题目例子
 - https://leetcode.cn/problems/can-i-win/submissions/
 特判和为0（本来“不拿就够”一般指先手输，但和为0算先手赢）

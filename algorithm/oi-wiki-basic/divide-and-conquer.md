@@ -9,6 +9,8 @@
     - [[quick-sort]]分解难，合并简单
     - [[merge-sort]]相反
 - 例子：[[25-merge-k-sorted-lists]]
+- 和[[binary-search]]联系
+  - 分解之后只需解决一个，不用解决两个，然后合并，那就是[[binary-search]]
 # 分治和[倍增](https://oiwiki.org/basic/binary-lifting/)
 - 分治和倍增是一体两面
 - [参考](https://oiwiki.org/basic/binary-lifting/)
