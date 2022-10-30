@@ -1,0 +1,12 @@
+- [coderpad沙盒](https://app.coderpad.io/sandbox)
+- 概述
+  - 有pad功能可以同时写写画画
+  - 有snippets功能，类似于[[vscode/snippets]]
+    - `Tab`操作也有
+    - 可以自动补全方法、模块名
+  - 有类似[[vscode/edit]]的`Alt`多光标，`Shift+Alt+方向键`复制等功能
+- c++
+  - 可以使用输入。如果你代码里有`cin >>`，那么`Ctrl + Enter`开始运行后，右边会可以输入内容
+- python
+  - 可以使用右侧调试器
+  - 但右侧输入东西可能比较慢，不妨左边输入，复制过去

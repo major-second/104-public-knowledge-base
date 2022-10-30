@@ -48,6 +48,7 @@
   - [[25-merge-k-sorted-lists]]
   - [[430-flatten-a-multilevel-doubly-linked-list]]
   - [[4-median-of-two-sorted-arrays]]中，其中一个输入为空的情形
+  - [[686-repeated-string-match]]中，`l_l==0`情形特殊！
   - 一个实际例子
     - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
     - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`

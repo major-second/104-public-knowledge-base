@@ -16,11 +16,4 @@ int main(){
     return 0;
 }
 ```
-- 比如
-https://app.coderpad.io/sandbox
-  - 这个可以使用输入。如果你代码里有`cin >>`，那么`Ctrl + Enter`开始运行后右边会可以输入内容。
-  - 还有pad功能可以同时写写画画
-  - 有snippets功能，类似于[[vscode/snippets]]
-    - `Tab`操作也有
-    - 可以自动补全方法、模块名
-  - 有类似[[vscode/edit]]的`Alt`多光标，`Shift+Alt+方向键`复制等功能
+- 比如[[coderpad]]
