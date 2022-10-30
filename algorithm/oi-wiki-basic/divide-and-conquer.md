@@ -11,6 +11,10 @@
 - 例子：[[25-merge-k-sorted-lists]]
 - 和[[binary-search]]联系
   - 分解之后只需解决一个，不用解决两个，然后合并，那就是[[binary-search]]
+  - 有趣例子：[[154-find-minimum-in-rotated-sorted-array-ii]]
+    - 不知道是分成1个还是2个，大部分情况是1个
+    - 所以算是分治，也可以算和[[binary-search]]思想有关
+    - 最坏情况肯定是$O(n)$的，比如`1,1,1,0,1`这种一群当中只有一个不同
 # 分治和[倍增](https://oiwiki.org/basic/binary-lifting/)
 - 分治和倍增是一体两面
 - [参考](https://oiwiki.org/basic/binary-lifting/)

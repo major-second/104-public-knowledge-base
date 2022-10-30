@@ -1,7 +1,9 @@
 - 和[[oi-wiki-basic/recursion]]常常结合
-- 本质是不搜干净，多剪枝！
-- 所以其实是一种[[enumerate]]
-# 实例
-- [[22-generate-parentheses]]
-  - 注意传引用！参考[[oi-wiki-basic/func]]
+  - 注意在递归时如果要传递“当前状态”，常常是传引用
+    - 参考[[func]]
+  - 举例：[[22-generate-parentheses]]
+    - 已经生成的前缀（作为“当前状态”）需要传引用
+- 本质是不搜干净整棵树，多剪枝！
+  - [[22-generate-parentheses]]
   - 满足一定条件不进去递归，这就是剪枝！
+  - 所以其实可以看成一种[[enumerate]]

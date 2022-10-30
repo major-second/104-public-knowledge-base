@@ -39,7 +39,9 @@
 - 除数不能为0
   - 如[[679-24-game]]，需要非常仔细讨论0的影响（和搜索方向是前向还是后向有关，参考[[search/misc]]）
 - 等于（临界）造成麻烦
-  - 例子：[[845-longest-mountain-in-array]]
+  - 例子
+    - [[845-longest-mountain-in-array]]
+    - [[154-find-minimum-in-rotated-sorted-array-ii]]中，等于的情况大大增多了问题复杂度、时间
   - [[sort-intro]]中稳定性也算这个的例子
 - 考虑输入为空的情况
   - [[21-merge-two-sorted-lists]]

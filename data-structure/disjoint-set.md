@@ -14,12 +14,19 @@
     - 实现2：共2行
       - 如果自己不是根节点，则设置自己的父母是`find(自己父母)`
       - 返回自己父母
+  - 易错点：`parents[i]`不提供祖先，只提供父母！最后统计有多少个集合时，要用`find`而非`parents[]`
+    - 参考[[200-number-of-islands]]
 - 合并
-  - 一种实现：`x = find(x); y = find(y); fa[x] = y;`
-  - 简写一行：`fa[find(x)] = find(y);`，在[[200-number-of-islands]]就是
-  - 注：c++中`union`不能用作函数名
-- 启发式合并
-  - 法一：个数少合并到个数多
-  - 法二：维护一个rank，少的合并到多的。相等随便合且rank加一
-  - 实际中偷懒不写往往也能过
-  - [参考](https://oiwiki.org/ds/dsu-complexity/)
+  - 基础
+    - 一种实现：`x = find(x); y = find(y); parents[x] = y;`
+    - 简写一行：`parents[find(x)] = find(y);`，在[[200-number-of-islands]]就是
+    - 注：c++中`union`不能用作函数名
+  - 启发式合并
+    - 法一：个数少合并到个数多
+    - 法二：维护一个rank，少的合并到多的。相等随便合且rank加一
+    - 实际中偷懒不写往往也能过
+    - [参考](https://oiwiki.org/ds/dsu-complexity/)
+- 实际中，往往除了`x, y`这些，还需要传`parents`的引用
+  - 也就是`find`双参数，`union`三参数
+  - 参考[[func]]
+  - [[200-number-of-islands]]等例子都用到
