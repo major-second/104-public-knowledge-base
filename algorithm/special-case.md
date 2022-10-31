@@ -8,6 +8,7 @@
   - 助于[[oi-wiki-basic/recursion]]，[[induction]]思考，作为“起步”
   - 检查一些基本情况的正确性，防止特别低级错误
     - 有时还能发现[[counter-examples]]
+    - 有时推广到0，无穷等极限情况，问题本质改变，比如[[5-brownian-motion-and-stochastic-calculus]]中的“何时在1停下”
   - 参考[[2-brain-teasers]]，[[introduction]]
 - 有时特判可以合并[[化归]]到一般情况，节省代码量
   - 往往规模加一，但合并了特判

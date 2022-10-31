@@ -115,6 +115,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 注意1/2是特例
 - basketball scores
   - 可以用[[induction]]数学归纳法
+    - 其实本质是[[5-martingale-and-random-walk]]中的归纳
   - 分类讨论，全概率公式
 - cars on road
   - 泊松过程[[poisson-process]]，无记忆性
