@@ -8,7 +8,7 @@
   - 其中$\sum \pi(i)=1$
   - $\pi P=\pi, PP=P$显然
 - “一定条件”
-  - 非周期：即$\{n|n\ge 1, P_{ii}^n>0\}$集合不能全是某整数倍数
+  - 非周期
   - 连通
   - 状态数可以有限/无限
   - $\pi$称为平稳分布
@@ -16,4 +16,6 @@
   - 初始一个分布（如高斯）
   - 转移$n_1$次，开始采样
   - 再转移$n_2$次，这样得到了$n_2$组样本
-- 细致平稳条件：$\pi_i P_{ij} = \pi_j P_{ji} \Rightarrow \sum_i \pi_i P_{ij} = \sum_i \pi_j P_{ji}=\pi_j\sum_i P_{ji}=\pi_j\Rightarrow \pi P=\pi$，是一个找到$P$的充分条件
+- 细致平稳条件
+  - $\pi_i P_{ij} = \pi_j P_{ji} \Rightarrow \sum_i \pi_i P_{ij} = \sum_i \pi_j P_{ji}=\pi_j\sum_i P_{ji}=\pi_j\Rightarrow \pi P=\pi$
+  - 给定想要的$\pi$，是一个找到$P$的充分条件
