@@ -10,9 +10,8 @@
     - 再解$ \hat \beta$
 - 回忆OLS条件
   - $Y=X\beta +\epsilon$
-  - 误差期望0方差恒定不相关
+  - 误差期望0，方差恒定，不相关，和$x$独立
   - 没有相关系数为1的regressor对（否则系数解不唯一）
-  - 误差$\epsilon$和$x$独立
 - $A-\lambda I$的行列式就是特征多项式characteristic polynomial，等于0就是characteristic equation
   - 特征多项式显然是$\prod (\lambda_i - \lambda)$
   - 由此结合行列式计算的定义，容易证明特征值乘积是行列式，和是trace

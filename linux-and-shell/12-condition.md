@@ -17,7 +17,7 @@ then
     commands
 fi
 ```
-（或者`if command; then`，可少用一行）
+（或者`if command; then`，可少用一行）（否则就必须要换行）
 `command`正常以0退出（参考[[11-basic-scripting-partB]]），则执行`then`中的
 - 举例：`echo 11 | grep 2; echo $?`，输出1
   - 即`grep`找不到时会是“非正常退出”，返回值非零

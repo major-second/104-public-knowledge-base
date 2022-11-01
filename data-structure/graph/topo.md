@@ -1,0 +1,9 @@
+- https://oiwiki.org/graph/topo/
+- 有向无环可以，有环就不行
+## [[oi-wiki-basic/recursion]]算法（深搜）
+- 核心：三种状态白灰黑，搜到灰色说明有环，搜到黑色就别往下了
+- [[210-course-schedule-ii]]
+## Kahn算法
+- [[greedy]]思想
+- 持续维护出度为0的集合
+  - 使用[[bfs]]是关键（这次去除了一些边，则下次可能考察的肯定是直接相邻的）

@@ -4,3 +4,4 @@
 - 排列排列各个指针调整的顺序！要在草稿上[[oi-wiki-basic/simulate]]一下
 - 常见技巧
   - [[化归]]，设一个头指针指向输入的那个节点，减少分类讨论
+- 和树结构的结合例子：[[116-populating-next-right-pointers-in-each-node]]
