@@ -1,5 +1,5 @@
 - https://leetcode.cn/problems/container-with-most-water/
-- 前置：[[双指针]]
+- 前置：[[two-pointers]]
 # 我的题解
 ```cpp
 class Solution {
