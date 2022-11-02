@@ -57,6 +57,10 @@
 - [[oi-wiki-basic/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
   - 往往是空，0，1等等
   - 如[[25-merge-k-sorted-lists]]中，注意“1”也是递归出口
+# 图相关
+- 环带来麻烦
+  - 例如[[topo]]，[[210-course-schedule-ii]]
+- 负数带来麻烦，例如[[shortest-path]]中dijkstra
 # 具体题目例子
 - https://leetcode.cn/problems/can-i-win/submissions/
 特判和为0（本来“不拿就够”一般指先手输，但和为0算先手赢）
