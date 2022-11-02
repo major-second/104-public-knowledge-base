@@ -1,0 +1,5 @@
+- 前后都可以出入
+- 实现：`deque`
+  - 方法名往往有`front, back`，如`pop_front(), back()`等
+- 应用
+  - [[239-sliding-window-maximum]]：单调双端队列

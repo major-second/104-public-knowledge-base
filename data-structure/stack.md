@@ -6,3 +6,5 @@
 - 一旦破坏单调性，就弹出！
 - 应用
   - [[32-longest-valid-parentheses]]
+- ![](monotonous-stack.png)，乐
+  - 年轻和位高你至少占一样吧
