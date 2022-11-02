@@ -1,0 +1,39 @@
+# [[monte-carlo]]
+- 理论基础[[大数定律]]
+- 实际应用：比如模拟一堆股价路径看期望，应用于[[6-option]]定价
+  - 对于欧式期权可以直接模拟一步到位。一般来说不能这样
+- 均匀模拟正态
+  - 法一
+    - [[monte-carlo]]提到接受拒绝采样
+    - 放缩一下，知道正态pdf除以一个好生成的pdf $\lambda e^{-\lambda x}$不超过……
+    - 生成单边再分给两边即可
+  - 法二：生成分位数
+    - $U=F(X)$，$F$是正态cdf，$X$是正态随机变量，则$U$显然是均匀随机变量
+    - $X=F^{-1}(U)$即得
+- 减少[[character/var]]，加快收敛速度
+  - 原始naive法：方差和次数成反比
+  - antithetic：让$Y(\epsilon_1, \cdots, \epsilon_N)$和$Y(-\epsilon_1, \cdots, -\epsilon_N)$总是一起出现，因为两者实际中往往负相关
+  - moment matching: 均值和方差去match指定值
+  - control variate
+    - $X,Y$密切相关，$Y$有解析解
+    - 你指定条件下模拟一些配对$\hat X,\hat Y$
+    - 看$\hat Y$和$Y$差多少（这波条件给$Y$的模拟造成了什么方向多少的误差）
+    - 就知道这些条件下$\hat X$和$X$差多少（这波条件给$X$的模拟造成了什么方向多少的误差）
+  - importance sampling: 
+    - $E_{x\sim f(x)}[h(x)] = \int hfdx = E_{x\sim g(x)}[hf/g]$
+    - 如果$g$方差较小，挺好
+    - 直觉：比如你知道一个分布有一半概率0，然后后面一个细长尾，那你不如把模拟0的数量减少，多模拟一些长尾
+  - low-discrepancy sequence
+    - 别模拟了，直接确定性地生成吧！
+- 模拟希腊字母（todo）
+- 模拟$\pi$：比如方中画圆
+# Finite difference method
+- 微分方程数值解
+- 把$x,\tau$画网格，递归解每一时刻的
+- explicit difference method
+  - 用$\Delta u/\Delta\tau$模拟一阶
+  - 用$\frac{...-2...+...}{\Delta x}$模拟二阶
+  - 列出差分方程（线性方程组），结合边界条件得结果
+- implicit difference method：跟刚才差不多，但$\Delta u/\Delta \tau$看的是另一侧的$u$
+- crank-nicolson method: 相当于针对中间时刻$(t_n+t_{n+1})/2$
+- 刚刚算出了递推关系，显然系数不能靠近0，否则影响递推关系的稳定（请回顾浮点数运算）。所以explicit这种对$\Delta t, \Delta x$关系有要求
