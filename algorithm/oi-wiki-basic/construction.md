@@ -1,0 +1,2 @@
+- https://oiwiki.org/basic/construction/
+- 例子[[89-gray-code]]
