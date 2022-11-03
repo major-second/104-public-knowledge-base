@@ -22,6 +22,8 @@
   - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
     - 相同就跳过（往往体现为[[loop]]的`continue`）
     - 不同，就正常运行，同时要更新“最近的值”
+    - 简单例子[[18-4sum]]
+    - 比较有意思的例子：[[313-super-ugly-number]]，出现重复了，相应指针直接动，`i`不增（也就是循环体内部`i--`）
   - 内置调包
     - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
     - [[associative]]中`unordered_set`等
@@ -31,5 +33,3 @@
   - 多维护更多属性防止重复（看作不同的）
     - 往往使用[[pair]]
     - 例如[[2343-query-kth-smallest-trimmed-number]]
-- 例子
-  - [[18-4sum]]
