@@ -3,6 +3,7 @@
 https://oiwiki.org/lang/array/
 - 大小固定（`const int`才行）
   - 如果数组长度编译期未知，那就还是参考[[sequence]]吧，比如`vector<int> v(n);`
+    - 当然[[sequence]]中也有长度要求已知的`array<int, 3> a = {1,2,3};`这种
   - 当然，`int v[n];`不保证一定报错
     - 这是g++扩展，不是标准化的一部分，不保证所有地方能用（但OI有时恰好可以用）
     - 总之别指望
