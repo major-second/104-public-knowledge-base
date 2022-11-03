@@ -1,5 +1,5 @@
 # 概述
-- 对于[[special-case]]（空，0等）往往需要特判
+- 对于特例（空，0等）往往需要特判
   - 特判既包括你代码的特判，也包括人肉输入特殊数据（空）等做测试集
   - 参考[[general-principles/debug]]
 - 拿到问题，优先考虑特判的好处
@@ -14,28 +14,6 @@
   - 往往规模加一，但合并了特判
   - 例如[[21-merge-two-sorted-lists]]链表头
   - 例如[[2216-minimum-deletions-to-make-array-beautiful]]末尾增加一个
-# 去重
-- 带来问题
-  - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
-    - 例如[[parallelism]]中torch综合应用“算法题”示例中减去`torch.eye(p)`
-    - 例如[[1-two-sum]]
-  - [[sort-intro]]提到：重复元素可能带来“排序稳定性”问题
-- 去重方法
-  - 内层`j`从`i+1`开始而非`i`
-  - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
-    - 相同就跳过（往往体现为[[loop]]的`continue`）
-    - 不同，就正常运行，同时要更新“最近的值”
-  - 内置调包
-    - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
-    - [[associative]]中`unordered_set`等
-      - 例如[[200-number-of-islands]]中有
-  - 特事特办，单独讨论
-    - 例如[[1-two-sum]]的哈希做法
-  - 多维护更多属性防止重复（看作不同的）
-    - 往往使用[[pair]]
-    - 例如[[2343-query-kth-smallest-trimmed-number]]
-- 例子
-  - [[18-4sum]]
 # 其它
 - 除数不能为0
   - 如[[679-24-game]]，需要非常仔细讨论0的影响（和搜索方向是前向还是后向有关，参考[[search/misc]]）

@@ -4,11 +4,13 @@
 这个`set`和数学的`set`不同，有序（默认从小到大）。所以有
 - `.erase(迭代器或迭代器区间)`
 - `.erase(键)`
+- 增加：插入是插在中间而不是旁边，所以没有`push_back`啥的，而是`insert`
 - `.lower_bound()`
   - 复杂度$O(logn)$
   - 返回迭代器[[iterator]]，可以`*`取值，`->first`取值（针对`map`，参考[[pair]]），等等
   - 如果没有，返回`end()`
     - 对`end()`解引用的结果我们不去纠结
+    - 实际中往往要讨论排除，比如[[220-contains-duplicate-iii]]
   - 对应：大于等于某值的最小元素，即“闭”
 - `.upper_bound()`：大于等于改为大于，即“开”
   - 这里的`lower, upper`含义和数学中上下界不同
@@ -73,6 +75,8 @@ set<int, cmp> s;
 - 无序关联式（[[hash-table]]）
   - [[1-two-sum]]
 - 有序集和`lower_bound`应用
+  - [[220-contains-duplicate-iii]]
+    - 可能重复，需要`multiset`
   - 两组点A和B，若B中的点的$x,y$坐标都比A中某个点大，就称为支配。给定两组点，求最多多少支配对
     - 当然[[hungarian]]可以做，但是复杂度太高
     - [[greedy]]思想方法

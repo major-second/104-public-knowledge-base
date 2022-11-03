@@ -18,3 +18,4 @@
 - [[686-repeated-string-match]]
   - 错误认为`b`中找不到`a`时结果一定是`1, -1`
   - 还可能是`2`
+- [[220-contains-duplicate-iii]]滑窗大于序列长

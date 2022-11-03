@@ -10,3 +10,26 @@
 - [[overflow]]
 - [[float]]误差
   - 如[[679-24-game]]
+# 去重
+- 带来问题
+  - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
+    - 例如[[parallelism]]中torch综合应用“算法题”示例中减去`torch.eye(p)`
+    - 例如[[1-two-sum]]
+  - [[sort-intro]]提到：重复元素可能带来“排序稳定性”问题
+- 去重方法
+  - 内层`j`从`i+1`开始而非`i`
+  - 滑窗去重：[[sliding-window]]
+  - 维护最近的值，然后每次判断是否和最近的值相同，参考[[loop]]
+    - 相同就跳过（往往体现为[[loop]]的`continue`）
+    - 不同，就正常运行，同时要更新“最近的值”
+  - 内置调包
+    - [[algorithm]]中讲的内置`unique(begin, end)`，去除相邻重复的
+    - [[associative]]中`unordered_set`等
+      - 例如[[200-number-of-islands]]中有
+  - 特事特办，单独讨论
+    - 例如[[1-two-sum]]的哈希做法
+  - 多维护更多属性防止重复（看作不同的）
+    - 往往使用[[pair]]
+    - 例如[[2343-query-kth-smallest-trimmed-number]]
+- 例子
+  - [[18-4sum]]
