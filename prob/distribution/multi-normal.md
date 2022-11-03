@@ -3,3 +3,4 @@
   - 在[[multi-ary]]中用到了
   - 典型题：$X_1, X_2$独立标准正态，则$X_1>0, X_1+X_2<0$概率是$\frac 18$，因为在平面上画出来占45度角
     - 在[[5-brownian-motion-and-stochastic-calculus]]中包装它出了道题
+    - [[2-6-prob]]也有
