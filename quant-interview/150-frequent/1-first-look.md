@@ -1,0 +1,24 @@
+- 1：[[6-option]]有。画图法
+- 2：利用9的整除性
+  - 以及$a^{\phi(n)}\equiv 1(mod\quad n)$（[[euler-theorem]]）
+  - 注意$n$可以不是素数（素数则$\phi(n)=n-1$）但要求$(a,n)=1$
+- 3
+  - 需要[[5-brownian-motion-and-stochastic-calculus]]知识
+  - 鞅显然不是了（强者愈强）
+  - 注意写成标准的[[wiener-process]]，就是$dX=Wdt+0dW$，所以当然不是鞅
+  - 解：可以用分部积分法，得到$X=\int (t-\tau) dW_{\tau}$
+  - 类比[[可加性]]，知道$\int_0^t f(\tau)dW_{\tau} \sim N(0, \int_0^t |f(\tau)|^2 d\tau)$即可
+- 4
+  - 撞等于不撞
+  - 等效替代思想，在[[4-probability]]中也有类似题
+- 5
+  - 由几何意义，最大$-0.18+0.8*\sqrt {0.91}$，最小$-0.18-0.8*\sqrt {0.91}$
+- 6
+  - 反过来看：$0.98^x <0.05, x<ln0.05/ln0.98\approx ln20/0.02$（当然这个估计不一定很准确）
+- 7：[[3-calculus]]讲了，可以换极坐标
+- 8：脑筋急转弯：靠近南极
+  - 而且有无穷多个点……（绕大于1圈）
+- 9
+  - 需要[[5-brownian-motion-and-stochastic-calculus]]知识
+  - 但是其实本质还是一阶线性微分方程的思想，只需换元一下，即可解出显式解
+- 10：[[7-algorithms]]原题
