@@ -31,3 +31,5 @@ int main() {
   cout<<o.i<<endl<<o.d;
 } // 输出2和3.1
 ```
+- 应用：[[dp]]中，让返回输出解过程更清晰
+  - 如[[368-largest-divisible-subset]]
