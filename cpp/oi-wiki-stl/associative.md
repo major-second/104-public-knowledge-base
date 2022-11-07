@@ -63,7 +63,7 @@ set<int, cmp> s;
   - `x`类型就是`<>`里面填的那个东西
   - 对于`map`就是[[pair]]，这点和python字典不同！
 ## 无序关联式
-- 参考[[hash-table]]
+- 参考[[hash]]
 - https://oiwiki.org/lang/csl/unordered-container/
 - 好玩的东西：hack哈希
   - codeforces hack你的哈希函数，有意思
@@ -72,7 +72,7 @@ set<int, cmp> s;
   - 相比之下，有序的那些容器，只要能比较大小即可往里填
 ## 应用
 - [原文](https://oiwiki.org/lang/csl/associative-container/)所说和[[greedy]]密切相关在后面例子里有
-- 无序关联式（[[hash-table]]）
+- 无序关联式（[[hash]]）
   - [[1-two-sum]]
 - 有序集和`lower_bound`应用
   - [[220-contains-duplicate-iii]]

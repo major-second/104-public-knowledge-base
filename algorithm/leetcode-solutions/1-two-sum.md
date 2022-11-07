@@ -22,7 +22,7 @@ public:
     - 参考[[container-intro]]，是各种容器都有的函数
   - 列表初始化
   - 编译器会检查每个分支都必须`return`才能过，参考[[func]]
-# [[hash-table]]做法
+# [[hash]]做法
 - 参考[[associative]]
 - 注意去重（参考[[algorithm/trivial-mistakes]]）
 ```cpp

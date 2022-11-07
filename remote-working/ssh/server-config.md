@@ -7,18 +7,21 @@
 
 - 主体config在`/etc/ssh/sshd_config`（请区别于[[client-config]]）
 - 注意其中说了带注释的是默认值
+  - 例如`#PubkeyAuthentication yes`表示`PubkeyAuthentication`默认就是`yes`，你把`#`去掉还是一样。改成`PubkeyAuthentication no`才变成`no`
 - 常见非平凡设置项：
+  - 注：一般都需要重启服务才生效
+    - [[systemd]]中`systemctl restart sshd`重启服务
+    - [[sysvinit]]中则是`service ssh restart`
   - `Port`改成你想要的端口
   - 如果想密码登录`root`（这当然不安全）
     - 首先用一个**有权限的账户**，`sudo passwd root`给`root`**设置初始密码**
       - 参考[[7-permissions]]
     - 改`PermitRootLogin yes`
-    - `systemctl restart sshd`重启服务
-      - [[docker/ssh]]中则是`service ssh restart`
     - 之后即可密码ssh到root
   - 密钥登录：一般只需维持默认设置
     - 但是可能要变`AuthorizedKeysFile`字段
     - 之后**根据此字段**，把[[generate-key-pair]]中生成的`*.pub`（公钥）拷贝成为**指定路径，指定文件名**的文件
       - 默认文件名`authorized_keys`
     - 为了安全可以`PasswordAuthentication no`
-    - 注：更新密钥后也需要重启服务才生效
+  - [[jumptainer]]设置
+    - `GatewayPorts yes`
