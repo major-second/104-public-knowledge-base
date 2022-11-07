@@ -10,7 +10,7 @@ https://oiwiki.org/lang/csl/sequence-container/
   - 使用两个迭代器初始化
     - `vector<int> v(it1, it2);`
     - 相当于python的`[a:b]`切片
-    - 在[[25-merge-k-sorted-lists]]，[[4-median-of-two-sorted-arrays]]都用到
+    - 在[[23-merge-k-sorted-lists]]，[[4-median-of-two-sorted-arrays]]都用到
 ### 使用
 - `[]`, `front()`, `back()`都是引用
   - `back()`并不是`end()`那样“在外边”，而是在最后一个元素
