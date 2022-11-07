@@ -15,3 +15,4 @@
   - 例如[[10-regular-expression-matching]]
 # 其它
 - 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
+- 和[[induction]]往往有强联系
