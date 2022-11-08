@@ -6,3 +6,4 @@
       - 例如`FrameStack`中使用`np.repeat`操作（参考[[numpy/reshape]]）
 - `MultiDiscrete`
   - 例如：`MultiDiscrete([ 5, 2, 2 ])`：第0个分量5种选择，以此类推
+  - 对于这种空间，可以下标取出`Discrete`空间，例如`s[0]`这样
