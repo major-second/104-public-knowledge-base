@@ -1,6 +1,8 @@
 核心是递推，优中选优（利用了之前已经计算过的东西）
 如果不需要选，那就是[[greedy]]
-- 举例：[[7-logical-agents]]，[[9-inference-in-FOL]]的forward
+- 举例
+  - [[7-logical-agents]]，[[9-inference-in-FOL]]中的forward
+  - [[368-largest-divisible-subset]]不能贪心，需要优中选优
 - 要注意递推选用哪个变量
 比如https://leetcode.cn/contest/weekly-contest-286/problems/maximum-value-of-k-coins-from-piles/
 需要选择堆编号
@@ -13,3 +15,4 @@
   - 例如[[10-regular-expression-matching]]
 # 其它
 - 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
+- 和[[induction]]往往有强联系

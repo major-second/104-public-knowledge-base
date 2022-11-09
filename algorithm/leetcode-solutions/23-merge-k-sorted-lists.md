@@ -1,5 +1,6 @@
 - 前置[[21-merge-two-sorted-lists]]
 - 注意特判[[special-case]]：0或1个链表
+- https://leetcode.com/problems/merge-k-sorted-lists/
 # 分治法[[divide-and-conquer]]，[[oi-wiki-basic/recursion]]
 ```cpp
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {

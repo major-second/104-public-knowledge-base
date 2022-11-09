@@ -23,5 +23,5 @@
 |被gcp或cloudflare等防火墙保护的网站|换个身份说不定就行了（比如校园网ip显然在论文ddl前对overleaf流量特别大）|
 |一些每天限额下载，限额使用的网站|换个身份说不定就行了|
 |[[dida]]|不能开代理|
-|[[download-resource]]中许多网站比如`z-lib`|外网|
+|[[download-resource]]中许多网站|外网|
 |连接公用（机场等）wifi的登录|不能开代理

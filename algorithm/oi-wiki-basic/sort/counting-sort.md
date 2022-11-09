@@ -1,6 +1,6 @@
 - https://oiwiki.org/basic/counting-sort/
 - 开很大空间（值域多大开多大），所以需要$O(n+w)$，$w$是值域
-  - 参考[[algorithm/discretize]]，[[hash-table]]
+  - 参考[[algorithm/discretize]]，[[hash]]
 - 对于键值对，键表示元素本身，值表示有多少个
 - 最后整个数组求[[partial-sum]]得到各自指标
 - 线性时间

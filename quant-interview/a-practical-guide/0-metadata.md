@@ -1,2 +1,3 @@
 - 读书笔记
-- [原书doi号和z-lib链接](https://b-ok.cc/book/932120/61ce0c)
+- [libgen链接](https://libgen.gs/edition.php?id=136284823)
+- 俗称绿宝书

@@ -8,6 +8,7 @@
   - 输入简单参数的`nn.Linear(<in>, <out>)`
   - 拼接模块的`nn.Sequential(<直接逗号隔开输入若干个模块>)`
     - 不要输入模块的`list`
+      - 不过可以`nn.Sequential(*<list>)`
     - 可下标取出子模块，比如`m[0].weight`这种
 - 每个模块（module）至少要重载两个函数
   - `__init__`：定义要用哪些“组件”。常见模式`self.flatten = nn.Flatten()`

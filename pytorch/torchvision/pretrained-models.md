@@ -1,0 +1,3 @@
+- `from torchvision import models`
+- 举例：`resnet50_feature_extractor = models.resnet50(pretrained=True).cuda()`，这样运行时联网自动下载pretrain权重
+  - 默认2048维

@@ -8,6 +8,8 @@
 - 远程[[forward-port]]：远程访问某个端口变成访问本地的端口：`-R`
   - 例如`ssh -R 18889:localhost:8889 user@ip`，你本地`8889`有个[[configure]]好的代理，那远程就可以用`18889`端口使用代理
   - 当然可用于翻墙的[[temp-solution]]
+  - 可以用于[[autossh]], [jumptainer]
 - 本地[[forward-port]]：本地访问某个端口变成访问远程的端口：`-L`
   - 例如`ssh -L localhost:11111:localhost:20171 user@ip`，你远程`20171`有个[[configure]]好的代理，那本地就可以用`11111`端口使用代理
   - 当然可用于翻墙的[[temp-solution]]
+- 只连接不打开shell：`-N`，常用于[[autossh]]

@@ -25,7 +25,7 @@
   - [[sort-intro]]中稳定性也算这个的例子
 - 考虑输入为空的情况
   - [[21-merge-two-sorted-lists]]
-  - [[25-merge-k-sorted-lists]]
+  - [[23-merge-k-sorted-lists]]
   - [[430-flatten-a-multilevel-doubly-linked-list]]
   - [[4-median-of-two-sorted-arrays]]中，其中一个输入为空的情形
   - [[686-repeated-string-match]]中，`l_l==0`情形特殊！
@@ -35,7 +35,7 @@
     - 但：如果`1`不出现，就崩了
 - [[oi-wiki-basic/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
   - 往往是空，0，1等等
-  - 如[[25-merge-k-sorted-lists]]中，注意“1”也是递归出口
+  - 如[[23-merge-k-sorted-lists]]中，注意“1”也是递归出口
 # 图相关
 - 环带来麻烦
   - 例如[[topo]]，[[210-course-schedule-ii]]

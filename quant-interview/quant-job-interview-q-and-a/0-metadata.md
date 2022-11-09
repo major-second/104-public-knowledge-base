@@ -1,0 +1,4 @@
+- 读书笔记
+- [libgen链接](https://libgen.gs/edition.php?id=136472539)
+- 俗称红宝书
+- 有些问题问出来就说明面试者没水平hhh
