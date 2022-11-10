@@ -1,5 +1,5 @@
 - 前置
-  - [[optimization]]
+  - [[basics/optimization]]
   - [[tensorboard]]
   - `pip install pytorch-lightning`
 - 内容
@@ -22,7 +22,7 @@
   - 测试：[参考](https://pytorch-lightning.readthedocs.io/en/latest/common/evaluation_basic.html#add-a-test-loop)，例如`trainer.test(model, test_loader)`
     - 当然，相应的你的`LightningModule`也需要重载`test_step()`
   - 参考`example.ipynb`的`basics`节，对比使用lightning和不用的写法
-    - 原始代码来自[[optimization]]中提到的`pytorch/basics/minimum.ipynb`
+    - 原始代码来自[[basics/optimization]]中提到的`pytorch/basics/minimum.ipynb`
 - features
   - 默认设置在训练前会先`val`一下（默认过俩batch，不是全过哈），称为`sanity_check`
     - 可确保`val`可以正常进行，这是[[general-principles/debug]]的思想

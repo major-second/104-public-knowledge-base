@@ -2,6 +2,7 @@
 - [[model]]
 - [[autograd]]
 - [[dataloader]]
+- [[deep-learning/optimization]]
 # 内容
 - [参考](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/6-optimization)
 - 我们有了[[model]]和[[dataloader]]
