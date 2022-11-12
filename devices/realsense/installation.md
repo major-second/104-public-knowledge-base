@@ -32,4 +32,5 @@ sudo make install
   - 弹出GUI中左侧开开关（RGB，Stereo）等试试，可以看到2D，3D图像等
   - ![](installation-2D.png)
   - 此窗口右上角可以[[get-pointcloud]]且效果很不错！
+    - 比[[open3d-visualization]]效果好
 - 之后请始终注意[[share-lock]]问题，不能多个程序同时access相机

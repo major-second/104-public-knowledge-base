@@ -5,6 +5,7 @@
   - 比如一些运行现象和文档不对应
   - 比如[[zsh]]用不了（[[non-standard]]）
   - 比如可能缺包
+  - 比如出现过对于gripper，`.home_joints()`不能正常运行，然后`.grasp(), .open()`都能，且`.grasp(), .open()`之后`.home_joints()`又能了。推测是这个懒人包里充满了bug. 我们知道唯象现象即可（参考[[alternative-method]]，[[temp-solution]]）
 - 我没试`py3`，反正`py2.7`可以[[pip]]补包得到依赖项
   - 文档说了的：`pip install future`
   - 文档漏了的：`pip install numpy numpy-quaternion`
@@ -28,7 +29,7 @@
   - 运行后效果是这样的，`bash`多东西![](franka-ros-interface-bash.png)
 - 简要用法
   - 一个有`[franka <Master> - Robot@172.16.0.2]`这种东西（且处于`python2.7`）的终端
-  - `roslaunch franka_interface interface.launch`
+  - （机械臂蓝灯）`roslaunch franka_interface interface.launch`
   - 另一个（可以是普通）（可以是`zsh`）终端直接跑`python2.7`脚本即可比如：
     - `sudo apt install ros-melodic-rospy-message-converter`之后
       - （[参考这个](https://github.com/uos/rospy_message_converter/issues/25)：该包不要用`pip`装）
