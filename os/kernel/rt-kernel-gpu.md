@@ -12,9 +12,9 @@ sudo env NV_VERBOSE=1 \
     IGNORE_PREEMPT_RT_PRESENCE=1 \
     SYSSRC=/lib/modules/$(uname -r)/build \
     LD=/usr/bin/ld.bfd \
-    modules
-# 注：下面目标文件夹要是不存在就sudo mkdir -vp一下
-sudo mv *.ko /lib/modules/$(uname -r)/updates/dkms/
+    modules; \
+sudo mkdir -vp /lib/modules/$(uname -r)/updates/dkms/; \
+sudo mv *.ko /lib/modules/$(uname -r)/updates/dkms/; \
 sudo depmod -a
 ```
 重启系统，`nvidia-smi`正常

@@ -23,9 +23,13 @@
       - `git clone https://github.com/justagist/franka_panda_description.git`
   - 其它听文档即可（拷贝的`franka.sh`中有详细说明）
 - 用法也看文档
+  - 但除了文档还有要注意的
   - 这个对[[zsh]]支持不好（参考[[non-standard]]）。应当
-  - 修改`franka.sh`最后一行的`${SHELL}`为`/bin/bash`（否则如果用户默认[[zsh]]就会默认`/bin/zsh`，从而就不行了）
-  - 不过之后运行`./franka.sh master`可以用`zsh`或`bash`，反正运行完进入`bash`环境
+    - 修改`franka.sh`最后一行的`${SHELL}`为`/bin/bash`
+    - 否则如果用户默认[[zsh]]，那么`${SHELL}`就会是`/bin/zsh`，从而就不行了
+  - 不过之后运行`./franka.sh master`可以用`zsh`或`bash`
+    - 原因是反正`franka.sh`第一行写了[[shebang]]
+    - 反正运行完进入`bash`环境
   - 运行后效果是这样的，`bash`多东西![](franka-ros-interface-bash.png)
 - 简要用法
   - 一个有`[franka <Master> - Robot@172.16.0.2]`这种东西（且处于`python2.7`）的终端

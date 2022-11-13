@@ -7,6 +7,7 @@
 ## 之后使用
 - `git clone --recursive <链接>`
   - 如果最外层忘了`--recursive`，那么对于内层模块，手动`clone`一下也是可以的
+  - At this moment the submodule may be at a [[detached]] status. You should [[checkout]] it.
 - 父模块是最新的，子模块不一定也是最新的。父模块完好，子模块也不一定完好
   - 更新：可以单独`cd`进去`pull`，或者`--recurse-submodule`
   - 检查：可以单独`cd`进去`checkout`，或者`--recurse-submodule`

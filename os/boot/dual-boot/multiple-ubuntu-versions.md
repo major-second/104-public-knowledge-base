@@ -1,3 +1,9 @@
-其它[[partition]]等等可以参考[[windows-ubuntu]]
-例如选择`alongside`而不是`erase`其他数据这点和[[windows-ubuntu]]相同
-但有一点区别：安装完必须去任意终端（比如旧ubuntu系统的终端）`sudo update-grub`，参考[[grub-menu]]
+- 其它可以参考[[windows-ubuntu]]
+    - 例如选择`alongside`而不是`erase`其他数据这点和[[windows-ubuntu]]相同
+    - 选择`alongside`之后需要手动选择新版本所占[[partition]]大小
+- 但有一点区别
+  - 不像[[windows-ubuntu]]一样出现两个bios选项且你可以选默认哪个，这里的是bios不出现新选项，且始终进入旧系统的[[grub-cfg]]对应的[[grub-menu]]
+  - 所以，安装完必须去旧系统`sudo update-grub`才能看到新系统
+    - [[linux-kernel]]安装完也必须去旧系统`sudo update-grub`才能看到新内核
+  - 参考[[grub-menu]]
+  - [参考链接](https://askubuntu.com/questions/1230886/ubuntu-18-04-and-20-04-on-the-same-computer)

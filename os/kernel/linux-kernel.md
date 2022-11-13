@@ -97,6 +97,6 @@ After modifying those configs, run `sudo make -j4 deb-pkg` again.
 现在直接
 `sudo dpkg -i ../<文件名>.deb <后面还有3个>`（所有`.deb`都要写上）
 - 关于实时内核
-重启，`uname -a`可以看到`PREEMPT_RT`字符串
+重启，`uname -a`可以看到`PREEMPT_RT`字符串（注意如果是[[multiple-ubuntu-versions]]，则需要旧系统手动用`sudo update-grub`更新[[grub-cfg]]）
 `cat /sys/kernel/realtime`内容为`1`
 这时，`nvidia-smi`用不了了，直接参考[[rt-kernel-gpu]]即可

@@ -39,7 +39,7 @@
   - 用简单好写但慢的算法和复杂难写但快的算法比较结果是否相同
 - 测试中对拍
   - 需要熟练掌握[[git-basics/basics]]知识，比如[[checkout]]等。一般是对比两个commit的结果是否相同
-  - 需要掌握[[undeterminism]]防止随机性的影响
+  - 需要掌握[[non-determinism]]防止随机性的影响
   - 可以是用[[xxd-diff]]比较文本，或者[[pickle/basics]]读取并比较等
   - 注意[[python/equality]]的判断。比如pytorch张量的相等判断[[misc/equality]]
 ## 一条原则：“代码和数据”

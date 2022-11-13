@@ -4,6 +4,7 @@
 # 现象
 - 多次训练神经网络，种子不同，效果不一致
 - [[pickle/basics]]存下来同一个对象，[[xxd-diff]]时告诉你两者不同。例如[[misc/equality]]
+- 例如网络条件随机导致[[ros/installation]]中`rosdep update`每次可能成功一部分，没法一次成功，通过几次尝试覆盖全部update需求
 # 引入和利用
 - 例如[[rand]]中提到的在C++中如何引入随机性，并利用它防止你的哈希被hack
 - 例如python的`random`和`np.random`等
