@@ -12,4 +12,6 @@
   - 即：rviz操作、保存等和[[moveit-installation]]相同
 - [[moveit-installation]]中的`demo.launch`和我们这里需要的`panda_moveit_config demo.launch`显然是并列关系
   - 参考https://github.com/ros-planning/panda_moveit_config/tree/melodic-devel/launch
-  - 具体命令：`roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+  - 具体命令
+    - 2022.4时用过的：`roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+    - 2022.11时用过的：`roslaunch panda_moveit_config franka_control.launch robot_ip:=172.16.0.2`

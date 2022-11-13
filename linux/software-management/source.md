@@ -50,6 +50,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restri
 ## `ppa`
 - 个人、非官方。对于不主流软件，不主流版本等可能需要添加`ppa`. 当然有安全风险
 - 举例`apt install -y software-properties-common; add-apt-repository -y ppa:jonathonf/ffmpeg-4; apt update; apt install -y ffmpeg`
+- [[timeshift]]有用到：`sudo add-apt-repository -y ppa:teejee2008/ppa; sudo apt update; sudo apt install -y timeshift`
 ## troubleshooting
 - 如果certificate（证书）出问题
   1. 重装`ca-certificates`试试

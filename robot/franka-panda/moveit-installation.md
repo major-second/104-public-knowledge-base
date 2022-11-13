@@ -1,15 +1,24 @@
 前置
 - 已有或新建[[create-catkin-ws]]
 - 如果是用于控制真机需要[[franka-ros]]
+  - 注：时至2022.11，由于某些接口原因，需要`franka-ros`的`0.10.0`版本，不能是`0.8.0`
+    - 经验证
+    - 安装[[libfranka]]选用`0.8.0`
+    - 同时把官网上optional的"Debian package can be built"做了
+    - 然后`0.10.0`[[franka-ros]]
+    - 即可使用新版`moveit`
 
-安装
+# 法一：直接`apt`安装
+## 主体
 - 文档
 http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html
   - 必做的：文档的
   - `sudo apt-get install ros-melodic-catkin python-catkin-tools`
   - `sudo apt install ros-melodic-moveit`
   - 我犯了的错误：想当然以为有`catkin_make`命令就说明`sudo apt-get install ros-melodic-catkin python-catkin-tools`可以省略。其实不行！
-- 之后（如果你需要控制真机）不要照文档，而是应该微调[[franka-ros]]的安装步骤，增加
+## Example Code
+- 之后如果需要[[moveit-real-robot]]则必须要！
+- 不用完全照文档，而是可以微调[[franka-ros]]的安装步骤，增加
 ```sh 
 git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
 git clone https://github.com/ros-planning/panda_moveit_config.git -b melodic-devel
@@ -37,8 +46,9 @@ source devel/setup.sh
 - 当然可以看到文档的命令和我们这里的命令有对应关系
   - `-DCMAKE_BUILD_TYPE=Release`有对应
   - `rosdep`那句运行的所在目录，此处和文档不同（但有对应）
-
-rviz可视化
+# 法二：[[build-from-source]]
+- [参考](https://moveit.ros.org/install/source/)
+# rviz可视化
 - 直接对着[文档](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/quickstart_in_rviz/quickstart_in_rviz_tutorial.html#getting-started)即可
   - 命令`roslaunch panda_moveit_config demo.launch rviz_tutorial:=true`，之后参考文档进行操作
   - 注意可以保存界面设置，方便下次复现

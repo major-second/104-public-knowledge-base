@@ -8,3 +8,6 @@
   - 结果在`build`文件夹里。比如[[fci]]里就用了`/path/to/libfranka/build/examples/echo_robot_state`
 - 比如[[franka-ros]]的build用了比[[cmake]]高一层的[[catkin-make]]，需要[[create-catkin-ws]]
 - 比如[[realsense/installation]]中[[cmake]]后又进行了[[make]]
+
+用途
+- 没有发布到[[apt-version]]，或者[[apt-version]]里没有你指定的老版本时就必须下载源码构建！

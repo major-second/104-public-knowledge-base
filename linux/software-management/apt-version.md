@@ -1,0 +1,3 @@
+- `apt-cache madison <包名>`看可用版本
+- `apt list <包名>`看目前版本
+- 参考[[version]]
