@@ -12,11 +12,16 @@
   - 原型：`grasp(width, force, speed=None, epsilon_inner=0.005, epsilon_outer=0.005, wait_for_result=True, cb=None)`
   - 实用中可以`grasp(0.02, 100, epsilon_inner=0.1, epsilon_outer=0.1)`确保夹住
 ## 安装
+参考[[install-ros-package]]的做法安装
+需要“多clone”的：
 ```shell
 git clone -b melodic-devel https://github.com/lagadic/vision_visp.git
 git clone https://github.com/IFL-CAMP/easy_handeye
 ```
-参考[[install-ros-package]]的做法安装
+- 如果你用的`opencv`版本过于老旧可能出现接口不搭，参考 [issue](https://github.com/IFL-CAMP/easy_handeye/issues/104)
+  - 解决方法：把`easy_handeye`那个库[[checkout]]到`1df97d3`这种
+- `rosdep install --from-paths src --ignore-src --rosdistro melodic -y --skip-keys libfranka`时，如果`transforms3d`安装出问题，就手动`pip install transforms3d==0.3`这个版本
+  - 这下[[dont-trust-others]]了，你堂堂[[pip]]竟然不好好检查新版本的有效性！
 ## 配置
 原理上是[[roslaunch]]多个东西。你可以分别启动，也可以写一个`launch`文件自己启动
 `vim $(rospack find easy_handeye)/../docs/example_launch/ur5_kinect_calibration.launch`里面是示例
@@ -53,10 +58,11 @@ git clone https://github.com/IFL-CAMP/easy_handeye
     - 可以看`<path/to/>easy_handeye/easy_handeye/src/easy_handeye/handeye_calibration.py`
     - 默认是`manipulator`，这可能是不存在的，需要改成`panda_arm`之类
 - 配置完，放到`$(rospack find easy_handeye)/launch`下，任取名字
-  - 示例：本文件夹里的那个`.launch`
+  - 示例：本文件夹里的那个`realsense_panda_hand_eye_calibration.launch`
 ## 启动标定
 - 首先机械臂夹紧码
   - 如果纸板太薄可以考虑加点轻厚泡沫**配厚**
+    - 太重也会导致晃动！
   - 还可以在之后`.launch`里减小速度加速度，使得更保险
   - ![](hand-eye-arm-pose.png)
   - 次序：**首先**安排机械臂位置必须是非常“好”的，接近于“neutral”值，非常“中正”（如上图）
@@ -81,7 +87,8 @@ git clone https://github.com/IFL-CAMP/easy_handeye
   - `rqt_image_view`窗口对于重新launch的相机节点需要刷新
 - 在采集过程中会碰到如下不良情况
   - 相机节点刚启动，画面偏暗，还没检测出码，不要急着点`Take Sample`，否则会crash
-  - 码检测不准确，码的边框在持续晃动或者码时有时无，这说明检测不稳定，一般不建议采集此点，可直接跳过当前位置
+  - 码检测不准确，码的边框在持续晃动（甚至有时出现180度等剧烈晃动）或者码时有时无，这说明检测不稳定，一般不建议采集此点，可直接跳过当前位置
+    - 如果180度等剧烈晃动，那就请彻底跳过
   - 无法检测到码，一般因为反光，角度不好等原因会出现码无法检测到的情况，对于这种情况，也直接跳过当前位置
     - 对于这种情况，千万不要点`Take Sample`，这会导致程序直接crash
     - 所以说全程监视`rqt_image_view`是不可或缺的

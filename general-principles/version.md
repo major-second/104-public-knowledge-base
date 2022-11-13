@@ -34,14 +34,15 @@
   - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种
 # 版本依赖相关
 - 举例体验
-  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`
+  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`（太低）导致无法装版本`22`，导致无法装`tensorflow2.9`
     - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
     - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
   - [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
-  - 路径名称等改变
-    - [[moveit-installation]]中，上层moveit等版本更新导致需要安装更高版本的[[franka-ros]]才行
-      - 原因：一些路径修改导致不匹配不兼容
-    - [[moveit-real-robot]]中，有个文件名改变，从`panda_control_moveit_rviz.launch`变成`franka_control.launch`，功能不变
+  - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
+    - 原因：其实是trivial的。一些路径修改导致不匹配不兼容
+  - [[moveit-real-robot]]中，有个文件名改变，从`panda_control_moveit_rviz.launch`变成`franka_control.launch`，功能不变
+  - [[franka-ros-interface]]（爱好者自己写的包，不维护了），`.launch`文件中出现多余参数
+  - [[hand-eye-calibration]]中提到的issue：如果你opencv版本过低，那么只能[[checkout]]到他的一个旧版本
 - 参考[[software-management/upgrade]]
   - 一般来说，很多依赖都是要求`>=`某某版本，而且上层版本越高，需求的底层版本也越高
   - 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低

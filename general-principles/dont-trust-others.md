@@ -20,6 +20,8 @@
   - 比如[[franka-ros-interface]]，各种文档和现象不对应
   - 比如[[windows]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
     - 这个软件的作者团队好像起了冲突导致没人维护了
+- 包管理器审核出问题
+  - 例如[[pip]]：[[hand-eye-calibration]]中提到`transforms3d`的`0.4`版在2022.12安装会出问题，只能手动装`0.3`
 - 官方文档可能有疏漏，不准确，参考[[read-doc]]
   - 疏漏
     - [[mujoco-py]]官方文档的troubleshooting补的包不够
