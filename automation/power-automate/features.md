@@ -3,7 +3,7 @@
 
 这里收集一些power automate能做的feature
 - 可以运行[[powershell/basics]]脚本，比如`mv`移动文件，`rm`删除文件等操作
-  - 应用：由于[[git/basics/installation]]中可以把powershell自动弄得可以使用`git`命令，所以可以使用powershell命令来定期同步github和[[other-hubs]]的镜像（todo）
+  - 应用：由于[[init/installation]]中可以把powershell自动弄得可以使用`git`命令，所以可以使用powershell命令来定期同步github和[[other-hubs]]的镜像（todo）
   - 可以用`scp, ssh`等
   - 可以输出东西作为[[power-automate/var]]存起来
     - 输出一般带回车

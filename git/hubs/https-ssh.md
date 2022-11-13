@@ -1,5 +1,5 @@
 前置
-- [[git/basics/installation]]
+- [[init/installation]]
 - linux需要`apt install openssh-client`
   - windows在安装git时应该默认安装好了（要是没有就自己补）
 - 了解[[generate-key-pair]]，[[check-connectivity]]
@@ -15,6 +15,7 @@
 - 有`id_ed25519.pub`的话跳过生成，直接`cat`它
 - 否则：linux生成公钥和启动agent（参考[[generate-key-pair]]）
 ```sh
+mkdir ~/.ssh; \
 ssh-keygen -t ed25519 -N '' -f ~/.ssh/id_ed25519; \
 eval "$(ssh-agent -s)"; \
 ssh-add ~/.ssh/id_ed25519; \
