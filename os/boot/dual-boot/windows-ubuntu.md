@@ -21,10 +21,11 @@ tags: #双系统 #Linux #Windows10
    1. 注：由于机器型号不同，选择[[efi]]为U盘的具体操作可能不同。有的是调整优先级使得U盘排第一，有的是直接选择U盘
    2. 但总之一次启动只能用一个[[efi]]
 5. 进入ubuntu安装界面。一步步按照指示进行。其中分区参考[[partition]]
+   1. 注意不要`erase`擦除数据，而是`alongside`，这才是双系统！
 6. （可选）如果按照[[partition]]顺利做了设置使得windows boot manager和ubuntu的[[efi]]在同一块盘
    1. 则之后boot始终让ubuntu的[[efi]]优先级最高就非常方便
    2. 每次开机的时候只需上下键选择即可切换ubuntu和windows
-   3. 反之，默认[[efi]]为windows则不方便切换至ubuntu
+   3. 反之，默认[[efi]]为windows则不方便切换至ubuntu（必须进bios才能切）
    4. 但是注意[[risk]]，如果默认[[efi]]是ubuntu这边，那么直接删除ubuntu分区将导致win也启动不了。需要重新进bios调整[[efi]]优先级
 ## Troubleshooting
 1. 在“安装类型”步骤出错：安装类型列表为空，如图。

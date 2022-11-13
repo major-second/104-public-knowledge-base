@@ -1,0 +1,7 @@
+- 如果用英文版office，就没有“五号字”这种东西，需要[中文字号对照数字](https://www.jianshu.com/p/e8d263efe7f7)
+- 页眉页脚：在相应区域右键![](header.png)
+- 脚注
+  - 如图 ![](footnote.png)
+  - 注意这个图标 ![](footnote-icon.png) 处可以选择格式，例如使用圈数①，是否每页重新编号等
+- 快捷键
+  - `Ctrl+Shift+C`和`Ctrl+Shift+V`复制粘贴格式（即“格式刷”）

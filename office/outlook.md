@@ -8,4 +8,4 @@
   - 例如qq邮箱，gmail等都需要设置开启相应服务。qq邮箱[参考](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
   - 且在添加时outlook中也要做对应设置。比如gmail设置中给出了指示如图
   - ![](gmail.png)
-- 有快捷键：如`Ctrl+A`全选，`Delete`删除等
+- 有快捷键：如`Ctrl+A`全选，`Delete`删除，`Shift+Delete`永久删除，`Ctrl`多选等，非常方便

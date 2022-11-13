@@ -22,7 +22,7 @@
   - 极端：留一。好处：偏差小（且如果训非常非常多模型也可以使方差小）
 - 自助（bootstrap）
   - 词源：解靴带自助，“自己提自己上天”，参考[[bootstrap]]
-  - 和系统启动boot（如[[u-disk-boot]]，[[dual-boot/steps]]）是一个词
+  - 和系统启动boot（如[[u-disk-boot]], [[multiple-ubuntu-versions]]）是一个词
   - [[bootstrap]]乃至系统boot强调的是在有限条件下自己逐步搞定步骤
     - 例如ROM阶段，就没有别的设备可用
     - 例如修改[[hosts]]阶段，就没有翻墙客户端可用

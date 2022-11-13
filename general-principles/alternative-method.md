@@ -6,7 +6,8 @@
   - 例如有时出现莫名其妙的问题换个打开的软件（如播放器、浏览器）或硬件设备就能解决
   - 例如语言设置成中/英，显示出的功能可能不同
     - [举例](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
-    - 举例：[[leetcode-solutions/0-metadata]]中英版本收费标准不同（商业层面的价格歧视了）
+    - 举例：[[leetcode-solutions/0-metadata]]中英版本收费标准不同（商业层面的价格歧视了），你看得懂中文，就可以去中文力扣省钱
+    - 如果用英文版office，就没有“五号字”这种东西，需要[中文字号对照数字](https://www.jianshu.com/p/e8d263efe7f7)
 - [[temp-solution]]也是一种绕过
   - 但这个暂时绕过是为了之后正面解决。而不是之后永远绕过，跟刚才的还不一样
   - 暂时绕过的那时候往往性能较差或者比较麻烦等

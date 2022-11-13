@@ -44,7 +44,7 @@
   - 比如[[log]]中`self.log`不能在一epoch结束时汇总。想汇总需要`self.logger.experiment.add_scalar`，即使用更底层的[[tensorboard]] api
 # 抽象不如你想象的clean
 - 例如：“隔离”做得不好
-  - 关于[[dual-boot/steps]]的坑
+  - 关于[[windows-ubuntu]]的坑
     - [[risk]]提到了直接删除第二系统的分区是不行的
     - [[partition]]中，直接移动系统盘分区是不行的
     - 刚刚的这些操作甚至有可能导致你[[u-disk-boot]]里的ubuntu都坏掉，必须格掉重写
