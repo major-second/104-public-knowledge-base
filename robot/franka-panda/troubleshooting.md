@@ -4,6 +4,7 @@
   - 如果直接显示红色（未连接），那homing可能没用，重新插拔网线试试。如果变黄就再homing
   - 也有可能是[[franka-panda/limit]]问题
   - 总结：gripper动不了必杀技：手动捏到非最大状态，插拔网线，再homing
+  - 有时即使显示未连接，也可以正常操作。即[[fake-sympton]]
 - [[moveit-real-robot]]的命令无法运行时，可以看[[fci]]的`communication_test`怎么样，再进一步看`ping <fci-ip>`延迟是否压到0.2ms左右，还能用[[control-using-desk]]看看情况
   - 逐级排查！看问题到底出在哪
   - 这是[[leaky-abstraction]]的思想

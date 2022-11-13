@@ -1,4 +1,5 @@
 表象会迷惑你233
+- [[franka-panda/troubleshooting]]中，网页上明明说未连接，实际却可控制
 - 比如[[leaky-abstraction]]提到的没有把底层报错给出
 - 比如进度条
   - [[timeshift]]时会在0%狂卡，一旦开始就走的不慢

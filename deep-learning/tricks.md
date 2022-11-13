@@ -11,8 +11,10 @@
   - l1: 可以导致稀疏性
   - l2
     - 类似岭回归。比较常见一般的罚项
-    - 由于$x^2$导数正比于$x$，所以最简单的情况，weight decay和l2是对应的（当然，对于复杂一些的优化器如Adam就不一定了）
-      - torch实践：在[[optimization]]中实现，如`SGD(其它参数, weight_decay=1e-2)`
+    - 由于$x^2$导数正比于$x$，所以最简单的情况，weight decay和l2正则化损失是对应的
+      - 当然，对于复杂一些的优化器如Adam就不一定了
+      - 参考[[deep-learning/optimization]]
+      - torch实践：在[[basics/optimization]]中实现，如`SGD(其它参数, weight_decay=1e-2)`
 ### 结构
 - 以2的倍数为间隔调MLP隐层宽度
 ### [[feature-engineering]]

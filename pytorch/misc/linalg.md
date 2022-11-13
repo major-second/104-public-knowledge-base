@@ -4,7 +4,7 @@
 - 最小二乘法线性回归：`torch.linalg.lstsq(x, y)`，用`.solution`取出系数
   - 参考[[4-regression]]
   - 当神经网络输出的最后一层是linear，则可以考虑直接用（最后一层的feature）最小二乘而不是训出来
-  - 可以防止一些额外误差，参考[[optimization]]
+  - 可以防止一些额外误差，参考[[deep-learning/optimization]]
   - 联系[[lightning/basics]]，就知道怎么训练和验证
     - 训练照常
     - `eval`（`val`或`test`）时

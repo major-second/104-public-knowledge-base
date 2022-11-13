@@ -33,9 +33,11 @@
 - 有时出现有趣现象：标记变成本体
   - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种
 # 版本依赖相关
-- 举例体验：[[pip]]中提到：本地（非虚拟环境）用的是`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`
-  - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
-  - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
+- 举例体验
+  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`导致无法装`pip22`，导致无法装`tensorflow2.9`
+    - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
+    - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
+  - [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
 - 参考[[software-management/upgrade]]
   - 一般来说，很多依赖都是要求`>=`某某版本，而且上层版本越高，需求的底层版本也越高
   - 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低

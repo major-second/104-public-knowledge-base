@@ -1,8 +1,8 @@
-- 到了诡异的位置（关节到接近**硬件**极限），就动不了了
+- 到了诡异的位置（关节到接近**硬件**极限），就动不了了，终端报警告（例如[[moveit-real-robot]]动不了）
   - 需要白灯，复位到合理位置，再蓝灯
     - 到底是谁接近了极限？终端里会有黄色警告
-    - 复位时要特别小心，否则白灯会变红灯，需要重新开锁，再尝试复位
-  - 注：此时要重新`roslaunch`，参考[[troubleshooting]]
+    - 复位时要特别小心，否则白灯会变红灯，此时需要重新开锁，再尝试复位
+  - 注：此时要重新`roslaunch`才能再动，参考[[franka-panda/troubleshooting]]
 - 怎么永久消除接近**硬件**极限的风险？
   - 我们百度知道有`soft*limit`这个东西的存在，于是到[[create-catkin-ws]]创建出的空间中，凭感觉，一搜`find . -type f | grep franka | xargs grep soft | grep limit`就搜到在哪了
   - 在`./src/franka_ros/franka_description/robots/panda_arm.xacro:      <safety_controller k_position="100.0" k_velocity="40.0" soft_lower_limit="-2.8973" soft_upper_limit="2.8973"/>`，我们直接`vim`进去改那些数值即可（比如`2.8973`改成`2.7973`）

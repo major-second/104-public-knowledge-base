@@ -1,10 +1,13 @@
 前置
 - [[franka-panda/on-off]]启动到黄灯常亮
-- 有网口的电脑。需要**直连**电脑和机械臂（如果用转接头等可能会影响速度等，导致不给连接）
+- 电脑侧说明
+  - 如果用转接头等可能会影响速度等，导致不给连接。所以尽量直连电脑和机械臂（因此最好用有网口的电脑）
+  - 除非你确定你的转接头每个[[adapter-cable]]，[[interface]]都没问题不会造成性能瓶颈，例如不要出现`USB2.0`，性能不够强的扩展坞等等
+- 机械臂侧相关说明
   - 机械臂有网口，控制柜也有网口
   - 我们这次先连机械臂网口进行配置，是[[temp-solution]]
     - 此时只能[[control-using-desk]]
-  - 如果[[franka-ros]]，需要连[[connect-controller]]
+  - 如果需要[[franka-ros]]，则必须连[[connect-controller]]
 
 步骤
 - 参考[官方文档](https://frankaemika.github.io/docs/getting_started.html)

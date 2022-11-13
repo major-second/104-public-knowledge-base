@@ -26,3 +26,5 @@
   - latex，cpp等也都是这样
   - 特殊情况：对于linux系统，shell的“解释器”（“内核”）当然内置在系统中了，所以[[bash-debug]]拿到就能用
 - 有时，[[markdown-preview-enhanced]]这种特别轻量级的东西可以“集成到vscode插件中”，即插即用
+# troubleshooting
+- [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了，需要更新本地vscode
