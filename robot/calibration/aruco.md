@@ -37,7 +37,7 @@ ArUco就是一种fiducial marker
 使用
 - `roscd aruco_ros/launch`，`vim single.launch`
 - 启动相机（比如[[realsense-ros]]）
-- `rostopic`找相机相关的两个话题，填到`launch`文件中相应地方
+- `rostopic list`找相机相关的两个话题，填到`launch`文件中相应地方
   - 找`/camera_info`和`/image`
   - 如果你找不着`rect`的topic，也不需要改`image_is_rectified`为`False`. 这里的raw其实一般内参是标定过的（即使没标定过误差也不大）
     - 改了`False`反而会导致误差很大
@@ -54,8 +54,10 @@ ArUco就是一种fiducial marker
   - camera自己的各个坐标系间关系对应真实世界中深度镜头和rgb镜头的位移等等。在[[rviz-tf]]中可以看到它们原点很近但不完全重合
   - 应用：[[hand-eye-calibration]]中如果希望[[rviz-tf]]可视化出来，那就要选`camera_link`（根连根）
 - 根据上一节“实体准备”填写id和大小（注意单位是m）
-- 调好所有后，`roslaunch aruco_ros single.launch`
-- `rqt_image_view`看效果
+- 调好所有后
+  - [[realsense-ros]]驱动启动（`roslaunch realsense2_camera rs_camera.launch`）
+  - `roslaunch aruco_ros single.launch`
+  - `rqt_image_view`看效果
 
 结果获取
 - `rostopic list`看到topic名，所以可以`rostopic echo /aruco_single/pose`

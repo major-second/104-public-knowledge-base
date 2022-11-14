@@ -18,8 +18,11 @@
 git clone -b melodic-devel https://github.com/lagadic/vision_visp.git
 git clone https://github.com/IFL-CAMP/easy_handeye
 ```
-- 如果你用的`opencv`版本过于老旧可能出现接口不搭，参考 [issue](https://github.com/IFL-CAMP/easy_handeye/issues/104)
-  - 解决方法：把`easy_handeye`那个库[[checkout]]到`1df97d3`这种
+- 版本[[version]]依赖
+  - 如果你用的`opencv`版本过于老旧可能出现接口不搭，参考 [issue](https://github.com/IFL-CAMP/easy_handeye/issues/104)
+  - 如果你用的[[moveit-installation]]版本过于老旧可能也会
+    - 参考[这个commit](https://github.com/IFL-CAMP/easy_handeye/commit/423a14d383843e38e8d9675568232160367226f6)
+  - 解决方法：把`easy_handeye`那个库[[checkout]]到合适commit再catkin_make
 - `rosdep install --from-paths src --ignore-src --rosdistro melodic -y --skip-keys libfranka`时，如果`transforms3d`安装出问题，就手动`pip install transforms3d==0.3`这个版本
   - 这下[[dont-trust-others]]了，你堂堂[[pip]]竟然不好好检查新版本的有效性！
 ## 配置
