@@ -1,5 +1,5 @@
 - 前置：[[container-intro]]
-- [原文](https://oiwiki.org/lang/csl/iterator/)
+- [原文](https://oi-wiki.org/lang/csl/iterator/)
 - 常用`begin()`和`end()`，左闭右开
 ```cpp
 for (vector<int>::iterator iter = data.begin(); iter != data.end(); iter++)

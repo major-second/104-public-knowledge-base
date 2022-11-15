@@ -1,4 +1,4 @@
-- https://oiwiki.org/graph/shortest-path/
+- https://oi-wiki.org/graph/shortest-path/
 - dijkstra
   - 贪心[[greedy]]地每次找到离单源最近
   - 用[[adapter]]优先队列或二叉堆维护其它点到出发点的距离

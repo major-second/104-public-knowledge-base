@@ -1,2 +1,2 @@
-- https://oiwiki.org/basic/construction/
+- https://oi-wiki.org/basic/construction/
 - 例子[[89-gray-code]]

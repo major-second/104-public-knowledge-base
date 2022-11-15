@@ -1,5 +1,5 @@
 - 前置[[func]]
-- https://oiwiki.org/basic/divide-and-conquer/
+- https://oi-wiki.org/basic/divide-and-conquer/
 # 概述
 - 递归：分为子问题，自己调用自己
   - 如果自己太特殊了，子问题和自己相似但不完全相同，那可能要增加参数

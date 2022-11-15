@@ -1,5 +1,5 @@
 - 前置[[sequence]], [[iterator]]等
-- [原文](https://oiwiki.org/lang/csl/string/)
+- [原文](https://oi-wiki.org/lang/csl/string/)
 # 基本
 - `std::string`
 - 可以`string s = "123"`

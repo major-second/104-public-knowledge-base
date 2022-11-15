@@ -1,5 +1,5 @@
 - 前置[[oi-wiki-basic/var]]
-- 参考https://oiwiki.org/lang/loop/
+- 参考https://oi-wiki.org/lang/loop/
 
 `while(){}`
 `for(;;){}`（特别注意不是逗号）

@@ -1,6 +1,6 @@
 - 前置[[oi-wiki-basic/var]]
 
-https://oiwiki.org/lang/array/
+https://oi-wiki.org/lang/array/
 - 大小固定（`const int`才行）
   - 如果数组长度编译期未知，那就还是参考[[sequence]]吧，比如`vector<int> v(n);`
     - 当然[[sequence]]中也有长度要求已知的`array<int, 3> a = {1,2,3};`这种

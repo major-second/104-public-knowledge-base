@@ -1,5 +1,5 @@
 - 前置：[[array]]
-- [原文](https://oiwiki.org/lang/csl/container/)
+- [原文](https://oi-wiki.org/lang/csl/container/)
 ![](intro.png)
 # 分类
 - 容器分类

@@ -1,4 +1,4 @@
-https://oiwiki.org/lang/csl/sequence-container/
+https://oi-wiki.org/lang/csl/sequence-container/
 ## 序列式容器
 ### 好处（主要相比[[array]]）
 - 动态分配内存

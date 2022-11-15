@@ -1,4 +1,4 @@
-- https://oiwiki.org/ds/dsu/
+- https://oi-wiki.org/ds/dsu/
 - 基本操作的要求（这里先不涉及具体算法）
   - 初始化：每个元素的父母就是自己
   - 合并两个集合
@@ -25,7 +25,7 @@
     - 法一：个数少合并到个数多
     - 法二：维护一个rank，少的合并到多的。相等随便合且rank加一
     - 实际中偷懒不写往往也能过
-    - [参考](https://oiwiki.org/ds/dsu-complexity/)
+    - [参考](https://oi-wiki.org/ds/dsu-complexity/)
 - 实际中，往往除了`x, y`这些，还需要传`parents`的引用
   - 也就是`find`双参数，`union`三参数
   - 参考[[func]]

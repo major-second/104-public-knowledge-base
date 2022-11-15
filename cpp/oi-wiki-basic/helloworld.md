@@ -1,4 +1,4 @@
-- 本文 https://oiwiki.org/lang/helloworld/
+- 本文 https://oi-wiki.org/lang/helloworld/
 配置基础环境和做minimun working example
 - 如果懒得本地搞，可以上各种在线编译器
 - 比如

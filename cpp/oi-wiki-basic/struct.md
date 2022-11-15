@@ -1,6 +1,6 @@
 前置[[oi-wiki-basic/var]]
 
-https://oiwiki.org/lang/struct/
+https://oi-wiki.org/lang/struct/
 
 - C++和C的结构体不同
 
