@@ -1,5 +1,5 @@
 - 前置[[oi-wiki-basic/var]]
-- https://oiwiki.org/lang/branch/
+- https://oi-wiki.org/lang/branch/
 # `if`
 `if(){}`
 `if(){}else{}`

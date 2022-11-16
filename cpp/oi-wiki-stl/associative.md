@@ -1,5 +1,5 @@
 - 前置[[container-intro]]
-- [原文](https://oiwiki.org/lang/csl/associative-container/)
+- [原文](https://oi-wiki.org/lang/csl/associative-container/)
 # 首要特点和典型操作
 这个`set`和数学的`set`不同，有序（默认从小到大）。所以有
 - `.erase(迭代器或迭代器区间)`
@@ -64,14 +64,14 @@ set<int, cmp> s;
   - 对于`map`就是[[pair]]，这点和python字典不同！
 ## 无序关联式
 - 参考[[hash]]
-- https://oiwiki.org/lang/csl/unordered-container/
+- https://oi-wiki.org/lang/csl/unordered-container/
 - 好玩的东西：hack哈希
   - codeforces hack你的哈希函数，有意思
 - 利用哈希，平均情况下大多数操作常数复杂度
 - 当然，填的类型必须[[hashable]]，比如`set`就不能往里填，所以[[18-4sum]]这里就有坑
   - 相比之下，有序的那些容器，只要能比较大小即可往里填
 ## 应用
-- [原文](https://oiwiki.org/lang/csl/associative-container/)所说和[[greedy]]密切相关在后面例子里有
+- [原文](https://oi-wiki.org/lang/csl/associative-container/)所说和[[greedy]]密切相关在后面例子里有
 - 无序关联式（[[hash]]）
   - [[1-two-sum]]
 - 有序集和`lower_bound`应用

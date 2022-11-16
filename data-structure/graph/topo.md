@@ -1,4 +1,4 @@
-- https://oiwiki.org/graph/topo/
+- https://oi-wiki.org/graph/topo/
 - 有向无环可以，有环就不行
 ## [[oi-wiki-basic/recursion]]算法（深搜）
 - 核心：三种状态白灰黑，搜到灰色说明有环，搜到黑色就别往下了

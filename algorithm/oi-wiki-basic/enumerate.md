@@ -1,4 +1,4 @@
-- [原文](https://oiwiki.org/basic/enumerate/)
+- [原文](https://oi-wiki.org/basic/enumerate/)
 - 先构思全集
   - 可能可以剪枝，减少全集大小
   - 如果全集是某种树结构，满足特定条件就不往下（及时剪枝），则称为[[backtrack]]

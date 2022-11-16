@@ -1,4 +1,4 @@
-- https://oiwiki.org/basic/sort-intro/
+- https://oi-wiki.org/basic/sort-intro/
 # 性质
 - 稳定性：相等元素是否被改变
   - 基数排序、计数排序、插入排序、冒泡排序、归并排序是稳定排序

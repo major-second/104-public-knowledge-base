@@ -1,5 +1,5 @@
 - 前置[[helloworld]]
-- 本文 https://oiwiki.org/lang/basic/
+- 本文 https://oi-wiki.org/lang/basic/
 ## 关于头文件
 - `cstdio`就是`stdio.h`的意思
 - 自己的头文件用`"文件名.h"`，引号而不是尖括号

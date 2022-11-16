@@ -1,4 +1,4 @@
-- https://oiwiki.org/lang/csl/algorithm/
+- https://oi-wiki.org/lang/csl/algorithm/
 # 有起止点的
 - 传入起止[[iterator]]
 - `sort, reverse, unique`

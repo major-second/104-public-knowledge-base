@@ -1,6 +1,6 @@
 前置[[oi-wiki-basic/var]]
 
-https://oiwiki.org/lang/func/
+https://oi-wiki.org/lang/func/
 
 - 若先声明再定义。声明只需要`int some_function(int, int);`这种
 - 也可以声明和定义放一起

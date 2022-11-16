@@ -1,4 +1,4 @@
-- https://oiwiki.org/graph/mst/
+- https://oi-wiki.org/graph/mst/
 - kruskal：参考[[greedy]]，拟阵思想
   - 每次取能连两部分的最小边
   - 需要先排序

@@ -1,4 +1,4 @@
-- https://oiwiki.org/basic/greedy/
+- https://oi-wiki.org/basic/greedy/
 # 概述
 - 逻辑上，可以和[[oi-wiki-basic/recursion]]，[[induction]]做联系，也就是对$n$, 考察规模$n-1$的问题
   - 注意需要具有“最优子问题”性质

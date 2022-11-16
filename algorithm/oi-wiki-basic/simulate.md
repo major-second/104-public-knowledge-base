@@ -1,4 +1,4 @@
-- https://oiwiki.org/basic/simulate/
+- https://oi-wiki.org/basic/simulate/
 - 原则
   - 模块化
     - 调试也可模块化（参考[[general-principles/debug]]）

@@ -1,4 +1,4 @@
-- https://oiwiki.org/ds/linked-list/
+- https://oi-wiki.org/ds/linked-list/
 - 双向链表例子
   - [[430-flatten-a-multilevel-doubly-linked-list]]
 - 很多时候是[[oi-wiki-basic/simulate]]题，草稿纸上画画就行
