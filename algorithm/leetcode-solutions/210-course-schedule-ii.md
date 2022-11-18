@@ -1,4 +1,5 @@
 - [[topo]]
+- [[graph/save]]采用邻接表
 ## [[oi-wiki-basic/recursion]]深搜法
 ```python
 class Solution:
