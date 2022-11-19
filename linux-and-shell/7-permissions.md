@@ -22,6 +22,7 @@ type: operations
 	- `useradd`如果不跟“用户名”参数，而是`useradd -D -s /bin/tsch`这样，就会用于改变（之后新增用户时的）默认值，而不是创建一个具体的新用户
 这可以方便之后创建用户
 	- 当然`useradd -D`是查看当前的默认值
+	- [参考](https://blog.csdn.net/qq_42341984/article/details/120949451#:~:text=%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7%E5%B9%B6%E6%B7%BB%E5%8A%A0sudo%E6%9D%83%E9%99%90%201%201%20%E5%88%9B%E5%BB%BA%E6%96%B0%E7%94%A8%E6%88%B7%20%E4%B8%80%E9%94%AE%E6%B7%BB%E5%8A%A0%20useradd%20-d%20%2Fdata%2Fuser%2Fgyb,this%20file.%20...%203%203%20%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%20linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E2%80%93userdel%20%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E5%B8%90%E6%88%B7%E5%92%8C%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6)
 - 删除用户可能有残留（即使`-r`）
 ### 实践
 我们记住`cat /etc/passwd`的最后一行
