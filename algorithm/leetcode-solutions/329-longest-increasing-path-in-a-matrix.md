@@ -1,6 +1,7 @@
 - https://leetcode.com/problems/longest-increasing-path-in-a-matrix
 - [[graph/save]]提到过不需要额外存图
 - 这是[[DAG]]
+  - 和[[topo]]中Kahn算法有密切联系
 - 使用[[bfs]]
 ```cpp
 class Solution {
