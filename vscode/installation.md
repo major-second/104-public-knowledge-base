@@ -1,0 +1,2 @@
+- [下载地址](https://code.visualstudio.com/)
+- 当然，只安装本体只有很少的功能。不妨再安装一些[[extensions/general]]

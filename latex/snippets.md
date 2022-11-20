@@ -1,7 +1,7 @@
 # 前置
 [[latex]]插件
 # 内容
-`snippets.json`可以参考[[vscode/snippets]]，放到指定地方，之后即可使用
+`snippets.json`可以参考[[settings/snippets]]，放到指定地方，之后即可使用
 
 目前有：
 - 插入图片

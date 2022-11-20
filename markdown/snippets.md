@@ -1,6 +1,6 @@
 参考
 - [[latex/snippets]]
-- [[vscode/snippets]]
+- [[settings/snippets]]
 
 内容
 - 看`snippets.json`

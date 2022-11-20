@@ -1,0 +1,5 @@
+- 前置[[settings/settings]]
+- [参考](https://code.visualstudio.com/docs/editor/settings-sync)
+  - `Ctrl + Shift + P`搜索settings sync即可
+  - 先turn on，之后其它机器上即可sync now
+  - 可以自动同步[[settings/keyboard-shortcuts]], [[extensions/general]], [[settings/snippets]]

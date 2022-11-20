@@ -1,0 +1,9 @@
+- 前置
+  - github账号
+  - [[vscode/]]
+- github首页上方codespaces
+- ![](codespaces.png)
+  - 可以根据模板创建/由已有repo创建
+  - 可以用在线vscode/本地vscode打开
+- settings - 左侧codespaces处有更多设置
+  - 例如是否可以GPG认证，默认本地vscode打开等

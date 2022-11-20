@@ -10,7 +10,7 @@
 - 查找
   - 快捷键
     - 很多地方`Ctrl+F`查找
-    - vscode的[[vscode/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
+    - vscode的[[settings/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
     - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
   - 很多地方可以使用[[regex]]
     - 如linux系统的[[find-grep]]

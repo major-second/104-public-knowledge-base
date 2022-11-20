@@ -8,7 +8,7 @@
     - windows徽标键是`cmd`
 - 注意：如果只输入文本可以使用`Type text`
 - 如何尽可能少使用鼠标？
-  - [[vscode/keyboard-shortcuts]]，[[fn]]，[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[misc]]等等快捷键
+  - [[settings/keyboard-shortcuts]]，[[fn]]，[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[misc]]等等快捷键
   - `cmd`键打开开始菜单，输入程序名来打开
   - 这时需要[[化归]]防止输入法带来麻烦（即切换为英文输入，参考[[automation/trivial-mistakes]]中的）
   - 例如
