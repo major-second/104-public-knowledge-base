@@ -22,6 +22,7 @@
     - 注意和插入`str`区别
     - 当然，可以用迭代器而不是`index`脚标插入
 - 当然也有`push_back, pop_back, empty`等通用的东西
+  - `push_back`一个字符，非常方便
 - `(auto x:s)`，`x`类型是`char`
   - 回忆[[loop]]
 # 示例
@@ -43,3 +44,6 @@ cout<<s;
 61
 zzxyxxx23123w
 ```
+- 用到一些字符串操作的题目
+  - [[51-n-queens]]
+  - [[68-text-justification]]

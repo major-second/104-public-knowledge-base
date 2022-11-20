@@ -39,3 +39,4 @@
     - 例如考察二维数组中一个点的所有相邻点（在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到）
     - 本身小于$长度-1$，其右边才有点，不出界
   - [[encode-decode]]中序列的编码特别关注差1问题！
+  - [[oi-wiki-basic/simulate]]中常常有trivial的差1问题，例如[[68-text-justification]]
