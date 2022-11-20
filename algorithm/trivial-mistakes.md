@@ -10,6 +10,8 @@
 - [[overflow]]
 - [[float]]误差
   - 如[[679-24-game]]
+  - 如[[1739-building-boxes]]
+    - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
 # 去重
 - 带来问题
   - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
