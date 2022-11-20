@@ -10,9 +10,13 @@
 - https://leetcode.cn/problems/longest-palindromic-substring/
 如果普通动规，需要$n^2$
 注：[[manacher]]只需要$O(n)$
+- 注意选择方向
+  - 例如[[10-regular-expression-matching]]，从后往前看
 # 状态压缩
 - 把不需要的扔掉，节省空间
   - 例如[[10-regular-expression-matching]]
+  - 例如[[72-edit-distance]]
 # 其它
 - 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
 - 和[[induction]]往往有强联系
+- 子问题相似性质，和[[self-similarity]]有强联系
