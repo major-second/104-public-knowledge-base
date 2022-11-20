@@ -35,4 +35,6 @@
     - 例如[[2343-query-kth-smallest-trimmed-number]]
 - 差一错误
   - 注意标记一般从0开始，所以`vec[len(vec)]`一般是越界的
-  - “差一再差一一共差了2”：[[329]]中，`c < numRows - 1`才考察`c+1`
+  - “差一再差一一共差了2”
+    - 例如考察二维数组中一个点的所有相邻点（在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到）
+    - 本身小于$长度-1$，其右边才有点，不出界
