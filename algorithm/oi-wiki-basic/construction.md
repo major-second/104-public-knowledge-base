@@ -1,2 +1,5 @@
 - https://oi-wiki.org/basic/construction/
-- 例子[[89-gray-code]]
+- 直接构造作为解
+  - 例子[[89-gray-code]]
+- 构造用于证明（充要性中的一边等）
+  - 例子[[1388-pizza-with-3n-slices]]

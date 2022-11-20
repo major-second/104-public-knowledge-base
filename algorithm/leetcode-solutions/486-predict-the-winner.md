@@ -1,6 +1,6 @@
 - https://leetcode.cn/problems/predict-the-winner/
 - [[oi-wiki-basic/recursion]]
-  - 这个记住已有状态，是[[记忆化搜索]]
+  - 这个记住已有状态，是[[memo]]
 - 注意[[sequence]]的初始化：`adv[i] = vector<int>(length+1);`这种初始预留空间
 ```cpp
 class Solution {

@@ -1,3 +1,5 @@
+- [参考](https://en.wikipedia.org/wiki/Memoization)
+  - 这是专有造出来的，不要写成memorization
 - https://leetcode.cn/problems/can-i-win/submissions/
 注意：不能傻傻地从`0b11111111`一点一点走到`0b00000000`这样，否则TLE
 应该从0开始记忆化搜索。
