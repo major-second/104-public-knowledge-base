@@ -76,5 +76,9 @@
     {
         "key": "ctrl+shift+alt+0",
         "command": "gitProjectManager.refreshProjects"
+    },
+    {
+        "key": "ctrl+shift+alt+s",
+        "command": "workbench.userDataSync.actions.syncNow"
     }
 ]

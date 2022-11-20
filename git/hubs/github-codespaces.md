@@ -1,6 +1,8 @@
 - 前置
   - github账号
-  - [[vscode/]]
+  - linux基础（因为codespaces是个ubuntu系统），参考[[linux-and-shell/0-metadata]]
+  - [[vscode/installation]]
+  - 不妨了解[[settings-sync]]
 - github首页上方codespaces
 - ![](codespaces.png)
   - 可以根据模板创建/由已有repo创建
