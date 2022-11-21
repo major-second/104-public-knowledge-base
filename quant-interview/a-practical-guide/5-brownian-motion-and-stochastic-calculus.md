@@ -42,7 +42,7 @@
       - 根据意义想一想，知道$P(x) = \sum P(x_T)Prob(x_T|x_t=x)= E[P(x_T)|x_t=x]=V(t,x)$（注意使用$Prob$防止歧义）
       - 所以直接把$P$代入，即得方程$mP_x + \frac 12 P_{xx}=0$，边界条件$P(3)=1, P(-5)=0$
     - 法二：也可以利用$exp\{\lambda W(t)-\frac 12 \lambda^2 t\}$是鞅（期望1）
-      - 所以$ext\{\lambda (X-mt) -\frac 12 \lambda^2 t\}$是鞅（期望1）
+      - 所以$exp\{\lambda (X-mt) -\frac 12 \lambda^2 t\}$是鞅（期望1）
       - 代入适当$\lambda$，得$e^{-2mX}$是鞅（期望1）
       - 代入停止时$X$值，利用鞅在一定时间停止还是鞅，得结果
   - $dX=dt+dW(t)$能到-1的概率？

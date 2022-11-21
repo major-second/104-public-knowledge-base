@@ -17,6 +17,7 @@
    3. 所以停止时钱$14-n$期望为0
    4. 当然还需要证明：停止时间期望有限
       1. 联想[[5-brownian-motion-and-stochastic-calculus]]中提到过的：布朗运动到1为止（而不是到$\pm 1$为止），停止时间期望无穷，故也不能简单套用。和这里形成对比！
+   5. 参考[[5-martingale-and-random-walk]]的coin sequence
 9.  略
     1.  [[5-martingale-and-random-walk]]法：第一问是赌赢一次收手，第二问是赌赢两次收手
     2.  注意这里的$-yp$意思就是如果赌输，就$-yp$，否则$+y(1-p)=+(1-p)(1p=+p)/p$，这样才是鞅
