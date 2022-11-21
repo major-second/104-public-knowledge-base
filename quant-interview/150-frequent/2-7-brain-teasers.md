@@ -64,6 +64,7 @@ todo
 26. 直觉盲猜是[[poisson]]，哈哈哈
     1.  还真是。那就[[self-similarity]]列方程然后[[induction]]吧
     2.  这个递推和列边界条件[[dp]]有相似点。只不过是“连续”情况
+    3.  当然，换一种视角看，钱“无记忆”流动，慈善家随时有概率抽身，那也是[[poisson-process]]！
 27. 略。[[5-martingale-and-random-walk]]容易搞定
 28. 略（可以画图显然）
 29. 

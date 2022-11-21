@@ -26,7 +26,7 @@
 11. [[sort-intro]]
     1.  $n!\approx (n/e)^n$中可能，用$n$次最多区分$2^n$种
 12. [[7-algorithms]] random permutation
-13. 注意太大超过整数了，截去后面就合理了（浮点操作）
+13. 注意当已经太大超过整数范围[[overflow]]了，截去后面就合理了（浮点操作）
 14. [[7-algorithms]] search algorithm
 15. 
     1.  简单想法

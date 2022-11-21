@@ -79,6 +79,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 画个$(a+b)^2$图示，发现$ab,ba$两项对称
   - 当然这个可能低效（如果硬币过于不均）
   - 这是拉斯维加斯随机算法
+  - [[接受-拒绝采样]]思想
 - dart game
   - 想象成均匀分布
   - 那就六种可能，$2/3$
@@ -98,7 +99,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 容斥原理。红比绿先完是$3/4$，红比蓝先完是$2/3$，红在蓝绿后是$1/6$，则$3/4+2/3-x=1-1/6$
   - 标答：分类讨论，互斥事件
 - coin toss game
-  - 注：这是另一个，之前有一个
+  - 注：这是另一个，之前也有一个同名题目
   - $P_A= 1 - (P_H+P_A)/2,P_H = 1/2 (1+1-P_H)$，得$P_A=4/9$
   - 当然我这符号为了简写，不严谨。严谨可以用条件概率写
   - sanity check, 讲究
@@ -122,6 +123,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
 # 4.4 Discrete and Continuous Distributions
 - 离散
   - [[poisson-process]]和[[poisson]]的关系：一段时间内事件发生次数就是泊松分布（极限情况的二项，小数定律）
+    - 例子：[[2-7-brain-teasers]], 26题
   - 几何分布：“直到第一次投出正面”
   - 负二项分布：[[nega-binom]]
 - 连续
@@ -169,7 +171,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
     - 还是拆成多个事件，每个都用几何分布，得到调和级数
   - B
     - 条件期望思想：$Ef(n+1)=\sum(m+1-m/N)P(f(n)=m)=(N-1)/N\cdot E(f(n))+1$
-    - 拆分事件思想：第i张是新的的概率是$(\frac{N-1}N)^n$
+    - [[re-classification]]思想：第i张是新的的概率是$(\frac{N-1}N)^n$，然后线性地相加
 - joint default probability
   - default: 缺省，默认，违约
   - 协方差$Cov(A,B)=EAB-EAEB=[-0.15,0.15]$，$\sqrt {VarAVarB}=0.5\sqrt {0.21}$，即得结果
