@@ -20,3 +20,4 @@ public:
 ```
 - [[deque]]
 - [[sliding-window]]
+- 其实本质还是单调栈，只不过要处理栈底出队列

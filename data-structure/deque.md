@@ -3,3 +3,4 @@
   - 方法名往往有`front, back`，如`pop_front(), back()`等
 - 应用
   - [[239-sliding-window-maximum]]：单调双端队列
+  - [[103-binary-tree-zigzag-level-order-traversal]]：利用双端队列做两个方向的[[bfs]]
