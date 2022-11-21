@@ -30,3 +30,5 @@
   - 也就是`find`双参数，`union`三参数
   - 参考[[func]]
   - [[200-number-of-islands]]等例子都用到
+- 应用
+  - 方便找到环结构（当然不好区分有向/无向环），参考[[685-redundant-connection-ii]]

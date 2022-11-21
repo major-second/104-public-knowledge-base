@@ -14,6 +14,15 @@
     - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
 - 首尾相接
   - [[1388-pizza-with-3n-slices]]
+- 差一错误
+  - 注意标记一般从0开始，所以`vec[len(vec)]`一般是越界的
+  - “差一再差一一共差了2”
+    - 例如考察二维数组中一个点的所有相邻点（在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到）
+    - 本身小于$长度-1$，其右边才有点，不出界
+  - [[encode-decode]]中序列的编码特别关注差1问题！
+  - [[oi-wiki-basic/simulate]]中常常有trivial的差1问题，例如[[68-text-justification]]
+- 多解性
+  - [[685-redundant-connection-ii]]多解选最后的，所以代码中“假设法”必须先假设去除 `lastCausedTwoParentsEdge`而不是先假设去除 `firstCausedTwoParentsEdge`
 # 去重
 - 带来问题
   - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况
@@ -37,10 +46,3 @@
   - 多维护更多属性防止重复（看作不同的）
     - 往往使用[[pair]]
     - 例如[[2343-query-kth-smallest-trimmed-number]]
-- 差一错误
-  - 注意标记一般从0开始，所以`vec[len(vec)]`一般是越界的
-  - “差一再差一一共差了2”
-    - 例如考察二维数组中一个点的所有相邻点（在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到）
-    - 本身小于$长度-1$，其右边才有点，不出界
-  - [[encode-decode]]中序列的编码特别关注差1问题！
-  - [[oi-wiki-basic/simulate]]中常常有trivial的差1问题，例如[[68-text-justification]]
