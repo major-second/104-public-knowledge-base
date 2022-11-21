@@ -28,12 +28,19 @@
 12. [[7-algorithms]] random permutation
 13. 注意太大超过整数了，截去后面就合理了（浮点操作）
 14. [[7-algorithms]] search algorithm
-15. todo
+15. 
     1.  简单想法
         1.  先排序，则空间常数，时间nlogn
         2.  存储所有状态，则空间n了
-16. 略
-17. 回忆$\mathbb Z \times \mathbb Z$与$\mathbb Z$一一对应，我们分别考察静止，左移1，右移1……等等
+    2.  针对这题：换位[[inplace]]，联想[[41-first-missing-positive]]
+16. 线性插值
+    1.  定义是找到两个点，然后连一条直线，用中间的值进行估计
+    2.  也可以外推extrapolate
+    3.  怎么找到点？[[algorithm]]中`lower_bound(<begin>, <end>, x)`
+17. 回忆$\mathbb Z \times \mathbb Z$与$\mathbb Z$一一对应即可
+    1.  每一时刻，解决一对$(a,b)$
 18. 先一起龟速，然后碰到降落伞就开始“追”
 19. [[oi-wiki-basic/recursion]]
     1.  注意[[special-case]]
+20. 理解题意：跟随机过程无关，就是一个时刻，分布是$N(100,1)$，你看$110$当然没什么概率
+    1.  所以参考[[7-numerical-methods]]，importance sampling
