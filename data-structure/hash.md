@@ -1,10 +1,11 @@
 - https://oi-wiki.org/ds/hash/
 - 核心就是快速（$O(1)$地）查找
 - 索引可以看成特殊的哈希，即键是整数，以**常数**时间复杂度查找
-  - 例子：[[counting-sort]]
-  - 例子：[[41-first-missing-positive]]方法一
+  - [[counting-sort]]
+  - [[41-first-missing-positive]]方法一
     - 数组就是哈希，原地哈希不占额外空间
     - 通过正负，用一个`int`同时表示了一个`int`和一个`bool`（[[encode-decode]]思想）
+  - [[778-swim-in-rising-water]]
   - https://leetcode.cn/problems/valid-sudoku/
     - 81个格子，每个格子以**常数**时间找到对应的地方把相应计数器加一
   - https://leetcode.cn/problems/check-permutation-lcci/

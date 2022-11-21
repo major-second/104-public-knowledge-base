@@ -32,3 +32,4 @@
   - [[200-number-of-islands]]等例子都用到
 - 应用
   - 方便找到环结构（当然不好区分有向/无向环），参考[[685-redundant-connection-ii]]
+  - [[778-swim-in-rising-water]]，考察某种连通性

@@ -13,7 +13,7 @@
   - 如[[1739-building-boxes]]
     - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
 - 首尾相接
-  - [[1388-pizza-with-3n-slices]]
+  - [[1388-pizza-with-3n-slices]]，[[514-freedom-trail]]中的环形数组
 - 差一错误
   - 注意标记一般从0开始，所以`vec[len(vec)]`一般是越界的
   - “差一再差一一共差了2”
