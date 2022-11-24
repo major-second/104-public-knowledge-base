@@ -18,10 +18,10 @@
   - [[resources-and-archives/aliyun]]
   - [[resources-and-archives/baidu-net-disk]]
   - [[internet-archive]]
-  - 一些专用站点如[msdn](https://msdn.itellyou.cn/)
 - 专用论坛或网站
   - 论坛：如校内实名论坛，校内匿名论坛/表白墙/树洞，公司内部论坛，行业论坛等，和个人所处环境有关
   - 举例一些专用网站
+    - windows相关：如[msdn](https://msdn.itellyou.cn/)
     - 北美相关：[一亩三分地](https://www.1point3acres.com/)
     - 政治相关：[品葱](https://pincong.rocks/)
     - 行业专门：

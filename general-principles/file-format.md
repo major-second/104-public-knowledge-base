@@ -4,7 +4,9 @@
     - 例如[csv格式](https://baike.baidu.com/item/CSV)的“方言”：有时以逗号分隔，有时以制表符`\t`分隔等微小差别，并无统一标准，只需简单处理即可使用
   - 同样一种文件格式，有些打开它的程序识别的约定contract严格，有些宽松
   - 有些存储它的程序给出的约定严格，有些宽松
-  - [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle): 宽进严出。是一项好原则。因此A存储的文件B打不开，有可能C打开再保存就能用B打开了。因此C比A更遵守Postel's law.
+  - [Postel's law](https://en.wikipedia.org/wiki/Robustness_principle): 宽进严出。是一项好原则
+    - A存储的文件B打不开，有可能C打开再保存就能用B打开了
+    - 这种情况说明C比A更遵守Postel's law
 - 扩展名“名”和文件本质“实”既不单射也不满射
   - 可能多种扩展名表示同一“本质”
     - 比如`.jpg, .bmp`都是图片（虽然这两者之间有不同）
