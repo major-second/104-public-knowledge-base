@@ -2,6 +2,8 @@
 - [[leetcode-solutions/0-metadata]]
 - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
 - [[dida]]网页版
+- 翻译工具 [deepl](https://www.deepl.com/translator)
+  - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)
   - 可以联合[[download-resource]]使用
@@ -22,3 +24,5 @@
     - ocr（可以上传电脑图片或手机微信扫码上传图片。需要登录）
     - 亲测效果在2022.7好于[[tesseract]]
   - https://tool.lu/coderunner/
+- https://miconv.com/
+  - [[file-format]]转换用

@@ -5,7 +5,8 @@
 - 可以添加什么邮箱？
   - 不一定是微软邮箱（`@microsoft.com, @outlook.com`）
   - 其它邮箱，只要开启了对应服务就可以用outlook代收
-  - 例如qq邮箱，gmail等都需要设置开启相应服务。qq邮箱[参考](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
+  - 例如qq邮箱，gmail等都需要在相应邮箱网页版等地方设置开启相应服务
   - 且在添加时outlook中也要做对应设置。比如gmail设置中给出了指示如图
-  - ![](gmail.png)
+    - qq邮箱[参考](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
+    - gmail[参考](https://support.microsoft.com/zh-cn/office/%E5%B0%86-gmail-%E6%B7%BB%E5%8A%A0%E5%88%B0-outlook-%E6%97%B6%E5%87%BA%E7%8E%B0%E4%BA%86%E9%94%99%E8%AF%AF-bc5403de-1e0f-4156-96a8-f7d084699dc1?ui=zh-cn&rs=zh-cn&ad=cn)
 - 有快捷键：如`Ctrl+A`全选，`Delete`删除，`Shift+Delete`永久删除，`Ctrl`多选等，非常方便

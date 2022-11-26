@@ -8,3 +8,4 @@
   - vscode中[[excel-viewer]]可以打开预览`.csv`，`.xlsx`并作简单处理（如过滤、排序）
   - excel能打开：![](from-csv.png)
     - 注意选择编码，分隔符等选项（回忆刚刚说`pandas`读入时也需要选择分隔符）
+    - 参考[[file-format]]
