@@ -1,4 +1,5 @@
 [toc]
+- 前置[[encode-decode]]
 ## 本质
 - 文件格式（扩展名）本质上是一种人为约定，参考[维基百科](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D)
 - 既然是约定，就有时会有“方言”之类的
@@ -41,6 +42,7 @@
 - 前者可以用通用编辑器如[[vim/basics]]，[[vscode/edit]]等编辑，所以很多时候可作为过渡，例如csv格式
 - [[file-handler]]读取文本文件（例如[[json]], [[yaml]]）就是“过渡”的例子
 ## 序列化（编码）
+- 参考[[encode-decode]]
 - 有时文件本身表达的东西不是简单的文本序列，但可以用文本序列存储
   - 例如[[jupyter-notebook/basics]]
     - `.ipynb`文件如果直接`cat`出来，是[[json]]格式

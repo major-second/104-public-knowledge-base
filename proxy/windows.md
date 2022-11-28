@@ -18,3 +18,6 @@ https://github.com/Qv2ray/Qv2ray/releases
   - 重启`qv2ray`
 - 最后只需要参考[[node]]，配置节点即可使用
   - [qv2ray配置节点官网教程](https://qv2ray.net/lang/zh/getting-started/step3.html)
+  - 如果是订阅，需要在`groups`处设置，在此图处打勾
+    - ![](qv2ray-subscription.png)
+    - 解码方式：如果一种不行就试另一种
