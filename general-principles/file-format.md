@@ -78,4 +78,5 @@ print("python") #'
 ### 使用专用软件工具
 - [[toolbox/web]]小工具
   - 例如 [miconv](https://miconv.com/)
+  - 例如 [pdf2go](https://www.pdf2go.com/)可以把很多东西转化成pdf
 - [[xxd-diff]]把二进制变成文本

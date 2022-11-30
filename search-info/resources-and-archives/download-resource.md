@@ -1,4 +1,6 @@
 - 手机apk
+  - 官方：google play
+    - 对华为手机参考[[huawei-google]]
   - m.apkpure.com（电脑手机都可访问该网址）
     - 也可以[手机上下载apkpure app](https://apkpure.com/how-to/how-to-install-xapk-apk)
       - 当应用商店、管理器使用
@@ -11,6 +13,8 @@
     - [[usage]]代理导致ip太频繁，超过每天5本限制？用邮箱注册个账号就有额外的5本额度
     - 更新：2022.11已被美国政府ban掉无法访问
   - [libgen](https://libgen.gs/)
+  - 转pdf：[pdf2go](https://www.pdf2go.com/)
+    - 参考[[file-format]]
 - 学术相关参考[[academic]]
 - 资源有时有id（具有唯一性的标识符），就方便找
   - 比如有ISBN就方便去libgen，有doi就方便去各类学术网站找等
