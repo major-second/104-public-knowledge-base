@@ -59,7 +59,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restri
     - 则[参考这篇](https://blog.csdn.net/Chaowanq/article/details/121559709)
     - 这是用[[temp-solution]]思想（临时使用`http`而非`https`，装好了再换回`https`）
     - 当然如果适当舍弃安全，也可以一直用`http`而非`https`
-  2. 如果重装`ca-certificates`无效，则可能是[[nat]]，[[proxy/usage]]等中间过程引起的问题，例如在docker容器中使用`apt`，或物理机通过[[nat]]服务，[[proxy/usage]]服务时，都会导致`Certificate verification failed: The certificate is NOT trusted.`
+  2. 如果重装`ca-certificates`无效，则可能是[[nat]]，[[proxy/basics]]等中间过程引起的问题，例如在docker容器中使用`apt`，或物理机通过[[nat]]服务，[[proxy/basics]]服务时，都会导致`Certificate verification failed: The certificate is NOT trusted.`
     - [参考](https://askubuntu.com/questions/1095266/apt-get-update-failed-because-certificate-verification-failed-because-handshake/1210812#1210812)
     - 此时，如果你信任你的源（例如在没有[[nat]]服务的机器上可以正常使用该源，说明其安全），就可以手动信任它
     - 即在`/etc/apt/apt.conf.d/99verify-peer.conf`（`.d`的含义参考[[settings-and-configurations]]）中增加一行`Acquire { https::Verify-Peer false }`

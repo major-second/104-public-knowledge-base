@@ -1,6 +1,6 @@
+# qv2ray
 ## 下载
-一个可用的客户端：`qv2ray`
-首先使用[[temp-solution]]（比如借学长的，比如洋葱，比如[[hosts]]碰运气，全力下载到以下两个release安装包）（当然直接找学长要安装包也是一种[[temp-solution]]）
+首先使用[[temp-solution]]（比如借学长的代理，比如洋葱，比如[[hosts]]碰运气，全力下载到以下两个release安装包）（当然直接找学长要安装包也是一种[[temp-solution]]）
 https://github.com/v2ray/v2ray-core/releases
 - 注：时至2022.4，Latest的v4.31.0只有源码没有现成包。应该找早些的版本。找到win64（现在一般都是64位）下载
 
@@ -21,3 +21,6 @@ https://github.com/Qv2ray/Qv2ray/releases
   - 如果是订阅，需要在`groups`处设置，在此图处打勾
     - ![](qv2ray-subscription.png)
     - 解码方式：如果一种不行就试另一种
+# clash
+大同小异，[下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+注意需要使用7-zip

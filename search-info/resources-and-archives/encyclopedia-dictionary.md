@@ -1,7 +1,7 @@
 - 这里主要收集在线查看的百科、词典等。不是资源下载站
 - 通用
   - 百度百科
-  - wikipedia（可能需要[[usage]]代理）
+  - wikipedia（可能需要[[proxy/basics]]代理）
 - 专用
   - [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)
 - 词典

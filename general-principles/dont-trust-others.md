@@ -18,7 +18,7 @@
   - 像[这种](https://github.com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
 - 有些时候作者没空维护了（毕竟开源用爱发电）
   - 比如[[franka-ros-interface]]，各种文档和现象不对应
-  - 比如[[windows]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
+  - 比如[[windows-client]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
     - 这个软件的作者团队好像起了冲突导致没人维护了
 - 包管理器审核出问题
   - 例如[[pip]]：[[hand-eye-calibration]]中提到`transforms3d`的`0.4`版在2022.12安装会出问题，只能手动装`0.3`

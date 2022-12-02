@@ -1,6 +1,6 @@
 [toc]
 ## 前置
-- 非中国内地、美国ip的[[usage]]代理
+- 非中国内地、美国ip的[[proxy/basics]]代理
   - 美国不行：![](us-ip.png)
 - 通过[非小号](https://www.feixiaohao.co/)、[币萌](https://bimeng.org/)等获取基础信息，作大致了解
   - [[telegram]]搜索tokenmore有一些人和频道，可能有进一步信息

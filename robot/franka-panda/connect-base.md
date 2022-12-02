@@ -11,7 +11,7 @@
 
 步骤
 - 参考[官方文档](https://frankaemika.github.io/docs/getting_started.html)
-  - 需要翻墙，比如[[linux]]
+  - 需要翻墙，比如[[linux-client]]
 - [教程，看第一个视频](https://mp.weixin.qq.com/mp/homepage?__biz=MzI1MDQyMTQ2Mw==&hid=2&sn=b0ae69e54148897202a821d0a48d79e9&scene=1&devicetype=android-29&version=28000653&lang=zh_CN&nettype=3gnet&ascene=7&session_us=gh_8f8e4c6a8bf8&pass_ticket=v3fxJbAjVoDUxQTg9j07UZ1xyvu8oHbx4Mk%2F5beeCBiI87W8PE%2FgLDbCygl6zF0M&wx_header=1&from=groupmessage)，用机械臂网口和`192.168.0.1`登录机械臂
   - 这里提到机械臂地址`192.168.0.1`，所以参考[[wired-connection]]登录上`192.168.0.1`
   - 注意你的代理有没有绕过`192.168.0.1`，参考[[settings-and-configurations]]

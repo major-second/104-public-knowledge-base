@@ -2,7 +2,7 @@
 - [官网](https://www.microsoft.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion)
 - 注意
   - 区分`work or school`版还是另一版。两版并不同
-  - 可能不允许[[usage]]代理否则连不上
+  - 可能不允许[[proxy/basics]]代理否则连不上
 - 相比腾讯会议好处
   - 和onenote，outlook等微软的联系紧密
   - 可以开会，且方便多设备进入，一个设备分享屏幕大家看等
