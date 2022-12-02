@@ -1,9 +1,12 @@
 在线工具，无需下载，就是好！
-- [[leetcode-solutions/0-metadata]]
-- [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
-- [[dida]]网页版
-- 翻译工具 [deepl](https://www.deepl.com/translator)
-  - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+- 刷题：[[leetcode-solutions/0-metadata]]
+- 在线测试代码
+  - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
+- 日程管理：[[dida]]网页版
+- 翻译工具
+  - [deepl](https://www.deepl.com/translator)
+    - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+- [视频压缩](https://compress-video-online.com/zh)
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)
   - 可以联合[[download-resource]]使用
