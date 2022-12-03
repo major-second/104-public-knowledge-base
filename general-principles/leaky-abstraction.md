@@ -52,6 +52,7 @@
   - 例如[[vpn]]被[[proxy/basics]]影响
     - 你以为[[proxy/basics]]客户端开着，不[[configure]]就没事？那不一定
     - 你以为代理和有些vpn能一起用了，那我关掉代理就能“正交”切换不影响vpn？那不一定
+  - [2022.11江泽民去世，改黑白，却影响布局](https://zhuanlan.zhihu.com/p/588576333)
 - 例如：你以为应该表现一样的实则不一样
   - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug
     - ![](pandas-tricky.png)

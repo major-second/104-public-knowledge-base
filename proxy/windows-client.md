@@ -22,5 +22,6 @@ https://github.com/Qv2ray/Qv2ray/releases
     - ![](qv2ray-subscription.png)
     - 解码方式：如果一种不行就试另一种
 # clash
-大同小异，[下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)
-注意需要使用7-zip
+- 大同小异，[下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)-
+- 注意需要使用7-zip
+- `Profile`处可以添加[[node]]订阅
