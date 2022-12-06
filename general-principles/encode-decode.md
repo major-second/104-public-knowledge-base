@@ -21,5 +21,8 @@
 - 总共有多少种状态，多少进制，决定有多少位
   - [[8-brain-teasers]]第12题，二进制；13题三进制
   - [[2-brain-teasers]]defective ball，三进制
-# 深度学习
-- 作为学习表示的方法
+# 深度学习相关
+- encode浪费一定空间使得深度学习时性质好
+  - 如二维sin-cos编码
+  - 三维：用6维表示空间中三维旋转，参见[Visual Imitation Made Easy](https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/resources/paper.pdf)
+- 作为学习表示（representation）的方法：encoder-decoder

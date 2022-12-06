@@ -1,9 +1,6 @@
----
-title: Windows+Ubuntu双系统安装
-type: operations
----
 - 前置：[[risk]]必须了解！
 - [[efi]]
+- [[bios]]
 
 本篇是基于Win10装Ubuntu18.04
 其它系统安装中，有些操作是类似的
@@ -17,7 +14,7 @@ tags: #双系统 #Linux #Windows10
    新电脑基本都是UEFI
    以下都针对UEFI
 3. [[制作U盘启动盘]]
-4. 插入U盘启动盘，重启电脑[[进入BIOS]]，在boot manager里将secure boot设置为disabled，并选择[[efi]]为U盘，保存退出
+4. 插入U盘启动盘，重启电脑进入[[bios]]，在boot manager里将secure boot设置为disabled，并选择[[efi]]为U盘，保存退出
    1. 注：由于机器型号不同，选择[[efi]]为U盘的具体操作可能不同。有的是调整优先级使得U盘排第一，有的是直接选择U盘
    2. 但总之一次启动只能用一个[[efi]]
 5. 进入ubuntu安装界面。一步步按照指示进行。其中分区参考[[partition]]
@@ -34,7 +31,7 @@ tags: #双系统 #Linux #Windows10
    2. 在BIOS中将SATA Controller Mode设置为AHCI模式
    3. 之后为保证Windows系统能够运行，使用安全模式运行一次Windows系统，并重启
 注：有些比较新的机型就没有AHCI问题。BIOS中甚至找不到SATA选项。那就不用设，直接可以用
-2. 没有进入安装界面，直接ACPI错误，花屏。这是独显 #GPU 的锅
+1. 没有进入安装界面，直接ACPI错误，花屏。这是独显 #GPU 的锅
    如果是台式，可以直接把显示器接到集显，装好系统再配置独显驱动。否则
    1. 安装前
       在**出现`Try Ubuntu`，`Install`等选项的那个[[grub-menu]]**，根据界面下方提示，按小写`e`，进入编辑界面

@@ -1,6 +1,7 @@
 前置
 - 准备安装Linux系统的电脑
 - 16GB以上，没有其它有用信息的U盘
+- [[bios]]
 
 ## 下载镜像
 - 随便找一个镜像站，比如[阿里云](http://mirrors.aliyun.com/ubuntu-releases/18.04/)

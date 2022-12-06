@@ -2,3 +2,5 @@
 - e.g. [DeepMimic](https://dl.acm.org/doi/pdf/10.1145/3197517.3201311)
   - input: NN model, example traj, reward function (task)
   - reward: $r_{RL+IL} = r_{RL} + distance(a_{ours},a_{expert})$
+- e.g. [Visual Imitation Made Easy](https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/resources/paper.pdf)
+  - 收集数据，重建标签，直接监督学习拟合

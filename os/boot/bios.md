@@ -1,0 +1,2 @@
+- [[u-disk-boot]], [[windows-ubuntu]]双系统等无不需要进入bios，[[power-options]]有时也需要
+- 不同品牌进入方式不同，可上网查。例如 [微软surface](https://learn.microsoft.com/zh-cn/surface/battery-limit)是关机长按电源+音量上，有些品牌是开机后按某个F某键等

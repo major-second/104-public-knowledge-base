@@ -28,7 +28,7 @@
 - 电池健康：比如不要长期充满，参考[[devices/battery]]
   - 这个管理功能和厂家有关，没有通用软件
     - 而且和硬件密切相关。所以有些品牌的该限制即使在关机充电/双系统[[windows-ubuntu]]时也生效，非常方便
-  - 大品牌都有自己的电池管理软件，如联想、戴尔等
+  - 大品牌都有自己的电池管理软件，如联想、戴尔、微软等
   - 联想：Lenovo Vantage
     - 下载需要Microsoft Store
       - 如果删了就参考[[app]]找回来
@@ -36,3 +36,5 @@
     - 养护模式
       - ![](conservation-mode.png)
       - ![](conservation-mode-result.png)
+  - 微软surface：[参考](https://learn.microsoft.com/zh-cn/surface/battery-limit)
+    - 需要关机状态电源+音量上键长按进入[[bios]]，相比联想不够方便

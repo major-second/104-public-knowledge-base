@@ -12,7 +12,10 @@
     - 很多地方`Ctrl+F`查找
     - vscode的[[settings/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
     - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
-  - 很多地方可以使用[[regex]]
+    - 查找时，往往有区分大小写、全字匹配、正则表达式等按钮/选项，如 ![](vscode-options.png)
+      - 全字匹配：不会错误匹配一些不需要的“子串”，比如abc中的bc
+      - 正则表达式参考[[regex]]
+  - 很多其它地方也可以使用[[regex]]
     - 如linux系统的[[find-grep]]
 - 资源站
   - [[resources-and-archives/aliyun]]
