@@ -1,9 +1,10 @@
 - Teams是微软Office一部分
 - [官网](https://www.microsoft.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion)
+- [网页版](https://teams.live.com/)
 - 注意
   - 区分`work or school`版还是另一版。两版并不同
   - 可能不允许[[proxy/basics]]代理否则连不上
-- 相比腾讯会议好处
+- 相比[[tencent-meeting]]好处
   - 和onenote，outlook等微软的联系紧密
   - 可以开会，且方便多设备进入，一个设备分享屏幕大家看等
   - 方便传文件，且是持久的“会话”，相当于聊天和开会结合

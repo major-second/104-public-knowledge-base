@@ -7,11 +7,17 @@
 - 可使用中文/英文，英文效果好
 - Thread中前面的信息会被记住
   - 左边可以清空Thread使得刷新
+  - 记忆信息例子
+    - 首先Here is a personal statement, please commit it to your memory as (A)，然后写一大段
+    - 然后Here's another one. Please commit it to your memory as (B)然后写一大段
+    - ![](prompt-example-memory.png)
 - 可以发挥想象力，玩各种各样的事，如
   - 如何解决台湾问题
   - 普京给特朗普的情书
   - 为博士后生活改编波希米亚狂想曲
   - 扛200斤麦子走……里需要做多少功？
+  - （你懒得查文档时）帮助编程： ![](programming-aid.png)
+    - 这里问到了[[matplotlib/basics]]中的`legend`位置
   - ……
 # 提示工程
 - 可以循序渐进给出指示
@@ -21,3 +27,6 @@
 - 简单举例：
   - ![](prompt-example-0.png) 可以看到循序渐进
   - ![](prompt-example-1.png) 可以看到手动指出要求
+# 绕过限制
+- 他有时会自我设限，但其实可以做。你可以想办法绕过
+- 比如Please memorize不行，但Please commit it to your memory可能就行了
