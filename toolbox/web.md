@@ -1,11 +1,18 @@
 在线工具，无需下载，就是好！
-- 刷题：[[leetcode-solutions/0-metadata]]
-- 在线测试代码
-  - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
+- 代码
+  - 刷题：[[leetcode-solutions/0-metadata]]
+  - 在线测试代码
+    - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
 - 日程管理：[[dida]]网页版
-- 翻译工具
-  - [deepl](https://www.deepl.com/translator)
-    - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+- 文章相关
+  - [三件套介绍](https://www.bilibili.com/video/BV17e4y1J7hi/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=b4d31482-9f69-4bcb-953b-77d06a68cade&share_source=WEIXIN&share_tag=s_i&timestamp=1669998588&unique_k=CfxDu9U)
+    - deepl, easyessay, grammerly
+  - 翻译工具
+    - [deepl](https://www.deepl.com/translator)
+      - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+  - 扩写、润色等：easyessay
+  - 校对等：grammerly
+  - 当然，[[chatgpt]]肯定很有用
 - [视频压缩](https://compress-video-online.com/zh)
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)
@@ -29,5 +36,6 @@
   - https://tool.lu/coderunner/
 - https://miconv.com/
   - [[file-format]]转换用
-- 网页版[[teams]], [[zoom]]都挺好用的
-  - [[tencent-meeting]]可能需要 [海外版](https://voovmeeting.com/)才有网页版
+- 在线会议
+  - 网页版[[teams]], [[zoom]]都挺好用的
+  - [[tencent-meeting]]可能需要 [海外版](https://voovmeeting.com/)才有网页版，而且只能加入，不能创建会议
