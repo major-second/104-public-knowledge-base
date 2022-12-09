@@ -8,7 +8,10 @@
   - 不同算法的各步骤难度不同
     - [[quick-sort]]分解难，合并简单
     - [[merge-sort]]相反
-- 例子：[[23-merge-k-sorted-lists]]
+- 例子
+  - [[23-merge-k-sorted-lists]]
+  - 快速计算幂：如$x^5$拆成两个$x^2$，再乘$x$
+    - 注意相当于分解成一个子问题而非两个
 - 和[[binary-search]]联系
   - 分解之后只需解决一个，不用解决两个，然后合并，那就是[[binary-search]]
   - 有趣例子：[[154-find-minimum-in-rotated-sorted-array-ii]]
