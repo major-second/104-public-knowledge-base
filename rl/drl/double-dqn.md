@@ -1,0 +1,6 @@
+- 前置：[[double-q-learning]], [[dqn]]
+- [参考](https://paperswithcode.com/method/double-dqn)
+- 不需要人为显式设置两个Q，而是使用[[dqn]]的target作为“第二步”
+  - 这样兼具[[dqn]]中fixed Q-targets的好处和[[double-q-learning]]的好处
+- 即$Q(S',argmax_a Q(S', a;\theta_t); \theta_t^-)$
+- 对比之前的$Q_{A/B}(S',argmax_a Q_{B/A}(S', a;\theta_{B/A}); \theta_{A/B})$，这里的“$/$”对应更新中两种可能情况

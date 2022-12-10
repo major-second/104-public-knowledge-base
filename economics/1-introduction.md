@@ -1,0 +1,10 @@
+- [链接](https://www.bilibili.com/video/BV1cs411w7V5?p=1)
+- definition: the study of **values and choices**
+  - 例子：家庭、企业、政府的决策
+- opportunity cost
+  - other choices: e.g. 看滑稽短视频
+  - 关注next best alternative. e.g. 舍弃看滑稽短视频（价值9），看CrashCourse（价值10），则9称为opportunity cost
+- two basic assumptions:
+  - scarcity: unlimited wants, limited resources
+  - everything has a cost
+  - 所以：cost, value, decision
