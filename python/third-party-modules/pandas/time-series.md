@@ -1,14 +1,16 @@
 - 前置
   - [[pandas/installation]]
   - [[matplotlib/basics]]
+  - [[series-dataframe]]
 ## 基础
+### 准备
 - [参考](https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/)
 - shell中`wget https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv`即可下载数据（需要[[linux-client]]代理）
 - `import pandas as pd`
 - 日期时间参考[[timestamps]]
 ### 基础命令
 - `opsd_daily = pd.read_csv('opsd_germany_daily.csv')`
-  - 读取`.csv`
+  - 这是读取`.csv`，参考[[series-dataframe]]
 - `df.shape`形状（第0维往往表示多少条数据，第1维表示多少维）
 - `df.dtypes`类型
 - `df.head(3)`, `df.tail(3)`, `df.sample(3)`看示例
@@ -25,12 +27,11 @@
   - 如果日期字段名是`Date`，则`opsd_daily = opsd_daily.set_index('Date')`
   - 此时可再看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
+  - 参考[[series-dataframe]]中的`index`，知道默认值是`0`开始的整数列
   - 还能`.index.start`等取出具体值
-  - `df.index = df[key]`还能设置谁是index
-    - 可结合`sort_index()`方法使用，进行排序
-    - `.sort_index()`返回按索引排序的结果（但自己不就地改变）
+  - `df.index = df[key]`还能设置哪一列是index
+    - `.sort_index()`返回按索引排序的结果（但`DataFrame`自己不[[inplace]]改变）
     - 这里返回的结果默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
-  - [[dataframe]]中由二维`numpy`数组直接转化来的`DataFrame`默认`index`是从0开始的连续整数
 - 二合一过程（读取和设置`index`）
   - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
