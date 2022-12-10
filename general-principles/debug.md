@@ -12,7 +12,7 @@
   - 例如[[jupyter-notebook/basics]]的原生在线用法不支持断点，所以要多分几段
   - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
 - 在跑一个大实验之前，下载大东西等等之前要做的调试
-  - 考虑[[special-case]]
+  - 考虑[[general-principles/special-case]]
     - 要不然搞了半天被一个0中断，烦烦！
   - 确认小规模全流程没问题
     - 流程问题

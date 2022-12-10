@@ -1,7 +1,13 @@
-[下载](https://www.aida64.com/downloads)
-序列号（2022.6.15可用）`UK4F4-3F2D6-FJD9J-C4D34-FYY12`
-找不到就百度搜搜
-实用功能（找不到在哪的自己探索，也可以[参考](https://zhuanlan.zhihu.com/p/349488218)
+# 下载安装
+- [下载](https://www.aida64.com/downloads)
+- 百度找到的序列号
+  - `UK4F4-3F2D6-FJD9J-C4D34-FYY12`
+  - 2022.6可用，2022.12新版安装包不可用了
+  - 但旧版安装包可能可用。所以今后不妨保留旧版安装包，参考[[version]]
+- 一个[俄罗斯网站](https://keypro2.ru/aida64-extreme-edition-keys/)给的序列号：`U4T24-SFRDB-W9DN3-BDMTY-NYZGV`2022.12在`6.80.6200`版本[[version]]可用
+# 实用功能
+- 找不到在哪的自己探索
+- 也可以[参考](https://zhuanlan.zhihu.com/p/349488218)
 - 右键某个条目可以快速导出[[logs]]或add to收藏
 - 看电池状态![](battery.png)
   - wear level就是电池寿命的损耗

@@ -35,7 +35,7 @@ public:
 ```
 - 其实有点与其说是算法题更像在[[oi-wiki-basic/simulate]]
   - 故一定要在草稿纸上先画图
-- 特判[[special-case]]：`list1, list2`中有`nullptr`
+- 特判[[algorithm/special-case]]：`list1, list2`中有`nullptr`
 - 出现了结束时额外处理，参考[[loop]]
 # 利用对称性，减少重复代码
 - 参考[[1-clean-code]]
@@ -64,7 +64,7 @@ public:
     }
 };
 ```
-# 合理合并[[special-case]]，减少代码量
+# 合理合并[[algorithm/special-case]]，减少代码量
 - 这里是[[化归]]思想，多增加一个链表头，统一情况
 ```cpp
 class Solution {

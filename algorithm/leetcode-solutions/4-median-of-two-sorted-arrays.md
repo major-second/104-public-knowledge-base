@@ -63,7 +63,7 @@ public:
       - 只能舍去`5,6`，因为已知它们大于`1,2,4`三个数了
   - 可以模块化，并先写暴力用于[[comparison]]
   - 注意[[oi-wiki-basic/recursion]]出口
-    - 两类[[special-case]]
+    - 两类[[algorithm/special-case]]
     - 元素都很少或者一边是空！
 - 可以发现这里用到[[sequence]]用迭代器初始化
   - `v1 = vector<int>(nums1.begin(), nums1.begin()+m1);`

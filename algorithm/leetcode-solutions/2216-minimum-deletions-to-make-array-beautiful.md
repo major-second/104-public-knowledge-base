@@ -5,7 +5,7 @@
   - 这是[[greedy]]证明中常见的方法：回溯不会更优
 - 注意这里用到[[DFA]]思想（两种状态：现在奇数或偶数）
 - [[化归]]减少代码复杂程度
-  - 即：增大问题规模1，减少[[special-case]]特判
+  - 即：增大问题规模1，减少[[algorithm/special-case]]特判
 ```cpp
 class Solution {
 public:

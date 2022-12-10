@@ -33,7 +33,7 @@ public:
 };
 ```
 - 此处没有路径压缩
-- 注意[[special-case]]：全0全1是否通过
+- 注意[[algorithm/special-case]]：全0全1是否通过
 - 注意去重
 - 注意`union`不能做函数名
 - 结尾必须再每个元素`findSet`一下，而不是每个元素`parents[i]`一下！

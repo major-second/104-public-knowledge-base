@@ -64,6 +64,9 @@
       - 所以可以用[[temp-solution]]思想，先装cpu torch把`tape_proteins`的检测应付掉，再`pip`装一个gpu的torch（过程中会卸载旧的torch）
   - 可能被已有的东西干扰，在新环境就能很好求解，参考[[torch-cuda]]在非全新conda环境装`torch`可能导致解出cpu版本，重装[[refresh]]可能解决
   - 可能直接换个求解器（包管理器）就解决了。比如[[conda/installation]]不行就换成[[pip]]
+# 其它
+- 有时旧版本才能破解，新版本不能，参考[[aida64]], [[pricing]]
+- 所以可以保留一些旧版安装包
 # 查看版本号
 - 命令行：往往是`--version, -V, -version`等
   - 如`ffmpeg -version`

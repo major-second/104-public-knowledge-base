@@ -15,7 +15,7 @@
 7. [[oi-wiki-basic/simulate]]
    1. 有些tricky点：比如最小的左侧，最大的右侧，等等
 8. 
-   1. 0附近防不稳定可判[[special-case]]
+   1. 0附近防不稳定可判[[general-principles/special-case]]
    2. 其他地方同余化归，并可用[[taylor-expansion]]
    3. 标答：可以用标准库的sin，但是0附近手动泰勒展开
    4. 不连续性？使用[[bump-function]]，线性组合思想
@@ -41,6 +41,6 @@
     1.  每一时刻，解决一对$(a,b)$
 18. 先一起龟速，然后碰到降落伞就开始“追”
 19. [[oi-wiki-basic/recursion]]
-    1.  注意[[special-case]]
+    1.  注意[[algorithm/special-case]]
 20. 理解题意：跟随机过程无关，就是一个时刻，分布是$N(100,1)$，你看$110$当然没什么概率
     1.  所以参考[[7-numerical-methods]]，importance sampling

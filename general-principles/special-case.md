@@ -1,5 +1,8 @@
-- [[6-serial/basics]]的$\tau\equiv 0$情况
-- 算法题的[[special-case]]
+- 数学中
+  - [[6-serial/basics]]的$\tau\equiv 0$情况
+  - [[2-2-calculus-ode]]
+  - [[5-brownian-motion-and-stochastic-calculus]]
+- 算法题的[[algorithm/special-case]]
 - 实际程序也有特例！
   - [[finetune]]中的例子：取一段区间内的数据做[[regression]]
     - 首先，有可能取出0条数据，导致[[regression]]报错

@@ -13,7 +13,7 @@
 9.  基础知识
 10. 基础知识
 11. $I(n)=\int x^n lnx dx=\frac 1{n+1} \int lnxd(x^{n+1})=分部$，可以自相似[[general-principles/recursion]]
-    1.  注意[[special-case]]分母为0
+    1.  注意[[general-principles/special-case]]分母为0
 12. 换元，[[general-principles/recursion]]
 13. 基础题
 14. 换元，$(lnf)' = 1-f,g'=1-e^g, dg/(1-e^g)=dx,df/(f-f^2)=dx$
