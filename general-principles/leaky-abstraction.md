@@ -1,5 +1,7 @@
-[leaky abstraction现象](https://en.wikipedia.org/wiki/Leaky_abstraction)，维基上不少例子
-在许多学科都有（数学较少），计算机工程中尤其常见
+- 概述
+  - [leaky abstraction现象](https://en.wikipedia.org/wiki/Leaky_abstraction)，维基上不少例子
+  - 在许多学科都有（数学较少），计算机工程中尤其常见
+  - 一大后果：不够[[independent]]
 - 例如很多人争议说要不要用命令行，还是只用IDE就够了
   - 根据leaky abstraction原则，命令行的基础操作要有了解
   - 在此基础上，在适用的时候可以用IDE节省时间
