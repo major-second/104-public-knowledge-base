@@ -68,6 +68,7 @@ class MyEnv2(MyEnv):
     print('closed')
 ```
 - 尝试 ![](try-advanced.png)
-### 进阶：设置`.observation_space, .action_space`
+### 关于[[spaces]]
+- 设置和读取`.observation_space, .action_space`，以及`.low, .high`等
 - 参考[[spaces]]
-- 在[[stable-baselines3/basics]]中需要用到
+- 有时必须设置！

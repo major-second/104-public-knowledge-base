@@ -3,6 +3,7 @@
 - 逻辑上，可以和[[oi-wiki-basic/recursion]]，[[induction]]做联系，也就是对$n$, 考察规模$n-1$的问题
   - 注意需要具有“最优子问题”性质
 - 和[[dp]]区别：不能反悔（回溯），一条路走下去
+- 强化学习中的“贪心”语义上的细微区别参考[[q-learning]]
 # 证明
 - 刚刚提到[[induction]]，所以其证明很多时候也是[[induction]]
   - 例如[[shortest-path]]中dijkstra

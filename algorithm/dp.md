@@ -30,3 +30,5 @@
 - 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
 - 和[[induction]]往往有强联系
 - 子问题相似性质，和[[self-similarity]]有强联系
+- [[calculate-v]]中暴力计算
+  - 即使不是暴力计算，整个强化学习中也充满了dp思想
