@@ -1,8 +1,9 @@
 ## 添加和初始化
 - 添加
-  - `git submodule add -b <branch> <repo-link>`
-  - 之后[[commit]], [[push-pull]]等，即可同步“增加了子模块”这一信息到相应git库、分支
-  - 当然，有可能有的[[git-basics/branch]]有子模块，有的没有
+  - 前提：submodule至少有一个[[commit]]，否则是[[general-principles/special-case]]，时至2022.12会出现奇怪错误
+  - 命令：`git submodule add <repo-link>`
+  - 之后[[commit]], [[push-pull]]等，即可同步“增加了子模块”这一信息到相应的（主模块）git库当前分支
+  - 当然，后果就是：有可能有的[[git-basics/branch]]有子模块，有的没有
 - 初始化
   - 添加后，需要初始化
   - `git submodule update --init --recursive`（在主模块运行）

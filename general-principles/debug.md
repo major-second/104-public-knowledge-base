@@ -1,4 +1,7 @@
 - 在正式运行前，往往需要先调试确认没有问题。调试时往往
+  - 需要考虑特例[[general-principles/special-case]]
+    - 算法中的[[algorithm/special-case]]
+    - 空输入造成问题例如[[finetune]]，[[submodule]]中都有
   - 使用较少资源（gpu、cpu等）和待测试数据，降低成本，加快调试迭代速率
   - 适当调整顺序，使得一些耗时长的东西靠后运行，以加快迭代速率
     - 例如[[import/basics]]许多自己的文件，你可以把加载时间长的文件放后面
