@@ -1,0 +1,9 @@
+- 前置[[calculate-v]]
+- [参考](https://zhuanlan.zhihu.com/p/110881517)
+- 不一定要[[dqn]]，甚至不用计算Q值
+- 原始版本是[[monte-carlo]]思想
+  - 所以需要存储的：不用像[[dqn]]那么多，而是可以只有state, action, reward
+  - 由reward，回溯计算$G$，就知道每个action是否好
+  - 为啥不要done？这里是on-policy，每次episode结束须清空
+    - 思考：这也是[[monte-carlo]]和（单步）TD的区别，是TD优势之一
+- 计算G后，利用[[logit]]，[[one-hot]]等思想，回传给policy中选择各action的概率

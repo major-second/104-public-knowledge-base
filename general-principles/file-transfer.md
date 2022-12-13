@@ -1,0 +1,19 @@
+- 和linux服务器交流常用
+  - [[secure-copy]]（前置[[ssh/ssh]]）
+  - [[sftp]]
+  - [[mobaxterm]]传输功能（它可不只是终端哦）
+- 多平台（但需要GUI）
+  - 发邮件
+  - [[keybase]]（高度机密安全，跨平台，可无限期撤回）
+- 日常
+  - [[wechat-tips]]，例如文件传输助手
+    - 日常相对方便，但不保密不安全会被监视可能被压缩有大小限制……等
+    - 例如[[file-format]]影响最大传输大小，hhh
+    - 例如`.apk`传输后特判，被手动变为`.apk.1`，为了你好，哈哈哈
+  - [[teams]]
+  - [[baidu-net-disk]]等网盘
+  - [[bluetooth/basics]]
+- 硬件
+  - U盘、移动硬盘（注意[[interface]]种类，是否USB3.0等）
+  - 电脑手机连接
+- 保障安全，隐私：可以[[zip]]，加密[[zip]]，改后缀名（参考[[file-format]]等）
