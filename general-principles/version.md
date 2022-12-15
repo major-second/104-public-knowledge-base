@@ -1,73 +1,6 @@
-# 版本号常识
-- 经常是`数字.数字.数字`等几层的形式。前面是大版本号，后面是小版本号。数字越大时间越靠后
-  - `3.2`肯定比`3.10`靠前
-  - 也就是不能简单对字符串按字典序排序！
-- 大版本号自然往往都是大改
-  - 比如`python3`相对`python2`，`tf2`相对`tf1`这种，完全就当成两个东西来看比较好2333
-- 有时不用数字做版本号
-  - 比如[[ros/installation]]，用`a`开始的字母做版本号，越靠后的版本字母越靠后
-- 安装软件，`git clone`等等时往往都要看清楚版本号
-  - 例如[[aruco]]，在`git clone`时要`-b`选择正确分支
-- 很多地方用`>=`，`==`，`=`等运算符表示版本号
-  - 比如`>=`表示数字更大（“之后”）
-  - [[conda/installation]]用`=`表示确定某个版本，[[pip]]用`==`
-- 一般版本号高性能好，功能多，参考[[software-management/upgrade]]
-# 常见标记
-- `lts`长期支持
-- `dev`开发中
-  - 可能不稳定
-  - 好处：多很多“开发用”的东西，比如源码，头文件等
-  - 有时即使你不是在开发，在需要源码、头文件、额外组件等时也需要安装`dev`版本
-- `64`或`32`对应64或32位系统
-  - 有时和操作系统名称结合，如`win32`版
-  - `amd64`只是说架构是AMD发明，并没有说intel的芯片就用不了
-- 操作系统名：`win, linux, mac`等
-- `portable`可以到处移动，而不是“安装了就动不了”
-- 商业软件的`perfessional`，`extreme`等区分等级
-  - 如[[aida64]]
-  - 不同等级序列号不能混用
-    - 比如[[pro-license]]
-  - 有时，有序列号可以升级到高等级
-    - 如[[windows/upgrade]]
-  - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
-- 有时出现有趣现象：标记变成本体
-  - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种
-# 版本依赖相关
-- 举例体验
-  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`（太低）导致无法装版本`22`，导致无法装`tensorflow2.9`
-    - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
-    - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
-  - [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
-  - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
-    - 原因：其实是trivial的。一些路径修改导致不匹配不兼容
-  - [[moveit-real-robot]]中，有个文件名改变，从`panda_control_moveit_rviz.launch`变成`franka_control.launch`，功能不变
-  - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到他的一个旧版本
-    - 刚刚说的[[moveit-real-robot]]文件名改变和这个有关
-  - [[franka-ros-interface]]（爱好者自己写的包，不维护了），`.launch`文件中出现多余参数
-- 参考[[software-management/upgrade]]
-  - 一般来说，很多依赖都是要求`>=`某某版本，而且上层版本越高，需求的底层版本也越高
-  - 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低
-- 有些时候，兼容性比较差，就要求某层的某软件必须是某某版本范围，不是`>=`都行
-  - 比如[[torch-cuda]]中提到硬件太新导致有下界（3090 GPU就不能使用`cuda 10.x`），而[[ubuntu-nvidia-drivers]]太旧又导致有上界
-  - 比如[[distutils]]提到的问题
-  - 比如一些老旧网站（如时至2022.6中国电信网上营业厅）必须用ie模式打开才正常
-    - Edge的右上角有这个按钮![](ie-mode.png)
-  - 正常的软件开发习惯是用`deprecated`提醒你这个可能过一段时间就没了，你要赶紧想办法（换掉那些不推荐你再使用的api等），否则之后就别更新！
-- 无法求解依赖？
-  - 各级依赖之间往往有许多复杂约束，如果求解器性能不好，可能陷入死局，本来可以解的也变得不能解了（扩展阅读：[[5-constraint-satisfaction]]）
-    - 所以有可能人工求解一下，然后确定几个重要节点，以帮助求解器解决
-    - 碰到过的例子：`mmaction`（高级）依赖于`sklearn`（低级），`sklearn`依赖于python版本。`pip`自动求解出`sklearn`版本`1.1.1`，结果不行。于是手动在安装`mmaction`之前`pip install sklearn==1.0.2`，之后即可正常安装高层的`mmaction`
-  - 适当放宽
-    - 有些时候原始的库会指定很多版本约束，但实际上能跑的范围比它的要宽，你就可以手动放宽
-    - 有些时候适当舍弃部分功能/微调部分代码即可大幅放宽约束，那就自己动动手吧（很多时候无非就是把`deprecated`的去掉而已
-    - 举例：`tape_proteins=0.5`这个包要求`pytorch=1.10.2`，这种严格要求甚至在部分显卡型号（参考[[torch-cuda]]）上会导致解出cpu版本的torch，但实际上不一定要是这个版本
-      - 所以可以用[[temp-solution]]思想，先装cpu torch把`tape_proteins`的检测应付掉，再`pip`装一个gpu的torch（过程中会卸载旧的torch）
-  - 可能被已有的东西干扰，在新环境就能很好求解，参考[[torch-cuda]]在非全新conda环境装`torch`可能导致解出cpu版本，重装[[refresh]]可能解决
-  - 可能直接换个求解器（包管理器）就解决了。比如[[conda/installation]]不行就换成[[pip]]
-# 其它
-- 有时旧版本才能破解，新版本不能，参考[[aida64]], [[pricing]]
-- 所以可以保留一些旧版安装包
-# 查看版本号
+[toc]
+# 版本号
+## 查看版本号
 - 命令行：往往是`--version, -V, -version`等
   - 如`ffmpeg -version`
   - `python -V`
@@ -81,3 +14,71 @@
 - 注：有时可以配好一份环境作为参考，之后出问题了就回这台好的环境，查看版本号
   - 刚刚所说的[[apt-version]]管理就派上用场了
   - 例如[[moveit-installation]], [[franka-ros-interface]]用到
+## 常识
+- 经常是`数字.数字.数字`等几层的形式。前面是大版本号，后面是小版本号。数字越大时间越靠后
+  - `3.2`肯定比`3.10`靠前
+  - 也就是不能简单对字符串按字典序排序！
+- 大版本号自然往往都是大改
+  - 比如`python3`相对`python2`，`tf2`相对`tf1`这种，完全就当成两个东西来看比较好2333
+- 有时不用数字做版本号
+  - 比如[[ros/installation]]，用`a`开始的字母做版本号，越靠后的版本字母越靠后
+- 安装软件，`git clone`等等时往往都要看清楚版本号
+  - 例如[[aruco]]，在`git clone`时要`-b`选择正确分支
+- 很多地方用`>=`，`==`，`=`等运算符表示版本号
+  - 比如`>=`表示数字更大（“之后”）
+  - [[conda/installation]]用`=`表示确定某个版本，[[pip]]用`==`
+- 一般版本号高性能好，功能多，参考[[software-management/upgrade]]，但不是永远版本越高越好
+## 数字以外各种标记
+- `lts`长期支持
+- `dev`开发中
+  - 可能不稳定
+  - 好处：多很多“开发用”的东西，比如源码，头文件等
+  - 有时即使你不是在开发，在需要源码、头文件、额外组件等时也需要安装`dev`版本
+- `64`或`32`对应64或32位系统
+  - 有时和操作系统名称结合，如`win32`版
+  - `amd64`只是说架构是AMD发明，并没有说intel的芯片就用不了
+- 操作系统名：`win, linux, mac`等
+- `portable`可以到处移动，而不是“安装了就动不了”
+- 商业软件：例如`perfessional`，`extreme`，`community`等区分等级
+  - 如[[aida64]]
+  - 不同等级序列号不能混用
+    - 比如[[pro-license]]
+  - 有时，有序列号可以升级到高等级
+    - 如[[windows/upgrade]]
+  - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
+  - 更多参考[[pricing]]
+- 有时出现有趣现象：标记变成本体
+  - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种
+# 版本依赖
+## 原因实例
+- trivial修改
+  - [[moveit-real-robot]]提到的更新时，有个文件名改变，从`panda_control_moveit_rviz.launch`变成`franka_control.launch`，功能不变
+  - [[franka-ros-interface]]（爱好者自己写的包，不维护了），`.launch`文件中出现多余参数，接口不匹配
+## 上层依赖底层
+- 常见现象：上层依赖底层。想装新的上层，必须要新的底层
+- 举例：
+  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`（太低）导致无法装[[pip]]版本`22`，导致无法装`tensorflow2.9`
+    - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
+    - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
+  - vscode相关
+    - [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
+    - [[launch]] python时，如果`python`版本过低，就用不了版本高的vscode [[extensions/python]]
+    - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
+      - 原因：其实是trivial的。一些路径修改导致不匹配不兼容
+  - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到他的一个旧版本
+- “更新[[software-management/upgrade]]导致用不了”：参考[[software-management/upgrade]]
+## 推论
+- 上层版本越高，需求的底层版本也越高
+- 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低
+- 比如[[torch-cuda]]中提到硬件太新导致有下界（3090 GPU就不能使用`cuda 10.x`），而[[ubuntu-nvidia-drivers]]太旧又导致有上界
+## 无法求解依赖？
+- 各级依赖之间往往有许多复杂约束，如果求解器性能不好，可能陷入死局，本来可以解的也变得不能解了（扩展阅读：[[5-constraint-satisfaction]]）
+  - 所以有可能人工求解一下，然后确定几个重要节点，以帮助求解器解决
+  - 碰到过的例子：`mmaction`（高级）依赖于`sklearn`（低级），`sklearn`依赖于python版本。`pip`自动求解出`sklearn`版本`1.1.1`，结果不行。于是手动在安装`mmaction`之前`pip install sklearn==1.0.2`，之后即可正常安装高层的`mmaction`
+- 适当放宽
+  - 有些时候原始的库会指定很多版本约束，但实际上能跑的范围比它的要宽，你就可以手动放宽
+  - 有些时候适当舍弃部分功能/微调部分代码即可大幅放宽约束，那就自己动动手吧（很多时候无非就是把`deprecated`的去掉而已）
+  - 举例：`tape_proteins=0.5`这个包要求`pytorch=1.10.2`，这种严格要求甚至在部分显卡型号（参考[[torch-cuda]]）上会导致解出cpu版本的torch，但实际上，根本不一定要是这个版本
+    - 所以可以用[[temp-solution]]，[[workaround]]思想，先装cpu torch把`tape_proteins`的检测应付掉，再`pip`装一个gpu的torch（过程中会卸载旧的torch）
+- 可能被已有的东西干扰，在新环境就能很好求解，参考[[torch-cuda]]在非全新conda环境装`torch`可能导致解出cpu版本，重装[[refresh]]可能解决
+- 可能直接换个求解器（包管理器）就解决了。比如[[conda/installation]]不行就换成[[pip]]

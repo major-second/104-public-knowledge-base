@@ -14,8 +14,13 @@
     - `torch`用的是自己集成的`cudatoolkit`而不需要`nvcc`
   - `nvidia-smi`显示的版本是（一般）你能用的cuda版本上限
 - 兼容性问题
-  - 首先新GPU（如3090）不能使用老cuda如10.x
-    - 否则可能`torch.cuda.is_available()`是`True`，但是跑起来就报`RuntimeError: NCCL error in: /pytorch/torch/lib/c10d/ProcessGroupNCCL.cpp:38, unhandled cuda error, NCCL version 2.7.8`这种东西
+  - 首先新GPU不能使用老cuda，老torch
+    - 如3090不能用cuda10.x
+    - 如A100架构是`sm_80`，非常高，没法用版本低的`torch`
+    - 否则可能
+      - `torch.cuda.is_available()`是`True`
+      - 但是尝试随便搞些张量`.cuda()`，加加减减运算，跑起来
+      - 就报`RuntimeError: NCCL error in: /pytorch/torch/lib/c10d/ProcessGroupNCCL.cpp:38, unhandled cuda error, NCCL version 2.7.8`，或者架构`sm_??`不匹配这种东西
     - [参考](https://www.jianshu.com/p/978bc51029fa)
   - 其次[[ubuntu-nvidia-drivers]]中`nvidia-smi`显示的版本（一般）是你能用的cuda版本上限，[参考](https://www.jianshu.com/p/eb5335708f2a)，[具体参考nvidia官网文档](https://docs.nvidia.com/deploy/cuda-compatibility/index.html#cuda-intro)
   - 再次，新创立的环境是最保险的

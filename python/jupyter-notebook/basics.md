@@ -3,8 +3,11 @@
 - `pip install ipykernel`补包
   - 注：当然也可以在`conda`环境中`pip install ipykernel`做
 # 好处
+- 比较根本的一条：可以把东西读进内存，灵活进行下游处理。这是相比`.py`的根本区别！
 - 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
   - `markdown` block可以有数学公式、图片等作为“高级[[comment]]”
+  - `markdown`标题可以作为目录层级管理等
+    - 特别是有[[nbextension]]时功能更加强大
   - `python` block可以运行`python`代码
 - 把`python`代码按照`cell`为单位排列
   - 可以方便模块化
