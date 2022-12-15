@@ -1,0 +1,13 @@
+- 前置：[[6-env]]
+- 地址`~/.bashrc`（[[zsh]]就是`~/.zshrc`以此类推）
+- 作用：终端启动时自动运行
+- 举例
+  - `export`环境变量[[6-env]]
+    - 如[[configure]]代理
+  - 设置`alias`，例如[[pycharm/installation]]
+  - 启动服务例如[[server-config]]
+  - [[conda/installation]]中提到，用于初始化conda
+- 一些不当的例子
+  - 在`~/.bashrc`中写`cd ...`，`module load`等等，它们容易让别人迷惑
+    - `module load`和`conda`不同，运行后不显式地在左边显示环境
+    - explicit is better than implicit

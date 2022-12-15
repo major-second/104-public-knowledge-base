@@ -3,3 +3,4 @@
 - 和常见的模块比较不同的地方
   - 如果不`batch_first=True`，则是默认序列长$L$对应维度在前
   - 即使`batch_first=True`了，也和[[conv]]不同：不是`N, C`，而是`N, L`
+- 对于神经网络训练，一般需要较多数据，可牺牲[[independent]]，[参考](https://stats.stackexchange.com/questions/490813/is-it-better-to-split-sequences-into-overlapping-or-non-overlapping-training-sam)

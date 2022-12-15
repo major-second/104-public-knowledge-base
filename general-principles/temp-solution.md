@@ -21,5 +21,5 @@
 - 现实生活物品中也有这种思想，参考[[screen]]中带拉环手机壳的一种设计
 - “不钻牛角尖”
   - 人的精力是有限的，有时可以不求甚解，然后就一直不求甚解
-  - 例如[[alternative-method]]
+  - 例如[[workaround]]
   - 例如[[franka-ros-interface]]中`grasp, open`之后`home_joints`突然就能用了

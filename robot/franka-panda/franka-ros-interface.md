@@ -5,7 +5,7 @@
   - 比如一些运行现象和文档不对应
   - 比如[[zsh]]用不了（[[non-standard]]）
   - 比如可能缺包
-  - 比如出现过对于gripper，`.home_joints()`不能正常运行，然后`.grasp(), .open()`都能，且`.grasp(), .open()`之后`.home_joints()`又能了。推测是这个懒人包里充满了bug. 我们知道唯象现象即可（参考[[alternative-method]]，[[temp-solution]]）
+  - 比如出现过对于gripper，`.home_joints()`不能正常运行，然后`.grasp(), .open()`都能，且`.grasp(), .open()`之后`.home_joints()`又能了。推测是这个懒人包里充满了bug. 我们知道唯象现象即可（参考[[workaround]]，[[temp-solution]]）
   - 时间来到2022.12，默认`apt`安装的[[moveit-installation]]已经不兼容它了……整个包也显得风雨飘摇到处报错
     - 目前：根据报错提示，改一下`catkin_ws/src/panda_moveit_config/launch/move_group.launch`，删除多余的`fake*`参数
       - 参考[[vim/basics]]用`/`搜索`fake`，找到所有出现，删除对应的多余行

@@ -20,3 +20,4 @@ for i in range(1000):
         obs = env.reset()
 ```
 - `.learn`可能不够灵活，可以分别使用`.collect_rollouts`和`.train`等函数
+- 使用[[tensorboard]]只需在初始化`A2C`对象时加`tensorboard_log="./logs"`这种关键字参数

@@ -1,5 +1,5 @@
 - 软件、资源收费相关（不想交钱怎么办？）
-- 找[[open-source]]的[[alternative-method]]，并[[aggregation]]等
+- 找[[open-source]]的[[workaround]]，并[[aggregation]]等
   - 例如[[tagui]], [[robocorp/basics/installation]]而不是[[my-first-flow]]
 - 利用价格歧视，例如[[leetcode-solutions/0-metadata]]
 - [[search-info/general]]

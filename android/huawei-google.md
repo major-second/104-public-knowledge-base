@@ -4,4 +4,4 @@
   - AppGallery应用商店改变地区
   - 搜索下载GSpace
   - ![](gspace.png)
-- [[alternative-method]]: 使用apkpure等第三方下载app并安装，参考[[download-resource]]
+- [[workaround]]: 使用apkpure等第三方下载app并安装，参考[[download-resource]]

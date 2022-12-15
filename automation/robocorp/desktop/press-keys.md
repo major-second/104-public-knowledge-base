@@ -25,4 +25,4 @@
 其中`zhong.png`是右下角托盘中文状态的“中”字
 - 参考例子：`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy`
 - 目前`alt + space`快捷键功能不正常，原因未知，但可以通过[[built-in-keyboard-shortcuts/window]]的`win + 方向键`凑合一下
-  - 这就是[[alternative-method]]的思想
+  - 这就是[[workaround]]的思想
