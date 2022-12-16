@@ -2,6 +2,7 @@
   - 如[[6-env]]，可以用`os.environ["KEY"] = value`修改
     - 等价于运行python脚本前先（shell脚本运行）`export KEY=value`
     - 应用：[[torch-cuda]]中指定可见哪些显卡
+    - 当然也有`os.environ.get('KEY')`的用法
   - 如[[minimum]]中`os.getpid()`和`os.getppid()`查看进程号、父进程号
   - `os.mkdir`新建一个文件夹
     - `os.makedirs(<路径>, exist_ok=True)`：可递归创建，且已存在也不报错

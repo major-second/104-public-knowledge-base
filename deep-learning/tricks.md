@@ -1,8 +1,20 @@
-## 参考
 - [一篇知乎技巧trick总结](https://zhuanlan.zhihu.com/p/95081141)
-- [正则化总结](https://zhuanlan.zhihu.com/p/69025058)
-## 列举和评论
+## 动力学
+- 参见[[2-eval]]
+- 实践中常常：训练，验证，测试
+  - 看`val, test`的loss曲线，性能曲线，可判断是
+    - 欠拟合（如学习率、EPOCH不够等）
+    - 不稳定不收敛（如学习率太大，BS太小）
+    - 还是过拟合
+  - 这些是最常见的情况
+    - 所以训练过程中最重要的参数就是**学习率、BS、EPOCH**等超参
+    - 三者相互关联并非独立变化
+    - 比如：BS太大可能导致同样EPOCH更新次数变少、BS和LR需要联系着变化等
+- 欠拟合、学习率太大BS太小都好解决（反正训练集摆在那，你拟合好就行）
+- 过拟合的解决不平凡，从而引出“正则化”
+- 训练集一般需要`shuffle`
 ### 正则化
+- [正则化总结](https://zhuanlan.zhihu.com/p/69025058)
 - 原理参考[[2-eval]], [[overfit]]等
 - early stop（即：看验证集，别等验证集loss回升了才停）
   - 其实践参考[[tensorboard]], [[checkpoint]]等
@@ -10,16 +22,20 @@
   - 参考[[11-feature-selection]]中LASSO，岭回归
   - l1: 可以导致稀疏性
   - l2
-    - 类似岭回归。比较常见一般的罚项
-    - 由于$x^2$导数正比于$x$，所以最简单的情况，weight decay和l2正则化损失是对应的
+    - 类似岭回归。是比较常见、一般的罚项
+    - 由于$x^2$导数正比于$x$，所以对于最简单的情况，weight decay和l2正则化损失是对应的
       - 当然，对于复杂一些的优化器如Adam就不一定了
       - 参考[[deep-learning/optimization]]
       - torch实践：在[[basics/optimization]]中实现，如`SGD(其它参数, weight_decay=1e-2)`
-### 结构
+- 当然很多时候，如果你疯狂以`test`上的结果为标准，就还是有过拟合嫌疑！
+## 结构
 - 以2的倍数为间隔调MLP隐层宽度
-### [[feature-engineering]]
+- [[residual]]使得可以增加更多层
+  - 哈哈，你把residual看作一个trick？也行吧哈哈
+## [[feature-engineering]]
 - 对input做winsorization缩尾（参考[[12-robust]]）
   - 例如暴力看[[quantile]]，把极端值clip一下
   - 有时对线性和对MLP都能提升，但是对MLP提升多。推测可能是MLP需要数据的某种“密度”大，因此input极差大自然会boil
 - input整体的normalization（当然要使用**训练集**的mean, std）
   - 注意小心极差/标准差极大的维度，做了反而不行（所以要和winsorize结合）
+- 同理，中间层[[batchnorm]]等，参考[[batchnorm]]
