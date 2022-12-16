@@ -11,7 +11,10 @@
       - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
     - 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-notebook/basics]]中进不去函数
   - 在小规模到大规模前，可能可以加入“中规模”，并多print东西，方便看到性能瓶颈所在（有一次在`matplotlib`中，[[scatter]]了几百万个点导致慢，233）
-- 可以分成多段，逐段调试
+- 可以分成多段，逐段（或单元）测试调试
+  - 参考[[unittest]]
+  - 如果几个bug堆到一起，会非常非常麻烦
+    - 一次经验：[[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序，且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]，且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值。结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
   - 例如[[jupyter-notebook/basics]]的原生在线用法不支持断点，所以要多分几段
   - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
 - 在跑一个大实验之前，下载大东西等等之前要做的调试

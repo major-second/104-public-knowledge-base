@@ -6,6 +6,9 @@
   - 如[[minimum]]中`os.getpid()`和`os.getppid()`查看进程号、父进程号
   - `os.mkdir`新建一个文件夹
     - `os.makedirs(<路径>, exist_ok=True)`：可递归创建，且已存在也不报错
+  - `os.listdir`列出文件夹下文件
+    - 不一定按顺序
+    - 例如[[lightning/basics]]提到这会对`trainer.test`造成麻烦
 - `shutil`：更多和系统相关的，类似于`sh`的一些基本操作，参考[[cp-mv-rm]]
   - `move`移动
   - `rmtree`递归删除
