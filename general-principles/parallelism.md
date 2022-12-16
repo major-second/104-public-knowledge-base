@@ -1,13 +1,13 @@
 充分利用机器资源进行并行提速！
 - 调包并行
   - 如[[minimum]]中利用多进程`Pool`的`p.map`并行
-  - 如[[numpy/basic]]可以`np.random.randint()`并行生成随机数
+  - 如[[numpy/basics]]可以`np.random.randint()`并行生成随机数
   - [[time-series]]可做时间序列相关处理
   - [[line-collection]]可并行画很多线段
 - `torch`中[[tensor-calculator]]、[[profile]]证明用GPU大规模并行可提速
   - 一个实际例子：巧用[[indexing]]，为矩阵的上三角部分并行赋值
 - [[tradeoff]]
-  - 速度：GPU > CPU的[[numpy/basic]]运算 > python的完全`for`循环串行（臭名昭著慢）
+  - 速度：GPU > CPU的[[numpy/basics]]运算 > python的完全`for`循环串行（臭名昭著慢）
   - 所能承载的数据量：一般相反。例如服务器上显存往往在10G量级，内存往往在100G量级
 - 一个“算法题”示例：[[manipulation]]和[[indexing]]综合应用
   - 需求

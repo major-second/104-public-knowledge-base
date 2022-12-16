@@ -36,6 +36,8 @@
 - `F10`单步
 - `F11`进入
 - `Shift+F11`跳出当前（函数等等）
+- <code>Ctrl + &#96;</code>终端
+- `Ctrl + Shift + Y` [[debug-console]]
 ## 搜索
 - `Ctrl + Shift + P`搜索命令（称为Command Palette）
   - 参考[[extensions/general]]，安装插件可能出现新的命令

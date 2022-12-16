@@ -17,5 +17,5 @@
   - 体现`2, 3`
 - 如[[dataloader]] `pin_memory`空间换时间
   - 体现`2`
-- 如[[parallelism]]讲到GPU -> CPU [[numpy/basic]] -> for循环三级
+- 如[[parallelism]]讲到GPU -> CPU [[numpy/basics]] -> for循环三级
   - 体现`1, 2`

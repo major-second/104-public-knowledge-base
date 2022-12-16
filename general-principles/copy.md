@@ -6,7 +6,7 @@
 - shell中的`Ctrl+Shift+C`（注意`Ctrl+C`是停止，这很坑。参考[[jupyter-notebook/basics]]）
 ## python
 - [[standard-modules/copy]]
-- 很多对象例如[[numpy/basic]]数组，[[tensor-calculator]]张量等都可以`.copy()`
+- 很多对象例如[[numpy/basics]]数组，[[tensor-calculator]]张量等都可以`.copy()`
 - 表等等可以`[:]`
 # 优劣
 - 好处

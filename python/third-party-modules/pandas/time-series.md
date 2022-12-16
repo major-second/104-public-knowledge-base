@@ -36,7 +36,7 @@
   - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
 - `values`取出具体数值
-  - 是[[numpy/basic]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basic]]
+  - 是[[numpy/basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basics]]
 - 增加列：`data.loc[:, key] = value`
   - 可以是赋予单个数，也可以是序列
   - 时至2022.8`data[key] = value`有时可以，有时不行！不要冒险。这是pandas官方的一个tricky bug，参考[[leaky-abstraction]]

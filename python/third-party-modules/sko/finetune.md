@@ -2,6 +2,6 @@
   - [[quick-start]]
   - [[regression]]
   - [[time-series]]
-  - [[numpy/basic]]
+  - [[numpy/basics]]
   - 注意要防止[[general-principles/special-case]]报错
 - 参见同名`.ipynb`

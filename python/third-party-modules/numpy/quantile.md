@@ -1,1 +1,1 @@
-`np.quantile(数组, 百分数)`，可以结合[[numpy/basic]]中的`where`，`max`等使用找到下标
+`np.quantile(数组, 百分数)`，可以结合[[numpy/basics]]中的`where`，`max`等使用找到下标

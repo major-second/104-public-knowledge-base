@@ -28,7 +28,7 @@
   - 对于[[time-series]]，就有速度、加速度、位移、路程等
 - 对分布“正规化”
   - 有时除以某个“基底”量，进行无量纲化，即$\frac x{x_0}$
-  - 有时强行过滤异常值，或者用[[numpy/basic]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
+  - 有时强行过滤异常值，或者用[[numpy/basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
     - 参考[[12-robust]]，[[1x1conv]]
   - 有时通过某种变化强行变成正态/均匀分布
     - 例如排序取分位数变为均匀分布（但千万小心info leak问题。可以考虑[[rolling]]在前一段时间内做rank看分位数）
