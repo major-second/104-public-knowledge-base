@@ -1,1 +1,3 @@
-[其它转iso](https://crystalidea.com/anytoiso/download)
+- [其它转iso](https://crystalidea.com/anytoiso/download)
+- iso用处：如[[u-disk-boot]], [[win7-virtual]], [[win98-virtual]]
+- 平时，windows电脑可以直接点击打开，装载到虚拟光驱

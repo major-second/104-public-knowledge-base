@@ -13,6 +13,7 @@
   - [[teams]]
   - [[baidu-net-disk]]等网盘
   - [[bluetooth/basics]]
+- [[xxd-diff]]：转换文本和二进制，在只能传输文本的场合实际传输二进制
 - 硬件
   - U盘、移动硬盘（注意[[interface]]种类，是否USB3.0等）
   - 电脑手机连接
