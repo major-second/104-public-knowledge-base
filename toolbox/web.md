@@ -39,3 +39,5 @@
 - 在线会议
   - 网页版[[teams]], [[zoom]]都挺好用的
   - [[tencent-meeting]]可能需要 [海外版](https://voovmeeting.com/)才有网页版，而且只能加入，不能创建会议
+- 电子邮箱
+  - 和[[outlook]]各有优劣！

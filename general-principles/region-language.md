@@ -10,6 +10,10 @@
   - 不同语言的区别可能比你想象中的大，并不[[independent]]
     - 价格歧视：[[leetcode-solutions/0-metadata]]
     - 是否有地区特色功能：[[word]]
+- 中文造成麻烦
+  - 例如[[vscode/edit]]不能自动中文分词，`Ctrl+方向键`没用，[[settings/snippets]]也会造成麻烦
+    - [[wechat-tips]]本土的就可以
+  - 例如windows如果一直用英文系统，那么自带[[toolbox/zip-unzip]]工具压缩东西不能出现中文。替代方法：7-zip
 - 输入法
   - 拼音：全拼、双拼（需要背键位但是速度快很多）等
   - 五笔、四角等非拼音，现在不常用了

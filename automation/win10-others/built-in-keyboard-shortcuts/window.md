@@ -18,3 +18,5 @@ type: efficiency
 - `Win + 方向键`，有什么作用自己尝试
   - 比如可以靠边靠角
   - 或者最大/最小化（如连续两次`down`从最大化到最小化）
+- `Win + V`高级剪贴板（比如可以保存多条在剪贴板）
+  - [[general-principles/copy]]
