@@ -31,3 +31,6 @@
     - 需要`View - Cell Toolbar`设置可见
     - 点插件名，可以看到Parameter处有一个选项：是否启动Kernel自动运行
   - Variable Inspector
+    - notebook编辑界面，有个按钮打开面板
+    - 打开后，随时在旁边及时看到变量
+    - 能看到大小，方便做[[memory]]资源监测

@@ -18,6 +18,11 @@
 - 可以看到，用[[f-string]]的大括号结合推导式`for`生成了一个列表，然后拼接在一起可得到想要的字符串
 - 使用了<code>\t-&nbsp;</code>的“二级item”，`$$`包裹数学公式，`![](<图片名.jpg>)`等常见markdown功能，有的还是[[enhanced]]功能
 - 之后只需`open`一个`.md`文件写进去即可
+### `shell -> shell`
+- [[pip]]和[[conda/commands]]要求格式不同。一个是`<包名>==<版本>`，一个是`<包名>=<版本>`
+- 所以可以在一个`.txt`中写`<包名>$<版本>`，然后用`pip install ${module/\$/==}`之类的
+- 相当于用`shell`的`${//}`语法编辑了`shell`命令
+- `shell`这种语言的特点就是易于编辑字符串，易于使用元编程
 ### `shell -> python3 -> python2`
 - 本例子前置知识[[sed]]，[[f-string]]，[[version]]，[[interact]]
 - 你在编辑器中写
