@@ -35,6 +35,7 @@ done
     - 例如`list='1 2 3'; for var in $list" 4 "$list; do echo $var; done`却输出5行（注意`"`导致的tokenize结果变化）
   - 可以使用`$()`包裹`cat`或`ls`等输出的结果
     - 注意对于`cat`输出文件中的内容作为表，空格可能导致麻烦
+  - 整数：`for i in {1..10}`，左右都包含
 ```sh
 $ cat 1
 1 2 3

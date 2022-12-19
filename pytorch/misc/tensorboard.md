@@ -25,7 +25,7 @@ writer.close()
 - vscode集成：`Ctrl + Shift + P`然后`Python: Launch TensorBoard`
   - 可以自动搜索所有子文件夹中的记录，并启动网页
   - 前置：用vscode [[python]]插件，并右下角先选好有`tensorboard`包的解释器
-  - 注：此处如果你版本不对，vscode还会自动给你装新版
+  - 注：此处如果你版本太低会有[[warning]]，但可以尝试不管
 # 网页中的操作
 - 右上角设置
   - 可以自动以一定时间间隔reload

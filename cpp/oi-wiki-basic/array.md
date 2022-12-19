@@ -7,7 +7,7 @@ https://oi-wiki.org/lang/array/
   - 当然，`int v[n];`不保证一定报错
     - 这是g++扩展，不是标准化的一部分，不保证所有地方能用（但OI有时恰好可以用）
     - 总之别指望
-    - 参考阅读[[exception-warning]]
+    - 参考阅读[[warning]]
     - 参考：https://zh.wikipedia.org/zh-cn/%E5%8F%AF%E5%8F%98%E9%95%BF%E6%95%B0%E7%BB%84
     - 变长数组不能列表初始化！
 - 不能直接用`=`复制

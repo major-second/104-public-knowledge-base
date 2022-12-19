@@ -13,6 +13,8 @@ sudo systemctl start v2raya.service; \
 sudo systemctl enable v2raya.service
 ```
 安装后的具体操作参考[[linux-client]]，[[settings-and-configurations]]等等
+# troubleshooting
+- 代理突然出问题用不了（比如[[pip]], [[conda/commands]]等不正常）？可以尝试登录一下配置[[node]]的端口（`2017`）更新，换换[[node]]试试
 - 一个有意思的错误
   - v2raya默认使用`2017`配置[[node]]，而使用`20171`作为代理用的端口。请区分好两者
   - 如果你`http_proxy`错误设置成了`localhost:2017`（把一个本来是有GUI用来配置[[node]]的端口当成了代理用的端口），那么报错`We're sorry but v2rayA-GUI doesn't work properly without JavaScript enabled. Please enable it to continue.`

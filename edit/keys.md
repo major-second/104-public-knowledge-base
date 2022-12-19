@@ -1,0 +1,3 @@
+- `PgUp, PgDn, Home, End`（可加shift）
+- `Del, Backspace`
+- `Insert`改写
