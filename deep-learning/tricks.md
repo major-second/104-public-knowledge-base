@@ -20,6 +20,7 @@
   - 其实践参考[[tensorboard]], [[checkpoint]]等
 - 增加正则化惩罚项作为损失函数
   - 参考[[11-feature-selection]]中LASSO，岭回归
+    - 其实[[11-feature-selection]]本身也是很有用的防过拟合手段！
   - l1: 可以导致稀疏性
   - l2
     - 类似岭回归。是比较常见、一般的罚项

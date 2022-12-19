@@ -1,4 +1,5 @@
 - 如果用英文版office，就没有“五号字”这种东西，需要[中文字号对照数字](https://www.jianshu.com/p/e8d263efe7f7)
+  - 参考[[region-language]]
 - 页眉页脚：在相应区域右键![](header.png)
 - 脚注
   - 如图 ![](footnote.png)

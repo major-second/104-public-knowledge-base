@@ -1,0 +1,16 @@
+- 地区相关
+  - [[proxy/basics]]换身份
+    - 有些网站不换墙外ip上不去
+    - 另一些情况不换身份也能上，但也都可以通过[[proxy/basics]]换身份得到不同结果、效果
+      - 如墙内网络公开ip、[[chatgpt]]是否能用、谷歌结果和YouTube广告等
+  - 系统/应用商店设置换身份：如[[huawei-google]]，[[subsystem-for-android]]都需要
+- 语言相关
+  - ubuntu: [[language]], 如[[try-ubuntu]]提到了
+  - windows: 开始菜单有地区、语言、输入法设置等
+  - 不同语言的区别可能比你想象中的大，并不[[independent]]
+    - 价格歧视：[[leetcode-solutions/0-metadata]]
+    - 是否有地区特色功能：[[word]]
+- 输入法
+  - 拼音：全拼、双拼（需要背键位但是速度快很多）等
+  - 五笔、四角等非拼音，现在不常用了
+  - 语音输入又快又好

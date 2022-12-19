@@ -1,7 +1,7 @@
 - 软件、资源收费相关（不想交钱怎么办？）
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
   - 例如[[tagui]], [[robocorp/basics/installation]]而不是[[my-first-flow]]
-- 利用价格歧视，例如[[leetcode-solutions/0-metadata]]
+- 利用不同[[region-language]]价格歧视，例如[[leetcode-solutions/0-metadata]]
 - [[search-info/general]]
   - 直接百度序列号，曾经[[aida64]]就可以用
   - 搜注册机（俄罗斯又穷技术力又强，所以很多这种东西和俄罗斯有关）

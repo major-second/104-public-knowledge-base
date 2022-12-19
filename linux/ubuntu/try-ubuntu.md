@@ -15,7 +15,7 @@ Could serve as some [[temp-solution]]s.
     - 设置好后火狐可正常上网
     - 比如我现在就在用Ubuntu火狐上博客编辑文章, record current progress as markdowns.
 ## 语言和输入法
-`Try...` slightly differs from a normal Ubuntu system, ref: [[ubuntu-settings/language]]
+`Try...` slightly differs from a normal Ubuntu system, ref: [[ubuntu/language]]
 But mostly the same.
 ## 常用快捷键
 - `Ctrl + Alt + T`打开终端，终端处`Ctrl + Shift + T`在同一路径同一窗口增加一个终端标签（这样多个终端放到一个窗口省空间）
