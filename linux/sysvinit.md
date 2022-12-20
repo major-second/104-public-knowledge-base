@@ -1,4 +1,7 @@
-参考[[systemd]]
-sysvinit和systemd是并列关系，[参考](https://www.cnblogs.com/a5idc/p/13752839.html)
-docker中常用sysvinit命令，因为没有`systemd`，典型报错`System has not been booted with systemd as init system (PID 1). Can't operate.`
-如`service ssh start`，`service ssh restart`等，参考[[docker/ssh]]
+- 参考[[systemd]]
+- sysvinit和systemd是并列关系，[参考](https://www.cnblogs.com/a5idc/p/13752839.html)
+  - sysvinit命令如`service ssh start`，`service ssh restart`等，和[[systemd]]命令往往有对应关系
+- 有时用sysvinit命令，因为没有`systemd`
+  - 典型报错`System has not been booted with systemd as init system (PID 1). Can't operate.`
+  - docker中就是，如[[docker/ssh]]
+  - [[subsystem-for-linux]]在2022.12也没有，[参考](https://github.com/MicrosoftDocs/WSL/issues/457)

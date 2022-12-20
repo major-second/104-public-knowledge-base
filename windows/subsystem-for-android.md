@@ -20,3 +20,4 @@
   - 发[[wechat-tips]]朋友圈等只能用安卓的功能
   - 进行自动化（如游戏、薅羊毛签到）等
   - 大材小用，自然非常流畅
+- 代理[[configure]]（使用主机的）：需要[[subsystem-for-linux]]，[参考](https://zhuanlan.zhihu.com/p/459444929)

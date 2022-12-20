@@ -49,8 +49,10 @@ export http_proxy="localhost:<端口号>"
   - `curl cip.cc`不行（和linux表现不同）
   - `curl ipinfo.io`可以
   - `curl google.com`看有没有内容也可以
+- 注：`cip.cc`, `ipinfo.io`不同：可能是自动分支了墙内墙外，非全局
 # 举例
 - [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
+- [[subsystem-for-android]]不用代理则不需要[[subsystem-for-linux]]，但用的话就可能需要，比较麻烦
 # 是否使用全局模式
 代理客户端中往往有是否global（全局）的设置
 - global优点
@@ -60,3 +62,7 @@ export http_proxy="localhost:<端口号>"
   - 有些网站必须墙内身份才能上，参考[[proxy/basics]]
   - 有些网站墙内比墙外稳定/速度快
   - 浪费代理流量
+# Inbound设置
+- 监听：`127.0.0.1`只有自己，`0.0.0.0`也可以给别人用
+- [参考](https://github.com/qv2ray/qv2ray/issues/414)
+- 在[[subsystem-for-linux]]中用代理就需要
