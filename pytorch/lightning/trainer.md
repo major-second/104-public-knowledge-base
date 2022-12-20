@@ -5,7 +5,11 @@
   - `trainer.test(model, test_dataloader)`
 - 自身参数中实用的一些
   - `check_val_every_n_epoch=10`：每10 epoch才val（如果这样，强烈建议不要关闭sanity check）
+  - `num_sanity_val_steps=0`关闭sanity check
   - `accelerator='gpu', devices=[0,1]`使用0，1两张卡
     - 当然现在有时多卡还是会有未知麻烦，莫名其妙报错。直接`devices=[0]`比较保险吧！参考[[workaround]]
   - `logger=...`指定[[log]]所用的logger
   - `max_epochs`指定最多多少轮
+  - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
+  - `limit_train_batches`防止一个epoch过多，不好validate
+    - 需要和shuffle了的[[dataloader]]配合使用

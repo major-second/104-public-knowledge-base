@@ -1,0 +1,11 @@
+- 前置[[subsystem-for-linux]]
+- [参考](https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment?source=recommendations)
+- 主要有价值信息
+  - 文件系统不要混用否则降低性能（但不是完全不行）
+  - linux中`explore.exe .`打开windows式资源管理器
+    - 可以看到是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
+  - [[remote-ssh]]有了之后
+    - `code .`打开vscode
+    - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可
+- troubleshooting
+  - [[tensorboard]]启动时，底下提示网址可能并不是`localhost:<端口>`，但你还是应该访问`localhost:<端口>`，别听他的

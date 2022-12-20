@@ -15,3 +15,5 @@
     - [参考](https://zhuanlan.zhihu.com/p/153124468)
     - 注意需要[[configure]]监听`0.0.0.0`）
     - 然后当然就可以[[zsh]]等
+  - [[conda/installation]]
+  - 比如[[subsystem-for-linux-develop]]，可用vscode等
