@@ -24,3 +24,5 @@
     - 比如匹配`"/pip$"`可找到`pip`这个可执行程序，而不显示`/pip/`这种结构，其中`$`表示结束
     - 比如`while [[ 1 -eq 1 ]]; do sleep 2; nvidia-smi | grep "[4-7]\s\+N/A\s\+N/A" | awk '{print $5}' | xargs sudo kill -9; done`定期清理后4张卡程序
       - 哈哈这个多少有点[[map-reduce]]的意味（狗头）
+  - 找某个表达式出现的脚标index：`echo foobar | grep -bo bar | awk -F: '{print $1}'`
+    - 可结合[[awk-cut]]
