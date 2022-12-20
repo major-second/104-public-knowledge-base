@@ -25,7 +25,7 @@
     - 一个例子：`10.1002/9781119571278`
     - 就方便去[Sci-Hub](https://www.sci-hub.st/)找
     - 也可以去[doi官网](https://www.doi.org/)看
-- 盗版软件（破解[[version]]）
+- 盗版软件（破解[[version]]，参考[[pricing]]）
   - 上网找序列号，如[[pro-license]]，[[aida64]]
   - [[search-info/general]]中提到暗网海盗湾，[[telegram]]等地方可能有盗版安装包或序列号
   - [[internet-archive]]等地方可能有一些老古董已经公布免费序列号了

@@ -1,0 +1,22 @@
+- 前置
+  - 了解[[vpn]], [[proxy/basics]]等
+  - 最好有一个能翻墙的[[vpn]]，而不是[[proxy/basics]]，否则很麻烦
+  - [[windows/env-var]]
+- 过程
+  - 请先阅读参考！
+    - [微软官方教程](https://support.microsoft.com/zh-cn/windows/%E5%9C%A8-windows-%E4%B8%8A%E5%AE%89%E8%A3%85%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%92%8Camazon-appstore-f8d0abb5-44ad-47d8-b9fb-ad6b1459ff6c)
+      - 里面有讲到支持的地区，这可以作为参考让你选择[[vpn]]
+    - [知乎教程](https://zhuanlan.zhihu.com/p/424959704)，进一步讲了安装自己的apk的方法等，这样就可以用[[download-resource]]中的apkpure等
+    - [安装自己apk（adb调试）参考](https://www.jianeryi.com/1346.html)
+  - 过程中有时出玄学问题需要[[refresh]]重启
+  - 用[[vpn]]而不是[[proxy/basics]]上网（其实[[proxy/basics]]也可以但是可能操作更复杂，因为[[configure]]是需要应用主动去用）
+  - `Microsoft Store`搜索`Amazon Appstore`，下载安装。登录Amazon账号
+  - 然后可以在Amazon中下载已有应用
+  - 或参考[知乎教程](https://zhuanlan.zhihu.com/p/424959704)装第三方（需要开发者模式）
+    - 需要下载解压 [platform tools](https://developer.android.com/studio/releases/platform-tools#downloads.html)，设置[[windows/env-var]]等
+  - 推荐先安装apkpure之类的应用商店，参考[[download-resource]]，然后就可以用应用商店下载安装应用，无论国内[[wechat-tips]]还是国外软件都行
+    - 这是[[temp-solution]]思想。只需要`adb`比较麻烦地装一次！
+- 结果：可以用电脑
+  - 发[[wechat-tips]]朋友圈等只能用安卓的功能
+  - 进行自动化（如游戏、薅羊毛签到）等
+  - 大材小用，自然非常流畅

@@ -5,19 +5,22 @@
     - 至2022.10无需翻墙，质量介于百度谷歌之间的：必应！
   - 重要技巧（以下均针对谷歌。其它搜索引擎可能不同）
     - 加引号表示“必须包含某某”
-    - `-<字母>`这种会被理解成**不要某某**。所以搜索`python -m`这种东西，要加引号成`"python -m"`这样搜
+    - `-<字母>`这种会被理解成**不要某某**。所以搜索`python -m`这种东西
+      - 要加引号成`"python -m"`这样搜
     - `site:网址`限制网址
 - 查找
   - 快捷键
-    - 很多地方`Ctrl+F`查找
+    - 很多地方可以`Ctrl+F`查找，`Ctrl+H`替换，比如[[word]]
     - vscode的[[settings/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
     - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
+      - 此时需要禁用[[region-language]]的繁简切换快捷键（一般是`Ctrl+Shift+F`，产生冲突）
     - 查找时，往往有区分大小写、全字匹配、正则表达式等按钮/选项，如 ![](vscode-options.png)
       - 全字匹配：不会错误匹配一些不需要的“子串”，比如abc中的bc
       - 正则表达式参考[[regex]]
   - 很多其它地方也可以使用[[regex]]
     - 如linux系统的[[find-grep]]
 - 资源站
+  - [[download-resource]]
   - [[resources-and-archives/aliyun]]
   - [[resources-and-archives/baidu-net-disk]]
   - [[internet-archive]]
@@ -31,8 +34,8 @@
       - [私募排排网](https://www.simuwang.com/)
       - [glassdoor](https://www.glassdoor.com/member/home/index.htm)
 - 在github或者[[other-hubs]]搜索库
-  - 例如搜索leetcode得到两个很有用的库
-  - 参见[[leetcode-solutions/0-metadata]]
+  - 例如搜索leetcode，得到两个很有用的库
+    - 参见[[leetcode-solutions/0-metadata]]
 - 灰色地带
   - 暗网（如海盗湾）
   - [[telegram]]频道
