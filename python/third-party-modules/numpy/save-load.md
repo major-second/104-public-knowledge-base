@@ -1,0 +1,3 @@
+- `np.save(path, array)`
+  - 和[[basics/save]]相反！
+- `np.load(path)`

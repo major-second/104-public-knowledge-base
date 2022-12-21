@@ -1,4 +1,5 @@
 - `torch.save(model.state_dict(), "data/model.pth")`
+  - 和[[save-load]]相反
 - 其本质上用的是[[pickle/basics]]，但对其进行了封装
   - 使得可以直接`torch.save(<对象>, <字符串>)`
   - 也可能引发额外错误，参考[[leaky-abstraction]]
