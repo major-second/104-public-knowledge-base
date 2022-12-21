@@ -22,8 +22,26 @@ export http_proxy="localhost:<端口号>"
 ```
 然后重启终端或`source ~/.bashrc`一下，就好了
 （也就是[[6-env]]中说的的添加环境变量）
-注：环境变量和ubuntu系统设定是两回事
-注：临时要关就`unset http_proxy https_proxy`
+- 注：环境变量和ubuntu系统设定是两回事
+- 注：临时要关就`unset http_proxy https_proxy`
+- 拓展：可以在[[shrc]]写一些简单脚本，处理不同情况
+```sh
+proxy_usable=0
+for port in {9910..9912}
+do
+ echo trying port: $port
+ export ALL_PROXY="http://$host_ip:$port"
+ if curl --connect-timeout 0.3 baidu.com
+ then
+  echo "\n$ALL_PROXY is on"
+  proxy_usable=1
+  break
+ fi
+done
+if [ $proxy_usable = 0 ]; then unset ALL_PROXY; echo no usable proxy; fi
+echo "test:"
+curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | grep oh-my-zsh
+```
 ## pip走代理
 `pip`自动读取环境变量中的代理设置
 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样（上节那样会报错，且在报错信息中可以看到应该怎么改）
@@ -33,12 +51,12 @@ export http_proxy="localhost:<端口号>"
 有些软件比如[[robocorp/basics/installation]]会用到
 # 读取自己设置的软件
 - 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
-- 有时嫌改这种设置太麻烦，可以[[hosts]]作[[temp-solution]]
+- 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
 # 验证配置成功
 - linux终端
   - `curl cip.cc`看结果
   - `curl ipinfo.io`看结果
-  - `curl www.google.com | grep script`看结果
+  - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`看结果（参考[[zsh]]）
 - 浏览器浏览
   - `cip.cc`看结果
   - `ipinfo.io`看结果
@@ -48,7 +66,6 @@ export http_proxy="localhost:<端口号>"
 - powershell
   - `curl cip.cc`不行（和linux表现不同）
   - `curl ipinfo.io`可以
-  - `curl google.com`看有没有内容也可以
 - 注：`cip.cc`, `ipinfo.io`不同：可能是自动分支了墙内墙外，非全局
 # 举例
 - [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
@@ -64,5 +81,7 @@ export http_proxy="localhost:<端口号>"
   - 浪费代理流量
 # Inbound设置
 - 监听：`127.0.0.1`只有自己，`0.0.0.0`也可以给别人用
-- [参考](https://github.com/qv2ray/qv2ray/issues/414)
+- 不同客户端设置方法不同
+  - qv2ray[参考](https://github.com/qv2ray/qv2ray/issues/414)，需要手动改`0.0.0.0`
+  - clash有General - Allow LAN一键开关比较方便
 - 在[[subsystem-for-linux]]中用代理就需要

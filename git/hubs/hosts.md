@@ -1,5 +1,6 @@
 国内对github，以及2022年初对steam等的态度：不全部墙，但是有时给你[[dns]]污染一下
 改hosts文件能部分解决问题（当然不改的话，有时运气好也能上）
+拓展（相关阅读）：改[[dns]]
 总之下载到第一个翻墙客户端，就是胜利。这就是[[bootstrap]]，[[temp-solution]]，一步一步来
 具体地：
 - https://ipaddress.com/website/github.com
