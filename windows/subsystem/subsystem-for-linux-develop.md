@@ -3,6 +3,8 @@
 - 主要有价值信息
   - 文件系统不要混用否则降低性能（但不是完全不行）
   - linux中`explore.exe .`打开windows式资源管理器
+    - 把windows文件夹直接复制过来的问题：命名规则，分隔符，[[7-permissions]]等
+      - 例如[[pubkey]]权限，git库权限问题（可能导致[[git-project-manager]]用不了）
     - 可以看到是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
   - [[remote-ssh]]有了之后
     - `code .`打开vscode

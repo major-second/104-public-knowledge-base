@@ -40,6 +40,7 @@
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全
 6. 有意思的：windows10有Settings和Control Panel共存（历史遗留问题）
-   1. 前者更现代，后者功能更强，能变更多细致东西（参考[[leaky-abstraction]]，[[aggregation]]）
+   1. 前者更现代，后者功能更强，能变更多细致东西（如[[dns]]就需要控制面板）
+      1. 参考[[leaky-abstraction]]，[[aggregation]]
 ## “临时设置”和其作用
 主条目[[temp-solution]]

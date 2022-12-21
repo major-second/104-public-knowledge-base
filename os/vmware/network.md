@@ -8,9 +8,6 @@
     - windows重启网卡直接右键下图图标，关了再开即可
     - ![](network-reboot-card.png)
     - 在哪里找？上方地址栏有。进控制面板后输入上面的地址即可（不是在资源管理器输入）
-  - windows的修改ip，网关等的方法
-    - ![](network-config-0.png)
-    - Network & Internet settings - Change adapter* - 单击图标 - 上方出现菜单栏选Change settings* - 选择条目IPv4 - Properties
-    - ![](network-config-1.png)
+  - windows的修改ip，网关，[[dns]]等的方法，参考[[dns]]
   - 当然桥接改回NAT，上面的都要改回来
 - 一个有趣现象：对于连wifi要登录的情况，如果虚拟机开着，会首先捕捉到，造成麻烦。所以需要登录wifi时请暂停虚拟机

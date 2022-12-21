@@ -1,10 +1,11 @@
 参考[[网络的七层结构]]
 - vpn一般用于远程翻进某些地方，比如学校、公司内网
-  - 当然也可能用于翻墙，因为公司网（有的）可以翻墙
-  - 也有一些翻墙vpn提供商，并不是什么公司，而是专门提供翻墙的vpn，和[[node]]提供商形成竞争关系
-    - 例如[快连vpn](https://letsvpn.world/)
+  - 当然也可能用于翻墙，因为公司网（有的）可以翻墙（如外企）
+  - 也有一些翻墙vpn提供商，并不是什么公司学校的，而是专门提供翻墙的vpn，和[[node]]提供商形成竞争关系
+    - [快连vpn](https://letsvpn.world/)
+    - [getflix](https://zh.getflix.com/)
   - 非专业人士可能把[[proxy/basics]]俗称vpn，你自己要清楚！
-    - [[node]]的okz2, geph显然都是[[proxy/basics]]不是vpn
+    - [[node]]中的okz2和[geph](https://geph.io/zhs)等等显然都是[[proxy/basics]]不是vpn
   - vpn相比代理在有些时候更透明更好用，不需要手动[[configure]]
     - 在[[subsystem-for-android]]中，vpn可以用，代理就非常麻烦
 - 可能的用法
