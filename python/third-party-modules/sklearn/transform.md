@@ -29,9 +29,10 @@ X_selected = rfe.transform(X)
 # 接上
 print("Feature ranking: %s" % rfe.ranking_)
 print("Selected features: %s" % rfe.support_)
-for i in range(1, len(rfe.ranking_) + 1):
+for i in range(1, len(rfe.ranking_) - 10 + 2): # 例如12维选10维，则10个1，1个2，1个3. 所以我们range右侧是4，i最大是3
     features = rfe.ranking_ <= i
     X_subset = X[:, features]
+    model.fit(X_subset, y)
     performance = model.score(X_subset, y)
 ```
 - [[pca]]
