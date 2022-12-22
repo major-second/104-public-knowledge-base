@@ -13,6 +13,7 @@
   - 例：[[2-eval]]的P-R曲线
 # 时空tradeoff
 - 存显存 ->(`1`) 存内存 ->(`2`) 存硬盘 ->(`3`) 啥也不存
+  - 参考[[memory]], [[resource-management/disk]]
 - 如[[general-principles/cache]]空间换时间
   - 体现`2, 3`
 - 如[[dataloader]] `pin_memory`空间换时间

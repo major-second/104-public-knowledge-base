@@ -1,0 +1,4 @@
+- [[tradeoff]]
+- [[mount]]避免疯狂占系统盘
+- [[ln-s]]省空间
+- [[partition]]非常常用

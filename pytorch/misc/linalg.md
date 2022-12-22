@@ -18,3 +18,14 @@
       - 思想上是刚刚的几句
         - 但实际上如果你使用`pytorch_lightning`，不应该把它们都写到`validation_step`
         - 而应当在`on_validation_start`这个[[hook]]处计算斜率截距，之后不再重复计算
+      - 和[[regression]]计算结果可能稍有差距
+- 注：想要bias比较麻烦，需要参考[[multi-ary]]手动操作
+```python
+X = torch.tensor([[1, 2], [3, 4], [5, 6]])
+y = torch.tensor([[7], [8], [9]])
+X_bias = torch.cat((X, torch.ones((X.shape[0], 1))), dim=1)
+weights, *_ = torch.linalg.lstsq(y, X_bias)
+print(f'Weights: {weights[:-1]}')
+print(f'Bias: {weights[-1]}')
+```
+- 无论何种结果得到weight和bias，都可以考虑手动赋值给线性层[[model]]的`weight, bias`属性。即`m.weight = nn.Parameter(weight.reshape(m.weight.shape))`这样

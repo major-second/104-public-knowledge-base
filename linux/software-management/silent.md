@@ -5,7 +5,7 @@
     - `ENV TZ=Asia/Shanghai`
     - 都是为了这个目的
 - 对于`apt install`，直接`-y`就是静默
-- [[commands]]中的`conda install`也是`-y`静默
+- [[conda/commands]]中的`conda install`也是`-y`静默
 - [miniconda](https://www.codenong.com/49338902/)
   - `-b -p <PREFIX>`
 - [[generate-key-pair]]也有静默生成
