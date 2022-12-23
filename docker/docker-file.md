@@ -11,7 +11,7 @@ https://blog.csdn.net/stupidNameLimit/article/details/89331694
 `RUN sed -i -e 's/mesg n .*true/tty -s \&\& mesg n/g' ~/.profile`
 来忽略一个tricky错误
 ## 转义
-用`# escape=`指定转义字符
+用`# escape=`指定转义[[escape]]字符
 如果转义造成麻烦，可以索性写个小文件，然后`cat 文件名 >> 文件名`解决
 ## troubleshooting
 - 出现交互式时区设置？如何使得其[[silent]]？
