@@ -32,18 +32,24 @@
   - `df.index = df[key]`还能设置哪一列是index
     - `.sort_index()`返回按索引排序的结果（但`DataFrame`自己不[[inplace]]改变）
     - 这里返回的结果默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
+- 直接设置`index`：`.set_index(<index>, inplace=True)`
+  - 参考[[inplace]]
+  - 不[[inplace]]就是`df_new = df.set_index(...)`
 - 二合一过程（读取和设置`index`）
   - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
 - `values`取出具体数值
   - 是[[numpy/basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basics]]
-- 增加列：`data.loc[:, key] = value`
+- 增加列：`data[key] = value`或`data.loc[:, key] = value`
   - 可以是赋予单个数，也可以是序列
-  - 时至2022.8`data[key] = value`有时可以，有时不行！不要冒险。这是pandas官方的一个tricky bug，参考[[leaky-abstraction]]
+  - value是`Series`时，要注意有没有让他的`index`和你的`data`的`index`一致
+  - 注意pandas官方的一个tricky bug，参考[[leaky-abstraction]]
 - 取出多个键作为“子”数据集：`df[[key0, key1]]`
   - 例如做两个变量间的[[regression]]时，只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
+  - 也可以用[[ordered-dict]]思想，即`df[df.columns[...]]`
 ### `.loc`
 - 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
+- `df.loc[0, 'key'] = value`这样比`df['key'][0] = value`好（后者会报[[warning]]，和[[general-principles/copy]]有关）
 - loc很多坑，[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
   - 和普通的`[]`不同，`.loc[]`**切片含两端**
   - 普通的`[]`只能取`[start:end]`这样，不能单取一个`[0]`这样，但`.loc`可以

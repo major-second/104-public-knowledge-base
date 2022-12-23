@@ -13,7 +13,8 @@
   - 比如`sudo apt update`，然后装linux的[[git/init/installation]]（`sudo apt install git`）
   - 比如使用windows的代理
     - [参考](https://zhuanlan.zhihu.com/p/153124468)
-    - 注意需要[[configure]]监听`0.0.0.0`）
+    - 注意需要[[configure]]监听`0.0.0.0`
+      - 而且有些客户端如geph还需要[[refresh]]重连（有些却不需要）
     - 然后当然就可以[[zsh]]等
   - [[conda/installation]]
   - 比如[[subsystem-for-linux-develop]]，可用vscode等

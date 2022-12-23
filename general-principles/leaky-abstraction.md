@@ -56,9 +56,8 @@
     - 你以为代理和有些vpn能一起用了，那我关掉代理就能“正交”切换不影响vpn？那不一定
   - [2022.11江泽民去世，改黑白，却影响布局](https://zhuanlan.zhihu.com/p/588576333)
 - 例如：你以为应该表现一样的实则不一样
-  - 时至2022.8，pandas的[[time-series]]索引有一个tricky bug
+  - 时至2022.8，pandas的[[time-series]]索引(index)有一个tricky bug
     - ![](pandas-tricky.png)
     - 同样的操作，有的时候是`copy`，有的时候是`view`，导致你无法确认赋值是否赋到了原对象上！
-    - 所以要用`.loc`才保险
   - 例如[python对小整数缓存](https://www.cnblogs.com/luoheng23/p/11023848.html#:~:text=%E5%B0%8F%E6%95%B4%E6%95%B0%E5%AF%B9%E8%B1%A1%E6%B1%A0,%E4%B8%BA%E4%BA%86%E5%BA%94%E5%AF%B9%E5%B0%8F%E6%95%B4%E6%95%B0%E7%9A%84%E9%A2%91%E7%B9%81%E4%BD%BF%E7%94%A8%EF%BC%8Cpython%E4%BD%BF%E7%94%A8%E5%AF%B9%E5%B0%8F%E6%95%B4%E6%95%B0%E8%BF%9B%E8%A1%8C%E4%BA%86%E7%BC%93%E5%AD%98%EF%BC%8C%E9%BB%98%E8%AE%A4%E8%8C%83%E5%9B%B4%E4%B8%BA%20%5B-5%2C256%5D%EF%BC%8C%E5%9C%A8%E8%BF%99%E4%B8%AA%E8%8C%83%E5%9B%B4%E5%86%85%E7%9A%84%E6%89%80%E6%9C%89%E6%95%B4%E6%95%B0%E8%A2%ABpython%E5%AE%8C%E5%85%A8%E5%9C%B0%E7%BC%93%E5%AD%98%EF%BC%8C%E5%BD%93%E6%9C%89%E5%8F%98%E9%87%8F%E4%BD%BF%E7%94%A8%E8%BF%99%E4%BA%9B%E5%B0%8F%E6%95%B4%E6%95%B0%E6%97%B6%EF%BC%8C%E5%A2%9E%E5%8A%A0%E5%AF%B9%E5%BA%94%E5%B0%8F%E6%95%B4%E6%95%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%BC%95%E7%94%A8%E5%8D%B3%E5%8F%AF%E3%80%82)
     - ![](python-tricky.png)

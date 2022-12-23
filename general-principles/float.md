@@ -1,0 +1,9 @@
+- 浮点精度可能带来浮点误差
+  - 所以一般不要判断浮点数相等
+  - 例子：
+    - 如[[679-24-game]]
+    - 如[[1739-building-boxes]]
+      - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
+- 本质上是一种[[encode-decode]]方法
+- 关于[[resource-management/disk]]：时刻注意精度。常见精度：16，32，64等
+  - 例如在[[save-load]]时可以指定`dtype=np.float32`

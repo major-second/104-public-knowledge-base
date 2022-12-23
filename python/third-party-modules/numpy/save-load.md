@@ -1,3 +1,4 @@
 - `np.save(path, array)`
   - 和[[basics/save]]相反！
+  - 注意[[float]]精度
 - `np.load(path)`

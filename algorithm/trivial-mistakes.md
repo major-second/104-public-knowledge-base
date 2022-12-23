@@ -9,9 +9,6 @@
   - 不过对于python来说就很简单，直接`input().split()[1:]`即可
 - [[overflow]]
 - [[float]]误差
-  - 如[[679-24-game]]
-  - 如[[1739-building-boxes]]
-    - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
 - 首尾相接
   - [[1388-pizza-with-3n-slices]]，[[514-freedom-trail]]中的环形数组
 - 差一错误
