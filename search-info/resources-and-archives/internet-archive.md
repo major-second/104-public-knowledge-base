@@ -2,4 +2,5 @@
   - [[win98-virtual]]
   - [flash player](https://archive.org/download/flash_versions_and_settings)用来玩小游戏
 - 老游戏
-  - Nitrome游戏合集
+  - [nitrome games合集](https://archive.org/details/all_nitrome_games)
+    - 里面还能体会[[version]], [[settings-and-configurations]]

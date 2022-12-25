@@ -15,16 +15,18 @@
     - 惯例：`<path>`，`<ip>`等中`<>`符号表示你要自己填东西
   - 文档可能略去一些特别简单的步骤比如`cd`到某些文件夹，需要你自己补上
   - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了代码没改文档
+  - hhh，总之像[nitrome games合集](https://archive.org/details/all_nitrome_games)里面那么保姆级告诉你路径可能不一样，[[region-language]]影响路径，备份[[settings-and-configurations]]等等，这可不常见！一般软件作者素质没那么高。[[dont-trust-others]]
 - 可能需要提取文档核心信息并做出合理取舍
   - 选择性忽视一些不重要（乃至错误）的信息
     - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做
       - 而且这个`upgrade`还有可能导致[[software-management/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
   - 识别出一些东西是可做可不做的，不要也没啥关系（而且可能过程很艰难，根本跑不通……）。那就直接舍弃
-  - 识别出一些东西间[[dependencies]]不是“串行”而是可能部分[[parallelism]]的（自己画[[DAG]]），从而加快安装效率
+  - 识别出一些东西间[[dependencies]]不是“串行”而是可能部分[[parallelism]]的（自己人肉[[topo]]排序），从而加快安装效率
 - 可能在看懂文档基础上，适当整合和自动化让自己更方便
   - 比如看懂文档在做啥之后，把所有步骤换成[[silent]]的，使得可以把安装过程变成跑一个脚本
   - 比如写[[docker-file]]
   - 比如[[aruco]]中，把[[cmake]]简化成更高级的[[catkin-make]]
   - 但有时，又不要太自以为是
     - 反面教材：比如[[moveit-installation]]中自以为有`catkin_make`命令就无需`sudo apt-get install ros-melodic-catkin python-catkin-tools`了。实际上不是如此！
-- 硬件更要读文档（说明书）保证安全！可不是只有软件才有文档！比如[耳机控制键突然用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
+- 硬件更要读文档（说明书）保证安全！可不是只有软件才有文档
+  - 比如WI1000X，[耳机控制键突然用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)

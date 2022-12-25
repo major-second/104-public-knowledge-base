@@ -57,9 +57,11 @@
   - [[log]]中提到不同版本默认路径可能是`lightning_logs`或`default`
   - [[franka-ros-interface]]（爱好者自己写的包，不维护了），`.launch`文件中出现多余参数，接口不匹配
 ## 上层依赖底层
-- 常见现象：上层依赖底层。想装新的上层，必须要新的底层
+- 常见现象：上层依赖底层
+  - 想装新的上层，必须要新的底层
+  - 底层太旧，上层就只能旧
 - 举例：
-  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`（太低）导致无法装[[pip]]版本`22`，导致无法装`tensorflow2.9`
+  - [[pip]]中提到：本地（非虚拟环境）用的是`python3.6`（太低）导致无法装[[pip]]版本`22`，导致无法装`tensorflow2.9`（“连锁导致”）
     - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
     - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
   - vscode相关
@@ -67,7 +69,9 @@
     - [[launch]] python时，如果`python`版本过低，就用不了版本高的vscode [[extensions/python]]
     - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
       - 原因：其实是trivial的。一些路径修改导致不匹配不兼容
-  - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到他的一个旧版本
+  - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到[[hand-eye-calibration]]（上层）的一个旧版本
+- 也有可能要求旧底层，底层太新反而不行（如新版有太严的安全限制，太新的功能等）
+  - [nitrome games合集](https://archive.org/details/all_nitrome_games)，他的README里提到有的游戏只能用老旧的Flash Player 13才能打开
 - “更新[[software-management/upgrade]]导致用不了”：参考[[software-management/upgrade]]
 ## 推论
 - 上层版本越高，需求的底层版本也越高

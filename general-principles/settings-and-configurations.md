@@ -1,4 +1,4 @@
-## 设置的常见坑
+## 设置相关概述
 - 凡是软件工作不正常，第一时间想想
   - 做了设置没，设置对不对
   - 软件读取的是哪里的设置
@@ -14,12 +14,15 @@
 - 逻辑“与”“或”等现象
   - 例如[[laptop-camera]]中所有隐私设置都通过，相机才可使用
     - 没有“优先级覆盖”这种说法，和前面的一些例子例如[[vscode/settings]]就完全不一样了。必须保证全部设置对才能工作
+- 很多时候覆盖前需要[[backup]]旧设置，万一崩了可以回来。特别是使用整个文件做设置时
+  - 例如[[shrc]]，[[client-config]]这种重要的
+  - [nitrome games合集](https://archive.org/details/all_nitrome_games)中也有这样的例子：要覆盖`settings.sol`
 - 有趣的事实：硬件也有设置。例如[[laptop-camera]]中所有“与”条件中的第一个：打开硬件开关！
 ## 常见设置方法
 1. 参考[[6-env]]，设置环境变量，乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等（使得开终端时自动设置）
 2. 编辑特定文件
    1. 比如Linux的`~/.bashrc`，`~/.condarc`，`/etc/ssh/sshd_config`
-      1. 参考：[[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]
+      1. 参考：[[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]，[[shrc]]
    2. Windows的`known_hosts`
    3. [[vscode/settings]]：`settings.json`文件
    4. 有时还需要结合[[find-grep]]找到到底去哪里设置
