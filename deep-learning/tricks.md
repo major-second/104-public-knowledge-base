@@ -14,7 +14,7 @@
 - 过拟合的解决不平凡，从而引出“正则化”
 - 训练集一般需要`shuffle`
   - 尤其一种情况：训练集中batch数量很多，故每个epoch只随机取出一部分，然后epoch结束即做val，避免val间隔太大看不到曲线趋势。此时当然必须`shuffle`
-### 正则化
+### 防过拟合
 - [正则化总结](https://zhuanlan.zhihu.com/p/69025058)
 - 原理参考[[2-eval]], [[overfit]]等
 - early stop（即：看验证集，别等验证集loss回升了才停）
@@ -29,6 +29,9 @@
       - 当然，对于复杂一些的优化器如Adam就不一定了
       - 参考[[deep-learning/optimization]]
       - torch实践：在[[basics/optimization]]中实现，如`SGD(其它参数, weight_decay=1e-2)`
+- dropout
+  - 参数：常常`0.1, 0.5`等值
+- 提前[[feature-engineering]], [[11-feature-selection]]可能有助于下游防过拟合
 - 当然很多时候，如果你疯狂以`test`上的结果为标准，就还是有过拟合嫌疑！
 ## 结构
 - 以2的倍数为间隔调MLP隐层宽度

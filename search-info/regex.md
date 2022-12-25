@@ -1,19 +1,24 @@
-https://www.runoob.com/regexp/regexp-syntax.html
-（不能全信，比如`grep`中有[这种麻烦](https://stackoverflow.com/questions/53867329/why-cant-i-use-s-with-grep)）
-语法举例
-- 想找两个空格，但不能有更多空格：<code>[^ ]&nbsp;&nbsp;[^ ]</code>
-- 只看后4张卡占用：`grep '[4-7]\s\+T'`
-
-使用
-- 参考[[11-basic-scripting-partB]]中的“管道记号”
-- [[find-grep]]中用，比如
-  - `nvidia-smi | grep '[4-7]\s\+T'`
-  - `du -h | grep '[0-9]G\s'`
-- [[powershell/string]]中的`| Select-String`
-- vscode全文搜索
-  - 看最右侧按钮
-  - ![](vscode-regex.png)
-- [[tensorboard]]左侧搜索可以用
-
-拓展：相关算法题。自己实现正则表达式的一些特点
-- [[10-regular-expression-matching]]
+- 参考
+  - https://www.runoob.com/regexp/regexp-syntax.html
+    - 实际中不能完全照搬上面的
+    - 比如`grep`中有[这种麻烦](https://stackoverflow.com/questions/53867329/why-cant-i-use-s-with-grep)，和[[escape]]有关
+  - https://regexr.com/
+- 语法举例
+  - 想找两个空格，但不能有更多空格：<code>[^ ]&nbsp;&nbsp;[^ ]</code>
+  - 只看后4张卡占用：`grep '[4-7]\s\+T'`
+  - [[tensorboard]]中搜两种结构，如MLP1或者RNN2（“或”关系）：`(MLP1|RNN2)`
+  - 更复杂的一个实际中的[[tensorboard]]搜东西例子：`(data_clipped/.*0\.01_0\.01_0\.95_64_False_0\.(3|5)|Ols)`
+    - 要不然是`Ols`
+    - 要不然是`data_clipped`文件夹下，以`0.01_0.01_0.95_64_False_0.3`结尾。最后`3`也可能是`5`
+- 使用
+  - [[find-grep]]中用，比如
+    - `nvidia-smi | grep '[4-7]\s\+T'`
+    - `du -h | grep '[0-9]G\s'`
+    - 参考[[11-basic-scripting-partB]]中的“管道记号”
+  - [[powershell/string]]中的`| Select-String`
+  - vscode全文搜索
+    - 看最右侧按钮
+    - ![](vscode-regex.png)
+  - [[tensorboard]]左侧搜索可以用
+- 拓展：相关算法题。自己实现正则表达式的一些特点
+  - [[10-regular-expression-matching]]
