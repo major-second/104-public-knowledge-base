@@ -13,3 +13,4 @@
   - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
   - `limit_train_batches`防止一个epoch过多，不好validate
     - 需要和shuffle了的[[dataloader]]配合使用
+  - `enable_progress_bar=False`关闭[[tqdm]]输出

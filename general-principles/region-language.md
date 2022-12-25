@@ -18,3 +18,4 @@
   - 拼音：全拼、双拼（需要背键位但是速度快很多）等
   - 五笔、四角等非拼音，现在不常用了
   - 语音输入又快又好
+  - 在线输入法[[toolbox/web]]：临时用不了时救急：https://www.google.com/inputtools/services/features/input-method.html
