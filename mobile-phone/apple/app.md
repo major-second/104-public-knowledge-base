@@ -1,0 +1,6 @@
+- 前置[[apple/basics]]
+- 安装：app store
+  - 不能像安卓（参考[[download-resource]]）那样野路子
+- 卸载：长按
+- 管理：app store - 右上角头像 - purchased ...
+  - 还能看到已卸载的

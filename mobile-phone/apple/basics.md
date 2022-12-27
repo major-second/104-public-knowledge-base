@@ -1,0 +1,2 @@
+- 前置：了解[[general-principles/account]]
+- 你会了那些技能（[[proxy/basics]], [[sms]], 虚构地址等），就很容易通过[教程](https://zhuanlan.zhihu.com/p/367821925)，得到美区apple id
