@@ -11,3 +11,4 @@
     - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可
 - troubleshooting
   - [[tensorboard]]启动时，底下提示网址可能并不是`localhost:<端口>`，但你还是应该访问`localhost:<端口>`，别听他的
+  - [[zsh]]在windows路径可能表现不正常（所以比如[[shrc]]应该写个`cd ~`等等）

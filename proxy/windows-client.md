@@ -21,6 +21,9 @@ https://github.com/Qv2ray/Qv2ray/releases
   - 如果是订阅，需要在`groups`处设置，在此图处打勾
     - ![](qv2ray-subscription.png)
     - 解码方式：如果一种不行就试另一种
+- 其它troubleshooting
+  - Inbound Settings - SOCKS Settings - 默认的1089可能被占，你随便换个端口即可
+    - 注意这个并不是[[configure]]所说的“暴露的端口”
 # clash
 - 大同小异，[下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)-
 - 注意需要使用7-zip
