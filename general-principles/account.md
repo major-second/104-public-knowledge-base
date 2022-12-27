@@ -4,7 +4,8 @@
 - 有些地方特定身份（一般指ip）才能上/使用/发消息等等
   - 参考[[proxy/basics]]的是否全局[[configure]], [[vpn]]
   - 例子[[chatgpt]], [[telegram]]等
-- 验证：邮箱、手机等
+- 可能可以找推荐人获得优惠例如[[binance]]
+- 验证：邮箱、手机、2FA等
   - 一般国外邮箱比国内好
     - 一个折中[[workaround]]：[[outlook]]
     - 最好：[[google]]，一般都没问题，但是需要能翻墙
@@ -13,6 +14,9 @@
   - 地址（如[[apple/basics]]美区需要）
     - 例如 https://www.meiguodizhi.com/
     - 生成的可能邮编不对，等等，需要自己手动修改一下
+  - 2FA
+    - 比如Google, Microsoft等都有相关产品。根据公司，app（例如[[binance]]）需要可能需要不同的authenticator
+    - 相当于用手机提供第二重验证，有动态口令等功能。可以借用手机上的人脸识别、指纹等
 - 登录方式
   - 账号密码
   - 邮箱验证码

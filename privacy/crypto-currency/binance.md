@@ -1,6 +1,7 @@
 [toc]
 ## 前置
-- 非中国内地、美国ip的[[proxy/basics]]代理
+- [[general-principles/account]]
+- 非中国内地、美国ip的[[proxy/basics]]代理或[[vpn]]
   - 美国不行：![](us-ip.png)
 - 通过[非小号](https://www.feixiaohao.co/)、[币萌](https://bimeng.org/)等获取基础信息，作大致了解
   - [[telegram]]搜索tokenmore有一些人和频道，可能有进一步信息
@@ -14,7 +15,7 @@
 - 选择create personal account
 - 填邮箱，密码，推荐ID（以减少佣金费率）
   - 一个可选的推荐ID：`IW76A547`
-- 邮箱收邮件，验证邮箱（建议主流邮箱如outlook）
+- 邮箱收邮件，验证邮箱（建议主流国外邮箱如[[outlook]], [[google]]）
 - 手机收验证码，验证手机（可以使用内地手机）
 ## 认证
 ### 身份认证
