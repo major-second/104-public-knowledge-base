@@ -15,3 +15,5 @@
     - `git config --global --list`：查看全局那部分的列表
     - 不加`--global`时出现的结果比`--global`多
     - 参考[[settings-and-configurations]]的“优先级”思想
+    - `git config --global --list | xargs printf '%s\n'`：[[silent]]，不需要`q`退出
+  - `git config --unset user.name`这种：去除键值对

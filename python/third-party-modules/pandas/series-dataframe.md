@@ -27,3 +27,7 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
 - `df = pd.read_csv('data.csv')`
 - `df.to_csv('data_1.csv')`
 - 注意这两者不“互为逆运算”，因为可能有一列额外的[[pandas/index]]存在
+## `dtype`
+- 创建时`dtype=...`参数
+- `df.astype(...)`
+- 对于`df`，没有`dtype`但有`dtypes`表示每一列的类型

@@ -1,0 +1,23 @@
+- 前置
+  - [[pricing]], [[temp-solution]], [[region-language]]
+  - [[vpn]], [[sms]], [[proxy/basics]], [[configure]]
+- 有些地方特定身份（一般指ip）才能上/使用/发消息等等
+  - 参考[[proxy/basics]]的是否全局[[configure]], [[vpn]]
+  - 例子[[chatgpt]], [[telegram]]等
+- 验证：邮箱、手机等
+  - 一般国外邮箱比国内好
+    - 一个折中[[workaround]]：[[outlook]]
+    - 最好：[[google]]，一般都没问题，但是需要能翻墙
+  - 邮箱、手机注意看垃圾邮件、骚扰短信文件夹！否则可能漏
+  - 手机：有时需要[[sms]]
+  - 地址（如[[apple]]美区需要）
+    - 例如 https://www.meiguodizhi.com/
+    - 生成的可能邮编不对，等等，需要自己手动修改一下
+- 登录方式
+  - 账号密码
+  - 邮箱验证码
+  - 手机验证码
+  - 有些时候可以直接用第三方账号如[[google]]登录
+    - 举例[[spotify]], [[google]]可以做[[temp-solution]]，先成功注册登录，之后可以变成邮箱+密码登录
+- 找回密码：往往需要邮箱手机等
+  - 所以如果怕密码忘记，注册时就要相应绑定

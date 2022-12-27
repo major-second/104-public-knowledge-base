@@ -50,6 +50,8 @@
 ### `.loc`
 - 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
 - `df.loc[0, 'key'] = value`这样比`df['key'][0] = value`好（后者会报[[warning]]，和[[general-principles/copy]]有关）
+  - 但注意如果`index`不是数字（`0`）之类的，就不行。必须用`df.index`取出，例如`df.loc[df.index[0], 'key']`
+  - 而且此时千万不能漏了`.loc`写成了`df[0, 'key']`，否则变成了`0`和`'key'`两个column
 - loc很多坑，[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
   - 和普通的`[]`不同，`.loc[]`**切片含两端**
   - 普通的`[]`只能取`[start:end]`这样，不能单取一个`[0]`这样，但`.loc`可以
