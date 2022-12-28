@@ -4,3 +4,7 @@
 - 卸载：长按
 - 管理：app store - 右上角头像 - purchased ...
   - 还能看到已卸载的
+- 桌面管理
+  - 长按桌面任意应用，选择Edit Home Screen
+  - 注意App Library有不一定桌面显示图标。可以`+, -`按钮调整
+  - `+`号还有widget等

@@ -24,3 +24,8 @@
   - 需要[[subsystem-for-linux]]，[参考](https://zhuanlan.zhihu.com/p/459444929)
   - 时至2022.12，不能使用开始菜单 - WSA Settings - Advanced Networking，否则连上[[vpn]]后整个wsa都打不开了
     - 此时除了关闭Advanced Networking，可能还需要[[refresh]]重启WSA或干脆整个Windows等等……要不然你的WSA一直用不了
+```powershell
+$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)
+adb connect 127.0.0.1:58526
+adb shell settings put global http_proxy "$($WinNetIP.IPAddress):7890"  #7890换成你自己的代理端口
+```
