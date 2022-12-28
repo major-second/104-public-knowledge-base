@@ -1,3 +1,5 @@
 - 推荐一些好用应用
   - [[ssh/ssh]]：ShadowSSH
-    - 可以密码/密钥[[pubkey-authentication]]登录。如果密钥登录，需要新建密钥把私钥粘贴过来
+    - 可以密码/密钥[[pubkey-authentication]]登录
+    - 如果密钥登录，需要新建密钥把私钥粘贴过来
+    - 可能需要参考[[check-connectivity]], [[vpn]]等（比如需要公司[[vpn]]苹果客户端）

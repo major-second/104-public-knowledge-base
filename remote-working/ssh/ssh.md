@@ -5,6 +5,7 @@
   - 请参考[[private-key-permissions]]
 - 指定端口：`-p`（默认`22`）
   - 注意区别于[[scp]]
+  - 在有反向[[forward-port]]时端口一般就不是22
 - 远程[[forward-port]]：远程访问某个端口变成访问本地的端口：`-R`
   - 例如`ssh -R 18889:localhost:8889 user@ip`，你本地`8889`有个[[configure]]好的代理，那远程就可以用`18889`端口使用代理
   - 当然可用于翻墙的[[temp-solution]]
