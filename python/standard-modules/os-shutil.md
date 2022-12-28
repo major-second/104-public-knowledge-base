@@ -9,6 +9,7 @@
   - `os.listdir`列出文件夹下文件
     - 不一定按顺序
     - 例如[[lightning/basics]]提到这会对`trainer.test`造成麻烦
+  - [[ln-s]]：`os.symlink('target.txt', 'link.txt')`
   - 这里和shell不完全一样，比如不能使用`~`
     - 可以使用`..`
     - 默认相对路径，开头`/`则绝对
