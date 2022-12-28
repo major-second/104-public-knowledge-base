@@ -20,12 +20,15 @@
   - 发[[wechat-tips]]朋友圈等只能用安卓的功能
   - 进行自动化（如游戏、薅羊毛签到）等
   - 大材小用，自然非常流畅
-- 代理[[configure]]（使用主机的）
-  - 需要[[subsystem-for-linux]]，[参考](https://zhuanlan.zhihu.com/p/459444929)
-  - 时至2022.12，不能使用开始菜单 - WSA Settings - Advanced Networking，否则连上[[vpn]]后整个wsa都打不开了
-    - 此时除了关闭Advanced Networking，可能还需要[[refresh]]重启WSA或干脆整个Windows等等……要不然你的WSA一直用不了
+- 代理[[configure]]
+  - 时至2022.12
+    - 不能使用开始菜单 - WSA Settings - Advanced Networking
+    - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA（任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉）进行[[refresh]]，非常烦
+  - 使用主机代理
+    - 主机[[powershell/basics]]
+    - 需要[[subsystem-for-linux]]
 ```powershell
 $WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)
 adb connect 127.0.0.1:58526
-adb shell settings put global http_proxy "$($WinNetIP.IPAddress):7890"  #7890换成你自己的代理端口
+adb shell settings put global http_proxy "$($WinNetIP.IPAddress):7890" #7890换成你自己的代理端口
 ```
