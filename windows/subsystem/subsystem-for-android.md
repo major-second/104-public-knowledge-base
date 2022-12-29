@@ -32,3 +32,6 @@ $WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IP
 adb connect 127.0.0.1:58526
 adb shell settings put global http_proxy "$($WinNetIP.IPAddress):7890" #7890换成你自己的代理端口
 ```
+- 安装应用
+  - 光[[wechat-tips]]太没出息了吧
+  - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！
