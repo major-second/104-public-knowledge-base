@@ -1,0 +1,20 @@
+- [文档](https://gridscheduler.sourceforge.net/htmlman/manuals.html)
+- 这里不是教你安装的，而是公司有，你用
+# `qrsh`
+- 特点
+  - 这个比较神奇，你还有本地文件，只是“后端”变了
+    - 比如你原本所在node可能性能差没有[[torch-cuda]]，`qrsh`后就有
+  - 总体透明，[[independent]]
+    - 当然，由于可能的某种[[leaky-abstraction]]，有时可能会导致一些奇怪问题。可以`cat, vim`待检查文件等确认
+  - 交互式，一般用来[[general-principles/debug]]，没问题再提交！
+- 举例`qrsh -now n -l 'h_rt=24:0:0,h_vmem=500G'`
+  - `-now n`：排队等。你可能看到终端完全卡住，过一会才成功
+  - `-now y`：如果不马上给我，就别等了
+  - `-l`指定资源
+    - `h_rt=24:0:0`最多24小时
+      - `h`表示hard
+      - 超过被kill
+    - `h_vmem=500G`关于内存[[memory]]
+      - `h`还是hard
+      - `vmem`虚拟内存
+    - 可能你的公司有更多的键，例如`gpu_slots`，官方文档没写

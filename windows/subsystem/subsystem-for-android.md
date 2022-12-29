@@ -26,11 +26,16 @@
     - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA（任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉）进行[[refresh]]，非常烦
   - 使用主机代理
     - 主机[[powershell/basics]]
-    - 需要[[subsystem-for-linux]]
-```powershell
-$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)
-adb connect 127.0.0.1:58526
-adb shell settings put global http_proxy "$($WinNetIP.IPAddress):7890" #7890换成你自己的代理端口
+    - 需要
+      - [[subsystem-for-linux]]
+      - WSA Settings打开开发者模式开启`58526`
+      - `adb connect 127.0.0.1:58526`
+    - 设置
+      - `$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)`
+      - `$Port=7890 #7890换成你自己的代理端口`
+      - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
+    - 查看
+      - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
 ```
 - 安装应用
   - 光[[wechat-tips]]太没出息了吧
