@@ -11,6 +11,7 @@
       - `git config --global http.proxy http://127.0.0.1:<端口>`
       - `git config --global https.proxy http://127.0.0.1:<端口>`
   - 局部设置：`git config --local`，`--local`可省略
+    - 前提是在[[init]]好的地方
   - `git config --list`：查看列表, 可以用`q`退出
     - `git config --global --list`：查看全局那部分的列表
     - 不加`--global`时出现的结果比`--global`多

@@ -56,7 +56,14 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 有些软件比如[[robocorp/basics/installation]]会用到
 ## 其它
 ### 虚拟机和子系统
-- 很多时候找主机ip，使用主机ip的相应露出端口即可，例如[[subsystem-for-android]], [[subsystem-for-linux]]
+- 很多时候找主机ip，使用主机ip的相应露出端口即可
+  - 例如[[subsystem-for-linux]]，要点`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`（bash）
+  - 例如[[subsystem-for-android]]，前提[[subsystem-for-linux]]
+    - 要点`$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)`（powershell）
+    - [[aida64]]的network部分也能看到
+- 反过来主机用[[subsystem-for-linux]]的[[v2raya]]：linux中`ifconfig`看到ip
+  - 别忘了linux中改Inbound（[[v2raya]]：开启端口分享）
+  - 别忘了这下绕过的ip除了`localhost`，还有相应的这个内网ip
 ### 其它读取自己独立设置的软件
 - 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
 - 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
