@@ -20,10 +20,16 @@
   - 发[[wechat-tips]]朋友圈等只能用安卓的功能
   - 进行自动化（如游戏、薅羊毛签到）等
   - 大材小用，自然非常流畅
+- 管理
+  - 开始菜单 - WSA Settings
+  - 可能用到的
+    - system：文件，关闭 Advanced Networking（如后文）等
+    - developer：需要打开！否则没法自己安装应用，设置代理等
+    - compatibility：可以看应用列表，设置兼容性让没法用键盘的变得可用等等
 - 代理[[configure]]
-  - 时至2022.12
-    - 不能使用开始菜单 - WSA Settings - Advanced Networking
-    - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA（任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉）进行[[refresh]]，非常烦
+  - 时至2022.12，必须关闭WSA Settings - Advanced Networking
+    - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA进行[[refresh]]，非常烦
+      - 任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉
   - 使用主机代理
     - 主机[[powershell/basics]]
     - 需要
@@ -37,6 +43,6 @@
     - 查看
       - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
 ```
-- 安装应用
+- 更多应用
   - 光[[wechat-tips]]太没出息了吧
   - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！

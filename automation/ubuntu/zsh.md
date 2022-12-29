@@ -40,3 +40,11 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - 使用`#! /bin/bash`或者`if [[ $shell = bash ]]`这种保护你的脚本不出错
 ## 特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
+- 刚刚的命令中加入了`j`命令快速跳
+  - 进过某个文件夹，就可以`j <部分名字>`过去，或`j <部分名字然后Tab>`选择
+  - 还有`jc`（子文件夹等），看`man autojump`可看到[[help]]
+- 语法高亮`zsh-syntax-highlighting`
+  - 正确的绿，错误的红
+  - 如果你的命令中包含`cd`，那么可能有些假的错误（红）
+    - 甚至导致`alias`也出现假的红
+- 自动补全`zsh-autosuggestions`：储存已有命令，`方向键右`补全。注意不是`tab`
