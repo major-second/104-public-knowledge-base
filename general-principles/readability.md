@@ -1,5 +1,6 @@
 - [[comment]]
 - 写文档，并考虑[[read-doc]]读文档者感受
+- [[general-principles/logs]]
 - 遵守约定俗成的东西
   - 例如[[shrc]]提到一来`cd`不可取
   - 例如循环变量命名常用`i, j`，未知数用$x$，[[binary-search]]命名上下界用`ub, lb`或`hi, lo`

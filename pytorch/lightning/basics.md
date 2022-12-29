@@ -32,7 +32,7 @@
       - 比如[[linalg]]中“最小二乘法”那里
       - 比如你使用了[[hook]]，在`on_validation_end`这种地方记录[[tensorboard]]结果，那么sanity check本来是不该被记录的，却被记录了
   - 训练过程中自动调用[[third-party-modules/tqdm]]（或jupyter中的[[jupyter-notebook/tqdm]]）显示结果
-  - 定期自动存[[checkpoint]], [[log]]等，非常方便
+  - 定期自动存[[checkpoint]], [[lightning/logs]]等，非常方便
     - 存、取、用checkpoint参考[[checkpoint]]
   - `training_step(train_batch, batch_idx)`这种地方的`train_batch`会自动被lightning转移[[device]]，你不用担心是不是在gpu上
     - 然而，你如果自己在`__init__`里之类的地方定义tensor，可能就需手工转移

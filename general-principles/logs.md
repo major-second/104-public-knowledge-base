@@ -1,5 +1,6 @@
-制造、查看日志非常重要！自己方便看，别人方便看和诊断
+制造、查看日志非常重要！自己方便看[[readability]]，别人方便看和诊断
 - 比如[[assets]]中查看终端错误信息
+- 比如[[lightning/logs]]
 - 再比如[github issue](https://github.com/microsoft/debugpy/issues/102)说的打印并查看日志错误信息，解决问题
   - 核心：`"logToFile": true`选项
 
