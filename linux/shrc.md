@@ -1,15 +1,24 @@
 - 前置：[[6-env]]
-- 地址`~/.bashrc`（[[zsh]]就是`~/.zshrc`以此类推）
+- 地址`~/.bashrc`
+  - [[zsh]]就是`~/.zshrc`以此类推
 - 作用：终端启动时自动运行
-  - 手动刷新：`. ~/.bashrc`这样
+  - 手动[[refresh]]刷新：`. ~/.bashrc`这样
   - 注意`.`也就是`source`，和一般地运行脚本`./file.sh`这种有联系也有区别！
 - 举例
   - `export`环境变量[[6-env]]
     - 如[[configure]]代理
-  - 设置`alias`，例如[[pycharm/installation]]
+    - 注意`key=value`和`export key=value`效果不同
+  - 设置`alias`
+    - 例如[[pycharm/installation]]
+    - 注意[[escape]]
+      - 举例`alias monitor-disk="watch -d -n 60 'du -h ~/ | grep \"[0-9]G\\s\"; echo; du -h ${ak_path} | grep \"[0-9]G\\s\"; echo; ls ${ak_path}; echo; ls ~'"`
+      - 用到[[resource-management/commands]], [[4-more-commands]], [[find-grep]]等
+      - 双引号内单引号不用转义，`${}`可用，但双引号和`\`需要转义，分别变成`\"`和`\\`
+      - `\\s`，也就是说你在输入`monitor-disk`命令，实际跑的是`grep "[0-9]G\s"`，而`\s`又表示[[regex]]中的空白符，所以是两次转义
   - 启动服务例如[[server-config]]
   - [[conda/installation]]中提到，用于初始化conda
+  - 套娃[[general-principles/recursion]]：写一些用于被`source`的脚本（例如里面有`export`等），然后被其他的脚本`source`
+    - 仍然注意`source`和直接运行不同
 - 一些不当的例子
-  - 在`~/.bashrc`中写`cd ...`，`module load`等等，它们容易让别人迷惑
-    - `module load`和`conda`不同，运行后不显式地在左边显示环境
-    - explicit is better than implicit
+  - 在`~/.bashrc`中写`cd ...`等，它们容易让别人迷惑
+    - [[explicit-implicit]]

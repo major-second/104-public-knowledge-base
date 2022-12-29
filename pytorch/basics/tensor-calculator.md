@@ -23,7 +23,7 @@ https://pytorch.org/tutorials/beginner/basics/tensor_tutorial.html
     - 注：反向操作：`my_tensor.cpu().numpy()`把GPU张量变成numpy数组
     - `torch.tensor(<张量>, dtype=...)`指定类型（注意不能`torch.FloatTensor(<其他类型张量>)`这样转化）
     - `torch.Tensor`肯定也不好。还是`tensor`（否则可能隐式类型转换了……）
-      - explicit is better than implicit
+      - [[explicit-implicit]]
   - `torch.ones_like`，`torch.zeros_like`，`torch.zeros`等
     - 形状来自实参，内容根据函数名确定
     - 注意有没有`like`是不一样的。有`like`的生成张量和实参的大小相同，而没有`like`的实参是直接写大小是多少（比如`(2,2)`这种就表示2*2）
