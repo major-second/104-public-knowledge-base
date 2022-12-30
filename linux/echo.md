@@ -1,0 +1,7 @@
+- `echo hello world`
+- `echo -n no newline; echo -n no newline`
+- `echo -e "\033[35m colorful \033[0m colorful"; echo -e "\033[32m colorful \033[0m colorful"`
+- 重定向`>`, `>>`、`echo`多行：参考[[11-basic-scripting-partA]]
+- 拓展：需要[[7-permissions]]时：
+  - `echo 1 | sudo tee <file>`
+  - `echo 1 | sudo tee -a <file>`（追加）

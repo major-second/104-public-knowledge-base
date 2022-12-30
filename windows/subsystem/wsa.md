@@ -33,16 +33,18 @@
   - 使用主机代理
     - 主机[[powershell/basics]]
     - 需要
-      - [[subsystem-for-linux]]
+      - [[wsl]]
       - WSA Settings打开开发者模式开启`58526`
       - `adb connect 127.0.0.1:58526`
     - 设置
       - `$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)`
       - `$Port=7890 #7890换成你自己的代理端口`
-      - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
-    - 查看
-      - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
+      - 然后[[CRUD]]
+        - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
+        - `adb shell settings delete global http_proxy; adb shell settings delete global https_proxy`
+        - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
 ```
 - 更多应用
   - 光[[wechat-tips]]太没出息了吧
-  - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！
+  - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！直接用应用商店下载即可
+  - 浏览器：由于google play问题，很多都用不了。`Opera`时至2022.12确认能用

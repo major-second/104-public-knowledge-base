@@ -1,7 +1,9 @@
 - 前置
-  - [[subsystem-for-linux]]
+  - [[wsl]]
   - 了解[[systemd]]
   - 需要应用商店版WSL，[参考](https://devblogs.microsoft.com/commandline/a-preview-of-wsl-in-the-microsoft-store-is-now-available/#how-to-install-and-use-wsl-in-the-microsoft-store)
   - [[vim/basics]]
   - 过程中需要重启[[refresh]]，请先保存好wsl中的东西
 - 时至2022.12已经可以了，[参考](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/)
+  - 注意其中核心操作的[[silent]]版：`echo "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf`
+    - 参考[[echo]]

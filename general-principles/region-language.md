@@ -3,7 +3,7 @@
     - 有些网站不换墙外ip上不去
     - 另一些情况不换身份也能上，但也都可以通过[[proxy/basics]]换身份得到不同结果、效果
       - 如墙内网络公开ip、[[chatgpt]]是否能用、谷歌结果和YouTube广告等
-  - 系统/应用商店设置换身份：如[[huawei-google]]，[[subsystem-for-android]]都需要
+  - 系统/应用商店设置换身份：如[[huawei-google]]，[[wsa]]都需要
 - 语言相关
   - ubuntu: [[language]], 如[[try-ubuntu]]提到了
   - windows: 开始菜单有地区、语言、输入法设置等

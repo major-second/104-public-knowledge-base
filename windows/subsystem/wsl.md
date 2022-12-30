@@ -21,10 +21,10 @@
       - 而且有些客户端如geph还需要[[refresh]]重连（有些却不需要）
     - 然后当然就可以[[zsh]]等
   - [[conda/installation]]
-  - 比如[[subsystem-for-linux-develop]]，可用vscode等
+  - 比如[[wsl-develop]]，可用vscode等
 - 之后入口
   - 开始菜单可能有（比如`Ubuntu`等字样）
-  - vscode，例如[[subsystem-for-linux-develop]]
+  - vscode，例如[[wsl-develop]]
   - [[powershell/basics]]直接`wsl`命令
     - 这可以和[[link]]结合，从而在桌面一个快捷键直接进入linux终端
     - 参考本文件夹`wsl.ps1`

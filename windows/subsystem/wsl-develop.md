@@ -1,4 +1,4 @@
-- 前置[[subsystem-for-linux]]
+- 前置[[wsl]]
 - [参考](https://learn.microsoft.com/zh-cn/windows/wsl/setup/environment?source=recommendations)
 - 主要有价值信息
   - 文件系统不要混用否则降低性能（但不是完全不行）

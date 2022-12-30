@@ -12,3 +12,11 @@
   - 总之shell数组挺坑的，除非你确认知道怎么用，否则别用
 - 清空整体：`unset k`
 - 注：[[17-function]]中可以使用数组，但也挺坑的，参考[[17-function]]
+- 注：[[zsh]]的数组和bash不同……坑死了
+  - 可以[[12-condition]]
+  - 举例局部
+```sh
+for i in {0..3}
+do
+ if echo $SHELL | grep zsh > /dev/null; then i=$(expr $i + 1); fi
+```

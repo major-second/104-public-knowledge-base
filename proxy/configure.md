@@ -57,11 +57,11 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 ## 其它
 ### 虚拟机和子系统
 - 很多时候找主机ip，使用主机ip的相应露出端口即可
-  - 例如[[subsystem-for-linux]]，要点`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`（bash）
-  - 例如[[subsystem-for-android]]，前提[[subsystem-for-linux]]
+  - 例如[[wsl]]，要点`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`（bash）
+  - 例如[[wsa]]，前提[[wsl]]
     - 要点`$WinNetIP=$(Get-NetIPAddress -InterfaceAlias 'vEthernet (WSL)' -AddressFamily IPV4)`（powershell）
     - [[aida64]]的network部分也能看到
-- 反过来主机用[[subsystem-for-linux]]的[[v2raya]]：linux中`ifconfig`看到ip
+- 反过来主机用[[wsl]]的[[v2raya]]：linux中`ifconfig`看到ip
   - 别忘了linux中改Inbound（[[v2raya]]：开启端口分享）
   - 别忘了这下绕过的ip除了`localhost`，还有相应的这个内网ip
 ### 其它读取自己独立设置的软件
@@ -84,7 +84,7 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 - 注：`cip.cc`, `ipinfo.io`结果不同：可能是自动分支了墙内墙外，非全局，参见下文
 # 举例
 - [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
-- [[subsystem-for-android]]不用代理则不需要[[subsystem-for-linux]]，但用的话就可能需要，比较麻烦
+- [[wsa]]不用代理则不需要[[wsl]]，但用的话就可能需要，比较麻烦
 # troubleshooting
 ## 是否使用全局模式
 代理客户端中往往有是否global（全局）的设置
@@ -100,4 +100,4 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 - 不同客户端设置方法不同
   - qv2ray[参考](https://github.com/qv2ray/qv2ray/issues/414)，需要手动改`0.0.0.0`
   - clash有General - Allow LAN一键开关比较方便
-- 在[[subsystem-for-linux]]中用代理就需要
+- 在[[wsl]]中用代理就需要
