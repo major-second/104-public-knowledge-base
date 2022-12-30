@@ -5,13 +5,19 @@
 - [[regex]]中`\.`才是一个点字符，等等
 - shell转义非常繁琐，有时你可能都得考虑[[workaround]]……
   - [[11-basic-scripting-partA]]中例子（单双引号区别）
-    - `echo "$SHELL"; echo '$SHELL'; echo "\$SHELL"`
+    - `echo -n "$SHELL "; echo -n '$SHELL '; echo -n "\$SHELL "`
+    - 输出`/bin/bash $SHELL $SHELL`
   - [[shrc]]中例子
-    - `alias monitor-disk="watch -d -n 60 'du -h ~/ | grep \"[0-9]G\\s\"; echo; du -h ${ak_path} | grep \"[0-9]G\\s\"; echo; ls ${ak_path}; echo; ls ~'"`
+    - `alias monitor-disk="watch -d -n 60 'du -h ~/ | grep \"[0-9]G\\s\"'"`
+    - 实际上真正`monitor-disk`时，是不断执行`du -h ~/ | grep "[0-9]K\s"`
+    - 也就是双引号里的`", \, "`写作了`\", \\, \"`
   - [[linux/zip-unzip]]中例子
     - `zip -r tmp.zip dir -x "dir/subdir/*"`
       - 可以尝试`echo ./*; echo "./*"`看区别
-  - [[wsl-command]]中的例子
-    - 这是[[powershell/basics]]转义和[[echo]]转义结合
-    - `wsl -e bash -c 'echo -e "[boot]\\nsystemd=true" | sudo tee /etc/wsl.conf'`，共转义2次
+- [[powershell/basics]]中也有不少
+  - 而且结合linux，比如[[wsl-command]]中的例子更麻烦
+    - `wsl -e bash -c 'echo -e \\033[35m $(uname -a) \\033[0m'`：共转义2次
+    - 上面例子中`wsl -e bash -c`并不本质。你直接linux终端中`echo -e \\033[35m $(uname -a) \\033[0m`也是一样的结果
+    - 解说：外面没有引号保护，所以一来`\\`变成`\`
+    - 然后再`\033[35m`这种看成一个整体表示变成紫色，参考[[echo]]
 - `python`的[[f-string]]中，大括号等需要转义

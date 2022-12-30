@@ -12,6 +12,7 @@
     - 如果用英文版office，就没有“五号字”这种东西，需要[中文字号对照数字](https://www.jianshu.com/p/e8d263efe7f7)
 - shell这种恶心东西很多时候都是现用现查，尽可能绕过会造成麻烦的点，不求甚解，否则就太恶心了
   - 比如[[6-env]]第七节提到数组变量能不用就不用
+  - 比如[[wsl-command]]中可以把[[zsh]]中比较复杂的`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`改成`wget <url>; bash ./install.sh`（跟[[conda/installation]]那样）
 - 和[[temp-solution]]联系
   - [[temp-solution]]往往也是一种绕过
   - 但这个暂时绕过有时是为了之后正面解决。而不是之后永远绕过，跟刚才的还不一样

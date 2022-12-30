@@ -1,20 +1,64 @@
-开始菜单或vscode下方都有powershell
-相当于linux的终端。可以执行命令。不过时至2022还没linux的命令行好用（不客气地说，win命令行，就是垃圾）
-核心
-- `help <命令>`，`gal <命令>`看命令的基本信息
+# 概述
+- 开始菜单或vscode下方都有powershell
+- 相当于linux的终端。可以执行命令
+  - 不过时至2022还没linux的命令行好用
+  - 不客气地说，win命令行，就是垃圾
+# 基础命令
+- `help <命令>`，`gal <命令>`看命令的基本信息，例如`gal rm`
   - 比如`rm`其实是`Remove-Item`，`ls`其实是`Get-ChildItem`
   - 可以看出Powershell的命名格式：大写单词，`-`连接动词和名词
   - `gal`自身是`Get-Alias`，2333
-- 很多命令是为了让linux的人好用所以做了alias
+  - 很多命令是为了让linux的人好用所以做了alias
   - 你可以`gal`一下`mv cp ls rm cat diff`等
-- `New-Item -type Directory`相当于了`mkdir`（不加参数就是`touch`）
+- `New-Item`
+  - `New-Item -type Directory`相当于了`mkdir`
+  - 不加参数就是`touch`
   - 其alias通过`help`查到是`ni`
 - `scp, ssh`当然可以用
   - 不过可能有一些[[non-standard]]的东西（路径的`~`记号）就用不了了（毕竟`scp`了，还想啥自行车？233）
+# 基础技巧
 - 编辑技巧：可以用上下方向键看历史，`Tab`补全等
   - `*.zip`再`Tab`这样还能自动找匹配来补全，非常好用
   - 右键粘贴
-- 一些特性可能和[[11-basic-scripting-partA]]不同
-  - 例如换行不是`\`，而是<code>&#96;</code>
-  - 不过`;`还是一样
-  - 当然一些程序就更加特性不同了，这个不一定是powershell本身的锅，参考[[https-ssh]]
+- 换行不是`\`，而是<code>&#96;</code>
+  - 这和[[11-basic-scripting-partA]]不同
+- `;`还是可以分割多条命令
+  - 所以[[11-basic-scripting-partA]]常见的`; \`这里就是<code>; \`</code>
+  - 举例
+```powershell
+echo 1 `
+echo 2; `
+echo 1; `
+echo 2
+```
+输出
+```text
+1
+echo
+2
+1
+2
+```
+- 双引号内部，转义[[escape]]也是 <code>&#96;</code>
+  - 例如 <code>echo "\`""</code>这样输出`"`
+  - 例如 <code>echo "\`\$"</code>这样输出`$`
+  - 内部`$某某`使用windows的变量，<code>\`\$</code>才是真的`$`
+  - [[wsl-command]]经常用到
+  - 举例（这里需要你掌握[[6-env]], [[windows/env-var]], linux的[[escape]]等）
+    - <code>echo "echo '\`\$HOME'; echo \`"\`\$HOME\`"; echo '\$HOME'; echo \`"\$HOME\`""</code>
+      - 得到<code> echo '\$HOME'; echo "\$HOME"; echo 'C:\Users\windowsusername'; echo "C:\Users\windowsusername"</code>
+      - 也就是
+        - `$HOME`被直接替换成windows的[[windows/env-var]]
+        - <code>\`\$HOME</code>变成`$HOME`，从而可以取出linux的[[6-env]]
+    - <code>wsl -e bash -c "echo '\`\$HOME'; echo \`"\`\$HOME\`"; echo '\$HOME'; echo \`"\$HOME\`""</code>
+      - 依次输出
+        - `$HOME`
+        - `/root`
+        - `C:\Users\windowsusername`
+        - `C:Userswindowsusername`
+  - 总之复杂条件下双引号灵活，内部可以有单双引号反引号美元等等，顶多转义
+- 单引号
+  - 内部不能转义，不能 <code>echo '&#96;''</code>
+  - 但是<code>echo '\`\$"\`'</code> 可以原样输出<code>\`\$"\`</code>，也就是内部除了不能单引号，其它什么都好
+  - 总体上和双引号是[[aggregation]]关系，有时互为[[workaround]]
+- 当然一些程序就更加特性不同了，这个不一定是powershell本身的锅，比如参考[[https-ssh]]

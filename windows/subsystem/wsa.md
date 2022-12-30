@@ -43,7 +43,6 @@
         - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
         - `adb shell settings delete global http_proxy; adb shell settings delete global https_proxy`
         - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
-```
 - 更多应用
   - 光[[wechat-tips]]太没出息了吧
   - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！直接用应用商店下载即可

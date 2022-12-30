@@ -84,6 +84,7 @@ done
 ```
 和`if`类似，看`test command`返回的状态码是否为0
 - 注意`test command`区可能多条。且最后失败的那一次也会执行完这多条。这可能导致预料之外结果
+- `while [[ 1 -eq 1 ]]; do sleep 1; echo 1; done`：无限循环
 ## 13.4 `until`命令
 把刚刚`while`改成`until`，语义是退出状态码非0就做循环，否则出循环（即：和刚才恰好相反）
 ## 13.5 嵌套循环
@@ -96,6 +97,7 @@ done
 `break n`跳出`n`层循环
 `continue`略过本次循环之后的动作（小心有没有把增量略过）
 `continue n`也可以多层
+- 结合`while`无限循环的例子：`while [[ 1 -eq 1 ]]; do sleep 1; date; if date | grep ':.9'; then break; fi; done`
 ## 13.8 处理循环的输出
 把整个循环看成整体，在后面加上重定向
 也可以把整个循环的结果管道接给下一个命令（比如`sort`）

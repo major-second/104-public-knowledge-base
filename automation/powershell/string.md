@@ -4,5 +4,6 @@
   - `" 1 ".trim()`
   - 这在[[features]]中有重要作用
   - 脚标当然可以有负数，类似python
-- `| Select-String <正则表达式>`：可以查找[[regex]]
+- `| Select-String`
   - 参考[[11-basic-scripting-partB]]的管道记号
+  - 例如[[powershell/app]]用到`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`

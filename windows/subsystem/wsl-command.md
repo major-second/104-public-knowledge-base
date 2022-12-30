@@ -1,9 +1,13 @@
+[toc]
+# 基础
+## 概述
 - 前置
   - [[powershell/basics]]
   - [[escape]]
   - [[wsl]]
 - windows的[[powershell/basics]]中，`wsl`命令（不是linux系统中的命令）
-  - 可用于[[silent]]操作[[wsl]]
+  - 可用于[[silent]]操作[[wsl]]，特别是[[silent]]地[[refresh]]重启WSL，非常方便
+## 基础举例
 - 例：直接`wsl`
     - 这可以和[[link]]结合，从而在桌面一个快捷键直接进入linux终端
     - 参考本文件夹`wsl.ps1`
@@ -11,10 +15,8 @@
   - 注意`wsl -e 'echo 1'`不行（可能被当成整体了）
   - `wsl -e bash -c 'echo 1'`可以
 - 例：`wsl --set-default Ubuntu-20.04; wsl --list; wsl -e uname -a`
-- 例：`wsl -e bash -c 'echo -e "[boot]\\nsystemd=true" | sudo tee /etc/wsl.conf'`，直接一键[[wsl-systemd]]
-  - 当然也可以进行其它[[silent]]操作
-  - 注意powershell [[escape]]一次，[[echo]] [[escape]]一次，共2次
-- 多行
+# 进阶
+## 多行
 ```powershell
 wsl -e bash -c '
 for (( i = 0; i < 5; i++))
@@ -23,3 +25,15 @@ do
 done
 '
 ```
+## [[escape]]转义
+- `wsl -e bash -c 'echo -e [boot]\\nsystemd=true | sudo tee /etc/wsl.conf'`
+  - 直接一键[[wsl-systemd]]
+  - 当然也可以进行其它[[silent]]操作
+- `wsl -e bash -c 'echo -e \\033[35m $(uname -a) \\033[0m'`
+  - [[echo]]彩色的
+- 以上两个例子都是[[escape]]2次
+- 这和powershell特性无关，只和[[echo]]特性有关
+## [[powershell/basics]]和shell两种[[escape]]转义混合
+- 基本[[powershell/basics]]例子：<code>wsl -e bash -c "a=1; echo &#96;$a"</code>
+- 两种转义`\`, <code>&#96;</code> 混合例子
+  - <code>wsl -e bash -c "ifconfig | grep 'inet\s' | grep -v '127.0' | awk '{print &#96;$2}'"</code>
