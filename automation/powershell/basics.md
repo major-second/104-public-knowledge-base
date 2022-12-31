@@ -14,8 +14,11 @@
   - `New-Item -type Directory`相当于了`mkdir`
   - 不加参数就是`touch`
   - 其alias通过`help`查到是`ni`
-- `scp, ssh`当然可以用
-  - 不过可能有一些[[non-standard]]的东西（路径的`~`记号）就用不了了（毕竟`scp`了，还想啥自行车？233）
+- `scp, ssh, curl`等可以用
+  - 不过可能有一些特点可能和linux中的不同，毕竟还是不正宗！
+  - 例如
+    - 路径的`~`记号表示home可能用不了了
+    - `curl`其实是`Invoke-WebRequest`，参数列表和linux正宗的[[curl]]不一样，比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种
   - [[powershell/app]]中提到了

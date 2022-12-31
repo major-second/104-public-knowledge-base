@@ -1,7 +1,6 @@
 - 前置
   - [[settings-and-configurations]]
   - 首先打开代理客户端，比如[[linux-client]]，[[windows-client]]
-
 [toc]
 # 一般原则
 - 打开代理之后还需要配置才能让应用实际走代理，而不是走直连
@@ -51,9 +50,10 @@ if [ $proxy_usable = 0 ]; then unset ALL_PROXY; echo no usable proxy; fi
 echo "test:"
 curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | grep oh-my-zsh
 ```
-### pip走代理
-`pip`自动读取环境变量中的代理设置
-但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样（上节那样会报错，且在报错信息中可以看到应该怎么改）
+- 拓展：[[pip]]走代理
+  - `pip`自动读取环境变量中的代理设置
+  - 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样直接`127.0.0.1`开头
+  - 上节那样会报错，且在报错信息中可以看到应该怎么改
 ### win环境变量
 参考[[windows/env-var]]，[[powershell/var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
@@ -70,7 +70,9 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
   - 别忘了这下绕过的ip除了`localhost`，还有相应的这个内网ip
 ### 其它读取自己独立设置的软件
 - 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
-- 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
+  - 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
+- 有些软件默认读系统设置或环境变量，但自己也可以独立设置，例如[[curl]]中`curl -x`
+  - 参考[[settings-and-configurations]]
 # 验证配置成功
 - linux终端
   - `curl cip.cc`看结果

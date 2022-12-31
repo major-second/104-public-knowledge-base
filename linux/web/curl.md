@@ -3,3 +3,4 @@
   - [[vpn]]就更加没问题！
 - 参数
   - `--connect-timeout`设定超时时间，在[[proxy/basics]]用到，用于测试
+  - `-x` [[configure]] [[proxy/basics]]
