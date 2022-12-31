@@ -16,6 +16,9 @@
   - 其alias通过`help`查到是`ni`
 - `scp, ssh`当然可以用
   - 不过可能有一些[[non-standard]]的东西（路径的`~`记号）就用不了了（毕竟`scp`了，还想啥自行车？233）
+- `select`字段
+  - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | select statuscode`，输出`200`这种
+  - [[powershell/app]]中提到了
 # 基础技巧
 - 编辑技巧：可以用上下方向键看历史，`Tab`补全等
   - `*.zip`再`Tab`这样还能自动找匹配来补全，非常好用

@@ -37,3 +37,15 @@ done
 - 基本[[powershell/basics]]例子：<code>wsl -e bash -c "a=1; echo &#96;$a"</code>
 - 两种转义`\`, <code>&#96;</code> 混合例子
   - <code>wsl -e bash -c "ifconfig | grep 'inet\s' | grep -v '127.0' | awk '{print &#96;$2}'"</code>
+  - 极度实用！在windows访问linux端口就需要！例如[[v2raya]]
+## 使用文件
+- 使用文件，减少[[escape]]
+- 比如windows中`cd`到本文件夹，然后
+- `wsl -e bash "$(wsl -e pwd)/wsl-command.sh"`
+- 输出非常好，是
+```text
+echo 172.某某...
+172.某某...
+I can use `, ' and " here
+```
+- 确实，在[[awk-cut]]时单引号`'{print $2}'`方便，在[[11-basic-scripting-partA]]重定向时需要用[[6-env]]则双引号方便，想要[[aggregation]]时，你就不能疯狂[[escape]]. 这时还是文件香！

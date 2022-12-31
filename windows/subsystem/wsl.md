@@ -3,14 +3,18 @@
   - [[7-permissions]]
 - [参考](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 - 管理员[[administrator]] powershell
-  - `wsl --install`
-  - 不同时期可能不同？2022.12直接出现列表，然后选择一个distro即可，例如`wsl --install -d Ubuntu-20.04`
-    - 卸载：`wsl --unregister Ubuntu-20.04`即可
-    - 列表：`wsl --list`
-      - 哈哈，增删查齐活！（参考[[CRUD]]）
-    - 其实现在的是WSL2，一些地方和WSL不同，比如网络模式不是直接用主机网络，也就不能直接使用`127.0.0.1:<端口>`的代理
+  - linux系统的[[CRUD]]
+  - 不同时期可能不同。时至2022.12
+  - 增：`wsl --install`
+    - 直接出现列表
+    - 然后选择一个distro即可
+    - 例如`wsl --install -d Ubuntu-20.04`
+    - 再加`--quiet --user myuser --password mypassword`：[[silent]]（不过明文写出了密码，不推荐）
+  - 删：`wsl --unregister Ubuntu-20.04`即可
+  - 查：`wsl --list`
+  - 其实现在的是WSL2，一些地方和WSL不同，比如网络模式不是直接用主机网络，也就不能直接使用`127.0.0.1:<端口>`的代理
   - 可能需要更新一个内核，[参考](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
-  - 出现新窗口，显示`Enter new UNIX username:`等，参考[[7-permissions]]
+  - 如果没有`--user, --password`，则出现新窗口，显示`Enter new UNIX username:`等，参考[[7-permissions]]
 - 此时可以尝试运行各种命令了
   - 比如`sudo apt update`
     - 然后装软件，例如linux的[[git/init/installation]]（`sudo apt install git`）

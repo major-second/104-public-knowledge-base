@@ -2,8 +2,9 @@
   - `"1|2".split("|")`
   - `"1|2".split("|")[0]`
   - `" 1 ".trim()`
-  - 这在[[features]]中有重要作用
+  - 这在[[power-automate/features]]中有重要作用
   - 脚标当然可以有负数，类似python
 - `| Select-String`
   - 参考[[11-basic-scripting-partB]]的管道记号
+  - 可搜[[regex]]
   - 例如[[powershell/app]]用到`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`
