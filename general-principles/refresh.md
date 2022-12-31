@@ -12,6 +12,9 @@
 - [[windows/env-var]]的添加：需要**重启**vscode才在vscode集成的powershell中生效
   - 只重启终端不重启vscode还没用
 - [[jupyter-notebook/basics]]中提到的用`Restart`内核使得`.py`文件的改动生效
+- 和[[quit]]当然有联系
+  - 例如任务管理器[[quit]] Apps/Background Processes/Windows Processes
+  - 依次要更加慎重
 ## 重装（可能也要重启）
 - [[assets]]中vulkan相关错误在**重装**vulkan sdk后需要**重启**
 - [[timeshift]]和[[tmux]]的互动可能把tmux弄崩，**重装**tmux并**重启**即可

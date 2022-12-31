@@ -30,6 +30,8 @@
   - 时至2022.12，必须关闭WSA Settings - Advanced Networking
     - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA进行[[refresh]]，非常烦
       - 任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉
+      - 再对`wsa`做同样事情
+      - Apps/Background Processes/Windows Processes都要看
   - 使用主机代理
     - 主机[[powershell/basics]]
     - 需要
