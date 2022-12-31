@@ -13,9 +13,13 @@
 ## 系统设定
 - 比如
   - ubuntu的九宫格-齿轮（Settings）
-  - Win10的开始菜单搜索proxy
-- 一般系统，各种开关都在这，很方便
-- 有些翻墙客户端如`qv2ray`, `geph`能自动帮你设置这个地方
+    - 注意这个和终端代理[[6-env]]不同。浏览器看的一般是这个而不是终端
+  - Win10
+    - 开始菜单搜索proxy
+    - 或者会[[powershell/basics]]可以
+      - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyEnable" -Value 1`
+      - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyServer" -Value "192.168.1.1:9912"`
+- 有些翻墙客户端如`qv2ray`, `geph`能自动帮你设置这个地方的代理
   - 但这时就不灵活，没法自己灵活切换用“哪边的”代理等
 ## 环境变量相关
 ### linux环境变量，终端走代理
@@ -45,7 +49,7 @@ do
 done
 if [ $proxy_usable = 0 ]; then unset ALL_PROXY; echo no usable proxy; fi
 echo "test:"
-curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | grep oh-my-zsh
+curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | grep oh-my-zsh
 ```
 ### pip走代理
 `pip`自动读取环境变量中的代理设置
@@ -71,7 +75,7 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 - linux终端
   - `curl cip.cc`看结果
   - `curl ipinfo.io`看结果
-  - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`看结果（参考[[zsh]]）
+  - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore`看结果（参考[[zsh]]）
 - 浏览器浏览
   - `cip.cc`看结果
   - `ipinfo.io`看结果
@@ -79,8 +83,7 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
   - `cip.cc`好处是中文且墙内较快
   - `cip.cc`有时由于未知原因用不了，就试试`ipinfo.io`呗
 - powershell
-  - `curl cip.cc`不行（和linux表现不同）
-  - `curl ipinfo.io`可以
+  - 比如`curl ipinfo.io | select content | select-string country`，比linux麻烦些，参考[[powershell/string]]
 - 注：`cip.cc`, `ipinfo.io`结果不同：可能是自动分支了墙内墙外，非全局，参见下文
 # 举例
 - [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
