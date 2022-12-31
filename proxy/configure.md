@@ -18,6 +18,8 @@
     - 或者会[[powershell/basics]]可以
       - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyEnable" -Value 1`
       - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyServer" -Value "192.168.1.1:9912"`
+      - 虽然这个在[[refresh]]之前可能直接用powershell没法直接验证，但是你可以`curl -Proxy <ProxyServer> <URL>`变相验证
+      - 也可以`Start-Process powershell.exe -NoNewWindow -Wait -ArgumentList <路径>`这样新起一个进程验证！这是[[refresh]]思想
 - 有些翻墙客户端如`qv2ray`, `geph`能自动帮你设置这个地方的代理
   - 但这时就不灵活，没法自己灵活切换用“哪边的”代理等
 ## 环境变量相关

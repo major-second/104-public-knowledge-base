@@ -1,3 +1,4 @@
+[toc]
 # 总述
 - 俗话说得好，重启，重装，重买
 - 上面一句话看出：显然refreshing有不同等级
@@ -8,11 +9,10 @@
 - [[special-files]]提到
   - `git rm --cache`命令停止track某些**已经被track的**文件
   - 并更新`.gitignore`，使得**接下来它们被忽略**
-  - 这可能需要**重启**vscode才能让vscode识别此事实
-- [[windows/env-var]]的添加：需要**重启**vscode才在vscode集成的powershell中生效
+    - 更进一步，如果在用vscode，则可能需要**重启**vscode才能让vscode识别此事实
   - 只重启终端不重启vscode还没用
 - [[jupyter-notebook/basics]]中提到的用`Restart`内核使得`.py`文件的改动生效
-- 和[[quit]]当然有联系
+- 和[[quit]]当然有联系（[[quit]]往往是彻底干净重启所需要的）
   - 例如任务管理器[[quit]] Apps/Background Processes/Windows Processes
   - 依次要更加慎重
 ## 重装（可能也要重启）
@@ -28,7 +28,7 @@
 ## 硬件层面
 - [[interface]]提到的重新插拔接口
   - 比如[[wired-connection]]
-  - 比如[[troubleshooting]]
+  - 比如[[franka-panda/troubleshooting]]
 - 例如[某款耳机控制键用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
 - 手机[[android/battery]]不耐用了直接换电池
 ## 覆盖
@@ -37,8 +37,11 @@
 - 比如[[settings/keyboard-shortcuts]]中`Ctrl+P`覆盖（打断）其它的“上方跳出界面”
 ## 其它
 - [[settings-and-configurations]]设置东西之后要**更新**。包括但不限于
-  - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`
-    - [[6-env]]中**重开终端**相当于`. ~/.bashrc`了，可以作更新
+  - `source` [[shrc]]
+    - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`等等
+    - 当然[[6-env]]中所说**重开终端**相当于`. ~/.bashrc`了，可以作更新
+  - [[configure]]中提到的powershell需要新开进程才能用上新的代理设置
+    - `Start-Process powershell.exe -NoNewWindow -Wait -ArgumentList <路径>`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
   - [[software-management/source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接

@@ -19,6 +19,7 @@
   - 例如
     - 路径的`~`记号表示home可能用不了了
     - `curl`其实是`Invoke-WebRequest`，参数列表和linux正宗的[[curl]]不一样，比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
+    - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种
   - [[powershell/app]]中提到了
@@ -67,4 +68,3 @@ echo
   - 内部不能转义，不能 <code>echo '&#96;''</code>
   - 但是<code>echo '\`\$"\`'</code> 可以原样输出<code>\`\$"\`</code>，也就是内部除了不能单引号，其它什么都好
   - 总体上和双引号是[[aggregation]]关系，有时互为[[workaround]]
-- 当然一些程序就更加特性不同了，这个不一定是powershell本身的锅，比如参考[[https-ssh]]
