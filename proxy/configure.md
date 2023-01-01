@@ -35,6 +35,8 @@ export http_proxy="localhost:<端口号>"
 - 注：环境变量和ubuntu系统设定是两回事
 - 注：临时要关就`unset http_proxy https_proxy`
 - 拓展：可以在[[shrc]]写一些简单脚本，处理不同情况
+  - 这里的`$host_ip`得到方法参考[[wsl]]
+  - 核心代码`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`
 ```sh
 proxy_usable=0
 for port in {9910..9912}

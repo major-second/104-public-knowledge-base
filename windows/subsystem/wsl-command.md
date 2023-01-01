@@ -5,6 +5,8 @@
   - [[powershell/basics]]
   - [[escape]]
   - [[wsl]]
+  - [[shell-type]]
+    - 也就是如果需要[[shrc]]，可能需要用`bash -ic`替代下文`bash -c`
 - windows的[[powershell/basics]]中，`wsl`命令（不是linux系统中的命令）
   - 可用于[[silent]]操作[[wsl]]，特别是[[silent]]地[[refresh]]重启WSL，非常方便
 ## 基础举例

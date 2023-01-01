@@ -1,9 +1,9 @@
 - 电池寿命损耗
   - [参考](https://zhuanlan.zhihu.com/p/71376047)
   - [参考](https://zhuanlan.zhihu.com/p/136393393)
-    - 即结论：最好长期插电，但定期充放电一下
-    - 所以[[sleep-hibernate]]就很有帮助了。大部分时候插电，拔电前休眠
-    - 长期插电时最好维持在50%-60%，需要借助软件
+  - [参考surface官方文档](https://support.microsoft.com/zh-cn/surface/%E4%BF%9D%E5%85%BB-surface-%E7%94%B5%E6%B1%A0-9ccdfa7b-d074-f629-425c-1c090ac66bed)
+    - 长期插电时最好维持在50%-60%，需要借助软件/固件等，甚至可能和[[bios]]有关
+    - [[sleep-hibernate]]就很有帮助了。大部分时候插电，拔电前休眠
   - 一些概念
     - wear level：相当于“上限”变小，全充满后，电池能使用的时间更少
     - efficiency：使用更少的电池损耗，充上更多的电量

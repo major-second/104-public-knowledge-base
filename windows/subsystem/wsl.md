@@ -22,6 +22,7 @@
   - 比如使用windows的代理
     - [参考](https://zhuanlan.zhihu.com/p/153124468)
       - 核心代码`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`，然后端口该是啥是啥
+      - [[configure]]有讲
     - 注意需要[[configure]]监听`0.0.0.0`
       - 而且有些客户端如geph还需要[[refresh]]重连（有些却不需要）
     - 然后当然就可以[[zsh]]等

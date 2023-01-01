@@ -1,5 +1,7 @@
 # 6-env
-
+- `source`和直接运行不同
+  - 直接运行的`export key=value`只影响子进程，没法给当前进程导入变量。`source`或`.`可以
+- 在[[shell-type]]用不了`source`时的[[workaround]]：`eval $(cat my-script.sh)`，是[[meta-programming]]
 ## 6.7 数组变量
 - 定义：`k=(v1 v2 v3)`
 - 取用首位：`echo $k`或`echo ${k[0]}`
