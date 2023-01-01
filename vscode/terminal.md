@@ -1,4 +1,4 @@
-- vscode集成了终端（可能是windows的[[powershell/basics]]或者linux的shell），参考[[keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
+- vscode集成了终端（可能是windows的[[powershell/basics]]或者linux的shell），参考[[settings/keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
 - 可以`+`增加window或两个框（split）按钮增加pane，这点像[[tmux]]，只不过它不能退出后还运行
 - 和普通桌面终端区别
   - 可能会缺少权限。所以一个命令如果在这里跑不通，就去其它终端试试，参考[[7-permissions]]

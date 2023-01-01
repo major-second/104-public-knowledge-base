@@ -1,7 +1,7 @@
 ## 总述
 - File - Preferences - Keyboard Shortcuts看列表（快捷键`Ctrl+K Ctrl+S`）
   - 此处
-    - 可以搜索，可以增删改查快捷键
+    - 可以搜索，可以[[CRUD]]快捷键
     - 这里可以看到自定义了的快捷键但看不到已经删除默认的
   - 但![](keybindings-json.png)这个右侧按钮看`json`可以看所有自己修改过的（包括增删改）
   - 比如本文件夹的`keybindings.json`就是一个实际例子
@@ -49,6 +49,10 @@
 - `Ctrl + P`这个实用快捷键还有个作用：打断其它“上方跳出界面”
   - 在其它界面没有正确设置退出条件（也就是你鼠标左键点外面，它还在上面占空间这种）时
   - 你可以`Ctrl + P`把“上方跳出界面”变成查找文件界面，然后鼠标左键点外面就出来了
+## 其它实用快捷键
+- 闲的没事干逛逛`Ctrl+K Ctrl+S`有惊喜
+- [[terminal]]中有很多好用的
+- `alt+左或右`在编辑器切换tab，在[[terminal]]切换`Ctrl+Shift+5`出来的终端
 ## troubleshooting
 一些特殊地方可能会用不了快捷键
 - 比如[[tensorboard]]在vscode中的窗口

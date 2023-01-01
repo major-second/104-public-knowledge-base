@@ -4,3 +4,5 @@
 - 参数
   - `--connect-timeout`设定超时时间，在[[proxy/basics]]用到，用于测试
   - `-x` [[configure]] [[proxy/basics]]
+  - `-s` [[silent]]
+  - `-fsSL`：常用搭配，比如[[zsh]]用到

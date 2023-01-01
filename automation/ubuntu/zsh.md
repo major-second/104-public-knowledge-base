@@ -36,7 +36,7 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 - `chsh`设定需要重新登录，才生效！
 ## troubleshooting
 - 参考[[non-standard]]，zsh很多时候方便，但有时也会造成麻烦
-- 可以参考[[6-env]], [[12-condition]], [[shebang]]
+- 可以参考[[6-env]], [[12-condition]], [[shebang]], [[escape]]
   - 使用`#! /bin/bash`或者`if [[ $shell = bash ]]`这种保护你的脚本不出错
 ## 特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果

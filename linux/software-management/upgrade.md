@@ -12,7 +12,8 @@
 - 举例体验
   - 比如[[distutils]]提到的问题
   - 比如一些老旧网站（如时至2022.6中国电信网上营业厅）必须用ie模式打开才正常
-    - Edge的右上角有这个按钮![](ie-mode.png)
+    - Edge的setting里搜索`explorer`，打开一个设置
+    - 之后右上角有这个按钮![](ie-mode.png)
   - 更多：参考[[version]]
 - 如何避免
   - 正常的软件开发习惯是用`deprecated`提醒你这个feature可能过一段时间新版本就没了
