@@ -29,7 +29,7 @@
   - 有的对象`pickle`可以，`torch`的[[save]]不行：https://github.com/dmlc/dgl/issues/458
   - 比如vscode的[[remote-ssh]]时，对面服务器环境可能不满足要求，[参考](https://code.visualstudio.com/docs/remote/linux#_remote-host-container-wsl-linux-prerequisites)
     - 但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了
-      - 题外话：但这里`apt install`动作要小心，因为升级`gcc`版本等可能有[[software-management/upgrade]]所描述的问题。总之升级到最新不一定是可行的
+      - 题外话：但这里`apt install`动作要小心，因为升级`gcc`版本等可能有[[general-principles/upgrade]]所描述的问题。总之升级到最新不一定是可行的
 - 比如上层封装太死，不灵活
   - 比如证明[[相合性]]在无法使用强大数律时，拆一层包装直接用[[borel-cantelli]]
   - 比如面试：“python是传值还是传引用”

@@ -42,3 +42,6 @@ cat ~/.ssh/id_ed25519.pub
   - [[other-hubs]]可能不同
 - 如果做了所有步骤，github访问仍提示无法验证，linux请先检查ssh agent是否打开！
     - 输入`eval "$(ssh-agent -s)"`即可
+## [[known-hosts]]
+- 除了github信任你，你也要信任github，所以第一次使用ssh会要求你确认
+- 想跳过？`ssh -o "StrictHostKeyChecking=no" -T git@github.com`，之后就都不需要了，参考[[known-hosts]]

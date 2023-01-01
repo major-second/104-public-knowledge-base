@@ -37,6 +37,7 @@
   - 扛200斤麦子走……里需要做多少功？
   - （你懒得查文档时）帮助编程： ![](programming-aid.png)
     - 这里问到了[[matplotlib/basics]]中的`legend`位置
+    - 当然，有时候这种东西是错误或过时的。仅供参考
   - 给出“指令”：`rephrase:`, `proofread:`, `expand:`之类的，后跟一段。可以降重、自动写文章等
   - ……
 # 绕过限制

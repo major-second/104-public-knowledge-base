@@ -6,3 +6,4 @@
   - `-x` [[configure]] [[proxy/basics]]
   - `-s` [[silent]]
   - `-fsSL`：常用搭配，比如[[zsh]]用到
+  - `--retry 3 --retry-delay 5`自动重试

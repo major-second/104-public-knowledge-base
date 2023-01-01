@@ -6,6 +6,7 @@
   - 爱好者整理的cheatsheet：一般正确率有保证，且方便速查。特别是已经看过官方文档有基础后速查
     - 例如[[init/installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
     - 例如[[dot-robot]]中[cheatsheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)
+    - 例如 https://explainshell.com
   - 总之，对于一些热门的东西，可能可以去CSDN之类查查速成、翻译等，并看看有没有cheat sheet. 对于冷门的，就去官方吧
   - 注意查看你软件的[[version]]，必须找对应版本的文档！
     - 例如[[rllib]]中针对的是`1.13.0`而不是`2.0.0`
@@ -19,7 +20,7 @@
 - 可能需要提取文档核心信息并做出合理取舍
   - 选择性忽视一些不重要（乃至错误）的信息
     - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做
-      - 而且这个`upgrade`还有可能导致[[software-management/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
+      - 而且这个`upgrade`还有可能导致[[general-principles/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
   - 识别出一些东西是可做可不做的，不要也没啥关系（而且可能过程很艰难，根本跑不通……）。那就直接舍弃
   - 识别出一些东西间[[dependencies]]不是“串行”而是可能部分[[parallelism]]的（自己人肉[[topo]]排序），从而加快安装效率
 - 可能在看懂文档基础上，适当整合和自动化让自己更方便

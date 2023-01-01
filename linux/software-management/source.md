@@ -15,7 +15,7 @@
     - 比如装[[ros/installation]]缺过包
     - 换阿里云搞定
 - 更新软件源列表：`sudo apt update`
-  - 这是安全的，和[[software-management/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
+  - 这是安全的，和[[general-principles/upgrade]]一定要区分开！`upgrade`千万谨慎执行！
 - 换源可以命令行操作
   - 具体地：在文件`/etc/apt/sources.list`中。可参考[[settings-and-configurations]]
   - 也可以九个点 - Software & Updates换
