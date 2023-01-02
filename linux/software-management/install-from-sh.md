@@ -9,3 +9,4 @@
 - `curl -Ls https://mirrors.v2raya.org/go.sh | sudo bash`，来自[[v2raya]]
 - 各种方式互为[[workaround]]
   - 例如第一种[[escape]]最烦哈哈
+  - 第二种`wget`没法识别`ALL_PROXY`，必须用`http_proxy`和`https_proxy`（而且区分大小写！）

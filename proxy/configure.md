@@ -54,10 +54,12 @@ if [ $proxy_usable = 0 ]; then unset ALL_PROXY; echo no usable proxy; fi
 echo "test:"
 curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | grep oh-my-zsh
 ```
-- 拓展：[[pip]]走代理
-  - `pip`自动读取环境变量中的代理设置
-  - 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样直接`127.0.0.1`开头
-  - 上节那样会报错，且在报错信息中可以看到应该怎么改
+- 一些特殊情况
+  - [[pip]]走代理
+    - `pip`自动读取环境变量中的代理设置
+    - 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样直接`127.0.0.1`开头
+    - 上节那样会报错，且在报错信息中可以看到应该怎么改
+  - [[curl]]可以使用`ALL_PROXY`，但`wget`只能用`http_proxy`和`https_proxy`（还区分大小写）
 ### win环境变量
 参考[[windows/env-var]]，[[powershell/var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`

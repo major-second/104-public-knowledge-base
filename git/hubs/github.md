@@ -1,0 +1,9 @@
+- github.com
+- git和github是什么关系？
+  - git本身只是一套管理系统，你可以只在本地用，比如[[stash]]，[[reset]]等等
+    - 无论用什么托管平台（hub），[[init/installation]]都是需要的
+  - github是一个托管平台，可以一定程度上理解为网盘。除了github肯定还有其他的提供商
+- github本身一般只能一次[[clone]]一个完整的库
+  - 但`https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore`这种地方可以直接[[curl]]一小部分之类的
+  - 比如上面的链接对应的是`https://github.com/ohmyzsh/ohmyzsh/blob/master/.gitignore`
+  - 必须public库才有
