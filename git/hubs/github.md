@@ -7,3 +7,4 @@
   - 但`https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore`这种地方可以直接[[curl-wget]]一小部分之类的
   - 比如上面的链接对应的是`https://github.com/ohmyzsh/ohmyzsh/blob/master/.gitignore`
   - 必须public库才有
+  - 有时可用作[[file-transfer]]手段，作为命令行一部分非常方便

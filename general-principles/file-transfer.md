@@ -5,7 +5,11 @@
 - 多平台（但需要GUI）
   - 发邮件
   - [[keybase]]（高度机密安全，跨平台，可无限期撤回）
-  - 短文字，无需翻墙，难被监管：例如博客园、csdn等博客草稿。可能需要和[[linux/zip-unzip]], [[xxd-diff]]联合使用
+  - 短文字，无需翻墙，可能绕过公司监管：例如博客园、csdn等博客草稿。可能需要和[[linux/zip-unzip]], [[xxd-diff]]联合使用
+    - 网盘，[[github]] [[push-pull]] [[outlook]] [[keybase]]显然会被公司监管禁用哈哈
+  - 小文件命令行使用
+    - 例如[[github]]
+    - 乃至有[[curl-wget]]就能用的`raw.githubusercontent.com`（也参考[[github]]）
 - 日常
   - [[wechat-tips]]，例如文件传输助手
     - 日常相对方便，但不保密不安全会被监视可能被压缩有大小限制……等
