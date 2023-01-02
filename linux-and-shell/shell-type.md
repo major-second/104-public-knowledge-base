@@ -1,8 +1,9 @@
 - 有些种类的`shell`不能自动`source` [[shrc]]
   - 比如交互式的（像直接`bash`命令进去的）会自动`source` [[shrc]]
     - 但直接`bash 1.sh`这样并不会
-    - 当然，你的`bash 1.sh`如果是在交互式`bash`中跑起来的，那还是能用[[6-env]]，但是这还是因为你之前交互式`bash`的`source`
-    - 如果你先`bash`再改[[shrc]]再`bash 1.sh`，则修改不生效（[[refresh]]思想）
+      - 当然，你的`bash 1.sh`如果是在交互式`bash`中跑起来的，那还是能用[[6-env]]，但是这还是因为你之前交互式`bash`的`source`
+      - 如果你先`bash`再改[[shrc]]再`bash 1.sh`，则修改不生效（[[refresh]]思想）
+    - 这样的一个合理之处：比如我们都知道[[proxy/basics]]往往比较慢，所以可能需要`unset http_proxy; unset https_proxy; ./setup.sh`. 你如果非交互式自动运行`~/.bashrc`就糟了（
   - 比如`bash -c`不会，`bash -ic`会
     - 这一点在[[wsl-command]]中需要了解
     - 在[[docker-file]]中也提到`bash --login -c`相比`bash -c`不同

@@ -18,7 +18,7 @@
   - 不过可能有一些特点可能和linux中的不同，毕竟还是不正宗！
   - 例如
     - 路径的`~`记号表示home可能用不了了
-    - `curl`其实是`Invoke-WebRequest`，参数列表和linux正宗的[[curl]]不一样，比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
+    - `curl`其实是`Invoke-WebRequest`，参数列表和linux正宗的[[curl-wget]]中的`curl`不一样，比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
     - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种

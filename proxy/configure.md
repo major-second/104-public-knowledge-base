@@ -59,7 +59,7 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
     - `pip`自动读取环境变量中的代理设置
     - 但要求`~/.bashrc`里的`$http_proxy`等等变量以`http://`开头，而不是上节那样直接`127.0.0.1`开头
     - 上节那样会报错，且在报错信息中可以看到应该怎么改
-  - [[curl]]可以使用`ALL_PROXY`，但`wget`只能用`http_proxy`和`https_proxy`（还区分大小写）
+  - [[curl-wget]]提到`curl`可以使用`ALL_PROXY`，但`wget`只能用`http_proxy`和`https_proxy`（还区分大小写）
 ### win环境变量
 参考[[windows/env-var]]，[[powershell/var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
@@ -77,7 +77,7 @@ curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 ### 其它读取自己独立设置的软件
 - 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
   - 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
-- 有些软件默认读系统设置或环境变量，但自己也可以独立设置，例如[[curl]]中`curl -x`
+- 有些软件默认读系统设置或环境变量，但自己也可以独立设置，例如[[curl-wget]]中`curl -x`
   - 参考[[settings-and-configurations]]
 # 验证配置成功
 - linux终端

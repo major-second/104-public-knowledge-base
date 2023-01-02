@@ -6,6 +6,8 @@
     - 区别于[[cache-decorator]]，这个是一次运行之内的缓存，不能跨越多次运行
     - 但，如果你的计算不是特别特别久，不建议使用[[cache-decorator]]，否则要不断access硬盘，反而更慢
   - [[jupyter-notebook/cache]]
+  - [[pip]]和[[conda/commands]]，下载了包会自动缓存
+    - 所以有时可以联系[[temp-solution]]，一次下载，之后就都不用下载，很方便
 - 缓存有时的坏处
   - 明明有些东西该[[refresh]]更新了，你却缓存了没更新（例如[[cache-decorator]]存储的函数运行结果），当然就导致错误
   - 占用硬盘空间。例如[[pip]]和[[conda/installation]]的缓存文件

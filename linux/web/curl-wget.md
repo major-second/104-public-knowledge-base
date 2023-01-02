@@ -1,0 +1,16 @@
+- `curl 网址`
+  - 注意这在应用层，和`ping`不同。所以可以用来测试[[proxy/basics]]是否配置成功
+    - [[vpn]]就更加没问题！
+  - 参数
+    - `--connect-timeout`设定超时时间，在[[proxy/basics]]用到，用于测试
+    - `-x` [[configure]] [[proxy/basics]]
+    - `-s` [[silent]]
+    - `-fsSL`：常用搭配，比如[[zsh]]用到
+    - `--retry 3 --retry-delay 5`自动重试
+- `wget 网址`默认下载下来一个东西（当然你可以`cat`它用来看）
+  - 参考[[install-from-sh]]中两者不同
+  - `wget -O -`输出到`stdout`即`-`，行为就和`curl`不带参数类似
+    - 联想[[md5sum]]
+  - `wget -qO -`更常见：[[silent]]
+- 两者还有一些细微差别
+  - 比如[[configure]]时，`curl`可以使用`ALL_PROXY`，但`wget`只能用`http_proxy`和`https_proxy`（还区分大小写）

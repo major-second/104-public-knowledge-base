@@ -1,5 +1,5 @@
 直接通过`.sh`安装，过程中可能有各种下载之类的，被打包成一起的了，傻瓜式
-- 前置[[curl]]
+- 前置[[curl-wget]]
 - 那么自然可能有其它过程中原本的问题。比如没有[[proxy/basics]]上不了网……
 # 常见方式
 - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`，来自[[zsh]]
