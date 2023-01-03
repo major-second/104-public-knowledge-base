@@ -10,11 +10,13 @@
   - 更复杂的一个实际中的[[tensorboard]]搜东西例子：`(data_clipped/.*0\.01_0\.01_0\.95_64_False_0\.(3|5)|Ols)`
     - 要不然是`Ols`
     - 要不然是`data_clipped`文件夹下，以`0.01_0.01_0.95_64_False_0.3`结尾。最后`3`也可能是`5`
+  - `^`在方括号内外含义不同，在外面是开头。`$`是结尾。所以`ls -a | grep -v '\(\.$\|\.\.$\|\.git$\)'`列出当前文件夹下除了`., .., .git`外的文件（包括[[launch]]的`json`等隐藏文件）
 - 使用
   - [[find-grep]]中用，比如
     - `nvidia-smi | grep '[4-7]\s\+T'`
     - `du -h | grep '[0-9]G\s'`
     - 参考[[11-basic-scripting-partB]]中的“管道记号”
+    - 坑：`(, |, )`等[[escape]]与否和原始定义恰好相反
   - [[powershell/string]]中的`| Select-String`
   - vscode全文搜索
     - 看最右侧按钮

@@ -2,7 +2,11 @@
 - [[encode-decode]]“码”不够了
 # 实例
 - [[meta-programming]]
-- [[regex]]中`\.`才是一个点字符，等等
+- [[regex]]中
+  - `\.`才是一个点字符，否则表示任意字符
+  - `\(`才是字面的括号
+  - 等等
+  - 但[[find-grep]]中的`grep`又不同，括号是反过来的，`(`匹配字面括号，`\(`才是特殊含义的元字符，反正你两个得转一个
 - shell转义非常繁琐，有时你可能都得考虑[[workaround]]……
   - [[11-basic-scripting-partA]]中例子（单双引号区别）
     - `echo -n "$SHELL "; echo -n '$SHELL '; echo -n "\$SHELL "`

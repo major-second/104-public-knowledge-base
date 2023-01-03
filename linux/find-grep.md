@@ -24,5 +24,7 @@
     - 比如匹配`"/pip$"`可找到`pip`这个可执行程序，而不显示`/pip/`这种结构，其中`$`表示结束
     - 比如`while [[ 1 -eq 1 ]]; do sleep 2; nvidia-smi | grep "[4-7]\s\+N/A\s\+N/A" | awk '{print $5}' | xargs sudo kill -9; done`定期清理后4张卡程序
       - 哈哈这个多少有点[[map-reduce]]的意味（狗头）
+    - `(, |, )`等：不加`\`反而是字面意义，加了`\`是元字符，和[[regex]]原始定义（也是[[tensorboard]]中的定义）不同
+      - 比如`ls -a | grep -v '\(\.$\|\.\.$\|\.git$\)'`
   - 找某个表达式出现的脚标index：`echo foobar | grep -bo bar | awk -F: '{print $1}'`
     - 可结合[[awk-cut]]

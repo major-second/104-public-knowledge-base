@@ -5,6 +5,7 @@
   - 在什么目录下运行（防止`python`找不到包）
     - 例如`"cwd": "${workspaceFolder}/anticipation"`，就不在项目根目录运行
     - 这里参考[[sys-path]]
+    - 时至2023.1 vscode个别时候（我自己的wsl中就有）有个bug：对于python debug [[terminal]]，第一次launch时没法正常读取`cwd`. 需要关了重新launch，让他自动在这个python debug终端再跑一次。不能垃圾桶掉这个终端
   - 参数`"args"`
     - 这样就不用每次重新复制长串命令
     - 例如本来的参数列表为`--id 1 --learning-rate 0.0001`，对应的你要写成`"args": ["--id", "1", "--learning-rate", "0.0001"]`

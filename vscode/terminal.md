@@ -1,10 +1,16 @@
 - vscode集成了终端（可能是windows的[[powershell/basics]]或者linux的shell），参考[[settings/keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
-- 可以`+`增加window或两个框（split）按钮增加pane，这点像[[tmux]]，只不过它不能退出后还运行
+- 可以`+`增加window或两个框（split）按钮增加pane
+  - 这点像[[tmux]]，只不过它不能退出后还运行
+  - 快捷键：<code>Ctrl+Shift+&#96;</code>新终端，`Ctrl+Shift+5`split
+  - `5`，这个是不是想到[[tmux]]的`Ctrl+B Shift+5`
+- `x`：隐藏（后台），垃圾桶：真正[[quit]]
+  - [[launch]]出的程序自动打开一个终端
+    - 有现成的会用现成的
+      - 2023.1 [[python]]有个bug：必须用现成的才能正常读取`cwd`
+  - 终端旁会显示名称，[[launch]]出的程序有特殊名称
 - 和普通桌面终端区别
   - 可能会缺少权限。所以一个命令如果在这里跑不通，就去其它终端试试，参考[[7-permissions]]
     - 例如linux系统物理机：桌面直接打开的终端
   - 可能没法显示东西
 - `Ctrl+左键点击`终端显示的路径字符串，可以在编辑器中打开
   - 因此可以结合`$(pwd)`等东西便捷地使用，到处打开编辑东西
-- <code>Ctrl+Shift+&#96;</code>新终端，`Ctrl+Shift+5`split
-  - 5这个是不是想到[[tmux]]的`Ctrl+B Shift+5`
