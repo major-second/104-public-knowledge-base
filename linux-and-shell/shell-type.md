@@ -8,3 +8,5 @@
     - 这一点在[[wsl-command]]中需要了解
     - 在[[docker-file]]中也提到`bash --login -c`相比`bash -c`不同
   - 比如在有`~/.bash_profile`且在`~/.bash_profile`中没有`source ~/.bashrc`时，`bash --login -c`并不会`source ~/.bashrc`，只有`bash -ic`才会
+- 是否交互式跑命令，`$0`，`ps`结果等也有区别
+  - 在[[zsh]]中提到过（那里想区分`bash`和[[zsh]]，这并不是那么容易）
