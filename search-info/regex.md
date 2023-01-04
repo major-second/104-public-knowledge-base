@@ -1,16 +1,19 @@
 - 参考
   - https://www.runoob.com/regexp/regexp-syntax.html
-    - 实际中不能完全照搬上面的
-    - 比如`grep`中有[这种麻烦](https://stackoverflow.com/questions/53867329/why-cant-i-use-s-with-grep)，和[[escape]]有关
+    - 实际中不能完全照搬上面的[[read-doc]]
+    - 比如[[find-grep]]中有[这种麻烦](https://stackoverflow.com/questions/53867329/why-cant-i-use-s-with-grep)，和[[escape]]有关
   - https://regexr.com/
 - 语法举例
-  - 想找两个空格，但不能有更多空格：<code>[^ ]&nbsp;&nbsp;[^ ]</code>
   - 只看后4张卡占用：`grep '[4-7]\s\+T'`
   - [[tensorboard]]中搜两种结构，如MLP1或者RNN2（“或”关系）：`(MLP1|RNN2)`
-  - 更复杂的一个实际中的[[tensorboard]]搜东西例子：`(data_clipped/.*0\.01_0\.01_0\.95_64_False_0\.(3|5)|Ols)`
-    - 要不然是`Ols`
-    - 要不然是`data_clipped`文件夹下，以`0.01_0.01_0.95_64_False_0.3`结尾。最后`3`也可能是`5`
-  - `^`在方括号内外含义不同，在外面是开头。`$`是结尾。所以`ls -a | grep -v '\(\.$\|\.\.$\|\.git$\)'`列出当前文件夹下除了`., .., .git`外的文件（包括[[launch]]的`json`等隐藏文件）
+    - 更复杂的一个实际中的[[tensorboard]]搜东西例子：`(data_clipped/.*0\.01_0\.01_0\.95_64_False_0\.(3|5)|Ols)`
+      - 要不然是`Ols`
+      - 要不然是`data_clipped`文件夹下，以`0.01_0.01_0.95_64_False_0.3`结尾。最后`3`也可能是`5`
+  - `^`在方括号内外含义不同
+    - 在外面是开头。对应地，`$`是结尾
+      - `ls -a | grep -v '\(\.$\|\.\.$\|\.git$\)'`列出当前文件夹下除了`., .., .git`外的文件（包括[[launch]]的`json`等隐藏文件）
+    - 在里面是“否”
+      - 想找两个空格，但不能有更多空格：<code>[^ ]&nbsp;&nbsp;[^ ]</code>
 - 使用
   - [[find-grep]]中用，比如
     - `nvidia-smi | grep '[4-7]\s\+T'`

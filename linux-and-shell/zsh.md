@@ -22,7 +22,6 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - `export`的[[configure]]
   - [[ros/installation]]中的`source`命令
   - `CUDA`，`conda`设置，`ssh`服务打开等七七八八的东西
-- 注意`zsh`平常能提高效率，但有时关键时刻会造成麻烦。有些奇怪错误产生了，可以换回`bash`试试。参见[[non-standard]]
 - 如果想要[[silent]]（即全程在`bash`完成`zsh`安装），需要
   - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended`
   - 参考这个`https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh`本身的注释
@@ -35,16 +34,25 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - 不`sudo`的输入密码类似于[[7-permissions]]中说过的`passwd`命令的原理。即用户还是自己（非`root`），“临时”获得了高级权限。
 - `chsh`设定需要重新登录，才生效！
 ## troubleshooting
+- 怎么知道自己用的是bash还是zsh？
+  - `$SHELL`不行。你zsh中再bash就知道错
+  - `$0`只在交互中可以，跑脚本不行
+  - `ps`可以看到
+  - 但如果需要用作条件判断，需要`if ps | tail -n 6 | head -n 1 | awk '{print $4}' | grep bash`，也就是`ps, tail, head, awk, grep`五个进程之外，第6个就是`bash`或`zsh`
 - 参考[[non-standard]]，zsh很多时候方便，但有时也会造成麻烦
+- 有些奇怪错误产生了，可以换回`bash`试试
 - 可以参考[[6-env]], [[12-condition]], [[shebang]], [[escape]]
-  - 使用`#! /bin/bash`或者`if [[ $shell = bash ]]`这种保护你的脚本不出错
+  - 使用`#! /bin/bash`
+  - 或者`if ps | tail -n 6 | head -n 1 | awk '{print $4}' | grep bash`这种保护你的脚本不出错
 ## 特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
-- 刚刚的命令中加入了`j`命令快速跳
-  - 进过某个文件夹，就可以`j <部分名字>`过去，或`j <部分名字然后Tab>`选择
+- 刚刚的命令中，安装了`autojump`，所以可以`j`命令快速跳
+  - **进过某个文件夹**，之后就可以`j <部分名字>`过去，或`j <部分名字然后Tab>`选择
   - 还有`jc`（子文件夹等），看`man autojump`可看到[[help]]
 - 语法高亮`zsh-syntax-highlighting`
   - 正确的绿，错误的红
   - 如果你的命令中包含`cd`，那么可能有些假的错误（红）
     - 甚至导致`alias`也出现假的红
-- 自动补全`zsh-autosuggestions`：储存已有命令，`方向键右`补全。注意不是`tab`
+- 自动补全`zsh-autosuggestions`
+  - 储存已有命令，`方向键右`补全
+  - 注意不是`tab`补全。两种补全含义不同
