@@ -37,13 +37,12 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 - 怎么知道自己用的是bash还是zsh？
   - `$SHELL`不行。你zsh中再bash就知道错
   - `$0`只在交互中可以，跑脚本不行
-  - `ps`可以看到
-  - 但如果需要用作条件判断，需要`if ps | tail -n 6 | head -n 1 | awk '{print $4}' | grep bash`，也就是`ps, tail, head, awk, grep`五个进程之外，第6个就是`bash`或`zsh`
+  - `ps`可以看到，但也是交互中可以，跑脚本很麻烦
 - 参考[[non-standard]]，zsh很多时候方便，但有时也会造成麻烦
-- 有些奇怪错误产生了，可以换回`bash`试试
+  - 有些奇怪错误产生了，可以换回`bash`试试
 - 可以参考[[6-env]], [[12-condition]], [[shebang]], [[escape]]
-  - 使用`#! /bin/bash`
-  - 或者`if ps | tail -n 6 | head -n 1 | awk '{print $4}' | grep bash`这种保护你的脚本不出错
+  - 可使用`#! /bin/bash`
+  - 需要[[12-condition]]判断时，可以强行判断`$0`必须是`bash`才继续往下跑之类的。使用时永远`bash a.sh`
 ## 特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
 - 刚刚的命令中，安装了`autojump`，所以可以`j`命令快速跳

@@ -123,3 +123,5 @@ function test-command {
 - 这里`\[`是为了兼容`bash`和[[zsh]]，在bash中是trivial的转义
 ## 其它
 - 一个地方写函数，其它地方用？需要`source`命令，参考[[6-env]]
+- 名字可能遮蔽，所以命名要小心。这个不像python那么clean
+  - `function a { b=1; echo $b }; b=2; echo $b; a; echo $b`
