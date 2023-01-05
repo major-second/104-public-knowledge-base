@@ -151,3 +151,7 @@ do
  export \$item
 done" >> /etc/profile
 ```
+
+- 注意`~`的问题：`echo ~; echo "~"; ls ~; ls "~"`
+  - `~`裸露才会表示家，双引号是原样不[[escape]]
+  - 对比：[[6-env]]，`$var`双引号中表示变量，单引号中才是原样不[[escape]]

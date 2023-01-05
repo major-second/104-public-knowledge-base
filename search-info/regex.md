@@ -19,11 +19,14 @@
     - `nvidia-smi | grep '[4-7]\s\+T'`
     - `du -h | grep '[0-9]G\s'`
     - 参考[[11-basic-scripting-partB]]中的“管道记号”
-    - 坑：`(, |, )`等[[escape]]与否和原始定义恰好相反
+    - 坑：`(`, `|`, `)`等字符，[[escape]]与否和原始定义恰好相反
   - [[powershell/string]]中的`| Select-String`
   - vscode全文搜索
     - 看最右侧按钮
     - ![](vscode-regex.png)
   - [[tensorboard]]左侧搜索可以用
+  - python
+    - `python -c "import re; print(re.search('a\s+b', 'acba  baba b'), re.findall('a\s+b', 'acba  baba b'))"`
+    - 输出`<re.Match object; span=(3, 6), match='a b'> ['a b', 'a b']`
 - 拓展：相关算法题。自己实现正则表达式的一些特点
   - [[10-regular-expression-matching]]

@@ -3,6 +3,7 @@
 - 只需
   - `pip install jupyter_contrib_nbextensions`
   - `jupyter contrib nbextension install --user`
+  - [[general-principles/logs]]等级？`jupyter contrib nbextension install --Application.log_level=30 --user`
 - 之后重启notebook主页（就是你选文件那个界面），可看到`Nbextensions` tab
 - 这里可以点击查看插件说明，打勾启用
 - 实用插件
