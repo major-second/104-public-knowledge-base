@@ -8,3 +8,5 @@
     - 总长8，保留2位
   - 例如`:08d`会把`2`变成`00000002`
 - [[escape]]：`{{`表示`{`，在[[text]]中，结合`f-string`输入数学公式时常用
+- 和[[format-string]]混合使用：`f'{{0:0{DATE_FORMAT_LENGTH}d}}'.format(i)`，注意[[escape]]大括号
+  - 比如`DATE_FORMAT_LENGTH`为8，那就是`'{0:08d}'.format(i)`，也就是8位

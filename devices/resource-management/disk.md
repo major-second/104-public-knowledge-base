@@ -3,4 +3,11 @@
   - [[mount]]避免疯狂占系统盘
   - [[ln-s]]省空间
   - [[partition]]非常常用
-- 查看：[[resource-management/commands]]
+- 查看
+  - [[resource-management/commands]]
+  - windows中
+    - 选中一堆文件夹右键属性或者`Alt+Enter`快捷键
+    - 用[[wsl]]的[[resource-management/commands]]，例如`sudo du -h /mnt/c | grep '[0-9]G'`
+- windows中不要把东西放太多到c盘
+  - 否则之后很麻烦，得[[partition]]
+  - 当然，一开始装电脑把C盘设大点挺好的
