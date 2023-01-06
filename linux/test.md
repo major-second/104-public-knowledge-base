@@ -1,0 +1,4 @@
+- 用于做测试，验证你想法对不对
+  - `test $(python -c 'print("121".replace("1", "3"))') = 323; echo $?`
+  - 输出0
+- 可用于[[12-condition]]

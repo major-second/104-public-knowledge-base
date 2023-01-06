@@ -8,10 +8,12 @@
     - `-<字母>`这种会被理解成**不要某某**。所以搜索`python -m`这种东西
       - 要加引号成`"python -m"`这样搜
     - `site:网址`限制网址
-- 查找
+- 查找替换
   - 快捷键
     - 很多地方可以`Ctrl+F`查找，`Ctrl+H`替换，比如[[word]]
+      - [[general-principles/special-case]]思想：很多地方替换成空就是全部删除。比如vscode, python都是
     - vscode的[[settings/keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
+    - `test $(python -c 'print("121".replace("1", "3"))') = 323; echo $?`
     - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
       - 此时需要禁用[[region-language]]的繁简切换快捷键（一般是`Ctrl+Shift+F`，产生冲突）
     - 查找时，往往有区分大小写、全字匹配、正则表达式等按钮/选项，如 ![](vscode-options.png)

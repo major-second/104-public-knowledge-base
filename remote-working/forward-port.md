@@ -1,2 +1,12 @@
 - 命令行：参考[[ssh/ssh]]中`-L`, `-R`
+  - 远程forward port：远程访问某个端口变成访问本地的端口：`-R`
+    - 例如`ssh -R 18889:localhost:8889 user@ip`，你本地`8889`有个[[configure]]好的代理，那远程就可以用`18889`端口使用代理
+    - 当然可用于翻墙的[[temp-solution]]
+    - 可以用于[[autossh]], [jumptainer]
+  - 本地forward port：本地访问某个端口变成访问远程的端口：`-L`
+    - 例如`ssh -L localhost:11111:localhost:20171 user@ip`，你远程`20171`有个[[configure]]好的代理，那本地就可以用`11111`端口使用代理
+    - 当然可用于翻墙的[[temp-solution]]
+    - [[tensorboard]], [[v2raya]]常用：访问本地（例如`6006, 2017`）变成访问远程
+  - 速记：L四R三，L访问本地变远
 - vscode[[remote-ssh]]时的转发：![](forward-port-vscode.png)![](forward-port-vscode-2017.png)，然后右边三个按钮都很香很好用
+  - 一般相当于`-L`：本地访问某个端口变成访问远程的端口
