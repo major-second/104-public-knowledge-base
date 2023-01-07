@@ -8,7 +8,14 @@
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
    1. 也可以先commit，先没有任何remote，之后再`remote add origin <某某.git>`并`git push --set-upstream master`这样
 # 其它
-- 一般来说不要为了看起来舒服就[[reset]]再`push --force`，因为[看起来一堆commit并不占多少空间](https://segmentfault.com/q/1010000003089251)
+- [[reset]]再`push --force`
+  - 可以减少显示的[[commit]]的数量
+  - 一般来说不要为了看起来舒服就这么做
+    - 因为[看起来一堆commit并不占多少空间](https://segmentfault.com/q/1010000003089251)
+  - 因为有不良后果：别人[[push-pull]]时如果没有对此做心理准备，就会结果不正常，不在预期
+    - 所有出现库的地方都[[refresh]]删除重下一定是能解决的，但你这也太搞笑了
+  - 但自己一个人的项目在明确后果时可以这么做
+    - 你自己个人的[[git-basics/branch]]也可以这么做
 - `git push --tags`可以让远程能看到tags
 - `git push origin <branch_name>`到指定分支
   - 注意前提是[[checkout]]到你想要的[[git-basics/branch]]

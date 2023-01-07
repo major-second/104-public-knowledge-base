@@ -8,7 +8,9 @@
    2. 再`git stash`存起来
    1. 再`git pull`远程结果
    3. 再`git stash pop`并解决conflict
-2. 基于hard-[[reset]]，“微调远程remote上的当前commit”（实际工程中不太建议）
+2. 基于hard-[[reset]]，“微调远程remote上的当前commit”
+   - 实际工程中不太建议，特别是和别人合作时
+   - 自己的[[git-basics/branch]]可以
    1. 先把当前working copy `add`到index
    2. 再`git stash`存起来
    3. hard [[reset]]回上个commit
