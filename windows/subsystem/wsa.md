@@ -30,8 +30,15 @@
   - 时至2022.12，必须关闭WSA Settings - Advanced Networking
     - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA进行[[refresh]]，非常烦
       - 任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉
-      - 再对`wsa`做同样事情
+      - 再对`wsa`，`adb`，`vmmem`做同样事情，看到wsa相关的就关
       - Apps/Background Processes/Windows Processes都要看
+    - 确保全部关掉，且 Advanced Networking关闭
+    - 且不使用任何[[proxy/basics]]
+      - 最好[[configure]]和[[windows-client]]都不开
+      - 还要下文所说`adb`关代理
+      - 以及不要用[[vpn]]（包括公司内网）
+    - 我不知道这么确保有没有必要但一般这样一来重开wsa就能进了
+    - 实在不行，继续升级[[refresh]]，重登重启
   - 使用主机代理
     - 主机[[powershell/basics]]
     - 需要
@@ -48,4 +55,5 @@
 - 更多应用
   - 光[[wechat-tips]]太没出息了吧
   - 敏感羞羞网站/应用等，使用电脑高速大屏，爽！直接用应用商店下载即可
+    - 刚刚可说过代理怎么用哦
   - 浏览器：由于google play问题，很多都用不了。`Opera`时至2022.12确认能用
