@@ -6,7 +6,7 @@
    2. hhhh，甚至手机还有github app，可以出门应急呢。可能用到[[android]]代理之类的
 3. Do the same things as `Github Desktop` on `VSCode`, [reference](https://blog.csdn.net/qq_25367937/article/details/114271010?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&utm_relevant_index=2)
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
-   1. 也可以先commit，先没有任何remote，之后再`remote add origin <某某.git>`并`git push --set-upstream master`这样
+   1. 也可以先[[init]], [[commit]]，先没有任何remote，之后再加，参考[[remote]]
 # 其它
 - [[reset]]再`push --force`
   - 可以减少显示的[[commit]]的数量

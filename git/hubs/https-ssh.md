@@ -8,7 +8,8 @@
 - `git clone`https链接不需要加ssh密钥，但ssh链接需要
 - 何时需要ssh链接？
   - `--recursive`地`git clone`子模块时，默认用ssh链接
-  - 有时`https`链接玄学`clone`不了，那就要用`ssh`链接
+  - 有时`https`链接玄学[[clone]]，[[push-pull]]不了，那就要用`ssh`链接，作为[[workaround]]
+  - [一个例子](https://stackoverflow.com/questions/7489813/github-push-error-rpc-failed-result-22-http-code-413)：当小的库正常[[push-pull]]，大的就错误码`413`时，可以试试
 - 具体增加ssh密钥的操作参考[官方教程](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 ## 得到文本
 查看是否有公钥`ls -al ~/.ssh`

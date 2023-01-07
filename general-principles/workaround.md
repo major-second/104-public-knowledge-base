@@ -1,9 +1,11 @@
 时常想想“换一下”“替代”“变通”（英文：workaround）
+- 相关：[[aggregation]]
 - 不要钻牛角尖。人的精力是有限的，你不可能面对一切tricky issues都想着彻底解决。有时可以绕过
   - 例如[[press-keys]]中时至2022.6，`alt + space`效果不正常，你可以用`win + 方向键`凑合一下完成最大最小化
   - 例如[[lightning/basics]]中多卡训练莫名其妙报错，那就算了吧，老老实实单卡
   - 例如[[nbextension]]装不了（可能由于公司电脑合规问题等），就用[[jupyter-notebook/tqdm]]代替进行计时
   - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-notebook/basics]]浏览器打开的方式调试
+  - [[https-ssh]]
 - 有时候换个东西就能解决问题
   - 例如有时出现莫名其妙的问题换个打开的软件（如播放器、浏览器）或硬件设备就能解决
   - 例如语言设置成中/英，显示出的功能可能不同（这个说明有些东西的[[independent]]性比你想的差）
