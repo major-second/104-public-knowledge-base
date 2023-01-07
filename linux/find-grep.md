@@ -26,5 +26,7 @@
       - 哈哈这个多少有点[[map-reduce]]的意味（狗头）
     - `(, |, )`等：不加`\`反而是字面意义，加了`\`是元字符，和[[regex]]原始定义（也是[[tensorboard]]中的定义）不同
       - 比如`ls -a | grep -v '\(\.$\|\.\.$\|\.git$\)'`
-  - 找某个表达式出现的脚标index：`echo foobar | grep -bo bar | awk -F: '{print $1}'`
+  - `-o`输出匹配到的东西（而不是一整行）
+  - `-bo`找某个表达式出现的脚标index
+    - `echo foobar | grep -bo bar | awk -F: '{print $1}'`
     - 可结合[[awk-cut]]
