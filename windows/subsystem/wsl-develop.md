@@ -6,6 +6,10 @@
     - 把windows文件夹直接复制过来的问题：命名规则，分隔符，[[7-permissions]]等
       - 例如[[pubkey-authentication]]权限，git库权限问题（可能导致[[git-project-manager]]用不了）
     - 可以看到是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
+  - 跨系统混用
+    - 文件系统
+      - [[git-basics/basics]]完全不行，会因为权限等问题导致无法正常使用或者显示太多修改
+    - 跨系统混用终端：[[zsh]]不行！
   - [[remote-ssh]]有了之后
     - `code .`打开vscode
     - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可
