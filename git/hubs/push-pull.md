@@ -7,6 +7,7 @@
 3. Do the same things as `Github Desktop` on `VSCode`, [reference](https://blog.csdn.net/qq_25367937/article/details/114271010?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&utm_relevant_index=2)
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
    1. 也可以先[[init]], [[commit]]，先没有任何remote，之后再加，参考[[remote]]
+   2. 这里特别注意是否加`-u`或`--set-upstream`，参考[[remote]]
 # 其它
 - [[reset]]再`push --force`
   - 可以减少显示的[[commit]]的数量
