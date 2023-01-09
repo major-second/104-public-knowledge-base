@@ -1,10 +1,12 @@
 算出的东西用完不用删，说不定下次还要用呢？多占空间，节省时间
+- 参考[[memory]], [[resource-management/disk]], [[tradeoff]]
 - 举例
   - [[cache-decorator]]自动化缓存
   - [[pickle/basics]]手动存文件
-  - python的`lru_cache`装饰器
-    - 区别于[[cache-decorator]]，这个是一次运行之内的缓存，不能跨越多次运行
-    - 但，如果你的计算不是特别特别久，不建议使用[[cache-decorator]]，否则要不断access硬盘，反而更慢
+  - python的`functools.lru_cache`装饰器
+    - 用法[参考](https://juejin.cn/post/6939345971042058248)
+    - 区别于[[cache-decorator]]，这个是一次运行之内的（内存中的）缓存，不能跨越多次运行，并不是硬盘上的缓存
+    - 如果你的计算不是特别特别久，不建议使用[[cache-decorator]]，否则要不断access硬盘，反而更慢，参考[[tradeoff]]
   - [[jupyter-notebook/cache]]
   - [[pip]]和[[conda/commands]]，下载了包会自动缓存
     - 所以有时可以联系[[temp-solution]]，一次下载，之后就都不用下载，很方便

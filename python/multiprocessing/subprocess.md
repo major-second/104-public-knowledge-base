@@ -8,5 +8,6 @@
 - 直接`subprocess.run('ls -l'.split())`即可执行命令，并获得返回的`CompletedProcess`对象（此时不得到结果，但命令确已执行）
 - `cp = subprocess.run('ls -l'.split(), capture_output=True); print(cp.stdout, cp.returncode)`取结果
   - 这时，不能使用管道记号！`ls`是命令，后面都是参数
+  - 由于结果直接是bytes而不是str，所以之后可能还需要`str(cp.stdout, encoding='utf-8')`，参考[[encode-decode]]
 - `cp = subprocess.run('ls -l | grep md', shell=True, capture_output=True); print(cp.stdout, cp.returncode)`使用不安全的`shell=True`，且输入直接是字符串而不是list，可以使用[[11-basic-scripting-partB]]管道记号
 - 总之，这可以看成[[meta-programming]]的案例，即可用`python`操作`shell`语言字符串
