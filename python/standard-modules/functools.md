@@ -4,3 +4,4 @@
   - 比如`reduce(lambda x,y: x*y, map(int, ['1', '2', 3.4, 4]))`输出`24`
 - `partial`：用于减少函数元数（[[currying]]）
   - `f = lambda x,y:x+y; g = partial(f, x=1); print(g(y=2))`，输出`3`
+- `lru_cache`：参考[[general-principles/cache]]，是个装饰器
