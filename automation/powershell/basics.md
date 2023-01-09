@@ -9,16 +9,18 @@
   - 可以看出Powershell的命名格式：大写单词，`-`连接动词和名词
   - `gal`自身是`Get-Alias`，2333
   - 很多命令是为了让linux的人好用所以做了alias
-  - 你可以`gal`一下`mv cp ls rm cat diff`等
+  - 你可以`gal`一下`mv cp ls rm cat diff cd echo sleep`等
 - `New-Item`
   - `New-Item -type Directory`相当于了`mkdir`
-  - 不加参数就是`touch`
-  - 其alias通过`help`查到是`ni`
-- `scp, ssh, curl`等可以用
+  - 不加参数就相当于了`touch`
+  - `New-Item`的alias通过`help`查到是`ni`
+- `scp, ssh, curl, git`等可以用
   - 不过可能有一些特点可能和linux中的不同，毕竟还是不正宗！
   - 例如
     - 路径的`~`记号表示home可能用不了了
-    - `curl`其实是`Invoke-WebRequest`，参数列表和linux正宗的[[curl-wget]]中的`curl`不一样，比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
+    - `gal curl`其实是`Invoke-WebRequest`
+      - 参数列表和linux正宗的[[curl-wget]]中的`curl`不一样
+      - 比如`-Proxy`临时[[configure]] [[proxy/basics]]而不是`-x`
     - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种

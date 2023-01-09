@@ -2,6 +2,9 @@
 - 环境变量`$env:PATH`
   - `ssh-keygen.exe`这种直接运行某程序，就不需要先`cd`到路径，因为本来就在`$env:PATH`里
 - 否则就需要先`cd "表示路径的字符串"`（注意引号。因为路径当然可能有空格），再`<名字>.exe`
+  - 比如`chrome`就是这样
 - 后面可能也加参数
   - 例如[[https-ssh]]中的`ssh-keygen.exe -t ...`
+  - 例如`explorer.exe 路径`打开资源管理器
+    - 有意思：[[wsl-develop]]中竟然也能用
   - 例如`cd <路径>`，然后`.\msedge.exe <网址>`，使用edge打开指定网页
