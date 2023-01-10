@@ -12,7 +12,12 @@
   - [转换器](https://tool.lu/timestamp/)
   - 例如2022.12，是1671693346秒（十位数）
   - 那么其它时间戳可能单位不同。例如1649898030311019364（19位数）显然是纳秒
-  - 应用：例如[[rolling]]讲到
+  - 应用
+    - `python`中`from time import time, time_ns`，然后可以`time(); time_ns()`尝试一下
+      - 这个应用
+        - [[general-principles/debug]]时profiling看什么东西占比时间多
+        - 制造唯一标识符
+    - 例如[[rolling]]，[[timestamps]]讲到。`pandas`很常用
 # 算法中
 - 节省空间
 - 例如[[41-first-missing-positive]]法一
