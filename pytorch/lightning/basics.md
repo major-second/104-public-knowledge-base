@@ -15,6 +15,7 @@
       - forward时只需要过encoder，计算loss需要encoder和decoder
       - 如果是原始的pytorch，肯定要把encoder和decoder分开
     - 拓展：`training_step`如果`return None`那就是无需[[deep-learning/optimization]]的。比如[[linalg]]提到的那种`lstsq`直接算出`w, b`
+      - 但这时千万注意别错误加上了weight decay这种幺蛾子哈哈哈
 - 使用
   - 初始化trainer: 例如官网给出的`trainer = pl.Trainer(gpus=4, precision=16, limit_train_batches=0.5)`
     - 详见[[trainer]]

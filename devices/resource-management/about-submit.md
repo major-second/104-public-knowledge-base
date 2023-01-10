@@ -8,6 +8,10 @@
     - 导致别人都排不上，除非直接把你的kill了……
   - 单个任务短，需求资源多？只影响自己
 - 其它：比如I/O等
-  - 例如考虑[[tensorboard]]的[[lightning/logs]]是每个epoch还是每个step存
-  - 例如[[tqdm]]在集群上可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
-    - 例如[[trainer]]中可以关
+  - O
+    - 例如考虑[[tensorboard]]的[[lightning/logs]]是每个epoch还是每个step存
+    - 例如[[tqdm]]在集群上可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
+      - 例如[[trainer]]中可以关
+  - I
+    - 主要[[dataloader]]，注意进程个数，同时跑的个数等
+    - 可以考虑[[resource-management/disk]]和[[memory]]的选择：往内存放，就可以少读
