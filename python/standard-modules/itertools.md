@@ -1,4 +1,5 @@
 - 前置[[map-reduce]], [[iterable-iterator]]
+- [文档](https://docs.python.org/zh-cn/3/library/itertools.html)
 # 基础
 - `from itertools import *`
 - `print(list(chain([1,2],[3,4],[5])))`
