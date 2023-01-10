@@ -4,3 +4,4 @@
   - `"pasteImage.defaultName"`调整名称。比如`"hhmm"`可以使得你修改时按一下`Ctrl+Backspace`就能删掉，相比原来的有`-`的默认名方便很多
     - 参考[[editting]]中关于`Ctrl`的部分
 - 比如编辑器中选中一段文字，然后按`Ctrl+Alt+V`，（此时过一秒，让它反应一下），再回车，则粘出的图片就是按此文件名
+  - 联想[[vscode/edit]]中选中文字按`Ctrl+V`给它加上链接

@@ -22,7 +22,7 @@ But mostly the same.
 - `Prtsc`获取全屏幕截图并保存到`Pictures`（文件管理器能看到）
 `Shift + PrtSc`：某个区域。`Alt + PrtSc`：当前窗口。
 - 如果不是要保存，而是要到剪贴板，那么再多按`Ctrl`. 例如`Ctrl + Shift + PrtSc`非常常用
-  - very convenient along with [[paste-images-from-clipboard]]
+  - very convenient along with [[paste-image]]
 - 九宫格 - Settings - Devices - Keyboard有快捷键列表。其中`Super`相当于Windows下的`Win`. 这里最常用的快捷键：
 	- `Super` + `Page Up`切换工作空间
 	- `Shift` + `Super` + `Page Up`移动窗口到不同工作空间

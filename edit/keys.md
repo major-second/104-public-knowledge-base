@@ -1,3 +1,5 @@
+- 参考[[editting]]
 - `PgUp, PgDn, Home, End`（可加shift）
+  - 可能需要参考[[fn-keys]]才能用
 - `Del, Backspace`
 - `Insert`改写
