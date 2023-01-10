@@ -1,5 +1,6 @@
 # 前置
-[[latex]]插件
+- [[vscode-latex]]插件
+- [[settings/snippets]]
 # 内容
 `snippets.json`可以参考[[settings/snippets]]，放到指定地方，之后即可使用
 

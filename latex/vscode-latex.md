@@ -1,0 +1,10 @@
+- 前置
+  - [[settings-json]]
+  - 安装[[texlive]]
+- 插件名`LaTeX Workshop`
+- 可以在vscode中编辑`.tex`，从而利用各种编辑器的功能，特别是[[latex/snippets]]等
+  - 也可以编译出结果（且一键搞定）
+    - 保存`.tex`，`Ctrl+S`时，就会启动默认编译过程
+    - 编译所需命令需要通过[[settings-json]]指定
+- 甚至可以充当pdf阅读器
+  - 不过相比[[vscode-pdf]]的坏处：时至2022-10有小bug，点击`.pdf`文件后出来了pdf预览后，会自动脱离选中该文件状态，导致复制、剪切该文件等无法进行

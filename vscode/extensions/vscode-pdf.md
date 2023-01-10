@@ -1,3 +1,3 @@
 - 插件名`vscode-pdf`
-- 可以打开pdf文件，且不会像[[latex]]那样出现选中相关的bug
+- 可以打开pdf文件，且不会像[[vscode-latex]]那样出现选中相关的bug
 - 需要在vscode资源管理器预览中，任意pdf文件处，右键选择默认打开方式为此插件

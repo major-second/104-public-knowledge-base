@@ -32,7 +32,7 @@
 https://www.jianshu.com/p/ed0cb6c75e25
 ## 问题
 - 有子模块经常会带来杂七杂八麻烦
-  - 比如[[settings/settings]]中提到的`authentication`相关
+  - 比如[[settings-json]]中提到的`authentication`相关
   - 比如[[github-codespaces]]不能自动得到，需要手动初始化一下
 ## 典型应用
 和[[fork-private]]以及[[pip]]中`pip install -e .`结合，使得可以修改并使用第三方源码
