@@ -33,18 +33,21 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - 虽然`sudo`和不`sudo`的`chsh`都要求输入密码，但是其本质是不同的
   - 不`sudo`的输入密码类似于[[7-permissions]]中说过的`passwd`命令的原理。即用户还是自己（非`root`），“临时”获得了高级权限。
 - `chsh`设定需要重新登录，才生效！
-## troubleshooting
+## 和`bash`区别
+- 参考：[[6-env]], [[12-condition]], [[shebang]], [[escape]]
 - 参考[[non-standard]]，zsh很多时候方便，但有时也会造成麻烦
-  - 有些奇怪错误产生了，可以换回`bash`试试
+  - 有些奇怪错误产生了，可以换回`bash`试试。因为基本上`bash`还是一般标准
+  - 脚本中，可使用`#! /bin/bash`指定（[[shebang]]）
+  - 没有[[shebang]]的可以`bash <名字>.sh`强制
 - 怎么知道自己用的是bash还是zsh？
   - `$SHELL`不行。你zsh中再bash就知道错
   - `$0`只在交互中可以，跑脚本不行
     - 参考[[shell-type]]
   - `ps`可以看到，但也是交互中可以，跑脚本很麻烦
-- 可以参考[[6-env]], [[12-condition]], [[shebang]], [[escape]]
-  - 脚本中，可使用`#! /bin/bash`指定
+- 所以可以使用一些特性
   - 可以用数组特性区分zsh和bash：在你**确定只用这两种时**，可以`a=(1); if test ${a[1]}; then export SH_NAME=zsh; else export SH_NAME=bash; fi`
-## 特性
+  - [[17-function]]中是否必须加分号：`bash -c "function run { echo test  }; run"; echo $?; bash -c "function run { echo test; }; run"; echo $?; zsh -c "function run { echo test   }; run"; echo $?`
+## 优良特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
 - 刚刚的命令中，安装了`autojump`，所以可以`j`命令快速跳
   - **进过某个文件夹**，之后就可以`j <部分名字>`过去，或`j <部分名字然后Tab>`选择
