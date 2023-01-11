@@ -6,10 +6,15 @@
 - [官网](https://docs.google.com/drawings)，需要登录账号
 ## 文件操作
 - `File`，可以导出`.svg`矢量图，`.jpg`，`.pdf`等
-- 左上角改名![](rename.png)
+- 左上角
+  - 改名![](rename.png)
+  - 那个红色纸进入自己的drive可以看到列表
 - 无需保存，关闭时自动留在google drive，下次`File - Open`即可
-- `File - Page setup`可以设置大小，比如A4纸：![](page-setup-a4.png)
-- 右下角拖动也可改变大小![](adjust-size.png)
+- 画布大小
+  - `File - Page setup`可以设置大小（需要选择Custom）
+    - 比如A4纸：![](page-setup-a4.png)
+  - 右下角拖动也可改变大小![](adjust-size.png)
+    - 可能需要联合[[google-drawing-keyboard-shortcuts]]中缩放使用，否则可能没法扩大
 ## 绘图基础操作
 - ![](square.png)
   - shape按钮![](shape.png)，傻瓜操作

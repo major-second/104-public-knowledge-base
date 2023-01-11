@@ -1,0 +1,3 @@
+- `Ctrl Alt [`, `Ctrl Alt +`, `Ctrl Alt -`操控视图
+  - 直接`Ctrl -`有副作用：工具栏也变小了
+- `Ctrl 上` `Ctrl 下` `Ctrl Shift 上` `Ctrl Shift 下`调整图层顺序
