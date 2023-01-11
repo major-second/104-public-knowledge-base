@@ -1,0 +1,7 @@
+- `ls --help`一下，注意`-a, -A -d`都挺有用的
+  - `ls -al ~/.ssh`
+  - `ls -d $(pwd)/*`显示带绝对路径，但不递归
+  - `ls -l`，`ll`，`ls -lR`在[[ln-s]]中用于检查
+- `sudo apt install tree`
+  - 递归[[general-principles/recursion]]可视化高级`ls`
+  - `tree -L 2`限制层数

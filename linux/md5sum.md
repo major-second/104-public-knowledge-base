@@ -8,3 +8,13 @@
 - 针对`git`库的`md5sum`结果仅供一台机器的参考。不同机器重复同样动作可能不同
 - 对于`conda`这种官网给的`*latest*.sh`脚本嘛，官方一更新自然就不同了嘛。否则就相同。所以为了稳定可以不使用带`latest`的url
 - 拓展用法：结合[[find-grep]]，出现`find . -type f -print0 | sort -z | xargs -0 md5sum | grep -v <去除的文件名> | md5sum`这种，不看一部分文件
+- 青春版：如果你文件夹太大，md5太久，可以适当减少check的东西
+```sh
+function check-dir {
+    cd $1
+    echo $(find . -type f | sort) | awk '{print $1}' | xargs md5sum
+    find . -type f | wc
+    tree -L 2
+    du -sh
+}
+```

@@ -1,11 +1,22 @@
 # 理论
 todo
-# 算法题中的[[oi-wiki-basic/recursion]]
+# 算法题中[[oi-wiki-basic/recursion]]
 - 例如[[10-regular-expression-matching]]
-# 一般程序中的递归（提升可读性）
+# 一般程序中
+## 命令行
+- 有些自动递归（这时要防止递归运行太多太慢）
+  - [[cp-mv-rm]]中`mv`自动递归
+  - `du`加`-s`才不递归
+  - [[ls-tree]]中`tree`加`-L 数字`才不递归
+- 有些不自动递归
+  - [[ls-tree]]中`ls`加`-R`才递归
+  - `chmod`加`-R`才递归 ([[7-permissions]])
+  - [[cp-mv-rm]]中`cp, rm`加`-r`才递归
+## 自己写
+- 可提升[[readability]]
 - 例如`torch`把复合对象递归地找到其中所有的`Tensor`并移至指定GPU（参考[[device]]）
-- 路径`lib\python3.7\site-packages\torch\nn\parallel\distributed.py`
-- 版本`'1.9.0+cu102'`
+  - 路径`<path\to>\lib\python3.7\site-packages\torch\nn\parallel\distributed.py`
+  - 版本`'1.9.0+cu102'`
 ```python
 def to_map(obj):
     if isinstance(obj, torch.Tensor):

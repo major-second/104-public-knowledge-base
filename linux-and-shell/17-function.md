@@ -1,7 +1,8 @@
 前置：
 - [[6-env]]
 - [[11-basic-scripting-partB]]
-
+参考
+- [[alias]]
 ## 17.1
 ```sh
 function name {

@@ -1,0 +1,9 @@
+- 前置
+  - [[shrc]]
+  - [[17-function]]
+- 可能相当于一些[[17-function]]但有不同
+- 可能经常放到[[shrc]]中
+- 常用`which`看某个命令是啥（比如程序`PATH`，函数或alias定义）
+- `alias`没法覆盖已有的，必须重启终端[[refresh]]
+  - 但[[17-function]]可以覆盖
+  - `alias echo1='echo 1'; which echo1; function echo1 { echo 2; }; which echo1; function echo2 { echo 2; }; which echo2; function echo2 { echo 3; }; which echo2;`

@@ -6,6 +6,8 @@
   - [[tmux]]`Ctrl+B, ?`
   - [[hotkeys]]命令模式`H`
 - 命令
-  - linux中`man`命令结合[[find-grep]]
-    - 例如`man bash | grep -C2 '$@'`
+  - linux中
+    - `which`看在哪或[[alias]] [[17-function]]是啥
+    - `man`命令结合[[find-grep]]
+      - 例如`man bash | grep -C2 '$@'`
   - [[powershell/basics]]中`help`和`gal`命令
