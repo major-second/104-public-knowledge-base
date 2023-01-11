@@ -5,7 +5,7 @@
 ## 基础
 ### 准备
 - [参考](https://www.dataquest.io/blog/tutorial-time-series-analysis-with-pandas/)
-- shell中`wget https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv`即可下载数据（需要[[linux-client]]代理）
+- shell中`wget https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv`即可下载数据（需要[[linux-proxy-client]]代理）
 - `import pandas as pd`
 - 日期时间参考[[timestamps]]
 ### 基础命令

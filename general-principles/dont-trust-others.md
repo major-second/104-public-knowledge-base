@@ -8,17 +8,20 @@
   - 骂英伟达
     - [[ubuntu-nvidia-drivers]]提到由于垄断，不好好维护文档导致推荐版本不对让服务器黑屏
   - 骂苹果
-    - 自以为聪明，傲慢地取消一大堆[[interface]]，导致必须用扩展坞，给广大用户造成不便
+    - 自以为聪明，傲慢地取消一大堆[[interface]]，导致必须用扩展坞[[adapter-cable]]，给广大用户造成不便
+    - 垄断，就是不用type-c [[interface]]造成不便
+    - 安装[[apple/app]]必须通过官方途径
+      - 所以必须美区[[general-principles/account]]才能[[ios-proxy-client]]翻墙等
 - 有些学术论文附带的code质量很低、有疏漏、不integral等
   - 有些无意疏忽，也有些有意疏漏（无法复现）
   - 前者可以
     - github提issue说不定会有人回
     - 看别人写的的issue和PR看有没有解决方法
   - 后者就自求多福吧！觉得不行，请谨慎follow工作
-  - 像[这种](https://github.com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
+  - 像[[windows-proxy-client]].com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
 - 有些时候作者没空维护了（毕竟[[open-source]]用爱发电）
   - 比如[[franka-ros-interface]]，各种文档和现象不对应
-  - 比如[[windows-client]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
+  - 比如[[windows-proxy-client]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
     - 这个软件的作者团队好像起了冲突导致没人维护了
 - 包管理器审核出问题
   - 例如[[pip]]：[[hand-eye-calibration]]中提到`transforms3d`的`0.4`版在2022.12安装会出问题，只能手动装`0.3`

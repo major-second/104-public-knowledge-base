@@ -21,7 +21,7 @@
 |[[wsa]]|不能代理（否则可能操作复杂），需要外网。一般用[[vpn]]
 - 如何使用
   - [[node]]，可以是免费羊毛（这种可能有公安请喝茶风险，是蜜罐），学长送的，学校给的，实验室给的，自己买的
-  - 客户端，如[[windows-client]], [[linux-client]], [[v2raya]]等
+  - 客户端，如[[windows-proxy-client]], [[linux-proxy-client]], [[v2raya]]等
     - 有些客户端如`geph`集成了[[node]]
   - [[configure]]使得使用上刚刚说的[[node]]和客户端
 - 坏处

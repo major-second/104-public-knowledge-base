@@ -1,6 +1,6 @@
 - 前置
   - [[settings-and-configurations]]
-  - 首先打开代理客户端，比如[[linux-client]]，[[windows-client]]
+  - 首先打开代理客户端，比如[[linux-proxy-client]]，[[windows-proxy-client]]
 [toc]
 # 一般原则
 - 打开代理之后还需要配置才能让应用实际走代理，而不是走直连

@@ -18,7 +18,7 @@
 - 设置Battery的角落里可能有80%或接近满时暂停的选项，如图![](more-settings.png)
   - 这里只是暂停，没法保证，也没法灵活调节todo
   - 而且也不是所有品牌手机都有
-- 所以可以使用App: AccuBattery
+- 所以可以使用相关App，如AccuBattery
   - ![](accu-battery.png)
   - 给予适当权限和信任
     - 如应用使用情况`usage`等）

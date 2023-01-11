@@ -1,5 +1,5 @@
 前置：
-- [[linux-client]]翻墙
+- [[linux-proxy-client]]翻墙
 - 针对`raw.githubusercontent.com`修改[[hosts]]
   - 因为`rosdep init`的代理[[configure]]很麻烦
   - 具体地，参考[[dns]]，修改`/etc/hosts`即可。例如加入`185.199.108.133 raw.githubusercontent.com`（注意具体要加的ip不同时间可能不一样）

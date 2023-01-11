@@ -3,7 +3,7 @@
 1. On Github (website), directly click `add a file` and add a file, it will automatically generate command to pull, commit, and push.
 2. Download `Github Desktop` and clone a image of your repo to your own host, your changes on your own host will be regarded as `changes`, and you can commit and push them to Github by clicking some buttons.
    1. 这类是属于github提供的客户端，倒不是git本身的东西
-   2. hhhh，甚至手机还有github app，可以出门应急呢。可能用到[[android]]代理之类的
+   2. hhhh，甚至手机还有github app，可以出门应急呢。可能用到[[android-proxy-client]]代理之类的
 3. Do the same things as `Github Desktop` on `VSCode`, [reference](https://blog.csdn.net/qq_25367937/article/details/114271010?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_default&utm_relevant_index=2)
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
    1. 也可以先[[init]], [[commit]]，先没有任何remote，之后再加，参考[[remote]]

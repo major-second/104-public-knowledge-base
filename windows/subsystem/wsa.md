@@ -34,7 +34,7 @@
       - Apps/Background Processes/Windows Processes都要看
     - 确保全部关掉，且 Advanced Networking关闭
     - 且不使用任何[[proxy/basics]]
-      - 最好[[configure]]和[[windows-client]]都不开
+      - 最好[[configure]]和[[windows-proxy-client]]都不开
       - 还要下文所说`adb`关代理
       - 以及不要用[[vpn]]（包括公司内网）
     - 我不知道这么确保有没有必要但一般这样一来重开wsa就能进了

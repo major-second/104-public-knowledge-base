@@ -14,7 +14,7 @@ sudo apt install v2raya; \
 sudo systemctl start v2raya.service; \
 sudo systemctl enable v2raya.service
 ```
-安装后的具体操作参考[[linux-client]]，[[settings-and-configurations]]等等
+安装后的具体操作参考[[linux-proxy-client]]，[[settings-and-configurations]]等等
 # troubleshooting
 - 代理突然出问题用不了（比如[[pip]], [[conda/commands]]等不正常）？可以尝试登录一下配置[[node]]的端口（`2017`）更新，换换[[node]]试试
 - 一个有意思的错误

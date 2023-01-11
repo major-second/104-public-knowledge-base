@@ -1,5 +1,5 @@
 前置：
-- [[linux-client]]翻墙
+- [[linux-proxy-client]]翻墙
 # `zsh`
 - 输入命令
 ```sh
