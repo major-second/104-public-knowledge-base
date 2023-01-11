@@ -11,7 +11,7 @@
 - 使用插件
   - 可能是vscode界面（左侧）出现按钮例如[[robocorp/basics/installation]]，[[remote-ssh]]
   - 可能是`Ctrl + Shift + P`的command palette中出现新命令，如[[git-project-manager]]
-    - 这时可以结合[[settings/keyboard-shortcuts]]设置快捷键
+    - 这时可以结合[[vscode-keyboard-shortcuts]]设置快捷键
   - 可能是右键菜单出现选项，如[[git-history]]
 - 管理插件：`Ctrl+Shift+X`出来的界面，可以卸载或禁用等
 - 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]

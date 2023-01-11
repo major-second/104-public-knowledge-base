@@ -1,0 +1,7 @@
+- [参考](https://support.google.com/chrome/answer/157179?hl=zh-Hant&co=GENIE.Platform%3DDesktop#zippy=%2C%E5%88%86%E9%A0%81%E8%88%87%E8%A6%96%E7%AA%97%E5%BF%AB%E9%80%9F%E9%8D%B5)
+- 常用
+  - `Ctrl+N, Ctrl+T, Ctrl+Shift+T`
+  - `Ctrl+[1-8]`
+    - `Ctrl+9`是[[general-principles/special-case]]，是最右边，哈哈
+  - `Ctrl+W, Ctrl+Shift+W`
+    - 和[[vscode-keyboard-shortcuts]]一样了

@@ -2,7 +2,7 @@
 - [[read-doc]]
 - `-h`或`--help`参数
 - 关于快捷键，一定要先找到能看快捷键的快捷键，即meta思想
-  - [[settings/keyboard-shortcuts]]`Ctrl + K, Ctrl + S`
+  - [[vscode-keyboard-shortcuts]]`Ctrl + K, Ctrl + S`
   - [[tmux]]`Ctrl+B, ?`
   - [[hotkeys]]命令模式`H`
 - 命令
