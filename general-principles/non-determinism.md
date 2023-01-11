@@ -10,6 +10,7 @@
 - 例如python的`random`和`np.random`等
   - [[parallelism]]中提了一嘴用`numpy`生成随机数
 - 例如深度学习防止[[overfit]]的[[dataloader]] shuffle，随机dropout等
+- 例如随机运行很多种子挑最好的结果（这样别太过分）
 # 防止负面影响
 目的：比如[[general-principles/debug]]对拍用等
 ## 去除随机性
