@@ -11,7 +11,7 @@
   - 可用于[[silent]]操作[[wsl]]，特别是[[silent]]地[[refresh]]重启WSL，非常方便
 ## 基础举例
 - 例：直接`wsl`
-    - 这可以和[[link]]结合，从而在桌面一个快捷键直接进入linux终端
+    - 这可以和[[windows-link]]结合，从而在桌面一个快捷键直接进入linux终端
     - 参考本文件夹`wsl.ps1`
 - 例：`wsl -e echo 1`
   - 注意`wsl -e 'echo 1'`不行（可能被当成整体了）

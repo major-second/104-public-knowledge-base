@@ -9,6 +9,7 @@
 - 左上角改名![](rename.png)
 - 无需保存，关闭时自动留在google drive，下次`File - Open`即可
 - `File - Page setup`可以设置大小，比如A4纸：![](page-setup-a4.png)
+- 右下角拖动也可改变大小![](adjust-size.png)
 ## 绘图基础操作
 - ![](square.png)
   - shape按钮![](shape.png)，傻瓜操作
