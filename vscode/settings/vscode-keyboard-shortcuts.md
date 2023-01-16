@@ -42,6 +42,8 @@
 - `Ctrl + Shift + P`搜索命令（称为Command Palette）
   - 参考[[extensions/general]]，安装插件可能出现新的命令
 - `Ctrl + P`搜索文件名
+  - 搜索文件夹名时这个可能出来优先级很低
+    - 此时需要`Ctrl+Shift+E`资源管理器中`Ctrl+F`（或不按`Ctrl+F`直接输入查找）
 - `Ctrl + Shift + F`全文查找
   - 不过这个有时会被占用。比如![](keyboard-ubuntu.png)
   - 右键，把所有复选框去掉勾并删除字母`f`就能去掉这一快捷键
