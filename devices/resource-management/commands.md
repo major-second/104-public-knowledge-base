@@ -1,7 +1,8 @@
+- 前置
+  - [[4-more-commands]]，里面有`ps`，`watch`等常用指令
+    - `ps`看进程情况
+    - `watch`可以结合本篇的其它指令，每隔一定时间自动更新。往往结合[[tmux]]挂着使用
 - `fdisk -l`，`df -h`，`du -h`等看和硬盘相关
-- [[4-more-commands]]，里面有`ps`，`watch`等常用指令
-  - `ps`看进程情况
-  - `watch`可以结合本篇的其它指令，每隔一定时间自动更新。往往结合[[tmux]]挂着使用
 - `top`看cpu和内存，含义[参考](https://blog.csdn.net/xiaoxiao_chen945/article/details/121038280)
   - `q`退出
 - `htop`：改进版`top`

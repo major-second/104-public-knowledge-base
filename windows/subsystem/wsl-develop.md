@@ -3,8 +3,13 @@
 - 主要有价值信息
   - 文件系统不要混用否则降低性能（但不是完全不行）
   - linux中`explore.exe .`打开windows式资源管理器
-    - 把windows文件夹直接复制过来的问题：命名规则，分隔符，[[7-permissions]]等
-      - 例如[[pubkey-authentication]]权限，git库权限问题（可能导致[[git-project-manager]]用不了）
+    - 直接复制的问题：命名规则，分隔符，[[7-permissions]]等
+      - 例如[[pubkey-authentication]]权限，git库权限问题
+        - 可能导致[[git-project-manager]]用不了
+      - 例如`:`符号只有linux能用，windows不能
+      - `bad interpreter: /bin/bash^M`
+        - `sudo apt install dos2unix`
+        - 使用`dos2unix`命令处理文件
     - 可以看到是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
   - 跨系统混用
     - 文件系统
