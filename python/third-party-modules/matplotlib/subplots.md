@@ -12,3 +12,7 @@ plt.show()
 ```
 - 关键字参数
   - `figsize=<元组>`设置大小，注意单位是英寸以及`dpi`问题，参考[[fig]]
+- [[general-principles/special-case]]问题
+  - `print(plt.subplots(2, 1))`
+  - `print(plt.subplots(1, 1))`
+  - 结果类型不同

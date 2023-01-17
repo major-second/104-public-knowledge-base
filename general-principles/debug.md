@@ -21,11 +21,9 @@
   - 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
   - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
 - 在跑一个大实验之前，下载大东西等等之前要做的调试
-  - 考虑[[general-principles/special-case]]
-    - 要不然搞了半天被一个0中断，烦烦！
   - 确认小规模全流程没问题
     - 流程问题
-      - 存文件，存checkpoint，validation等等
+      - 存文件，存[[checkpoint]], [[general-principles/logs]], validation等等
       - 可能不是一来就跑到这个地方，而是跑了一会才跑到这个地方
       - 你要是一开始没有测试就开很大的实验，那么可能跑了很久到这里才报错停下，那就损失大了
       - 例如`pytorch_lightning`中
@@ -34,16 +32,11 @@
         - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
     - 本质上错误
       - 比如[[hand-eye-calibration]]中可以先跑少数几个点看结果靠不靠谱，排除选错坐标系等情况
-  - 确认断点、调试用的脚手架等都被去除了！要不然跑了一晚上，早上起来发现卡在断点，尴尬
-  - 确认有没有[[silent]]（比如可能需要`y`确认，你没按，它一直等着，你晕不晕吧）
-  - 确认磁盘空间够不够，参考[[resource-management/commands]]
-    - 参考下一节，我们经常有code和data分开的思想。常常把data链接到code文件夹下
-    - 那么code文件夹下做数据预处理时，要小心存放目录不要在code的那个盘
-    - 常见模式
-      - code是`/home`，data是`/DATA/disk1`（外接的TB级的硬盘）
-      - code是`/`，data是`/home`（参考[[partition]]）
-  - 确认有没有僵尸进程没`kill`掉，参考[[4-more-commands]]
-    - 否则明明本来资源够的，也可能不够（如显存、内存等）
+  - 确认断点、调试用的脚手架等都被去除了！要不然
+    - 跑了一晚上，早上起来发现卡在断点，尴尬
+    - 有时自己有一些“跳过大规模”的`if else`操作，自己都忘了
+  - 确认有没有[[silent]]
+    - 比如可能需要`y`确认，你没按，它一直等着，你晕不晕吧
   - 有自己独占的就不要用和别人共用的。万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
 ## 小规模没问题，大规模有问题？
 - cpu -> gpu
@@ -51,8 +44,18 @@
   - 参考[[torch-cuda]]
   - 比如[[rnn]]提到的
 - 资源占用（如爆内存、显存、[[parallelism]]不好导致时间久）等
-  - [[memory]], [[resource-management/disk]], [[about-submit]]等
-- 自己有一些“跳过大规模”的`if else`操作，自己都忘了
+  - [[memory]], [[about-submit]]等
+  - 确认有没有僵尸进程没`kill`掉，参考[[4-more-commands]]
+    - 否则明明本来资源够的，也可能不够（如显存、内存等）
+  - 磁盘空间够不够, [[resource-management/disk]]
+    - 参考下一节，我们经常有code和data分开的思想。常常把data链接到code文件夹下
+    - 那么code文件夹下做数据预处理时，要小心存放目录不要在code的那个盘
+    - 常见模式
+      - code是`/home`，data是`/DATA/disk1`（外接的TB级的硬盘）
+      - code是`/`，data是`/home`（参考[[partition]]）
+- 考虑[[general-principles/special-case]]
+  - 要不然搞了半天被一个0或者过严的assert中断，烦烦！
+  - 调试数据集如果是子集，就特别小心这个问题
 ## 比较，确保结果相同
 - 算法竞赛中对拍[[comparison]]
   - 用简单好写但慢的算法和复杂难写但快的算法比较结果是否相同
@@ -76,7 +79,7 @@
 ## 调试时间、资源消耗（profiling）
 - 参考[[resource-management/commands]]实时消耗情况
 - 如何查看时间消耗
-  - 包内置的工具如[[profile]]
+  - 包内置的工具如[[misc/profile]]
   - 通用方法，如`from time import time; t = time(); <others>; print(time() - t)`
   - [[comment]]系统的一部分对照试验
   - [[third-party-modules/tqdm]]，[[jupyter-notebook/tqdm]]包在此过程中实用

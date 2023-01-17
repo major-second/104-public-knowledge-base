@@ -8,6 +8,6 @@
   - 例如[[pep8]]这类规范
 # presentation
 - 参考[[minimum-beamer/README]]
-- 图一定要坐标轴、标题等，参考[[matplotlib/basics]]
+- 图一定要坐标轴、标题等，参考[[matplotlib/basics]], [[axis]]
 - 参考听众水平
   - 不能指望短时间把不懂的人讲懂

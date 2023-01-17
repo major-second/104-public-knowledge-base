@@ -64,7 +64,7 @@
     - 所以对两种出来结果再切片时效果也当然不同
 ## 迭代
 - 直接`for k in df`得到的是键的列表，类似于迭代字典
-- 如果`for k in df.iterrows()`可以按行迭代
+- 如果`for k in df.iterrows()`（或`itertuples()`，结果没有指标）可以按行迭代
   - 但如果你（经常）用这个，不妨先看看怎么[[parallelism]]并行，要不然你pandas约等于白学233
 - `for k in series`当然是按顺序一个一个来，这点可以看出有1个字段的`DataFrame`和`Series`不同
 ## 进阶

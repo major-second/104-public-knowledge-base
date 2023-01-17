@@ -11,3 +11,6 @@
   - `ax.set_yscale("log")`对数坐标
   - `.yticks([])`去除`y`刻度
   - `.invert_xaxis()`：`x`轴反向
+  - `ax.set_xlabel("X-axis Label")`
+    - `ax.xaxis.set_label_position('top')`
+    - 设置label，为了[[readability]]
