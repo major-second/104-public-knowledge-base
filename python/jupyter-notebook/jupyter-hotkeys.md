@@ -6,7 +6,14 @@
 - `Ctrl+Enter`运行当前，`Alt+Enter`运行且插入，`Shift+Enter`运行且到下一个cell是通用的
 - 编辑模式
   - `Ctrl+Shift+Minus(-)`切分cell
-  - `Tab`打开自动补全备选，`Enter`选择
+  - `Tab`键补全（如果有多个备选，则`Tab`出下拉菜单，回车选择）
+  - `Ctrl+X`可删除当前行，类似于[[vscode/edit]]的`Ctrl+Shift+K`，但是会覆盖剪贴板
+  - `Ctrl`按住可以光标选中多个地方，类似于[[vscode/edit]]的`Alt`
+- 更多和[[vscode/edit]]相同的编辑技巧
+  - `Ctrl + 方向键`
+  - 选中一串东西按一次`[`加括号等
+  - 选中一串东西按三次`"`注释（三引号）
+  - `Ctrl + /`注释
 - 命令模式
   - `H`展示所有快捷键
     - [[nbextension]]插件带来的新快捷键也会显示在这

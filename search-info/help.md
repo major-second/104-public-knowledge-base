@@ -4,7 +4,7 @@
 - 关于快捷键，一定要先找到能看快捷键的快捷键，即meta思想
   - [[vscode-keyboard-shortcuts]]`Ctrl + K, Ctrl + S`
   - [[tmux]]`Ctrl+B, ?`
-  - [[hotkeys]]命令模式`H`
+  - [[jupyter-hotkeys]]命令模式`H`
 - 命令
   - linux中
     - `which`看在哪或[[alias]] [[17-function]]是啥

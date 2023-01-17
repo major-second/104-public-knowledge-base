@@ -2,7 +2,7 @@
 ## 快捷键
 例如：
 - [[editting]]的`Ctrl+C`（最常见）
-- [[hotkeys]]的`C`
+- [[jupyter-hotkeys]]的`C`
 - shell中的`Ctrl+Shift+C`
   - 注意`Ctrl+C`是停止，这很坑。参考[[jupyter-notebook/basics]]
 - [[mobaxterm]]中`shift+insert`

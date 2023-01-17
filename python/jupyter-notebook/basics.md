@@ -38,15 +38,6 @@
 - 这样的进程中，内存里[[general-principles/cache]]有变量值
   - 新cell中可以取出变量值，相当于[[debug-console]]操作
   - 停止运行该进程（`Running` tag处关闭或者`kill`等）自然就会丢失变量，释放内存显存等
-## 编辑技巧
-- `Ctrl`按住可以光标选中多个地方，类似于[[vscode/edit]]的`Alt`
-- 更多和[[vscode/edit]]相同的技巧
-  - `Ctrl + 方向键`
-  - 选中一串东西按一次`[`加括号等
-  - 选中一串东西按三次`"`注释（三引号）
-  - `Ctrl + /`注释
-- `Tab`键补全（如果有多个备选，则`Tab`出下拉菜单，回车选择）
-- `Ctrl+X`可删除当前行，类似于[[vscode/edit]]的`Ctrl+Shift+K`，但是会覆盖剪贴板
 # 原始方法运行
 - [参考](https://docs.jupyter.org/en/latest/running.html)
 - 命令行`jupyter-notebook <名字>.ipynb`可以在浏览器中打开相应页面
@@ -59,7 +50,7 @@
   - 这为了防止你误以为是复制，结果按下`Ctrl+C`停下server，在停止前强行让你确认！
   - 当然你熟悉了这个feature后，还有其它用途，比如按`Ctrl+C`再按`n`恢复，此时可展现`http://<ip>:<port>/?token=<一串字符>`
 - 调试
-  - 有[[hotkeys]]
+  - 有[[jupyter-hotkeys]]
   - 正在运行时左侧有`[*]`记号
   - 运行完左侧数字表示运行顺序
   - 上面有一些常见按钮（如保存、停止、重启等）

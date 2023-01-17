@@ -1,4 +1,4 @@
-- 前置[[jupyter-notebook/basics]]，[[hotkeys]]
+- 前置[[jupyter-notebook/basics]]，[[jupyter-hotkeys]]
 - [参考](https://sspai.com/post/55402)
 - 只需
   - `pip install jupyter_contrib_nbextensions`
@@ -6,13 +6,27 @@
   - [[general-principles/logs]]等级？`jupyter contrib nbextension install --Application.log_level=30 --user`
 - 之后重启notebook主页（就是你选文件那个界面），可看到`Nbextensions` tab
 - 这里可以点击查看插件说明，打勾启用
-- 实用插件
+- 实用插件（字母顺序）
   - Codefolding, Codefolding in Editor折叠代码
     - 哈哈，此时`if __name__ == '__main__':`可就不再是多此一举了233
+  - Collapsible Headings：参见下文
   - ExecuteTime记录运行时间
     - [[vscode/extensions/jupyter-notebook]]自己有类似功能的插件，我们网页版原生还要手动装
+  - Execution Dependencies：使用`#A`, `=>A`等标记（tag）表示依赖关系，自动维护并运行
+    - 网页版`View - Cell Toolbar`看到加tag方式
+    - 可能带来兼容性问题：有时，对于正在跑的程序，只能先停再启动，不能直接`Ctrl+Enter`重启了！
   - Hinterland每次按键都自动补全
     - 但其实时至2022.8还不太成熟，有bug，经常会反而搞乱你的标识符。建议先别开
+  - Initialization Cells: 一来默认运行的cells
+    - 需要`View - Cell Toolbar`设置可见
+    - **点插件名**，可以看到Parameter处有一个选项：是否启动Kernel自动运行
+  - Notify: 运行完给提示
+    - **点插件名**有选项
+    - 需要上方工具栏这里选择多少秒才通知（如果0秒，就是一切时候都通知）
+    - ![](notify-toolbar.png)
+  - Runtools：先安装，再在notebook编辑界面齿轮按钮处打开Runtools工具条
+    - 可以运行全部`Alt+X`，运行上方`Alt+A`，运行下方`Alt+B`等等
+    - [[vscode/extensions/jupyter-notebook]]自己有类似功能的插件
   - Scratchpad相当于[[debug-console]]，可以按`Ctrl+B` toggle一个临时“调试器”cell
     - 这里的代码不会被保存！！
     - 有时这里会失灵
@@ -20,17 +34,7 @@
       - 此时可以按`Ctrl+S`保存当前笔记本（此时上方有提示），关闭窗口重进，就又可以用了
       - 而不要Restart整个笔记本
       - 参考[[refresh]]中“分级”思想
-  - Runtools：先安装，再在notebook编辑界面齿轮按钮处打开Runtools工具条
-    - 可以运行全部`Alt+X`，运行上方`Alt+A`，运行下方`Alt+B`等等
-    - [[vscode/extensions/jupyter-notebook]]自己有类似功能的插件
-  - Execution Dependencies：使用`#A`, `=>A`等标记（tag）表示依赖关系，自动维护并运行
-    - 网页版`View - Cell Toolbar`看到加tag方式
-    - 可能带来兼容性问题：有时，对于正在跑的程序，只能先停再启动，不能直接`Ctrl+Enter`重启了！
-  - Notify: 运行完给提示
-  - Table of Contents (2), Collapsible Headings: 用于构建目录层级等。需要markdown cell中`# 1`，`## 2`等等表示标题层级
-  - Initialization Cells: 一来默认运行的cells
-    - 需要`View - Cell Toolbar`设置可见
-    - 点插件名，可以看到Parameter处有一个选项：是否启动Kernel自动运行
+  - Table of Contents (2): 用于构建目录层级等。需要markdown cell中`# 1`，`## 2`等等表示标题层级
   - Variable Inspector
     - notebook编辑界面，有个按钮打开面板
     - 打开后，随时在旁边及时看到变量
