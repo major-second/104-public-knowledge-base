@@ -4,7 +4,7 @@
   - 例如[[press-keys]]中时至2022.6，`alt + space`效果不正常，你可以用`win + 方向键`凑合一下完成最大最小化
   - 例如[[lightning/basics]]中多卡训练莫名其妙报错，那就算了吧，老老实实单卡
   - 例如[[nbextension]]装不了（可能由于公司电脑合规问题等），就用[[jupyter-notebook/tqdm]]代替进行计时
-  - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-notebook/basics]]浏览器打开的方式调试
+  - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-basics]]浏览器打开的方式调试
   - [[https-ssh]]
 - 有时候换个东西就能解决问题
   - 例如有时出现莫名其妙的问题换个打开的软件（如播放器、浏览器）或硬件设备就能解决

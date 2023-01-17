@@ -1,6 +1,6 @@
 # 动态图
 ## 伪动态图
-- 不停刷新，然后在[[jupyter-notebook/basics]]中能看到效果，但不保存`.gif`
+- 不停刷新，然后在[[jupyter-basics]]中能看到效果，但不保存`.gif`
 - [参考](https://blog.csdn.net/Hubans/article/details/115356898)
 ```python
 from IPython import display

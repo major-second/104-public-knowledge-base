@@ -47,6 +47,7 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 - 所以可以使用一些特性
   - 可以用数组特性区分zsh和bash：在你**确定只用这两种时**，可以`a=(1); if test ${a[1]}; then export SH_NAME=zsh; else export SH_NAME=bash; fi`
   - [[17-function]]中是否必须加分号：`bash -c "function run { echo test  }; run"; echo $?; bash -c "function run { echo test; }; run"; echo $?; zsh -c "function run { echo test   }; run"; echo $?`
+  - `function test-loop { for i in {$1..8}; do echo $i; done; }; test-loop 1`运行结果不同
 ## 优良特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
 - 刚刚的命令中，安装了`autojump`，所以可以`j`命令快速跳

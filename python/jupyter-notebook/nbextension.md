@@ -1,4 +1,4 @@
-- 前置[[jupyter-notebook/basics]]，[[jupyter-hotkeys]]
+- 前置[[jupyter-basics]]，[[jupyter-hotkeys]]
 - [参考](https://sspai.com/post/55402)
 - 只需
   - `pip install jupyter_contrib_nbextensions`

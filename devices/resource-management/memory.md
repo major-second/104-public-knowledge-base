@@ -7,7 +7,7 @@
 - 和程序运行相关
   - [[pickle]], [[pytorch/basics/installation]], [[numpy/basics]]都有`load`之类的功能，把硬盘中的读到内存中
   - 存读都有时间开销。读取有空间开销
-    - 因此[[jupyter-notebook/basics]]的一个核心优势：灵活读进东西到内存，然后下游做各种处理。而不是`.py`一样每次只能对内存里的东西做一种操作
+    - 因此[[jupyter-basics]]的一个核心优势：灵活读进东西到内存，然后下游做各种处理。而不是`.py`一样每次只能对内存里的东西做一种操作
   - 监测
     - linux: [[resource-management/commands]], 或[[nbextension]]中`Variable Inspector`等
     - windows: 任务管理器

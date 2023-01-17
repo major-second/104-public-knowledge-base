@@ -28,7 +28,7 @@ sudo systemctl enable teamviewerd.service
 - 再怎么样，远程还是有点卡，不建议用远程桌面写代码。
     - 建议只用`teamviewer`作监视
       - 比如有GUI的[[pybullet]]状态
-    - 多用终端，[[forward-port]]和[[jupyter-notebook/basics]]等等做[[workaround]]，减少使用远程桌面
+    - 多用终端，[[forward-port]]和[[jupyter-basics]]等等做[[workaround]]，减少使用远程桌面
     - 用vscode
       - [[remote-ssh]]过去调非常方便
       - 也可以在那边终端启动一个进程之后[[attach]]

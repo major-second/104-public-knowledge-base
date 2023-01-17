@@ -4,7 +4,7 @@
 - [[editting]]的`Ctrl+C`（最常见）
 - [[jupyter-hotkeys]]的`C`
 - shell中的`Ctrl+Shift+C`
-  - 注意`Ctrl+C`是停止，这很坑。参考[[jupyter-notebook/basics]]
+  - 注意`Ctrl+C`是停止，这很坑。参考[[jupyter-basics]]
 - [[mobaxterm]]中`shift+insert`
 - [[built-in-keyboard-shortcuts/window]]中还有`Win + V`高级剪贴板！
 ## python

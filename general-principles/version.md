@@ -46,7 +46,7 @@
     - 比如[[pro-license]]
   - 有时，有序列号可以升级到高等级
     - 如[[windows/upgrade]]
-  - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-notebook/basics]]只读
+  - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-basics]]只读
   - 更多参考[[pricing]]
 - 有时出现有趣现象：标记变成本体
   - 例如[[clash]]中的`for windows`已经变成本体的一部分了，出现了![](../toolbox/linux/clash-for-windows-linux.png)这种

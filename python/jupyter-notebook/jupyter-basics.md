@@ -46,6 +46,8 @@
 - 注：也可以直接`--ip <ip地址> --no-browser`，出现`http://<ip>:<port>/?token=<一串字符>`这种字样，复制到本地的浏览器即可本地调试远程代码
   - 前提是本地要能访问`<ip地址>`，涉及内网时，参考[[vpn]]等
   - 这种方法节省了[[forward-port]]步骤
+- `--Notebook.token=for_add_into_my_favorites`，则可以把
+  - `http://localhost:8888/?token=for_add_into_my_favorites`加入收藏夹
 - `jupyter`运行时终端有`Ctrl+C`自动保护
   - 这为了防止你误以为是复制，结果按下`Ctrl+C`停下server，在停止前强行让你确认！
   - 当然你熟悉了这个feature后，还有其它用途，比如按`Ctrl+C`再按`n`恢复，此时可展现`http://<ip>:<port>/?token=<一串字符>`

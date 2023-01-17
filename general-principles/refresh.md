@@ -12,7 +12,7 @@
   - 并更新`.gitignore`，使得**接下来它们被忽略**
     - 更进一步，如果在用vscode，则可能需要**重启**vscode才能让vscode识别此事实
   - 只重启终端不重启vscode还没用
-- [[jupyter-notebook/basics]]中提到的用`Restart`内核使得`.py`文件的改动生效
+- [[jupyter-basics]]中提到的用`Restart`内核使得`.py`文件的改动生效
 - 和[[quit]]当然有联系（[[quit]]往往是彻底干净重启所需要的）
   - 例如任务管理器[[quit]] Apps/Background Processes/Windows Processes
   - 依次要更加慎重

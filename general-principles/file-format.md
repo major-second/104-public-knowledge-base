@@ -46,7 +46,7 @@
 ## 序列化（编码）
 - 参考[[encode-decode]]
 - 有时文件本身表达的东西不是简单的文本序列，但可以用文本序列存储
-  - 例如[[jupyter-notebook/basics]]
+  - 例如[[jupyter-basics]]
     - `.ipynb`文件如果直接`cat`出来，是[[json]]格式
     - 但jupyter网页、插件等能读取这些[[json]]，显示出有结构的cell等
   - 例如[[html]]

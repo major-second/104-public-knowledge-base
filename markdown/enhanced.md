@@ -4,5 +4,5 @@
   - 参考[[write-notes-in-foam]]
 - 比如一些网站的markdown编辑器中自带enhanced（CSDN等），使得可以写公式、高亮
   - 但不是所有的都有
-- 比如[[jupyter-notebook/basics]]中不能使用`[toc]`等feature
+- 比如[[jupyter-basics]]中不能使用`[toc]`等feature
   - 但vscode插件[[jupyter-notebook]]中有`Outline`按钮可代替

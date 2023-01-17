@@ -75,6 +75,15 @@ done
 两者区别：bash中使用`(())`，且语句体仍是`sh`的`do, done`等
 不过可以不遵守之前的一些规定。比如赋值的空格，判断条件中不以`$`开头，算式不用`expr`算式等
 - 可以`for ((a=1, b=10; a<=10; a++, b--))`. 总之只有判断条件是只能一个，其余的都可以用逗号连接多个
+### 拓展：其它`for`
+[[zsh]], [[non-standard]]可能行为不同
+```bash
+start=3; \
+for i in $(seq $start 7); do echo $i; done; \
+for i in {3..7}; do echo $i; done; \
+for i in {$start..7}; do echo $i; done; \
+zsh -c 'zsh_start=3; for i in {$zsh_start..7}; do echo $i; done'
+```
 ## 13.3 `while`命令
 ```sh
 while test command

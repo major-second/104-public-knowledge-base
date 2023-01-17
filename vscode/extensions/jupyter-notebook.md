@@ -1,10 +1,10 @@
 - 前置
   - [[extensions/general]]
-  - [[jupyter-notebook/basics]]
+  - [[jupyter-basics]]
   - [[conda/commands]]或[[pip]]等包管理器
 - 搜索插件名`python`并安装一个套装，就自动有了jupyter notebook所需的插件
 - 新建`.ipynb`即可编辑和调试
-  - 参考[[jupyter-notebook/basics]]
+  - 参考[[jupyter-basics]]
   - 参考`python/jupyter-notebook/example.ipynb`
   - 需要指定解释器（vscode相应面板右上角），并`pip install ipykernel`补包
 - [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码

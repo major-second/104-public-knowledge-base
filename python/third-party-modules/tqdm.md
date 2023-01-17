@@ -5,7 +5,7 @@
   - `for i in tqdm(range(100)):`
     - `sleep(0.01)`
 - 描述性文字：`desc=<描述>`
-- [[jupyter-notebook/basics]]中使用
+- [[jupyter-basics]]中使用
   - 需要`tqdm.tqdm_notebook`
   - 参考[[jupyter-notebook/tqdm]]
   - 有意思的feature：没正常结束会红色
