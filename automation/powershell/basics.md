@@ -24,7 +24,7 @@
     - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种
-  - [[powershell/app]]中提到了
+  - [[reinstall-app]]中提到了
 # 基础技巧
 - 编辑技巧：可以用上下方向键看历史，`Tab`补全等
   - `*.zip`再`Tab`这样还能自动找匹配来补全，非常好用
