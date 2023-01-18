@@ -82,4 +82,4 @@
   - 包内置的工具如[[misc/profile]]
   - 通用方法，如`from time import time; t = time(); <others>; print(time() - t)`
   - [[comment]]系统的一部分对照试验
-  - [[third-party-modules/tqdm]]，[[jupyter-notebook/tqdm]]包在此过程中实用
+  - [[third-party-modules/tqdm]]，[[jupyter-tqdm]]包在此过程中实用

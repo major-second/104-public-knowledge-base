@@ -13,7 +13,7 @@
   - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
   - `limit_train_batches`防止一个epoch过多，不好validate
     - 需要和shuffle了的[[dataloader]]配合使用
-  - `enable_progress_bar=False`关闭[[tqdm]]输出
+  - `enable_progress_bar=False`关闭[[third-party-modules/tqdm]]输出
 - 一个[[leaky-abstraction]]
   - 大多数情况，trainer可以自动把[[device]]处理得很好。只需`accelerator='gpu', devices=[0]`这种即可
   - 但[[rnn]]说了：forward中手动新设置的hidden不能自动处理

@@ -1,25 +1,32 @@
 - 和linux服务器交流常用
-  - [[secure-copy]]（前置[[ssh/ssh]]）
+  - [[scp]]（前置[[ssh/ssh]]）
   - [[sftp]]
   - [[mobaxterm]]传输功能（它可不只是终端哦）
-- 多平台（但需要GUI）
-  - 发邮件
-  - [[keybase]]（高度机密安全，跨平台，可无限期撤回）
-  - 短文字，无需翻墙，可能绕过公司监管：例如博客园、csdn等博客草稿。可能需要和[[linux/zip-unzip]], [[xxd-diff]]联合使用
-    - 网盘，[[github]] [[push-pull]] [[outlook]] [[keybase]]显然会被公司监管禁用哈哈
-  - 小文件命令行使用
-    - 例如[[github]]
-    - 乃至有[[curl-wget]]就能用的`raw.githubusercontent.com`（也参考[[github]]）
+- 多平台互通
+  - 需要GUI
+    - 发邮件
+    - [[keybase]]
+      - 高度机密安全，跨平台，可无限期撤回
+    - 短文字，无需翻墙，可能绕过公司监管：例如博客园、csdn等博客草稿。可能需要和[[linux/zip-unzip]], [[xxd-diff]]联合使用
+      - 相比之下[[onedrive]] [[github]] [[push-pull]] [[outlook]] [[keybase]]显然会被公司监管禁用哈哈
+      - 但博客园这种，公司肯定挂一漏万233
+  - 可用命令行的
+    - 例如[[github]]的[[clone]]
+    - 乃至有[[curl-wget]]，不需要[[init/installation]]就能用的`raw.githubusercontent.com`
+      - 也参考[[github]]
 - 日常
   - [[wechat-tips]]，例如文件传输助手
     - 日常相对方便，但不保密不安全会被监视可能被压缩有大小限制……等
     - 例如[[file-format]]影响最大传输大小，hhh
     - 例如`.apk`传输后特判，被手动变为`.apk.1`，为了你好，哈哈哈
   - [[teams]]
-  - [[baidu-net-disk]]等网盘
+  - [[baidu-net-disk]]，[[onedrive]]等网盘
   - [[bluetooth/basics]]
 - [[xxd-diff]]：转换文本和二进制，在只能传输文本的场合实际传输二进制
 - 硬件
   - U盘、移动硬盘（注意[[interface]]种类，是否USB3.0等）
   - 电脑手机连接
-- 保障安全，隐私：可以[[zip]]，加密[[zip]]，改后缀名（参考[[file-format]]等）
+  - 谚语：永远不要低估装满硬盘的卡车的带宽
+- 保障安全，隐私
+  - [[zip]]，加密[[zip]]
+  - 改后缀名（参考[[file-format]]等）

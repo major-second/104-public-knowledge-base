@@ -7,7 +7,7 @@
 - 描述性文字：`desc=<描述>`
 - [[jupyter-basics]]中使用
   - 需要`tqdm.tqdm_notebook`
-  - 参考[[jupyter-notebook/tqdm]]
+  - 参考[[jupyter-tqdm]]
   - 有意思的feature：没正常结束会红色
   - 比如下一节`zip`例子中就能看到
 - 涉及`map`, `zip`等时为了可以估测总大小，需要先`tqdm`包裹再`map`包裹

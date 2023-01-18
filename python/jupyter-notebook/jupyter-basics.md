@@ -1,14 +1,18 @@
 # 前置
 - [[pip]]
 - `pip install ipykernel`补包
-  - 注：当然也可以在`conda`环境中`pip install ipykernel`做
+  - 注：当然可以在`conda`环境中`pip install ipykernel`
 # 好处
 - 比较根本的一条：可以把东西读进内存，灵活进行下游处理。这是相比`.py`的根本区别！
-- 结合了`python`和`markdown`的好处（可以使用多种代码`block`）
-  - `markdown` block可以有数学公式、图片等作为“高级[[comment]]”
-  - `markdown`标题可以作为目录层级管理等
-    - 特别是有[[nbextension]]时功能更加强大
+  - 不过当然可能长期占用内存，注意[[memory]]占用
+  - 节省[[about-submit]]
+- 结合了`python`和`markdown`的好处，提升[[readability]]. 可以使用多种代码`block`
+  - `markdown` block
+    - 可以有数学公式、图片等作为“高级[[comment]]”
+    - `markdown`标题可以作为目录层级管理等
+      - 特别是有[[nbextension]]时功能更加强大
   - `python` block可以运行`python`代码
+    - 不同block间继承变量，不用反复读入！
 - 把`python`代码按照`cell`为单位排列
   - 可以方便模块化
   - 还有一种常见操作：新建一个（临时）`python block`，`print`你想要的东西
@@ -60,6 +64,6 @@
 # 其它运行方式
 - 使用vscode [[jupyter-notebook]]插件调试编辑
   - 相比原始方法，可以打[[breakpoint]]
-  - 但多进程（[[multiprocessing/minimum/minimum]]）时无法打
+  - 但多进程[[jupyter-tqdm]]m/minimum]]）时无法打
 - `jupyter nbconvert --to python <名字>.ipynb`可以把`.ipynb`转化成`.py`文件，之后`python`命令运行即可
   - 但涉及到[[jupyter-notebook/tqdm]]等时可能有麻烦
