@@ -13,7 +13,7 @@
   - win的`exe, msi`, linux的`sh, deb`, 安卓`apk, xapk`等
     - [[install-from-sh]]
 - 官方或非官方应用商店
-  - [[apple/app]], [[huawei-google]]等
+  - [[apple-app]], [[huawei-google]]等
 - [[build-from-source]], [[github]], [[other-hubs]]
 - 系统内置，自己设置之类地方探索探索就有
 # 更新，版本管理

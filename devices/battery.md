@@ -23,7 +23,7 @@
       - 安卓[[android/battery]]中的
       - 苹果
         - 寿命检测：iOS高版本系统设置-battery中自带
-        - 充电闹钟：随便搜搜`Battery Alarm`等[[apple/app]]
+        - 充电闹钟：随便搜搜`Battery Alarm`等[[apple-app]]
     - 电脑软件和设置如[[power-options]]中的
 - 省电
   - 参考[[power-options]], [[android/battery]]

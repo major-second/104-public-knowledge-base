@@ -10,7 +10,7 @@
   - 骂苹果
     - 自以为聪明，傲慢地取消一大堆[[interface]]，导致必须用扩展坞[[adapter-cable]]，给广大用户造成不便
     - 垄断，就是不用type-c [[interface]]造成不便
-    - 安装[[apple/app]]必须通过官方途径
+    - 安装[[apple-app]]必须通过官方途径
       - 所以必须美区[[general-principles/account]]才能[[ios-proxy-client]]翻墙等
 - 有些学术论文附带的code质量很低、有疏漏、不integral等
   - 有些无意疏忽，也有些有意疏漏（无法复现）
