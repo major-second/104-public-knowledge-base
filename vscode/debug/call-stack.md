@@ -11,4 +11,4 @@
     - 此时在自己的模型中打断点，栈帧往往就很深，可以帮助理解深度学习框架的结构
     - 当然这需要`"justMyCode": false`
   - 如果你很熟悉框架，反而是要看具体的“新增东西”（比如这篇论文创新点在哪），当然就可以`"justMyCode": true`，跳过库函数
-- 在多进程调试中，也可以使用call stack（参考[[minimum]]）
+- 在多进程调试中，也可以使用call stack（参考[[multiprocessing-minimum]]）

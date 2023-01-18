@@ -1,0 +1,31 @@
+# 原始方法
+- [参考](https://docs.jupyter.org/en/latest/running.html)
+- 命令行`jupyter-notebook <名字>.ipynb`
+  - 出现`http://localhost:8888/?token=<一串字符>`这种字样
+  - 浏览器访问即可
+  - 在本地，如果不加`--no-browser`，有可能会成功自动跳出浏览器
+- 如果你正在远程，即使用`ssh`中的终端（例如[[remote-ssh]]），则可以看到它会提示`http://localhost:8888/?token=<一串字符>`这种字样
+  - 我们只需[[forward-port]]这个端口，然后即可在本地浏览器中粘贴`http://localhost:8888/?token=<一串字符>`进行浏览页面和使用
+  - 当然可能也能用[[mobaxterm]], [[terminal]]的`Ctrl+左键`直接跳转的feature
+- 也可以直接`--ip <ip地址> --no-browser`，出现`http://<ip>:<port>/?token=<一串字符>`这种字样，复制到本地的浏览器即可本地调试远程代码
+  - 前提是本地要能访问`<ip地址>`，涉及内网时，参考[[vpn]]等
+  - 这种方法节省了[[forward-port]]步骤
+- `--Notebook.token=for_add_into_my_favorites`，则可以把`http://localhost:8888/?token=for_add_into_my_favorites`加入收藏夹或写入脚本，以后固定访问此网页
+- `jupyter`运行时终端有`Ctrl+C`自动保护
+  - 这为了防止你误以为是[[copy-paste]]，结果按下`Ctrl+C`停下server
+  - 在停止前强行让你确认！
+  - 当然你熟悉了这个feature后，还有其它用途，比如按`Ctrl+C`再按`n`恢复，此时可展现`http://<ip>:<port>/?token=<一串字符>`
+- 调试[[general-principles/debug]]
+  - 有[[jupyter-hotkeys]]
+  - 正在运行时左侧有`[*]`记号
+  - 运行完左侧数字表示运行顺序
+  - 上面有一些常见按钮（如保存、停止、重启等）
+  - 不能[[breakpoint]]，所以要参考[[general-principles/debug]]的技巧
+- 编辑：有[[jupyter-hotkeys]]
+# 其它运行方式
+- 使用vscode [[jupyter-notebook]]插件调试编辑
+  - 相比原始方法，可以打[[breakpoint]]
+  - 但多进程[[multiprocessing-minimum]]）时无法打
+  - 坏处：时至2023.1，无法用[[6-env]]
+- `jupyter nbconvert --to python <名字>.ipynb`可以把`.ipynb`转化成`.py`文件，之后`python`命令运行即可
+  - 但涉及到[[jupyter-tqdm]]等时可能有麻烦

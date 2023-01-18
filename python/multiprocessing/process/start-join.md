@@ -1,5 +1,5 @@
 - 前置
-  - [[minimum]]，唯象体验并行
+  - [[multiprocessing-minimum]]，唯象体验并行
 - 我们使用最基本的`Process`类和`start, join`操作体验多进程的基本含义，参考`start_join.py`
 - 首先`p = ...`初始化一个`Process`对象
   - 每个对象指定运行哪个函数`target`、哪些参数`args`、哪些关键字参数`kwargs`
