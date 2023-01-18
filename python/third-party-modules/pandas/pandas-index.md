@@ -1,0 +1,67 @@
+- 前置
+  - [[series-dataframe]]
+  - `import pandas as pd; import numpy as np; example = pd.DataFrame({i:np.arange(3)+i for i in range(4)}, index=np.arange(3)-1)`
+## indexing基础
+- 这里不是指狭义的`.index`
+- 行列
+  - `print(example.keys(), example.columns, example.index, len(example))`
+    - 一行row是一个数据条目
+      - 比如一个时间点[[timestamps]]一行
+    - 一列column是一种属性（feature）
+  - `print(example[0][-1]); print(example[0:1]); print(example[-1][0])`
+    - 默认先说属性再说时间范围（数据条目）
+      - 例如：`data[0]`把`0`解释为属性名，而不是取第0条
+    - 少部分例外，例如可以`data[0:1]`取出（时间范围）切片
+      - 注：无论`.index`如何，`data[0:1]`取出的都是第0条（“相对”而非绝对）
+- 列[[CRUD]]：`example['a'] = 7; example.loc[:, 'b'] = [3, 4, 5]; print(example[['a', 'b']]); example.drop(columns=['a'], inplace=True); print(example.columns)`
+  - 删：参考[[inplace]]
+  - 增、改
+    - 可以是赋予单个数，也可以是序列
+    - 可以`[key]`或者`.loc[:, key]`
+    - value是`Series`时，要注意有没有让他的`index`和你的`data`的`index`一致
+      - 隐蔽的错误：`a, b = [pd.Series([1,1], index=range(i,i+2)) for i in range(2)]; print((a+b).shape)`
+      - 输出`(3,)`
+    - 注意pandas官方的一个tricky bug，参考[[leaky-abstraction]]
+  - 查：
+    - “子”数据集：`df[[key0, key1]]`
+      - 例如做两个变量间的[[regression]]时，如果只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
+      - 也可以用[[ordered-dict]]思想，即`df[df.columns[0]]`这种
+## `.index`
+- 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
+  - 如果日期字段名是`Date`，则`opsd_daily = opsd_daily.set_index('Date')`
+    - 这个继承自[[time-series]]内容
+  - 此时可再看`.shape, .dtypes, .sample(3)`的变化
+- `.index`取出index序列
+  - 参考[[series-dataframe]]中的`index`，知道默认值是`0`开始的整数列
+  - 还能`.index.start`等取出具体值
+  - `df.index = df[key]`还能设置哪一列是index
+    - `.sort_index()`返回按索引排序的结果（但`DataFrame`自己不[[inplace]]改变）
+    - 这里返回的结果默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
+- 直接设置`index`：`.set_index(<index>, inplace=True)`
+  - 参考[[inplace]]
+  - 不[[inplace]]就是`df_new = df.set_index(...)`，出现[[copy-paste]]
+- 二合一过程（读取和设置`index`）
+  - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
+  - `0`号栏此时对应`Date`
+- `values`取出具体数值
+  - 是[[numpy/basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basics]]
+## `.loc`
+- 有了index，此时可以用`.loc['2014-01-20']`，乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
+  - 切片第三个分量
+    - 比如`1, -1, -4`这种都行，表示“间隔条目数”
+    - 所以和第一第二个分量的“数据类型”未必相同
+    - 它们是[[timestamps]]，第三个可能是整数
+- `df.loc[0, 'key'] = value`这样比`df['key'][0] = value`好（后者会报[[warning]]，和[[copy-paste]]有关）
+  - 但注意如果`index`不是从0开始的自然数，而是时间等等时，就必须用`df.index`取出
+    - 例如`df.loc[df.index[0], 'key']`
+  - 而且此时千万不能漏了`.loc`写成了`df[0, 'key']`，否则变成了取column
+- loc很多坑，[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
+- 和普通的`[]`不同
+  - `.loc[]`**切片含两端**
+  - 普通的`[]`只能取`[start:end]`这样，不能单取一个`[0]`这样（否则解释为找column而不是row），但`.loc`可以
+  - `.loc`默认是“绝对”的索引，而不是相对
+    - `.loc[0]`中的0是某个数据条目的一个属性（`index`），相当于某种特殊feature，而不是其在某个序列中的排序
+    - 也就是“二次”切片时不能“相对”切。例如`d.loc[3:4]`的结果就不能再`.loc[0]`了！
+    - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
+  - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
+    - 所以对两种出来结果再切片时效果也当然不同
