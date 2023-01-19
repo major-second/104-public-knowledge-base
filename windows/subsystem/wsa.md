@@ -27,19 +27,8 @@
     - developer：需要打开！否则没法自己安装应用，设置代理等
     - compatibility：可以看应用列表，设置兼容性让没法用键盘的变得可用等等
 - 代理[[configure]]
-  - 时至2022.12，必须关闭WSA Settings - Advanced Networking
-    - 此时除了关闭Advanced Networking，可能还需要[[quit]] WSA进行[[refresh]]，非常烦
-      - 任务管理器搜索`Windows`，看到`Windows*Android*`相关东西，强制关掉
-      - 再对`wsa`，`adb`，`vmmem`做同样事情，看到wsa相关的就关
-      - Apps/Background Processes/Windows Processes都要看
-    - 确保全部关掉，且 Advanced Networking关闭
-    - 且不使用任何[[proxy/basics]]
-      - 最好[[configure]]和[[windows-proxy-client]]都不开
-      - 还要下文所说`adb`关代理
-      - 以及不要用[[vpn]]（包括公司内网）
-    - 我不知道这么确保有没有必要但一般这样一来重开wsa就能进了
-    - 实在不行，继续升级[[refresh]]层次，重登，重启
-  - 使用主机代理
+  - 时至2022.12，必须关闭WSA Settings - Advanced Networking，否则很容易造成神秘问题
+  - 使用主机代理的方法
     - 主机[[powershell/basics]]
     - 需要
       - [[wsl]]

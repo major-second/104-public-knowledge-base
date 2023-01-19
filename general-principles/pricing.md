@@ -5,15 +5,21 @@
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
   - 例如[[tagui]], [[robocorp/basics/installation]]而不是[[my-first-flow]]
   - 例如[[spotify]]和墙内音乐软件综合使用，有的有这些版权，有的有那些版权
-- 利用不同[[region-language]]价格歧视，例如[[leetcode-solutions/0-metadata]]
+- 利用不同[[region-language]]价格歧视
+  - 例如[[leetcode-solutions/0-metadata]]
   - 故这时可能需要[[vpn]], [[proxy/basics]], [[sms]]等
-  - 例如[[spotify]]
 - [[search-info/general]]，[[download-resource]]
   - 直接百度序列号，曾经[[aida64]]就可以用
   - 搜注册机（俄罗斯又穷技术力又强，所以很多这种东西和俄罗斯有关）
   - [序列号收集站](https://keypro2.ru)
   - 乃至去暗网等
-- 淘宝买，如[[baidu-net-disk]]等
+- 电子付费产品去第三方买，更灵活/便宜
+  - 淘宝买内网的
+    - 如[[baidu-net-disk]]等
+  - [stacksocial](https://stacksocial.com/)买外网的
+    - 如[[vpn]]中的getflix vpn终身只需50美元
+    - 可能需要[[proxy/basics]], VISA贷记卡，注册 Link 支付账号等
+    - 时至2023.1，默认支付方式一直显示state must be filled. 但 Link 可以
 - 免费东西当然有安全风险，有时免费是最贵的
   - 如免费[[node]]可能是蜜罐
   - 注册机可能有病毒（当然序列号就比较安全）

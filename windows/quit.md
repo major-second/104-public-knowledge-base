@@ -6,7 +6,8 @@
     - ![](quit-keybase.png)
     - 托盘图标-右上角图标-quit Keybase
 - 关不干净？
-  - 任务管理器杀掉进程很多时候管用，比如[[wsa]]
+  - 任务管理器杀掉进程或者powershell暴力关[[process]]
+    - 很多时候管用，比如[[wsa]]
     - 用于[[refresh]]
     - 注意可能要等一小段时间才能关干净
   - 但是碰到[[vpn]]里的GlobalProtect这种流氓软件就不管用了……
