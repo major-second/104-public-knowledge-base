@@ -9,7 +9,7 @@
     - 2022.12，[geph](https://geph.io/zhs)有[[node]]也有[[vpn]]（需要右键管理员权限打开）
   - vpn相比代理在有些时候更透明更好用，不需要手动[[configure]]
     - 在[[wsa]]中，vpn可以用，代理就非常麻烦
-- 可能的用法
+- 可能的公司/学校vpn用法示例
   - 下载公司/学校指定的客户端并安装
     - 比如Pulse Secure
     - 比如[GlobalProtect](https://www.updatestar.com/zh-cn/directdownload/globalprotect/2338326)
@@ -25,6 +25,10 @@
     - （对于有多个Gateway可选的情况）适当选择Gateway
     - 例如Beijing
     - 这个选错了可能导致无法访问你想要的资源
+- 翻墙用getflix vpn用法
+  - 翻墙
+  - 注册当前ip
+  - 用他的[[dns]]解锁netflix等网站
 - vpn在第二层或第三层，[[proxy/basics]]在第七层。两者完全不同
   - 和[[proxy/basics]]相互干扰的例子
     - 有时两者不能同时用（跟客户端兼容性能有关）
