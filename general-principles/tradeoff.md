@@ -20,3 +20,5 @@
   - 体现`2`
 - 如[[parallelism]]讲到GPU -> CPU [[numpy/basics]] -> for循环三级
   - 体现`1, 2`
+- 如[[pandas-loc]]提到的
+  - 体现`2, 3`
