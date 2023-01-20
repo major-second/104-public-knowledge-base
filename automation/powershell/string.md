@@ -8,7 +8,7 @@
   - 参考[[11-basic-scripting-partB]]的管道记号
   - 可搜[[regex]]
   - 例如[[reinstall-app]]用到`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`
-  - 例如验证[[configure]]可以用`curl ipinfo.io | select content | select-string country`
+  - 例如验证[[configure-proxy]]可以用`curl ipinfo.io | select content | select-string country`
 - `| Where-Object`
 这个有点坑，`-match`才是[[regex]]匹配，`-contains`竟然是要完全匹配，而不是[[find-grep]]或者`Select-String`那样
 ```powershell

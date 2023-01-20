@@ -19,7 +19,7 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 - 对于服务器或docker容器，需要先`apt install -y sudo git`这俩
 - `sed`一行中，`zsh-syntax-highlighting`必须在最后！
 - 跑完上述命令，最后要把`~/.bashrc`必要的设置放到`~/.zshrc`（并更新），比如
-  - `export`的[[configure]]
+  - `export`的[[configure-proxy]]
   - [[ros/installation]]中的`source`命令
   - `CUDA`，`conda`设置，`ssh`服务打开等七七八八的东西
 - 如果想要[[silent]]（即全程在`bash`完成`zsh`安装），需要

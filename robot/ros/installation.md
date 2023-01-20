@@ -1,7 +1,7 @@
 前置：
 - [[linux-proxy-client]]翻墙
 - 针对`raw.githubusercontent.com`修改[[hosts]]
-  - 因为`rosdep init`的代理[[configure]]很麻烦
+  - 因为`rosdep init`的代理[[configure-proxy]]很麻烦
   - 具体地，参考[[dns]]，修改`/etc/hosts`即可。例如加入`185.199.108.133 raw.githubusercontent.com`（注意具体要加的ip不同时间可能不一样）
 - [[software-management/source]]
   - 除了需要加ros的源，可能还要改默认源为阿里云（默认源缺包）

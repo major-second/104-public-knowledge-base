@@ -1,6 +1,6 @@
 前置
 - [[robocorp/basics/installation]]
-- 其中`google-image-search`robot需要[[configure]]代理
+- 其中`google-image-search`robot需要[[configure-proxy]]
   - windows使用[[windows/env-var]]
 
 步骤
@@ -22,10 +22,10 @@
   - 运行成功结果：终端有这样的输出，包括绿色`OK`![](success-terminal.png)
   - `output`文件夹也有记录输出
 # 例子：谷歌搜索图片并保存
-- 需要[[configure]]代理
+- 需要[[configure-proxy]]
   - windows是设置[[windows/env-var]]，参考[robocorp用代理](https://robocorp.com/docs/troubleshooting/firewall-and-proxies)
 - `git clone https://github.com/robocorp/example-google-image-search.git`
-- 挂好代理，并[[configure]]
+- 确认好[[configure-proxy]]
 - 运行方式和上一节类似。运行成功效果：
   - 下方有提示，也有绿色`OK`
   - 打开（可能用浏览器等）运行成功生成的`output`中的`log.html`，可以找到更详细的日志，且找到猫猫图片![](cat.png)

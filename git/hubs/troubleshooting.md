@@ -3,7 +3,7 @@
 - 参考[[https-ssh]]，[[known-hosts]]，[[personal-access-tokens]]，[[settings-and-configurations]]，[[proxy/basics]]等设置代理、ssh、token，排除坑
 - 关于代理
   - 如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是命令行没设置代理但浏览器自动走了浏览器代理
-  - 参考[[configure]]
+  - 参考[[configure-proxy]]
   - `OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443`或`gnutls_handshake() failed: The TLS connection was non-properly terminated.`：可能是代理[[node]]挂了，需要更换代理[[node]]
 # conflict
 - 典型场景是你和别人各自改了同一个文件

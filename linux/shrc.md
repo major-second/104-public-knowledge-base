@@ -6,7 +6,7 @@
   - 注意`.`也就是`source`，和一般地运行脚本`./file.sh`这种有联系也有区别！
 - 举例
   - `export`环境变量[[6-env]]
-    - 如[[configure]]代理
+    - 如[[configure-proxy]]代理
     - 注意`key=value`和`export key=value`效果不同
   - 设置`alias`
     - 例如[[pycharm/installation]]

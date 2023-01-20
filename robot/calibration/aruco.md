@@ -13,7 +13,7 @@ ArUco就是一种fiducial marker
 - [ArUco](https://docs.google.com/document/d/1QU9KoBtjSM2kF6ITOjQ76xqL7H0TEtXriJX5kwi9Kgc/edit)中搜索Compiling即可看到相关文档
 - 但你不用全听他的。你明白他在做什么，就可以：
 - 参考[[cmake]]中的[opencv链接](https://docs.opencv.org/4.2.0/d7/d9f/tutorial_linux_install.html)安装依赖OpenCV
-  - 可能需要[[cmake]]配置[[configure]]代理
+  - 可能需要[[cmake]]配置[[configure-proxy]]代理
 - 参考[[install-ros-package]]所说的“多`git clone https://github.com/pal-robotics/aruco_ros.git`”
   - 其余命令参考[[install-ros-package]]不变
   - 注意版本号可能是`melodic`，就需要`-b`参数指定`melodic-devel`

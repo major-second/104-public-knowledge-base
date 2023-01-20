@@ -23,11 +23,11 @@
   - [[node]]，可以是免费羊毛（这种可能有公安请喝茶风险，是蜜罐），学长送的，学校给的，实验室给的，自己买的
   - 客户端，如[[windows-proxy-client]], [[linux-proxy-client]], [[v2raya]]等
     - 有些客户端如`geph`集成了[[node]]
-  - [[configure]]使得使用上刚刚说的[[node]]和客户端
+  - [[configure-proxy]]使得使用上刚刚说的[[node]]和客户端
 - 坏处
   - 开代理有时会造成安全风险，导致一些东西不给你用。比如公司账号无法登录等
   - 代理比直连有时候会慢，[[vpn]]由于照顾公司，那就更慢。所以：可以不用代理那就不用呗
     1. 有些时候改[[hosts]]即可，不一定非得正儿八经挂代理。其作用参见[[hosts]]
       - 原理是墙分为多种，有的是直接打死，有的只是[[dns]]污染
     2. 有些时候可以通过[[channel]]，[[pip]]设置，[[software-management/source]]等，通过[[settings-and-configurations]]使用国内[[mirror]]镜像或源，而不用国外的源
-  - 所以一定要熟练开关代理，设置是否全局，参考[[configure]]
+  - 所以一定要熟练开关代理，设置是否全局，参考[[configure-proxy]]

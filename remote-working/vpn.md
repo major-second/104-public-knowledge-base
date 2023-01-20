@@ -7,7 +7,7 @@
   - 非专业人士可能把[[proxy/basics]]俗称vpn，你自己要清楚！
     - [[node]]中的okz2显然是[[proxy/basics]]的[[node]]提供商，而不是vpn
     - 2022.12，[geph](https://geph.io/zhs)有[[node]]也有[[vpn]]（需要右键管理员权限打开）
-  - vpn相比代理在有些时候更透明更好用，不需要手动[[configure]]
+  - vpn相比代理在有些时候更透明更好用，不需要手动[[configure-proxy]]
     - 在[[wsa]]中，vpn可以用，代理就非常麻烦
 - 可能的公司/学校vpn用法示例
   - 下载公司/学校指定的客户端并安装

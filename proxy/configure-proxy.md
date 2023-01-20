@@ -36,24 +36,21 @@ export http_proxy="localhost:<端口号>"
 - 注：环境变量和ubuntu系统设定是两回事
 - 注：临时要关就`unset http_proxy https_proxy`
 - 拓展：可以在[[shrc]]写一些简单脚本，处理不同情况
-  - 这里的`$host_ip`得到方法参考[[wsl]]
-  - 核心代码`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`
+  - [[wsl]]得到`$host_ip`的核心代码：`host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")`
+  - 需要了解[[13-loop]], [[12-condition]], [[curl-wget]]等等
+  - 举例片段
 ```sh
-proxy_usable=0
-for port in {9910..9912}
+host_ip=$(cat /etc/resolv.conf |grep "nameserver" |cut -f 2 -d " ")
+for port in 9910 9911
 do
- echo trying port: $port
  export ALL_PROXY="http://$host_ip:$port"
- if curl --connect-timeout 0.3 baidu.com
+ echo trying $ALL_PROXY
+ if curl -fsSL --max-time 2 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore
  then
   echo "\n$ALL_PROXY is on"
-  proxy_usable=1
   break
  fi
 done
-if [ $proxy_usable = 0 ]; then unset ALL_PROXY; echo no usable proxy; fi
-echo "test:"
-curl --connect-timeout 5 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | grep oh-my-zsh
 ```
 - 一些特殊情况
   - [[pip]]走代理

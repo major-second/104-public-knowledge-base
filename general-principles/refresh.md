@@ -41,7 +41,7 @@
   - `source` [[shrc]]
     - `. ~/.bashrc`，[[zsh]]中的`. ~/.zshrc`等等
     - 当然[[6-env]]中所说**重开终端**相当于`. ~/.bashrc`了，可以作更新
-  - [[configure]]中提到的powershell需要新开进程才能用上新的代理设置
+  - [[configure-proxy]]中提到的powershell需要新开进程才能用上新的代理设置
     - `Start-Process powershell.exe -NoNewWindow -Wait -ArgumentList <路径>`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
   - [[software-management/source]]的`sudo apt update`

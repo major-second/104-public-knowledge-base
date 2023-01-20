@@ -9,7 +9,7 @@ https://github.com/Qv2ray/Qv2ray/releases
 - 解压`v2ray`内核
 - 解压`qv2ray`，打开程序
 - Preferences - Kernel Settings处指定`v2ray`内核位置（有两个地方要设置）![](v2ray-core.png)
-- Inbound Settings处根据是否要灵活切换端口，去掉/勾选Set System Proxy（这是在帮你[[configure]]，会导致你自己没法灵活换）
+- Inbound Settings处根据是否要灵活切换端口，去掉/勾选Set System Proxy（这是在帮你[[configure-proxy]]，会导致你自己没法灵活换）
   - 如果去掉，那么该界面右边`HTTP Settings - Port`要对的上你系统里的代理设置（开始菜单搜索proxy）![](proxy-port.png)
 - 选做：如果除了`v2ray`还需要`ssr`协议，那么
   - https://github.com/Qv2ray/QvPlugin-SSR/releases/
@@ -23,7 +23,7 @@ https://github.com/Qv2ray/Qv2ray/releases
     - 解码方式：如果一种不行就试另一种
 - 其它troubleshooting
   - Inbound Settings - SOCKS Settings - 默认的1089可能被占，你随便换个端口即可
-    - 注意这个并不是[[configure]]所说的“暴露的端口”
+    - 注意这个并不是[[configure-proxy]]所说的“暴露的端口”
 # clash
 - 大同小异，[下载链接](https://github.com/Fndroid/clash_for_windows_pkg/releases)-
 - 注意需要使用7-zip

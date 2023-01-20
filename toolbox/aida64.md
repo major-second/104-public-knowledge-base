@@ -30,7 +30,7 @@
   - SMART：硬盘寿命
 - Network
   - Windows Network看适配器，内网情况如[[network]]，[[wsl]]，[[wsa]]
-  - Internet可验证[[proxy/basics]]的[[configure]]成功等
+  - Internet可验证[[proxy/basics]]的[[configure-proxy]]成功等
 - Devices
   - `USB Devices`里面有USB及蓝牙设备列表（包括已配对但当前没连接的）
 - Software

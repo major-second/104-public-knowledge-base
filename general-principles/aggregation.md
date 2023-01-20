@@ -5,7 +5,7 @@
   - 比如[[flyele]]适用于团队协作，[[dida]]适用于自己个人日程管理（循环比较方便）
   - 比如[[wechat-tips]]和长辈沟通，[[keybase]]和能接受新事物的技术合作者沟通，[[telegram]]“干坏事”
   - 比如[[settings-and-configurations]]中windows10的Setting和Control Panel各有优劣
-  - 比如[[configure]]代理是否使用全局模式
+  - 比如[[configure-proxy]]代理是否使用全局模式
   - 比如[[escape]]单双引号各有优势，经常互为[[workaround]]
 - 关于“交集”
   - 场景的“交集”未必是空集，即有些时候有多种符合要求，有些时候只有一种符合要求，但没有一种工具能满足所有要求
