@@ -1,0 +1,8 @@
+- 前置[[general-principles/account]], [[apple]]
+- 类比[[chrome/settings]]中autofill自动填密码
+- 在设置搜索password即可看到
+  - 设置中看apple id可以知道哪些东西可用apple id登录
+- 不光浏览器网页能用，应用中内置访问可能也能用
+- 需要指纹/人脸/Passcode认证等才给你用密码
+  - 从这个角度讲，有时反而降低了安全性。毕竟Passcode只有几位数字
+- 有时如果没有自动识别到你输的账号密码，可以手动`+`密码条目。例如[[outlook]]的imap高级设置时
