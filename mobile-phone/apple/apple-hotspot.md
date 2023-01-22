@@ -1,0 +1,4 @@
+- 默认可能只能[[bluetooth/basics]]连，不能wifi连，和安卓不同
+  - 关掉重新打开确认之后才能wifi连
+- 且集成到[[apple-shortcut]]时可能只能蓝牙连
+- 用法：先用iPhone点击连接其它手机，再其它手机连接iPhone，即可上网
