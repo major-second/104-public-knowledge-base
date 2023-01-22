@@ -15,6 +15,7 @@
     - 文件系统
       - [[git-basics/basics]]完全不行，会因为权限等问题导致无法正常使用或者显示太多修改
     - 跨系统混用终端：[[zsh]]不行！
+      - 所以`~/.zshrc`考虑加入：如果在`/mnt.*`开始，则需要`cd`到linux这边，比如`cd ~`
   - [[remote-ssh]]有了之后
     - `code .`打开vscode
     - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可
