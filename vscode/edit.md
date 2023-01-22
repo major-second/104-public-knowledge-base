@@ -1,9 +1,13 @@
 `vscode`毕竟本体还是编辑器，当然要掌握常见编辑技巧
 - 可以参考[[editting]], [[keys]]
-- 有个Editor Playground教你常用技巧，比如`Alt`多光标，`Alt+上下`移动行，`Alt+Shift+上下`移动列
+- 有个Editor Playground教你常用技巧
+  - 比如`Alt`多光标，`Alt+上下`移动行，`Alt+Shift+上下`复制行
+    - 节省[[copy-paste]]剪贴板使用很好用
   - 进阶
-    - `Alt`多光标，然后`Shift + End`等，参考[[edit/keys]]
-    - `Ctrl+Alt+方向键`使多光标出现在开头，然后按一次`End`到结尾。或者`下, 左`到结尾
+    - `Alt`多光标，然后`Shift + End`选中一系列东西，参考[[edit/keys]]
+      - 笔记本`End`可能和fn键共用，参考[[fn-keys]]
+    - `Ctrl+Alt+方向键`使多光标出现在开头，然后按一次`End`到各自结尾
+      - 或者`下, 左`到结尾（前提是下面至少还有一行）
 - `Ctrl+F`查找，`Ctrl+H`替换
   - 替换的常见操作：`Ctrl+H, <原字符串>, Tab, <新字符串>`，鼠标点击上下按钮移动到指定位置
   - 焦点在上下按钮时，回车是“下一个”
