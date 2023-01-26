@@ -1,0 +1,5 @@
+- 前置
+  - 安卓手机，[[android-proxy-client]]，可能需要[[huawei-google]]
+- ![](phone-link.png)
+  - 可以显示管理电话短信图片
+  - 从而作为其他自动化流程的组分

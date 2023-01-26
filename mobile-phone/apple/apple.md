@@ -1,3 +1,6 @@
 - 前置：了解[[general-principles/account]]
 - 你会了那些技能（[[proxy/basics]], [[sms]], 虚构地址等），就很容易通过[教程](https://zhuanlan.zhihu.com/p/367821925)，得到美区apple id
+  - 不同[[region-language]]的id可能能用的[[apple-app]]不同
+    - 显然大陆没有`ShadowLink`
+    - 美区可能没有一些大陆特有软件如数字人民币
 - 探索（可能有的）指纹、人脸识别等功能

@@ -57,3 +57,9 @@
       - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
       - `adb shell settings delete global http_proxy; adb shell settings delete global https_proxy`
       - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
+# 局限性
+- 不能用google play，所以一些应用用不了
+  - [[huawei-google]]也不行
+- 打微信电话有回声
+  - 不像原生的安卓/windows微信电话能检测消除回声
+- 电脑开一些[[vpn]]时，wsa会认为你不安全，不给你上网
