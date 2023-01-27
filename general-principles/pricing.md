@@ -9,7 +9,8 @@
   - 例如[[leetcode-solutions/0-metadata]]
   - 故这时可能需要[[vpn]], [[proxy/basics]], [[sms]]等
 - [[search-info/general]]，[[download-resource]]
-  - 直接百度序列号，曾经[[aida64]]就可以用
+  - 直接百度/[[github]]搜序列号
+    - 例如[[aida64]]、[[vmware]]都成功过
   - 搜注册机（俄罗斯又穷技术力又强，所以很多这种东西和俄罗斯有关）
   - [序列号收集站](https://keypro2.ru)
   - 乃至去暗网等

@@ -3,5 +3,5 @@
   - 睡眠后如果断电或笔记本没电会转为休眠
   - 休眠其实相当于关机但是把内存状态存到硬盘
     - 所以完事之后如果使用了双系统[[windows-ubuntu]]中的另一个系统，再关机再切回来，状态还是有的！
-    - 没保存的word文档、没suspend的[[pro-license]] vmware虚拟机都会留着
+    - 没保存的word文档、没suspend的[[vmware]] vmware虚拟机都会留着
 - [找回“休眠”功能](https://zhuanlan.zhihu.com/p/118032699)

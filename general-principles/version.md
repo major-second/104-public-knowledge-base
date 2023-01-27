@@ -43,7 +43,7 @@
 - 商业软件：例如`perfessional`，`extreme`，`community`等区分等级
   - 如[[aida64]]
   - 不同等级序列号不能混用
-    - 比如[[pro-license]]
+    - 比如[[vmware]]
   - 有时，有序列号可以升级到高等级
     - 如[[windows/upgrade]]
   - 高级版本当然有高级功能，比如[[pycharm/installation]]，社区版对[[jupyter-basics]]只读

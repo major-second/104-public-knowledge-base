@@ -1,5 +1,6 @@
 前置：
-- [[pro-license]]（Player版本没法搞声卡）
+- [[vmware]]
+  - Player版本没法搞声卡，需要Pro
 
 # Win98
 ## 下载安装系统

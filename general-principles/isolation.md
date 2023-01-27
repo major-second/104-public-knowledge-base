@@ -3,6 +3,7 @@
     - 说明小组工作空间管理混乱了，别人在改你的工作空间里的东西，赶紧做好协商，隔离！
 - [[torch-cuda]]中提到的`CUDA_VISIBLE_DEVICES`可能对隔离有帮助
 - [[docker]]当然对隔离很有用
-- 虚拟机（比如vmware [[pro-license]]）也是隔离的好方法
+- 虚拟机如[[vmware]]也是隔离的好方法
   - 特别是把[[baidu-net-disk]]，[[wechat-tips]]，[[aliyun]]等国产软件扔虚拟机里，巨爽，类似于窗外很多虫子，你关窗
+  - 下载的枪版电影可能是`.exe`格式有风险要隔离
 - [[git-basics/branch]]提到了协作开发过程中的新分支和pull request
