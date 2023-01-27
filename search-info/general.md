@@ -41,6 +41,8 @@
   - 例如搜索leetcode，得到两个很有用的库
     - 参见[[leetcode-solutions/0-metadata]]
 - 灰色地带
-  - 暗网（如海盗湾）
+  - Tor浏览器以及暗网
+    - 如海盗湾
   - [[telegram]]频道
-  - 来自暗网或[[telegram]]频道的加密货币付费社工库（参考[[deposit]]充加密货币）
+  - 来自暗网或[[telegram]]频道的加密货币付费社工库
+    - 参考[[deposit]]充加密货币
