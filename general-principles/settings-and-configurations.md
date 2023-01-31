@@ -20,7 +20,9 @@
   - [nitrome games合集](https://archive.org/details/all_nitrome_games)中也有这样的例子：要覆盖`settings.sol`
 - 有趣的事实：硬件也有设置。例如[[laptop-camera]]中所有“与”条件中的第一个：打开硬件开关！
 ## 常见设置方法
-1. 参考[[6-env]]，设置环境变量，乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等（使得开终端时自动设置）
+1. 参考[[6-env]]，设置环境变量
+   1. 乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等
+   - 使得每次开终端时自动设置
 2. 编辑特定文件
    1. 比如Linux的`~/.bashrc`，`~/.condarc`，`/etc/ssh/sshd_config`
       1. 参考：[[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]，[[shrc]]
@@ -39,7 +41,8 @@
    1. 比如`git config`，参考[[config]]
    2. 比如`pip config set <key> <value>`命令，参考[[pip]]
       1. 注：不同版本可能具有的方式还不同。比如老[[version]] `pip`就没有`config`命令。需要装新版本。
-   3. 用命令很多时候等价于封装了的方法2（直接编辑文件）
+   3. [[zsh]]的`setopt`
+   4. 用命令很多时候等价于封装了的方法2（直接编辑文件）
 4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全

@@ -50,6 +50,9 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
   - `function test-loop { for i in {$1..8}; do echo $i; done; }; test-loop 1`运行结果不同
 - 其它特性
   - 直接粘贴多行，`bash`会自动运行前面的，且把一些行可能直接解释为密码等输入而非命令，参考[[copy-paste]]
+  - `rm`中带有`*`会让你确认
+    - 可以`setopt RMstarsilent`去除
+    - 更多选项[参考](https://zsh.sourceforge.io/Doc/Release/Options.html)
 ## 优良特性
 - `$(`开头的开放区域中可以tab补全，`)`括起来后tab出现结果
 - 刚刚的命令中，安装了`autojump`，所以可以`j`命令快速跳
