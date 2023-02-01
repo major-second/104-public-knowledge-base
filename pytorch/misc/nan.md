@@ -13,6 +13,8 @@
 - `numpy`、`pandas`、`torch`不同
   - `import numpy as np; import pandas as pd; import torch`
   - `example = np.array([[np.nan, 0], [1, 1]]); print(example.sum()); print(pd.DataFrame(example).sum()); print(torch.tensor(example).sum())`
+- `x == x`，不等于就是`nan`
+  - 从而也可以`np.where(nparray == nparray)`
 # 表现
 - 只要一个地方`nan`，整个训练loss就`nan`了没意义了（参考刚刚“求和”）
 - 数据里有`nan`的表现

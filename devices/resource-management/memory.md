@@ -14,3 +14,8 @@
 - 设置方法
   - 可以在装系统时[[partition]]
   - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
+- 管理
+  - 垃圾回收
+    - python一般是自动地
+  - 文件一般用`with`自动关
+  - [[matplotlib/basics]]这种需要手动`plt.close()`

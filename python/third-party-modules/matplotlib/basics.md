@@ -16,7 +16,8 @@
   - 多次`.plot`，设置不同标签，画出多条线
 - [[jupyter-basics]]或vscode的[[jupyter-notebook]]插件中，`.savefig()`可变为`.show()`，直接展现
 - `savefig(bbox_inches='tight')`，可以存超出画布范围的东西（比如[[text]]）
-- 注：`plt.cla()`清空图重画
+- `plt.cla()`清空图重画
+- `plt.close()`关掉防止[[memory]]占用过多
 ## 基础示例
 ```python
 import matplotlib.pyplot as plt
