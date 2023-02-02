@@ -4,7 +4,7 @@
 [toc]
 # 一般原则
 - 打开代理之后还需要配置才能让应用实际走代理，而不是走直连
-  - [[settings-json]]，[[zoom]]等等都有提到
+  - [[settings-json]]，[[tools/zoom]]等等都有提到
   - 相比之下[[vpn]]就是傻瓜式，hhh（不过往往也有坏处，如不灵活，常常“全局”）
 - 有一些[[settings-and-configurations]]一般原则适用。比如“优先级”等
   - 例如浏览器可以使用系统设定代理也可以自己设定ip和端口号，覆盖系统的
@@ -92,7 +92,7 @@ done
   - 比如`curl ipinfo.io | select content | select-string country`，比linux麻烦些，参考[[powershell/string]]
 - 注：`cip.cc`, `ipinfo.io`结果不同：可能是自动分支了墙内墙外，非全局，参见下文
 # 举例
-- [[push-pull]], [[zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
+- [[push-pull]], [[tools/zoom]]等中都出现了一些东西成功配置了代理，另一些没有配置，结果导致一些途径成功另一些失败
 - [[wsa]]不用代理则不需要[[wsl]]，但用的话就可能需要，比较麻烦
 # troubleshooting
 ## 是否使用全局模式

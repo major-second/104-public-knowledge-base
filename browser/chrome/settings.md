@@ -9,4 +9,4 @@
 - 效果举例
   - [一个YouTube视频](https://www.youtube.com/watch?v=lDwbTo0jSg4)
   - ![](transciption.png)
-- [[zoom]]中也可以用
+- [[tools/zoom]]中也可以用
