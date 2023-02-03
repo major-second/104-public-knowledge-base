@@ -1,9 +1,4 @@
-- 前置
-  - [[general-principles/account]]
-  - 挂合适地区代理[[proxy/basics]]
-     - 对地区可能有要求。如香港可能不行
-  - 用虚拟手机号[[sms]]
-  - 上 https://chat.openai.com/chat 注册即可使用
+- 前置[[openai-account]]
 # 用法
 - 在下方框敲东西让它回答
   - 可使用中文/英文/各种文字
