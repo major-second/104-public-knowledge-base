@@ -1,23 +1,32 @@
 - 在正式运行前，往往需要先调试确认没有问题。调试时往往
+  - 有debug flag，用于区分运行真正的代码还是测试代码
+  - 适当多输出
+    - 参考[[general-principles/logs]]中“等级”，DEBUG肯定是最详细的
+    - 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
   - 需要考虑特例[[general-principles/special-case]]
     - 算法中的[[algorithm/special-case]]
     - 空输入造成问题例如[[finetune]]，[[submodule]]中都有
   - 使用较少资源（gpu、cpu等）和待测试数据，降低成本，加快调试迭代速率
     - 而且像[[launch]]这类的“高级”调试器（相比直接print），运行速度能接受的数据量更小……
-  - 适当调整顺序，使得一些耗时长的东西靠后运行，以加快迭代速率
+  - 适当调整顺序，使得一些耗时长的东西靠后运行，以最短时间cover最多行代码，以加快迭代速率
     - 例如[[import/basics]]许多自己的文件，你可以把加载时间长的文件放后面
   - 使用较简单的模式
-    - 比如要用单线程，而不用distributed data parallel, ddp等
+    - 比如要用单线程
+      - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
       - 多线程时，打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
       - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
     - 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
   - 在小规模到大规模前，可能可以加入“中规模”，多加几级
-    - 例如看到性能瓶颈所在（有一次在`matplotlib`中，[[scatter]]了几百万个点导致慢，233）
-    - 例如“能跑通 -> 数据科学/[[tricks]]层面性质没问题 -> 跑全集”
+    - 例如看到性能瓶颈所在
+      - 有一次在`matplotlib`中，[[scatter]]了几百万个点导致慢，233
+    - 例如“能跑通 -> 数据科学(例如[[domain-gap]]，[[tricks]]层面)性质没问题 -> 跑全集”
 - 可以分成多段，逐段（或单元）测试调试
   - 参考[[unittest]]
-  - 如果几个bug堆到一起，会非常非常麻烦
-    - 一次经验：[[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序，且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]，且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值。结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
+  - 如果几个bug堆到一起，会非常非常麻烦。例如一次经验
+      - [[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序
+      - 且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]
+      - 且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值
+      - 结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
   - 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
   - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
 - 在跑一个大实验之前，下载大东西等等之前要做的调试
