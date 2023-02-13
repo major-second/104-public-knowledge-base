@@ -1,0 +1,6 @@
+- 参考[[resource-management/commands]]实时消耗情况
+- 如何查看时间消耗
+  - 包内置的工具如[[misc/profile]]
+  - 通用方法，如`from time import time; t = time(); <others>; print(time() - t)`
+  - [[comment]]系统的一部分对照试验
+  - [[third-party-modules/tqdm]]，[[jupyter-tqdm]]包在此过程中实用

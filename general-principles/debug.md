@@ -86,10 +86,5 @@
   - 例如[[nan]]
   - [[seaborn]]中有一个`.dropna()`例子
   - 例如有个别损毁（少个key啥的），你不过滤一下，就导致整个没法用……
-## 调试时间、资源消耗（profiling）
-- 参考[[resource-management/commands]]实时消耗情况
-- 如何查看时间消耗
-  - 包内置的工具如[[misc/profile]]
-  - 通用方法，如`from time import time; t = time(); <others>; print(time() - t)`
-  - [[comment]]系统的一部分对照试验
-  - [[third-party-modules/tqdm]]，[[jupyter-tqdm]]包在此过程中实用
+## 其它
+- 光跑完还不行，还要调试时间、资源消耗[[debug-profiling]]，优化！

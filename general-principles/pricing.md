@@ -18,7 +18,7 @@
   - 淘宝买内网的
     - 如[[baidu-net-disk]]等
   - [stacksocial](https://stacksocial.com/)买外网的
-    - 如[[vpn]]中的getflix vpn终身只需50美元
+    - 如[[vpn]]中的getflix vpn，终身只需50美元
     - 可能需要[[proxy-basics]], VISA贷记卡，注册 Link 支付账号等
     - 时至2023.1，默认支付方式一直显示state must be filled. 但 Link 可以
 - 免费东西当然有安全风险，有时免费是最贵的

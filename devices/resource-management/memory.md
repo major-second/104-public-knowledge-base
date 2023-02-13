@@ -15,7 +15,10 @@
   - 可以在装系统时[[partition]]
   - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
 - 管理
-  - 垃圾回收
-    - python一般是自动地
-  - 文件一般用`with`自动关
-  - [[matplotlib/basics]]这种需要手动`plt.close()`
+  - 程序中
+    - 垃圾回收
+      - python一般是自动地
+    - 文件一般用`with`自动关
+      - 这就是上下文管理器，相当于把你手动的[[finally]]动作给自动化了
+    - [[matplotlib/basics]]这种需要手动`plt.close()`
+  - windows运行中参考[[quit]]

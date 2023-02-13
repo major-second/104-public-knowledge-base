@@ -1,5 +1,10 @@
 退出app节省内存和电量
-- 一般软件：叉掉，`Alt+F4`
+- 一般软件
+  - 叉掉
+  - `Alt+F4`
+  - 特殊快捷键
+    - [[chrome-keyboard-shortcuts]]中`Ctrl+Shift+W`
+    - [[vscode-keyboard-shortcuts]]中`Ctrl+Shift+W`
 - 稍微恼火的软件：右下角托盘右键关掉
 - 更加恼火的软件：专门的关闭方法
   - 如[[keybase]]
