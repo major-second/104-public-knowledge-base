@@ -4,8 +4,8 @@
   - 也有一些翻墙vpn提供商，并不是什么公司学校的，而是专门提供翻墙的vpn，和[[node]]提供商形成竞争关系
     - [快连vpn](https://letsvpn.world/)
     - [getflix](https://zh.getflix.com/)
-  - 非专业人士可能把[[proxy/basics]]俗称vpn，你自己要清楚！
-    - [[node]]中的okz2显然是[[proxy/basics]]的[[node]]提供商，而不是vpn
+  - 非专业人士可能把[[proxy-basics]]俗称vpn，你自己要清楚！
+    - [[node]]中的okz2显然是[[proxy-basics]]的[[node]]提供商，而不是vpn
     - 2022.12，[geph](https://geph.io/zhs)有[[node]]也有[[vpn]]（需要右键管理员权限打开）
   - vpn相比代理在有些时候更透明更好用，不需要手动[[configure-proxy]]
     - 在[[wsa]]中，vpn可以用，代理就非常麻烦
@@ -20,7 +20,7 @@
     - `https://vpn.pku.edu.cn`
     - pac模式可能网址不同，例如变成`pacvpn.pku.edu.cn`
       - pac一般用于：校内用校内网，校外不用。防止拖慢速度
-      - 可以参考[[proxy/basics]]，有时校外也要用校园网（如学术资源），那就要不用pac了
+      - 可以参考[[proxy-basics]]，有时校外也要用校园网（如学术资源），那就要不用pac了
   - 连接
     - （对于有多个Gateway可选的情况）适当选择Gateway
     - 例如Beijing
@@ -29,8 +29,8 @@
   - 翻墙
   - 注册当前ip
   - 用他的[[dns]]解锁netflix等网站
-- vpn在第二层或第三层，[[proxy/basics]]在第七层。两者完全不同
-  - 和[[proxy/basics]]相互干扰的例子
+- vpn在第二层或第三层，[[proxy-basics]]在第七层。两者完全不同
+  - 和[[proxy-basics]]相互干扰的例子
     - 有时两者不能同时用（跟客户端兼容性能有关）
       - 但pac就可能使得能同时用
     - 代理导致自动选择了错/慢（不符合你地理位置）的网关

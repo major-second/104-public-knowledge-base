@@ -1,6 +1,6 @@
 # 数据传输
 - `clone, fetch, push, pull`等涉及remote托管平台（即和在线平台进行数据传输），所以有一些和下载、联网有关的问题
-- 参考[[https-ssh]]，[[known-hosts]]，[[personal-access-tokens]]，[[settings-and-configurations]]，[[proxy/basics]]等设置代理、ssh、token，排除坑
+- 参考[[https-ssh]]，[[known-hosts]]，[[personal-access-tokens]]，[[settings-and-configurations]]，[[proxy-basics]]等设置代理、ssh、token，排除坑
 - 关于代理
   - 如果`git`命令行不能`push pull`（或不稳定），但浏览器可以，可能是命令行没设置代理但浏览器自动走了浏览器代理
   - 参考[[configure-proxy]]

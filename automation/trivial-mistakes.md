@@ -13,7 +13,7 @@
   - 当然[[化归]]有时可代替有头有尾。比如先清除之前残留，再做事，走之前再清除。即[[file-format]]提到的Postel's law
     - 例如[[tmux]]先`kill-session`再`new`
     - 相比之下，“有则`attach`无则`new`”可能也行，不过我犯过一个错误就是让机器人一进去马上按`Ctrl+C`停止。这在`attach`行，在`new`会导致`~/.bashrc`执行不完，参考[[6-env]]. 所以还是`kill-session`再`new`最保险
-- 网络环境不同。参考[[proxy/basics]]
+- 网络环境不同。参考[[proxy-basics]]
 - 魔数（泛化）问题：[[generalization]]
 - 其它
   - 例如[[wait-for]]图得到的[[power-automate/var]]是相对于全屏幕，之后用的时候又写了相对窗口

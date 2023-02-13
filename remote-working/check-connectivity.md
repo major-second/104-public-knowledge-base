@@ -2,9 +2,9 @@
   - [[vpn]], [[ssh/ssh]], [[pubkey-authentication]]等
 # 理论
 - 网络七层结构
-  - [[vpn]] work比[[proxy/basics]]底层
+  - [[vpn]] work比[[proxy-basics]]底层
   - `ping`检查较底层，`telnet`，`ssh`更高层
-  - 底层`ping`不通高层往往更加不通（不考虑[[proxy/basics]]等），底层`ping`通了高层未必通（[[pubkey-authentication]]等）
+  - 底层`ping`不通高层往往更加不通（不考虑[[proxy-basics]]等），底层`ping`通了高层未必通（[[pubkey-authentication]]等）
 - 常见机器种类
   - 直接连（公用ip），例如金山云之类的服务器商托管
     - 公用ip比较贵！少见！

@@ -1,5 +1,5 @@
 - 前置
-  - [[vpn]], [[proxy/basics]], [[sms]]
+  - [[vpn]], [[proxy-basics]], [[sms]]
   - [[temp-solution]]思想
 - 软件、资源收费相关（不想交钱怎么办？）
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
@@ -7,7 +7,7 @@
   - 例如[[spotify]]和墙内音乐软件综合使用，有的有这些版权，有的有那些版权
 - 利用不同[[region-language]]价格歧视
   - 例如[[leetcode-solutions/0-metadata]]
-  - 故这时可能需要[[vpn]], [[proxy/basics]], [[sms]]等
+  - 故这时可能需要[[vpn]], [[proxy-basics]], [[sms]]等
 - [[search-info/general]]，[[download-resource]]
   - 直接百度/[[github]]搜序列号
     - 例如[[aida64]]、[[vmware]]都成功过
@@ -19,7 +19,7 @@
     - 如[[baidu-net-disk]]等
   - [stacksocial](https://stacksocial.com/)买外网的
     - 如[[vpn]]中的getflix vpn终身只需50美元
-    - 可能需要[[proxy/basics]], VISA贷记卡，注册 Link 支付账号等
+    - 可能需要[[proxy-basics]], VISA贷记卡，注册 Link 支付账号等
     - 时至2023.1，默认支付方式一直显示state must be filled. 但 Link 可以
 - 免费东西当然有安全风险，有时免费是最贵的
   - 如免费[[node]]可能是蜜罐

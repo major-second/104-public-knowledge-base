@@ -9,8 +9,8 @@
     - 官网图：![](install-xapk.png)
 - 电子书
   - [z-lib](https://zh.z-lib.org/)官网（各种语言，各种格式）
-    - 可能需要[[proxy/basics]]代理
-    - [[proxy/basics]]代理导致ip太频繁，超过每天5本限制？用邮箱注册个账号就有额外的5本额度
+    - 可能需要[[proxy-basics]]代理
+    - [[proxy-basics]]代理导致ip太频繁，超过每天5本限制？用邮箱注册个账号就有额外的5本额度
     - 更新：2022.11已被美国政府ban掉无法访问
   - [libgen](https://libgen.gs/)
   - 转pdf：[pdf2go](https://www.pdf2go.com/)

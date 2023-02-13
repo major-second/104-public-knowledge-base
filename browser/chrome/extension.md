@@ -1,3 +1,3 @@
 - 不需要前置谷歌账号 [[general-principles/account]]
-- 但需要[[proxy/basics]]代理
+- 但需要[[proxy-basics]]代理
 - 右上角“拼图”按钮 - 管理扩展程序

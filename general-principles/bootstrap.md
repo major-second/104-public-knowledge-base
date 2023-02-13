@@ -11,11 +11,11 @@
     - linux命令`reboot`
 - 更多例子（不一定官方名叫bootstrap但思想相同）
   - [[temp-solution]]
-  - [[hosts]] -> [[proxy/basics]] -> Tor
+  - [[hosts]] -> [[proxy-basics]] -> Tor
     - 修改[[hosts]]临时上[[github]]下载翻墙客户端[[windows-proxy-client]]的阶段，就没有翻墙客户端可用
     - 只有个翻墙客户端阶段，就没有高速的洋葱浏览器（参考[[search-info/general]]）可用于上Tor
   - [[forward-port]]使得本地、远程之间互相临时借用翻墙接口，之后永久配置好翻墙
-  - Tor（慢可直接翻墙） -> [[proxy/basics]] -> Tor（快）
+  - Tor（慢可直接翻墙） -> [[proxy-basics]] -> Tor（快）
   - [[grub-menu]]中：安装时`e`临时改设置 -> 安装成功后进系统时`e`临时改设置 -> 进去系统`/etc/default/grub`永久改设置
     - 按小写`e`编辑设置，这在[[windows-ubuntu]]中做了应急，起到核心作用！
     - 这里临时解决方案是“一次性的”，做了配置设置之后就可以永久

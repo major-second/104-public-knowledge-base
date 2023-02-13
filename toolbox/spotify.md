@@ -1,8 +1,11 @@
-- 前置：[[vpn]], [[proxy/basics]], [[temp-solution]]
+- 前置
+  - [[vpn]], [[proxy-basics]], [[configure-proxy]]
+  - [[temp-solution]]
 - 我成功的注册[[general-principles/account]]流程
   - 先使用[[google]]账号使得有第一个登录方式（要不然在大陆不给注册）
   - 之后选择email无密码登录，发验证邮件，然后即可设密码，变成密码登录
   - 还可连接[[apple]] id
+  - 这就是[[temp-solution]]
 - 特性
   - 跨平台，不同平台间互相控制，继承歌单等
   - [[pricing]]
@@ -12,6 +15,9 @@
       - 不能拖动
       - 歌单会被自动加歌
       - 有广告
-      - 手机日推可以点歌但也不自由、不全
-      - 电脑可以点歌
-- 之后可能定期电脑访问spotify.com翻墙认证一下地点才能用（todo）
+      - 手机日可以点歌但也不自由、不全
+      - 但电脑可以点歌拖动等，挺不错
+- 之后定期（14天）
+  - 手机使用[[ios-proxy-client]]或[[android-proxy-client]]翻指定地点的ip
+    - 可用cip.cc验证对不对
+  - 在应用登录

@@ -1,6 +1,6 @@
 - 前置
-  - 了解[[vpn]], [[proxy/basics]]
-    - 最好有一个能翻墙的[[vpn]]，而不是[[proxy/basics]]，否则很麻烦
+  - 了解[[vpn]], [[proxy-basics]]
+    - 最好有一个能翻墙的[[vpn]]，而不是[[proxy-basics]]，否则很麻烦
   - [[temp-solution]]
   - [[windows/env-var]]
 # 过程
@@ -10,8 +10,8 @@
   - [知乎教程](https://zhuanlan.zhihu.com/p/424959704)，进一步讲了安装自己的apk的方法等，这样就可以用[[download-resource]]中的apkpure等
   - [安装自己apk（adb调试）参考](https://www.jianeryi.com/1346.html)
 - 过程中有时出玄学问题需要[[refresh]]重启
-- 用[[vpn]]而不是[[proxy/basics]]上网
-  - 其实[[proxy/basics]]也可以但是可能操作更复杂，因为[[configure-proxy]]是需要应用主动去用
+- 用[[vpn]]而不是[[proxy-basics]]上网
+  - 其实[[proxy-basics]]也可以但是可能操作更复杂，因为[[configure-proxy]]是需要应用主动去用
   - [[vpn]]可能是[[temp-solution]]，因为可能进到了wsa系统里又会提示因为安全原因不让你用[[vpn]]
 - `Microsoft Store`搜索`Amazon Appstore`
   - 下载安装

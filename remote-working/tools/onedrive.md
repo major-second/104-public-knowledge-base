@@ -1,4 +1,4 @@
-- 前置[[proxy/basics]]
+- 前置[[proxy-basics]]
   - 反正国内用着可能速度比较慢
 - https://onedrive.live.com/
 - 免费用户5G

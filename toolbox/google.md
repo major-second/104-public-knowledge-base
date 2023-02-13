@@ -1,2 +1,2 @@
 - 前置：中国大陆可能需要[[sms]]
-- [[vpn]]或[[proxy/basics]]
+- [[vpn]]或[[proxy-basics]]
