@@ -1,11 +1,7 @@
 - 前置：肯定要先了解[[category]], [[eda]], [[visualization]]等
 # integrity
-- 不能有information leak
-  - 如时序任务用到未来信息
-    - 直接用到
-    - 间接用到（如全部数据做排序`rank`）
-  - 如无意中用到测试集
-- 不能疯狂过拟合
+- 不能有[[information-leak]]
+- 不能疯狂[[overfit]]
   - 比如疯狂堆叠各种运算各种操作（复杂度高），疯狂增加待定参数，使得feature在validation上好，那说白了就是过拟合validation set而已
   - 参考[[2-eval]]
   - 一个反例：[[4-design]]中，“1-12月给12个参数”，可能能过拟合几年的（验证集）股市数据，但没有任何经济学意义
@@ -26,14 +22,7 @@
   - 数字特征（[[cov]], [[character/var]], [[expectation]]等）
     - 如：滚动[[rolling]]求均值、方差等
   - 对于[[time-series]]，就有速度、加速度、位移、路程等
-- 对分布“正规化”
-  - 有时除以某个“基底”量，进行无量纲化，即$\frac x{x_0}$
-  - 有时强行过滤异常值，或者用[[numpy/basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
-    - 参考[[12-robust]]，[[1x1conv]]
-  - 有时通过某种变化强行变成正态/均匀分布
-    - 例如排序取分位数变为均匀分布（但千万小心info leak问题。可以考虑[[rolling]]在前一段时间内做rank看分位数）
-    - 例如[[12-robust]]提到Fisher变换$F(x)=\frac 12 ln(\frac{1+x}{1-x})$就是把某个量变为近似的正态分布
-    - 有时还要在某个**范围**内做正规化（如[[batchnorm]]）使得[[character/var]], [[expectation]]为指定值
+- 有时跟[[preprocessing]]不分家，如正规化，缩尾，特判等
 - 凡是涉及除以的，都要注意非负性。常见可用的
   - 本身物理意义非负，如路程、交易量
   - 平方、绝对值或其和等

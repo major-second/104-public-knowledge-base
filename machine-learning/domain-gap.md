@@ -1,2 +1,3 @@
-- 参考[[2-eval]]
+- 参考[[2-eval]], [[overfit]]
 - 可以用train, val, test上性能差异量化
+  - 正式训练前可以搞几个toy models进行某种层面[[general-principles/debug]]，看看数据量和“密度”是否达到要求

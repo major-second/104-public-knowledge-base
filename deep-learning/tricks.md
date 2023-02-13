@@ -42,9 +42,9 @@
 - [[residual]]使得可以增加更多层
   - 哈哈，你把residual看作一个trick？也行吧哈哈
 ## [[feature-engineering]]
-- 对input做winsorization缩尾（参考[[12-robust]]）
-  - 例如暴力看[[quantile]]，把极端值clip一下
-  - 有时对线性和对MLP都能提升，但是对MLP提升多。推测可能是MLP需要数据的某种“密度”大，因此input极差大自然会boil
-- input整体的normalization（当然要使用**训练集**的mean, std）
-  - 注意小心极差/标准差极大的维度，做了反而不行（所以要和winsorize结合）
-- 同理，中间层[[batchnorm]]等，参考[[batchnorm]]
+- [[feature-engineering]]提到的clip，有时对线性和对MLP都能提升，但是对MLP提升多
+  - 推测可能是MLP需要数据的某种“密度”大，input极差大会容易boil它
+- input整体的normalization
+  - 当然要使用**训练集**的mean, std，参考[[information-leak]]
+  - 注意小心极差/标准差极大的维度，做了反而不行（所以要和刚刚的winsorize结合）
+- 中间层[[batchnorm]]等，参考[[batchnorm]]

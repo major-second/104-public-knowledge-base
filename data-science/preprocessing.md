@@ -1,0 +1,15 @@
+- 有时除以某个“基底”量，进行无量纲化，即$\frac x{x_0}$
+  - 但注意[[general-principles/special-case]]除以0的问题
+- 过滤异常值
+  - 强行特判[[general-principles/special-case]]过滤
+  - winsorization缩尾
+    - 用[[numpy/basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
+    - 可用[[quantile]]
+  - 参考[[12-robust]]，[[1x1conv]]
+- 有时通过某种变化强行变成正态/均匀分布
+  - 有时要使得[[character/var]], [[expectation]]为指定值，有时要使得最大最小值为指定值
+  - 例如排序取[[quantile]]变为均匀分布
+    - 但千万小心[[information-leak]]问题
+    - 可以考虑[[rolling]]在前一段时间内做rank等
+  - 例如[[12-robust]]提到Fisher变换$F(x)=\frac 12 ln(\frac{1+x}{1-x})$就是把某个量变为近似的正态分布
+  - [[batchnorm]]
