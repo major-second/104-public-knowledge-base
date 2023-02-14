@@ -1,5 +1,18 @@
-联合多个工具，形成解决方案解决问题
-参考[[workaround]]
+# 概述
+- 联合多个工具，形成解决方案解决问题
+- 参考[[workaround]]
+# 内容
+- 有时需要货比三家，各有优势
+  - 网盘[[net-disk]]
+    - [[baidu-net-disk]], [[aliyun]]对国内生态好，下载快，国内相关资源多
+    - [[mega]], [[onedrive]]靠谱、安全，无审核等
+    - [[icloud]]和苹果生态集成得好但是空间小
+  - 代理[[proxy-basics]]和[[vpn]]
+    - 首先这两种各有优势
+    - geph免费
+    - getflix可终身一次付费结清且[[android-proxy-client]], [[windows-proxy-client]]都有
+    - okz2收费，但[[ios-proxy-client]]上顺滑可用
+    - 学校公司：速度流量用途受限
 - 有时各个工具各只能覆盖一部分需求，没有完美解决方案。对于某次需求，可能用A也可能用B
   - 比如[[partition]]几种工具都不完美覆盖所有需求。但几种工具的并能覆盖所有需求
   - 比如[[flyele]]适用于团队协作，[[dida]]适用于自己个人日程管理（循环比较方便）

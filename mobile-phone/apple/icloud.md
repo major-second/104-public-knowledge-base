@@ -1,0 +1,3 @@
+- https://www.icloud.com/
+- 参考[[net-disk]]
+- 和苹果生态集成得好，比如直接选中一系列照片生成icloud link分享给别人

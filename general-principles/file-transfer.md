@@ -2,6 +2,7 @@
   - [[scp]]（前置[[ssh/ssh]]）
   - [[sftp]]
   - [[mobaxterm]]传输功能（它可不只是终端哦）
+- [[net-disk]]
 - 多平台互通
   - 需要GUI
     - 发邮件
@@ -20,7 +21,7 @@
     - 例如[[file-format]]影响最大传输大小，hhh
     - 例如`.apk`传输后特判，被手动变为`.apk.1`，为了你好，哈哈哈
   - [[teams]]
-  - [[baidu-net-disk]]，[[onedrive]]等网盘
+  - [[baidu-net-disk]]，[[onedrive]]等非严肃网盘
   - [[bluetooth/basics]]
 - [[xxd-diff]]：转换文本和二进制，在只能传输文本的场合实际传输二进制
 - 硬件
