@@ -17,6 +17,7 @@
 - 例如gym的[[seed]]设置，`<env>.seed(42)`
 - numpy的`np.random.seed(42)`
 - 原生`random`的`random.seed(42)`
+- [[sklearn]]的`model.random_state = state`
 ## 跑多几个取平均
 - 理论基础参考[[大数定律]]
 - 比如涉及神经网络等训练，跑多个随机种子取平均值，稳定地看结果
