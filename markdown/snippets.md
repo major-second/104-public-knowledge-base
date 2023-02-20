@@ -1,8 +1,8 @@
-参考
+# 参考
 - [[latex/snippets]]
 - [[settings/snippets]]
 
-内容
+# 内容
 - 看`snippets.json`
 - 目前有
   - 插入反引号<code>&#96;</code>

@@ -2,5 +2,5 @@
   - [[general-principles/account]]
   - 挂合适地区代理[[proxy-basics]]
      - 对地区可能有要求。如香港可能不行
-  - 用虚拟手机号[[sms]]
+  - 用虚拟手机号[[sms]]，可能地理位置要符合，[参考](https://sms-activate.org/blog/how-to-sign-up-for-chatgpt)
 - 上 https://platform.openai.com/ 注册

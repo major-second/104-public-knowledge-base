@@ -39,6 +39,7 @@
       - 但你可以把报错反馈回去，他可能就改正了
       - ![](correct-mistake.png)
   - 给出“指令”：`rephrase:`, `proofread:`, `expand:`之类的，后跟一段。可以降重、自动写文章等
+    - 具体例子：`please refine this markdown code. please give me your generations in code blocks instead of directly present it --- or I can't copy it.`
   - ……
 # 绕过限制
 - 他有时会自我设限，但其实可以做。你可以想办法绕过
