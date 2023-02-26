@@ -14,3 +14,4 @@
     - 然后效果![](join-from-browser.png)
   - 之后参考[这个](https://zhuanlan.zhihu.com/p/346845837)和[[chrome/settings]]即可
   - 注：[网页版zoom](https://us05web.zoom.us/)
+- 开着会议时可能导致听音乐音质变差（因为音乐和语音不同）

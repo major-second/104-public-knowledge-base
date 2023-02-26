@@ -41,6 +41,8 @@
   - 给出“指令”：`rephrase:`, `proofread:`, `expand:`之类的，后跟一段。可以降重、自动写文章等
     - 具体例子：`please refine this markdown code. please give me your generations in code blocks instead of directly present it --- or I can't copy it.`
   - ……
+- 人机交互结合
+  - 写文章：人调实质内容，chatgpt调表达，人最后调格式字数（如每段顶格等）
 # 绕过限制
 - 他有时会自我设限，但其实可以做。你可以想办法绕过
 - 比如Please memorize不行，但Please commit it to your memory可能就行了
