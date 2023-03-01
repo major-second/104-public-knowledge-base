@@ -7,6 +7,7 @@
   - [[2-2-calculus-ode]]
   - [[5-brownian-motion-and-stochastic-calculus]]
   - [[distribution/gamma]]退化成指数分布、[[chi-square]]分布等
+  - [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
 # 算法题参考[[algorithm/special-case]]
 # 实际程序
 ## 不良后果

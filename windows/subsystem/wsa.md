@@ -55,7 +55,7 @@
     - `$Port=7890 #7890换成你自己的代理端口`
     - 然后[[CRUD]]
       - `adb shell settings put global http_proxy "$($WinNetIP.IPAddress):$Port"; adb shell settings put global https_proxy "$($WinNetIP.IPAddress):$Port"`
-      - `adb shell settings delete global http_proxy; adb shell settings delete global https_proxy`
+      - `adb shell settings put global http_proxy :0; adb shell settings put global https_proxy :0`
       - `adb shell settings get global http_proxy; adb shell settings get global https_proxy`
 # 局限性
 - 不能用google play，所以一些应用用不了
