@@ -22,6 +22,7 @@
   - 法二：任取$N$条直径再每条直径二选一
 # 4.2 Combinatorial Analysis
 - 排列，组合，容斥原理，二项式
+- [[combination]]
 - Poker hands
   - value, suit
   - 计数时，full house当然先要$A_{13}^2$，而两对是$C_{13}^2$

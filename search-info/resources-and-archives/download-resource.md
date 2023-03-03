@@ -8,10 +8,11 @@
       - 当电脑网址m.apkpure.com给出apkpure特有的`.xapk`格式文件，就可以考虑使用手机apkpure app而不是电脑下载`.xapk`传给手机。这样比较方便
     - 官网图：![](install-xapk.png)
 - 电子书
-  - [z-lib](https://zh.z-lib.org/)官网（各种语言，各种格式）
+  - [z-lib](https://search.zhelper.net/?[{%22name%22:%22zlib.app%22,%22url%22:%22https://api.zlib.app%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:false,%22download%22:%22https://d.zlib.app/download/%22}])
+    - 各种语言，各种格式
     - 可能需要[[proxy-basics]]代理
     - [[proxy-basics]]代理导致ip太频繁，超过每天5本限制？用邮箱注册个账号就有额外的5本额度
-    - 更新：2022.11已被美国政府ban掉无法访问
+    - 2022.11，旧地址[z-lib](https://zh.z-lib.org/)已被美国政府ban掉无法访问
   - [libgen](https://libgen.gs/)
   - 转pdf：[pdf2go](https://www.pdf2go.com/)
     - 参考[[file-format]]
