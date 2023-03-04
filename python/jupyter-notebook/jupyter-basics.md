@@ -22,7 +22,7 @@
         - `2`
       - 那么`1`和`2`都会被输出
 - 可远程调试，媲美[[remote-ssh]]
-  - 服务器和本地[[independent]]
+  - 服务器和本地[[general-principles/independent]]
     - 本地突然断电，服务器也没事
   - 当然服务器卡和本地流畅不矛盾
     - 有可能你远程连`jupyter`服务器，服务器卡死了

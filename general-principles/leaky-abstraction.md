@@ -1,7 +1,7 @@
 - 概述
   - [leaky abstraction现象](https://en.wikipedia.org/wiki/Leaky_abstraction)，维基上不少例子
   - 在许多学科都有（数学较少），计算机工程中尤其常见
-  - 一大后果：不够[[independent]]
+  - 一大后果：不够[[general-principles/independent]]
 - 例如很多人争议说要不要用命令行，还是只用IDE就够了
   - 根据leaky abstraction原则，命令行的基础操作要有了解
   - 在此基础上，在适用的时候可以用IDE节省时间
@@ -31,7 +31,9 @@
     - 但此时直接命令行`ssh`可以登录，然后`sudo apt install`对应包就行了
       - 题外话：但这里`apt install`动作要小心，因为升级`gcc`版本等可能有[[general-principles/upgrade]]所描述的问题。总之升级到最新不一定是可行的
 - 比如上层封装太死，不灵活
-  - 比如证明[[相合性]]在无法使用强大数律时，拆一层包装直接用[[borel-cantelli]]
+  - 数学中
+    - 证明[[相合性]]在无法使用强大数律时，拆一层包装直接用[[borel-cantelli]]
+    - [[poisson-process]]求$P_i(t)$时，不直接调[[first-order-linear]]包而是使用常数变易法思想
   - 比如面试：“python是传值还是传引用”
     - 实际上，难以用二元对立简单概括python行为。因为python传引用但是赋值是重新绑定
     - 不能用简单的term来概括！

@@ -1,9 +1,11 @@
+- 参考[[1-elements]]
 - 布朗运动，类比随机游走，但连续
   - $W(0)=0$
-  - 不交的时间段，差值独立
+  - 不交的时间段，差值独立[[prob/independent]]
     - 类似随机游走的$X_i = S_{i+1}-S_i, X_j = S_{j+1}-S_j$独立
   - $W(b)-W(a)\sim N(0, b-a)$（$b\ge a$）
     - 类似正态随机变量的随机游走$S_{b}-S_a\sim N(0,b-a)$
+    - 在书籍[[1-elements]]中，可能是$$N(0,B(b-a))$
 - 性质
   - $W(t)\sim N(0,t)$，期望方差易得
   - 鞅[[5-martingale-and-random-walk]]性质（因为和随机游走类比）

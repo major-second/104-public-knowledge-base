@@ -1,6 +1,6 @@
 - 前置[[dqn]]
 - [参考](https://zhuanlan.zhihu.com/p/110807201)
-- 和[[double-q-learning]], [[double-dqn]]正交，参考[[independent]]
+- 和[[double-q-learning]], [[double-dqn]]正交，参考[[general-principles/independent]]
 - 把预测拆分为状态对应的部分和动作对应的部分（“advantage”，即某个动作相比平均情况，具有多少优势）
   - 同一状态各个advantage之和为0，所以在更新某个$(s,a)$对对应的$Q$时，也更新了这个$s$对应的所有$Q$
   - 学东西更快

@@ -19,7 +19,7 @@
 - 原生`random`的`random.seed(42)`
 - [[sklearn]]的`model.random_state = state`
 ## 跑多几个取平均
-- 理论基础参考[[大数定律]]
+- 理论基础参考[[prob/LLN]]
 - 比如涉及神经网络等训练，跑多个随机种子取平均值，稳定地看结果
   - 这时常见所需的操作和技能（请参考）
     - 对于[[tensorboard]]的[[lightning/logs]]文件夹的分开设定

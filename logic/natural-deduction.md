@@ -29,11 +29,11 @@
 - “无效果的$[]$”：$D$的假设集本来就没有$\phi$，那么你想要$\frac {[\phi]} D$，实际上就是完全没变
   - 应用在$\to I$上，就有$\psi\vdash^{ND}\phi\to \psi$
   - 应用在$\neg I$上，就有$\phi \wedge \neg \phi \vdash^{ND}一切公式$
-- [[zero-order]]：增加等词$\dot =$的引入和消去规则
+- [[zero-order-logic]]：增加等词$\dot =$的引入和消去规则
   - 引入：凭空自己等于自己
     - 看来自然演绎系统所谓“没有公理”也只不过是个说法而已
   - 消去：相等即可“替换”（等价替换）
-- [[first-order]]
+- [[first-order-logic]]
   - $\dot = E$中要求[[substitution]]代入自由
   - $\forall I$
     - 首先有$D\vdash^{ND} \phi[t/x]$

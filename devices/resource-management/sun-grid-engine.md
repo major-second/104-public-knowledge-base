@@ -4,7 +4,7 @@
 - 特点
   - 这个比较神奇，你还有本地文件，只是“后端”变了
     - 比如你原本所在node可能性能差没有[[torch-cuda]]，`qrsh`后就有
-  - 总体透明，[[independent]]
+  - 总体透明，[[general-principles/independent]]
     - 当然，由于可能的某种[[leaky-abstraction]]，有时可能会导致一些奇怪问题。可以`cat, vim`待检查文件等确认
   - 交互式，一般用来[[general-principles/debug]]，没问题再提交！
 - 举例`qrsh -now n -l 'h_rt=24:0:0,h_vmem=500G'`

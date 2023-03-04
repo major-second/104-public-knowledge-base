@@ -7,7 +7,7 @@
 - 语言相关
   - ubuntu: [[language]], 如[[try-ubuntu]]提到了
   - windows: 开始菜单有地区、语言、输入法设置等
-  - 不同语言的区别可能比你想象中的大，并不[[independent]]
+  - 不同语言的区别可能比你想象中的大，并不[[general-principles/independent]]
     - 价格歧视：[[leetcode-solutions/0-metadata]]
     - 是否有地区特色功能：[[word]]
 - 中文（字符）造成麻烦
