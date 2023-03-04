@@ -8,7 +8,7 @@
 - 有时考察fixing auctions，有时考察对多个stock不同加权方式
 - 总结就是这个marketshare越fragmented，流动性越好
 - 目的不同，要考察计算方式不同。比如你是要看venue的revenue，交易发生在哪的概率，还是一个美元在哪……
-  - 注意：估算概率、置信区间当然需要参考[[置信区间]]
+  - 注意：估算概率、置信区间当然需要参考[[confindence-interval]]
 - todo先看到这
 # 1.2
 - 拆分订单怎么做：一方面不能太Impact市场导致亏，另一方面等太久也有风险
