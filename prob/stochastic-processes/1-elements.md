@@ -19,7 +19,15 @@
   - 区别于state space
   - [[poisson-process]]典型：discrete state space, continuous index parameter
 - [[stationary-independent-increment]]
-- [[5-martingale-and-random-walk]]
+- martingale, 参考[[5-martingale-and-random-walk]]
   - [[brownian-motion]]显然是
   - 来源：iid随机变量相加[[random-walk]]
   - 均值为0的[[stationary-independent-increment]]
+- [[markov-process]]
+- [[stationary-processes]]
+- renewal processes
+  - 例如[[poisson-process]]可以理解成$\lambda$为参数指数分布的renewal counting process
+  - 无需刻意区分renewal counting process/renewal process
+- point processes
+  - [[poisson-process]]换个角度，把index set变成集族（子集的集合），那就是poisson point process
+  - state space还是不变

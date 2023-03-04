@@ -1,0 +1,9 @@
+- 前置：[[1-elements]]
+- 定义：最近那个已知点确定在哪，就只依赖于最近那个已知点，之前所有记忆都没用
+  - $Pr(X_t \in A | X_{t_1} = x_1,\cdots,X_{t_n} = x_n) = Pr(X_t\in A|X_{t_n} = x_n)=P(x_n,t_n; t,A)$
+  - 注意，如果$X_{t_n}$不是确定一个点，而是有一定不确定性，那就不能无记忆性了
+- 特例
+  - 有限或可数state space：[[markov-chain]]
+    - 注意时间可以是连续的。比如[[poisson-process]]就是连续时间[[markov-chain]]
+  - 所有实例都是连续函数（那么时间和state space当然都是连续的）：diffusion process
+    - 例如[[brownian-motion]]

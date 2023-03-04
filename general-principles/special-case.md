@@ -1,6 +1,8 @@
 # 数学中
 - 有好有坏
-  - 好处：利用特例进行记忆、检验
+  - 好处
+    - 利用特例进行记忆、检验
+    - 判定退化，化简情况（比如刘维尔定理）
   - 坏处：有些东西对于特例不work，你不检查就不行
 - 例子
   - [[6-serial/basics]]的$\tau\equiv 0$情况
@@ -8,6 +10,7 @@
   - [[5-brownian-motion-and-stochastic-calculus]]
   - [[distribution/gamma]]退化成指数分布、[[chi-square]]分布等
   - [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
+  - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
 # 算法题参考[[algorithm/special-case]]
 # 实际程序
 ## 不良后果
