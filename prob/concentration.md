@@ -3,7 +3,7 @@
 - 则$P(\sum x_i \ge n(p+\epsilon)) \le inf_t \{e^{-nt(p+\epsilon)}Ee^{t\sum x_i}\}$
 - 期望可以显式写出来，最后变成了$\le inf\{ e^{-nt(p+\epsilon)}(pe^t+1-p)^n\}$
 - 求极值（方法：考察$-t(p+\epsilon) + ln(pe^t+1-p)$，平凡地求导和考察极值性质等等）
-  - 结果：$\le e^{-n D_B^{(e)}(p+\epsilon ||p )}$，其中$D_B^{(e)}$表示伯努利分布的KL divergence（参考[[entropy]]）
+  - 结果：$\le e^{-n D_B^{(e)}(p+\epsilon ||p )}$，其中$D_B^{(e)}$表示伯努利分布的[[kl-divergence]]（参考[[entropy]]）
   - 这个也称为切诺夫
   - 这个bound可以称为concentration
 ## general
