@@ -5,7 +5,7 @@
 - 参考[[1-elements]]
 # 推导
 ## 低阶
-- 无记忆性（独立[[basics/independent]]）
+- 无记忆性（独立[[1-1-prob/independent]]）
   - 因此$P_0(t+h)/P_0(t) = 1-p(h),\frac{P_0(t+h) - P_0(t)}{h} \to -常数\cdot P_0(t)$（当$h$小）
   - 其中$p(h)$表示泊松过程，$P_0$表示一段时间没有发生事件，常数来自$p(h)/h\to a$
 - 列解微分方程得到

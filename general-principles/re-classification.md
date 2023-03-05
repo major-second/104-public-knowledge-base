@@ -11,5 +11,5 @@
       - 但有时逐次幂看系数可能提高效率：即：先看$x^6$系数，再看$x^5$，以此类推
       - 也就是有两个求和维度：项、一个项之内的幂次。你可以先对同一幂次不同项求和！
   - [[4-probability]]的Screwy pirates 2有用到
-  - [[4-probability]]的card game也是个典型例子：把总的拆分成多个事件期望相加
+  - [[4-probability]]的card game也是个典型例子：把总的拆分成多个事件期望相加，这也是[[set-operations#union]]应用
   - [[233-number-of-digit-one]]计数时用到

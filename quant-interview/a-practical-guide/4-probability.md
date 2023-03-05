@@ -1,4 +1,4 @@
-- 也可以参考[[introduction]]
+- 也可以参考[[jane-street-introduction]]
 # 4.1
 - 基本
   - outcome $\omega$
@@ -74,7 +74,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 看到一个男孩：跟刚才不一样，因为先生出两个，再随机一个给你看到
 - All-girl world
   - 每个生出的都相互独立，所以女生占一半
-  - [[introduction]]也讲过投硬币直到抛出一个正面（自相似参考[[re-classification]]）
+  - [[jane-street-introduction]]也讲过投硬币直到抛出一个正面（自相似参考[[re-classification]]）
 - unfair coin：贝叶斯公式
 - fair probability from an unfair coin
   - 画个$(a+b)^2$图示，发现$ab,ba$两项对称

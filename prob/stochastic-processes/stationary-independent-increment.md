@@ -1,7 +1,7 @@
 - 前置
-  - [[basics/independent]]
+  - [[1-1-prob/independent]]
 - 定义
-  - [[basics/independent]]：时间轴拆成无交并，i.i.d中的[[basics/independent]]
+  - [[1-1-prob/independent]]：时间轴拆成无交并，i.i.d中的[[1-1-prob/independent]]
   - stationary：起始点不matter，只由长度决定，对应i.i.d.中的identically
 - 性质
   - [[expectation]]，$E[X_t]=m_0+m_1 t$

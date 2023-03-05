@@ -21,7 +21,7 @@
 # 统计中
 - 参考[[2-estimation]]. 利用已有数据进行统计学意义的估算
 # 无先验时
-- 参考[[introduction]]中[文档链接](https://www.janestreet.com/static/pdfs/trading-interview.pdf)提到knowable unknowns
+- 参考[[jane-street-introduction]]中[文档链接](https://www.janestreet.com/static/pdfs/trading-interview.pdf)提到knowable unknowns
   - 比如喜马拉雅山天气，确实是已知数，但是你现在不知道，需要估个概率
 - 方法技巧
   - [[fermi-estimation]]

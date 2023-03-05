@@ -1,3 +1,0 @@
-- 参考[[general-principles/independent]]
-- 这被Durrett书称为“概率论之于测度论的开始”
-- 随机过程，例如[[1-elements]]中：a process with independent increments

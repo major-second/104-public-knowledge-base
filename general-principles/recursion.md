@@ -55,7 +55,7 @@ def to_map(obj):
   - 所以很多时候第一个代理[[proxy-basics]]客户端这种“突破口”很重要
 # 自相似
 - 但数学中往往可以“自相似”[[self-similarity]]，例如$x = 1-x$，并不会无限循环，而可以解出$x$
-  - 例如[[introduction]]中，“第一次丢出硬币正面需要多少次投掷”
+  - 例如[[jane-street-introduction]]中，“第一次丢出硬币正面需要多少次投掷”
   - 例如[[5-markov-chain]]中，“达到某吸收态的概率”
   - 例如[[2-2-calculus-ode]]中一大堆自相似（极限题、积分题都有）
 - 强化学习[[calculate-v]]中TD方法也是类似思想

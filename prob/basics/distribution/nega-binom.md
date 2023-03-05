@@ -1,8 +1,8 @@
 - 几何分布
   - $P(x)=(1-p)^{x-1}p, x=1,2,...$
-    - [[introduction]]有提到
+    - [[jane-street-introduction]]有提到
   - 意义：$p$概率成功，到成功需要几次尝试
-  - 求期望：[[introduction]]提到自相似
+  - 求期望：[[jane-street-introduction]]提到自相似
   - 求方差：参考[[character/var]]，需要求$EX^2$，而这个也不简单，[参考](https://zhuanlan.zhihu.com/p/166653762)
   - 主要思想是对$q$积分一下把$x^2q^{x-1}$中的一个$x$抵消掉，同理$(x+1)^2q^x$
 - 负二项分布

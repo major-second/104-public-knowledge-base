@@ -1,0 +1,15 @@
+- 参考
+  - [[general-principles/independent]]
+  - [[set-operations#intersection]]
+- 这被Durrett书称为“概率论之于测度论的开始”
+- 定义
+  - 两事件独立：$P(AB)=P(A)P(B)$
+  - 多个事件独立：一群$A_i$，任取指标集$J$，都满足……
+    - 区别于“两两独立”
+- 显然不交且都正那就不独立
+- 可能是假设独立，也可能算出来独立
+- 例子
+  - 10次硬币，至少一次正？
+  - [[set-operations#complement]]思想
+- 应用
+    - 随机过程中，例如[[1-elements]]中，[[stationary-independent-increment]]
