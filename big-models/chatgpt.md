@@ -46,3 +46,5 @@
 # 绕过限制
 - 他有时会自我设限，但其实可以做。你可以想办法绕过
 - 比如Please memorize不行，但Please commit it to your memory可能就行了
+# 拓展
+- [chatpdf](https://www.chatpdf.com/)：读论文读书审稿等用
