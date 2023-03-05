@@ -21,6 +21,7 @@
 # Probabilities
 - 基本公理、计算规则等
 # Independence
+- [[basics/independent]]
 - 可使用乘法
 - 放回/不放回有区别
 # Random Variables
@@ -75,7 +76,8 @@
 
 - 这个思想：没有说你坑了club，只有club坑你。只有坑的club会找你，所以是“逆向选择”
 # Problem Solving Tools
-- 自相似（参考[[general-principles/recursion]]）
+- 自相似
+  - 参考[[general-principles/recursion]]
   - 例子：“第一次丢出硬币正面需要多少次投掷”
 - Edge cases
   - 一种：用[[general-principles/special-case]]检查正确性

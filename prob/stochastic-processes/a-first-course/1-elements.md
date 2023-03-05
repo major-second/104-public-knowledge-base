@@ -3,7 +3,7 @@
 # 2 Two Simple Examples of Stochastic Processes
 - 定义：每个$t$，对应一个随机变量$X_t$或称$X(t)$
   - $t$可能是离散时间${0,1,\cdots}$，连续$[0,\infty)$，乃至多维等
-  - 关键词：独立性[[prob/independent]]，重复试验
+  - 关键词：独立性[[basics/independent]]，重复试验
 - [[brownian-motion]]
 - [[poisson-process]]
 # 3 Classification of General Stochastic Processes
