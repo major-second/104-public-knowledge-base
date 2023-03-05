@@ -12,7 +12,7 @@
   - [[相合性]]往往可传递，[[unbiased]]不行
   - 置信区间可以（比如已知$\sigma^2$置信区间，求$\sigma$置信区间）
 - 如果有[[渐近正态性]]，则
-  - 用到了[[分位数]]记号
+  - 用到了[[character/quantile]]记号
   - 注意$\alpha$常见是比较小的数比如0.05，则$z_{\alpha/2}$是负数
   - $\mathbb P(z_{\frac \alpha 2}< Z< -z_{\frac \alpha 2})=1-\alpha, Z\sim N(0,1)$
   - $C_n = (\hat \theta_n + z_{\alpha/2}\hat s,\hat \theta_n-z_{\alpha /2}\hat s)$

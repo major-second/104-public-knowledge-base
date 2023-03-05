@@ -12,7 +12,7 @@
   - 可以用概率语言推理
 - 三者当然也有联系：宿命论，推测一切？
 - 涉及到“意义”，可以参考[[probability-definition]]
-- [[random-variable]]类型：如01，离散，连续等
+- [[random-variable-introduction]]类型：如01，离散，连续等
 # Counting
 - [[sample-spaces-events#有限情况]]
 - 注意有时各个事件不等概率
@@ -25,6 +25,7 @@
 - 可使用乘法
 - 放回/不放回有区别
 # Random Variables
+- [[random-variable-introduction]]
 - 通俗：把事件attach上数字就是随机变量
 - 变量间可能具有关系，旧变量可制造新变量等
 # Expected Value

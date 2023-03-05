@@ -1,5 +1,6 @@
 - 前置
   - [[4-probability]]
+  - [[random-variable-introduction]]
 # 2 Two Simple Examples of Stochastic Processes
 - 定义：每个$t$，对应一个随机变量$X_t$或称$X(t)$
   - $t$可能是离散时间${0,1,\cdots}$，连续$[0,\infty)$，乃至多维等
