@@ -9,3 +9,9 @@
   - 如[[orthogonal]]中求$cov(\hat \alpha_i,\hat\beta_j)$
   - 如[[transform]]中求协方差矩阵变换后表达式
   - 一般地，$Cov(\sum a_iX_i, \sum b_jY_j)=\sum\sum a_ib_jCov(X_i,Y_j)$，当然可以特殊化到[[character/var]]
+# corr
+- 相关系数：协方差除以两个随机变量的标准差
+  - 注意不是除以两个方差
+  - $\rho = Cov(X,Y)/\sigma_X\sigma_Y$
+  - spearman: 先[[data-science/normalization]]排序
+- 注意$\rho^2=R^2$不是总成立，参考[[unary#$R^2$]]

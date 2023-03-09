@@ -1,0 +1,5 @@
+- 如[[normal]]，转化成均值0方差1
+- 如排序强行转化成均匀
+  - 小心丢失原有意义
+  - 小心[[information-leak]]
+  - 用于[[cov#corr]]的spearman
