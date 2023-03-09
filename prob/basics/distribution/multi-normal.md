@@ -1,6 +1,15 @@
 - 用向量表示均值，用矩阵表示[[cov]]
 - 标准正态：$N(0(零向量),I(单位阵))$
   - 在[[multi-ary]]中用到了
-  - 典型题：$X_1, X_2$独立标准正态，则$X_1>0, X_1+X_2<0$概率是$\frac 18$，因为在平面上画出来占45度角
-    - 在[[5-brownian-motion-and-stochastic-calculus]]中包装它出了道题
-    - [[2-6-prob]]也有
+  - $f(z)=\prod_{i=1}^k f(z_i)=\frac 1 {(2\pi)^{k/2}}exp\{-\frac 12 \sum_{j=1}^k z_j^2\}$
+    - 其实也是多个iid相乘
+- 一般情况
+  - $f(x;\mu,\Sigma)=\frac 1{(2\pi)^{k/2}|(\Sigma)|^{1/2}}exp\{-\frac 12 (x-\mu)^T \Sigma^{-1}(x-\mu)\}$
+  - 一种退化[[general-principles/special-case]]：$\Sigma=\sigma^2I$
+  - 再继续退化就$\sigma=1$
+  - 变换参考[[character/transform]]
+  - $V=(X-\mu)^T\Sigma^{-1}(X-\mu)$相当于标准正态中平方和，满足$\chi^2_k$
+    - 参考[[chi-square]]
+- 典型题：$X_1, X_2$独立标准正态，则$X_1>0, X_1+X_2<0$概率是$\frac 18$，因为在平面上画出来占45度角
+  - 在[[5-brownian-motion-and-stochastic-calculus]]中包装它出了道题
+  - [[2-6-prob]]也有

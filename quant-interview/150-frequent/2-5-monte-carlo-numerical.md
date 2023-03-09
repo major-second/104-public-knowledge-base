@@ -1,5 +1,5 @@
 1. [[7-numerical-methods]]有方中画圆
-   1. 方差：[[binom]]
+   1. 方差：[[bernoulli-binom]]
    2. 小心粗心：当然不是$\pi(1-\pi)$而是$\frac \pi 4(1-\frac \pi 4)$
 2. [[7-numerical-methods]]
    1. 如接受拒绝采样，使用$F^{-1}$等
