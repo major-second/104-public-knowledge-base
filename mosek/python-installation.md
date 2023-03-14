@@ -1,4 +1,3 @@
-https://docs.mosek.com/latest/pythonfusion/index.html
-https://www.mosek.com/documentation/
-- 直奔这个 https://docs.mosek.com/latest/pythonfusion/install-interface.html
-  - 注意前置
+- 前置[[mosek-licensing]]
+- [主体安装](https://docs.mosek.com/9.3/install/installation.html#setting-up-the-license)
+- [python api](https://docs.mosek.com/latest/pythonfusion/install-interface.html)

@@ -1,3 +1,5 @@
-- 参考[[pricing]]
+- 前置
+  - [[pricing]]
+  - `edu`邮箱
 - https://docs.mosek.com/9.3/licensing/index.html
 - https://www.mosek.com/products/academic-licenses/
