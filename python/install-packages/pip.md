@@ -57,3 +57,4 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
   - 但是清华、中科大等源可能缺东西。可以`-i https://pypi.python.org/simple/`使用`pypi`源
     - 只要下载一次[[general-principles/cache]]了，以后就可以在本地用
 - `sudo rm -r ~/.cache/pip`清除[[general-principles/cache]]
+- 涉及内网，不能联网：常常`pip install filename.whl`这样

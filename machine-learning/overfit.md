@@ -9,4 +9,5 @@
   - 拟合了噪声
 - 解决方法
   - 获取更多数据、更“密集”（[[domain-gap]]更小）的数据
+    - 如[[transforms]]扩增augment数据
   - [[tricks]]
