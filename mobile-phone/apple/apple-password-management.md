@@ -1,4 +1,4 @@
-- 前置[[general-principles/account]], [[apple]]
+- 前置[[general-principles/account]], [[apple-id]]
 - 类比[[chrome/settings]]中autofill自动填密码
 - 在设置搜索password即可看到
   - 设置中看apple id可以知道哪些东西可用apple id登录

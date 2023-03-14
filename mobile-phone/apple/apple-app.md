@@ -1,4 +1,4 @@
-- 前置[[apple]]
+- 前置[[apple-id]]
 - 安装：app store
   - 不能像安卓（参考[[download-resource]]）那样野路子
 - 卸载：长按
