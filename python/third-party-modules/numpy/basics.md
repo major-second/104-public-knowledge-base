@@ -1,3 +1,4 @@
+- `pip install numpy`
 - `import numpy as np`
 # 创建array
 - `np.array([2])`这种直接得到`[2]`

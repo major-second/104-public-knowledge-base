@@ -14,7 +14,9 @@
   - 文档可能过时，导致需要改动个别点
   - 脚本代码（命令）中版本号、用户名等等常常需要自己填。文档中经常有`/your/path`这种字样，不要傻傻抄
     - 惯例：`<path>`，`<ip>`等中`<>`符号表示你要自己填东西
-  - 文档可能略去一些特别简单的步骤比如`cd`到某些文件夹，需要你自己补上
+  - 文档可能略去
+    - 一些特别简单的步骤比如`cd`到某些文件夹，需要你自己补上
+    - 上下文，例如[[design-overview]]
   - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了代码没改文档
   - hhh，总之像[nitrome games合集](https://archive.org/details/all_nitrome_games)里面那么保姆级告诉你路径可能不一样，[[region-language]]影响路径，备份[[settings-and-configurations]]等等，这可不常见！一般软件作者素质没那么高。[[dont-trust-others]]
 - 可能需要提取文档核心信息并做出合理取舍

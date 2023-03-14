@@ -1,0 +1,9 @@
+- 前置
+  - [[ssh/ssh]]
+  - [[server-config]]，确认命令行[[ssh/ssh]]可用
+  - 插件：remote ssh
+- remote ssh可以几乎如本地般体验地远程开发
+- [[wsl-develop]]一般都是用remote ssh
+- `~/.vscode-server`是server
+  - 需要[[refresh]]时可删除
+  - 离线安装时需要拷过来

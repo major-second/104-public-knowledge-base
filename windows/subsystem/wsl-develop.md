@@ -18,7 +18,8 @@
       - 所以`~/.zshrc`考虑加入：如果在`/mnt.*`开始，则需要`cd`到linux这边，比如`cd ~`
   - [[remote-ssh]]有了之后
     - `code .`打开vscode
-    - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可
+    - `Ctrl + Shift + X`安装`WSL`然后`Ctrl + Shift + P`搜索`WSL`也可打开
+      - 这种途径在你的`~/.vscode-server`被删除时就会自动重装[[refresh]]
 - troubleshooting
   - [[tensorboard]]启动时，底下提示网址可能并不是`localhost:<端口>`，但你还是应该访问`localhost:<端口>`，别听他的
   - [[zsh]]在windows路径可能表现不正常（所以比如[[shrc]]应该写个`cd ~`等等）
