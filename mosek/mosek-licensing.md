@@ -1,0 +1,3 @@
+- 参考[[pricing]]
+- https://docs.mosek.com/9.3/licensing/index.html
+- https://www.mosek.com/products/academic-licenses/

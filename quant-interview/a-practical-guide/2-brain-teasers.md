@@ -5,9 +5,10 @@
   - 其实这里的两个例子都是逆向归纳
   - 参考[[general-principles/recursion]]
 - Screwy pirates
-  - backward induction，逆向归纳。也就是从简单情况开始
+  - [[backward-induction]]
+  - 也就是从简单情况开始
 - Tiger and sheep
-  - 还是backward induction
+  - 还是[[backward-induction]]
   - 但需加上合理假设：吃羊比不吃收益高
     - 参考[[1-general-principles]]
 # 2.2 Logic Reasoning

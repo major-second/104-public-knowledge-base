@@ -21,6 +21,7 @@
     - 如[[vpn]]中的getflix vpn，终身只需50美元
     - 可能需要[[proxy-basics]], VISA贷记卡，注册 Link 支付账号等
     - 时至2023.1，默认支付方式一直显示state must be filled. 但 Link 可以
+- 白嫖教育版，如[[mosek-licensing]]
 - 免费东西当然有安全风险，有时免费是最贵的
   - 如免费[[node]]可能是蜜罐
   - 注册机可能有病毒（当然序列号就比较安全）

@@ -9,6 +9,7 @@
   - `channels:`
     - `https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/`
     - `defaults`
+- 注：如果你想只用清华，确保速度（或者有些场合只有清华在白名单），可以把最后一行删掉
 ## 手动创建并手动输入内容
 - 参考[[settings-and-configurations]]，手动输入和命令的作用是一样的
 - 参考[[yaml]]语法

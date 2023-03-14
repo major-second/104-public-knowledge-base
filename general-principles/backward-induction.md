@@ -1,0 +1,4 @@
+- [[2-brain-teasers#2.1 Problem Simplification]]
+- 线段分蛋糕
+  - 两个人：第一个人切中间，第二个人拿一半
+  - 三个人：还是倒推，只不过分类讨论繁一点
