@@ -42,3 +42,8 @@ with Model("portfolio") as M:
     print("Optimal portfolio weights:")
     print(x.level())
 ```
+- 注意点
+  - 参考[[ast]]写数学表达式
+  - 常见结构
+    - 密矩阵`Matrix.dense(<list>)`
+    - 向量直接`list`

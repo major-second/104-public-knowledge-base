@@ -1,11 +1,12 @@
 # 数学中
-- 有好有坏
-  - 好处
-    - 利用特例进行记忆、检验
-    - 判定退化情况（化简）
-      - 刘维尔定理
-      - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
-  - 坏处：有些东西对于特例不work，你不检查就不行
+- 好处
+  - 利用特例进行记忆、检验
+  - 能用特例能不用特例，请用特例，往往更好
+    - [[portfolio]]
+  - 判定退化情况（化简）
+    - 刘维尔定理
+    - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
+- 坏处：有些东西对于特例不work，你不检查就不行
 - 例子
   - [[6-serial/basics]]的$\tau\equiv 0$情况
   - [[2-2-calculus-ode]]
@@ -17,7 +18,8 @@
     - [[normal]], [[multi-normal]]
     - [[2-linear-optimization]]中的
     - [[2-4-duality-in-linear]]中的
-# 算法题参考[[algorithm/special-case]]
+# 算法题
+[[algorithm/special-case]]
 # 实际程序
 ## 不良后果
 - [[finetune]]中的例子：取一段区间内的数据做[[regression]]
