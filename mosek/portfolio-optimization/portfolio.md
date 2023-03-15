@@ -1,1 +1,3 @@
-https://docs.mosek.com/9.3/pythonfusion/case-studies-portfolio.html#
+- 前置[[3-3-3-markowitz]]
+- 参考
+  - https://docs.mosek.com/9.3/pythonfusion/case-studies-portfolio.html#

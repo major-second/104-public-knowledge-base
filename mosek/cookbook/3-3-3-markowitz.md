@@ -1,0 +1,6 @@
+- 前置
+  - [[character/transform]]
+    - $r$均值$\mu$，[[cov]] $\Sigma$，则投资组合$x$带来的$r^T x$均值$\mu ^T x$，标准差$\sqrt {x^T \Sigma x}$
+  - [[cholesky]]或eigenvalue分解
+  - [[3-2-conic-quadratic-modeling]]
+- [文档](https://docs.mosek.com/modeling-cookbook/cqo.html#markowitz-portfolio-optimization)

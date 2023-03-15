@@ -9,6 +9,9 @@
    =(对应项配对相减)\sum_{k,l} a_{ik}a_{jl}Cov_旧(k;l)\\
    =\sum_{k,l} A(i;k)Cov_旧(k;l) A^T(l;j)$$
   - 这时根据[[multiply-chain]]得$Cov_新 = ACov_旧 A^T$
+    - 可以使用[[general-principles/special-case]]记忆
+    - 如果$A$是列向量，则$AX$无意义，所以$A$如果是向量，必须是行向量
+    - 所以必须是$ACov_旧 A^T$
   - 当然，常数项不影响[[cov]]（类似于[[character/var]]）
   - 配对相减技巧是[[cov]]标准操作
   - [[multi-normal]]可用这个性质，代入$X=Z,A=\Sigma^{1/2}$则说明$\Sigma^{1/2} Z+\mu\sim N(\mu,\Sigma)$
