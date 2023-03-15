@@ -4,11 +4,12 @@
     - [[sysvinit]]好像不行
 - 大概过程是先安装`v2ray`，再安装`v2raya`
   - 参考官网教程https://v2raya.org/docs/prologue/installation/debian/
+    - 这是一个[[read-doc]]例子。这里的`wget -qO`和`echo "deb`那两行的网址可能变，所以你如果不记文档网址只记命令，可能给自己找麻烦
 ```sh
 curl -Ls https://mirrors.v2raya.org/go.sh | sudo bash; \
 sudo systemctl disable v2ray --now; \
-wget -qO - https://apt.v2raya.mzz.pub/key/public-key.asc | sudo apt-key add -; \
-echo "deb https://apt.v2raya.mzz.pub/ v2raya main" | sudo tee /etc/apt/sources.list.d/v2raya.list; \
+wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/v2raya.asc; \
+echo "deb https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/v2raya.list; \
 sudo apt update; \
 sudo apt install v2raya; \
 sudo systemctl start v2raya.service; \

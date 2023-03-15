@@ -1,0 +1,4 @@
+- 前置[[node-js]]
+- Use `yo code` command to generate a basic extension project
+- Open the project folder with VS Code and press F5 to run the extension in a new window
+- Test your extension by running the Hello World command from the Command Palette (Ctrl+Shift+P) in the new window

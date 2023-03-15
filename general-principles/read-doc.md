@@ -33,3 +33,4 @@
     - 反面教材：比如[[moveit-installation]]中自以为有`catkin_make`命令就无需`sudo apt-get install ros-melodic-catkin python-catkin-tools`了。实际上不是如此！
 - 硬件更要读文档（说明书）保证安全！可不是只有软件才有文档
   - 比如WI1000X，[耳机控制键突然用不了的问题](https://helpguide.sony.net/mdr/wi1000x/v1/zh-cn/contents/TP0001514117.html)
+- 要记文档网址，不要只记录文档关键内容，否则可能像[[v2raya]]一样无法复现

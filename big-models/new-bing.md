@@ -1,4 +1,10 @@
-- 时至2023.3排队测试
-- 上bing，除了search按钮多了chat按钮，点它！
-- ![](new-bing.png)
-- 复制东西能给出参考资料来源！
+- 前置
+  - [[other-browsers#edge]]
+  - [[proxy-basics]]
+- 时至2023.3，可排队，等待测试资格
+- 用法
+  - 开[[proxy-basics]]
+  - 上bing，除了search按钮多了chat按钮，点它！
+  - ![](new-bing.png)
+- 特性
+  - 复制东西能给出参考资料来源！

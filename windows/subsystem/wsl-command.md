@@ -17,7 +17,10 @@
   - 注意`wsl -e 'echo 1'`不行（可能被当成整体了）
   - `wsl -e bash -c 'echo 1'`可以
 - 例：`wsl --set-default Ubuntu-20.04; wsl --list; wsl -e uname -a`
-- 例：需要通配符时，`wsl -e bash -c "dos2unix ~/*.sh"`，不能直接`wsl -e dos2unix ~/*.sh`
+- 例：需要通配符[[glob]]时
+  - `wsl -e bash -c "dos2unix ~/*.sh"`
+  - 不能直接`wsl -e dos2unix ~/*.sh`
+  - 因为`bash`支持[[glob]]，`wsl`默认不支持[[glob]]，除非设置一下（略）
 # 进阶
 ## 多行
 ```powershell
