@@ -3,18 +3,19 @@
 - 主要有价值信息
   - 文件系统不要混用否则降低性能（但不是完全不行）
   - linux中`explore.exe .`打开windows式资源管理器
-    - 直接复制的问题：命名规则，分隔符，[[7-permissions]]等
+    - 可以看到linux根目录是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
+    - 直接复制文件跨平台的问题：命名规则，分隔符，[[7-permissions]]等
+      - 例如[[git-basics/basics]]直接拷贝不太行，会因为权限等问题导致无法正常使用或者显示太多修改
       - 例如[[pubkey-authentication]]权限，git库权限问题
         - 可能导致[[git-project-manager]]用不了
       - 例如`:`符号只有linux能用，windows不能
       - `bad interpreter: /bin/bash^M`
         - `sudo apt install dos2unix`
         - 使用`dos2unix`命令处理文件
-    - 可以看到是在`\\wsl.localhost\Ubuntu-20.04\home\<名字>`这种地方
   - 跨系统混用
-    - 文件系统
-      - [[git-basics/basics]]完全不行，会因为权限等问题导致无法正常使用或者显示太多修改
-    - 跨系统混用终端：[[zsh]]不行！
+    - 刚刚说的文件系统问题
+    - [[zsh]]在windows路径可能表现不正常
+      - [[shrc]]应该写个`cd ~`等等
       - 所以`~/.zshrc`考虑加入：如果在`/mnt.*`开始，则需要`cd`到linux这边，比如`cd ~`
   - [[remote-ssh]]有了之后
     - `code .`打开vscode
@@ -22,4 +23,3 @@
       - 这种途径在你的`~/.vscode-server`被删除时就会自动重装[[refresh]]
 - troubleshooting
   - [[tensorboard]]启动时，底下提示网址可能并不是`localhost:<端口>`，但你还是应该访问`localhost:<端口>`，别听他的
-  - [[zsh]]在windows路径可能表现不正常（所以比如[[shrc]]应该写个`cd ~`等等）

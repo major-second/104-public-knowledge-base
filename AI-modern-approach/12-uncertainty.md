@@ -109,6 +109,8 @@
   - 等价形式$P(X|Y,Z)=P(X|Z),P(Y|X,Z)=P(Y|Z)$
   - 所以合理安排顺序可以更大量地减少存储数字数
     - 参考[[概率图]]
+  - 注：本来不独立加了条件也可能独立，但本来独立加了条件可能不独立（当$A\to C, B\to C$时）
+    - 直观：已知你长得很高，你爸不高……
 - `Conceptually, Cavity separatesSeparation Toothache and Catch because it is a direct cause of both of them`，实际中找条件独立可以从这里入手
 - [拓展阅读](https://zhuanlan.zhihu.com/p/397796913)
   - ![](causal.png)，用条件独立判断“无（直接）因果”！
