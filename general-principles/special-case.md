@@ -2,7 +2,7 @@
 - 好处
   - 利用特例进行记忆、检验
   - 能用特例能不用特例，请用特例，往往更好
-    - [[portfolio]]
+    - [[portfolio-optimization]]
   - 判定退化情况（化简）
     - 刘维尔定理
     - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外

@@ -39,7 +39,7 @@ def BasicMarkowitz(n,mu,GT,x0,w,gamma):
   - 用`Expr.vstack`得到$(\gamma, G^T x)$
   - 回顾[[3-2-conic-quadratic-modeling]]，$\gamma$和后面的维度并不对称
 ## 能跑例程
-需要[[tradeoff]]风险和收益
+- 这个例子反映了[[tradeoff]]风险和收益
 ```python
 import mosek
 from mosek.fusion import *
@@ -48,18 +48,19 @@ def BasicMarkowitz(n,mu,GT,x0,w,gamma):
         x = M.variable("x", n, Domain.greaterThan(0.0))
         M.objective('obj', ObjectiveSense.Maximize, Expr.dot(mu,x))
         M.constraint('budget', Expr.sum(x), Domain.equalsTo(w+sum(x0)))
-        M.constraint('risk', Expr.vstack( gamma,Expr.mul(GT,x)), Domain.inQCone())
+        M.constraint('risk', Expr.vstack(gamma, Expr.mul(GT,x)), Domain.inQCone())
         M.solve()
-        return np.dot(mu,x.level())
+        return x.level()
 
-n = 10
+n = 3
 mu = [0.5] * n
 mu[-1] = 1
 mat_list = [0.1] * (n*n)
 mat_list[-1] = 2
-GT = Matrix.dense(n, n, mat_list),
+GT = Matrix.dense(n, n, mat_list)
 x0 = [0.0] * n
 w = 1.0
 for gamma in range(1, 10):
+    gamma *= 0.3
     print(BasicMarkowitz(n,mu,GT,x0,w,gamma))
 ```

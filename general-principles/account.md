@@ -3,7 +3,7 @@
   - [[vpn]], [[sms]], [[proxy-basics]], [[configure-proxy]]
 - 有些地方特定身份（一般指ip）才能上/使用/发消息等等
   - 参考[[proxy-basics]]的是否全局[[configure-proxy]], [[vpn]]
-  - 例子[[chatgpt]], [[telegram]]
+  - 例子[[chatgpt]], [[telegram]], [[new-bing]]
   - [[spotify]]定期挂代理上个线确认，等
 - 可能可以找推荐人获得优惠
   - 例如[[binance]]
