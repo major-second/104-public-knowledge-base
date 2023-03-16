@@ -20,6 +20,7 @@
   - 比如[[settings-and-configurations]]中windows10的Setting和Control Panel各有优劣
   - 比如[[configure-proxy]]代理是否使用全局模式
   - 比如[[escape]]单双引号各有优势，经常互为[[workaround]]
+  - [[taskbar#快捷键]]和[[windows-link]]，`win+数字`和`Ctrl+Alt+字母`适合不同场合，其中可能有交集
 - 关于“交集”
   - 场景的“交集”未必是空集，即有些时候有多种符合要求，有些时候只有一种符合要求，但没有一种工具能满足所有要求
   - 但有时考虑“交集”有好处。例如[[vpn]]提到使用pac时可能兼容性会变好

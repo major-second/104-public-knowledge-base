@@ -1,0 +1,3 @@
+- [[taskbar]]需要
+- [[built-in-keyboard-shortcuts/misc]], [[built-in-keyboard-shortcuts/window]], [[windows-link]]中`win`键都需要
+- 出问题可以[[task-manager]]重启
