@@ -19,5 +19,10 @@ type: efficiency
   - 比如可以靠边靠角
   - 或者最大/最小化（如连续两次`down`从最大化到最小化）
 - 把东西固定在[[taskbar]]后，`Win + 数字`可以“没打开的打开，打开了的转到”
-  - 这个功能通过[[windows-link]]没法替代
-  - 所以像vscode，chrome等经常需要“打开了的转到”的软件适合这个
+  - 这个功能[[windows-link]]没法替代
+    - 看程序是否是“单例”
+      - [[outlook]]，[[keybase]]都是单例
+      - 像vscode，chrome等经常需要“打开了的转到”的软件，不是单例，适合这个
+    - 看能否创建桌面快捷方式
+      - 比如笔记本相机，[[wsa]]设置等，创建不了桌面快捷方式，只能用这个
+      - ![](wsa-settings.png)，没有open file location之类的东西

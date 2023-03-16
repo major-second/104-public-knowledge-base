@@ -34,7 +34,7 @@
 - Devices
   - `USB Devices`里面有USB及蓝牙设备列表（包括已配对但当前没连接的）
 - Software
-  - Auto Start深度清理[[startup]]
+  - Auto Start查看、清理[[startup]]
   - Installed Programs查看、清理软件（[[CRUD]]中的删、查都可以）
   - File Types看[[file-format]]关联
 - Config
