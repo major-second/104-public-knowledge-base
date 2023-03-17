@@ -14,8 +14,8 @@
 - STATISTICAL ARBITRAGE
     - 无风险套利：同时买卖
     - stat arb：有少量风险，根据统计信息买卖
-    - 找学界，当然有用。如CAPM，分成market component and an idiosyncratic component
-    - 包含了Sharpe, Fama & French等
+    - 找学界，当然有用。如[[CAPM]]，分成market component and an idiosyncratic component
+    - 包含了Sharpe, [[fama-french]]等
     - 学界（不管什么学，数学统计学……）还是和业界不完全搭
       - 比如最小化平方和，这就不一定好用
     - 所以很多因子还是商业机密，口耳相传

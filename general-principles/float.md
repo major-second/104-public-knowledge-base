@@ -1,9 +1,21 @@
 - 浮点精度可能带来浮点误差
+  - [参考](https://zhuanlan.zhihu.com/p/357348392)
   - 所以一般不要判断浮点数相等
   - 例子：
-    - 如[[679-24-game]]
+    - [[679-24-game]]
+    - [[geometry]]中点在三角形内
     - 如[[1739-building-boxes]]
       - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
-- 本质上是一种[[encode-decode]]方法
-- 关于[[resource-management/disk]]：时刻注意精度。常见精度：16，32，64等
+    - 一定要判断，需要`abs(...) < EPSILON`这样
+- 浮点数本质上是一种[[encode-decode]]方法
+- 关于空间，如[[resource-management/disk]]
+  - 时刻注意精度。常见精度：16，32，64等
   - 例如在[[save-load]]时可以指定`dtype=np.float32`
+- 克服
+  - 例如先乘以一个常数，变成整数，把`1+1e-8`和`1+2e-8`变成`1e8+1`和`1e8+2`
+- 注意区分这种浮点误差和十进制下的取整误差
+  - 量级不同
+  - 原因不同
+  - 取整“到哪”不同
+  - 十进制取整误差例子
+    - [[停牌]]
