@@ -1,0 +1,6 @@
+- 前置[[node-js]], [[node-js#npm]]
+- 参考
+  - https://yowebapp.github.io/learning/
+- `npm install -g yo`
+- 然后安装需要的[[yeoman-generator]]
+  - 例如`npm install -g generator-code`可用于[[my-own-vscode-extension]]
