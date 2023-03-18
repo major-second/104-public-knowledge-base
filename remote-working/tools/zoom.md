@@ -4,14 +4,15 @@
   - 参考[[proxy-basics]]
   - 如果你用google等需要代理的账户登录zoom，则登录那一下当然要开代理，但是登录之后就可以又关掉，以确保连接速度。这是[[temp-solution]]思想
 - 可以官网下载插件从而可和[[outlook]]联动
-- 关于自动听写字幕
-  - 前置：[[laptop-camera]]，[[chrome/settings]]
-  - zoom客户端设置，找到![](view-more-settings.png) view more settings
-  - 进去网页搜索`browser`，打开第一个选项 ![](enable-joining-from-browser.png)
-  - 之后会议可以在浏览器打开
-    - 可能需要通过“取消”等不允许打开zoom应用，才能弹出下面这个选项“使用浏览器加入”
-    - ![](join-from-browser-option.png)
-    - 然后效果![](join-from-browser.png)
-  - 之后参考[这个](https://zhuanlan.zhihu.com/p/346845837)和[[chrome/settings]]即可
-  - 注：[网页版zoom](https://us05web.zoom.us/)
 - 开着会议时可能导致听音乐音质变差（因为音乐和语音不同）
+# transcription
+- 自动听写字幕
+- 前置：[[laptop-camera]]，[[chrome/settings]]
+- zoom客户端设置，找到![](view-more-settings.png) view more settings
+- 进去网页搜索`browser`，打开第一个选项 ![](enable-joining-from-browser.png)
+- 之后会议可以在浏览器打开
+  - 可能需要通过“取消”等不允许打开zoom应用，才能弹出下面这个选项“使用浏览器加入”
+  - ![](join-from-browser-option.png)
+  - 然后效果![](join-from-browser.png)
+- 之后参考[这个](https://zhuanlan.zhihu.com/p/346845837)和[[chrome/settings]]即可
+- 注：[网页版zoom](https://us05web.zoom.us/)

@@ -19,6 +19,7 @@
     - 上下文，例如[[design-overview]]
   - [[franka-ros-interface]]这种非官方，非持续维护的库，很有可能改了代码没改文档
   - hhh，总之像[nitrome games合集](https://archive.org/details/all_nitrome_games)里面那么保姆级告诉你路径可能不一样，[[region-language]]影响路径，备份[[settings-and-configurations]]等等，这可不常见！一般软件作者素质没那么高。[[dont-trust-others]]
+  - [[pandas-loc]]有提到文档讲的问题可能不是你实际的问题，有些知乎链接反而直击重点
 - 可能需要提取文档核心信息并做出合理取舍
   - 选择性忽视一些不重要（乃至错误）的信息
     - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做

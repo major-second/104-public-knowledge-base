@@ -10,6 +10,7 @@
   - `df.loc[0, 'key'] = value`这样比`df['key'][0] = value`好
   - 后者会报[[warning]]，和[[copy-paste]]有关
     - [参考](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy)
+    - 这个文档不一定很准确，可参考[这个知乎回答](https://zhuanlan.zhihu.com/p/416898038)
   - 当然，大多数时候，[[pandas-index]]并不是`0`之类的，而是[[timestamps]]
     - 此时必须用`df.index`取出
     - 例如`df.loc[df.index[0], 'key']`

@@ -10,6 +10,6 @@
 - 命令行工具`rcc`安装
   - [参考](https://github.com/robocorp/rcc#installing-rcc-from-command-line)
   - windows直接找个地方`curl -o rcc.exe https://downloads.robocorp.com/rcc/releases/latest/windows64/rcc.exe`然后把`exe`所在目录加入[[windows/env-var]]的`path`即可
-  - 装这个有必要，因为vscode集成的不灵活
-    - 例如不能没有`conda.yaml`
-  - 参考[[leaky-abstraction]]
+- 装这个有必要，因为vscode集成的不灵活
+  - 例如vscode集成的话，你每个robot都不能没有`conda.yaml`
+  - 这是[[leaky-abstraction]]

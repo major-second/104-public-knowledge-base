@@ -6,6 +6,9 @@
   - `pd.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])`
     - 返回一个序列`DatetimeIndex`
     - 底层：64-bit的整数（纳秒）
+- 拓展例子
+  - `sr = pd.Series([20220721093000030, 20220721093000031])`
+  - `sr = pd.to_datetime(sr.astype(str), format='%Y%m%d%H%M%S%f')`
 - 加速：指定格式如`format='%m/%d/%y'`
 - 构造间隔`td = pd.Timedelta(weeks=2,days=10,hours=12,minutes=2.4,seconds=10.3)`
   - 使用：可以直接`date1 = date0 + td`
