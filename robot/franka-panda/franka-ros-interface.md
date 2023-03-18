@@ -8,7 +8,7 @@
   - 比如出现过对于gripper，`.home_joints()`不能正常运行，然后`.grasp(), .open()`都能，且`.grasp(), .open()`之后`.home_joints()`又能了。推测是这个懒人包里充满了bug. 我们知道唯象现象即可（参考[[workaround]]，[[temp-solution]]）
   - 时间来到2022.12，默认`apt`安装的[[moveit-installation]]已经不兼容它了……整个包也显得风雨飘摇到处报错
     - 目前：根据报错提示，改一下`catkin_ws/src/panda_moveit_config/launch/move_group.launch`，删除多余的`fake*`参数
-      - 参考[[vim/basics]]用`/`搜索`fake`，找到所有出现，删除对应的多余行
+      - 参考[[vim-basics]]用`/`搜索`fake`，找到所有出现，删除对应的多余行
     - 难道是时候放弃这个包吗，哎
 - 我没试`py3`，反正`py2.7`可以[[pip]]补包得到依赖项
   - 文档说了的：`pip install future`

@@ -1,0 +1,11 @@
+- 写代码的编辑器
+  - vim: [[vim-basics]]
+  - vscode: [[vscode/installation]]
+  - pycharm: [[pycharm/installation]]
+    - IDE当然可作为编辑器
+  - 在线工具: [[toolbox/web]]
+    - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
+    - [[overleaf]]
+  - [[chatgpt#downstream]]中有一些
+- [[keybase]]
+  - 一次性笔记、可传输

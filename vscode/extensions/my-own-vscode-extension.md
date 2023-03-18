@@ -1,5 +1,12 @@
 - 前置
   - [[yeoman]]中相应的[[yeoman-generator]]
-- Use `yo code` command to generate a basic extension project
-- Open the project folder with VS Code and press F5 to run the extension in a new window
-- Test your extension by running the Hello World command from the Command Palette (Ctrl+Shift+P) in the new window
+- 步骤
+  - 到你想要的文件夹
+  - Use `yo code` command to generate a basic extension project
+    - 根据提示操作，然后看到新产生文件夹
+    - Open the project folder with VS Code
+      - 可能根据提示自动完成了
+  - vscode窗口中选择`*.js`文件
+  - press F5 to run the extension in a new window
+    - 参考[[vscode-debug-js]]，不需插件，直接debug
+    - 这个新窗口中Test your extension by running the Hello World command from the Command Palette (Ctrl+Shift+P) in the new window

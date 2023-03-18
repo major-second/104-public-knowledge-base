@@ -41,7 +41,7 @@
 - [[xxd-diff]]有提到
   - 把`.pkl`二进制文件`xxd`成文本`.hex`再使用`diff`，这就能体现出具体差别，而非简单地显示“differ”
   - 文本文件占空间更大，但可能更好传输[[file-transfer]]，适用场景广
-- 前者可以用通用编辑器如[[vim/basics]]，[[vscode/edit]]等编辑，所以很多时候可作为过渡，例如csv格式
+- 前者可以用通用编辑器如[[vim-basics]]，[[vscode/edit]]等编辑，所以很多时候可作为过渡，例如csv格式
 - [[file-handler]]读取文本文件（例如[[json]], [[yaml]]）就是“过渡”的例子
 ## 序列化（编码）
 - 参考[[encode-decode]]

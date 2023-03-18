@@ -1,0 +1,3 @@
+- vscode和js关系密切
+- 所以无需安装[[python]]这种插件也可以直接`F5` [[launch]]
+  - 比如[[my-own-vscode-extension]]
