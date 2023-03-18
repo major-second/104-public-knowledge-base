@@ -37,6 +37,7 @@
     - 行业专门：
       - [私募排排网](https://www.simuwang.com/)
       - [glassdoor](https://www.glassdoor.com/member/home/index.htm)
+      - [私募基金管理人公示](https://gs.amac.org.cn/)
 - 在[[github]]或者[[other-hubs]]搜索库
   - 例如搜索leetcode，得到两个很有用的库
     - 参见[[leetcode-solutions/0-metadata]]

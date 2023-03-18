@@ -3,7 +3,10 @@
 - [[launch]]中`launch.json`可能配置的东西：
   - 运行什么文件
   - 在什么目录下运行（防止`python`找不到包）
-    - 例如`"cwd": "${workspaceFolder}/anticipation"`，就不在项目根目录运行
+    - 例如
+      - `"cwd": "${workspaceFolder}/anticipation"`
+      - `"cwd": "${fileDirname}"`
+      - 就不在项目根目录运行
     - 这里参考[[sys-path]]
     - 时至2023.1 vscode个别时候（我自己的wsl中就有）有个bug：对于python debug [[terminal]]，第一次launch时没法正常读取`cwd`. 需要关了重新launch，让他自动在这个python debug终端再跑一次。不能垃圾桶掉这个终端
   - 参数`"args"`
