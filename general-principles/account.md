@@ -5,8 +5,10 @@
   - 参考[[proxy-basics]]的是否全局[[configure-proxy]], [[vpn]]
   - 例子[[chatgpt]], [[telegram]], [[new-bing]]
   - [[spotify]]定期挂代理上个线确认，等
-- 可能可以找推荐人获得优惠
-  - 例如[[binance]]
+- 邀请码
+  - 可能可以获得优惠，例如[[binance]]
+    - 优惠可以分成，比如你分多点，或者受邀请人分多点
+  - 可能有邀请码才能进，比如[[nobepay]]
 - 验证：邮箱、手机、2FA等
   - 一般国外邮箱比国内好
     - 一个折中[[workaround]]：[[outlook]]
@@ -16,6 +18,12 @@
   - 地址（如[[apple-id]]美区需要）
     - 例如 https://www.meiguodizhi.com/
     - 生成的可能邮编不对，等等，需要自己手动修改一下
+    - 注意查美国免税区
+    1. 俄勒冈州（Oregon）
+    2. 阿拉斯加州（Alaska）
+    3. 特拉华州（Delaware）
+    4. 蒙大拿州（Montana）
+    5. 新罕布什尔州（New Hampshire）
   - 2FA
     - 比如Google, Microsoft等都有相关产品。根据公司，app（例如[[binance]]）需要可能需要不同的authenticator
     - 相当于用手机提供第二重验证，有动态口令等功能。可以借用手机上的人脸识别、指纹等

@@ -42,8 +42,15 @@
             "@types/vscode":
           ```
           这里也要改
+        - 如果不改的话，默认版本很新，就只有新版的人能用你的插件 
         - 改完需要该文件夹`npm install`刷新
-      - （可能）更新`version`字段，不能和以前一样
+      - （可能）更新`version`字段，不能和以前一样（否则不给你publish）
+      - （可能）增加`dependency`，例如
+          ```json
+          "dependencies": {
+            "unzipper": "^0.10.11"
+          },
+          ```
   - `vsce publish`
 - 之后
   - 可能需要过几分钟，并[[refresh]] vscode，待检查是不是这样

@@ -5,7 +5,7 @@
   - 美国不行：![](us-ip.png)
 - 通过[非小号](https://www.feixiaohao.co/)、[币萌](https://bimeng.org/)等获取基础信息，作大致了解
   - [[telegram]]搜索tokenmore有一些人和频道，可能有进一步信息
-
+- 可选：[[nobepay]]注册虚拟visa卡，使得可以smoothly充钱
 ## 注册
 - [注册binance的网址](https://accounts.binance.com/en/register?ref=IW76A547)
   - 这里已经自动加入了推荐ID，有费率优惠

@@ -1,0 +1,12 @@
+- 前置
+  - [[wechat-tips]]实名认证
+  - （免税）美国地址生成器，参考[[general-principles/account]]
+- [官网](https://www.nobepay.com/)
+- 注册[[general-principles/account]]
+  - 需要邀请码但是一搜就有，比如`989B08`
+  - 条款：`Malicious refunds, chargebacks, subscriptions, etc. are prohibited. If the refund rate or chargeback rate is higher than 15%, account processing is prohibited and account withdrawal is prohibited.`
+    - Refunds: Transactions where the customer receives their money back due to a dispute or dissatisfaction with the product/service.
+    - Chargebacks: Transactions where the customer's bank forcibly reverses a payment, typically due to a dispute or fraudulent activity.
+    - Subscriptions: Recurring payments for a product or service, usually on a monthly or annual basis.
+- top-up 充钱
+- issuing 开卡，这样就有了海外visa卡
