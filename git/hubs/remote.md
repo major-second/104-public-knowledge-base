@@ -1,6 +1,6 @@
 1. 默认：[[clone]]自带`remote`为`origin`
 2. 也可以先[[init]], [[commit]]，先没有任何remote，之后再加
-   1. `remote add origin <某某.git>`并`git push --set-upstream master`这样
+   1. `git remote add origin <某某.git>`并`git push --set-upstream origin master`这样
 - 还可以多个`remote`
  1. 比如[[other-hubs]]中的`gitee`，`git remote add origin1 https://gitee.com/<一堆>.git`
     1. 这里需要换个名称`origin1`，

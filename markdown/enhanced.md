@@ -6,3 +6,4 @@
   - 但不是所有的都有
 - 比如[[jupyter-basics]]中不能使用`[toc]`等feature
   - 但vscode插件[[jupyter-notebook]]中有`Outline`按钮可代替
+- :rose:颜文字2333

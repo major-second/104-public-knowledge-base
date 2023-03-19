@@ -28,7 +28,7 @@
 - 父模块是最新的，子模块不一定也是最新的。父模块完好，子模块也不一定完好
   - 更新：可以单独`cd`进去`pull`，或者`--recurse-submodule`
   - 检查：可以单独`cd`进去`checkout`，或者`--recurse-submodule`
-## 删改
+## 删改[[CRUD]]
 https://www.jianshu.com/p/ed0cb6c75e25
 - 删除
  - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`

@@ -28,6 +28,9 @@
 - 到extension文件夹
   - 刚刚[[yeoman-generator]]自动生成了东西，你需要编辑一下
     - README随便改一下
+    - 为了防止[[warning]]烦人，可以
+      - 加入`repository`属性
+      - 加入`license.md`
     - `package.json`中
       - 加入一行`publisher": <publisher_name>,`
       - 改[[compatibility]]声明
