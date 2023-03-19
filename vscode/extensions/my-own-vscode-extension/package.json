@@ -3,9 +3,9 @@
   "publisher": "YourongZhang",
   "displayName": "yz",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.74.2"
   },
   "categories": [
     "Other"
@@ -13,10 +13,16 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "yz.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "yz.helloWorldMessageBox",
+        "title": "Hello World (Message Box)"
+      },
+      {
+        "command": "yz.helloWorldFile",
+        "title": "Hello World (File)"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
@@ -24,7 +30,7 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.76.0",
+    "@types/vscode": "^1.74.2",
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",

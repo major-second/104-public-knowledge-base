@@ -10,8 +10,12 @@
     # 4. To try out cursor on your own projects, go to the file menu (top left) and open a folder.
     ```
   - 最常用快捷键
-    - `Ctrl+K` Edit（在已有代码基础上编辑，或注释[[comment]]变成代码，代码重构）
-    - `Ctrl+L` Chat（解说，闲聊）
+    - `Ctrl+K` Edit
+      - 在已有代码基础上编辑
+      - 或注释[[comment]]变成代码
+      - 代码重构
+    - `Ctrl+L` Chat
+      - 解说，闲聊，不改变当前代码
     - `Ctrl+退格` 取消
     - `Ctrl+Enter` 接受
   - 可以作为开发环境打开文件夹等

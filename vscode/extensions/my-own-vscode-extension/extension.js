@@ -17,14 +17,23 @@ function activate(context) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('yz.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
+	let disposable1 = vscode.commands.registerCommand('yz.helloWorldFile', async function () {
+		// Create a file in the current folder with the content 'Hello World'
+		const folder = vscode.workspace.workspaceFolders[0].uri.fsPath;
+		const path = require('path');
+		const fs = require('fs');
+		const filePath = path.join(folder, 'hello_world.txt');
+		await fs.promises.writeFile(filePath, 'Hello World');
+	});
 
+	context.subscriptions.push(disposable1);
+
+	let disposable2 = vscode.commands.registerCommand('yz.helloWorldMessageBox', function () {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from yz!');
 	});
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(disposable2);
 }
 
 // This method is called when your extension is deactivated

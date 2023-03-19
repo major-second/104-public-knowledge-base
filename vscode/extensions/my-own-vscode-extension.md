@@ -28,8 +28,22 @@
 - 到extension文件夹
   - 刚刚[[yeoman-generator]]自动生成了东西，你需要编辑一下
     - README随便改一下
-    - `package.json`中加入一行`publisher": <publisher_name>,`
+    - `package.json`中
+      - 加入一行`publisher": <publisher_name>,`
+      - 改[[compatibility]]声明
+        - `"engines"`
+          - `"^1.74.2"` is equivalent to `">=1.74.2 <2.0.0"`
+          - 参考[[version#常识]]
+        - ```json
+          "devDependencies": {
+            "@types/vscode":
+          ```
+          这里也要改
+        - 改完需要该文件夹`npm install`刷新
+      - （可能）更新`version`字段，不能和以前一样
   - `vsce publish`
-- 之后（可能需要过几分钟，并[[refresh]] vscode，待检查）
+- 之后
+  - 可能需要过几分钟，并[[refresh]] vscode，待检查是不是这样
+    - 可能成功之后有邮件通知
   - 你的插件可以搜到，是`<publisher_name>.<extension_name>`形式
   - 注意刚刚[本地生成时](#本地)已经生成了`extension_name`
