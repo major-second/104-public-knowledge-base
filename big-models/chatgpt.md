@@ -48,13 +48,4 @@
 - 比如Please memorize不行，但Please commit it to your memory可能就行了
 # downstream
 - [chatpdf](https://www.chatpdf.com/)：读论文读书审稿等用
-- [cursur.so](https://www.cursor.so/)：生成和交互代码
-  - 官方指南
-    ```text
-    # 1. Try generating with command K on a new line. Ask for a pytorch script of a feedforward neural network
-    # 2. Then, select the outputted code and hit chat. Ask if there's a bug. Ask how to improve.
-    # 3. Try selecting some code and hitting edit. Ask the bot to add residual layers.
-    # 4. To try out cursor on your own projects, go to the file menu (top left) and open a folder.
-    ```
-  - 最常用快捷键`Ctrl+K`和`Ctrl+L`
-  - 可以作为开发环境打开文件夹等，被收入[[editor-index]]
+- [[cursur-so]]

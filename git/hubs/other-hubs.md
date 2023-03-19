@@ -1,7 +1,12 @@
 - 前置[[github]]
 - 除了github肯定还有其他的提供商
-  - 例如你没有代理[[node]]，那就可以找国内的类似物，比如[gitee](https://gitee.com/)等
+  - 例如你没有代理[[node]]，那就可以找国内的类似物
+    - 比如[gitee](https://gitee.com/)等
+    - 上传镜像操作参考[[fork-private]]
+      - 比如国内备份一份墙外的
   - 例如你在公司内，就要用公司内部的托管平台
+    - 如github enterprise, gitlab
   - 例如你要存密码等重要信息（"key"），那就可以用[[keybase]]的hub功能
-- 不同hub可以共享同样的[[https-ssh]]公钥。你用一个私钥可以连接许多hub
-- 上传镜像操作参考[[fork-private]]（比如国内备份一份墙外的）
+  - 例如[[my-own-vscode-extension#publish]]需要 [Azure DevOps](https://azure.microsoft.com/services/devops/)
+- 不同hub可以共享同样的[[https-ssh]]公钥
+  - 你用一个私钥[[pubkey-authentication]]可以连接许多hub

@@ -1,5 +1,6 @@
 ## 前置
-- 拥有github账号并验证邮箱
+- 拥有[[github]]账号并验证邮箱
+  - 当然，[[other-hubs]]可能也有类似机制，例如[[my-own-vscode-extension]]提到
 ## 用户名和token的生成
 `git clone`github上private库（或者其它涉及私人的操作）时，要求登录
 以前，对于`git`命令行操作，可以直接输入账户密码验明自己身份

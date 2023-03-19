@@ -1,4 +1,5 @@
 [toc]
+- 参考[[compatibility]], [[general-principles/upgrade]]
 # 版本号
 ## 查看版本号
 - 命令行：往往是`--version, -V, -version`等
@@ -15,11 +16,16 @@
   - 刚刚所说的[[apt-version]]管理就派上用场了
   - 例如[[moveit-installation]], [[franka-ros-interface]]用到
 ## 常识
-- 经常是`数字.数字.数字`等几层的形式。前面是大版本号，后面是小版本号。数字越大时间越靠后
+- 经常是`数字.数字.数字`等几层的形式
+  - 前面是大版本号，后面是小版本号。数字越大时间越靠后
   - `3.2`肯定比`3.10`靠前
   - 也就是不能简单对字符串按字典序排序！
+  - `major.minor.patch`
+  - [参考](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions)
+    - 这是[[my-own-vscode-extension]]中的
 - 大版本号自然往往都是大改
   - 比如`python3`相对`python2`，`tf2`相对`tf1`这种，完全就当成两个东西来看比较好2333
+  - 往往不能向后兼容[[compatibility#backward]]
 - 有时不用数字做版本号
   - 比如[[ros/installation]]，用`a`开始的字母做版本号，越靠后的版本字母越靠后
   - 比如[[numpy/basics]]除了表层的数字版本号，还有一个靠底层的`0xf, 0x10`等十六进制的版本号，这个和数字版本号不一一对应。[[pytorch/basics/installation]]时可能需要这个版本号满足一定条件，进而依赖于一定版本的numpy

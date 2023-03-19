@@ -6,6 +6,6 @@
   - 在线工具: [[toolbox/web]]
     - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
     - [[overleaf]]
-  - [[chatgpt#downstream]]中有一些
+  - [[cursur-so]]：使用大模型的
 - [[keybase]]
   - 一次性笔记、可传输
