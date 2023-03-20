@@ -5,7 +5,7 @@
 ![](download-other-languages.png)
 - 安装之后可能需要设定[[windows/env-var]]才能满足一些程序的要求
 - 基础命令行用法
-  - `tesseract --list-langs`
-  - `tesseract <输入路径> <输出路径>`
+  - `tesseract.exe --list-langs`
+  - `tesseract.exe <输入路径> <输出路径>`
     - 路径前可以加`-l chi_sim`指定简体中文
     - 输出路径无需加后缀名`.txt`，它会自动加上

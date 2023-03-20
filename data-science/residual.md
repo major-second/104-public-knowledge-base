@@ -1,0 +1,4 @@
+- Reference
+  - [[resnet]]
+  - [[data-science/normalization]]减去均值化为均值0
+  - [[factors-alphas]]：除去模型里有的factors，剩余就是alphas

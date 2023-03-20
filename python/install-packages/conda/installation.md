@@ -30,3 +30,7 @@ rm ./Ana*.sh
 . ~/anaconda3/bin/activate
 conda init bash
 ```
+## miniconda
+- 搜索miniconda，找安装所需要下载的`.sh`地址
+  - 例如： https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-4.7.12.1-Linux-x86_64.sh
+- [[compatibility]]比anaconda好，大小也比较小节省[[resource-management/disk]]

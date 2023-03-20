@@ -12,6 +12,8 @@
       - `bad interpreter: /bin/bash^M`
         - `sudo apt install dos2unix`
         - 使用`dos2unix`命令处理文件
+          - 单个：`dos2unix <文件名>`
+          - 许多：`find ~ -type f -exec dos2unix {} ;`，参考[[find-grep]]
   - 跨系统混用
     - 刚刚说的文件系统问题
     - [[zsh]]在windows路径可能表现不正常

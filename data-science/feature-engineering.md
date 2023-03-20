@@ -22,7 +22,11 @@
   - 数字特征（[[cov]], [[character/var]], [[expectation]]等）
     - 如：滚动[[rolling]]求均值、方差等
   - 对于[[time-series]]，就有速度、加速度、位移、路程等
-- 有时跟[[preprocessing]]不分家，如[[data-science/normalization]]，缩尾，特判等
+- 有时跟[[preprocessing]]不分家
+  - [[data-science/normalization]]
+  - [[data-science/residual]]
+  - 缩尾winsorization
+  - 特判[[general-principles/special-case]]
 - 凡是涉及除以的，都要注意非负性。常见可用的
   - 本身物理意义非负，如路程、交易量
   - 平方、绝对值或其和等
