@@ -1,0 +1,9 @@
+- https://www.investopedia.com/terms/b/barra-risk-factor-analysis.asp
+- Barra Risk Factor Analysis, a multi-factor model by Barra Inc., measures a security's overall risk relative to the market.
+  - Different from [[CAPM]], [[fama-french]] (which predict returns)
+  - Barra Inc. specializes in risk management and portfolio analytics solutions for financial institutions.
+  - "Inc." is short for "Incorporated," a legal designation for a corporation.
+- Barra Risk Factor Analysis includes over 40 data metrics, such as:
+    - Industry-specific factors capturing risk and return characteristics of various industries (e.g., ENERGY for the energy sector, CHEM for the chemical industry).
+    - LEVERAGE: Company's debt-to-equity ratio. Higher leverage indicates higher risk.
+    - LIQUIDITY: Ease of buying or selling a stock without affecting its price. Higher liquidity indicates lower risk.

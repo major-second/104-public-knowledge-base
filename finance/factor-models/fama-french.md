@@ -2,6 +2,8 @@
   - [[CAPM]]
 - The Fama French 3-factor model extends the [[CAPM]] by adding two additional factors, SMB (Small Minus Big) and HML (High Minus Low), to better explain stock returns.
   - Formula: $R = Rf + B1 * (Rm - Rf) + B2 * SMB + B3 * HML$
+  - SMB: for market capitalization
+  - HML: for [[book-to-market-ratio]]
 - The 5-factor model further extends the 3-factor model by including RMW (Robust Minus Weak) and CMA (Conservative Minus Aggressive) factors
   - Formula: $R = Rf + B1 * (Rm - Rf) + B2 * SMB + B3 * HML + B4 * RMW + B5 * CMA$
 - Seems like additional [[feature-engineering]] results based on [[CAPM]] model
