@@ -53,3 +53,4 @@
     - 往往使用[[pair]]
     - 例如[[2343-query-kth-smallest-trimmed-number]]
   - [[encode-decode]]思想，例如[[geometry]]中把排序后三边长（平方，为了防止[[float]]误差）作为唯一标识
+  - 数学理论保证无重复，如[[general-principles/special-case]]的倒水题

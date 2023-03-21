@@ -9,7 +9,7 @@
 - 显然不交且都正那就不独立
 - 可能是假设独立，也可能算出来独立
 - 例子
-  - 10次硬币，至少一次正？
-  - [[set-operations#complement]]思想
+  - 10次硬币，至少一次正？[[set-operations#complement]]思想
+  - 横竖很多线，针同时和横竖相交，根据平移[[symmetry]]对称性，两事件独立
 - 应用
     - 随机过程中，例如[[1-elements]]中，[[stationary-independent-increment]]

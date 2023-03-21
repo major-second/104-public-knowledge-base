@@ -1,0 +1,7 @@
+- 输入
+  - 参考[[preprocessing]]
+  - 参考[[rl-batch-norm]]，batchnorm一般不用
+  - 但普通的归一化（总体减mean，除以std）可以用
+- action习惯性到$[-1,1]$（对称）
+    - 我们一定要注意它是否有做。确认我们设定的范围有没有问题
+    - 一种可能的问题：环境期待$[-1,1]$的normalized action，我们输入没有normalized的，当然会出问题

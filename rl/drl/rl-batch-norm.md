@@ -1,0 +1,4 @@
+- [参考](https://zhuanlan.zhihu.com/p/210761985)
+- 一般不用
+- 但可以[[rl-normalization]]
+- 主要是分布是否变的问题
