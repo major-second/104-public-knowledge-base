@@ -1,3 +1,4 @@
+- 参考[[enumerate]]帮助理解，但constraint satisfaction肯定不是简单枚举
 - state参考[[2-intelligent-agents]]的representation：这里使用factorized等，不再看成全部indivisible的黑盒
 - 有一些通用剪枝法（发现violate the constraints）
 ## 5.1 Defining Constraint Satisfaction Problems

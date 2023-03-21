@@ -1,0 +1,8 @@
+- [参考](https://zhuanlan.zhihu.com/p/148413517)
+- 联系
+  - [[memory]]中数据排列
+  - 这是一种[[leaky-abstraction]]
+- 连续数组的好处：更快的访问元素，减少[[memory]]访问次数，提高代码性能。
+- 转换成连续
+  - 可以使用`numpy.ascontiguousarray()`函数将一个数组转换为连续数组，如果原数组已经是连续的，那么返回的数组就是原数组本身。
+  - 还有其他一些函数可以用来处理连续数组，例如`numpy.require()`函数和`numpy.copy()`函数。

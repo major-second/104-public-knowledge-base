@@ -1,0 +1,26 @@
+- PnL (Profit and Loss) in trading refers to the difference between the value of a trade when it's opened and when it's closed.
+- It is used to measure the financial performance of a trade or a portfolio of trades.
+- Example:
+  - bid1: [21, 22, 23]
+  - ask1: [22, 23, 24]
+  - time: [0, 1, 2]
+  - Trades:
+    - At time 0, buy 2 at ask1 (22)
+    - At time 1, buy 2 at ask1 (23)
+    - At time 2, sell 3 at bid1 (23)
+  - PnL at each timestamp:
+    - At time 0, PnL = (-22 * 2) + (21.5 * 2) = -44 + 43 = -1
+      - Delta cash: -44 (spent on buying 2 shares at ask1)
+      - Position: 2 shares
+      - Midprice: 21.5 (average of bid1 and ask1)
+      - PnL: -1 (difference between delta cash and midprice * position)
+    - At time 1, PnL = (-22 * 2) - (23 * 2) + (22.5 * 4) = -44 - 46 + 90 = 0
+      - Delta cash: -46 (spent on buying 2 more shares at ask1)
+      - Position: 4 shares
+      - Midprice: 22.5 (average of bid1 and ask1)
+      - PnL: 0 (difference between total delta cash and midprice * position)
+    - At time 2, PnL = (-22 * 2) - (23 * 2) + (3 * 23) + (23.5 * 1) = -44 - 46 + 69 + 23.5 = 2.5
+      - Delta cash: 69 (earned from selling 3 shares at bid1)
+      - Position: 1 share
+      - Midprice: 23.5 (average of bid1 and ask1)
+      - PnL: 2.5 (difference between total delta cash and midprice * remaining position)

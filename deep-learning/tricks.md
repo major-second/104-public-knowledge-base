@@ -39,6 +39,7 @@
 - 当然很多时候，如果你疯狂以`test`上的结果为标准，就还是有过拟合嫌疑！
 ## 结构
 - 以2的倍数为间隔调MLP隐层宽度
+  - [[enumerate]]前当然要确定全集的界
 - [[residual]]使得可以增加更多层
   - 哈哈，你把residual看作一个trick？也行吧哈哈
 ## [[feature-engineering]]

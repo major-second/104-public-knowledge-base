@@ -2,6 +2,7 @@
 - [[built-in-keyboard-shortcuts/misc]], [[built-in-keyboard-shortcuts/window]], [[windows-link]]中`win`键都需要
 - 出问题可以[[task-manager]]重启
   - 比如任务栏消失，`win+a`出不来，等等
+  - 如果[[task-manager]]没有，可以手动打开一个窗口
 # 选择、编辑
 - 按一个文件，shift，再按另一个，选中一系列
 - ctrl多选
