@@ -1,4 +1,4 @@
-- 参考[[chatgpt]], [[gpt-4]]
+- 参考[[chatgpt]], [[waitlists]]
 - [cursur.so](https://www.cursor.so/)
 # 概述
 - 生成和交互代码

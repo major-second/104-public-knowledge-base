@@ -1,1 +1,0 @@
-https://openai.com/waitlist/gpt-4-api
