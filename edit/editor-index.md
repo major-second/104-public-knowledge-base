@@ -6,6 +6,6 @@
   - 在线工具: [[toolbox/web]]
     - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
     - [[overleaf]]
-  - [[cursur-so]]：使用大模型的
+  - [[cursor-so]]：使用大模型的
 - [[keybase]]
   - 一次性笔记、可传输

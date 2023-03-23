@@ -48,4 +48,4 @@
 - 比如Please memorize不行，但Please commit it to your memory可能就行了
 # downstream
 - [chatpdf](https://www.chatpdf.com/)：读论文读书审稿等用
-- [[cursur-so]]
+- [[cursor-so]]

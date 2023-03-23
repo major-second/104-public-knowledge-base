@@ -22,3 +22,11 @@
   - 被收入[[editor-index]]
 # 用例
 - 选中`# 皮带 电蚊拍 洗牙器 自行车头盔`，`Ctrl + K`，翻译成英文，输出`# Belt, electric mosquito swatter, dental scaler, bicycle helmet`
+# 注意
+- 记得复制提示（避免intermittent服务器错误）
+- 生成后可以
+  - accept, reject
+  - 手动删除手动修改，而不简单接受或拒绝
+  - 在仍然有红绿高亮时，启动下一个任务（而不是完全接受或拒绝后再）
+- 可以先写[[comment]]或部分代码，要求它补全
+- 可以后台运作
