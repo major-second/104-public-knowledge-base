@@ -1,4 +1,6 @@
 - github.com
+  - 可能参考[[dns]]
+  - 国内被墙搞不定就用[[other-hubs]]吧
 - git和github是什么关系？
   - git本身只是一套管理系统，你可以只在本地用，比如[[stash]]，[[reset]]等等
     - 无论用什么托管平台（hub），[[init/installation]]都是需要的

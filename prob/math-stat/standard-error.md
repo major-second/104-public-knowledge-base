@@ -4,3 +4,12 @@
 - applications: e.g. [[t]] stats
 # [[multi-ary]] SE
 - [参考](https://www.statology.org/standard-error-regression/)
+  - 相比[[unary#$R^2$]]，更加“绝对”而非相对
+  - 可以和[[confindence-interval]]联系。说“我确信95\%概率能……”
+- [推导过程参考](https://stats.stackexchange.com/q/44841)
+- 关键：$Var(\hat \beta) = \sigma^2 (X'X)^{-1}$
+  - 这里用到了[[character/transform]]的[[cov]]公式
+  - 这里认为$X$是给定的，$Y$才有随机性，参考[[4-regression]]
+  - 注意这个是理论值，实际中还要[[方差的无偏估计]]，得到$\hat {Var} (\hat \beta)$
+    - 此时注意减去自由度不是$-1$而是减去更多
+    - 例如一元[[unary]]含截距，就是$-2$
