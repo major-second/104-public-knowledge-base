@@ -3,6 +3,9 @@
 - 相当于linux的终端。可以执行命令
   - 不过时至2022还没linux的命令行好用
   - 不客气地说，win命令行，就是垃圾
+# 运行
+- 没有权限？参考[[administrator]]，以及其中的`ExecutionPolicy`相关设置命令
+- 不能双击运行？从而[[windows-link]]也不方便一个快捷键运行？[[file-format]]打开方式选择`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`这种东西
 # 基础命令
 - `help <命令>`，`gal <命令>`看命令的基本信息，例如`gal rm`
   - 比如`rm`其实是`Remove-Item`，`ls`其实是`Get-ChildItem`
