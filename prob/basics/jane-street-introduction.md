@@ -64,7 +64,7 @@
   - 色子例子：期望不变，而增大风险，那当然不好
   - 比如可能策略：3 at 4, 10 up.
     - 这样，风险厌恶者可能以3卖给你丢色子机会这样
-- 问题例子：包括[[fermi-estimation]]，对[[character/var]]的概念思考等等。非常考察insight
+- 问题例子：包括[[fermi-estimation]]，对[[variance]]的概念思考等等。非常考察insight
 # Adverse Selection
 - 交易对手方？
   - 对赌！一方对

@@ -148,7 +148,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 一个subtlety: 为啥加起来是20了？因为你更容易在长时间间隔中来到
 - moments of normal distribution: [[normal]]
 # 4.5
-- [[expectation]], [[character/var]], [[cov]]
+- [[expectation]], [[variance]], [[cov]]
 - 加法，独立，乘法，协方差，相关系数（某种余弦）
 - law of total expectation
   - $E_X[X] = E_Y[E_X[X|Y]]=\sum_y E_X[X|Y=y]p(Y=y)$

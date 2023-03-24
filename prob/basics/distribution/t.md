@@ -10,3 +10,6 @@ $n$个自由度的$t$分布$t(n)$，分布密度$\frac{\Gamma(\frac {n+1}2)}{\Ga
   - $n\ge 25$时，极为接近
   - 和[[normal]]一样“钟形”，偶函数。用[[枢轴量方法]]时用法挺像
   - [[查表]]时多一个“自由度”参数要查
+- 应用中，常常和[[3-hypothesis]]联系，$t$绝对值大说明“显著”
+  - 例如[[multi-ary]]，零假设$H_0: \beta_j = 0$，则单个系数$\beta_j$的$t$统计量为$\frac{\hat{\beta_j}}{SE(\hat{\beta_j})}$
+  - 其中$SE(\hat{\beta_j})$为$\hat{\beta_j}$的标准误[[standard-error#multi-ary SE]]

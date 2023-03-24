@@ -3,5 +3,5 @@
   - stationary 且有限二阶矩则显然是covariance stationary
 - 注意[[markov-process]]即使转移矩阵为常数，分布也不一定不变 (stationary)，因为转移矩阵对应条件概率
 - 和[[stationary-independent-increment]]显然不同！
-  - 你方差[[character/var]]都越来越大了，还说啥自行车？？
+  - 你方差[[variance]]都越来越大了，还说啥自行车？？
   - 除非是constant process（[[general-principles/special-case]]）

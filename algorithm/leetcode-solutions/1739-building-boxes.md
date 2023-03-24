@@ -2,7 +2,7 @@
 - 注意[[loop]]中break的运用。找到了就break
 - 注意[[algorithm/trivial-mistakes]]：[[float]]运算留出一些余地，误差
   - 这里不光是浮点误差，还有$n(n-1)(n-2)$和$n^3$的差别问题
-- 注意[[character/var]]的类型转换
+- 注意[[oi-wiki-basic/var]]的类型转换
   - `1.`表示浮点
   - `(int)`强制转换为`int`
   - `long long`防止溢出[[overflow]]。出现数值提升

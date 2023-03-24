@@ -9,6 +9,6 @@
   - 卡方分布[[chi-square]]相加还是卡方分布。“自由度”直接相加
 - 若$S^2$满足$\Gamma$分布，则$S$的期望可以用高斯积分求
 # 数字特征
-- 期望就多乘一个$x$，[[character/var]]就考虑$x^2$期望和$x$期望，因此都能由[[calculus/gamma]]求
+- 期望就多乘一个$x$，[[variance]]就考虑$x^2$期望和$x$期望，因此都能由[[calculus/gamma]]求
 - 举例：指数分布$f(x) = \beta e^{-\beta x}$，均值$1/\beta$，方差$1/\beta^2$
   - 因为容易计算$x$期望$\Gamma(2)/\beta = 1/\beta$，$x^2$期望$\Gamma(3)/\beta^2=2/\beta^2$

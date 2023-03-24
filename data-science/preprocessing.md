@@ -12,7 +12,7 @@
     - 可用[[quantile]]
   - 参考[[12-robust]]，[[1x1conv]]
 - 有时想要求数据数字特征满足某些性质
-  - 有时要使得[[character/var]], [[expectation]]为指定值，有时要使得最大最小值为指定值
+  - 有时要使得[[variance]], [[expectation]]为指定值，有时要使得最大最小值为指定值
   - 通过某种变换，变成正态/均匀分布，参考[[data-science/normalization]]
     - [[data-science/normalization#排序]]
     - [[data-science/normalization#z-score]]

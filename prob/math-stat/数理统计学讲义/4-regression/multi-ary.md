@@ -33,7 +33,7 @@
 - 进一步利用之前“弱”假设
   - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$（需要[[transform]]）
     - 这里记忆：$(X^TX)^{-1}X^TY$中“两负一正”，所以结果最后“负”
-  - $EY^TY=||X\beta||^2+\sum var Y_i$（即利用[[expectation]]可加性和[[character/var]]）
+  - $EY^TY=||X\beta||^2+\sum var Y_i$（即利用[[expectation]]可加性和[[variance]]）
     - $=||X\beta||^2+\sum vare_i$（“平移”）
     - 当然也可以直接$Y=X\beta +e$代入证
   - $EYY^T=X\beta\beta^TX^T+Cov(Y,Y)=X\beta\beta^TX^T+\sigma^2I$

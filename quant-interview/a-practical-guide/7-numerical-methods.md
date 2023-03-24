@@ -10,7 +10,7 @@
   - 法二：生成分位数
     - $U=F(X)$，$F$是正态cdf，$X$是正态随机变量，则$U$显然是均匀随机变量
     - $X=F^{-1}(U)$即得
-- 减少[[character/var]]，加快收敛速度
+- 减少[[variance]]，加快收敛速度
   - 原始naive法：方差和次数成反比
   - antithetic：让$Y(\epsilon_1, \cdots, \epsilon_N)$和$Y(-\epsilon_1, \cdots, -\epsilon_N)$总是一起出现，因为两者实际中往往负相关
   - moment matching: 均值和方差去match指定值

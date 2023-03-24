@@ -2,11 +2,11 @@
 - 记号：$\hat a,\hat b$是估计值，$\hat y = \hat a+\hat bx$是所求经验公式
   - 恒成立的：$\bar y = \hat a + \hat b \bar x$
   - 记$l_{xy}=\sum (x_i-\bar x)(y_i-\bar y)$，同理$l_{xx},l_{yy}$
-    - 参考[[character/var]]中的处理手法，还可以写成$l_{xy}=\sum x_iy_i -n\bar x\bar y$
-    - 其实这里的$l_{xx}$就是[[character/var]]的$n$倍嘛，$l_{xy}$对应[[cov]]
+    - 参考[[variance]]中的处理手法，还可以写成$l_{xy}=\sum x_iy_i -n\bar x\bar y$
+    - 其实这里的$l_{xx}$就是[[variance]]的$n$倍嘛，$l_{xy}$对应[[cov]]
 - 公式：$\hat b = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum (x_i-\bar x)^2}=l_{xy}/l_{xx}$
   - 当然有$\hat y_i - \bar y = \hat b(x_i-\bar x)$，这对后面拆平方和有作用
-  - 其和[[character/var]]，[[cov]]当然有联系：就是协方差除以方差
+  - 其和[[variance]]，[[cov]]当然有联系：就是协方差除以方差
 ## 三个平方和
 - 参考 https://www.zhihu.com/question/403268066/answer/1301103401
 - 三个平方和

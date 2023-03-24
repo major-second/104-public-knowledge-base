@@ -6,7 +6,7 @@
 - 性质
   - [[expectation]]，$E[X_t]=m_0+m_1 t$
     - 证明过程需要柯西函数方程，下同
-  - [[character/var]]类似，$Var(X_t)=\sigma_0^2+\sigma_1^2t$
+  - [[variance]]类似，$Var(X_t)=\sigma_0^2+\sigma_1^2t$
 - 例子
   - [[poisson-process]]
   - [[5-brownian-motion-and-stochastic-calculus]]

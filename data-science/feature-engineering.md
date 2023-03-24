@@ -19,7 +19,7 @@
   - 举例：想表达“稳定地往一个方向移动”，可以考虑$\frac {位移}{路程} = \frac{x_{T+t}-x_T}{\sum_{i=T}^{T+t-1}|x_{i+1}-x_i|}$，这是比值，无量纲，且思想非常自然
 # 常见手段
 - 基础手段
-  - 数字特征（[[cov]], [[character/var]], [[expectation]]等）
+  - 数字特征（[[cov]], [[variance]], [[expectation]]等）
     - 如：滚动[[rolling]]求均值、方差等
   - 对于[[time-series]]，就有速度、加速度、位移、路程等
 - 有时跟[[preprocessing]]不分家
@@ -30,7 +30,7 @@
 - 凡是涉及除以的，都要注意非负性。常见可用的
   - 本身物理意义非负，如路程、交易量
   - 平方、绝对值或其和等
-  - [[character/var]]方差，标准差等
+  - [[variance]]方差，标准差等
   - 注意如果可能出现0，还要考虑加一个常数
     - [[nan]]中有提到
     - [[batchnorm]]的官方[文档](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)中也有提到
