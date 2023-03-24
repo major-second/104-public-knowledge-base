@@ -28,6 +28,7 @@ https://blog.csdn.net/Asukaaaa/article/details/83341075
   - ![](network-config-0.png)
   - Network & Internet settings - Change adapter* - 单击图标 - 上方出现菜单栏选Change settings* - 选择条目IPv4 - Properties
   - ![](network-config-1.png)
+    - 这个可能要`ipconfig /flushdns` [[refresh]]缓存生效
   - 当然也可以手动改hosts
 - ios
   - 可能只有wifi状态才能改dns
