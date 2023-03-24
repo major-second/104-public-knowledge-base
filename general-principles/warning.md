@@ -14,3 +14,6 @@
 - 如果你明确了自己在干什么，也可以无视警告
   - 例如[[tensorboard]]旧版本，vscode报警可以不管
   - 例如[[software-management/source]]提到的`is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:20`
+  - [[settings-json]]
+    - `"terminal.integrated.enableMultiLinePasteWarning": false,`
+    - `"git.confirmSync": false,`

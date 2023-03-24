@@ -14,6 +14,32 @@
     - 这样按一组快捷键即可启动vmware并选指定的`.vmx`虚拟机
   - 当然，“非平凡”内容其实也就是一条powershell命令，所以复杂度最高的还是参考[[ise]]
 - 所以典型应用：一个快捷方式打开某网页/打开某程序/用指定程序打开某文件/执行某复合操作/执行某[[powershell/basics]]脚本等
+  - 创建快捷方式指定快捷键：todo
+    ```powershell
+    $WshShell = New-Object -ComObject WScript.Shell
+    $desktopPath = [Environment]::GetFolderPath("Desktop")
+
+    $links = @(
+        @{
+            TargetPath = "https://chat.openai.com/chat"
+            Hotkey = "Ctrl+Alt+1"
+        },
+        @{
+            TargetPath = (Join-Path (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent) "my.ps1")
+            Hotkey = "Ctrl+Alt+I"
+        }
+    )
+    foreach ($link in $links) {
+        $linkPath = "$desktopPath\dummy_$($link.Hotkey).lnk"
+        if (Test-Path $linkPath) {
+            Remove-Item $linkPath
+        }
+        $shortcut = $WshShell.CreateShortcut($linkPath)
+        $shortcut.TargetPath = $link.TargetPath
+        $shortcut.Hotkey = $link.Hotkey
+        $shortcut.Save()
+    }
+    ```
 ## 快捷键
 - “属性”处，设置快捷键
   - 只能设置`Ctrl+Alt+某某`，例如`Ctrl+Alt+1`, `Ctrl+Alt+A`等

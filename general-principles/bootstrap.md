@@ -21,6 +21,7 @@
     - 这里临时解决方案是“一次性的”，做了配置设置之后就可以永久
     - 但是你不做临时解决，那连系统都进不去
   - 比如先用`23`端口`telnet`去装`openssh-server`，之后再用`ssh`
+  - [[windows-proxy-client#geph]]
 - 趣事
   - https://www.zhihu.com/question/544520233/answer/2585745615
   - ![](teams-crash.png)
