@@ -38,4 +38,4 @@ $$\left(\begin{matrix}1&0.8&0.8\\0.8&1&\rho\\0.8&\rho&1\end{matrix}\right)$$
   - $X=UDV^T$
   - 正交对角化是特殊情况
   - 于是$\Sigma  = UDU^T = UD^{1/2}(UD^{1/2})^T$，这也可以用来解这题
-    - 回忆[[transform]]中的[[cov]]即可
+    - 回忆[[linear-transform]]中的[[cov]]即可

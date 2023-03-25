@@ -31,7 +31,7 @@
       - 则$X(X'X)^{-1}X' - Y(Y'Y)^{-1}Y'$非负定
       - 原因是$X\beta:=X(X'X)^{-1}X'y$是$y$在$Im(X)$上的正交投影，$Y\alpha:=Y(Y'Y)^{-1}Y'y$是$y$在$Im(Y)\subset Im(X)$上的正交投影
 - 进一步利用之前“弱”假设
-  - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$（需要[[transform]]）
+  - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$（需要[[linear-transform]]）
     - 这里记忆：$(X^TX)^{-1}X^TY$中“两负一正”，所以结果最后“负”
   - $EY^TY=||X\beta||^2+\sum var Y_i$（即利用[[expectation]]可加性和[[variance]]）
     - $=||X\beta||^2+\sum vare_i$（“平移”）

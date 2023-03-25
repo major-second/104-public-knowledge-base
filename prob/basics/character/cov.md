@@ -7,7 +7,7 @@
   - [[orthogonal]]中有提到，作为了导出正交表概念的直观依据
 - 常用技巧：展开配对相减求cov表达式
   - 如[[orthogonal]]中求$cov(\hat \alpha_i,\hat\beta_j)$
-  - 如[[transform]]中求协方差矩阵变换后表达式
+  - 如[[linear-transform]]中求协方差矩阵变换后表达式
   - 一般地，$Cov(\sum a_iX_i, \sum b_jY_j)=\sum\sum a_ib_jCov(X_i,Y_j)$，当然可以特殊化到[[variance]]
 # corr
 - 相关系数：协方差除以两个随机变量的标准差

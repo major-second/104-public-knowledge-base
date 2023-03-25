@@ -7,7 +7,7 @@
   - 至于单个[[normal]]随机变量平方怎么记？$f_新dt=f_旧 dx $则$f_新=(2\sqrt t)^{-1} \frac{1}{\sqrt {2\pi}}e^{-t/2}$
     - 注意$t=x^2,(dt/dx)^{-1}=(2\sqrt t)^{-1}$
     - 额还有一个正负号导致的2但反正能看出[[distribution/gamma]]参数是$1/2,1/2$了已经
-    - 参考：[[character/transform]]
+    - 参考：[[linear-transform]]
 - 由[[normal]]随机变量的线性组合的性质，得：
   - $\bar X\sim N(\mu,\sigma^2/n)$
   - $(n-1)S^2=\sum (X_i-\bar X)^2=\sum X_i^2-n\bar X^2$（参考[[variance]]）

@@ -1,4 +1,4 @@
-- 前置：[[models/basics]], [[transform]]
+- 前置：[[models/basics]], [[linear-transform]]
 # 原理
 - 是为了保证进激活函数前满足有一定分布，所以一般在线性层（卷积层）后，激活函数前
 - batchnorm的原理导致网络在训练时和测试时行为有根本不同，需要`.train()`和`.eval()`

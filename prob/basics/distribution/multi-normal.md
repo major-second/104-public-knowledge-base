@@ -10,7 +10,7 @@
   - $\Sigma=\sigma^2I$
   - 这样看出分母$(2\pi)^{k/2}\sigma^k$
 - 再继续退化就$\sigma=1$
-- 变换参考[[character/transform]]
+- 变换参考[[linear-transform]]
   - $\Sigma^{1/2} Z+\mu\sim N(\mu,\Sigma)$
   - $\Sigma^{-1/2}(X-\mu)=^d Z(标准正态)$
     - 由此，$V=(X-\mu)^T\Sigma^{-1}(X-\mu)$相当于标准正态中平方和，满足$\chi^2_k$
@@ -20,7 +20,7 @@
 - $\mu = (\mu_a, \mu_b)$
 - $\Sigma = \left(\begin{matrix}\Sigma_{aa}&\Sigma_{ab}\\\Sigma_{ba}&\Sigma_{bb}\end{matrix}\right)$
 - $X_b|X_a=x_a \sim N(\mu_b + \Sigma_{ba}\Sigma_{aa}^{-1} (x_a-\mu_a), \Sigma _{bb}-\Sigma _{ba}\Sigma _{aa}^{-1}\Sigma_{ab})$
-- 证明：思路是利用[[character/transform]]得到[[1-prob/independent]]随机变量
+- 证明：思路是利用[[linear-transform]]得到[[1-prob/independent]]随机变量
   - $diag(\Sigma_{aa}^{-1/2},I)(X-\mu)\sim N(0,\left(\begin{matrix}I&C\\C^T&\Sigma_{bb}\end{matrix}\right))$
   - $\left(\begin{matrix}I&0\\-C^T&I\end{matrix}\right)diag(\Sigma_{aa}^{-1/2},I)(X-\mu)\sim N(0,diag(I, \Sigma_{bb}-C^TC))=N(0,diag(I,\Sigma_{bb}-\Sigma_{ba}\Sigma_{aa}^{-1}\Sigma_{ab}))$ 
   - $\left(\begin{matrix}\Sigma_{aa}^{-1/2}&0\\-\Sigma_{ba}\Sigma_{aa}^{-1}&I\end{matrix}\right)(X-\mu)$后面分量，等于$X_b-\mu_b-\Sigma_{ba}\Sigma_{aa}^{-1}(X_a-\mu_a)\sim N(0, \Sigma_{bb}-\Sigma_{ba}\Sigma_{aa}^{-1}\Sigma_{ab})$

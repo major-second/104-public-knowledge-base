@@ -1,6 +1,7 @@
 # 数学中
 - 好处
   - 利用特例进行记忆
+    - [[linear-transform#多元随机变量multivariate]]
   - 检验
   - 给出启发
     - 常见套路：先特例找规律然后说答案然后证明
@@ -33,10 +34,14 @@
     - [[multi-normal]]
     - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
     - [[dp]]
-  - 标量特殊情况拓展到向量
-    - [[normal]], [[multi-normal]]
-    - [[2-linear-optimization]]中的
-    - [[2-4-duality-in-linear]]中的
+  - 升维
+    - 标量拓展到向量
+      - [[normal]], [[multi-normal]]
+      - [[2-linear-optimization]]中的
+      - [[2-4-duality-in-linear]]中的
+      - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
+    - 向量拓展到矩阵
+      - [[linear-transform#多元随机变量multivariate]]
   - [[markov-chain]]课后2.b
     > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
     - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
