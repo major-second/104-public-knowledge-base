@@ -34,6 +34,9 @@
     - [[normal]], [[multi-normal]]
     - [[2-linear-optimization]]中的
     - [[2-4-duality-in-linear]]中的
+  - [[markov-chain]]课后2.b
+    > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
+    - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
 # 算法题
 [[algorithm/special-case]]
 # 实际程序

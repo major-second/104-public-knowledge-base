@@ -16,8 +16,8 @@
   - 从一点出发，到某个absorbing state的概率？
     - 该点如果是absorbing state则显然
     - 根据定义该点显然不是recurrent，一定是transient
-    - 对transient的，最终能到达某absorbing state概率：利用自相似，[[general-principles/recursion]]列方程
-    - 其实参考[[jane-street-introduction]]，这里用了全概率公式分类讨论的思想！
+    - 对transient的，最终能到达某absorbing state概率：利用自相似[[self-similarity]]，[[general-principles/recursion]]列方程
+    - 这里用了全概率公式[[bayes-theorem#total-probability]]分类讨论的思想！
   - 到达吸收态的次数期望：也是类似地列方程
 # 问题
 - gambler's ruin problem

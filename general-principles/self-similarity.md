@@ -4,6 +4,7 @@
 - [[化归]]
 - [[dp]]
 - 从[[general-principles/special-case]]到[[forall]]的思想常用
+- [[5-markov-chain]]
 # 例题
 1. [[jane-street-introduction]]色子题
 2. [[poisson-process]]到2爆仓题
