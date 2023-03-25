@@ -6,7 +6,7 @@
 - 离散：固定一个component求和就是marginal
 - 连续：固定一个component求积分
 # independence
-- 参考[[1-1-prob/independent]]
+- 参考[[1-prob/independent]]
 - 定义：任意事件$A,B$有$P(X\in A)P(Y\in B)=P(X \in A,Y\in B)$
 - 实际判定对于连续的可以看[[random-variable-functions#pdf-continuous]]是否可相乘
 # conditional

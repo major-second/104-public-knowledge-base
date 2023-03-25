@@ -21,7 +21,7 @@
 # Probabilities
 - 基本公理、计算规则等，参考[[probability-definition]]
 # Independence
-- [[1-1-prob/independent]]
+- [[1-prob/independent]]
 - 可使用乘法
 - 放回/不放回有区别
 # Random Variables
