@@ -1,0 +1,26 @@
+- [[random-variable-functions#discrete]]：求和
+- [[random-variable-functions#pdf-continuous]]：积分
+  - 显然的观察$E = \int_{-\infty}^{+\infty} xf(x)dx=\int xdF=\int F^{-1}(x)dx$
+  - 参考
+    - [[stieltjes]]
+    - [[character/quantile]]
+- 不一定存在，比如[[cauchy]]
+- 变换后的期望
+  - $Y=r(X), EY=\int yf(y)dy=\int r(x)f(x)dx=\int r(x)dF(x)$
+  - [[stieltjes]]
+# 可加
+- [[linearity]]
+- 无论是否独立
+- 不像方差[[variance]]需要无关才能加
+- 例
+  - $n$点完全图$n(n-1)/2$条边，任取$m$条成图
+    - 形成多少个四边形回路
+    - 有$C_{n(n-1)/2}^4$种四元组，每个四元组有3种成四边形方式，每个四边形以一定概率实际形成
+  - $EtrAX=trAEX$（$A$不随机，$X$随机）
+  - $E||Y||^2=\sum EY_i^2=||EY||^2+\sum var Y_i$
+    - 或$Y=\mu +Z,E||Y||^2=E\mu^2+E||Z||^2+0$也可证
+    - 这里不需要$Y$各维无关
+# [[integral-by-parts]]
+- [[random-variable-functions#cdf]]
+  - 可以由[[random-variable-functions#pdf-continuous]]记忆
+  - $E = \int_{-\infty}^{+\infty} xf(x)dx=\int xdF\approx x_0F(x_0)+x_0F(-x_0)-\int Fdx=\int_0^{x_0}(F(x_0)-F(x))dx+\int_{-x_0}^0(F(-x_0)-F(x))dx$ #todo

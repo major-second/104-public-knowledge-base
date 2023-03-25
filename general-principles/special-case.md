@@ -24,7 +24,12 @@
   - 判定退化情况（化简）
     - 刘维尔定理
     - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
-- 坏处：有些东西对于特例不work，你不检查就不行
+- 坏处
+  - 有些东西对于特例不work，你不检查就不严谨
+  - 例子
+    - [[markov-chain]]课后2.b
+      > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
+      - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
 - 例子
   - [[6-serial/basics]]的$\tau\equiv 0$情况
   - [[2-2-calculus-ode]]
@@ -34,6 +39,8 @@
     - [[multi-normal]]
     - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
     - [[dp]]
+  - 离散和连续
+    - [[random-variable-functions#discrete]]和[[random-variable-functions#pdf-continuous]]关系
   - 升维
     - 标量拓展到向量
       - [[normal]], [[multi-normal]]
@@ -42,9 +49,6 @@
       - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
     - 向量拓展到矩阵
       - [[linear-transform#多元随机变量multivariate]]
-  - [[markov-chain]]课后2.b
-    > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
-    - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
 # 算法题
 [[algorithm/special-case]]
 # 实际程序

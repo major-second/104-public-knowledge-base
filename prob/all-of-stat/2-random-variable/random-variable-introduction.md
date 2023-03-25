@@ -3,3 +3,5 @@
   - $X(\omega)$
 - $X=x, X\in A$等都可成为事件
   - 注意$X$表示随机变量，$x$表示一个具体的值
+- 反过来事件也可决定01随机变量，这就联系了[[probability-definition]]
+  - [[expectation]]是特殊[[probability-definition]]
