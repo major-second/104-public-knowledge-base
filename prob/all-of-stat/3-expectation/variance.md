@@ -1,0 +1,10 @@
+- 前置[[expectation]]
+- 是特殊的[[moment]]
+- $\sum X_i \bar X = \sum \bar X\bar X$，故$\sum (X_i-\bar X)^2=\sum X_i^2-2\sum \bar X^2+\sum \bar X^2=\sum X_i^2-\sum \bar X^2=\sum X_i^2-n\bar X^2$
+- $VarX=EX^2-(EX)^2$
+- [[1-prob/independent]]独立（其实只需无关）随机变量方差可加
+  - 由此，[[iid]]时$\bar X$的方差是$X_i$的$1/n$
+- [[iid]]时[[方差的无偏估计]]
+- 标准差：方差开方
+- 标准误：参考[[standard-error]]，区别于标准差
+- [[linear-transform]]的方差参见[[linear-transform]]

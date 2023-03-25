@@ -8,10 +8,17 @@
 - 变换后的期望
   - $Y=r(X), EY=\int yf(y)dy=\int r(x)f(x)dx=\int r(x)dF(x)$
   - [[stieltjes]]
-# 可加
-- [[linearity]]
-- 无论是否独立
-- 不像方差[[variance]]需要无关才能加
+# [[linearity]]
+- 参考[[可加性]]中的分布，可帮助算分布的期望
+  - [[distribution/gamma]]
+  - [[normal]]
+  - [[chi-square]]
+  - [[bernoulli-binom]]
+  - [[nega-binom]]
+- 无论是否[[1-prob/independent]]
+  - 不像方差[[variance]]相加需要无关
+    - [[1-prob/independent]]是无关的充分条件
+  - 不像相乘的期望需要[[1-prob/independent]]
 - 例
   - $n$点完全图$n(n-1)/2$条边，任取$m$条成图
     - 形成多少个四边形回路
