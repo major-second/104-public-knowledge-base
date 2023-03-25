@@ -8,7 +8,10 @@
   - 有时增也是修改
   - “查”可能需要[[search-info/general]]技巧！
 # 举例
-- [[wsl]]：`wsl --install -d <distro>`，`wsl --unregister Ubuntu-20.04`，`wsl --list`等
+- [[wsl]]
+  - `wsl --install -d <distro>`
+  - `wsl --unregister Ubuntu-20.04`
+  - `wsl --list`等
 - [[6-env]]：`export, unset, echo`
 - [[conda/commands]]环境：
   - `conda create -n <env name> python=x.x`或`conda env create -f <path_to_yaml_file>`

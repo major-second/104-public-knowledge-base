@@ -24,3 +24,4 @@
       - Position: 1 share
       - Midprice: 23.5 (average of bid1 and ask1)
       - PnL: 2.5 (difference between total delta cash and midprice * remaining position)
+- [示例code](pnl.py)

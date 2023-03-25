@@ -77,8 +77,7 @@
 
 - 这个思想：没有说你坑了club，只有club坑你。只有坑的club会找你，所以是“逆向选择”
 # Problem Solving Tools
-- 自相似
-  - 参考[[general-principles/recursion]]
+- 自相似[[self-similarity]]
   - 例子：“第一次丢出硬币正面需要多少次投掷”
 - Edge cases
   - 一种：用[[general-principles/special-case]]检查正确性

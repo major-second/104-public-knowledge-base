@@ -1,17 +1,21 @@
 - 日常分享，集成于国内生态，不太重要的
   - [[baidu-net-disk]]
   - [[aliyun]]
-  - 小心被监控删除，时效性不好！
+  - 小心被监控删除，持久性不好！
   - 可以参考[[file-transfer]]中一些“加密”方式
 - 翻墙用的，靠谱
   - [[onedrive]]
   - [[mega]]
+  - blomp cloud storage
 - 和操作系统生态集成得好但空间小
   - [[onedrive]]
   - [[icloud]]
+- [[git-basics/basics]]
+  - [[github]]
+  - [[other-hubs]]例如[[keybase]]
 - 常用metric
   - 空间
   - 速度（上传下载）
   - 是否支持分享、图片外链等
-  - 是否拖拽上传
+  - 是否拖拽上传文件、文件夹
   - 是否有网页[[toolbox/web]]版
