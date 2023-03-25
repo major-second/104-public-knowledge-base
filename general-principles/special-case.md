@@ -1,6 +1,7 @@
 # 数学中
 - 好处
-  - 利用特例进行记忆、检验
+  - 利用特例进行记忆
+  - 检验
   - 给出启发
     - 常见套路：先特例找规律然后说答案然后证明
       - 这时常见[[induction]]
@@ -27,9 +28,11 @@
   - [[6-serial/basics]]的$\tau\equiv 0$情况
   - [[2-2-calculus-ode]]
   - [[5-brownian-motion-and-stochastic-calculus]]
-  - [[distribution/gamma]]退化成指数分布、[[chi-square]]分布等
   - [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
-  - 多个不同层次退化，更加看出本质：[[multi-normal]]
+  - 多个不同层次退化，更加看出本质
+    - [[multi-normal]]
+    - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
+    - [[dp]]
   - 标量特殊情况拓展到向量
     - [[normal]], [[multi-normal]]
     - [[2-linear-optimization]]中的

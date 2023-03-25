@@ -13,3 +13,4 @@
   - 横竖很多线，针同时和横竖相交，根据平移[[symmetry]]对称性，两事件独立
 - 应用
     - 随机过程中，例如[[1-elements]]中，[[stationary-independent-increment]]
+    - [[multivariate]]不独立的，[[character/transform]]设法独立，例如[[multi-normal#条件分布multivariate#conditional]]

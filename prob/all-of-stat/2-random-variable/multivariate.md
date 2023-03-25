@@ -11,6 +11,7 @@
 - 实际判定对于连续的可以看[[random-variable-functions#pdf-continuous]]是否可相乘
 # conditional
 - 连续的严格来说没那么简单，但我们这里就用[[random-variable-functions#pdf-continuous]]凑合一下吧
+- 实例[[multi-normal#条件分布multivariate#conditional]]
 # distributions
 - random vector
 - i.i.d.

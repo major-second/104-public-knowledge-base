@@ -1,11 +1,13 @@
-- 卡方分布是特殊的[[distribution/gamma]]
-  - 即$\Gamma(\frac n2,\frac 12)$
-- 标准[[normal]]分布平方和：$n$个自由度的卡方分布
-  - 来源：可以通过[[distribution/gamma]]可加性记忆（这样同时还记住了期望是$n$）
+- 卡方分布是特殊的[[distribution/gamma]] [[general-principles/special-case]]
+  - $\chi^2_n$即$\Gamma(\frac n2,\frac 12)$
+  - $\chi^2_2$即$\Gamma(1,\frac 12)$即$exp(1/2)$
+- 标准[[normal]]分布平方和：$n$个自由度的卡方分布$\chi^2_n$
+  - 来源：可以通过[[distribution/gamma]]可加性记忆
+    - 这样同时还记住了期望是$n$
   - 至于单个[[normal]]随机变量平方怎么记？$f_新dt=f_旧 dx $则$f_新=(2\sqrt t)^{-1} \frac{1}{\sqrt {2\pi}}e^{-t/2}$
     - 注意$t=x^2,(dt/dx)^{-1}=(2\sqrt t)^{-1}$
-    - 额还有一个正负号导致的2但反正能看出参数是$1/2,1/2$了已经
-    - 参考：[[分布的变换]]
+    - 额还有一个正负号导致的2但反正能看出[[distribution/gamma]]参数是$1/2,1/2$了已经
+    - 参考：[[character/transform]]
 - 由[[normal]]随机变量的线性组合的性质，得：
   - $\bar X\sim N(\mu,\sigma^2/n)$
   - $(n-1)S^2=\sum (X_i-\bar X)^2=\sum X_i^2-n\bar X^2$（参考[[variance]]）
