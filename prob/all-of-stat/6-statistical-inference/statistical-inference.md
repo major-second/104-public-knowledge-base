@@ -1,0 +1,11 @@
+- 别名learning
+- 给定数据，推断分布（或分布某些性质如[[expectation]]）
+- 常见
+  - [[2-estimation]]
+    - 点估计point estimation
+      - 参数$\theta$确定但未知，估计值$\hat \theta$是随机变量
+      - 这个$\hat \theta$分布：sampling distribution, 它的标准差称为标准误[[standard-error]]
+      - 往往不能精确计算，需要估计例如[[standard-error#multi-ary SE]]
+      - [[MSE]]，[[standard-error]]，bias形成[[MSE#bias-variance tradeoff]]
+    - 区间估计[[confindence-interval]]
+    - 

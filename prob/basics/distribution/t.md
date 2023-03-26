@@ -13,3 +13,4 @@ $n$个自由度的$t$分布$t(n)$，分布密度$\frac{\Gamma(\frac {n+1}2)}{\Ga
 - 应用中，常常和[[3-hypothesis]]联系，$t$绝对值大说明“显著”
   - 例如[[multi-ary]]，零假设$H_0: \beta_j = 0$，则单个系数$\beta_j$的$t$统计量为$\frac{\hat{\beta_j}}{SE(\hat{\beta_j})}$
   - 其中$SE(\hat{\beta_j})$为$\hat{\beta_j}$的标准误[[standard-error#multi-ary SE]]
+  - 联系[[asymptotically-normal]]，以及刚刚说的“趋向于标准正态”

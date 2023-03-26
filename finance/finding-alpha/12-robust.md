@@ -5,7 +5,8 @@
 - ordering
   - 提升invariance（对不同universe）
   - ordinal scale
-  - 是一种非参数（参考[[parameter]]模型），在参数模型的[[3-hypothesis]]不通过时常用！
+  - 是一种非参数模型（参考[[parametric]]）
+    - 在参数模型的[[3-hypothesis]]不通过时常用！
   - 需要更少假设。容易处理极端值
   - ranking
     - [[time-series]]中常用的`.rank()`就是。一般`pct=True`，搞到$[0,1]$

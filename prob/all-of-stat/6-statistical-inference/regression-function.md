@@ -1,0 +1,4 @@
+- $r(X)=E(Y|X=x)$称为regression function
+  - 估计$r$称为regression
+  - $Y=r(X)+\epsilon$
+  - 不需要知道$r$，能预测新的：prediction, classification

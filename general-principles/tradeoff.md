@@ -7,7 +7,7 @@
     - 如正则化项乘以$\lambda$，典型的如[[11-feature-selection]]的岭回归
   - 指定越大越好的[[utility-function]]后（或越小越好的成本cost后），如果可加，往往出现一个增函数，一个减函数，相加得到一个极小值点，使得成本最小
     - 如[[1-monitor-fragmentation]]
-    - 如[[偏差-方差分解]]
+    - 如[[MSE#bias-variance tradeoff]]
 - 如果不定义，则往往可以考察指定一维（甲）不变时，另一维（乙）的表现，如[[UMP]]
   - 还可以指定多个甲取值，看各个情况下最佳的乙，这就是[[pareto-efficient]]帕累托前沿
   - 例：[[2-eval]]的P-R曲线
