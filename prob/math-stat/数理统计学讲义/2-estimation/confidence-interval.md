@@ -16,3 +16,10 @@
   - 注意$\alpha$常见是比较小的数比如0.05，则$z_{\alpha/2}$是负数
   - $\mathbb P(z_{\frac \alpha 2}< Z< -z_{\frac \alpha 2})=1-\alpha, Z\sim N(0,1)$
   - $C_n = (\hat \theta_n + z_{\alpha/2}\hat s,\hat \theta_n-z_{\alpha /2}\hat s)$
+# interpretation
+- 置信水平$\gamma$不是说$\theta$以$\gamma$概率咋地（$\theta$是确定数，无概率一说）
+- 而是说任何$\theta$，$x_i$都以$\gamma$概率使得两个由$x_i$决定的统计量能包括$\theta$
+- 且：决定的过程可能比较复杂
+  - 比如$X_1,X_2$ i.i.d.，$\mathbb P(X_1=1)=\mathbb P(X_1=-1)=\frac 12$，$Y_1=X_1+\theta,Y_2=X_2+\theta$
+  - 则置信区间可能是：$\{Y_1-1\}, if Y_1=Y_2; \{(Y_1+Y_2)/2\}, if Y_1\ne Y_1$
+  - 置信水平是$\frac 34$

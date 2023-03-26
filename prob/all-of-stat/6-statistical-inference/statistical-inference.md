@@ -7,5 +7,4 @@
       - 这个$\hat \theta$分布：sampling distribution, 它的标准差称为标准误[[standard-error]]
       - 往往不能精确计算，需要估计例如[[standard-error#multi-ary SE]]
       - [[MSE]]，[[standard-error]]，bias形成[[MSE#bias-variance tradeoff]]
-    - 区间估计[[confindence-interval]]
-    - 
+    - 区间估计[[confidence-interval]]

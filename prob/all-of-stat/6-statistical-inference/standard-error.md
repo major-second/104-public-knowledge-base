@@ -5,7 +5,9 @@
 # [[multi-ary]] SE
 - [参考](https://www.statology.org/standard-error-regression/)
   - 相比[[unary#$R^2$]]，更加“绝对”而非相对
-  - 可以和[[confindence-interval]]联系。说“我确信95\%概率能……”
+  - 可以和[[confidence-interval]]联系，导出[[confidence-interval]]
+    - 参考[[asymptotically-normal]]
+  - 说“我确信95\%概率能……”
 - [参考](https://zhuanlan.zhihu.com/p/358287489)
   - > 为了得到标准误，我们不可能做很多次科学实验。实际上我们可以做一次样本实验，然后采用估算公式
   - 可能用到[[方差的无偏估计]]，比如下文
