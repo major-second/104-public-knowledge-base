@@ -1,2 +1,8 @@
-https://www.bananaspace.org/wiki/Beta_%E5%87%BD%E6%95%B0#:~:text=%E5%AE%9A%E4%B9%89%201.1.%20B%20%E5%87%BD%E6%95%B0%20%E5%AE%9A%E4%B9%89%E4%B8%BA%20B%28a%2Cb%29%20%3D%20%E2%88%AB,01%20ta%E2%88%921%281%20%E2%88%92%20t%29b%E2%88%921dt%2C%20%E5%85%B6%E4%B8%AD%20a%2Cb%20%E2%88%88%20C.
-联系[[calculus/gamma]]
+- https://www.bananaspace.org/wiki/Beta_%E5%87%BD%E6%95%B0
+- $B(a,b)=\int_0^1 t^{a-1}(1-t)^{b-1}dt$
+- 联系[[calculus/gamma]]
+  - $B(a,b)=\Gamma(a)\Gamma(b)/\Gamma(a+b)$
+  - $B(1,1)=1$
+- 通过[[integral-by-parts]]理解
+  - $B(2,3)=\int_0^1t^1(1-t)^2dt=\int_0^1t^{0}(1-t)^3/3dt=1!2!/4!=\Gamma(2)\Gamma(3)/\Gamma(5)$
+- 应用[[order-statistics]]

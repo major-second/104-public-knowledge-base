@@ -5,3 +5,12 @@
 - 参考
   - [[t]]
 - $\frac{\hat \theta_n-\theta}{se}\to N(0,1)$（对$n\to \infty$）
+# normal-based interval
+- 参考[[confidence-interval]]
+- 用到了[[character/quantile]]记号
+- 注意$\alpha$常见是比较小的数比如$0.05$，则$z_{\alpha/2}$是负数
+- $\mathbb P(z_{\frac \alpha 2}< Z< -z_{\frac \alpha 2})=1-\alpha, Z\sim N(0,1)$
+- $C_n = (\hat \theta_n + z_{\alpha/2}\hat s,\hat \theta_n-z_{\alpha /2}\hat s)$
+- 常见：$\alpha = 0.05, z_{\alpha/2}=-1.96\approx -2$
+  - $C_n = (\hat \theta_n - 2\hat s, \hat \theta_n + 2\hat s) $
+- 此处$\hat s$是估计的[[standard-error]]

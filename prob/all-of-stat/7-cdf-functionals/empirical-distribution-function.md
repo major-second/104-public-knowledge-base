@@ -1,0 +1,14 @@
+- 前置
+  - [[parametric]]，我们这节非参
+  - [[random-variable-functions#cdf]]
+  - [[bernoulli-binom]]
+- $\hat F_n(x)=1/n\cdot \sum_{i=1}^nI(X_i\le x)$
+  - 频率估计概率
+  - 对于一个点$x$，是点估计[[2-estimation]]
+    - 均值方差[[MSE]]等参考[[bernoulli-binom]]计算
+    - 当然也有强[[相合性]]
+- 考察不是一个点的性质而是“总体”的某种“一致性”
+  - G-C定理
+  - 参考[[分布函数估计]]
+- 考察[[confidence-interval]]
+  - D-K-W不等式

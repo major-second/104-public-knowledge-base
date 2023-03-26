@@ -11,15 +11,17 @@
 - 优良性传递
   - [[相合性]]往往可传递，[[unbiased]]不行
   - 置信区间可以（比如已知$\sigma^2$置信区间，求$\sigma$置信区间）
-- 如果有[[asymptotically-normal]]，则
-  - 用到了[[character/quantile]]记号
-  - 注意$\alpha$常见是比较小的数比如0.05，则$z_{\alpha/2}$是负数
-  - $\mathbb P(z_{\frac \alpha 2}< Z< -z_{\frac \alpha 2})=1-\alpha, Z\sim N(0,1)$
-  - $C_n = (\hat \theta_n + z_{\alpha/2}\hat s,\hat \theta_n-z_{\alpha /2}\hat s)$
+- 通法
+  - [[asymptotically-normal#normal-based interval]]
 # interpretation
-- 置信水平$\gamma$不是说$\theta$以$\gamma$概率咋地（$\theta$是确定数，无概率一说）
+- 置信水平$\gamma$不是说$\theta$以$\gamma$概率咋地
+  - $\theta$是确定数，无概率一说
 - 而是说任何$\theta$，$x_i$都以$\gamma$概率使得两个由$x_i$决定的统计量能包括$\theta$
 - 且：决定的过程可能比较复杂
   - 比如$X_1,X_2$ i.i.d.，$\mathbb P(X_1=1)=\mathbb P(X_1=-1)=\frac 12$，$Y_1=X_1+\theta,Y_2=X_2+\theta$
   - 则置信区间可能是：$\{Y_1-1\}, if Y_1=Y_2; \{(Y_1+Y_2)/2\}, if Y_1\ne Y_1$
   - 置信水平是$\frac 34$
+- 理解方式
+  - 一种不自然的：对于某个参数$\theta$重复很多次实验落在区间中概率$\gamma$以上。实际中哪有那么多重复试验
+  - 自然的理解方式（来自《统计大全》）：今天估计$\theta_1$，明天估计$\theta_2$，……，用一套确定的方法，则……
+- 和[[bayes-inference]]显然不同。那里可以说参数有概率

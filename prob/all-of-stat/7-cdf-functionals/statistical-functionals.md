@@ -1,0 +1,16 @@
+- $T(F)$, function of $F$
+  - [[expectation]] $\mu =\int xdF(x)$
+  - [[variance]] $\sigma^2=\int (x-\mu)^2 dF$
+  - [[character/quantile]] $z_{\alpha}=F^{-1}(\alpha)$
+# plug-in estimator
+- 直接代入[[empirical-distribution-function]] $\hat F_n$
+- [[linearity]]: $T(F)=\int r(x)dF(x)$，$T(aF+bG)=aT(F)+bT(G)$
+- 此时$T(\hat F_n)$根据[[empirical-distribution-function]]的定义得到$\frac 1n\sum r(X_i)$
+- 例子
+  - [[expectation]]: $\hat \mu =\bar X$
+  - [[variance]]: 代入计算得$\hat \sigma^2 = \frac 1n \sum(X_i-\bar X)^2$
+    - 这和[[方差的无偏估计]]不同
+    - 也就有了[[standard-error]]，可以在[[asymptotically-normal]]情况计算[[asymptotically-normal]]
+  - [[moment]]中skewness
+  - [[cov#corr]] -> sample correlation
+  - [[character/quantile]] -> sample quantile

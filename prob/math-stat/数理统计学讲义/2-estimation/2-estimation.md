@@ -2,7 +2,10 @@
 - 待估计：$\theta$的函数（回忆[[数理统计学讲义/1-introduction]]中说是“泛函”。目前当然是特殊情况）
   - 比如正态分布中的$P(X>c)$可以用参数$\mu, \sigma$表示
 - 方法
-  - 通法[[mle]]，[[moment]]
+  - 通法
+    - [[mle]]
+    - [[moment]]
+    - [[statistical-functionals#plug-in estimator]]
   - [[unbiased]]中一些非通法
     - 必记特例：[[方差的无偏估计]]
 - 性质：[[相合性]]，[[unbiased]]，[[优良标准]]，[[asymptotically-normal]]
@@ -14,4 +17,4 @@
     - 满足“落在里面”概率大于等于置信度$\gamma$
     - 必读[[confidence-interval#interpretation]]
   - [[枢轴量方法]]，[[统计量方法]]
-- [[分布函数估计]]，[[密度函数估计]]
+- [[empirical-distribution-function]]，[[密度函数估计]]

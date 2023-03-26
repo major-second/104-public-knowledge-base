@@ -1,3 +1,8 @@
 - $\Gamma$函数定义$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$，$\Gamma(1)=\Gamma(2)=1$，$\Gamma(3)=2\Gamma(2)$
-- $\Gamma(1.5)$是最小的$0.5\Gamma(0.5)=\sqrt \pi /2$
+- $\Gamma(0.5)=\sqrt \pi,\Gamma(1)=\Gamma(2)=1,\Gamma(3)=2,\Gamma(n)=(n-1)!$
+- 联系
+  - [[factorial]]
+  - [[B-function]]
+- $\Gamma(1.5)$是最小的
+  - $\Gamma(1.5)=0.5\Gamma(0.5)=\sqrt \pi /2$
 - $\Gamma (a+1/2)/\Gamma(a)$在$a$趋于无穷时的行为用[[sterling]]公式考察（在[[t]]有应用）
