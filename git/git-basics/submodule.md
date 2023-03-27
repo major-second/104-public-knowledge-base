@@ -33,7 +33,7 @@ https://www.jianshu.com/p/ed0cb6c75e25
 - 删除
  - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`
  - `git rm --cached <子模块目录>`，参考[[git-rm]]
- - 当然也需要[[commit]], [[push]]等更新
+ - 当然也需要[[commit]], [[push-pull]]等更新
 ## 问题
 - 有子模块经常会带来杂七杂八麻烦
   - 比如[[settings-json]]中提到的`authentication`相关

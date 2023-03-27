@@ -2,7 +2,7 @@
 - [参考](https://code.visualstudio.com/docs/editor/settings-sync)
   - `Ctrl + Shift + P`搜索settings sync即可
   - 先turn on，之后其它机器上即可sync now
-  - 可以自动同步[[vscode-keyboard-shortcuts]], [[extensions/general]], [[settings/snippets]]等等
+  - 可以自动同步[[vscode-keyboard-shortcuts]], [[vscode-extensions]], [[settings/snippets]]等等
     - 局限性
-      - 对于远程[[ssh/ssh]]连接的，可能还是需要手动安装[[extensions/general]]
+      - 对于远程[[ssh/ssh]]连接的，可能还是需要手动安装[[vscode-extensions]]
       - 对于公司电脑等可能没有settings sync功能，可能还是需要手动拷贝各种json

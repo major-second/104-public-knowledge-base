@@ -1,4 +1,4 @@
-- 前置[[init/installation]]
+- 前置[[git-installation]]
 - [官方文档](https://git-scm.com/docs/git-config)
 - 参考[[settings-and-configurations]]
 - 常用命令

@@ -1,5 +1,5 @@
 - 前置
-  - [[init/installation]]
+  - [[git-installation]]
   - [[hubs/troubleshooting]]
 - [参考文档](https://git-scm.com/docs/git-clone)
 - 其它技巧

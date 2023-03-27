@@ -2,6 +2,7 @@
 - 比如vscode中有[[markdown-preview-enhanced]]
   - foam知识库本身就需要这个插件
   - 参考[[write-notes-in-foam]]
+    - 可以`[[write-notes-in-foam]]`，链接到[[write-notes-in-foam]]这样的md文件
 - 比如一些网站的markdown编辑器中自带enhanced（CSDN等），使得可以写公式、高亮
   - 但不是所有的都有
 - 比如[[jupyter-basics]]中不能使用`[toc]`等feature

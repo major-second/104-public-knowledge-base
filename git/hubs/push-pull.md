@@ -1,5 +1,6 @@
 - 前置[[hubs/troubleshooting]]
-# 四种push的方法
+# push
+## 四种方法
 1. On Github (website), directly click `add a file` and add a file, it will automatically generate command to pull, commit, and push.
 2. Download `Github Desktop` and clone a image of your repo to your own host, your changes on your own host will be regarded as `changes`, and you can commit and push them to Github by clicking some buttons.
    1. 这类是属于github提供的客户端，倒不是git本身的东西

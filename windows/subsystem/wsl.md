@@ -17,7 +17,7 @@
   - 如果没有`--user, --password`，则出现新窗口，显示`Enter new UNIX username:`等，参考[[7-permissions]]
 - 此时可以尝试运行各种命令了
   - 比如`sudo apt update`
-    - 然后装软件，例如linux的[[git/init/installation]]（`sudo apt install git`）
+    - 然后装软件，例如linux的[[git-installation]]（`sudo apt install git`）
     - [[v2raya]]这种则需要[[wsl-systemd]]
   - 比如使用windows的代理
     - [参考](https://zhuanlan.zhihu.com/p/153124468)

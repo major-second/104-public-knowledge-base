@@ -71,7 +71,7 @@
     - 想要装该高版本`tensorflow`就必须`python3 -m pip`而不是`pip3`
     - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
   - vscode相关
-    - [[remote-ssh]]时，远程[[extensions/general]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
+    - [[remote-ssh]]时，远程[[vscode-extensions]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
     - [[launch]] python时，如果`python`版本过低，就用不了版本高的vscode [[extensions/python]]
     - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
       - 原因：其实是trivial的。一些路径修改导致不匹配不兼容

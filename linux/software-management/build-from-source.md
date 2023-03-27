@@ -1,7 +1,7 @@
 即下载源码（用户级源码一般可以放到`/usr/local/src`），通过下载的源码进行构建
 参考[[make]]，[[cmake]]，[[catkin-make]]等等
 - 比如[[libfranka]]的build，本质上是
-  - `git clone`（参考[[init/installation]]）
+  - `git clone`（参考[[git-installation]]）
   - [[checkout]]指定版本
   - `git submodule update`来更新[[submodule]]
   - 用[[cmake]]从源码build

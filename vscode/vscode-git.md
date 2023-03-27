@@ -1,0 +1,4 @@
+- 前置[[git-installation]]
+  - 其实vscode的git功能更像是“无需安装的插件”，和[[extensions/general]]
+- `Ctrl Shift G`调出界面
+  - 里面有基本功能比如看已编辑文件，[[commit]]，[[push-pull]]

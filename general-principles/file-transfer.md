@@ -13,7 +13,7 @@
       - 但博客园这种，公司肯定挂一漏万233
   - 可用命令行的
     - 例如[[github]]的[[clone]]
-    - 乃至有[[curl-wget]]，不需要[[init/installation]]就能用的`raw.githubusercontent.com`
+    - 乃至有[[curl-wget]]，不需要[[git-installation]]就能用的`raw.githubusercontent.com`
       - 也参考[[github]]
 - 日常
   - [[wechat-tips]]，例如文件传输助手

@@ -1,4 +1,4 @@
-- 前置[[init/installation]]
+- 前置[[git-installation]]
 - [参考文档](https://git-scm.com/docs/git-init)
 - 初始化一个git库的几种方法
   1. 在`github`或者[[other-hubs]]在线新建库，然后`git clone`到本地

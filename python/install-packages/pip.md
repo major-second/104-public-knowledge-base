@@ -44,7 +44,7 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
 - 一般来说`pip`效率不如`conda`，但有些`pip`有的包`conda`没有，有些包`pip`才有较新版本
   - 所以`pip`简单来说就是质量差，东西多
 - 当然，`pip install`得到的包有时需要一些更底层的依赖。也就是python包只是一些上层接口而已
-  - 其实这个有点像vscode插件和python解释器的关系，参见[[extensions/general]]
+  - 其实这个有点像vscode插件和python解释器的关系，参见[[vscode-extensions]]
   - 比如[[mujoco-py]]中的mujoco
   - 比如[[mpi4py]]中需要
     - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
