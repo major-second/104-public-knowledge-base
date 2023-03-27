@@ -13,7 +13,7 @@
     - 直接右键新建快捷方式，目标设置为`"<文件名>.exe" "<文件名>.vmx"`（注意引号）
     - 这样按一组快捷键即可启动vmware并选指定的`.vmx`虚拟机
   - 当然，“非平凡”内容其实也就是一条powershell命令，所以复杂度最高的还是参考[[ise]]
-- 所以典型应用：一个快捷方式打开某网页/打开某程序/用指定程序打开某文件/执行某复合操作/执行某[[powershell/basics]]脚本等
+- 所以典型应用：一个快捷方式打开某网页/打开某程序/用指定程序打开某文件/执行某复合操作/执行某[[powershell-basics]]脚本等
   - 创建快捷方式指定快捷键：todo
     ```powershell
     $WshShell = New-Object -ComObject WScript.Shell
@@ -25,7 +25,7 @@
             Hotkey = "Ctrl+Alt+1"
         },
         @{
-            TargetPath = (Join-Path (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent) "my.ps1")
+            TargetPath = ("$PSScriptRoot/my.ps1")
             Hotkey = "Ctrl+Alt+I"
         }
     )

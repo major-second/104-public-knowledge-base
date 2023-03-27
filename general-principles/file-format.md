@@ -75,7 +75,7 @@ print("python") #'
   - 改为`.sh`，语法高亮如下![](file-format-example/shell.png)，用`bash`运行结果`shell`
 ### 其它直接修改扩展名
 - [[docx-zip]]：直接`.docx`和`.zip`互改
-- [[file-transfer]]中为了保密，不被检测等起见可能直接改扩展名（使得不可打开），传输后再改回。例如微信传`.apk`，一些邮件传[[powershell/basics]]`.ps1`，都不可直接传
+- [[file-transfer]]中为了保密，不被检测等起见可能直接改扩展名（使得不可打开），传输后再改回。例如微信传`.apk`，一些邮件传[[powershell-basics]]`.ps1`，都不可直接传
 ### 软件打开另存为
 - 用软件打开A格式文件，再用软件的另存为功能得到B格式文件
 - 当然也可能“宽进严出”，Postel's Law一下使得文件是同样格式但是更“好”

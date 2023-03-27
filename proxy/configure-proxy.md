@@ -15,7 +15,7 @@
     - 注意这个和终端代理[[6-env]]不同。浏览器看的一般是这个而不是终端
   - Win10
     - 开始菜单搜索proxy
-    - 或者会[[powershell/basics]]可以
+    - 或者会[[powershell-basics]]可以
       - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyEnable" -Value 1`
       - `Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "ProxyServer" -Value "192.168.1.1:9912"`
       - 虽然这个在[[refresh]]之前可能直接用powershell没法直接验证，但是你可以`curl -Proxy <ProxyServer> <URL>`变相验证

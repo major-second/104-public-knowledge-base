@@ -19,7 +19,7 @@
     - `zip -r tmp.zip dir -x "dir/subdir/*"`
       - 可以尝试`echo ./*; echo "./*"`看区别
   - 相比标准的bash, [[zsh]]是[[non-standard]]可能造成额外麻烦，比如`[]`需要转义
-- [[powershell/basics]]中也有不少
+- [[powershell-basics]]中也有不少
   - 而且结合linux，比如[[wsl-command]]中的例子更麻烦
     - `wsl -e bash -c 'echo -e \\033[35m $(uname -a) \\033[0m'`：共转义2次
     - 上面例子中`wsl -e bash -c`并不本质。你直接linux终端中`echo -e \\033[35m $(uname -a) \\033[0m`也是一样的结果

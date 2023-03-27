@@ -1,8 +1,8 @@
 - 前置
-  - 管理员[[administrator]] powershell
+  - 管理员[[administrator-powershell]] powershell
   - [[7-permissions]]
 - [参考](https://learn.microsoft.com/zh-cn/windows/wsl/install)
-- 管理员[[administrator]] powershell
+- 管理员[[administrator-powershell]] powershell
   - linux系统的[[CRUD]]
   - 不同时期可能不同。时至2022.12
   - 增：`wsl --install`
@@ -32,5 +32,5 @@
     - 比如`Ubuntu`等字样
   - vscode，例如[[wsl-develop]]
   - [[wsl-command]]
-    - 在[[powershell/basics]]中运行
+    - 在[[powershell-basics]]中运行
     - 可以高度自动化，[[silent]]

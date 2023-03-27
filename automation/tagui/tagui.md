@@ -14,9 +14,9 @@ https://tagui.readthedocs.io/en/latest/setup.html
 文档很清楚了
 一些关键
 - 其安装依赖于chrome, java等（其懒人installer会装依赖）
-- 对于windows，请安装到无需管理员的文件夹，否则可能需要[[administrator]]权限的powershell才能用`tagui`命令，烦
+- 对于windows，请安装到无需管理员的文件夹，否则可能需要[[administrator-powershell]]权限的powershell才能用`tagui`命令，烦
 - 安装后vscode当然需要[[refresh]]（关掉窗口再重启）才能用命令
-- `cmd`命令提示符和[[powershell/basics]]都能用
+- `cmd`命令提示符和[[powershell-basics]]都能用
 ## 使用要点
 - 用`using ocr`使用ocr（但成功率不高且不支持中文）
 - `hover`可以当作[[wait-for]]使用

@@ -45,7 +45,7 @@
 # 代理[[configure-proxy]]
 - 时至2022.12，必须关闭WSA Settings - Advanced Networking，否则很容易造成神秘问题
 - 使用主机代理的方法
-  - 主机[[powershell/basics]]
+  - 主机[[powershell-basics]]
   - 需要
     - [[wsl]]
     - WSA Settings打开开发者模式开启`58526`

@@ -4,10 +4,12 @@
   - 做了设置没，设置对不对
   - 软件读取的是哪里的设置
   - 读取设置的格式、解析方法是否正确
-- 设置具有优先级
+- 设置具有优先级（一般小的优先于大的）
   - 比如工作空间优先于用户级优先于系统级优先于默认
-  - 例如[[vscode/settings]]中，打开的文件夹中`.vscode/settings.json`优先于用户级`settings.json`，又优先于默认设置
+  - 例如[[settings-json]]中，打开的文件夹中`.vscode/settings.json`优先于用户级`settings.json`，又优先于默认设置
   - 例如[[config]]中，`git config --local`优先于`git config --global`
+  - 例如[[administrator-powershell]]中`-Scope`小的优先于`-Scope`大的
+  - 例如[[6-env]]，环境变量最小作用域进程，且同样是小的优先于大的
 - 设置方法是否相同：
   - 比如，对于“代理”这一件事，有些地方用的是环境变量`$http_proxy`，有些地方用的是`gnome`系统设置，有些地方用的是自己的设置
 - 格式、解析等：

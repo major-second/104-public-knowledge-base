@@ -1,6 +1,6 @@
 - 前置
-  - [[powershell/basics]]
-  - [[administrator]] powershell中`Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`使得允许运行自己写的`.ps1`脚本
+  - [[powershell-basics]]
+  - [[administrator-powershell]] powershell中`Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`使得允许运行自己写的`.ps1`脚本
   - （可选）刚刚只是允许右键手动运行。如果想要双击运行，则需
     - 尝试改`.ps1`的打开方式（参考[[file-format]]）为`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`
     - 如果仍不行，那就设置一个快捷[[windows-link]]，其中的属性指向模仿`powershell.exe "& '<路径>.ps1'"`即可。双击链接即可执行脚本

@@ -4,7 +4,7 @@
   - 不过时至2022还没linux的命令行好用
   - 不客气地说，win命令行，就是垃圾
 # 运行
-- 没有权限？参考[[administrator]]，以及其中的`ExecutionPolicy`相关设置命令
+- 没有权限？参考[[administrator-powershell]]，以及其中的`ExecutionPolicy`相关设置命令
 - 不能双击运行？从而[[windows-link]]也不方便一个快捷键运行？[[file-format]]打开方式选择`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`这种东西
 # 基础命令
 - `help <命令>`，`gal <命令>`看命令的基本信息，例如`gal rm`
@@ -24,6 +24,7 @@
     - `gal curl`其实是`Invoke-WebRequest`
       - 参数列表和linux正宗的[[curl-wget]]中的`curl`不一样
       - 比如`-Proxy`临时[[configure-proxy]]而不是`-x`
+      - 比如有些电脑上加上`-UseBasicParsing`才能用
     - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
 - `select`字段
   - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种
@@ -51,6 +52,8 @@ echo
 1
 2
 ```
+- `$PSScriptRoot`直接取出脚本所在路径，方便设置相对路径等
+  - 注意运行时的路径不一定等于`$PSScriptRoot`
 - 双引号内部，转义[[escape]]也是 <code>&#96;</code>
   - 例如 <code>echo "\`""</code>这样输出`"`
   - 例如 <code>echo "\`\$"</code>这样输出`$`

@@ -1,5 +1,5 @@
 前置
-- [[powershell/basics]]
+- [[powershell-basics]]
 - 了解[[windows/env-var]]
 
 内容
