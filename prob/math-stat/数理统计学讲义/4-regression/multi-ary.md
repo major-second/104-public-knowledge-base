@@ -7,7 +7,7 @@
 - 弱：$Ee_i=0,Ee_ie_j=0,Vare_i=\sigma^2$
 - 强：i.i.d.正态
   - 或用[[multi-normal]]表示为$e\sim N(0,\sigma^2 I)$
-
+  - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解。相应可以解有关[[standard-error]], [[t#t stats]]的题
 - 记号
   - $||a||$模长
   - $Proj_M a $为$a$在$M$投影向量，$a = Proj_M a +某个垂直于M的向量$
@@ -15,15 +15,19 @@
     - 这简直就是反客为主，本来$Wx$，现在$X\beta$. 数据变成了矩阵，参数变成了向量
     - 注意$X$一般“瘦”，很多行，但列数恒定，是用来回归$Y$的“依据”（“特征”）个数。这也可以记忆各种表达式中只有$X^TX$没有$XX^T$
 
-定义和计算
+# 定义和计算
 - 要求$||X_{m\times n}\beta_{n\times 1} - Y_{m\times 1}||^2$最小（即最好地拟合现有数据点）
 - $X\beta$所有可能取值就是矩阵$X$的列空间，记为$\mu(X)$，则$Proj_{\mu(X)} Y:=X\hat \beta$，一定存在唯一
 - 充要条件：根据投影定义，$(Y-X\hat \beta)\perp \mu(X)$，于是（根据$\mu(X)$定义）考察$X$每一列，得$ X^TX\hat \beta=X^TY$
   - 这里又用到了[[forall]]思想
 - 当然，前述逻辑是用投影存在证明了方程解存在。你也可以根据[[rank]]说明方程解存在
 - 特殊情况：$X^TX$正定（可逆），即$X$“瘦”且列满秩，那$\hat\beta$表达式可直接得：$(X^TX)^{-1}X^TY$
-
-性质
+# 奇异和高度相关情况
+- 奇异：解不唯一
+- 接近奇异（高度线性相关）：解容易波动
+  - 求逆不稳定，$\epsilon$小变$\hat\beta$大变
+- 解决：[[pca]], [[cholesky]], [[11-feature-selection]] lasso
+# 性质
 - $Q(\hat \beta)(即“二乘”)=||Y-X\hat \beta||^2=||Y||^2-||X\hat\beta||^2=Y^TY-\hat\beta^TX^TX\hat\beta=Y^TY-Y^TX\beta=(Y,Y-X\beta)$，几何意义也很明显
   - 满秩则进一步$=Y^T(I-X(X^TX)^{-1}X^T)Y:=Y^TAY$
     - 应用：证明：

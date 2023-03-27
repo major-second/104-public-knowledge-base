@@ -9,8 +9,10 @@
   - 强行特判[[general-principles/special-case]]过滤
   - winsorization缩尾
     - 用[[numpy/basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
-    - 可用[[quantile]]
+    - 可用[[character/quantile]]
   - 参考[[12-robust]]，[[1x1conv]]
+- 很多0，个别正负值，可能变成categorical
+  - “名义变量”
 - 有时想要求数据数字特征满足某些性质
   - 有时要使得[[variance]], [[expectation]]为指定值，有时要使得最大最小值为指定值
   - 通过某种变换，变成正态/均匀分布，参考[[data-science/normalization]]

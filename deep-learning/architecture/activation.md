@@ -1,0 +1,7 @@
+- 不加：[[linearity]]复合还是[[linearity]]
+- 选择：[参考](https://zhuanlan.zhihu.com/p/30510596)
+- 看什么标准
+  - 导数数值
+    - 避免神经元死亡，[[gradient-issue]]等
+  - 输出值域
+    - 如sigmoid用于[[lstm]]的“乘0到1之间数”

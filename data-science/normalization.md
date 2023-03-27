@@ -12,3 +12,6 @@
 - 也常常是在一段[[rolling]]中看
 - 可以把本来不具可比性的数据变成可以比较的“相对值”
   - [参考链接](https://zh.wikipedia.org/wiki/Z-score)
+# 其它
+- https://www.zhihu.com/question/341394312/answer/2721418193
+- 比如对数、倒数、幂次都可考虑
