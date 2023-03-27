@@ -5,7 +5,7 @@
 尝试删除大文件后push，仍然报错
 原因：`git push`不止push当前版本，而是把所有[[commit]]但未被push的版本一并push上去！[[hidden-files]]和[[push-pull]]都有提到
 - [解决方案](http://t.zoukankan.com/rixiang-p-12048849.html)
-    - 看本地历史[[commit]]（比如用[[git-history]]）
+    - 看本地历史[[commit]]（比如用[[view-git-log]]）
     - [[reset]]取消大文件版本及之后的版本记录
       - 推荐用soft reset，保持目前的working copy
     - 删除大文件

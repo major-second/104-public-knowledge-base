@@ -12,4 +12,6 @@
     - 法二方便选择你要看[[submodule]]中的哪个
 # git graph
 - 跟[git history](#git-history) 总体类似
-- 2023.3时，比它好用bug少（比如[git history](#git-history)有时不reload不更新）
+- 2023.3时，比它好用bug少
+  - 比如[git history](#git-history)有时不reload不更新
+  - 比如git graph可以看到没有[[commit]]的本地change等等

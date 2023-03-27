@@ -3,7 +3,7 @@
 - windows
   - [下载](https://git-scm.com/downloads)
   - 和vscode及其插件的关系：参考[[extensions/general]]
-    - [[git-history]]以及`Ctrl+Shift+G`等vscode功能都需要先安装git才能用
+    - [[view-git-log]]以及`Ctrl+Shift+G`等vscode功能都需要先安装git才能用
     - 相当于vscode只是一个表层接口
   - 安装时选项很多，但是一般全默认即可
     - 此时环境变量[[windows/env-var]]可能没正常设置，那么手动设置才能让powershell使用`git`命令

@@ -5,9 +5,9 @@ type: tools
 
 ## #git 版本回退
 ![](git-history.png) #版本管理
-使用[[git-history]]查看如图，分为soft，hard，mixed三种reset
+使用[[view-git-log#git history]]查看如图，分为soft，hard，mixed三种reset
 mixed为默认参数，上图中未出现
-注：[[git-history]]只是一种可视化工具，你直接上github.com看或者用github desktop看也行
+注：[[view-git-log#git history]]只是一种可视化工具，你直接上github.com看或者用github desktop看也行
 
 - soft告诉Git重置HEAD (见[[git-basics/basics]]) 到另外一个commit，这意味着index, working copy都不会变化，所有的在original HEAD和你重置到的那个commit之间的所有变更集都放在stage(index)区域中
 ![](soft-reset.png)

@@ -19,10 +19,10 @@
   - [[remote-ssh]]
 - 可能是`Ctrl + Shift + P`的command palette中出现新命令
   - [[git-project-manager]]
-  - [[git-history]]
+  - [[view-git-log#git history]]
   - 这时可以结合[[vscode-keyboard-shortcuts]]设置快捷键
 - 可能是右键菜单出现选项
-  - [[git-history]]
+  - [[view-git-log#git history]]
 - 管理插件：`Ctrl+Shift+X`出来的界面，可以卸载或禁用等
 - 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]
   - 卸载也是一起卸载
@@ -36,7 +36,7 @@
     - **插件本身当然不能集成python解释器**！（你想想插件一共才多大呢）
   - [[git-installation]]安装后
     - `Ctrl+Shift+G`功能
-    - [[git-history]]插件才能用
+    - [[view-git-log#git history]]插件才能用
   - latex，cpp等也都是这样
   - 特殊情况
     - 对于linux系统，shell的“解释器”（“内核”）当然内置在系统中了

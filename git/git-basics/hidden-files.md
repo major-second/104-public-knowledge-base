@@ -3,10 +3,10 @@
   - 当然Git不是傻傻存全部，而是增量存的。[[push-pull]]中也有提到
 - 如何看到？
   - vscode用[[vscode-keyboard-shortcuts]]中的`Ctrl + P`可以看到这些隐藏文件，其路径有一些hash码
-  - 用[[git-history]]的compare也能看到
+  - 用[[view-git-log#git history]]的compare也能看到
 - 这些隐藏文件和你自己工作区里的文件不是一个东西
   1. 修改它们不能修改你工作区的文件
-     - 也就是，在[[git-history]]处比较时无法很方便地修改
+     - 也就是，在[[view-git-log#git history]]处比较时无法很方便地修改
      - 相比之下
        - vscode资源管理区ctrl选择两个文件compare可以方便修改
        - vscode在`Ctrl + Shift + G`区预览时也可以
