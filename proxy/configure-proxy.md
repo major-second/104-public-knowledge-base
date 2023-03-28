@@ -59,7 +59,7 @@ done
     - 上节那样会报错，且在报错信息中可以看到应该怎么改
   - [[curl-wget]]提到`curl`可以使用`ALL_PROXY`，但`wget`只能用`http_proxy`和`https_proxy`（还区分大小写）
 ### win环境变量
-参考[[windows/env-var]]，[[powershell/var]]
+参考[[windows/env-var]]，[[powershell-var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
 有些软件比如[[robocorp/basics/installation]]会用到
 ## 其它

@@ -1,4 +1,4 @@
-- 前置[[powershell/var]]
+- 前置[[powershell-var]]
 - 参考[[12-condition]]
   - 但一些地方有区别
   - 例如

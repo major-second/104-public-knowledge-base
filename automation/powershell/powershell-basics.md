@@ -52,8 +52,6 @@ echo
 1
 2
 ```
-- `$PSScriptRoot`直接取出脚本所在路径，方便设置相对路径等
-  - 注意运行时的路径不一定等于`$PSScriptRoot`
 - 双引号内部，转义[[escape]]也是 <code>&#96;</code>
   - 例如 <code>echo "\`""</code>这样输出`"`
   - 例如 <code>echo "\`\$"</code>这样输出`$`

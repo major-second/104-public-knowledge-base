@@ -1,4 +1,4 @@
-- 前置：环境变量[[powershell/var]]
+- 前置：环境变量[[powershell-var]]
 - 环境变量`$env:PATH`
   - `ssh-keygen.exe`这种直接运行某程序，就不需要先`cd`到路径，因为本来就在`$env:PATH`里
 - 否则就需要

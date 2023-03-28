@@ -15,6 +15,10 @@ C:\Windows
   - 改动成空就是删除
   - 注意这个和[[6-env]]不同，需要`$`开头
 - 应用：`$env:http_proxy = "http://127.0.0.1:<端口号>"`
-## 普通
+## 普通变量
 - `$x = 5; echo $x`
-- shell中是`x=5`哈哈，区别一下
+  - [[11-basic-scripting-partA#11.4 使用变量]]中是`x=5`
+  - 哈哈，区别一下
+- `%SystemRoot%`这种也可以取出
+- `$PSScriptRoot`直接取出脚本所在路径，方便设置相对路径等
+  - 注意运行时的路径不一定等于`$PSScriptRoot`

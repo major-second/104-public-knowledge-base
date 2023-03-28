@@ -4,17 +4,16 @@
 - [参考](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 - 管理员[[administrator-powershell]] powershell
   - linux系统的[[CRUD]]
-  - 不同时期可能不同。时至2022.12
-  - 增：`wsl --install`
-    - 直接出现列表
-    - 然后选择一个distro即可
-    - 例如`wsl --install -d Ubuntu-20.04`
-    - 再加`--quiet --user myuser --password mypassword`：[[silent]]（不过明文写出了密码，不推荐）
-  - 删：`wsl --unregister Ubuntu-20.04`即可
-  - 查：`wsl --list`
-  - 其实现在的是WSL2，一些地方和WSL不同，比如网络模式不是直接用主机网络，也就不能直接使用`127.0.0.1:<端口>`的代理
+    - 不同时期可能不同。时至2023.3
+    - 增：`wsl --install`
+      - 例如`wsl --install -d Ubuntu-20.04`指定distro
+    - 删：`wsl --unregister Ubuntu-20.04`即可
+    - 查：`wsl --list`
+  - 不同时期，是否默认直接使用主机[[proxy-basics]]可能不同。自己试试吧
   - 可能需要更新一个内核，[参考](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
-  - 如果没有`--user, --password`，则出现新窗口，显示`Enter new UNIX username:`等，参考[[7-permissions]]
+  - 过程中可能需要`Enter new UNIX username:`等，参考[[7-permissions]]
+    - 暂时没找到怎么完全[[silent]]
+    - 但是你如果在`Enter new UNIX username:`时直接`Ctrl+C`退出，之后就可以[[silent]]不需要每次[[sudo]]时输入密码
 - 此时可以尝试运行各种命令了
   - 比如`sudo apt update`
     - 然后装软件，例如linux的[[git-installation]]（`sudo apt install git`）
@@ -30,6 +29,7 @@
 - 之后入口
   - 开始菜单可能有
     - 比如`Ubuntu`等字样
+    - 可以用在[[taskbar#快捷键]]
   - vscode，例如[[wsl-develop]]
   - [[wsl-command]]
     - 在[[powershell-basics]]中运行
