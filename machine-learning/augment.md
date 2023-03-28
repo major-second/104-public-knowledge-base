@@ -1,0 +1,3 @@
+- [[transforms]]
+- [[machine-learning/bootstrap]]可以看作
+- 参考[[ensemble]]，尤其[[ensemble#bagging]]

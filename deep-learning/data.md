@@ -1,7 +1,7 @@
 - 数据准备！
   - “特征”维度：[[feature-engineering]]，[[11-feature-selection]]等
   - “数据数量”维度
-    - 不足：augmentation如[[transforms]]
+    - 不足：[[augment]]
     - 太多：subsampling（无论时间维、空间维等）、[[general-principles/debug]]时使用子集等
     - 参考[[2-eval]]，需要划分训练验证测试等
   - 实践：[[dataset]], [[dataloader]]
