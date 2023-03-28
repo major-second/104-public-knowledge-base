@@ -8,7 +8,7 @@
     ![](normal.png)
   - 正负一个标准差内是$68.x\%$
   - 注意单双侧问题
-# 背诵矩[[character/moment]]
+# 背诵矩[[moment]]
 - 中心矩
   - 可以用[[calculus/gamma]]函数得结果
   - 也可以用[[characteristic-function]]的导数对应各阶矩

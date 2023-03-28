@@ -1,4 +1,5 @@
 - 前置[[time-series]]
+- 原理[[sliding-window]]
 - [参考](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rolling.html)
 - 最主要参数
   - `window`可以填整数表示多少个数据或者offset表示时间（例如`'2s'`）

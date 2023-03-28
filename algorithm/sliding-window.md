@@ -4,6 +4,7 @@
     - 是加快计算的方式
   - 实际中可以和[[stack]]结合，形成[[deque]]，例如[[239-sliding-window-maximum]]
   - 还可以和[[associative]]结合，例如[[220-contains-duplicate-iii]]
+- 应用题：计算[[normalization#z-score]]
 - 滑窗计数子序列个数如何不重复
   - 指定第一个元素/最后一个元素位置！
     - 比如`[2, 3, 4, 5, 6]`，滑窗长度3，子序列长度2

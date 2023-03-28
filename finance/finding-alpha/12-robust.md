@@ -25,5 +25,5 @@
   - winsorizing：太极端的收收味
   - 还可能用中位数缓解极端值影响
   - 理论上，各种trim, winsorize, median都是[[order-statistics]]的线性组合
-- 不适用：本来就有skew（参考[[character/moment]]），或者有很多相同值（一堆0显然不行）
+- 不适用：本来就有skew（参考[[moment]]），或者有很多相同值（一堆0显然不行）
   - 比如[[27-intra-day]]的乘以标准差，如果标准差常常为0（例如期货市场最小价格变动单位太大），就会出事
