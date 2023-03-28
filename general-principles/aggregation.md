@@ -34,3 +34,4 @@
     - 所以有`conda`去`conda`，没有的包再`pip`
     - 况且`conda.yaml`里有`pip`子树本身就说明`conda`更“高级”。所以可以用`conda.yaml`管理`pip`安装的依赖
     - [[create-env-yaml]]中也是尽量把包写到非`pip`子树处
+- [[chatgpt]], [[cursor-so]], [[new-bing]]这些免费版可能时不时就达到容量限制，你不妨多个都开着哪个能用用哪个

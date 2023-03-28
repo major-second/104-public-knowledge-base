@@ -16,10 +16,12 @@
       - 代码重构
     - `Ctrl+L` Chat
       - 解说，闲聊，不改变当前代码
+    - 时至2023.3，有时`Ctrl+K`没反应，可以`Ctrl+L, Ctrl+K`
     - `Ctrl+退格` 取消
     - `Ctrl+Enter` 接受
   - 可以作为开发环境打开文件夹等
   - 被收入[[editor-index]]
+  - 当然免费的会达到maximum capacity，这时就需要[[aggregation]]
 # 用例
 - 选中`# 皮带 电蚊拍 洗牙器 自行车头盔`，`Ctrl + K`，翻译成英文，输出`# Belt, electric mosquito swatter, dental scaler, bicycle helmet`
 # 注意
