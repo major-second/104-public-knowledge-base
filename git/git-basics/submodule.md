@@ -30,6 +30,7 @@
   - 检查：可以单独`cd`进去`checkout`，或者`--recurse-submodule`
 ## 删改[[CRUD]]
 https://www.jianshu.com/p/ed0cb6c75e25
+https://blog.csdn.net/weixin_39645249/article/details/110464746
 - 删除
  - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`
  - `git rm --cached <子模块目录>`，参考[[git-rm]]
