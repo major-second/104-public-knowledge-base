@@ -1,7 +1,7 @@
 - 前置
   - github账号
   - linux基础（因为codespaces是个ubuntu系统），参考[[linux-and-shell/0-metadata]]
-  - [[vscode/installation]]
+  - [[vscode-installation]]
   - 不妨了解[[settings-sync]]
 - github首页上方codespaces
 - ![](codespaces.png)

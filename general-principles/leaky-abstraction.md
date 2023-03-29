@@ -2,16 +2,18 @@
   - [leaky abstraction现象](https://en.wikipedia.org/wiki/Leaky_abstraction)，维基上不少例子
   - 在许多学科都有（数学较少），计算机工程中尤其常见
   - 一大后果：不够[[general-principles/independent]]
-- 例如很多人争议说要不要用命令行，还是只用IDE就够了
-  - 根据leaky abstraction原则，命令行的基础操作要有了解
+- 参考
+  - [[shell]]
+- 例如很多人争议说要不要用命令行，还是只用编辑器、IDE例如[[vscode-installation]]
+  - 根据leaky abstraction原则，命令行的基础操作要有了解，方便调试或者内网等特殊环境使用等
   - 在此基础上，在适用的时候可以用IDE节省时间
 - 你完全不了解原始操作，肯定不行。原始操作需要有所理解，但高级包你也得会调，这样效率才最高
   - [[11-planning]]的第四节与这非常相关
   - [[contiguous]]数组提高效率
 - 比如上层整合可能有的时候不把底层的错误传递出来（或者传递不清晰），需要直击底层才能找到错误所在
-  - vscode的[[remote-ssh]]插件在远程公钥变了的时候不把错误传递出来，这时你就得知道底层命令`ssh`，才能发现错误所在
-  - vscode的[[view-git-log#git history]]插件在有untracked文件冲突时checkout没反应且不报错。这是你就得知道底层命令`git checkout`，尝试一下，才能发现错误所在
-  - vscode的git功能
+  - [[remote-ssh]]插件在远程公钥变了的时候不把错误传递出来，这时你就得知道底层命令`ssh`，才能发现错误所在
+  - [[view-git-log#git history]]插件在有untracked文件冲突时checkout没反应且不报错。这是你就得知道底层命令`git checkout`，尝试一下，才能发现错误所在
+  - [[vscode-git]]
     - 遇到[[submodule]]作为changes出现conflict时
       - ![](submodule-changes-conflict.png)
       - gui无法正常stage和commit

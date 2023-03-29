@@ -28,7 +28,7 @@
   - 卸载也是一起卸载
 # 插件和其它软件关系
 - 有时，本身完成实际功能的软件并不是vscode，也不集成在vscode插件中。vscode插件只是调用接口
-  - 这里参考系统的“内核”和“外壳”[[shell]]思想
+  - 这里参考系统的“内核”和“外壳”[[shell]]思想（其实vscode本身有时就相当于某种“外壳”）
   - [[paste-images-from-clipboard]] needs `sudo apt install xclip` in Ubuntu.
   - 直接下载安装`python`
     - 或[[conda/installation]]安装后

@@ -1,6 +1,6 @@
 - 写代码的编辑器
   - vim: [[vim-basics]]
-  - vscode: [[vscode/installation]]
+  - vscode: [[vscode-installation]]
   - pycharm: [[pycharm/installation]]
     - IDE当然可作为编辑器
   - 在线工具: [[toolbox/web]]
