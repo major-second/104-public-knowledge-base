@@ -39,8 +39,7 @@
     - [[multi-normal]]
     - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
     - [[dp]]
-  - 离散和连续
-    - [[random-variable-functions#discrete]]和[[random-variable-functions#pdf-continuous]]关系
+  - 离散和连续[[discrete-continuous]]
   - 升维
     - 标量拓展到向量
       - [[normal]], [[multi-normal]]

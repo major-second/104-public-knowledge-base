@@ -65,3 +65,4 @@ sed -i 's/(git)/(git autojump zsh-autosuggestions zsh-syntax-highlighting)/g' ~/
 - 自动补全`zsh-autosuggestions`
   - 储存已有命令，`方向键右`补全
   - 注意不是`tab`补全。两种补全含义不同
+  - `$HISTFILE`找到其使用的历史记录地址

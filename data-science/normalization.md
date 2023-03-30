@@ -55,6 +55,28 @@ print(calc(test_input, test_k))
 ```
 - 可以把本来不具可比性的数据变成可以比较的“相对值”
   - [参考链接](https://zh.wikipedia.org/wiki/Z-score)
+# 为什么
+- 为什么要把均值、方差变为0，1？
+- [参考](https://blog.csdn.net/rope_/article/details/107826059)
+  - 标题是深度学习，其实general针对机器学习
+- general原则：去除无关的共性，凸显个性，类似于[[11-feature-selection]]
+- 假设球[[symmetry]]
+  - [[11-feature-selection]]中罚项
+  - [[overfit]]中罚项
+  - [[clustering]]
+- 对[[multi-ary]] OLS影响：主要[[float]]误差，理论上pred一样
+  - 比如$200\times 0.1, 201\times 0.1$这种，相比$1\times 0.1, 0\times 0.1$这种，显然更大误差
+- 涉及梯度时，还有一个问题：单个轴scaling不[[保角]]，所以本来直接向圆心的可能变成不是
+- 有时候scale无影响
+  - [[4-decision-tree]]：原始的决策树算法的话没啥影响
+  - 朴素贝叶斯当然无影响
+- [深度学习中归一化](https://www.zhihu.com/question/293640354/answer/2078956333)
+  - 方便调学习率
+  - 凸显个性
+  - 防止梯度过小（[[activation]]两侧死亡等）
+  - 不做[[batchnorm]]等怎么办
+    - 比如多种init weight, 学习率等，相当于自己筛一个适当的东西做归一化吧
+    - 其实可能最后本质差不多，但机器负担重一点，encode人先验少
 # 其它
 - https://www.zhihu.com/question/341394312/answer/2721418193
 - 比如对数、倒数、幂次都可考虑
