@@ -22,5 +22,5 @@
   - 曾经导致资源管理器用不了
   - 当时为了卸载，只能用[[aida64]]作为[[temp-solution]]
 - 安装之后右键任务栏选项
-    - 比如[[multiple-display]]时如何显示
+    - 比如[[multi-display]]时如何显示
     - 比如是否换回Win10等

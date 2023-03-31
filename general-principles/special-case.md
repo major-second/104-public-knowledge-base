@@ -35,6 +35,7 @@
   - [[2-2-calculus-ode]]
   - [[5-brownian-motion-and-stochastic-calculus]]
   - [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
+  - [[dp#01动规]]生成路径的特殊方法
   - 多个不同层次退化，更加看出本质
     - [[multi-normal]]
     - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
