@@ -14,6 +14,9 @@
 - [[off-by-one-errors]]
 - 多解性
   - [[685-redundant-connection-ii]]多解选最后的，所以代码中“假设法”必须先假设去除 `lastCausedTwoParentsEdge`而不是先假设去除 `firstCausedTwoParentsEdge`
+# zero division
+- [[batchnorm]]
+- [[679-24-game]]
 # uniqueness
 - 带来问题
   - 凡是涉及“配对”（pairwise）的，都要特别小心两者相同的情况

@@ -1,7 +1,7 @@
 - [参考](https://zhuanlan.zhihu.com/p/40415008)
 # BGD, SGD, MBGD
 - 梯度（单点/部分/全部）*学习率=更新的量
-- 非Adaptive的，可能导致梯度爆炸等，参考[[nan]]
+- 非Adaptive的，可能导致[[gradient-issue]]问题，[[nan]]等，参考[[normalization]]
 # Momentum
 - 动量，惯性思想。稳定，摆脱局部，更快等
 - Nesterov: 在当前速度决定的终点处求导

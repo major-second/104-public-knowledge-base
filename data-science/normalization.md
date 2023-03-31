@@ -71,7 +71,7 @@ print(calc(test_input, test_k))
   - [[4-decision-tree]]：原始的决策树算法的话没啥影响
   - 朴素贝叶斯当然无影响
 - [深度学习中归一化](https://www.zhihu.com/question/293640354/answer/2078956333)
-  - 方便调学习率
+  - 方便调学习率, 参考[[deep-learning/optimization#BGD, SGD, MBGD]]，[[gradient-issue]]
   - 凸显个性
   - 防止梯度过小（[[activation]]两侧死亡等）
   - 不做[[batchnorm]]等怎么办
