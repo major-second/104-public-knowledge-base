@@ -1,5 +1,7 @@
 # 数学中
 - 好处
+  - 特例本身具有重要作用
+    - [[moment-generating-functions]]
   - 利用特例进行记忆
     - [[linear-transform#多元随机变量multivariate]]
   - 检验

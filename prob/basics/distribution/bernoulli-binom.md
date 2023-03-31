@@ -9,3 +9,4 @@
 # multi
 - $f(x)=\frac{n!}{x_1!\cdots x_k!}p_1^{x_1}\cdots p_k^{x_k}$
 - 边缘分布是[二项](#binom)
+- [[cov]]可以按定义计算（注意$X_iX_j\equiv 0, i\ne j$）

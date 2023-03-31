@@ -1,0 +1,2 @@
+- $\iint_{方形} f(x)g(y)dxdy=\int_{区间}fdx\int_{区间}gdy$
+- [[conditional-variance]]用到

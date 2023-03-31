@@ -6,7 +6,7 @@
 - 实际应用：经常[[查表]]
 # 背诵矩[[moment]]
 - 中心矩
-  - 可以用[[calculus/gamma]]函数得结果
+  - 可以用[[gamma-function]]函数得结果
   - 也可以用[[characteristic-function]]的导数对应各阶矩
   - 奇数0
   - 偶数$\sigma^2, 3\sigma^4,5*3\sigma^6\cdots$

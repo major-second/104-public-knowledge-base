@@ -1,0 +1,7 @@
+- 前置
+  - [[variance]]
+  - [[conditional-expectation]]
+- $Var(Y|X=x)=\int (y-\mu(x))^2 f(y|x)dy$
+- 定理
+  - 这里大量用到[[integral-products]]
+  - $Var(Y)=\iint(y-Ey)^2f(x,y)dxdy=(检验交叉项积分0)\iint [(y-\mu(x))^2+(\mu(x)-Ey)^2]f(y|x)dyf(x)dx=EVar(Y|X)+VarE(Y|X)$
