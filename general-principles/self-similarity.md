@@ -5,6 +5,13 @@
 - [[dp]]
 - 从[[general-principles/special-case]]到[[forall]]的思想常用
 - [[5-markov-chain]]
+# 例子
+- 强化学习[[calculate-v]]中TD方法也是类似思想
+  - 利用自相似（转变完后下一步的$V$）
+  - 相比MC方法，不需要走到出口！
+- [[q-learning]]也是
+  - 这个递归不是“完美”的，而是“略有差别”，即取了下一步的最大的$Q$
+  - 进一步地，为了防止不稳定，可以使用fixed Q-targets
 # 例题
 1. [[jane-street-introduction]]色子题
 2. [[poisson-process]]到2爆仓题
@@ -28,3 +35,5 @@
         - $待求=P(1)$
         - $P(x)=(1-x) + \int_0^x (1-P(x-c))dc=1-\int_0^x P(x-c)dc=1-\int_0^x P(c)dc$
         - $P'_x = -P, P(x)=Ae^{-x},P(0)=A=1,P(x)=e^{-x},P(1)=e^{-1}$
+4. [[5-markov-chain]]中，“达到某吸收态的概率”
+5. [[2-2-calculus-ode]]中一大堆自相似（极限题、积分题都有）

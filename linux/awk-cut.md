@@ -29,4 +29,5 @@ do
     echo $module
 done
 ```
-- 注意[[algorithm/trivial-mistakes]]的差一问题！`cut`是1开始，左右都包括，而`grep -bo`是0开始
+- 注意[[off-by-one-errors]]
+  - `cut`是1开始，左右都包括，而`grep -bo`是0开始

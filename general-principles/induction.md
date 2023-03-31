@@ -1,0 +1,6 @@
+- 参考
+  - [[self-similarity]]
+  - [[general-principles/recursion]]
+- 例题
+  - [[oi-wiki-basic/recursion#约瑟夫环]]（分情况归纳）
+  - [[factorial]]（二维归纳）

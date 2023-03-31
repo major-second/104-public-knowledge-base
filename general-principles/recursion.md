@@ -1,5 +1,8 @@
 # 理论
-todo
+- 参考
+  - [[self-similarity]]
+  - [[induction]]
+  - [[dp]]
 # 算法题中[[oi-wiki-basic/recursion]]
 - 例如[[10-regular-expression-matching]]
 # 一般程序中
@@ -53,14 +56,4 @@ def to_map(obj):
 - 递归没有出口/没考虑好情况可能导致无限递归循环，出现TLE等
 - [[bootstrap]]中如果找不到[[workaround]]就可能出现鸡生蛋蛋生鸡无限循环
   - 所以很多时候第一个代理[[proxy-basics]]客户端这种“突破口”很重要
-# 自相似
 - 但数学中往往可以“自相似”[[self-similarity]]，例如$x = 1-x$，并不会无限循环，而可以解出$x$
-  - 例如[[jane-street-introduction]]中，“第一次丢出硬币正面需要多少次投掷”
-  - 例如[[5-markov-chain]]中，“达到某吸收态的概率”
-  - 例如[[2-2-calculus-ode]]中一大堆自相似（极限题、积分题都有）
-- 强化学习[[calculate-v]]中TD方法也是类似思想
-  - 利用自相似（转变完后下一步的$V$）
-  - 相比MC方法，不需要走到出口！
-- [[q-learning]]也是
-  - 这个递归不是“完美”的，而是“略有差别”，即取了下一步的最大的$Q$
-  - 进一步地，为了防止不稳定，可以使用fixed Q-targets

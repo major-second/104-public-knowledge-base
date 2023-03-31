@@ -1,0 +1,4 @@
+- `from sklearn.model_selection import train_test_split`
+- `train_X, val_X, train_y, val_y = train_test_split(X, y, test_size=0.25, shuffle=False)`
+- 参考[[shuffle]], [[domain-gap]]等
+- `shuffle=False`就是严格用后面val

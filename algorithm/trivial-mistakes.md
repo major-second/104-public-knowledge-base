@@ -11,20 +11,7 @@
 - [[float]]误差
 - 首尾相接
   - [[1388-pizza-with-3n-slices]]，[[514-freedom-trail]]中的环形数组
-- 差一错误
-  - 注意标记一般从0开始，所以`vec[len(vec)]`一般是越界的
-  - 有些从1开始和从0开始不同，会带来麻烦，比如[[awk-cut]]提到的
-  - “差一再差一，一共差了2”
-    - 例如考察二维数组中一个点的所有相邻点
-      - 在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到
-      - 本身小于$长度-1$，其右边才有点，不出界
-    - 例如[[sklearn/transform]]中
-      - 12维选10维，则10个1，1个2，1个3
-        - 也就是这里ranking从1开始，已经差了1
-      - 所以我们`range`右侧是4，这样`i`最大是3
-        - 即python的`range`又带来了差一
-  - [[encode-decode]]中序列的编码特别关注差1问题！
-  - [[oi-wiki-basic/simulate]]中常常有trivial的差1问题，例如[[68-text-justification]]
+- [[off-by-one-errors]]
 - 多解性
   - [[685-redundant-connection-ii]]多解选最后的，所以代码中“假设法”必须先假设去除 `lastCausedTwoParentsEdge`而不是先假设去除 `firstCausedTwoParentsEdge`
 # uniqueness
