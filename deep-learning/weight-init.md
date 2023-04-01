@@ -1,0 +1,20 @@
+- [参考](https://zhuanlan.zhihu.com/p/133835463)
+- 预训练初始化
+  - 可能有一部分[[normalization]]因素
+- 固定值初始化
+  - 参考[[lstm]], [[activation]]等
+- 随机
+  - 一个考察原理的题目：初始化成全一样的值
+    - 等于宽度没了，所有前向后向都均匀平摊
+  - 所以需要随机
+  - 固定方差
+    - 太大太小都不行，如
+      - [[gradient-issue]]
+      - [[activation]]在0附近近似[[linearity]]等
+    - 如果出现宽度不同，可能需要[[layernorm]]
+  - 方差缩放：Xavier, Kaiming
+  - 正交
+    - [[正交矩阵]]
+    - [[svd]]
+    - 避免初始时的[[gradient-issue]]
+      - 误差反向传播（初始时）保持[[norm]]

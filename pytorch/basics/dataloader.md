@@ -10,7 +10,7 @@
   - `num_workers`参数：[参考](https://blog.csdn.net/qq_24407657/article/details/103992170)，一般是自己电脑CPU核心数，决定并行程度
     - [[resource-management/commands]]可以看核心数
   - `shuffle`：如果不设定`True`，就每次依次读入的顺序相同
-    - 训练时如果这样可能导致过拟合
+    - 训练时如果这样可能导致过拟合[[overfit]]
   - `pin_memory`：内存足够时空间换时间
 ## 使用
 - 可以`for i in train_dataloader`，每次取出一个`batch`

@@ -11,6 +11,11 @@
     - 用[[numpy/basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
     - 可用[[character/quantile]]
   - 参考[[12-robust]]，[[1x1conv]]
+- 作用
+  - 增大数据所谓“密度”
+  - 除了这点还有很多类似于[[normalization#为什么]]的效果，比如减少[[float]]误差, 减少[[gradient-issue]]等
+    - 很容易理解增大密度是除了[[normalization#为什么]]外额外的效果
+  - 当然也可能丢失信息
 - 很多0，个别正负值，可能变成categorical
   - “名义变量”
 - 有时想要求数据数字特征满足某些性质
