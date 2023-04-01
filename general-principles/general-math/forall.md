@@ -14,3 +14,8 @@
   - [[unbiased]]，[[优良标准#无偏-有效性]]
   - [[confidence-interval]]
 - 算法中最坏时间复杂度
+# 不等式
+- 出现一系列不等式，然后求界极值，给出最紧最好的
+  - [[markov-chebshev#许多统计量]]
+  - [[concentration]]
+  - [[hoeffding#lemma]]
