@@ -1,0 +1,8 @@
+- 前置
+  - [[markov-chebshev]]
+    - 尤其是[[markov-chebshev#许多统计量]]
+  - [[convexity]]
+- 刚刚说了$P(X\ge k)\le inf_{t>0}e^{-tk}Ee^{tX}$
+- 为了简单考虑我们用[[forall]]，[[linearity]]，[[reduction]]思想，假设
+  - $t=1,X\in [0,1]$
+  - $P(X\ge k)\le e^{-tk}Ee^{tX}$

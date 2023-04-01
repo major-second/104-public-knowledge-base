@@ -8,6 +8,8 @@
   - $\psi_X(t):=E(e^{tX})$
   - $\psi'=E(Xe^{tX}),\psi'(0)=EX$
   - $\psi^{(n)}(0)=EX^n$
+- 应用
+  - [[markov-chebshev#许多统计量]]，即切诺夫
 # 性质
 - 和[[characteristic-function]]类比
   - [[linear-transform]]时，乘以常数$e^bt$，然后本身核心部分变为$\psi_X(at)$

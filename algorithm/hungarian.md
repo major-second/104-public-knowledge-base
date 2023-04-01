@@ -1,0 +1,12 @@
+- 前置
+  - [[graph/save]]
+  - [[bfs]], [[dfs]]
+- 先到先得，能让则让
+- [参考](https://zhuanlan.zhihu.com/p/96229700)
+- 原始问题：二分图匹配（成全最多情侣）
+- 复杂度：立方（或说$O(V\cdot E)$
+  - [参考](http://data.biancheng.net/view/150.html)
+  - 每个点考察增广路径，每次考察需要[[bfs]], [[dfs]]这种$O(E)$的
+# 拓展形式
+- https://blog.csdn.net/u011837761/article/details/52058703
+  - 参考[[graph/save#矩阵]]

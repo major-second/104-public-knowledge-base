@@ -1,5 +1,5 @@
 引入：iid伯努利，样本均值和$p$的差“收敛速度”如何
-- 伯努利非负，则满足[[inequalities]]中的切诺夫的条件
+- 伯努利非负，则满足[[markov-chebshev]]中的切诺夫的条件
 - 则$P(\sum x_i \ge n(p+\epsilon)) \le inf_t \{e^{-nt(p+\epsilon)}Ee^{t\sum x_i}\}$
 - 期望可以显式写出来，最后变成了$\le inf\{ e^{-nt(p+\epsilon)}(pe^t+1-p)^n\}$
 - 求极值（方法：考察$-t(p+\epsilon) + ln(pe^t+1-p)$，平凡地求导和考察极值性质等等）

@@ -1,0 +1,3 @@
+- 参考
+  - [[linearity]]
+  - [[jensen]]
