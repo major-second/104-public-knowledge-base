@@ -11,7 +11,6 @@
 - 参考 https://www.zhihu.com/question/403268066/answer/1301103401
 - 三个平方和
   - 总平方和，$TSS$，total sum of squares
-
   - 残差平方和，$RSS$，residual sum of squares
   - 回归平方和，$ESS$，explained sum of squares
 - 对于给定数据集，总平方和$l_{yy}=\sum (y_i-\bar y)^2$为常量

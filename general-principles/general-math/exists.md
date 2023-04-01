@@ -1,7 +1,0 @@
-有时只要知道存在某个东西（数、向量）等，不需要具体知道是什么，只需要设给他一个字母，就会很有帮助
-- 例如[[广义逆]]中的$\forall \alpha, \exists \beta, (X'X)(X'X)^-X'\alpha - X'\alpha=(X'X)(X'X)^-X'X\beta - X'X\beta=0$
-  - 于是$ (X'X)(X'X)^-X' = X'$
-- 例如微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
-- 例如“设而不求”，[[4-probability]]，coin toss game有
-- 例如编程中的flag，是多少不重要，有这个记号重要
-  - [[oi-wiki-stl/string]]中的`string::npos`

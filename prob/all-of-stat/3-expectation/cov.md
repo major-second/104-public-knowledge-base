@@ -7,10 +7,6 @@
   - 第$i,j$元就是$Cov(x_i,x_j)$
   - 联系[[cholesky]], [[multi-normal]]
   - 应用：线性组合的方差，特别地$X+Y, X-Y$方差
-- 应用举例：cov为0称为无关
-  - 是[[1-prob/independent]]必要条件
-  - 可推出[[variance]]可加
-  - [[orthogonal]]中有提到，作为了导出正交表概念的直观依据
 - 常用技巧：展开配对相减求cov表达式
   - 如[[orthogonal]]中求$cov(\hat \alpha_i,\hat\beta_j)$
   - 如[[linear-transform]]中求协方差矩阵变换后表达式
@@ -21,3 +17,9 @@
   - $\rho = Cov(X,Y)/\sigma_X\sigma_Y$
   - spearman: 先[[data-science/normalization]]排序再求相关系数
 - 注意$\rho^2=R^2$不是总成立，参考[[unary#$R^2$]]
+# 无关
+- cov为0称为无关
+  - 是[[1-prob/independent]]必要条件
+  - 可推出[[variance]]可加
+  - [[orthogonal]]中有提到，作为了导出正交表概念的直观依据
+- [[autoregressive]], [[multi-ary]]都有用到作为假设

@@ -5,7 +5,8 @@
 像[[4-regression]]说的设$e$（引入误差：$Y=X\beta + e$）
 不过可能有额外条件（推出不同理论需要的额外条件不同）
 - 弱：$Ee_i=0,Ee_ie_j=0,Vare_i=\sigma^2$
-- 强：i.i.d.正态
+  - 参考[[cov#无关]]
+- 强：[[iid]], [[normal]]
   - 或用[[multi-normal]]表示为$e\sim N(0,\sigma^2 I)$
   - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解。相应可以解有关[[standard-error]], [[t#t stats]]的题
 - 记号
@@ -35,8 +36,11 @@
       - 则$X(X'X)^{-1}X' - Y(Y'Y)^{-1}Y'$非负定
       - 原因是$X\beta:=X(X'X)^{-1}X'y$是$y$在$Im(X)$上的正交投影，$Y\alpha:=Y(Y'Y)^{-1}Y'y$是$y$在$Im(Y)\subset Im(X)$上的正交投影
 - 进一步利用之前“弱”假设
-  - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$（需要[[linear-transform]]）
+  - 可得$E\hat \beta=\beta,Cov(\hat\beta,\hat\beta)=\sigma^2(X^TX)^{-1}$
+    - 回忆[[linear-transform]]
     - 这里记忆：$(X^TX)^{-1}X^TY$中“两负一正”，所以结果最后“负”
+    - 直观：数据条目越多，[[cov]]大小越小
+    - 进一步参见[[standard-error#multi-ary SE]], [[t#t stats]]
   - $EY^TY=||X\beta||^2+\sum var Y_i$（即利用[[expectation]]可加性和[[variance]]）
     - $=||X\beta||^2+\sum vare_i$（“平移”）
     - 当然也可以直接$Y=X\beta +e$代入证

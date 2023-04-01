@@ -4,7 +4,7 @@
 4. [[7-numerical-methods]]
 5. [[jensen]]
 6. 求对数，后两边调成相似形式
-7. [[calculus/limit]]，需要先证明[[exists]]
+7. [[calculus/limit]]，需要先证明[[naming#exists]]
 8. 拐点，二阶导
    1. 看清楚题，是$F$不是$f$
 9.  常见定义：$x^T Mx$恒正

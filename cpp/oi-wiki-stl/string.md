@@ -11,7 +11,7 @@
 - `find(str, pos)`
   - 默认从`pos=0`开始，从头开始找
   - 没有出现：返回`string::npos`
-    - `string::npos`是`-1`转化成`unsigned long`的值，但是具体多少不重要，有这个东西才重要，参考[[exists]]思想
+    - `string::npos`是`-1`转化成`unsigned long`的值，但是具体多少不重要，有这个东西才重要，参考[[naming#exists]]思想
 - `substr(pos, len)`切片
   - 注意若`pos`是字符串长，则切出空串
   - 若`pos`更大，报错

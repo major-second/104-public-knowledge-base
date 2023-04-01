@@ -3,7 +3,7 @@ todo
 2. [[bayes]]
 3. 
    1. 法一：神奇对称性，直接说明两种情况互斥包含所有
-   2. 法二：[[exists]]思想设而不求
+   2. 法二：[[naming#exists]]思想设而不求
 4. [[接受-拒绝采样]]思想
 5. 几何分布结论，或是[[general-principles/recursion]]
 6. [[general-principles/recursion]]

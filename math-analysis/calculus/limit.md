@@ -15,7 +15,7 @@ $\frac{1/n\cdot 2lnn-1/n}{1/n-1}=0$
     - 运用[[reduction]]思想。逐步转化成简单的case
     - 利用$limf(g)=f(limg)$
     - 去除对数：适当调整分子分母（比如$lnn/n$不能作为分子，$lnn$能作为分子），使得$ln...$裸露出来，然后洛必达
-## 先[[exists]]再列方程
+## 先[[naming#exists]]再列方程
 - 典型：出现[[self-similarity]]时
   - 例如[[6-math]]第7题
-  - 需要先证明极限[[exists]]（例如单调有界），再设，列方程
+  - 需要先证明极限[[naming#exists]]（例如单调有界），再设，列方程

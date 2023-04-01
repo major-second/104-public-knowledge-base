@@ -93,7 +93,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
 - monty hall problem
   - 应该换，因为1/3概率，换是亏的，2/3概率，换是赚的
 - amoeba population
-  - 根据这个概率存在，就可以设为$x$，即[[exists]]思想
+  - 根据这个概率存在，就可以设为$x$，即[[naming#exists]]思想
   - $x = 1/4 (1+x+x^2+x^3)$
     - 这个三次方程显然有个根1
 - candies in a jar
@@ -113,7 +113,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 也可以条件概率：先看第一张出现在哪，再看第二张剩下51个位置中有39个可行……
     - 条件概率思想主要是抓住主干：四张A，忽略其余牌！
 - gambler's ruin problem
-  - [[exists]]思想，设数，递推
+  - [[naming#exists]]思想，设数，递推
   - 注意1/2是特例
 - basketball scores
   - 可以用[[induction]]数学归纳法
