@@ -12,7 +12,7 @@
   - 帮助理清一些琐碎的[[off-by-one-errors]], [[oi-wiki-basic/simulate]]
     - 例[[oi-wiki-basic/recursion#约瑟夫环]]
   - 参考[[2-brain-teasers]]，[[jane-street-introduction]]
-- 有时特判可以合并[[化归]]到一般情况，节省代码量
+- 有时特判可以合并[[reduction]]到一般情况，节省代码量
   - 往往规模加一，但合并了特判
   - 例如[[21-merge-two-sorted-lists]]链表头
   - 例如[[2216-minimum-deletions-to-make-array-beautiful]]末尾增加一个

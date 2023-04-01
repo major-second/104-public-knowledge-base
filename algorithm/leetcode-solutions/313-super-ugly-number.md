@@ -31,4 +31,4 @@ public:
 ```
 - [[dp]]，每次从有限种可能中优中选优（选最小）
   - 具体：维护指针数组，表示这次由谁乘以2得到下个candidate，这次由谁乘以3得到……以此类推
-- 注意[[algorithm/trivial-mistakes]]查重！
+- 注意[[trivial-mistakes-in-algo]]查重！

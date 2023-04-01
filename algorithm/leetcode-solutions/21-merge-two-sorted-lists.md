@@ -65,7 +65,7 @@ public:
 };
 ```
 # 合理合并[[algorithm/special-case]]，减少代码量
-- 这里是[[化归]]思想，多增加一个链表头，统一情况
+- 这里是[[reduction]]思想，多增加一个链表头，统一情况
 ```cpp
 class Solution {
 public:

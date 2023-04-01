@@ -4,5 +4,5 @@
 - 很多时候是[[oi-wiki-basic/simulate]]题，草稿纸上画画就行
   - 例如[[25-reverse-nodes-in-k-group]]
 - 常见技巧
-  - [[化归]]，设一个头指针指向输入的那个节点，减少分类讨论
+  - [[reduction]]，设一个头指针指向输入的那个节点，减少分类讨论
 - 和树结构的结合例子：[[116-populating-next-right-pointers-in-each-node]]

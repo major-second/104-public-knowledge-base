@@ -1,6 +1,6 @@
 - https://leetcode.cn/problems/redundant-connection-ii/
 - 前置[[graph/save]], [[disjoint-set]]
-- 注意[[algorithm/trivial-mistakes]]多解性
+- 注意[[trivial-mistakes-in-algo]]多解性
 - 分类讨论！
   - 如果一个节点有两个父节点，则肯定去除其中一个
     - 注：本来你可以分类讨论

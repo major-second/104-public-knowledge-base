@@ -6,7 +6,7 @@
 步骤：
 - 左侧看`Browser`一栏，看到一些常见操作
 - 第一步上某个网页不要用[[selector-builder]]那么麻烦，直接用`Launch mew Microsoft Edge`即可
-  - 为了[[化归]]统一，可以maximize
+  - 为了[[reduction]]统一，可以maximize
 - 之后正常record操作即可
     - 可以看到能识别在网页上做操作![](web.png)
     - 可以看到对输入密码做了保护，没有明文给出（当然你也可以结合浏览器记住密码功能）

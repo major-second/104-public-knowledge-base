@@ -10,7 +10,7 @@
 - 如何尽可能少使用鼠标？
   - [[vscode-keyboard-shortcuts]], [[fn]], [[editting]], [[built-in-keyboard-shortcuts/window]], [[built-in-keyboard-shortcuts/misc]], [[chrome-keyboard-shortcuts]]等等快捷键
   - `cmd`键打开开始菜单，输入程序名来打开
-  - 这时需要[[化归]]防止输入法带来麻烦（即切换为英文输入，参考[[automation/trivial-mistakes]]中的）
+  - 这时需要[[reduction]]防止输入法带来麻烦（即切换为英文输入，参考[[automation/trivial-mistakes]]中的）
   - 例如
 ```robotframework
     Log               Setting English typing.

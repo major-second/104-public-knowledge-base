@@ -33,7 +33,7 @@
         - 论证显然。对于两个不同序列
           - 其长度不同，当然编码不同
           - 其长度相同，那么用`0-9`编码不同，`1-10`编码还是不同！
-- 去除[[algorithm/trivial-mistakes#uniqueness]]
+- 去除[[trivial-mistakes-in-algo#uniqueness]]
   - 例如[[geometry]]格点三角形题
 # 智力题
 - 总共有多少种状态，多少进制，决定有多少位

@@ -1,6 +1,6 @@
 - https://leetcode.cn/problems/freedom-trail/description/
 - 可以状态压缩的[[dp]]
-- 注意[[algorithm/trivial-mistakes]]所说首尾相接问题
+- 注意[[trivial-mistakes-in-algo]]所说首尾相接问题
 ```cpp
 class Solution {
 public:

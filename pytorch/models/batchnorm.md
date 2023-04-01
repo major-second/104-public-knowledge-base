@@ -9,7 +9,7 @@
 - 仿射变换[[affine]]
 - [超参数参考](https://blog.csdn.net/weixin_39228381/article/details/107896863)，例如
   - momentum机制
-  - 防止[[algorithm/trivial-mistakes#zero division]]的epsilon
+  - 防止[[trivial-mistakes-in-algo#zero division]]的epsilon
 # 实操
 - 有不同维数的batchnorm
   - `1d`例子：`t = Tensor([[1,2,1], [2,4,0]]); print(nn.BatchNorm1d(3)(t))`

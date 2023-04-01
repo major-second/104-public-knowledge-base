@@ -2,10 +2,10 @@
 - [[memo]]不行
   - 一开始以为只有$O(n^2)$个子问题，即枚举begin和end
   - 后来发现不是！因为你取中间就会把原来的整段分为两半
-- 答案：[[化归]]成找（环形意义）不相邻的$3n$个元素，使和最大
+- 答案：[[reduction]]成找（环形意义）不相邻的$3n$个元素，使和最大
   - 用到[[construction]]思想。凡是不相邻的$3n$个元素，一定有一种合法的取出方式
 - 具体怎么做？典型的“01”型[[dp]]且可以用状态压缩，参考[[dp]]解说
-- 注意[[algorithm/trivial-mistakes]]：首尾相接！
+- 注意[[trivial-mistakes-in-algo]]：首尾相接！
 ```cpp
 class Solution {
 public:

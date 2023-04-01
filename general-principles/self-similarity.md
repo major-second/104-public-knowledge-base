@@ -1,7 +1,7 @@
 # 联系
 - [[general-principles/recursion]]
 - [[induction]]
-- [[化归]]
+- [[reduction]]
 - [[dp]]
 - 从[[general-principles/special-case]]到[[forall]]的思想常用
 - [[5-markov-chain]]

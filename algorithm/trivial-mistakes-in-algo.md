@@ -12,8 +12,6 @@
 - 首尾相接
   - [[1388-pizza-with-3n-slices]]，[[514-freedom-trail]]中的环形数组
 - [[off-by-one-errors]]
-- 多解性
-  - [[685-redundant-connection-ii]]多解选最后的，所以代码中“假设法”必须先假设去除 `lastCausedTwoParentsEdge`而不是先假设去除 `firstCausedTwoParentsEdge`
 # zero division
 - [[batchnorm]]
 - [[679-24-game]]
@@ -44,3 +42,5 @@
     - 例如[[2343-query-kth-smallest-trimmed-number]]
   - [[encode-decode]]思想，例如[[geometry]]中把排序后三边长（平方，为了防止[[float]]误差）作为唯一标识
   - 数学理论保证无重复，如[[general-principles/special-case]]的倒水题
+- 多解性
+  - [[685-redundant-connection-ii]]多解选最后的，所以代码中“假设法”必须先假设去除 `lastCausedTwoParentsEdge`而不是先假设去除 `firstCausedTwoParentsEdge`

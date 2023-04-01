@@ -1,6 +1,6 @@
 - 计算几何
 - 给定n个点（随机顺序，确保成凸多边形），和额外一个点，判定新的点在不在凸多边形中
-  - [[化归]]：先随便取一个点做轴，[[symmetry#break]]，再atan2，[[sort]]，就知道考察哪个三角形了
+  - [[reduction]]：先随便取一个点做轴，[[symmetry#break]]，再atan2，[[sort]]，就知道考察哪个三角形了
   - 考察三角形和一个点？
     - 法一：算三个角，$\angle AOB, \angle BOC, \angle COA$求和是否等于$2\pi$
       - 此时注意细节[[float]]误差
@@ -9,12 +9,12 @@
       - 还是[[symmetry#break]]，随便取一个点做轴
       - 然后如果atan2不能直接判定在外，**则$ACOB$这样一定形成四边形**（**注意一般情况不是**），此时算四个“蚂蚁转角”求和是否$2\pi$即可
 - 面积为指定数的格点三角形（全等的只算一个）
-  - 分类讨论，[[化归]]到全在第一象限和坐标轴的情况，且有一个点是原点
+  - 分类讨论，[[reduction]]到全在第一象限和坐标轴的情况，且有一个点是原点
   - [[algorithm/special-case]]处理有坐标轴点的情况，于是只剩下$(0,0), (2,1), (1,2)$这种形状情况
   - 外积计算三角形面积，给出等式
     - 从而论证[[enumerate]]的界
     - 然后[[enumerate]]并过滤
-  - 边边边确保[[algorithm/trivial-mistakes#uniqueness]]
+  - 边边边确保[[trivial-mistakes-in-algo#uniqueness]]
     - 注意平方防止[[float]]误差
   ```python
   from itertools import product

@@ -22,7 +22,7 @@
         - 轮转4次，$4,3,2,1$
         - 怎么想到这个序列？先从2，3特例开始看
         - 注意熟练矩阵乘法
-        - 解的[[algorithm/trivial-mistakes#uniqueness]]：矩阵可逆性
+        - 解的[[trivial-mistakes-in-algo#uniqueness]]：矩阵可逆性
   - 判定退化情况（化简）
     - 刘维尔定理
     - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外

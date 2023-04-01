@@ -11,7 +11,7 @@
   - The standard form of a linear minimization problem
     - $minimize\quad c^Tx, \quad s.t. Ax=b, x\ge 0$
     - 向量的$\ge$号表示逐个分量$\ge$
-- 通过适当辅助变量[[化归]]，可以包含$Ax=b, Ax\ge b, l\le Ax \le u$等情况
+- 通过适当辅助变量[[reduction]]，可以包含$Ax=b, Ax\ge b, l\le Ax \le u$等情况
 ## Geometry of linear optimization
 - 等式
   - hyperplane超平面
@@ -49,11 +49,11 @@ $||x||_\infty :=max|x_i|\le t \Leftrightarrow -t\le x_i\le t$
 - 例子：[1范数](#the-l_1-norm), [无穷范数](#the-l_infty-norm)互为对偶范数
 - 对偶两次回到自身
 ## Homogenization
-- 是一种[[化归]]技巧
+- 是一种[[reduction]]技巧
 - 我们用一维[[general-principles/special-case]]方便理解
   - 原问题$min\quad \frac{ax+b}{cx+d}\quad s.t. cx+d>0, Fx=g$
   - 核心：记$(cx+d)^{-1}=z$，就有$min\quad axz+bz\quad s.t. z>0, Fxz=gz$，再记$xz=y$
-- [[化归]]后不完全等价，因为平时的不等式（[参考](#basic-notions)）都是含等号的，也就是会把$z>0$改写成$z\ge 0$了
+- [[reduction]]后不完全等价，因为平时的不等式（[参考](#basic-notions)）都是含等号的，也就是会把$z>0$改写成$z\ge 0$了
 ## Sum of largest elements
 是一个特殊的linear optimization问题，其实只需关注$u_i \ge max\{x_i-t, 0\}$即可
 # Infeasibility in linear optimization

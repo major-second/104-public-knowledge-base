@@ -34,7 +34,7 @@ public:
     }
 };
 ```
-- 里面体现很多[[algorithm/trivial-mistakes]]
+- 里面体现很多[[trivial-mistakes-in-algo]]
   - 如果循环体中有获取结果的代码，那要小心最后是否一定获取了结果（这里的`if (phase==DOWN) longest = max(longest, n-begin);`）
   - 等于的情况造成麻烦！
 - 体现[[DFA]]的思想

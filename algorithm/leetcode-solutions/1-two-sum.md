@@ -24,7 +24,7 @@ public:
   - 编译器会检查每个分支都必须`return`才能过，参考[[func]]
 # [[hash]]做法
 - 参考[[associative]]
-- 注意去重（参考[[algorithm/trivial-mistakes]]）
+- 注意去重（参考[[trivial-mistakes-in-algo]]）
 ```cpp
 class Solution {
 public:
