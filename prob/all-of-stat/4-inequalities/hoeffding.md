@@ -1,6 +1,4 @@
 - 前置
-  - [[convexity]]
-  - [[expectation]]
   - [[jensen]]
     - 这里运用的：对于下凸（$e^x$这种二阶导正），有$Ef(x)\ge f(E(x))$
   - [[moment-generating-functions#性质]]，比如随机变量相加，母函数相乘

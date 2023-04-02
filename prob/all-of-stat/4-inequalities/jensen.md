@@ -1,0 +1,8 @@
+- 前置[[convexity]], [[expectation]]
+- 考虑二阶导$\ge 0$（“下凸”），如$x^2, -logx, e^x$
+- $Ef(x)\ge fEx$
+  - $E(X^2)\ge EX^2$
+    - 参考[[variance]]
+  - $E(logX)\le logEX$
+  - $E(1/X)\ge \frac 1{EX}$
+  - $E(e^X)\ge e^{EX}$

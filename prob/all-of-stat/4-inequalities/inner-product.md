@@ -1,0 +1,5 @@
+- 参考[[cov#corr]]
+  - $\rho:=Cov/\sigma_X\sigma_Y\in [-1,1]$
+- 当然这里是没有中心化的，$EXY/\sqrt{EX^2EY^2}\in [-1,1]$
+  - 这个推出那个
+- 注意几何意义！
