@@ -14,3 +14,6 @@
 - 应用
     - 随机过程中，例如[[1-elements]]中，[[stationary-independent-increment]]
     - [[multivariate]]不独立的，[[linear-transform]]设法独立，例如[[multi-normal#条件分布multivariate#conditional]]
+    - 实际中“有放回”“无放回”，“有放回”对应独立
+      - [[bootstrap-in-stats]]当然是有放回
+      - [[concentration]]提到不独立时，“无放回”更能concentrate

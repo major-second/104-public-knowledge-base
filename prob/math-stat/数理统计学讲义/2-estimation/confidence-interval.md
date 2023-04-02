@@ -13,9 +13,12 @@
 - 优良性传递
   - [[相合性]]往往可传递，[[unbiased]]不行
   - 置信区间可以（比如已知$\sigma^2$置信区间，求$\sigma$置信区间）
-- 方法
-  - 基本通用的：[[asymptotically-normal#normal-based interval]]
-  - [[hoeffding#等价形式]]
+# 方法
+- [[pivotal-interval]]
+- [[统计量方法]]
+- 基本通用的：[[asymptotically-normal#normal-based interval]]
+- [[hoeffding#等价形式]]
+- [[bootstrap-in-stats#confidence-interval]]
 # interpretation
 - 置信水平$\gamma$不是说$\theta$以$\gamma$概率咋地
   - $\theta$是确定数，无概率一说

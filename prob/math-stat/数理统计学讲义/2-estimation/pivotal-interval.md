@@ -1,0 +1,51 @@
+# pivotal
+- 枢轴量 pivotal
+  - $\theta$是参数，pivotal是$\theta,X_i$的函数
+    - 也可以说成是$g(\theta)$和$X_i$的函数，其中$g$是$\theta$的函数
+  - 其分布和$\theta$无关
+- 枢轴量分布和$\theta$无关
+  - 所以其[[confidence-interval]]对于指定的置信水平是恒定区间
+  - 针对此恒定区间，解不等式得$x_i,g(\theta)$间满足一定条件
+  - 进一步解出$g(\theta)$满足的不等式
+  - 根据$g$是否好看，结果关于$\theta$是否显式都有可能
+# 举例
+- [[gamma#指数分布]]
+  - $\sum X_i$满足$\Gamma(n,\lambda)$
+    - 来自[[distribution/gamma]]分布可加性
+  - 但这时$e$指数处有$\lambda$，导致分布不是恒定
+    - 那就直接$2\lambda \sum X_i$，这回得到恒定分布，从而得到[枢轴量](#pivotal)了
+      - 用到了[[random-variable-functions#pdf-continuous]]变换相关结论
+    - 分布满足$2n$个自由度的[[chi-square]]
+    - 从而可以[[查表]]
+  - 为了得到好的置信区间，理想情况下上界和下界处密度函数相等
+    - [[marginal]]产值相等
+  - 实际中偷懒用平分法
+    - 0到[[confidence-interval]]下限占$\frac {1-\gamma}2$
+    - [[confidence-interval]]上限到无穷占$\frac {1-\gamma}2$
+- [[normal]]已知$\sigma$
+  - $\frac{\sum X_i-n\mu}{\sqrt n \sigma}$是枢轴量
+  - 分布恒定[[normal]] $ N(0,1)$
+  - 枢轴量落在概率为0.95区间，即$[-1.96,1.96]$，那么置信区间就是$\bar X\pm 1.96\frac{\sigma}{\sqrt n}$
+  - 拓展：[[asymptotically-normal#normal-based interval]]
+  - 特别注意[[trivial-mistakes-in-math#单双侧]]问题
+    - 此处两边各只剩下$0.025$
+    - 也就是要看标准[[normal]]的0.975[[character/quantile]]
+- 正态分布已知$\mu$或未知$\mu$（都行），估计$\sigma^2$
+  - 注：从而可估计$\sigma$
+  - $\frac{\sum X_i-n\mu}{\sqrt n \sigma}$仍是枢轴量，$\sim N(0,1)$
+    - 然而这回它不好用了
+    - 因为这个枢轴量处于一个（包含0）的区间的概率较大，反解出$\sigma$绝对值大的概率较大，这个没啥用
+    - 况且$\sum X_i$和估计量$S^2$也不沾关系
+      - 虽然大原则说区间估计是得到两个估计量作为上限下限，不一定要和普通（非区间）估计扯上关系
+      - 但你能扯上不扯上总归不爽吧？
+  - 所以应该考察$\frac{(n-1)S^2}{\sigma^2}=\sum (X_i-\bar X)^2/\sigma^2$满足$n-1$个自由度[[chi-square]]分布
+- 正态分布两个参数都不知道，则$\frac{\sqrt n (\bar X -\mu)}{S}$是枢轴量
+  - 参考[[t]]
+  - 记忆：$\bar X-\mu$方差是$\sigma^2/n$量级，那么分母就用“估计量”$S/\sqrt n$
+  - 其实也就是联系刚刚两个case（$\frac 1{\sigma/\sqrt n}(\bar X-\mu)\sim N(0,1)$和$(n-1)S^2/\sigma^2\sim \chi^2(n-1)$），开方和做比例把$\sigma$消掉，得到$\mu$的置信区间$\bar X\pm \lambda S/\sqrt n$
+  - 比较：之前是$\sigma/\sqrt n$，现在是$S/\sqrt n$，而且前面系数也有#单双侧 问题，看起来真挺像
+  - 而且也符合了“和估计量$\bar X$扯上关系”（作为中心）
+# 特点
+- 缺点
+  - 没有通法找
+  - 是否满足[[优良标准]]不明确

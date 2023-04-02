@@ -4,7 +4,7 @@
 - 记作$\Gamma(\alpha,\beta)$
   - 当然也有人用$\beta$的倒数作为记号
 - 特例
-  - $\alpha=1$就是指数分布
+  - $\alpha=1$就是[指数分布](#指数分布)
   - $\Gamma(\frac n2,\frac 12)$就是$n$个自由度卡方分布[[chi-square]]
   - 所以$n=2$个自由度卡方分布就是指数分布
 - [[可加性]]：$\Gamma(\alpha_1+\alpha_2,\beta)$
@@ -15,3 +15,4 @@
 - 期望就多乘一个$x$，[[variance]]就考虑$x^2$期望和$x$期望，因此都能由[[gamma-function]]求
 - 举例：指数分布$f(x) = \beta e^{-\beta x}$，均值$1/\beta$，方差$1/\beta^2$
   - 因为容易计算$x$期望$\Gamma(2)/\beta = 1/\beta$，$x^2$期望$\Gamma(3)/\beta^2=2/\beta^2$
+# 指数分布

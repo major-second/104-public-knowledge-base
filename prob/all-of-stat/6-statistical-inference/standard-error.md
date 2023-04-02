@@ -1,7 +1,13 @@
-- The standard deviation is a measure of the amount of variation or dispersion of a set of values. It is calculated as the square root of the [[variance]].
-- The standard error is a measure of the variability of the sample mean. It is the standard deviation of the sampling distribution of the mean.
-- In other words, the standard deviation is a measure of the variability within a sample, while the standard error is a measure of the variability between samples.
-- applications: e.g. [[t]] stats
+- 和标准差，[[variance]]关系
+  - The standard deviation is a measure of the amount of variation or dispersion of a set of values. It is calculated as the square root of the [[variance]].
+  - The standard error is a measure of the variability of the sample mean. It is the standard deviation of the sampling distribution of the mean.
+  - In other words, the standard deviation is a measure of the variability within a sample, while the standard error is a measure of the variability between samples.
+- 计算方法
+  - 例如[[bootstrap-in-stats]]
+  - 但你总不能老是多次重复实验，这多笨啊
+  - 下文就是一个例子
+- applications
+  - [[t]] stats
 # [[multi-ary]] SE
 - [参考](https://www.statology.org/standard-error-regression/)
   - 相比[[unary#$R^2$]]，更加“绝对”而非相对

@@ -11,10 +11,12 @@
 - 性质：[[相合性]]，[[unbiased]]，[[优良标准]]，[[asymptotically-normal]]
   - 有了优良标准就有[[找最佳]]
 - 区间估计[[confidence-interval]]
-  - 之前：由样本观测值计算出某个统计量，作为估计量（参考[[数理统计学讲义/1-introduction]]）
+  - 之前：由样本观测值计算出某个统计量，作为估计量
+    - 参考[[数理统计学讲义/1-introduction]]
   - 而现在计算出两个统计量，作为上下限
-    - 要求满足：对一切参数（参数一律平等，参考[[优良标准]]）
+    - 要求满足：对一切参数
+      - 参数一律平等，[[forall#一致]]
+      - 参考[[优良标准]]
     - 满足“落在里面”概率大于等于置信度$\gamma$
-    - 必读[[confidence-interval#interpretation]]
-  - [[枢轴量方法]]，[[统计量方法]]
+    - 必读：[[confidence-interval#interpretation]]
 - [[empirical-distribution-function]]，[[密度函数估计]]
