@@ -13,5 +13,7 @@
   - 4阶就是峰度kurtosis
     - 恒非负
     - 直观来说，大表示比较尖，中间集中，两边长尾把四次方拉得很大
+- 举例
+  - 常常背诵的：[[normal#moment]]
 - 应用
   - [[sliding-window]]计算[[variance]], [[normalization#z-score]]等等，只需计算矩，就可推出其它有用量。滑动求和！

@@ -1,6 +1,7 @@
-# 换元
+# 换元或简记
 - 换元积分法
 - 换元简化推导，如[[hoeffding]]
+- [[method-of-moments]]为了方便写出反函数，简记$k$阶矩为$V_k$
 # 有名字作为交流基础
 - [[self-similarity]]中设问题
 - [[induction]]中设命题

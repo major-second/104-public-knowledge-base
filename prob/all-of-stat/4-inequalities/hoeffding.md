@@ -18,7 +18,7 @@
     - $\ge$是向中间，$\le$是向两边
   - $ap_a+bp_b=0,p_b=-ac/(b-a),p_a=bc/(b-a)$
     - 所以就是$\le \frac{c(e^{sa}b-e^{sb}a)}{b-a}$
-    - 此时[[naming#换元]]
+    - 此时[[naming#换元或简记]]
       - $\lambda = \frac{-a}{b-a}$，很自然
       - $\mu = s(b-a)$，方便指数上操作
     - $e^{sx_1}p_1+e^{sx_2}p_2\le ce^{sa}((1-\lambda)+\lambda e^\mu)$

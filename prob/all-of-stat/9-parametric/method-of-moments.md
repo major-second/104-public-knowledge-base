@@ -1,0 +1,23 @@
+- 前置
+  - [[expectation]]
+  - [[moment]]
+  - [[parametric]]
+- 此处$k$阶原点矩[[moment]]有三个记号
+  - $EX^k$（定义）
+  - $g_k(\theta)$（强调是参数的函数）
+  - $V_k$（[[naming#换元或简记]]需要，方便写出反函数）
+- 只要明确上面，就容易理解
+  - $\theta_i = f_i(V_1,\cdots,V_m)$（反函数组）
+  - 反函数组嘛，那就几个参数就需要几阶矩（几个$V_k$）
+  - 注意这里停留在纯理论，没有进行[[2-estimation]]
+- 矩法 method of moments
+  - 用样本矩估计矩，得到$\hat V_k$
+  - 然后代入反函数得到$\hat\theta_i$从而$\hat \theta$
+- 方法的合理性
+  - [[相合性]]
+    - 根据强[[prob/LLN]]，$f$是连续函数时可以传递强相合性
+  - [[asymptotically-normal]] todo
+- 拓展：$g$变化，不再是幂函数
+  - 比如不再是原点矩，改成中心矩
+  - $g$还可变成别的，还可以用相同方法
+    - 如[[mle]]中也提到隐式的mle解也类似

@@ -4,7 +4,7 @@
 - 方法
   - 通法
     - [[mle]]
-    - [[moment]]
+    - [[method-of-moments]]
     - [[statistical-functionals#plug-in estimator]]
   - [[unbiased]]中一些非通法
     - 必记特例：[[方差的无偏估计]]

@@ -8,8 +8,9 @@
   - $\Gamma(\frac n2,\frac 12)$就是$n$个自由度卡方分布[[chi-square]]
   - 所以$n=2$个自由度卡方分布就是指数分布
 - [[可加性]]：$\Gamma(\alpha_1+\alpha_2,\beta)$
-  - 即iid指数分布随机变量和不再是指数分布但是是$\Gamma$分布
+  - 即[[iid]]指数分布随机变量和不再是指数分布但是是$\Gamma$分布
   - 卡方分布[[chi-square]]相加还是卡方分布。“自由度”直接相加
+  - 由可加性和[[linear-transform]]也容易直接得到均值$\alpha/\beta$，方差$\alpha/\beta^2$
 - 若$S^2$满足$\Gamma$分布，则$S$的期望可以用高斯积分求
 # 数字特征
 - 期望就多乘一个$x$，[[variance]]就考虑$x^2$期望和$x$期望，因此都能由[[gamma-function]]求

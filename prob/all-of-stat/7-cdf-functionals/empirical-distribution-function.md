@@ -1,5 +1,5 @@
 - 前置
-  - [[parametric]]，我们这节非参
+  - [[parametric-or-not]]，我们这节非参
   - [[random-variable-functions#cdf]]
   - [[bernoulli-binom]]
 - $\hat F_n(x)=1/n\cdot \sum_{i=1}^nI(X_i\le x)$

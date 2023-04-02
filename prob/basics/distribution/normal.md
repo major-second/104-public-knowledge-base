@@ -4,7 +4,7 @@
 - [[random-variable-functions#pdf-continuous]]是有的：$\frac{1}{\sigma \sqrt {2\pi}}exp\{-\frac 1 {2\sigma^2} (x-\mu)^2\}$，记为$\phi(z)$
 - [[random-variable-functions#cdf]]则没有闭式，记为$\Phi(z)$
 - 实际应用：经常[[查表]]
-# 背诵矩[[moment]]
+# [[moment]]
 - 中心矩
   - 可以用[[gamma-function]]函数得结果
   - 也可以用[[characteristic-function]]的导数对应各阶矩

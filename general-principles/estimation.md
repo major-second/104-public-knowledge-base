@@ -7,8 +7,9 @@
   - 比如喜马拉雅山天气，确实是已知数，但是你现在不知道，需要估个概率
 # 理论
 - 用于放缩给界[[inequalities]]
-- 统计中[[2-estimation]]
-  - [[moment-estimation]], [[mle]]等等
+- 统计中
+  - [[2-estimation]]
+  - [[confidence-interval]]
 # 算法实际应用
 - 作为替代手段给出实际可行算法
   - [[q-learning]]
