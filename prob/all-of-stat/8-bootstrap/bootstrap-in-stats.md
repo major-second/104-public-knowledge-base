@@ -24,4 +24,11 @@
   - 这里是有放回 with replacement，参考[[1-prob/independent]]
 # [[confidence-interval]]
 1. 直接利用算出的[[standard-error]]，计算[[asymptotically-normal#normal-based interval]]
-2. 
+2. [[pivotal-interval]]
+   1. [[pivotal-interval#pivotal]]是$\hat \theta_n-\theta$，分布关于$X_i$恒定，但未知，记为$H$
+      1. 这点就和[[pivotal-interval#举例]]中很多例子不同了！
+   2. 然后估计$H^{-1}(\alpha/2)\approx \hat \theta^*_{\alpha/2}-\hat \theta_n$
+      1. 其中$\hat \theta^*_{\alpha/2}$是样本[[character/quantile]]
+   3. 即可得到结果$(2\hat\theta_n-\hat \theta ^*_{1-\alpha/2},2\hat \theta_n-\hat \theta^*_{\alpha/2})$
+3. percentile interval: 直接根据bootstrap算出$\hat \theta$的分布找[[character/quantile]]
+   1. $(\theta^*_{\alpha/2},\theta^*_{1-\alpha/2})$

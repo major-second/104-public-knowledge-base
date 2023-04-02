@@ -49,3 +49,5 @@
 - 缺点
   - 没有通法找
   - 是否满足[[优良标准]]不明确
+# 拓展
+- [[bootstrap-in-stats#confidence-interval]]：枢轴量分布恒定但未知，其[[character/quantile]]需要估计

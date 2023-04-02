@@ -19,6 +19,8 @@
 - 基本通用的：[[asymptotically-normal#normal-based interval]]
 - [[hoeffding#等价形式]]
 - [[bootstrap-in-stats#confidence-interval]]
+  - 其中有[[pivotal-interval]]
+  - 其中有[[asymptotically-normal#normal-based interval]]
 # interpretation
 - 置信水平$\gamma$不是说$\theta$以$\gamma$概率咋地
   - $\theta$是确定数，无概率一说
