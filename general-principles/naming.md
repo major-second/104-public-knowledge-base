@@ -2,6 +2,7 @@
 - 换元积分法
 - 换元简化推导，如[[hoeffding]]
 - [[method-of-moments]]为了方便写出反函数，简记$k$阶矩为$V_k$
+- 对换了的新元求导，如[[maximum-likelihood]]中[[normal]]
 # 有名字作为交流基础
 - [[self-similarity]]中设问题
 - [[induction]]中设命题

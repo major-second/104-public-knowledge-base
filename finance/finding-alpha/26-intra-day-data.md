@@ -40,9 +40,9 @@
     - 专家：做市、套利等
   - 比如一个模型：假设专家风险中性，以及给出一堆假设，能找到买卖价、spread的平衡点
     - 专家从uninformed赚钱，但送给informed钱
-  - 比如一个模型：$\delta$概率有利好，带来额外的informed交易，也有可能有利空，也有可能没消息（那就泊松发生交易），极大似然估计[[mle]]一些隐变量，然后发现return和spread正相关
+  - 比如一个模型：$\delta$概率有利好，带来额外的informed交易，也有可能有利空，也有可能没消息（那就泊松发生交易），极大似然估计[[maximum-likelihood]]一些隐变量，然后发现return和spread正相关
   - 还能引入更多种类的交易者，例如heuristic，然后发现这部分越多，return也越高
-  - 但是这些一般都要[[mle]]，很花时间，且低频。改进：DPIN模型等
+  - 但是这些一般都要[[maximum-likelihood]]，很花时间，且低频。改进：DPIN模型等
     - DPIN想法：informed交易量大且抓住涨跌方向
     - FSRV：daily returns unexplained by market movements，由刚刚的模型得到和PIN正相关！
   - 改善alpha性能：如利用PIN，预测避免大回撤

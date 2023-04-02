@@ -9,6 +9,8 @@
   - $D(f||g)=\int f log (f/g)dx$
 ## 性质
 - 不对称
+  - 但两个方向同时为0或不为0
+  - 因此在[[parametric]]中有identifiable概念：任意两个不同参数的KL散度不为0
 - 非负性：对比$plnp$和$plnq$
     - 看$lnx$在$p$处导数恰好为$1/p$
     - “[[marginal]]产出相等”

@@ -13,4 +13,6 @@
 - $C_n = (\hat \theta_n + z_{\alpha/2}\hat s,\hat \theta_n-z_{\alpha /2}\hat s)$
 - 常见：$\alpha = 0.05, z_{\alpha/2}=-1.96\approx -2$
   - $C_n = (\hat \theta_n - 2\hat s, \hat \theta_n + 2\hat s) $
-- 此处$\hat s$是估计的[[standard-error]]
+- 此处$\hat s$
+  - 是估计的[[standard-error]]
+  - 可能本身也是估计出来的近似值，比如[[maximum-likelihood#asymptotically-normal]]，用到了[[fisher-information]]

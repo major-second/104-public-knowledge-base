@@ -13,13 +13,13 @@
     - $f'_\theta$关于$dx_1\cdots$（$n$元积分）也同理为0
     - 刚刚一条的被积函数如果乘以$\psi$（无偏估计，是关于$x_i$的$n$元函数），则$\psi$可以提出来
       - $\psi=1$特例说明可以交换积分和求导顺序
-    - [[Fisher]]信息量正
+    - [[fisher-information]]信息量正
     - 简记：首先是$E$不变，然后两条关于一元积分、两条关于多元积分
   - 结论：无偏估计方差$Var_\theta(\psi)\ge \frac{g'^2(\theta)}{nI(\theta)}$
     - 如果直接估计参数$\theta$，那就$\frac 1{nI}$
   - 证明思路：（针对非$\infty$情况）
     - $g'(\theta)=(无偏定义)\cdots =(\psi 扔积分号里)\cdots=(减去常数g(\theta)乘以积分为0的东西)\cdots$
     - $g'^2\le (C-S不等式)Var_\theta(\psi)\cdot E_\theta(\sum \cdots)^2=(i.i.d.，交叉项没了)Var\cdot nI$
-- 两者联系
+- 两者联系区别
   - 利用B-L-S定理，有时可证明C-R不等式下界过小
   - B-L-S定理不一定单参数，C-R针对单参数

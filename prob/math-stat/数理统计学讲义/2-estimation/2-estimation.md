@@ -3,13 +3,13 @@
   - 比如正态分布中的$P(X>c)$可以用参数$\mu, \sigma$表示
 - 方法
   - 通法
-    - [[mle]]
+    - [[maximum-likelihood]]
     - [[method-of-moments]]
     - [[statistical-functionals#plug-in estimator]]
   - [[unbiased]]中一些非通法
     - 必记特例：[[方差的无偏估计]]
 - 性质：[[相合性]]，[[unbiased]]，[[优良标准]]，[[asymptotically-normal]]
-  - 有了优良标准就有[[找最佳]]
+  - 有了优良标准就有[[optimal-estimator]]
 - 区间估计[[confidence-interval]]
   - 之前：由样本观测值计算出某个统计量，作为估计量
     - 参考[[数理统计学讲义/1-introduction]]
