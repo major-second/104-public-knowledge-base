@@ -26,3 +26,7 @@
   - [[2-6-prob]]题6
 - [[geometry]]中的判断一个点在不在另三个点形成三角形内：任意四个点，按顺序连，可能凸四边形，凹四边形或者**不是四边形**
 - [[two-pointers]]最大不等那题
+# 数学中
+- 一般可用于确定是否充要
+  - [[converge-in-probability]]不一定[[converge-in-l2]]
+  - [[converge-in-distribution]]不一定[[converge-in-probability]]

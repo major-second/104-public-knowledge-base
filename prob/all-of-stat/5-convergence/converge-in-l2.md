@@ -1,0 +1,6 @@
+- $E(X_n-X)^2\to 0$
+- 推出[[converge-in-probability]]
+  - 可以[[proof-by-contradiction]]，如果不成立，就始终有一段长度不可忽略且误差不可忽略（这个思想参考[[inequalities#十字放缩]]）
+  - 也可以直接套用[[markov-chebshev#Chebshev]]
+- 反过来不成立
+  - [[counter-examples]]：一小块就带来了很大的$E()^2$

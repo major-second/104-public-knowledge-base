@@ -1,7 +1,8 @@
 # 数学中
+- 参考[[counter-examples]]
 - 好处
   - 特例本身具有重要作用
-    - [[moment-generating-functions]]
+    - [[moment-generating-functions]]中的0处值
   - 利用特例进行记忆
     - [[linear-transform#多元随机变量multivariate]]
   - 检验

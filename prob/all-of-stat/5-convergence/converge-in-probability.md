@@ -1,0 +1,9 @@
+- $X_n \mathop{\to}\limits^P X$
+- $\forall \epsilon, P(误差大):=P(|X_n-X|\ge\epsilon)\to 0$
+  - 注：这里用[[calculus/limit]]省了一层$\forall \epsilon$，要不然应该写成
+  - $\forall\epsilon_1,  \epsilon _2\exist N\forall n>N,P(|X_n-X|\ge \epsilon_1)\le \epsilon_2$
+- 推出[[converge-in-distribution]]
+- 反过来不成立，除非是point mass
+  - [[counter-examples]]：$X_n=-X,X\sim N(0,1)$
+- 收敛到一点不推出期望是它
+  - [[counter-examples]]：和[[converge-in-l2]]中描述的一个道理

@@ -1,0 +1,3 @@
+- 前置
+  - [[random-variable-functions#cdf]]
+- 所有[[random-variable-functions#cdf]]连续点$t$，$F_n(t)\to F(t)$

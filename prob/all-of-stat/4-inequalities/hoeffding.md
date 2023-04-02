@@ -26,7 +26,7 @@
     - 关于$\mu$极值出现在$\phi'(\mu)=-\lambda +\lambda e^\mu/(1-\lambda+\lambda e^\mu)=0$处
       - 诶呦，熟悉的式子，如果我们需要关于$s$极值，直接解得$\mu = 0$
       - 参考[[concentration]], [[forall]]
-    - 然而我们现在不是求关于$s$极值，而是针对指定$s$ [[estimation#放缩]]
+    - 然而我们现在不是求关于$s$极值，而是针对指定$s$ 使用[[inequalities]] 放缩
       - $\phi(0)=0,\phi'(0)=0,\phi''(\mu)=(1-\lambda)\lambda e^\mu/(1-\lambda+\lambda e^\mu)^2$
       - $\phi''(\mu)=\frac{1-\lambda}{1-\lambda+\lambda e^\mu}\frac{\lambda e^\mu}{1-\lambda+\lambda e^\mu}\le \frac 14$
       - $\phi(\mu )\le \mu^2/8$

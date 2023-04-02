@@ -11,10 +11,13 @@
 - 一致连续
 - 一致收敛
 - 统计中
-  - [[unbiased]]，[[优良标准#无偏-有效性]]
+  - [[unbiased]]
+  - [[优良标准#无偏-有效性]]
   - [[confidence-interval]]
-- 算法中最坏时间复杂度
-# 不等式
+- 算法中
+  - 最坏时间复杂度
+  - [[adversary]]
+# [[inequalities]]
 - 出现一系列不等式（一系列界），然后求界的最值，给出最紧最好的
   - [[markov-chebshev#chernoff bounds]]
   - [[concentration]]
