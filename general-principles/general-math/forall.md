@@ -15,7 +15,8 @@
   - [[confidence-interval]]
 - 算法中最坏时间复杂度
 # 不等式
-- 出现一系列不等式，然后求界极值，给出最紧最好的
-  - [[markov-chebshev#许多统计量]]
+- 出现一系列不等式（一系列界），然后求界的最值，给出最紧最好的
+  - [[markov-chebshev#chernoff bounds]]
   - [[concentration]]
-  - [[hoeffding#lemma]]
+  - [[hoeffding]]
+    - 这个也是求了界的最值，但问题是通过[[hoeffding#lemma]]先放缩了，所以界更松

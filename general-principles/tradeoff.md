@@ -13,6 +13,7 @@
     - 如[[UMP]]
   - 还可以指定多个甲取值，看各个情况下最佳的乙，这就是[[pareto-efficient]]帕累托前沿
     - 例：[[2-eval]]的P-R曲线
+  - 当然可能[[confidence-interval]]这样纯凭感觉
 # 时空tradeoff
 - 存显存 ->(`1`) 存内存 ->(`2`) 存硬盘 ->(`3`) 啥也不存
   - 参考[[memory]], [[resource-management/disk]]
@@ -20,9 +21,9 @@
   - 体现`2, 3`
 - 如[[dataloader]] `pin_memory`空间换时间
   - 体现`2`
-- 如[[parallelism]]讲到GPU -> CPU [[numpy/basics]] -> for循环三级
-  - 体现`1, 2`
 - 如[[pandas-loc]]提到的
   - 体现`2, 3`
+- 如[[preprocessing]]放到GPU，GPU空间换读取到GPU的时间
+  - 体现`1`
 # 其它
 - 风险和收益[[portfolio-optimization]]

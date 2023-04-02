@@ -31,4 +31,8 @@
   - [[fermi-estimation]]
   - 注意[[adverse-selection]]，看别人表现也可以影响你的决策
 # 放缩
-- 放缩也算估计的一种吧哈哈，比如[[markov-chebshev]]
+- 放缩也算估计的一种吧哈哈
+  - [[markov-chebshev#Markov]]：naive地“方形”放缩
+  - [[hoeffding#lemma]]
+    - [[taylor-expansion]]
+    - $a(1-a)\le 1/4$（均值不等式）

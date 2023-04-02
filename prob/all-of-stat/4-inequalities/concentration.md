@@ -1,27 +1,31 @@
-引入：iid伯努利，样本均值和$p$的差“收敛速度”如何
-- 伯努利非负，则满足[[markov-chebshev]]中的切诺夫的条件
-- 则$P(\sum x_i \ge n(p+\epsilon)) \le inf_t \{e^{-nt(p+\epsilon)}Ee^{t\sum x_i}\}$
-- 期望可以显式写出来，最后变成了$\le inf\{ e^{-nt(p+\epsilon)}(pe^t+1-p)^n\}$
-- 求极值（方法：考察$-t(p+\epsilon) + ln(pe^t+1-p)$，平凡地求导和考察极值性质等等）
-  - 结果：$\le e^{-n D_B^{(e)}(p+\epsilon ||p )}$，其中$D_B^{(e)}$表示伯努利分布的[[kl-divergence]]（参考[[entropy]]）
-  - 这个也称为切诺夫
-  - 这个bound可以称为concentration
-## general
-- 拓展1
-伯努利情形：拉到两侧，相当于最坏情形
-一般情况按道理应该由伯努利情形推出：凹凸性直接$Ee^{tx}\le pe^t+1-p$
-- 拓展2
-不一定iid，但是还在01区间，$\sum p_i/n=p$，那还可以模仿刚刚的证明，只需要$\prod (p_ie^t+1-p_i)$和$(pe^t+1-p)$的关系比较一下即可
-## 推论
-$D_B^{(e)}(p+\epsilon||p)\ge 2\epsilon^2$，因此可以简化
-p离1/2远误差大
-称为additive chernoff bound
-## 独立性是否一定必要？
-直接去掉肯定不行。比如所有变量都一样显然没有concentration了
-但是可以调整：有放回和无放回：直觉上无放回concentration更强
-证明：由$EX_iX_j$和$EY_iY_j$的关系看出母函数的关系
-## 霍夫丁
-不就是区间拓展一下呗
-## McDiamond Lemma
-$|f(...)-f(...)|\le \beta_i$，则$P(f-\sum f\ge \epsilon)\le e^{...}$，前面的concentration是特殊情况
-利用了鞅
+- 前置
+  - [[markov-chebshev]]
+    - 尤其是[[markov-chebshev#chernoff bounds]]
+  - [[bernoulli-binom]]
+  - [[entropy#KL Divergence]]
+- 参考
+  - [[central-limit]]
+    - 但是那里是分布，而这里关注一个安全的“界”，超过多少误差的概率
+  - [[hoeffding#main contents]]
+    - 但是那里经过[[hoeffding#lemma]]放缩，所以比 [这个](#concentration) 松
+# concentration
+- 考虑[[bernoulli-binom]]
+- 非负，则满足[[markov-chebshev#chernoff bounds]]说的条件
+- 则套公式$P_0:=P(\sum x_i \ge n(p+\epsilon)) \le inf_t \{e^{-nt(p+\epsilon)}Ee^{t\sum x_i}\}$
+- 代入得$\le inf_t\{ e^{-nt(p+\epsilon)}(pe^t+q)^n\}$
+- 现在考察$-t(p+\epsilon) + ln(pe^t+q)$极值（求导）
+  - $-p-\epsilon +\frac{pe^t}{pe^t+q}=0$
+  - $(p+\epsilon)(pe^t+q)=pe^t$
+  - $(p+\epsilon)q=pe^t(q-\epsilon)$
+  - $t=ln(\frac{p+\epsilon}{1-p-\epsilon})-ln(\frac{p}{1-p})$
+  - $e^t=(p+\epsilon)q/p(q-\epsilon)$
+  - $pe^t+q=q/(q-\epsilon)$
+- $P_0\le(e^{-(p+\epsilon)ln(\frac{p+\epsilon}{q-\epsilon})+(p+\epsilon)ln(\frac p{q})+ln(\frac q{q-\epsilon})})^n=e^{n(-(p+\epsilon)ln(p+\epsilon)+(q-\epsilon)lnq+(p+\epsilon)lnp-(q-\epsilon)ln(q-\epsilon))}=e^{-n((p+\epsilon)ln(p+\epsilon)+(q-\epsilon)ln(q-\epsilon)-(p+\epsilon)lnp-(q-\epsilon)lnq)}:=e^{-nD_B^{(e)}(p+\epsilon ||p )}$
+- 其中$D_B^{(e)}$表示两个参数分别为$p+\epsilon,p$的伯努利分布的[[entropy#KL Divergence]]
+- 这个bound可以称为concentration
+- 注意这是单侧界
+# 和独立性的关系
+- [[1-prob/independent]]
+- 直接去掉肯定不行。比如所有变量都一样显然没有concentration了
+- 但是可以调整：有放回和无放回
+  - 直觉上：无放回concentration更强，更有所谓的“抵消”效果
