@@ -1,0 +1,6 @@
+- [参考](https://zhuanlan.zhihu.com/p/30844905)
+- 为了简单理解，先不考虑bias
+- $O_t=g(V\cdot S_t)$
+- $S_t = f(U\cdot X_t + W\cdot S_{t-1})$
+- 其中$X$是输入，$S$是隐层
+- 实际应用中有时只需要最后一个$O_t$“总结”整个序列的情况

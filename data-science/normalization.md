@@ -73,10 +73,11 @@ print(calc(test_input, test_k))
 - [深度学习中归一化](https://www.zhihu.com/question/293640354/answer/2078956333)
   - 方便调学习率, 参考[[deep-learning/optimization#BGD, SGD, MBGD]]，[[gradient-issue]]
   - 凸显个性
-  - 防止梯度过小（[[activation]]两侧死亡等）
+  - 防止梯度过小[[gradient-issue]]
+    - [[activation]]两侧死亡等
   - 不做[[batchnorm]]等怎么办
-    - 比如多种init weight, 学习率等，相当于自己筛一个适当的东西做归一化吧
-    - 其实可能最后本质差不多，但机器负担重一点，encode人先验少
+    - 比如多次随机[[weight-init]]，枚举多种学习率等，相当于机器筛出一个适当的东西做归一化吧
+    - 其实可能最后本质差不多，但这样机器负担重一点，encode人先验少
 # 其它
 - https://www.zhihu.com/question/341394312/answer/2721418193
 - 比如对数、倒数、幂次都可考虑

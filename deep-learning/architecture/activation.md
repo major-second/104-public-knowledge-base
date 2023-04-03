@@ -1,4 +1,4 @@
-- 不加：[[linearity]]复合还是[[linearity]]
+- 不加激活函数的问题：[[linearity]]复合还是[[linearity]]，没有额外表达能力
 - 选择：[参考](https://zhuanlan.zhihu.com/p/30510596)
 - 看什么标准
   - 导数数值

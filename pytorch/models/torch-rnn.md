@@ -1,6 +1,7 @@
-- 前置[[models/basics]]
+- 前置
+  - [[models/basics]]
+  - [[rnn]]
 - 举例：[官网GRU文档](https://pytorch.org/docs/stable/generated/torch.nn.GRU.html)
-- [结构，有哪些weights矩阵等](https://zhuanlan.zhihu.com/p/30844905)
 - 和常见的模块比较不同的地方
   - 如果不`batch_first=True`，则是默认序列长$L$对应维度在前
   - 即使`batch_first=True`了，也和[[conv]]不同：不是`N, Channel`，而是`N, Length, Channel`

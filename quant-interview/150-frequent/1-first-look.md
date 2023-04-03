@@ -7,7 +7,7 @@
   - 鞅显然不是了（强者愈强）
   - 注意写成标准的[[wiener-process]]，就是$dX=Wdt+0dW$，所以当然不是鞅
   - 解：可以用分部积分法，得到$X=\int (t-\tau) dW_{\tau}$
-  - 类比[[可加性]]，知道$\int_0^t f(\tau)dW_{\tau} \sim N(0, \int_0^t |f(\tau)|^2 d\tau)$即可
+  - [[variance#可加性]]推广[[discrete-continuous]]，知道$\int_0^t f(\tau)dW_{\tau} \sim N(0, \int_0^t |f(\tau)|^2 d\tau)$即可
 - 4
   - 撞等于不撞
   - 等效替代思想，在[[4-probability]]中也有类似题

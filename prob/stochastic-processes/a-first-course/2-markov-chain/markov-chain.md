@@ -12,8 +12,8 @@
   - 矩阵每行也同理
   - 为何说确定初始分布和转移矩阵就确定过程？只需证明任意realization的概率都可由此计算
 # 实例
-- SPATIALLY HOMOGENEOUS
-  - 和i.i.d.离散随机变量相关
-  - 转移矩阵每行都相同，为$a_0,\cdots,a_n,\cdots$
-  - 所以这个是[[stationary-processes]]
-- 
+## SPATIALLY HOMOGENEOUS
+- 和[[iid]]离散随机变量相关
+- 转移矩阵每行都相同，为$a_0,\cdots,a_n,\cdots$
+- 所以这个是[[stationary-processes]]
+## 

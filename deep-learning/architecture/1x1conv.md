@@ -5,4 +5,4 @@
   - 比如此时的激活函数为`Sigmoid`实际上能
     - 截取出非线性中局部近似线性的那一段
     - 同时起到[[feature-engineering]]“缩尾”（winsorize）作用，并引入凹凸性等
-    - 注：通常我们先batchnorm再激活，但你这个场景显然不能batchnorm再激活
+    - 注：通常情况我们先[[batchnorm]]再[[activation]]，但你这个场景显然不能

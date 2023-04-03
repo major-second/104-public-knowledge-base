@@ -12,3 +12,4 @@
 - $y=x^3$这条线在$[0,1]$，$x$均匀，问[[cov#corr]]
   - $\rho = \frac{\overline{xy}-\bar x\bar y}{\overline {x^2}\bar x^2}$
   - 平均值当然可以用积分代替
+- [[1-first-look]]第三题
