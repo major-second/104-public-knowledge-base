@@ -3,9 +3,9 @@
 - 好处
   - 特例本身具有重要作用
     - [[moment-generating-functions]]中的0处值
-  - 利用特例进行记忆
+  - 记忆一般情况、检验结论正确性
     - [[linear-transform#多元随机变量multivariate]]
-  - 检验
+    - [[4-probability#4.5]] card game
   - 给出启发
     - 常见套路：先特例找规律然后说答案然后证明
       - 这时常见[[induction]]

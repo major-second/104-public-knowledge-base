@@ -15,4 +15,4 @@ public:
     }
 };
 ```
-- 一来，利用对称性交换[[reduction]]
+- 一来，利用[[symmetry#轮换]]，交换，可[[reduction]]

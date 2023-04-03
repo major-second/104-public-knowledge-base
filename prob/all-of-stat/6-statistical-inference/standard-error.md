@@ -6,8 +6,9 @@
   - 例如[[bootstrap-in-stats]]
   - 但你总不能老是多次重复实验，这多笨啊
   - 下文就是一个例子
-- applications
+- 应用
   - [[t]] stats
+  - [[confidence-interval]]，尤其是[[asymptotically-normal#normal-based interval]]
 # [[multi-ary]] SE
 - [参考](https://www.statology.org/standard-error-regression/)
   - 相比[[unary#$R^2$]]，更加“绝对”而非相对

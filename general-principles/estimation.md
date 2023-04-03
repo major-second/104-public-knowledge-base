@@ -6,7 +6,9 @@
 - [[jane-street-introduction]]中[文档链接](https://www.janestreet.com/static/pdfs/trading-interview.pdf)提到knowable unknowns
   - 比如喜马拉雅山天气，确实是已知数，但是你现在不知道，需要估个概率
 # 理论
-- 用于放缩给界[[inequalities]]
+- [[inequalities]]
+  - 给出界（所谓“推bound”）
+  - 给出[[enumerate]]范围
 - 统计中
   - [[2-estimation]]
   - [[confidence-interval]]

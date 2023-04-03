@@ -162,8 +162,26 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 自相似[[general-principles/recursion]]
   - $x = 1/2*2+1/2*(5+x),x=7$
 - card game
-  - 法一：排成环，五段中的一段，则$52/5$
-  - 法二：[[re-classification]]，把总的拆分成多个事件期望相加。之前有多少张“闲”牌？重分类变成每张“闲”牌是否contribute to the whole
+  - 法一
+    - 排成环，$0,x_1,x_2,x_3,x_4$五个数在环上
+    - 环上有假想的0（标记开始）和其余52张真实的牌
+    - $(x_1-0)+(x_2-x_1)+\cdots+(53-x_4)=53$，每一段期望都是$53/5$
+    - 其实是 [顺序统计量](#46-order-statistics)思想
+  - 法二：[[re-classification]]
+    - 把总的拆分成多个事件期望[[linearity]]相加
+      - 之前有多少张“闲”牌
+    - 重分类变成每张“闲”牌是否贡献给总的
+      - 对于48张闲牌，每张都有$1/5$可能做出贡献
+      - 于是答案$48/5+1=53/5$
+  - 两种方法分别都要注意[[off-by-one-errors]]
+  - 一般情况：对于$n$张牌，$k$张特别牌，平均需要$m=(n+1)/(k+1)$次抽出第一张特别牌
+    - 一些[[general-principles/special-case]]检验
+      - $k=1,m=(n+1)/2$
+      - $k=n-1,m=(n+1)/n$
+        - 只有一种是第二张，其他都是第一张
+      - $k=n,m=1$
+      - $k=2,n=4,m=5/3$
+        - 暴力计算$(1+1+1+2+2+3)/6=5/3$
 - sum of random variables
   - 几何意义显然
   - 证明：归纳法，每次做一元积分，shrink the [[simplex]]

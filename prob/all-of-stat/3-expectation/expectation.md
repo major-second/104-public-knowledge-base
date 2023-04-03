@@ -27,6 +27,9 @@
   - $E||Y||^2=\sum EY_i^2=||EY||^2+\sum var Y_i$
     - 或$Y=\mu +Z,E||Y||^2=E\mu^2+E||Z||^2+0$也可证
     - 这里不需要$Y$各维无关
+  - 5个人3男2女，多少个男女相邻对
+    - $4* \frac{2*C_3^1}{C_5^2}=24/10$
+    - 暴力枚举检验：$(1+1+2+2+2+3+3+3+3+4)/10=24/20$
 # [[integral-by-parts]]
 - [[random-variable-functions#cdf]]
   - 可以由[[random-variable-functions#pdf-continuous]]记忆
