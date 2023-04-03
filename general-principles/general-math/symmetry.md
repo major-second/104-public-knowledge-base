@@ -1,5 +1,6 @@
 ## 平移
-- [[cnn]], [[rnn]]的假设 inductive bias
+- [[conv]], [[rnn]]的假设
+  - 这作为他们的inductive bias
 - [[autoregressive]]
 - [[stationary-processes]]
 - [[stationary-independent-increment]]
@@ -29,9 +30,12 @@
   - 例如[[power-rule#速算应用]]
 ## 轮换
 - 或“地位均等”
-- [[weight-init]]中“初始化成一样”
+- 做题时经常“不失一般性设”
+- [[transformer]]初始假设地位均等
+  - positional encoding补救了一下，要不然这方面先天不如[[rnn]]的inductive bias
+- [[weight-init]]中“初始化成一样”造成问题
 - [[order-statistics]]
-- [[235-lowest-common-ancestor-of-a-binary-search-tree]]
+- 交换：[[235-lowest-common-ancestor-of-a-binary-search-tree]]
 - 圆上四个点画两条弦，相交概率$1/3$，因为
   - 顺序看只有$1212$才是相交
   - $1221, 1122$都不相交

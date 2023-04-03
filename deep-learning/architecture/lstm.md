@@ -1,0 +1,23 @@
+- 前置
+  - [[rnn]]
+  - [[gradient-issue]]
+  - [[activation]]
+- [参考](https://zhuanlan.zhihu.com/p/123211148)
+- [参考](https://zybuluo.com/hanbingtao/note/581764)
+- 门 gate
+  - 输入向量，输出$[0,1]^n$，可以乘到原来向量上面表示控制
+  - 所以[[activation]]常用sigmoid
+- 状态
+  - 原来的隐藏状态$h_t$还有
+  - 增加表示长期记忆的$c_t$
+    - 相当于假设[[symmetry#平移]]弱！
+  - 注意$h_{t-1},x_t$被[[concatenate]]到一起，以下记为$v$
+- 前向（省略偏置）
+  - 门
+    - $i_t=\sigma(W_iv)$
+    - $f_t=\sigma(W_fv)$
+    - $o_t=\sigma(W_ov)$
+  - 主体计算
+    - $c_t=f_t*c_{t-1}+i_t*tanh(W_cv)$
+      - 对比tanh和$\sigma$作为[[activation]]意义不同
+    - $h_t=o_t*tanh(c_t)$

@@ -4,4 +4,4 @@
   - 导数数值
     - 避免神经元死亡，[[gradient-issue]]等
   - 输出值域
-    - 如sigmoid用于[[lstm]]的“乘0到1之间数”
+    - 如sigmoid用于[[lstm]]提到“门”

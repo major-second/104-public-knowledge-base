@@ -29,3 +29,10 @@
 - 使用对称性
   - [[rnn]]利用了[[symmetry#平移]]
   - 而transformer完全使用[[attention]]思想，相当于初始时假设[[symmetry#轮换]]，并没有利用位置信息，所以才需要positional encoding补救
+  - 按道理，[[lstm]]介于[[rnn]]和transformer之间
+  - 实际应用
+    - “金融数据”这种序列相比NLP中序列更加[[symmetry#平移]]，更加适合[[rnn]]
+    - NLP用[[rnn]]就是容易遗忘
+- 相比[[rnn]]一大优势：可以[[parallelism]]
+  - 但要是当年[[rnn#parallelizing]]被充分考察了，说不定rnn还能长久竞争transformer呢
+  - https://www.zhihu.com/question/302392659/answer/2954997969

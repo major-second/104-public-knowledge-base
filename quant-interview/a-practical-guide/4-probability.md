@@ -59,6 +59,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - $3000*1+C_{3000}^3*2+\cdots$，也就是想到二项式展开奇数项
   - 草，那就$(1+\sqrt 2)^{3000} + (1-\sqrt 2)^{3000}$是整数
   - 那不就答案是9
+  - 参考[[binomial#奇偶]]
 - cubic of integer
   - 结尾1立方结尾才是1
   - 然后再看十位：$(10a+1)^3=...+30a+1$
