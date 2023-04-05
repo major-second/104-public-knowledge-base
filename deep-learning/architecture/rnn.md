@@ -12,5 +12,5 @@
 - S (Sliced) RNN：切成子序列，逐层上报，不再是原始rnn的“扁平”结构
   - [参考知乎](https://zhuanlan.zhihu.com/p/42242327)
   - [原文](https://arxiv.org/ftp/arxiv/papers/1807/1807.02291.pdf)
-- [参考](https://openreview.net/pdf?id=HyUNwulC-)
-- 
+- 基于[[parallelism#并行计算算法]]的
+  - [参考](https://openreview.net/pdf?id=HyUNwulC-)

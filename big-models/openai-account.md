@@ -4,3 +4,7 @@
      - 对地区可能有要求。如香港可能不行
   - 用虚拟手机号[[sms]]，可能地理位置要符合，[参考](https://sms-activate.org/blog/how-to-sign-up-for-chatgpt)
 - 上 https://platform.openai.com/ 注册
+- [2023.4左右大封号事件](https://zhuanlan.zhihu.com/p/619557927)
+  - 和[[ip-address]], [[openai-api]]滥用, [[region-language]], [[node]]等有关
+  - 短时间减少活跃，特别中文，亚太节点
+  - 比如[[toolbox/web]]中的 deepl 翻译成英文，使用英文prompt再回来中文就算可以

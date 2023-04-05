@@ -1,0 +1,6 @@
+- 插件市场直接搜索copilot
+- [[pricing]]不想买？[免费开源版](https://github.com/AndPuQing/Papilot)
+- [[settings-json]]中
+  - `"github.copilot.advanced"`：换开源版等
+    - 待确认
+  - `"github.copilot.enable"`：让markdown可用等

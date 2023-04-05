@@ -1,5 +1,7 @@
 - 参考[[chatgpt]], [[waitlists]]
 - [cursur.so](https://www.cursor.so/)
+- 前置
+  - (2023.4.4开始)[[openai-account]]
 # 概述
 - 生成和交互代码
   - 官方指南
