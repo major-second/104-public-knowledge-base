@@ -7,9 +7,7 @@
 - $\frac{\int_0^t x^n dx}{t\cdot t^n}=\frac 1{n+1}$
 - $\frac{\int_{-t}^t x^{2n}dx}{2t\cdot (2t)^{2n}}=\frac 1{n+1}$
   - [[symmetry#翻转]]
-- $n=1$，相当于[[linearity]]
-  - 匀加速直线运动$S=\bar vt=v_{max}t/2$
-  - 三角形面积$S=ha/2$
+- $n=1$，相当于[[linearity]]，直接参考[[linearity]]
 - $n=2$
   - 三角形重心距顶点$a = \frac{\int_0^H h\cdot khdh}{\int_0^H khdh}=\frac 23 H$
   - 棱锥体积
@@ -18,6 +16,7 @@
   - 抛物线下面积
     - “凹那端”是长方形1/3，“凸那端”是长方形2/3
     - [[symmetry#轮换]]圆上弦相交题
+  - [[bayes]]中硬币，抛出一次正面，看后验
 - $n=3$
   - 圆盘绕圆心转动惯量$\frac{\int \rho r\cdot r^2dr}{\int \rho rdr}=\frac{1/4}{1/2}mr^2=mr^2/2$
     - 圆环周长是一次幂，转动惯量本身是两次

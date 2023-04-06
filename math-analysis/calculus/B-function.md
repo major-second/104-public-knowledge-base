@@ -5,4 +5,6 @@
   - $B(1,1)=1$
 - 通过[[integral-by-parts]]理解
   - $B(2,3)=\int_0^1t^1(1-t)^2dt=\int_0^1t^{0}(1-t)^3/3dt=1!2!/4!=\Gamma(2)\Gamma(3)/\Gamma(5)$
-- 应用[[order-statistics]]
+- 应用
+  - [[order-statistics]]
+  - [[bayes]]硬币题

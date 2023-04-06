@@ -1,10 +1,13 @@
 # 换元或简记
 - 换元积分法
-- 换元简化推导，如[[hoeffding]]
+- 换元简化推导
+  - [[hoeffding]]
 - [[method-of-moments]]为了方便写出反函数，简记$k$阶矩为$V_k$
 - 对换了的新元求导，如[[maximum-likelihood]]中[[normal]]
 # 有名字作为交流基础
 - [[self-similarity]]中设问题
+  - 对于新定义，如果你适当定义可以简化问题，等价于不适当定义之后代数变形 [换元](#换元或简记)
+    - [[4-probability#coupon collection]]拓展题
 - [[induction]]中设命题
 - 程序的flag
   - [[oi-wiki-stl/string]]中的`string::npos`
