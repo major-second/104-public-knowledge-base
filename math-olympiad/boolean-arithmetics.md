@@ -1,0 +1,11 @@
+- 参考
+  - [[2-brain-teasers#2.7 Modular Arithmetic]]
+- 两个等价类0和1，简洁语言考察奇偶性
+- $1+1=0$表示两个奇数相加等于偶数
+# 例
+- $m*n$矩阵，多少种安排01方式使得每行每列都是奇数个1
+  - [[general-principles/special-case]]先看几个
+  - 结果：$(m-1)*(n-1)$的左上角任意填，然后右边一排和下面一排相应填，最后右下角如果矛盾就无解，如果不矛盾就总共显然$2^{(m-1)(n-1)}$种
+  - 证明
+    - 设左上角和$x$，右边一排$a_1,\cdots,a_{m-1}$，下边一排$b_1,\cdots,b_{n-1}$，右下角$y$
+    - 则有解$\Leftrightarrow \sum a_i + y=\sum b_i + y\Leftrightarrow x +\sum a_i=x+\sum b_i\Leftrightarrow m=n$（都是模2意义）

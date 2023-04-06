@@ -112,6 +112,7 @@ $$\left(\begin{matrix}-1&-1&2\\-1&2&-1\\2&-1&-1\end{matrix}\right)$$
 - 不那么暴力的
   - 标准答案1好像不够严谨：这个充要吗？
   - 标准答案2：看-1和+2，发现模三来看，两种颜色的数量总是不同余，那就肯定不行
+- 参考[[boolean-arithmetics]]
 # 2.8 Math Induction
 - difficulty: formulate the problem and come up with the predicate
 - simplifying the problem may be helpful

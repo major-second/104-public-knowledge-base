@@ -1,3 +1,6 @@
+- 参考
+  - [[identifier]]（找东西用）
+  - [[academic]]（学术资源下载参考）
 - 手机apk
   - 官方：google play
     - 对华为手机参考[[huawei-google]]
@@ -7,25 +10,7 @@
       - 可以下载一些国内应用市场没有的东西比如[[keybase]]、[[android-proxy-client]]代理客户端SSR等
       - 当电脑网址m.apkpure.com给出apkpure特有的`.xapk`格式文件，就可以考虑使用手机apkpure app而不是电脑下载`.xapk`传给手机。这样比较方便
     - 官网图：![](install-xapk.png)
-- 电子书
-  - [z-lib](https://search.zhelper.net/?[{%22name%22:%22zlib.app%22,%22url%22:%22https://api.zlib.app%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:false,%22download%22:%22https://d.zlib.app/download/%22}])
-    - 各种语言，各种格式
-    - 可能需要[[proxy-basics]]代理
-    - [[proxy-basics]]代理导致ip太频繁，超过每天5本限制？用邮箱注册个账号就有额外的5本额度
-    - 2022.11，旧地址[z-lib](https://zh.z-lib.org/)已被美国政府ban掉无法访问
-  - [libgen](https://libgen.gs/)
-  - 转pdf：[pdf2go](https://www.pdf2go.com/)
-    - 参考[[file-format]]
-- 学术相关参考[[academic]]
-- 资源有时有id（具有唯一性的标识符），就方便找
-  - 比如有ISBN就方便去libgen，有doi就方便去各类学术网站找等
-    - ISBN：有10位的，有13位的，最后一位是校验码
-    - 例如![](isbn.png)，可以看到有10位和13位。有重合之处。校验码不同
-  - 比如计算机等领域论文如果会放arxiv预印本，那就有arxiv序列号
-  - 比如学术著作的doi号
-    - 一个例子：`10.1002/9781119571278`
-    - 就方便去[Sci-Hub](https://www.sci-hub.st/)找
-    - 也可以去[doi官网](https://www.doi.org/)看
+- 电子书[[e-book]]
 - 盗版软件（破解[[version]]，参考[[pricing]]）
   - 上网找序列号，如[[vmware]]，[[aida64]]
   - [[search-info/general]]中提到暗网海盗湾，[[telegram]]等地方可能有盗版安装包或序列号

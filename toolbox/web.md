@@ -36,11 +36,12 @@
     - ocr（可以上传电脑图片或手机微信扫码上传图片。需要登录）
     - 亲测效果在2022.7好于[[tesseract]]
   - https://tool.lu/coderunner/
-- https://miconv.com/
-  - [[file-format]]转换用
+- [[file-format]]转换用
+  - https://miconv.com/
+  - 转pdf：[pdf2go](https://www.pdf2go.com/)
 - 在线会议
   - 网页版[[teams]], [[tools/zoom]]都挺好用的
-  - [[tencent-meeting]]可能需要 [海外版](https://voovmeeting.com/)才有网页版，而且只能加入，不能创建会议
+  - [[tencent-meeting]]没有方便的在线
 - 电子邮箱
   - 和[[outlook]]各有优劣！
 - 在线输入法
