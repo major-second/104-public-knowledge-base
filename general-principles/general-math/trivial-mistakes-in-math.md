@@ -8,6 +8,6 @@
     - $e^x-1-x-x^2/2$只有当$x\ge 0$才是恒正
 # 单双侧
 - 差2倍
-  - [[查表#normal]]
+  - [[look-up#normal]]
   - [[concentration]]
   - [[hoeffding#main contents]]

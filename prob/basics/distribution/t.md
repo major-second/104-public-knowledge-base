@@ -9,7 +9,7 @@ $n$个自由度的$t$分布$t(n)$，分布密度$\frac{\Gamma(\frac {n+1}2)}{\Ga
     - 提示：应用[[sterling]]公式，如[[gamma-function]]所述
   - $n\ge 25$时，极为接近
   - 和[[normal]]一样“钟形”，偶函数。用[[pivotal-interval]]时用法挺像
-  - [[查表]]时多一个“自由度”参数要查
+  - [[look-up]]时多一个“自由度”参数要查
 # t stats
 - 应用中，常常和[[3-hypothesis]]联系，$t$统计量绝对值大说明“显著”
   - 联系[[asymptotically-normal]]理解

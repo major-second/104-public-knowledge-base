@@ -3,7 +3,7 @@
 - 由于[[central-limit]]定理，所以实际中常常用到
 - [[random-variable-functions#pdf-continuous]]是有的：$\frac{1}{\sigma \sqrt {2\pi}}exp\{-\frac 1 {2\sigma^2} (x-\mu)^2\}$，记为$\phi(z)$
 - [[random-variable-functions#cdf]]则没有闭式，记为$\Phi(z)$
-- 实际应用：经常[[查表]]
+- 实际应用：经常[[look-up]]
 # [[moment]]
 - 中心矩
   - 可以用[[gamma-function]]函数得结果

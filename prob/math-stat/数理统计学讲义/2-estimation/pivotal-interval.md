@@ -16,7 +16,7 @@
     - 那就直接$2\lambda \sum X_i$，这回得到恒定分布，从而得到[枢轴量](#pivotal)了
       - 用到了[[random-variable-functions#pdf-continuous]]变换相关结论
     - 分布满足$2n$个自由度的[[chi-square]]
-    - 从而可以[[查表]]
+    - 从而可以[[look-up]]
   - 为了得到好的置信区间，理想情况下上界和下界处密度函数相等
     - [[marginal]]产值相等
   - 实际中偷懒用平分法
