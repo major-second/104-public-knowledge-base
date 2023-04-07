@@ -9,9 +9,9 @@
 # presentation
 - focus more on your progress since last update
 - 参考[[minimum-beamer/README]]
-- 参考听众水平
+- 参考听众水平，换位思考对方
   - 不能指望短时间把不懂的人讲懂
-  - 注意听众有没有follow领域/你的项目等
+  - 注意听众有没有follow领域/你的项目等，有没有背景
 # 数据
 - 参考
   - [[series-dataframe]]做处理
