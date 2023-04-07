@@ -44,6 +44,10 @@
   - 如二维sin-cos编码
   - 三维：用6维表示空间中三维旋转，参见[Visual Imitation Made Easy](https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/resources/paper.pdf)
 - 作为学习表示（representation）的方法：encoder-decoder
+## NLP
+- [[one-hot]]
+- [[word2vec]]
+- [[nlp-pretrain]]
 # 其它参考
 - 参考[[file-format]]，特别是关于“文本、二进制”的部分
 - [[xxd-diff]]

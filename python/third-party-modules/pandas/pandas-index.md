@@ -21,6 +21,8 @@
 - 删：参考[[inplace]]
 - 增、改
   - 可以是赋予单个数，也可以是序列
+    - 但对于还不存在的column，不能直接新增`.loc[row, col]`
+    - 而是必须先`df[col] = pd.Series()`增加空白列
   - 可以`[key]`或者`.loc[:, key]`
   - value是`Series`时，要注意有没有让他的`index`和你的`data`的`index`一致
     - 隐蔽的错误：`a, b = [pd.Series([1,1], index=range(i,i+2)) for i in range(2)]; print((a+b).shape)`
