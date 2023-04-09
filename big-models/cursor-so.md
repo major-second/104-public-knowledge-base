@@ -1,7 +1,11 @@
-- 参考[[chatgpt]], [[waitlists]]
+- 参考
+  - [[chatgpt]], [[waitlists]]
+  - [[git-basics/basics]]的`git add`很有帮助
 - [cursur.so](https://www.cursor.so/)
 - 前置
   - (2023.4.4开始)[[openai-account]]
+  - 了解[[vscode/edit]]当然有帮助
+    - 但是cursor毕竟还不成熟，可能有些[[vscode-extensions]]不如原版上线快，原版vscode能用这里不能用
 # 概述
 - 生成和交互代码
   - 官方指南
@@ -14,13 +18,14 @@
   - 最常用快捷键
     - `Ctrl+K` Edit
       - 在已有代码基础上编辑
-      - 或注释[[comment]]变成代码
+      - 把注释[[comment]]变成代码
       - 代码重构
     - `Ctrl+L` Chat
       - 解说，闲聊，不改变当前代码
-    - 时至2023.3，有时`Ctrl+K`没反应，可以`Ctrl+L, Ctrl+K`
+      - 但也可以（迭代）生成代码块，复制过来
     - `Ctrl+退格` 取消
     - `Ctrl+Enter` 接受
+      - 如果不想全部接受，可以先`git add`这个文件，然后接受之后对比新旧版本，选择性接受
   - 可以作为开发环境打开文件夹等
   - 被收入[[editor-index]]
   - 当然免费的会达到maximum capacity，这时就需要[[aggregation]]

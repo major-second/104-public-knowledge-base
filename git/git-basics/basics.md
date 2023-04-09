@@ -12,7 +12,7 @@
 - Working Copy代表你正在工作的那个文件集
   - 比如你用记事本修改了一个文件，保存之后，working copy就变化
 ## 操作过程
-[参考](https://www.cnblogs.com/kidsitcn/p/4513297.html)
+- [参考](https://www.cnblogs.com/kidsitcn/p/4513297.html)
 - 当你第一次[[checkout]]一个分支，HEAD，Index，Working Copy都相同
   - 特别注意，如[[detached]]时，[[checkout]]可能导致丢失！
 - 当你对一个文件执行一次修改（比如编辑器打两行字然后`Ctrl + S`保存）
@@ -20,7 +20,7 @@
     - Git感知到这个修改，标记这个文件是修改过的
     - 可以理解成Git相当于比文本编辑器“高一层”，是“文件夹编辑器”
     - 这里文件夹中“修改文件但没有`git add`到index”类比编辑文件中“文本没保存”
-- 然后，当你执行一个`git add`（即stage的一种），Git就stages the file in the index
+- 然后，当你执行一个`git add`，Git就stages the file in the index
     - 现在你的working copy和index是相同的，但是他们和HEAD区是不同的！
     - 这里类比文本编辑器的按保存
 - 当你执行一个git commit，Git就创建一个新的commit，随后HEAD就指向这个新的commit，而index, working copy的状态和HEAD就又完全匹配相同了

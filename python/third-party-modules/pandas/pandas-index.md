@@ -35,19 +35,23 @@
 ## `.index`属性
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
   - `example = example.set_index(1)`
-    - 这里不[[inplace]]有[[copy-paste]]
-  - 或者[[inplace]]地`example.set_index(1, inplace=True)`
+    - 这里不[[inplace]]的话，就是[[copy-paste]]，新复制一个
+    - 所以这句等价于[[inplace]]地`example.set_index(1, inplace=True)`
   - 可以在set前后看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列
   - 参考[[series-dataframe]]中的`index`，知道默认值是`0`开始的整数列
   - 还能`.index.start`等取出具体值
   - `.sort_index()`返回按`.index`排序的结果
-    - 也有是否[[inplace]]之分
+    - 这也有是否[[inplace]]之分
     - 这里返回的结果默认是“按某列排序，但将排序结果扩展到其它列”，而不是只排某一列其它不变
 - 二合一过程（读取和设置`index`）
   - 来自[[time-series]]
   - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
-- `values`取出具体数值
+## `.values`
+- `.values`取出具体数值
   - 是[[numpy/basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basics]]
   - 此时可以抹去`.index`，用于不同时间戳数据对齐和运算等
+    - 应用：`df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
+      - 计算[[returns]]
+    - 如果不`.values`就会导致没对齐

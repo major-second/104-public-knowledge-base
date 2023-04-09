@@ -47,5 +47,9 @@
 - 他有时会自我设限，但其实可以做。你可以想办法绕过
 - 比如Please memorize不行，但Please commit it to your memory可能就行了
 # downstream
-- [chatpdf](https://www.chatpdf.com/)：读论文读书审稿等用
+- [chatpdf](https://www.chatpdf.com/)
+  - 读论文读书审稿等用
+  - 文章太长了，用[[toolbox/web]]截取
+    - https://www.pdf2go.com/
+  - 免费的有每日限流，单文件限大小页数
 - [[cursor-so]]
