@@ -1,61 +1,76 @@
+[toc]
 # 数学中
-- 参考[[counter-examples]]
-- 好处
-  - 特例本身具有重要作用
-    - [[moment-generating-functions]]中的0处值
-  - 记忆一般情况、检验结论正确性
-    - [[linear-transform#多元随机变量multivariate]]
-    - [[4-probability#4.5]] card game
-  - 给出启发
-    - 常见套路：先特例找规律然后说答案然后证明
-      - 这时常见[[induction]]
-    - 例子
-      - $E (max(a, E(b)))$ and $E(max(a,b))$
-        - 均匀分布0到1，则$5/8 < 2/3$，先得到小于
-        - 然后直觉
-          - $b$和$E(b)$期望相同，它们可以把$a$往上拉
-          - 如果相同概率拉，幅度期望相同，那就相等
-          - 但是实际上$b$这个“强者更强”，$b$更大时往上拉概率更大，“充分发挥优势”
-          - 所以$<$
-        - 参考[[estimation#虚假规律]]
-      - 倒水
-        - $4,3,2,1$
-        - $4$平分给所有人，$1,4,3,2$
-        - 轮转4次，$4,3,2,1$
-        - 怎么想到这个序列？先从2，3特例开始看
-        - 注意熟练矩阵乘法
-        - 解的[[trivial-mistakes-in-algo#uniqueness]]：矩阵可逆性
-  - 判定退化情况（化简）
-    - 刘维尔定理
-    - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
-- 坏处
-  - 有些东西对于特例不work，你不检查就不严谨
-  - 例子
-    - [[markov-chain]]课后2.b
-      > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
-      - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
+## 好处
+- 用作计算、解题
+  - [[待定系数法]]
+  - [[proportional#等车例题]]
+- 特例本身具有重要作用
+  - [[moment-generating-functions]]中的0处值
+- 判定退化情况（化简）
+  - 刘维尔定理
+  - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
+### 给出启发
+- 常见套路：先特例找规律然后说答案然后证明
+- 参考
+  - [[induction]]
+  - [[general-principles/recursion]]
+  - [[self-similarity]]
 - 例子
-  - [[6-serial/basics]]的$\tau\equiv 0$情况
-  - [[2-2-calculus-ode]]
-  - [[5-brownian-motion-and-stochastic-calculus]]
-  - [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
-  - [[dp#01动规]]生成路径的特殊方法
-  - 多个不同层次退化，更加看出本质
-    - [[multi-normal]]
-    - [[distribution/gamma]]退化成[[chi-square]]分布，进而指数
-    - [[dp]]
-  - 离散和连续[[discrete-continuous]]
-  - 升维
-    - 标量拓展到向量
-      - [[normal]], [[multi-normal]]
-      - [[2-linear-optimization]]中的
-      - [[2-4-duality-in-linear]]中的
-      - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
-    - 向量拓展到矩阵
-      - [[linear-transform#多元随机变量multivariate]]
+  - $E (max(a, E(b)))$ and $E(max(a,b))$
+    - 均匀分布0到1，则$5/8 < 2/3$，先得到小于
+    - 然后直觉
+      - $b$和$E(b)$期望相同，它们可以把$a$往上拉
+      - 如果相同概率拉，幅度期望相同，那就相等
+      - 但是实际上$b$这个“强者更强”，$b$更大时往上拉概率更大，“充分发挥优势”
+      - 所以$<$
+    - 参考[[estimation#虚假规律]]
+  - 倒水
+    - $4,3,2,1$
+    - $4$平分给所有人，$1,4,3,2$
+    - 轮转4次，$4,3,2,1$
+    - 怎么想到这个序列？先从2，3特例开始看
+    - 注意熟练矩阵乘法
+    - 解的[[trivial-mistakes-in-algo#uniqueness]]：矩阵可逆性
+### 帮助理解记忆
+- 用特例记忆一般情况
+- 用特例检验你记忆结论正确性
+- 例子
+  - [[linear-transform#多元随机变量multivariate]]
+  - [[4-probability#4.5]] card game
+- 多个不同层次退化，更加看出本质
+  - [[multi-normal]]
+  - [[distribution/gamma]]，[[chi-square]]，进而[[gamma#指数分布]]
+  - [[dp]]和[[greedy]]
+- [[discrete-continuous]]
+- [[high-dimension]]
+  - 标量拓展到向量
+    - [[normal]], [[multi-normal]]
+    - [[2-linear-optimization]]中的
+    - [[2-4-duality-in-linear]]中的
+    - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
+  - 向量拓展到矩阵
+    - [[linear-transform#多元随机变量multivariate]]
+## 坏处
+- 有些东西对于特例不work，你不检查就不严谨
+  - [[counter-examples]]
+  - [[trivial-mistakes-in-math]]，如非零
+- 例子
+  - [[markov-chain]]课后2.b
+    > Assume that at time t there are exactly k balls in A. At time t+1 an urn is selected at random in proportion to its contents (i.e., A is chosen with probability k/N and B is chosen with probability (N — k)/N). Then a ball is selected from A with probability p or from B with probability q and placed in the previously chosen urn. Determine the transition matrix for this Markov chain.
+    - 注意边界（0或N）没有说明，但是应当是自己合理假设，显然！
+## 更多例子
+- [[6-serial/basics]]的$\tau\equiv 0$情况
+- [[combination]]中通过“第0个元素加0，以此类推”处理相等情况
+- [[dp#01动规]]生成路径的特殊方法
 # 算法题
-[[algorithm/special-case]]
+- [[algorithm/special-case]]
 # 实际程序
+## 利用
+- [[general-principles/debug]]，特例进行检验，跟前面“数学中”一个道理
+- 能用特例能不用特例，请用特例，往往有更好表现
+  - [[portfolio-optimization]]
+- 一些东西可能是另一些东西的特例，你以为没这个功能其实有
+  - 比如查找替换[[search-info/general]]时，如果替换成空那就是删除。可用于删除所有某个字符串
 ## 不良后果
 - [[finetune]]中的例子：取一段区间内的数据做[[regression]]
   - 首先，有可能取出0条数据，导致[[regression]]报错
@@ -65,9 +80,3 @@
 - 文字、字符串中有特殊字符没有[[escape]]
   - 如拼接字符串形成路径时，出现特殊字符`/`
 - [[subplots]]这种，是否为1导致类型不同
-## 利用
-- [[general-principles/debug]]，特例进行检验，跟前面“数学中”一个道理
-- 能用特例能不用特例，请用特例，往往有更好表现
-  - [[portfolio-optimization]]
-- 一些东西可能是另一些东西的特例，你以为没这个功能其实有
-  - 比如查找替换[[search-info/general]]时，如果替换成空那就是删除。可用于删除所有某个字符串

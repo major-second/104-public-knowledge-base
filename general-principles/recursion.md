@@ -5,6 +5,8 @@
   - [[dp]]
 # 算法题中[[oi-wiki-basic/recursion]]
 - 例如[[10-regular-expression-matching]]
+# 互相递归调用
+- [[q-v]]
 # 一般程序中
 ## 命令行
 - 有些自动递归（这时要防止递归运行太多太慢）

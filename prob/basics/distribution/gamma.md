@@ -3,7 +3,7 @@
   - 比例系数（归一化常数）$\frac {\beta}{\Gamma(\alpha)}$就容易积分算出了
 - 记作$\Gamma(\alpha,\beta)$
   - 当然也有人用$\beta$的倒数作为记号
-- 特例
+- 特例[[general-principles/special-case]]
   - $\alpha=1$就是[指数分布](#指数分布)
   - $\Gamma(\frac n2,\frac 12)$就是$n$个自由度卡方分布[[chi-square]]
   - 所以$n=2$个自由度卡方分布就是指数分布

@@ -1,4 +1,6 @@
 # 总体原则
+- [[marginal#边际产值相等表示最优]]
+- [[inada-condition]]
 - 多目标优化，需要[[utility-function]]效用函数，明确你想要什么
   - 有时有天然的[[utility-function]]
     - 如[[2-eval]]所述，在tradeoff训练集占多大时，天然的[[utility-function]]就是模型最终表现

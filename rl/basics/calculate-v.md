@@ -13,4 +13,4 @@
 3. TD
   - 不用走到最后！过程中的$V$就可以估计最终采样结果$G$，从而用来更新
   - 相比MC方法，更新公式变为$V(S_t) \leftarrow V(S_t) +\alpha(R_{t+1} + \gamma V(S_{t+1}) - V(S_t))$
-  - 其实有[[self-similarity]]，[[general-principles/recursion]]等思想
+  - 有[[self-similarity]]，[[general-principles/recursion]]等思想
