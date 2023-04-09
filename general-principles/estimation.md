@@ -8,6 +8,7 @@
 # 理论
 - [[inequalities]]
   - 给出界（所谓“推bound”）
+    - [[2-7-brain-teasers]]第16题
   - 给出[[enumerate]]范围
 - 统计中
   - [[2-estimation]]

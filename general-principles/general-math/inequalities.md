@@ -21,5 +21,11 @@
 - 例子
   - [[converge-in-probability]]: 要不然概率小，要不然误差小
   - 黎曼积分的定义
+## 利用导数证明
+- $ln(1+x)<x,x>0$
+- $e^x > x+1, x\in \mathbb R$
+- $e^x > \frac {x^2}2 +x+1,x>0$，注意[[trivial-mistakes-in-math#范围]]
+- $e^x \ge ex$
+- $lnx\le x/e$
 ## 其它
 - $\pi > 3$：放缩到六边形
