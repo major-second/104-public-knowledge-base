@@ -49,10 +49,6 @@ https://keybase.io/
     - ![](keybase.png)
 - 删除revoke设备权限：之后不能访问
   - 即使删除，也不能再用相同名字
-- 文件管理：左侧Files选项卡
-  - ![](keybase-files.png)
-  - 可以打开同步功能，就会在这个设备上同步
-  - todo：还没成功（文件太大？）
 # 命令行
 - https://book.keybase.io/docs/cli#basics
 # troubleshooting
@@ -69,6 +65,12 @@ https://keybase.io/
 # 操作
 - 删除之前的记录：可能有延迟。特别是删除图片等
 - 手机截图可能显示这是private content不给你截。你可以在手机设置里打开一个开关使得可以截
+# 文件管理：左侧Files选项卡
+- 类比[[net-disk]], [[file-transfer]]，保持隐私和持久化
+- ![](keybase-files.png)
+- 安装成功后可以类似[[net-disk]]一样拖动上传
+- 在windows的`KBFS (K:)`中用[[file-explorer]]管理（[[CRUD]]方式和普通[[file-explorer]]中相同）
+- 可以打开同步功能，就会在这个设备上同步
 # git
 - 是一种[[other-hubs]]
 - `Ctrl+7`快捷键，可以创建库，复制相应链接（`keybase://`开头）

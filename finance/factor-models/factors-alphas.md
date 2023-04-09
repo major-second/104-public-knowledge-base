@@ -2,6 +2,9 @@
   - [[CAPM]]
   - [[fama-french]] (more factors)
   - [[data-science/residual]]
+- 参考
+  - [[feature-engineering]]，特别是[[feature-engineering#举例]]
+  - [[naming]]
 - A "factor" represents a systematic risk that affects the returns of a security or portfolio.
   - Factor models help in estimating the expected returns and risks of a security or portfolio.
   - Factors can be macroeconomic variables, market indices, or other financial variables that influence asset prices.

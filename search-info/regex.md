@@ -14,6 +14,13 @@
       - 哈哈，你装作不知道`-A`吧233
     - 在里面是“否”
       - 想找两个空格，但不能有更多空格：<code>[^ ]&nbsp;&nbsp;[^ ]</code>
+      - `[^\[]\]\(.*\.[a-z0-9][a-z0-9][a-z0-9]\)`
+        - 能匹配
+          - `[图片](vscode-regex.png)`
+          - 效果：[图片](vscode-regex.png)
+        - 不能匹配
+          - `![](vscode-regex.png)`
+          - 效果：![](vscode-regex.png)
   - 常用特殊：`\s`空白，`\S`非空白，`[0-9]`，`[a-z]`，`\w`相当于`[0-9a-zA-Z_]`
     - 只看后4张卡占用：`grep '[4-7]\s\+T'`
     - [[resource-management/disk]]讲到的`du -h | grep '[0-9]G\s'`

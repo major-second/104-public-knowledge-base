@@ -40,5 +40,5 @@
   - 两个量做[[unary]]线性回归看相关系数或斜率（斜率当然和协方差[[cov]]关系密切）
     - 还可以错位再看相关，捕捉时间上的先后关系，例如[海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)的“量价”先后动
 # 举例
-- [华泰191因子](https://bigquant.com/community/t/topic/156537)
+- [bigquant知识库](https://bigquant.com/community/t/topic/156537)
 - [海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)
