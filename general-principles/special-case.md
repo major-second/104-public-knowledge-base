@@ -4,7 +4,8 @@
 - 用作计算、解题
   - [[待定系数法]]
   - [[proportional#等车例题]]
-- 快速判断对错
+- 快速判断对错、定性结果
+  - [[normal#截一半看cov#corr]]
 - 特例本身具有重要作用
   - [[moment-generating-functions]]中的0处值
   - [[normal#各向同性]]计算高斯积分

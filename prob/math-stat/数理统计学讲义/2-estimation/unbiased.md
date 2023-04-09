@@ -4,7 +4,7 @@
   - 这是要求“一致”的，是[[forall]]思想
 - 如何找一个无偏估计？
   - 一般的估计方法（如[[maximum-likelihood]]等）说不定就直接得到无偏的
-  - [[方差的无偏估计]]
+  - [[variance#unbiased估计]]
   - 计算一些东西比如[[order-statistics]]期望，矩期望等，再线性组合等
   - 有某个量的分布，就可能通过[[分布的变换]]得出其它
   - [[optimal-estimator]]提示我们用[[sufficient-statistics]]（当然只是起提示作用）
@@ -20,6 +20,6 @@
   - 样本量为1
   - 直接写出期望的定义，令其等于$e^{-2\theta}$，令对一切$\theta$成立，得到不合理结果（观测值奇数时估计量为-1）
 - 常见的有偏估计
-  - [[maximum-likelihood]]估计方差，常常不是[[方差的无偏估计]]
+  - [[maximum-likelihood]]估计方差，常常不是[[variance#unbiased估计]]
   - [[q-learning-overestimation#single estimator]]
   - [[estimation#$Ef(X)\approx f(EX)$]]

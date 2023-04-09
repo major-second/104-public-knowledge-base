@@ -13,3 +13,11 @@
 - 其它例子
   - [[statistical-functionals]]
   - 线性空间
+# 估计量线性组合
+- 前置[[2-estimation]]
+- 有几个[[unbiased]]估计量可以线性组合成其它[[unbiased]]估计量
+- 这几个估计量可以用其它[[2-estimation#方法]]得到，例如
+  - [[moment]]
+  - 套用[[variance#unbiased估计]]，等等
+  - 注意这种做法不是[[moment]]估计
+- 比如[[poisson]]一阶矩$\lambda$，二阶矩$\lambda^2+\lambda$，组合出$\lambda^2$

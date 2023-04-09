@@ -21,3 +21,4 @@
 ## 数学中
 - 小学奥数植树问题，注意端点
 - [[4-probability#4.5]] card game
+- [[variance#unbiased估计]]

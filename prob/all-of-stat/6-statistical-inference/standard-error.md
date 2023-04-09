@@ -17,13 +17,13 @@
   - 说“我确信95\%概率能……”
 - [参考](https://zhuanlan.zhihu.com/p/358287489)
   - > 为了得到标准误，我们不可能做很多次科学实验。实际上我们可以做一次样本实验，然后采用估算公式
-  - 可能用到[[方差的无偏估计]]，比如下文
+  - 可能用到[[variance#unbiased估计]]，比如下文
 - [推导过程参考](https://stats.stackexchange.com/q/44841)
 - 关键：$Var(\hat \beta) = \sigma^2 (X'X)^{-1}$
   - 这里用到了[[linear-transform]]的[[cov]]公式
   - 这里认为$X$是给定的，$Y$才有随机性
     - 参考[[4-regression]]
-  - 注意这个是理论值，实际中还要[[方差的无偏估计]]，得到$\hat {Var} (\hat \beta)$
+  - 注意这个是理论值，实际中还要[[variance#unbiased估计]]，得到$\hat {Var} (\hat \beta)$
     - 此时注意减去自由度不是$-1$而是减去更多
     - 例如一元[[unary]]含截距，就是$-2$
   - 推论：100个数据重复变成200个，则

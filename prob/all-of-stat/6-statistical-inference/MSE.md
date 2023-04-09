@@ -3,20 +3,32 @@
   - MSE是评估估计量好坏的一种方法，它的值越小，说明估计量越准确
 - 参考[[优良标准]]
 # bias-variance tradeoff
-- 前置[[tradeoff]]
-- 特殊情况：$\hat \mu = \bar X$
+- 前置
+  - [[tradeoff]]
+  - [[variance#与$EX^2$关系]]
+  - [[moment]]
+- 特殊情况
+  - $\hat \mu = \bar X$
+    - 参数$\mu$的估计量$\hat \mu$是统计量$\bar X$
   - $E(\bar X-\mu)^2=E((\bar X-E\bar X)+(E\bar X-\mu))^2=Var\bar X+0(交叉项)+Bias^2$
   - 注意$E\bar X-\mu$是常数，记为了偏差bias
 - 一般情况：$\hat \theta$
   - $E(\hat \theta - \theta)^2 = E((\hat\theta - E(\hat \theta))^2 +(E(\hat\theta)-\theta)^2)(交叉项为0)=Var\hat \theta+Bias^2$
 - 实质
-  - 方差(Var)和均方误差(Mean Squared Error, MSE)，实际上就是“针对的那个”（相对谁作差）常数不同
+  - 方差(Var)即中心[[moment]]
+  - 均方误差(Mean Squared Error, MSE)
+  - 原点[[moment]]
+  - 实际上就是相对谁作差的那个常数不同，分别是$E\hat \theta,\theta(真实值),0$
   - 这个常数动一动就是偏差-方差分解
-  - 当然动到$E\bar X$则有某项“最小”，是某种意义“正交投影”，这可以帮助理解记忆“分解”的含义
-- 注意这个方差开方，则也称为[[standard-error]]
-- 偏差和方差都趋向于0推出MSE趋向于0，至少有弱[[相合性]]
+  - 当然动到$E\hat \theta$则有某项“最小”，是某种意义“正交投影”
+  - 这可以帮助理解记忆“分解”的含义
+- 这个方差开方，也称为[[standard-error]]
+- 偏差和方差都趋向于0
+  - 推出MSE趋向于0
+  - 根据[[converge-in-l2]]
+  - 至少有弱[[相合性]]
 ## 推广
-- 变成高维，相应方差变成2范数等，乘积变成内积等……（略）
+- 变成[[high-dimension]]，相应方差变成2范数等，乘积变成内积等……（略）
 - Bregman Loss
   - $\phi: \mathbb R^d \to \mathbb R$严格凸可导
   - 诱导Bregman Loss Function $l_\phi(\theta,\hat \theta)=\phi(\theta) - \phi(\hat\theta) - (\theta - \hat \theta)^T \nabla \phi(\hat\theta)$，相当于泰勒高阶项

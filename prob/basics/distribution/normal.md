@@ -23,6 +23,28 @@
 - $P(Z>t)=\int_t^\infty \frac 1{\sqrt {2\pi}}e^{-\frac {x^2}2}dx\le \frac 1{\sqrt {2\pi}} \int \frac xt e^{-x^2/2}dx=\frac{1}{\sqrt{2\pi}}\frac{e^{-t^2/2}}{t}$
 - $P(|Z|>t)\le \sqrt{\frac 2\pi}\frac{e^{-t^2/2}}t$
 # 例题
+## 截一半看[[cov#corr]]
+- 两个[[iid]]
+  - 只看$X+Y>0$部分，相关系数小于0，因为取$X\to \pm \infty$ [[general-principles/special-case]]可看出
+  - 只看$X+Y<0$部分，还是
+  - 参考[[counter-examples]]，这个可能反直觉
+- 较严谨证明
+  - $EXY=CE((X+Y)^2-(X-Y)^2)$
+  - $E((X+Y)^2)$截了等于没截是$2E(Z^2)=2\sigma^2$
+  - $E((X-Y)^2)$也是截了等于没截是$2E(Z^2)=2\sigma^2$
+  - $EXEY$同号相乘为正
+  - [[cov]]小于0
+## 截中间看[[cov#corr]]
+- $Y=\beta X +Z$
+- 直觉
+  1. 法一：只看$|X|<1$部分，噪声大，信噪比小，$|\rho|$变小
+  2. 法二：理解成“椭圆，截取$|X|$小那个部分”
+- 证明
+  - 不妨$\beta = 1$
+  - $\rho = \frac{EXY-0\cdot 0}{\sigma_X\sigma_Y}$
+    - 那俩0截不截都是0
+  - $\rho = \frac{EX^2}{\sqrt{EX^2}\sqrt{EX^2+EZ^2}}=(1+\frac{\sigma_Z^2}{\sigma_X^2})^{-1/2}$
+  - 所谓低信噪比，就是$\frac{\sigma_Z^2}{\sigma_X^2}$偏大，结果$\rho$偏小
 ## [[cov#corr]]绝对值期望
 - 题目
   - [[iid]] $X$, $Y$，各N维，N很大
@@ -33,11 +55,16 @@
   - 然后可以认为$Ef(x)=f(EX)$
 - 参考
   - [[2-estimation]]
-  - [[方差的无偏估计]]
-  - [[estimation#虚假规律]]
+  - [[variance#unbiased估计]]
+  - [[variance]]
+    - 
+    - 当$EX^2- (EX)^2 \gg (EX)^2$
+  - [[estimation#$Ef(X)\approx f(EX)$]]
 - 法一：正常法
-$E|\hat \rho|\\
- \approx(认为无截距) E \frac{\sum x_iy_i}{\sqrt{\sum x_i^2\sum y_i^2}} \\
- = \sqrt{\frac{(\sum x_iy_i)^2}{\sum x_i^2\sum y_i^2}} \\
- $
+  - $E|\hat \rho|\\
+    \approx(认为无截距) E \frac{|\sum x_iy_i|}{\sqrt{\sum x_i^2\sum y_i^2}} \\
+    = E\sqrt{\frac{(\sum x_iy_i)^2}{\sum x_i^2\sum y_i^2}} \\
+    \approx \sqrt{\frac{(E(\sum_i X_iY_i))^2}{ENX^2ENY^2}} \\
+    $
+  - 其中
 - 法二：[[high-dimension#球]]几何意义

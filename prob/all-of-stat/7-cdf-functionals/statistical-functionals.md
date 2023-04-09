@@ -11,7 +11,7 @@
 - 例子
   - [[expectation]]: $\hat \mu =\bar X$
   - [[variance]]: 代入计算得$\hat \sigma^2 = \frac 1n \sum(X_i-\bar X)^2$
-    - 这和[[方差的无偏估计]]不同
+    - 这和[[variance#unbiased估计]]不同
     - 也就有了[[standard-error]]，可以在[[asymptotically-normal]]情况计算[[asymptotically-normal#normal-based interval]]
   - [[moment]]中skewness
   - [[cov#corr]] -> sample correlation
