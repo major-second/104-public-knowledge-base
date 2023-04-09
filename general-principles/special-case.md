@@ -4,11 +4,14 @@
 - 用作计算、解题
   - [[待定系数法]]
   - [[proportional#等车例题]]
+- 快速判断对错
 - 特例本身具有重要作用
   - [[moment-generating-functions]]中的0处值
+  - [[normal#各向同性]]计算高斯积分
 - 判定退化情况（化简）
   - 刘维尔定理
   - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外
+  - [[separable]]
 ### 给出启发
 - 常见套路：先特例找规律然后说答案然后证明
 - 参考
@@ -23,7 +26,7 @@
       - 如果相同概率拉，幅度期望相同，那就相等
       - 但是实际上$b$这个“强者更强”，$b$更大时往上拉概率更大，“充分发挥优势”
       - 所以$<$
-    - 参考[[estimation#虚假规律]]
+    - 这个比[[q-learning-overestimation]]还是复杂点的hhh
   - 倒水
     - $4,3,2,1$
     - $4$平分给所有人，$1,4,3,2$
@@ -34,22 +37,15 @@
 ### 帮助理解记忆
 - 用特例记忆一般情况
 - 用特例检验你记忆结论正确性
-- 例子
-  - [[linear-transform#多元随机变量multivariate]]
-  - [[4-probability#4.5]] card game
+- [[linear-transform#多元随机变量multivariate]]
+- [[4-probability#4.5]] card game
+- [[q-learning-overestimation]]
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
-  - [[distribution/gamma]]，[[chi-square]]，进而[[gamma#指数分布]]
+  - [[distribution/gamma]]，[[chi-square]]，[[gamma#指数分布]]
   - [[dp]]和[[greedy]]
 - [[discrete-continuous]]
 - [[high-dimension]]
-  - 标量拓展到向量
-    - [[normal]], [[multi-normal]]
-    - [[2-linear-optimization]]中的
-    - [[2-4-duality-in-linear]]中的
-    - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
-  - 向量拓展到矩阵
-    - [[linear-transform#多元随机变量multivariate]]
 ## 坏处
 - 有些东西对于特例不work，你不检查就不严谨
   - [[counter-examples]]

@@ -1,5 +1,8 @@
 时常想想“换一下”“替代”“变通”（英文：workaround）
-- 相关：[[aggregation]]
+- 参考
+  - [[aggregation]]
+  - [[estimation]]
+  - [[tradeoff]]
 - 不要钻牛角尖。人的精力是有限的，你不可能面对一切tricky issues都想着彻底解决。有时可以绕过
   - 例如[[press-keys]]中时至2022.6，`alt + space`效果不正常，你可以用`win + 方向键`凑合一下完成最大最小化
   - 例如[[lightning/basics]]中多卡训练莫名其妙报错，那就算了吧，老老实实单卡

@@ -1,5 +1,7 @@
 - 编码解码
-# 基础
+
+[toc]
+# 计算机编码
 - 总体原则
   - 二进制，[[7-the-power-of-2]]
   - 尽量统一，如unicode，时间戳等
@@ -33,8 +35,12 @@
         - 论证显然。对于两个不同序列
           - 其长度不同，当然编码不同
           - 其长度相同，那么用`0-9`编码不同，`1-10`编码还是不同！
-- 去除[[trivial-mistakes-in-algo#uniqueness]]
+- [[trivial-mistakes-in-algo#uniqueness]]
   - 例如[[geometry]]格点三角形题
+# 数学中
+## 直角坐标和极坐标
+- [[3-calculus]]
+- [[normal#各向同性]]
 # 智力题
 - 总共有多少种状态，多少进制，决定有多少位
   - [[8-brain-teasers]]第12题，二进制；13题三进制
@@ -54,3 +60,12 @@
 - 和[[escape]]有密切关系（“码”不够嘛）
 - python中bytes, str类型相关：如[[subprocess]]用到
 - [[sufficient-statistics]]
+## 盲目encode的坏处
+- 有损压缩丢失重要信息
+  - 做不出题。参考[[imagination]]
+  - 不[[idenpotent]]，如“图压绿了”
+- 平白无故增大复杂度，没有必要
+  - 例：向量表示成坐标
+     - 把向量表示成坐标是通法，但未必简单
+     - $\vec a,\vec b$单位向量成45度，何时$k\vec a - \vec b \perp \vec a$
+     - 此题不涉及坐标，所以不用坐标更简单

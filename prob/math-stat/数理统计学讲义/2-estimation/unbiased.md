@@ -19,3 +19,7 @@
   - $g(\theta)=e^{-2\theta}$
   - 样本量为1
   - 直接写出期望的定义，令其等于$e^{-2\theta}$，令对一切$\theta$成立，得到不合理结果（观测值奇数时估计量为-1）
+- 常见的有偏估计
+  - [[maximum-likelihood]]估计方差，常常不是[[方差的无偏估计]]
+  - [[q-learning-overestimation#single estimator]]
+  - [[estimation#$Ef(X)\approx f(EX)$]]

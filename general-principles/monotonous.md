@@ -2,3 +2,7 @@
   - [[binary-search]]
   - [[stack#单调栈]]
 - 求导判断单调性
+- 应用
+  - 了解基本性质
+    - [[gamma-function]]
+  - 证明[[inequalities]]

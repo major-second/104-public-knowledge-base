@@ -37,3 +37,4 @@
         - $P'_x = -P, P(x)=Ae^{-x},P(0)=A=1,P(x)=e^{-x},P(1)=e^{-1}$
 4. [[5-markov-chain]]中，“达到某吸收态的概率”
 5. [[2-2-calculus-ode]]中一大堆自相似（极限题、积分题都有）
+6. [[high-dimension#单纯形]]

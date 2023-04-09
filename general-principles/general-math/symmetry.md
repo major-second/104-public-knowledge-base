@@ -35,6 +35,7 @@
   - positional encoding补救了一下，要不然这方面先天不如[[rnn]]的inductive bias
 - [[weight-init]]中“初始化成一样”造成问题
 - [[order-statistics]]
+- [[q-learning-overestimation#single estimator]]不是[[unbiased]]
 - 交换：[[235-lowest-common-ancestor-of-a-binary-search-tree]]
 - 圆上四个点画两条弦，相交概率$1/3$，因为
   - 顺序看只有$1212$才是相交

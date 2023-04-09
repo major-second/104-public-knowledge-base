@@ -29,3 +29,9 @@
   - 体现`1`
 # 其它
 - 风险和收益[[portfolio-optimization]]
+- 写代码时间和代码效率（例如 [时空](#时空tradeoff)），多目标优化
+  - [[workaround]]
+- 模型性能和效率
+  - 深度学习[[dataloader]]
+  - 牺牲一点随机性，每个batch是[[contiguous]]数组中挖一点
+  - 不能牺牲太多随机性否则性能肯定下降

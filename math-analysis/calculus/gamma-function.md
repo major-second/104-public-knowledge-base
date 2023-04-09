@@ -1,8 +1,18 @@
-- $\Gamma$函数定义$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$，$\Gamma(1)=\Gamma(2)=1$，$\Gamma(3)=2\Gamma(2)$
-- $\Gamma(0.5)=\sqrt \pi,\Gamma(1)=\Gamma(2)=1,\Gamma(3)=2,\Gamma(n)=(n-1)!$
+- $\Gamma$函数定义$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$
+- [参考](https://zhuanlan.zhihu.com/p/435931349)
+- [[general-principles/special-case]]
+  - $\Gamma(1)=\Gamma(2)=1$
+  - $\Gamma(3)=2\Gamma(2)=2$
+  - $\Gamma(0.5)=\sqrt \pi>\Gamma(1)$
+  - $\Gamma(1.5)=0.5\Gamma(0.5)=\sqrt \pi /2$
+    - 是常见值中最小的那个
+    - 但不是严格的最小值
+  - $\Gamma(n)=(n-1)!$
 - 联系
   - [[factorial]]
   - [[B-function]]
-- $\Gamma(1.5)$是最小的
-  - $\Gamma(1.5)=0.5\Gamma(0.5)=\sqrt \pi /2$
-- $\Gamma (a+1/2)/\Gamma(a)$在$a$趋于无穷时的行为用[[sterling]]公式考察（在[[t]]有应用）
+  - [[high-dimension#球]]
+- $\Gamma (a+1/2)/\Gamma(a)$在$a$趋于无穷时的行为[[estimation]]
+  - 法一：用[[sterling]]公式考察
+  - 法二：[[estimation]]，直接$\sqrt{\Gamma(a+1)/\Gamma(a)}$
+  - 这个在[[t]]有应用
