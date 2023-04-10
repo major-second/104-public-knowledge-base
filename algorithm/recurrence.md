@@ -1,0 +1,7 @@
+- 参考
+  - [[self-similarity]]
+  - [[induction]]
+  - [[backward-induction]]
+  - [[dp]]
+- 例子
+  - [[high-dimension#超空间被超平面分]]

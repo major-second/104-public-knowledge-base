@@ -4,3 +4,5 @@
   - ![](tencent-meeting-double.png)
   - 分别开前后摄像头
   - 但是小心回声！
+- 发出`#`开头字符串在[[wechat-tips]]中有联动效果
+- 下方invite按钮可以看到会议主题

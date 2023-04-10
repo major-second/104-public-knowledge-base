@@ -81,3 +81,6 @@ print(calc(test_input, test_k))
 # 其它
 - https://www.zhihu.com/question/341394312/answer/2721418193
 - 比如对数、倒数、幂次都可考虑
+# 除以标准差
+- [IC, IR](https://zhuanlan.zhihu.com/p/38189394)
+- [[sharpe]]

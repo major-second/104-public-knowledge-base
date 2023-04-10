@@ -50,17 +50,10 @@
   - [[iid]] $X$, $Y$，各N维，N很大
   - 有截距[[unary]]回归
   - 估算从样本中算出[[cov#corr]]绝对值期望
-- [[estimation]]
-  - 首先可以估计成无截距
-  - 然后可以认为$Ef(x)=f(EX)$
-- 参考
-  - [[2-estimation]]
-  - [[variance#unbiased估计]]
-  - [[variance]]
-    - 
-    - 当$EX^2- (EX)^2 \gg (EX)^2$
-  - [[estimation#$Ef(X)\approx f(EX)$]]
 - 法一：正常法
+  - [[estimation#其它]]
+  - [[variance#与$EX^2$关系]]
+  - [[estimation#$Ef(X)\approx f(EX)$]]
   - $E|\hat \rho|\\
     \approx(认为无截距) E \frac{|\sum x_iy_i|}{\sqrt{\sum x_i^2\sum y_i^2}} \\
     = E\sqrt{\frac{(\sum x_iy_i)^2}{\sum x_i^2\sum y_i^2}} \\

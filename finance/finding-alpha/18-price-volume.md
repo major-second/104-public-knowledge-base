@@ -2,7 +2,7 @@
   - 参考[[market-efficiency]]，[[2-perspectives]]等
 - Trading Frequencies
   - 高频，每天多次调整portfolio
-  - 充分利用统计显著性，参考[[prob/LLN]]大数定律
+  - 充分利用统计显著性，参考[[LLN]]大数定律
   - 使IR更高
   - 充分捕捉异常事件带来的机会
   - 但要和trading cost平衡

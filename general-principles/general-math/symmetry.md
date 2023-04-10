@@ -22,6 +22,9 @@
 - 或说轴对称
 - [[confidence-interval]]
 - [[normal]], [[t]]都是对称的分布
+- [[iid]]随机变量相加，可能出现
+  - [[bernoulli-binom#bernoulli]]相加：[[bernoulli-binom#binom]]
+  - [[uniform-distribution]]相加：例如[[backward-induction#公平分蛋糕]]色子题
 - [[pnl]]
   - 交易品种是否可双向做
   - 如期货，[[binance]]虚拟币可以，可转债不行

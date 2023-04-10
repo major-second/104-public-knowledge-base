@@ -2,8 +2,7 @@
 - 不超过高中数学知识，脑筋急转弯
 # 2.1 Problem Simplification
 - 从简单情况开始考虑，逐步过渡
-  - 其实这里的两个例子都是逆向归纳
-  - 参考[[general-principles/recursion]]
+  - 其实这里的两个例子都是[[backward-induction]]
 - Screwy pirates
   - [[backward-induction]]
   - 也就是从简单情况开始

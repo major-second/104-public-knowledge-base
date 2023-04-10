@@ -1,5 +1,11 @@
 - 前置
   - [[general-principles/special-case]]
+  - [[recurrence]]
+  - [[induction]]
+
+[toc]
+# 代数理解
+- 纯代数理解高维。你想象不出四维（乃至三维）空间那也没关系
 - 标量拓展到向量
   - [[normal]], [[multi-normal]]
   - [[2-linear-optimization]]中的
@@ -7,8 +13,9 @@
   - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
 - 向量拓展到矩阵
   - [[linear-transform#多元随机变量multivariate]]
-# 有几何意义的
+# 几何理解
 - 这个往往需要[[general-principles/special-case]]
+  - 低维才能[[imagination]]
 ## 球
 ## 单纯形
 - [[general-principles/special-case]]：三角形
@@ -18,3 +25,25 @@
   - $x=1,y=1,z=1$三个超平面，各自2个二维单纯形（三角形）
   - “打过去就行了”
   - [[self-similarity]]
+## [[recurrence]]
+### 超空间被超平面分
+- 全超空间被$n$个超平面分成几块
+  - 一维：$n$个点，分成几段
+    - 0: 1
+    - 1: +1
+    - 2: +1
+    - $\cdots$
+    - $f(1,n)=n+1$
+  - 二维：$n$条线，分成几块
+    - 0: 1
+    - 1: +1，其实是$f(1,0)$
+    - 2: +2，其实是$f(1,1)$
+    - 3: +3
+    - $f(2,n)=\frac{n(n+1)}2+1$
+  - 三维
+    - 0: 1
+    - 1: +1，其实是$f(2,0)$
+    - 2: +2，其实是$f(2,1)$
+    - 3: +4，其实是$f(2,2)$
+    - 4: +7，其实是$f(2,3)$
+    - $f(3,n)=\frac{(n-1)n(n+1)}{6}+n+1$

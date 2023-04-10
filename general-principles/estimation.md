@@ -14,6 +14,8 @@
 ## 统计
 - [[2-estimation]]
 - [[confidence-interval]]
+  - [[asymptotically-normal]]
+  - [[LLN]], [[central-limit]]，例如$1000$个[[iid]]伯努利[[bernoulli-binom#bernoulli]]分布求和
 ## 虚假规律
 - 一些不成立的“规律”可以用于给出估计值
 ### $Ef(X)\approx f(EX)$
