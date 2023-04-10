@@ -34,3 +34,7 @@
 - [[random-variable-functions#cdf]]
   - 可以由[[random-variable-functions#pdf-continuous]]记忆
   - $E = \int_{-\infty}^{+\infty} xf(x)dx=\int xdF\approx x_0F(x_0)+x_0F(-x_0)-\int Fdx=\int_0^{x_0}(F(x_0)-F(x))dx+\int_{-x_0}^0(F(-x_0)-F(x))dx$ #todo
+# 归一化
+- $\int g(x)dp/\int dp=\int g(x)f(x)dx/\int f(x)dx=\int g(x)w(x)dx/\int w(x)dx$
+  - 有时只知道$w(x):=Cf(x)$，其中$C$未知
+  - [[proportional]]

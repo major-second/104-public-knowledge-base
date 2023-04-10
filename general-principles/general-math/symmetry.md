@@ -6,7 +6,7 @@
 - [[stationary-independent-increment]]
 - 平移不影响[[cov#corr]]
 ## 旋转
-- 或说中心对称
+- 或说中心对称、各向同性
 - [[linearity]]圆上三个点题
 - 从线变成圆环，从而旋转对称
   - [[4-probability#4.5]] card game
@@ -21,6 +21,7 @@
 ## 翻转
 - 或说轴对称
 - [[confidence-interval]]
+- [[trivial-mistakes-in-math#单双侧]]
 - [[normal]], [[t]]都是对称的分布
 - [[iid]]随机变量相加，可能出现
   - [[bernoulli-binom#bernoulli]]相加：[[bernoulli-binom#binom]]

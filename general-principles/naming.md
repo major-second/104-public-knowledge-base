@@ -12,6 +12,7 @@
 - 程序的flag
   - [[oi-wiki-stl/string]]中的`string::npos`
   - 自己写算法题常见的无意义值（如`-1`）
+- [[normal#cov#corr绝对值期望]]中设一个分布$W$
 # 程序中的命名
 - [[2-naming]]
 # convention
@@ -24,10 +25,11 @@
 # exists
 - 有时只要知道存在某个东西（数、向量、变量）等
   - 不需要具体知道是什么，也不需要求，也暂时求不出来
-- 但只需要设给他一个字母，就会很有帮助
+  - 但只需要知道他存在，就会很有帮助
 - 例
   - [[广义逆]]中的$\forall \alpha, \exists \beta$
     - 不需要知道$\beta$具体是啥，但反正$(X'X)(X'X)^-X'\alpha - X'\alpha=(X'X)(X'X)^-X'X\beta - X'X\beta=0$
     - 于是$ (X'X)(X'X)^-X' = X'$
   - 微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
     - 至少是误差量级吧
+  - [[estimation#拉格朗日余项]], [[estimation#柯西余项]]

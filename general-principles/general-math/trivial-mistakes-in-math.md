@@ -10,7 +10,12 @@
   - $\int 1/x \cdot dx =ln|x|+C,x\ne 0$
   - $\int tanxdx = -ln|cosx|+C,x\ne \pi/2+k\pi$
 # 单双侧
+- 参考[[symmetry#翻转]]
 - 差2倍
-  - [[look-up#normal]]
-  - [[concentration]]
-  - [[hoeffding#main contents]]
+- [[look-up#normal]]
+- [[concentration]]
+- [[hoeffding#main contents]]
+# 开根号
+- [[variance]]和标准差
+  - [[standard-error]]
+  - [[variance#可加性]]中，[[iid]] $N$个，标准差是变为$1/\sqrt N$量级，不是$1/N$

@@ -49,15 +49,31 @@
 - 题目
   - [[iid]] $X$, $Y$，各N维，N很大
   - 有截距[[unary]]回归
-  - 估算从样本中算出[[cov#corr]]绝对值期望
+  - 估算从样本中算出[[cov#corr]]绝对值期望量级
 - 法一：正常法
-  - [[estimation#其它]]
   - [[variance#与$EX^2$关系]]
   - [[estimation#$Ef(X)\approx f(EX)$]]
+  - [[estimation#其它]]
+  - [[variance#可加性]]
+  - [[naming#有名字作为交流基础]]
   - $E|\hat \rho|\\
     \approx(认为无截距) E \frac{|\sum x_iy_i|}{\sqrt{\sum x_i^2\sum y_i^2}} \\
-    = E\sqrt{\frac{(\sum x_iy_i)^2}{\sum x_i^2\sum y_i^2}} \\
-    \approx \sqrt{\frac{(E(\sum_i X_iY_i))^2}{ENX^2ENY^2}} \\
+    \approx \frac{E|\sum xy|}{\sqrt{\sum Ex^2\sum Ey^2}}\\
+    \approx E|\bar W|/Ex^2\\
+    \sim (量级) E|\bar W|\sim std(\bar W)\sim std(W)/\sqrt N
     $
-  - 其中
+  - 其中$W=XY$，分布长得啥样不管，反正方差$1$量级
 - 法二：[[high-dimension#球]]几何意义
+  - [[imagination]]
+  - [[estimation#泰勒]]
+  - [[estimation#其它]]
+  - [[B-function]], [[gamma-function]]
+  - [[symmetry#旋转]]（各向同性）
+  - [[expectation#归一化]]
+  - 还是$E \frac{|\sum x_iy_i|}{\sqrt{\sum x_i^2\sum y_i^2}}$
+  - 相当于N维高维[[high-dimension#球]]，夹角余弦期望，根据各向同性，“质量”集中于赤道附近
+  - 现在考察纬度，即赤道记为0度，则$|sinx|$期望
+  - $E|sinx|\sim \frac{\int xdm}{\int dm}$（[[归一化]]）
+    $\sim \frac{\int xcos^Nxdx}{\int cos^Nxdx}(二维cos^0x，三维cos^1x以此类推)\\
+    \sim \frac{\int t^{1/2}(1-t)^Ndt^{1/2}}{\int(1-t)^N dt^{1/2}}\\
+    \sim \frac{B(C+1/2,N)}{B(C+0,N)}\sim \frac{\Gamma(N)}{\Gamma(N+1/2)}\sim 1/\sqrt N$，其中$C$是较小的常数（0，1，2这种）
