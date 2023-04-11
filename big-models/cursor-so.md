@@ -20,9 +20,11 @@
       - 在已有代码基础上编辑
       - 把注释[[comment]]变成代码
       - 代码重构
-    - `Ctrl+L` Chat
+    - `Ctrl+L` (New) Chat
       - 解说，闲聊，不改变当前代码
       - 但也可以（迭代）生成代码块，复制过来
+      - [[refresh]] chat thread
+    - `Ctrl+Y`相比`Ctrl+L`不[[refresh]]
     - `Ctrl+退格` 取消
     - `Ctrl+Enter` 接受
       - 如果不想全部接受，可以先`git add`这个文件，然后接受之后对比新旧版本，选择性接受
@@ -39,3 +41,6 @@
   - 在仍然有红绿高亮时，启动下一个任务（而不是完全接受或拒绝后再）
 - 可以先写[[comment]]或部分代码，要求它补全
 - 可以后台运作
+- [[vscode-keyboard-shortcuts]]中有些在这里被占用了
+  - 比如`Ctrl+K` `Ctrl+Y`
+  - 还原从`Ctrl+Y`变成`Ctrl+Shift+Z`

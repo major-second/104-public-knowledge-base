@@ -49,6 +49,7 @@
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
 - python导入东西的重置：参考[[import/basics]]
 - [[node]]中提到的geph，改变是否监听等需要断开重连
+- 对话大模型[[chatgpt]] [[new-bing]]
 # 副作用
 有时，要求稳定，不能更新
 - 比如[[tensorboard]]的`logdir`如果删除重建了，你就不得不重新启动`tensorboard`命令

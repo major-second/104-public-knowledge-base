@@ -33,3 +33,6 @@
   - 微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
     - 至少是误差量级吧
   - [[estimation#拉格朗日余项]], [[estimation#柯西余项]]
+# 设常数
+- [[integral-constant]]
+- [[proportional]]

@@ -1,7 +1,7 @@
 - 前置[[poisson]]
   - 来自稀有事件、小数定律
   - $t$时间内表示有多少个事件
-  - nondecreasing step function
+  - non-decreasing step function
 - 参考[[1-elements]]
 # 推导
 ## 低阶
