@@ -1,4 +1,6 @@
 - 前后都可以出入
+- 参考
+  - [[queue]]
 - 实现：`deque`
   - 方法名往往有`front, back`，如`pop_front(), back()`等
 - 应用

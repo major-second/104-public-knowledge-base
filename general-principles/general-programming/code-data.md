@@ -1,0 +1,12 @@
+- 数据data和代码code很多时候是相对、并称的两个重要要素
+- [[general-programming/debug]]时，分别看code和data问题。有时code没问题，data有问题
+- [[special-files]]中`.gitignore`往往用于忽略data
+  - 因为如果code和data都传，显然占空间太大
+- [[meta-programming]]
+- 机器学习中
+  - 比如[[overfit#数据]]和[[overfit#模型]]
+# 其它
+- [[naming#命名有时是相对的]]
+  - [[chatgpt]]写代码，训练数据有代码
+  - 下载源码文件
+  - [[打表]]

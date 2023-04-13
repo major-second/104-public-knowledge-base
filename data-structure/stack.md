@@ -7,5 +7,10 @@
 - 应用
   - [[32-longest-valid-parentheses]]
   - [[1944-number-of-visible-people-in-a-queue]]
-- ![](monotonous-stack.png)，乐
+- ![](monotonous-stack.png)
+  - 乐
   - 年轻和位高你至少占一样吧
+## 滑动窗口最大值
+- 滑动，然后要么年轻，要么值大，否则无希望
+- follow up：滑动窗口最大连续下跌
+  - [代码](rolling_window_max_downfall.py)

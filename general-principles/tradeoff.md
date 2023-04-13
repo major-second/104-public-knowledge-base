@@ -4,9 +4,10 @@
 - 多目标优化，需要[[utility-function]]效用函数，明确你想要什么
   - 有时有天然的[[utility-function]]
     - 如[[2-eval]]所述，在tradeoff训练集占多大时，天然的[[utility-function]]就是模型最终表现
-  - 有时需要自己定义[[utility-function]]
+  - 有时需要自己定义/finetune [[utility-function]]
     - 如[[2-eval]]中由P-R曲线计算$F_1$
     - 如正则化项乘以$\lambda$，典型的如[[11-feature-selection]]的岭回归
+      - 这里的“调”就是“调超参”的意思
   - 指定越大越好的[[utility-function]]后（或越小越好的成本cost后），如果可加，往往出现一个增函数，一个减函数，相加得到一个极小值点，使得成本最小
     - 如[[1-monitor-fragmentation]]
     - 如[[MSE#bias-variance tradeoff]]
@@ -27,10 +28,17 @@
   - 体现`2, 3`
 - 如[[preprocessing]]放到GPU，GPU空间换读取到GPU的时间
   - 体现`1`
+- 较为极端的空间换时间
+  - [[counting-sort]]
+  - [[hash]]
+  - [[打表]]
 # 其它
 - 风险和收益[[portfolio-optimization]]
-- 写代码时间和代码效率（例如 [时空](#时空tradeoff)），多目标优化
-  - [[workaround]]
+- 写代码
+  - 代码[[readability]]
+  - 写代码时间
+  - 代码效率（[[tradeoff#时空tradeoff]]）
+  - 形成多目标优化
 - 模型性能和效率
   - 深度学习[[dataloader]]
   - 牺牲一点随机性，每个batch是[[contiguous]]数组中挖一点

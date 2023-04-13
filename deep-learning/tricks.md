@@ -33,10 +33,8 @@
       - 当然，对于复杂一些的优化器如Adam就不一定了
       - 参考[[deep-learning/optimization]]
       - torch实践：在[[basics/optimization]]中实现，如`SGD(其它参数, weight_decay=1e-2)`
-- dropout
-  - 参数：常常`0.1, 0.5`等值
-- 提前[[feature-engineering]], [[11-feature-selection]]可能有助于下游防过拟合
-- 当然很多时候，如果你疯狂以`test`上的结果为标准，就还是有过拟合嫌疑！
+#### dropout
+- 参数：常常`0.1, 0.5`等值
 ## 结构
 - 以2的倍数为间隔调MLP隐层宽度
   - [[enumerate]]前当然要确定全集的界

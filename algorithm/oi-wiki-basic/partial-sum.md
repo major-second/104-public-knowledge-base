@@ -1,2 +1,4 @@
 - 实现：可以用标准库[[algorithm]]，参考：`partial_sum(v.begin(), v.end(), back_inserter(v2));`
   - 注意定义是$S_0=a_0$
+- 应用：线性空间复杂度存储所有“子串”和。每次要取出时用两个相减即可
+  - 相当于一种[[encode-decode]]

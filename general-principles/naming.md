@@ -22,6 +22,7 @@
 - 例如
   - [[factors-alphas]]
   - [[greedy]], [[dp]], [[q-learning]]
+  - [[code-data]]
 # exists
 - 有时只要知道存在某个东西（数、向量、变量）等
   - 不需要具体知道是什么，也不需要求，也暂时求不出来

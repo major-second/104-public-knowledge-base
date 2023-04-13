@@ -1,3 +1,4 @@
+# 典型例子
 - https://leetcode.cn/problems/count-good-meals/submissions/
   - 搞错下标和数据内容
     - 第一次：判断`l[i] + l[j]`和`s`（和）的关系，错写成了`i + j`
@@ -7,6 +8,7 @@
 - https://www.hackerrank.com/challenges/maximize-it/problem?isFullScreen=true
   - 看清题意！他说每个list先有一个数字表示list长度
   - 不过对于python来说就很简单，直接`input().split()[1:]`即可
+# 典型错误
 - [[overflow]]
 - [[float]]误差
 - 首尾相接

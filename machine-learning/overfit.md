@@ -7,7 +7,17 @@
 - 原因
   - [[domain-gap]]
   - 拟合了噪声
-- 解决方法
-  - 获取更多数据、更“密集”（[[domain-gap]]更小）的数据
-    - 扩增[[augment]]数据
-  - [[tricks]]
+- 很多时候，如果你疯狂以`test`上的结果为标准，就还是有过拟合嫌疑！
+  - [[naming#命名有时是相对的]]
+# 解决方法
+## 数据
+- 获取更多数据、更“密集”（[[domain-gap]]更小）的数据
+  - 扩增[[augment]]数据
+    - 这时往往用[[symmetry]]，如平移旋转翻转
+    - 也可以加噪声，这个原理就类似于[[tricks#dropout]]和[[activation]]中random relu等，提升鲁棒性
+- [[preprocessing]]
+- [[11-feature-selection]]
+## 模型
+- [[ensemble#bagging]]
+  - 注意[[ensemble#boosting]]反而加剧了过拟合
+- [[tricks]]
