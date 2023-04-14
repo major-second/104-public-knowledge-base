@@ -36,17 +36,21 @@
     - 注意熟练矩阵乘法
     - 解的[[trivial-mistakes-in-algo#uniqueness]]：矩阵可逆性
 ### 帮助理解记忆
+#### 种类
 - 用特例记忆一般情况
 - 用特例检验你记忆结论正确性
+- 用特例帮助理解，减少抽象程度
+#### 例子
 - [[linear-transform#多元随机变量multivariate]]
 - [[4-probability#4.5]] card game
 - [[q-learning-overestimation]]
+- [[discrete-continuous]]
+- [[high-dimension]]
+- [[hash#索引]]
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
   - [[distribution/gamma]]，[[chi-square]]，[[gamma#指数分布]]
   - [[dp]]和[[greedy]]
-- [[discrete-continuous]]
-- [[high-dimension]]
 ## 坏处
 - 有些东西对于特例不work，你不检查就不严谨
   - [[counter-examples]]

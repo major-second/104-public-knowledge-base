@@ -14,3 +14,7 @@
 - 滑动，然后要么年轻，要么值大，否则无希望
 - follow up：滑动窗口最大连续下跌
   - [代码](rolling_window_max_downfall.py)
+  - 思想
+    - 先计算连续下跌求和
+    - 再[[stack#单调栈]]，但是讨论是否truncate了第一个数据点
+      - 即：对比“最大点但truncate”和“第二大点”
