@@ -9,9 +9,9 @@
   - 进一步解出$g(\theta)$满足的不等式
   - 根据$g$是否好看，结果关于$\theta$是否显式都有可能
 # 举例
-- [[gamma#指数分布]]
+- [[gamma-distribution#指数分布]]
   - $\sum X_i$满足$\Gamma(n,\lambda)$
-    - 来自[[distribution/gamma]]分布可加性
+    - 来自[[gamma-distribution]]分布可加性
   - 但这时$e$指数处有$\lambda$，导致分布不是恒定
     - 那就直接$2\lambda \sum X_i$，这回得到恒定分布，从而得到[枢轴量](#pivotal)了
       - 用到了[[random-variable-functions#pdf-continuous]]变换相关结论

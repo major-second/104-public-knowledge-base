@@ -3,4 +3,4 @@
 - 性质
   - $F$分布随机变量的倒数满足……
   - [[t]]分布随机变量的平方满足$F(1,n)$（参考[[t]]与[[normal]]关系，注意分子分母独立性）
-- 应用：类比[[distribution/gamma]]可用来曲线救国[[chi-square]]. 涉及[[gamma-function]]，指数分布等等的“比值”有时可以用f分布曲线救国
+- 应用：类比[[gamma-distribution]]可用来曲线救国[[chi-square]]. 涉及[[gamma-function]]，指数分布等等的“比值”有时可以用f分布曲线救国

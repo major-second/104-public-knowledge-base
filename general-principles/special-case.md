@@ -37,7 +37,10 @@
     - 解的[[trivial-mistakes-in-algo#uniqueness]]：矩阵可逆性
 ### 帮助理解记忆
 #### 种类
-- 用特例记忆一般情况
+- 用特例记忆一般情况（特例好记，一般情况不好记）
+- 用一般情况记忆特例（少记一些东西）
+  - 例如用[[moment]]公式记忆[[variance]]公式
+    - [[gamma-distribution]]
 - 用特例检验你记忆结论正确性
 - 用特例帮助理解，减少抽象程度
 #### 例子
@@ -50,7 +53,7 @@
 - [[fisher-information#参数是向量]]，用到[[fisher-information#二阶导和一阶导关系]]
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
-  - [[distribution/gamma]]，[[chi-square]]，[[gamma#指数分布]]
+  - [[gamma-distribution]]，[[chi-square]]，[[gamma-distribution#指数分布]]
   - [[dp]]和[[greedy]]
 ## 坏处
 - 有些东西对于特例不work，你不检查就不严谨
