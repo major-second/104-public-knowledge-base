@@ -1,0 +1,1 @@
+- 所有实例连续的[[markov-process]]

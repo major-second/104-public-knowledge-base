@@ -6,6 +6,7 @@
   1. 直接bin
   2. 建模做[[2-estimation]]如高斯
 - [[random-variable-functions#discrete]]和[[random-variable-functions#pdf-continuous]]关系
+- [[random-walk]]和[[brownian-motion]]
 - [[poisson-process]]小数定律
   - [[nega-binom#geometric]]几何和[[distribution/gamma]]指数
   - 此时参考[[bernoulli-binom]], [[poisson]]

@@ -13,7 +13,13 @@
   - 为何说确定初始分布和转移矩阵就确定过程？只需证明任意realization的概率都可由此计算
 # 实例
 ## SPATIALLY HOMOGENEOUS
-- 和[[iid]]离散随机变量相关
-- 转移矩阵每行都相同，为$a_0,\cdots,a_n,\cdots$
-- 所以这个是[[stationary-processes]]
-## 
+- 原始
+  - 和[[iid]]离散随机变量相关
+  - 转移矩阵每行都相同，为$a_0,\cdots,a_n,\cdots$
+  - 所以这个是[[stationary-processes]]
+- 变种：相加
+  - 要考察的是已有的各随机变量总和而不是每次新生成的
+  - 因此转移矩阵每次平移1，也就是第一行$a_0,a_1,\cdots$，第二行$0,a_0,a_1,\cdots$
+  - 当然负数这边可能也有
+## ONE-DIMENSIONAL RANDOM WALKS
+- [[random-walk]]
