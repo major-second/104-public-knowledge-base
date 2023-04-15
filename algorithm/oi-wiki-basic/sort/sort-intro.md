@@ -8,3 +8,12 @@
 - [[n2-sort]]
 - 插入，选择，冒泡
 - ![](insertion-selection-bubble.png)
+# $O(nlogn)$
+- 主流方法
+- “基于比较排序”
+- [[quick-sort]]
+- [[merge-sort]]
+# $O(n)$
+- 极端空间换时间[[tradeoff]]
+- [[counting-sort]]
+- [[radix-sort]]
