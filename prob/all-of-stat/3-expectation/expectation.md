@@ -10,7 +10,7 @@
   - [[stieltjes]]
 # [[linearity]]
 - 参考[[可加性]]中的分布，可帮助算分布的期望
-  - [[distribution/gamma]]
+  - [[gamma-distribution]]
   - [[normal]]
   - [[chi-square]]
   - [[bernoulli-binom]]

@@ -21,4 +21,9 @@
 ## 数学中
 - 小学奥数植树问题，注意端点
 - [[4-probability#4.5]] card game
-- [[variance#unbiased估计]]
+- 触及本质的差一
+  - [[variance#unbiased估计]]
+- 仅仅是[[naming]]
+  - [[gamma-function]]
+    - [[gamma-distribution]]
+  - [[B-function]]

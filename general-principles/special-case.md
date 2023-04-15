@@ -47,6 +47,7 @@
 - [[discrete-continuous]]
 - [[high-dimension]]
 - [[hash#索引]]
+- [[fisher-information#参数是向量]]，用到[[fisher-information#二阶导和一阶导关系]]
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
   - [[distribution/gamma]]，[[chi-square]]，[[gamma#指数分布]]

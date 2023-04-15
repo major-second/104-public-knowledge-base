@@ -18,7 +18,7 @@
   - 求导得到极值，不一定是最大值。这在数分里也是经常需要检验的
   - 由此还引申出一类题目：证明MLE存在
     - 类似数分证明最值存在，可能可以通过证明区域$\Omega$外都小来证。
-    - 例如$x$满足参数为$\alpha,\beta$的[[distribution/gamma]]，可以取个范围，范围外$f$都足够小，范围内有一个$f$比较大的点，即可证明
+    - 例如$x$满足参数为$\alpha,\beta$的[[gamma-distribution]]，可以取个范围，范围外$f$都足够小，范围内有一个$f$比较大的点，即可证明
   - 有时要在边界上找最值（有时在角，有时还会在曲边边界，更麻烦），但总之都是数分题
 - 结果不一定是显式解，比如韦布尔分布
   - 这时说明[[相合性]]就需要用隐函数的连续性等性质
@@ -44,7 +44,7 @@
 - [[standard-error]]表示MLE出的$\hat \theta$标准差
   - 它约等于$\sqrt {1/I(\theta)}$，参考[[fisher-information]]
 - $\frac{\hat\theta-\theta}{se}$依分布收敛到标准[[normal]]
-- $se$换成$\hat{se}:=\sqrt{1/I(\hat\theta)}$也行
+- $se$换成$\hat{se}:=\sqrt{1/I(\hat\theta)}$，还是依分布收敛到标准[[normal]]
 - 因此可构造出[[asymptotically-normal#normal-based interval]]
 - 简单例子[[bernoulli-binom]]
   - 定义似然函数$f(x;p):=p^x(1-p)^{1-x}$，它性质好
@@ -54,4 +54,6 @@
 # optimality
 - 用MLE相比用中位数作为估计，是[[优良标准#无偏-有效性]]的
   - 参考[[optimal-estimator]]
+    - 不过条件和那里不一样
+    - 考察细节太复杂，这里不考察了
   - 直觉：中位数只利用了一部分数据

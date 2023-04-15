@@ -130,7 +130,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 负二项分布：[[nega-binom]]
 - 连续
   - 均匀，[[normal]]
-  - [[distribution/gamma]]
+  - [[gamma-distribution]]
     - 和指数、[[poisson-process]]都有联系
     - 指数：发生一次所需。根据[[可加性]]，发生多次所需时间就是gamma
   - beta可用于刻画一个区间内的分布形状

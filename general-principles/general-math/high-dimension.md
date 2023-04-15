@@ -47,3 +47,6 @@
     - 3: +4，其实是$f(2,2)$
     - 4: +7，其实是$f(2,3)$
     - $f(3,n)=\frac{(n-1)n(n+1)}{6}+n+1$
+# [[general-principles/independent]]
+- 利用[[general-principles/independent]]分解化简问题
+  - [[fisher-information]]，[[iid]]直接$I(\theta)$变为$nI(\theta)$

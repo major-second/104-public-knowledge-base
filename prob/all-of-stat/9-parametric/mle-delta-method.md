@@ -1,0 +1,5 @@
+- 前置
+  - [[3-calculus#3.1 Limits and Derivatives]]基本思想
+  - [[maximum-likelihood#equivariance]]
+  - [[maximum-likelihood#asymptotically-normal]]
+- 核心思想：标准差呈“导数”变化

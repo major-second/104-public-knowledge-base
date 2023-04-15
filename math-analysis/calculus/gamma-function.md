@@ -1,5 +1,6 @@
 - $\Gamma$函数定义$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$
 - [参考](https://zhuanlan.zhihu.com/p/435931349)
+- [[naming]]容易导致[[off-by-one-errors]]
 - [[general-principles/special-case]]
   - $\Gamma(1)=\Gamma(2)=1$
   - $\Gamma(3)=2\Gamma(2)=2$
@@ -16,3 +17,5 @@
   - 法一：用[[sterling]]公式考察
   - 法二：[[estimation]]，直接$\sqrt{\Gamma(a+1)/\Gamma(a)}$
   - 这个在[[t]]有应用
+- 应用
+  - [[gamma-distribution]]

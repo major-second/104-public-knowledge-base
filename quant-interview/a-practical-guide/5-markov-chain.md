@@ -3,7 +3,9 @@
 # 基础
 - 初始分布，转移矩阵（转移图）
 - 路径的概率$P(X_1=i_1,\cdots,X_n=i_n|X_0=i_0) = p_{i_0 i_1}\cdots p_{i_{n-1}i_n}$
-- 本章考察有限状态, homogenous（转移矩阵不变）
+- 本章考察有限状态
+  - homogenous（转移矩阵不变）
+    - 这并不是[[stationary-processes]]的意思！
 # 状态分类
 - accessible from, communicate
 - recurrent：对于所有出去的（直接或间接可达到的），都有可能回来

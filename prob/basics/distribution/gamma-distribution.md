@@ -1,5 +1,9 @@
-- 参考[[gamma-function]]中的$\Gamma$函数定义和性质
-- 在$\Gamma$分布中，$\alpha$含义不变，$\beta$是$x$前的系数，即$f(x;\alpha,\beta)\propto (\beta x)^{\alpha-1}e^{-\beta x}$
+- 参考
+  - [[gamma-function]]：$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}dx$
+  - [[proportional]]
+- 相比[[gamma-function]]
+  - $\alpha$含义不变
+  - $\beta$是$x$前的系数，即$f(x;\alpha,\beta)\propto (\beta x)^{\alpha-1}e^{-\beta x}$
   - 比例系数（归一化常数）$\frac {\beta}{\Gamma(\alpha)}$就容易积分算出了
 - 记作$\Gamma(\alpha,\beta)$
   - 当然也有人用$\beta$的倒数作为记号
@@ -13,7 +17,14 @@
   - 由可加性和[[linear-transform]]也容易直接得到均值$\alpha/\beta$，方差$\alpha/\beta^2$
 - 若$S^2$满足$\Gamma$分布，则$S$的期望可以用高斯积分求
 # 数字特征
+- [[moment]]
+  - 这里的$\beta$记号意义可能和本文其它地方不一致，看看就行
+  - $V_n=\int\frac{x^{n+\alpha-1}e^{-\frac x\beta}}{\beta^\alpha \Gamma(\alpha)}dx=\beta^n\Gamma(n+\alpha)/\Gamma(\alpha)=\beta^n \alpha\cdots (\alpha+n-1)$
+  - $V_1=\alpha\beta$
+  - $V_2=\alpha(\alpha+1)\beta^2$
+  - $Var = V_2-V_1^2=\alpha \beta^2$
 - 期望就多乘一个$x$，[[variance]]就考虑$x^2$期望和$x$期望，因此都能由[[gamma-function]]求
-- 举例：指数分布$f(x) = \beta e^{-\beta x}$，均值$1/\beta$，方差$1/\beta^2$
+- 特例[[gamma#指数分布]]
+  - $f(x) = \beta e^{-\beta x}$，均值$1/\beta$，方差$1/\beta^2$
   - 因为容易计算$x$期望$\Gamma(2)/\beta = 1/\beta$，$x^2$期望$\Gamma(3)/\beta^2=2/\beta^2$
 # 指数分布
