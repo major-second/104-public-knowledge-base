@@ -7,9 +7,12 @@
 - 目标是使得分布满足特定形式，如均匀或[[normal]]
 # 排序
 - 排序，取[[character/quantile]]，强行转化成均匀分布
-- 可能丢失原有意义（是否线性相关等）
-- 小心[[information-leak]]
-  - 避免[[information-leak]]和不[[stationary-processes]]的方法：[[rolling]]再排序
+- [[time-series]]中常用的`.rank()`就是。一般`pct=True`，搞到$[0,1]$
+- 单调变换时保持不变
+- 小心
+  - [[information-leak]]
+    - 避免[[information-leak]]和不[[stationary-processes]]的方法：[[rolling]]再排序
+  - [[encode-decode]]丢失信息，如是否线性相关等
 - 应用
   - [[cov#spearman]]
 # 减去均值

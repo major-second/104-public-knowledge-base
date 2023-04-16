@@ -24,7 +24,7 @@
   - “钟形”，偶函数，[[symmetry#翻转]]
   - 用[[pivotal-interval]]时用法也挺像，只不过[[look-up]]时多一个“自由度”参数要查
 # t stats
-- 应用中，常常和[[3-hypothesis]]联系，$t$统计量绝对值大说明“显著”
+- 应用中，常常和[[hypothesis-testing]]联系，$t$统计量绝对值大说明“显著”
   - 联系[[asymptotically-normal]]理解
   - 例如[[multi-ary]]，零假设$H_0: \beta_j = 0$，则单个系数$\beta_j$的$t$统计量为$\frac{\hat{\beta_j}}{SE(\hat{\beta_j})}$
   - 其中$SE(\hat{\beta_j})$为$\hat{\beta_j}$的标准误[[standard-error#multi-ary SE]]

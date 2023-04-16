@@ -8,4 +8,4 @@
       - 往往不能精确计算，需要估计例如[[standard-error#multi-ary SE]]
       - [[MSE]]，[[standard-error]]，bias形成[[MSE#bias-variance tradeoff]]
     - 区间估计[[confidence-interval]]
-  - [[3-hypothesis]]
+  - [[hypothesis-testing]]

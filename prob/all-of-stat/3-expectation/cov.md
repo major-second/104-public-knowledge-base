@@ -19,6 +19,7 @@
 - $\rho^2=R^2$不是总成立，参考[[unary#$R^2$]]
 ## spearman
 - 先[[data-science/normalization#排序]]再求[[cov#corr]]
+- 实现：如参考[[scipy/correlation]]
 # 无关
 - cov为0称为无关
   - 是[[1-prob/independent]]必要条件
