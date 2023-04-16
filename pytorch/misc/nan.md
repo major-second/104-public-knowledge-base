@@ -23,14 +23,19 @@
 # 原因
 - 数学操作
   - $0/0$
-    - 比如手动做中心化标准化[[normalize]]时没有考虑方差为0的情况（没有给$\sigma$强行加一个小的$\epsilon$），出现$0/0$
+    - 比如[[normalization]]时没有考虑方差为0的情况（没有给$\sigma$强行加一个小的$\epsilon$），出现$0/0$
     - 比如出现0个数据求均值
       - 参考[[finetune]]的例子
     - 注：$1/0$是`inf`不是`nan`
   - $\infty - \infty$
 - 实际问题中本来就有
+- 新建[[series-dataframe]]时默认
 - [[time-series]]处理中得到
-  - 例如`diff()`，[[rolling]]
-- 比如[[deep-learning/optimization]]中选用SGD（非Adaptive的），可能出现[梯度爆炸](https://stackoverflow.com/questions/65654279/nan-values-with-sgd-optimizer-in-keras-for-regression-nn#:~:text=The%20NaNs%20in%20the%20loss%20function%20is%20mostly,long%20as%20you%20don%27t%20have%20a%20specific%20reason.)
+  - `diff()`
+  - [[rolling]]
+- [[deep-learning/optimization#BGD, SGD, MBGD]]
+  - 非Adaptive的[[deep-learning/optimization#Adam]]等
+  - 可能出现[[gradient-issue#爆炸]]，导致出现nan
 # 处理
-[[dropna]]
+- [[dropna]]
+- [[fillna]]

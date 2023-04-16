@@ -1,14 +1,28 @@
-是[[feature-engineering]]方式
-目标是使得分布满足特定形式，如均匀或[[normal]]
+- 前置
+  - [[moment]]
+  - [[variance]]
+  - [[linear-transform]]
+  - [[normal]]
+- 是[[feature-engineering]]方式
+- 目标是使得分布满足特定形式，如均匀或[[normal]]
 # 排序
 - 排序，取[[character/quantile]]，强行转化成均匀分布
-- 小心丢失原有意义（线性相关等）
+- 可能丢失原有意义（是否线性相关等）
 - 小心[[information-leak]]
   - 避免[[information-leak]]和不[[stationary-processes]]的方法：[[rolling]]再排序
-- 用于[[cov#corr]]的spearman
+- 应用
+  - [[cov#spearman]]
+# 减去均值
+- 参考[[data-science/residual]]
+# 除以标准差
+- 理论
+  - [[central-limit]]
+  - [[asymptotically-normal]]
+- 实践
+  - [[ic-ir]]
+  - [[sharpe]]
 # z-score
-- 前置
-  - [[normal]], [[moment]], [[variance]]
+- 相当于[[normalization#减去均值]]，[[normalization#除以标准差]]结合
 - 转化成均值0方差1
   - 如果认为数据有正态性[[normal]]那么就转化成标准正态了
 - 也常常是在一段[[rolling]] [[sliding-window]]中看
@@ -60,27 +74,28 @@ print(calc(test_input, test_k))
 - [参考](https://blog.csdn.net/rope_/article/details/107826059)
   - 标题是深度学习，其实general针对机器学习
 - general原则：去除无关的共性，凸显个性，类似于[[11-feature-selection]]
-- 假设球[[symmetry]]
+- 假设球[[symmetry]]时当然必须
   - [[11-feature-selection]]中罚项
   - [[overfit]]中罚项
   - [[clustering]]
-- 对[[multi-ary]] OLS影响：主要[[float]]误差，理论上pred一样
+- 对[[multi-ary]] OLS影响
+  - 主要[[float]]误差
+  - 理论上pred一样
   - 比如$200\times 0.1, 201\times 0.1$这种，相比$1\times 0.1, 0\times 0.1$这种，显然更大误差
 - 涉及梯度时，还有一个问题：单个轴scaling不[[保角]]，所以本来直接向圆心的可能变成不是
 - 有时候scale无影响
-  - [[4-decision-tree]]：原始的决策树算法的话没啥影响
+  - [[4-decision-tree]]：原始的决策树算法的话没啥影响（保序即可）
   - 朴素贝叶斯当然无影响
-- [深度学习中归一化](https://www.zhihu.com/question/293640354/answer/2078956333)
-  - 方便调学习率, 参考[[deep-learning/optimization#BGD, SGD, MBGD]]，[[gradient-issue]]
-  - 凸显个性
-  - 防止梯度过小[[gradient-issue]]
-    - [[activation]]两侧死亡等
-  - 不做[[batchnorm]]等怎么办
-    - 比如多次随机[[weight-init]]，枚举多种学习率等，相当于机器筛出一个适当的东西做归一化吧
-    - 其实可能最后本质差不多，但这样机器负担重一点，encode人先验少
+## 深度学习中为什么
+- 方便调学习率
+  - 参考[[deep-learning/optimization#BGD, SGD, MBGD]]
+  - [[gradient-issue]]
+- 防止梯度过小的[[gradient-issue]]
+  - [[activation]]两侧死亡等
+- 不做[[batchnorm]]等怎么办
+  - 比如多次随机[[weight-init]]，枚举多种学习率等，相当于机器筛出一个适当的东西做归一化吧
+  - 其实可能最后本质差不多，但这样机器负担重一点，encode人先验少
 # 其它
 - https://www.zhihu.com/question/341394312/answer/2721418193
 - 比如对数、倒数、幂次都可考虑
-# 除以标准差
-- [IC, IR](https://zhuanlan.zhihu.com/p/38189394)
-- [[sharpe]]
+  - 例如长尾取对数后更像[[normal]]

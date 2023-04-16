@@ -20,6 +20,9 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
   - 字典键表示字段名
 - `pd.DataFrame({'x': 1, 'y': 2}, index=[1])`
   - 即：也可以输入标量字典：但需要`index`
+- `df = pd.DataFrame(index=..., columns=...); df.fillna(0, inplace=True)`
+  - 参考[[nan]]
+  - [[fillna]]
 - 迭代`for k in df`时可以迭代字典的键
   - 相比之下`Series`迭代的是`index`，如`0,1`等
 ## 存取`.csv`
