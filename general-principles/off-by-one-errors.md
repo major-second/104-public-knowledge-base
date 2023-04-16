@@ -23,7 +23,8 @@
 - [[4-probability#4.5]] card game
 - 触及本质的差一
   - [[variance#unbiased估计]]
-- 仅仅是[[naming]]
-  - [[gamma-function]]
+    - 从而[[t-distribution#应用]]
+- 仅仅是[[naming]]问题
+  - [[gamma-function]]与[[factorial]]
     - [[gamma-distribution]]
   - [[B-function]]

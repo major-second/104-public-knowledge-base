@@ -8,7 +8,7 @@
   - 参考[[cov#无关]]
 - 强：[[iid]], [[normal]]
   - 或用[[multi-normal]]表示为$e\sim N(0,\sigma^2 I)$
-  - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解。相应可以解有关[[standard-error]], [[t#t stats]]的题
+  - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解。相应可以解有关[[standard-error]], [[t-distribution#t stats]]的题
 - 记号
   - $||a||$模长
   - $Proj_M a $为$a$在$M$投影向量，$a = Proj_M a +某个垂直于M的向量$
@@ -53,7 +53,7 @@
     - 回忆[[linear-transform]]
     - 这里记忆：$(X^TX)^{-1}X^TY$中“两负一正”，所以结果最后“负”
     - 直观：数据条目越多，[[cov]]大小越小
-    - 进一步参见[[standard-error#multi-ary SE]], [[t#t stats]]
+    - 进一步参见[[standard-error#multi-ary SE]], [[t-distribution#t stats]]
   - $EY^TY=||X\beta||^2+\sum var Y_i$（即利用[[expectation]]可加性和[[variance]]）
     - $=||X\beta||^2+\sum vare_i$（“平移”）
     - 当然也可以直接$Y=X\beta +e$代入证

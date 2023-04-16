@@ -22,16 +22,19 @@
 - 或说轴对称
 - [[confidence-interval]]
 - [[trivial-mistakes-in-math#单双侧]]
-- [[normal]], [[t]]都是对称的分布
+  - [[normal]]
+  - [[t-distribution]]
+  - 都是对称的分布
 - [[iid]]随机变量相加，可能出现
   - [[bernoulli-binom#bernoulli]]相加：[[bernoulli-binom#binom]]
   - [[uniform-distribution]]相加：例如[[backward-induction#公平分蛋糕]]色子题
 - [[pnl]]
   - 交易品种是否可双向做
   - 如期货，[[binance]]虚拟币可以，可转债不行
-- [[正交矩阵]]行列式是-1时为翻转，相比之下前面 [平移](#平移) [旋转](#旋转) 为1
+- [[正交矩阵]]行列式是-1时为翻转
+  - 相比之下前面 [[symmetry#平移]] [[symmetry#旋转]] 为1
 - 偶函数$-t$到$t$积分
-  - 例如[[power-rule#速算应用]]
+  - [[power-rule#速算应用]]
 ## 轮换
 - 或“地位均等”
 - 做题时经常“不失一般性设”
@@ -40,7 +43,8 @@
 - [[weight-init]]中“初始化成一样”造成问题
 - [[order-statistics]]
 - [[q-learning-overestimation#single estimator]]不是[[unbiased]]
-- 交换：[[235-lowest-common-ancestor-of-a-binary-search-tree]]
+- 交换
+  - [[235-lowest-common-ancestor-of-a-binary-search-tree]]
 - 圆上四个点画两条弦，相交概率$1/3$，因为
   - 顺序看只有$1212$才是相交
   - $1221, 1122$都不相交

@@ -40,7 +40,7 @@
       - 但你能扯上不扯上总归不爽吧？
   - 所以应该考察$\frac{(n-1)S^2}{\sigma^2}=\sum (X_i-\bar X)^2/\sigma^2$满足$n-1$个自由度[[chi-square]]分布
 - 正态分布两个参数都不知道，则$\frac{\sqrt n (\bar X -\mu)}{S}$是枢轴量
-  - 参考[[t]]
+  - 参考[[t-distribution]]
   - 记忆：$\bar X-\mu$方差是$\sigma^2/n$量级，那么分母就用“估计量”$S/\sqrt n$
   - 其实也就是联系刚刚两个case（$\frac 1{\sigma/\sqrt n}(\bar X-\mu)\sim N(0,1)$和$(n-1)S^2/\sigma^2\sim \chi^2(n-1)$），开方和做比例把$\sigma$消掉，得到$\mu$的置信区间$\bar X\pm \lambda S/\sqrt n$
   - 比较：之前是$\sigma/\sqrt n$，现在是$S/\sqrt n$，而且前面系数也有#单双侧 问题，看起来真挺像

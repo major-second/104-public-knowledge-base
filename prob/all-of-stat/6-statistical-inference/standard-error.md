@@ -7,7 +7,7 @@
   - 但你总不能老是多次重复实验，这多笨啊
   - 下文就是一个例子
 - 应用
-  - [[t]] stats
+  - [[t-distribution]] stats
   - [[confidence-interval]]，尤其是[[asymptotically-normal#normal-based interval]]
 # [[multi-ary]] SE
 - [参考](https://www.statology.org/standard-error-regression/)
@@ -29,4 +29,4 @@
   - 推论：100个数据重复变成200个，则
     - $\hat \beta$不变
     - standard error根据公式变小
-    - [[t#t stats]]（如果零假设是$\beta=0$）变大
+    - [[t-distribution#t stats]]（如果零假设是$\beta=0$）变大

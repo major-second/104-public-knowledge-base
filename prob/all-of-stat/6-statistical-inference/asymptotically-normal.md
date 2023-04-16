@@ -3,7 +3,7 @@
   - [[standard-error]]
   - [[central-limit]]
 - 参考
-  - [[t]]
+  - [[t-distribution]]
 - $\frac{\hat \theta_n-\theta}{se}\to N(0,1)$（对$n\to \infty$）
 # normal-based interval
 - 参考[[confidence-interval]]

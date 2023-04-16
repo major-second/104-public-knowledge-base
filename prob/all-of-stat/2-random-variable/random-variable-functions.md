@@ -35,4 +35,4 @@
 - 和[cdf](#cdf)区别
   - 连续随机变量每个单点处概率为0
   - pdf本身可超过1，甚至无界
-- 实例：均匀，[[normal]], [[gamma-distribution]], [[chi-square]], [[t]], [[f]]
+- 实例：均匀，[[normal]], [[gamma-distribution]], [[chi-square]], [[t-distribution]], [[f]]

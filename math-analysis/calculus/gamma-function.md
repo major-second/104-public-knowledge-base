@@ -9,13 +9,14 @@
     - 是常见值中最小的那个
     - 但不是严格的最小值
   - $\Gamma(n)=(n-1)!$
-- 联系
-  - [[factorial]]
-  - [[B-function]]
-  - [[high-dimension#球]]
 - $\Gamma (a+1/2)/\Gamma(a)$在$a$趋于无穷时的行为[[estimation]]
   - 法一：用[[sterling]]公式考察
   - 法二：[[estimation]]，直接$\sqrt{\Gamma(a+1)/\Gamma(a)}$
-  - 这个在[[t]]有应用
+  - 这个在[[t-distribution]]有应用
 - 应用
   - [[gamma-distribution]]
+  - [[t-distribution]]
+  - [[B-function]]
+  - [[high-dimension#球]]
+- 联系
+  - [[factorial]]是[[discrete-continuous]]
