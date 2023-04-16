@@ -1,0 +1,5 @@
+- 前置
+  - [[mle-delta-method]]
+  - [[high-dimension#代数理解]]
+  - [[jacobian]]
+- $\sqrt{(\hat \nabla g)^T \hat J_n(\hat \nabla g)}$

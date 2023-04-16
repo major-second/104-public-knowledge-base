@@ -1,4 +1,6 @@
 - https://zh.wikipedia.org/zh-cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83
+# [[random-variable-functions#pdf-continuous]]
+- $f(x;\mu,\sigma)=\frac{1}{\sqrt {2\pi} \sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$
 # 应用
 - 由于[[central-limit]]定理，所以实际中常常用到
 - [[random-variable-functions#pdf-continuous]]是有的：$\frac{1}{\sigma \sqrt {2\pi}}exp\{-\frac 1 {2\sigma^2} (x-\mu)^2\}$，记为$\phi(z)$

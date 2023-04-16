@@ -3,3 +3,10 @@
   - [[maximum-likelihood#equivariance]]
   - [[maximum-likelihood#asymptotically-normal]]
 - 核心思想：标准差呈“导数”变化
+- $\tau = g(\theta),g'(\theta)\ne 0$
+  - $\hat {se}(\hat \tau_n)=|g'(\hat\theta)|\hat se(\hat \theta_n)$
+# [[high-dimension]]
+- 前置
+  - [[high-dimension#代数理解]]
+  - [[jacobian]]
+  - [[general-principles/independent#diagonal]]

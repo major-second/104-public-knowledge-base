@@ -4,6 +4,13 @@
 - 概率论中的[[1-prob/independent]]
   - 进一步：机器学习中的“独立”样本。不独立的样本可能导致leakage，效率降低等。但神经网络等数据需求量大的往往还是用不独立样本，例如[[rnn]]
 - [[orthogonal]]
+## diagonal
+- 独立的表现形式往往是矩阵的对角/分块对角
+- 举例
+  - 矩阵求逆：对角/分块对角的逆
+  - $x^T Ax$，$A$对角，则$x$不同部分没有entanglement，就是某种独立
+  - [[deep-learning/optimization#Adam]]相比[[deep-learning/optimization#二阶]]就是“对角”二阶信息，从而不是$O(n^2)$计算量
+  - [[1-prob/independent]]时，[[fisher-information#参数是向量]]矩阵是对角阵，逆也好求，[[mle-delta-method]]也好算
 # 程序/算法中
 - 和“抽象”思想常相关
 - 反面：[[leaky-abstraction]]，不正交

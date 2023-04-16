@@ -54,7 +54,7 @@
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
   - [[gamma-distribution]]，[[chi-square]]，[[gamma-distribution#指数分布]]
-  - [[dp]]和[[greedy]]
+  - [[dp]]和[[greedy]]，参考[[dp#举例]]
 ## 坏处
 - 有些东西对于特例不work，你不检查就不严谨
   - [[counter-examples]]
@@ -71,9 +71,12 @@
 - [[algorithm/special-case]]
 # 实际程序
 ## 利用
-- [[general-principles/debug]]，特例进行检验，跟前面“数学中”一个道理
-- 能用特例能不用特例，请用特例，往往有更好表现
+- [[general-programming/debug]]时特例进行检验
+  - 跟[[general-principles/special-case#帮助理解记忆]]说的一个道理
+- 能用特例能不用特例，请用特例，往往有更好表现，比如效率，性能，精度等
   - [[portfolio-optimization]]
+  - [[timestamps]]
+    - 指定格式如`format='%m/%d/%y'`
 - 一些东西可能是另一些东西的特例，你以为没这个功能其实有
   - 比如查找替换[[search-info/general]]时，如果替换成空那就是删除。可用于删除所有某个字符串
 ## 不良后果

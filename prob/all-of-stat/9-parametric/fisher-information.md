@@ -47,19 +47,26 @@ $\frac{\partial}{\partial \theta}\int f(x;\theta)dx=0$
   - 以及为何这个matrix是[[fisher-information#一维]]特例
   - [[fisher-information#二阶导和一阶导关系]]
 - $J_n(\theta):=(I_n(\theta))^{-1}$
+  - [[1-prob/independent]]时[[general-principles/independent#diagonal]]，从而逆也好求
+  - 这个$\hat J_n$地位就是[[cov]]或$\hat {se}(\hat\theta)^2$
+    - 所以[[mle-delta-method]]可以拓展到[[multi-mle-delta-method]]
 - 适当条件下[[asymptotically-normal]]
   - $\hat\theta - \theta \approx N(0,J_n)$
-    - 一维[[general-principles/special-case]]中$\hat\theta - \theta \approx N(0,1/I(\theta))$
-    - [[fisher-information#算例]]里面都是
+  - [[general-principles/special-case]]
+    - 一维，$\hat\theta - \theta \approx N(0,1/I(\theta))$
+      - [[fisher-information#bernoulli-binom]]
+      - [[fisher-information#normal]]
+    - [[general-principles/independent#diagonal]]情况
 # 算例
 - [[variance]]查表，参考[[characters-list]]
-## [[bernoulli-binom]]
+## [[bernoulli-binom#bernoulli]]
 - $f(x;p)=(1-p)^{1-x}p^x$
 - $I(p)=Var(-\frac{1-x}{1-p}+\frac xp)=E()^2$
 - $=q/q^2+p/p^2=\frac{1}{pq}$
+- 参考[[characters-list]]，[[bernoulli-binom#bernoulli]]方差就是$pq$
 ## [[normal]]
 - $f(x;\mu,\sigma)=\frac 1{\sqrt {2\pi} \sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$
 - $I(\mu)=E[(-(x-\mu)/\sigma^2)^2]=1/\sigma^2$
 - $I(\sigma)=E[(-\frac 1\sigma + \frac{(X-\mu)^2}{\sigma^3})^2]$
-- $=\frac 1{\sigma^2}+\frac {3\sigma^4}{\sigma^6}-2\frac {\sigma^2}{\sigma^4}=\frac 2{\sigma^2}$
-- 用到[[normal#moment]]
+  - $=\frac 1{\sigma^2}+\frac {3\sigma^4}{\sigma^6}-2\frac {\sigma^2}{\sigma^4}=\frac 2{\sigma^2}$
+  - 用到[[normal#moment]]

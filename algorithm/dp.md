@@ -1,7 +1,14 @@
+- 参考
+  - [[self-similarity]]
+  - [[induction]]
+  - [[recurrence]]
+  - [[oi-wiki-basic/recursion]]
+  - [[greedy]]
 # 核心
 - 核心是递推，优中选优
   - 利用了之前已经计算过的东西
 - 如果不需要选，那就是[[greedy]]
+- 但有时只是[[naming]]，不同层次来看dp和[[greedy]]
 # 举例
 - 最典型帮助理解的例子[[1388-pizza-with-3n-slices]]
   - 我们先不考虑首尾相接的问题，认为是“$3n$个元素中找$n$个两两不相邻使和最大”
@@ -12,26 +19,24 @@
   - 这三种情况越来越不贪心，需要存储、优中选优的可能性越来越多
   - 参考[[general-principles/special-case]]思想，多次退化
 - [[368-largest-divisible-subset]]
-  - 讲到不能贪心，需要优中选优
-# 注意
-- 要注意递推选用哪个变量
-比如https://leetcode.cn/contest/weekly-contest-286/problems/maximum-value-of-k-coins-from-piles/
-需要选择堆编号
-比如Floyd，选择“中转站”编号
+  - 讲到不能[[greedy]]，需要优中选优
 - https://leetcode.cn/problems/longest-palindromic-substring/
-如果普通动规，需要$n^2$
-注：[[manacher]]只需要$O(n)$
+  - 如果普通动规，需要$n^2$
+  - 注：[[manacher]]只需要$O(n)$
+# 注意
+- 选用哪个变量
+  - 比如https://leetcode.cn/contest/weekly-contest-286/problems/maximum-value-of-k-coins-from-piles/
+    - 需要选择堆编号
+  - 比如[[shortest-path#floyd]]，选择“中转站”编号
 - 注意选择方向
-  - 例如[[10-regular-expression-matching]]，从后往前看
+  - 例如[[10-regular-expression-matching]]，从后往前看，即可[[dp#状态压缩]]
 # 状态压缩
 - 把不需要的扔掉，节省空间
-  - [[10-regular-expression-matching]]
-  - [[72-edit-distance]]
+- [[10-regular-expression-matching]]
+- [[72-edit-distance]]
 # 和其它联系
-- 和[[oi-wiki-basic/recursion]]的关系：参考[[oi-wiki-basic/recursion]]
-- 和[[induction]]往往有强联系
 - 子问题相似性质，和[[self-similarity]]有强联系
-- [[calculate-v]]中暴力计算
+- [[calculate-v]]中暴力计算用的就是dp
   - 即使不是暴力计算，整个强化学习中也充满了dp思想
 # 01动规
 - 是[[general-principles/special-case]]

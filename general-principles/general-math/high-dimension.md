@@ -13,6 +13,12 @@
   - [[multivariate#transforms]]中从乘以某个导数（绝对值）变成某个雅可比行列式（绝对值）
 - 向量拓展到矩阵
   - [[linear-transform#多元随机变量multivariate]]
+- entanglement带来额外思维复杂度，且往往使得需要用矩阵书写
+  - [[cov]]相比[[variance]]多了交叉项
+  - [[jacobian]]交叉项
+  - [[hessian]]交叉项
+  - [[multi-normal]]的$(x-\mu)^T\Sigma^{-1} (x-\mu)$相比[[normal]]的$(x-\mu)^2/\sigma^2$
+  - [[multi-mle-delta-method]]的$\sqrt{(\hat \nabla g)^T \hat J_n(\hat \nabla g)}$相比[[mle-delta-method]]的$|g'|\hat {se}(\hat \theta_n)$
 # 几何理解
 - 这个往往需要[[general-principles/special-case]]
   - 低维才能[[imagination]]
@@ -49,4 +55,8 @@
     - $f(3,n)=\frac{(n-1)n(n+1)}{6}+n+1$
 # [[general-principles/independent]]
 - 利用[[general-principles/independent]]分解化简问题
-  - [[fisher-information]]，[[iid]]直接$I(\theta)$变为$nI(\theta)$
+  - [[fisher-information#参数是向量]]中
+    - [[iid]]直接$I(\theta)$变为$nI(\theta)$
+    - [[1-prob/independent]]不同分布那也是[[general-principles/independent#diagonal]]
+- 不[[general-principles/independent]]会带来额外麻烦（entanglement）
+  - 参考[[high-dimension#代数理解]]
