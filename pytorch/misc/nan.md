@@ -1,3 +1,4 @@
+[toc]
 # 概述
 - `nan`是一个特殊的**浮点数**，可以用
   - `float('nan')`（python原生）
@@ -21,21 +22,24 @@
   - `model(data)`结果是`nan`
   - 但`model(torch.zeros_like(data))`不是（模型参数正常）
 # 原因
-- 数学操作
-  - $0/0$
-    - 比如[[normalization]]时没有考虑方差为0的情况（没有给$\sigma$强行加一个小的$\epsilon$），出现$0/0$
-    - 比如出现0个数据求均值
-      - 参考[[finetune]]的例子
-    - 注：$1/0$是`inf`不是`nan`
-  - $\infty - \infty$
+## [[trivial-mistakes-in-algo#zero division]]
+- 比如[[normalization]]时没有考虑方差为0的情况（没有给$\sigma$强行加一个小的$\epsilon$），出现$0/0$
+- 比如出现0个数据求均值
+  - 参考[[finetune]]的例子
+- 注：$1/0$是`inf`不是`nan`
+## $\infty - \infty$
+## [[backward]]
+- [[deep-learning/optimization#BGD, SGD, MBGD]]
+  - 而不是Adaptive的[[deep-learning/optimization#Adam]]等
+  - 可能出现[[gradient-issue#爆炸]]，导致出现nan
+## 本来就有
 - 实际问题中本来就有
 - 新建[[series-dataframe]]时默认
+  - 可能需要[[fillna]]填0等
+## [[trivial-mistakes-in-math#范围]]
 - [[time-series]]处理中得到
   - `diff()`
   - [[rolling]]
-- [[deep-learning/optimization#BGD, SGD, MBGD]]
-  - 非Adaptive的[[deep-learning/optimization#Adam]]等
-  - 可能出现[[gradient-issue#爆炸]]，导致出现nan
 # 处理
 - [[dropna]]
 - [[fillna]]

@@ -2,6 +2,9 @@
   - [[trivial-mistakes-in-algo]]
   - [[general-principles/special-case]]
 # 范围
+- 有时：“定义域”
+  - 定义域内才有意义
+  - 如[[nan#原因]]中的例子
 - 非负
   - [[markov-chebshev#Markov]]要求非负随机变量
   - $1/x$积分是$ln|x|+C$，考虑负值情况
