@@ -8,7 +8,7 @@
   - [[normal#截一半看cov#corr]]
 - 特例本身具有重要作用
   - [[moment-generating-functions]]中的0处值
-  - [[normal#各向同性]]计算高斯积分
+  - [[normal#symmetry#旋转]]计算高斯积分
 - 判定退化情况（化简）
   - 刘维尔定理
   - [[stationary-independent-increment]]一般不是[[stationary-processes]]，常数除外

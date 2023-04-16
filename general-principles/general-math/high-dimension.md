@@ -60,3 +60,5 @@
     - [[1-prob/independent]]不同分布那也是[[general-principles/independent#diagonal]]
 - 不[[general-principles/independent]]会带来额外麻烦（entanglement）
   - 参考[[high-dimension#代数理解]]
+# 其它
+- [[symmetry#旋转]]可以看成高维的[[symmetry#翻转]]，从[[normal#symmetry#旋转]]可以看出

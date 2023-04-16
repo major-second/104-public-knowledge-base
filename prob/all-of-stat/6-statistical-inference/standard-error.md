@@ -3,9 +3,13 @@
   - The standard error is a measure of the variability of the sample mean. It is the standard deviation of the sampling distribution of the mean.
   - In other words, the standard deviation is a measure of the variability within a sample, while the standard error is a measure of the variability between samples.
 - 计算方法
-  - 例如[[bootstrap-in-stats]]
-  - 但你总不能老是多次重复实验，这多笨啊
-  - 下文就是一个例子
+  - [[bootstrap-in-stats]]
+    - 但你总不能老是多次重复实验，这多笨啊
+  - [[maximum-likelihood#equivariance]], [[mle-delta-method]]
+  - [[fisher-information]]
+  - 直接解析计算
+    - [[bernoulli-binom]]显然可以
+    - [[standard-error#multi-ary SE]]
 - 应用
   - [[t-distribution]] stats
   - [[confidence-interval]]，尤其是[[asymptotically-normal#normal-based interval]]

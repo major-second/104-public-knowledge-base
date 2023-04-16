@@ -1,0 +1,3 @@
+- 先[[parametric]]模型估计出参数
+- 再在此给定分布[[bootstrap-in-stats]]
+- 和[[mle-delta-method]]一样都可估计[[standard-error]]

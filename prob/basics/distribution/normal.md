@@ -1,4 +1,6 @@
 - https://zh.wikipedia.org/zh-cn/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83
+
+[toc]
 # [[random-variable-functions#pdf-continuous]]
 - $f(x;\mu,\sigma)=\frac{1}{\sqrt {2\pi} \sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$
 # 应用
@@ -15,11 +17,12 @@
 - 原点矩$V_1=\mu, V_2=\mu^2+\sigma^2, V_3 = \mu^3 + 3\mu \sigma^2,V_4=\mu^4 + 6\mu^2\sigma^2+3\sigma^4$
     - 原点矩表达式这里可以看出二项式系数（14641）（最后一项是二项式系数1乘以中心矩$3\sigma^4$）
     - 换句话说：背诵了中心矩表达式，可以快速推出原点矩
-# 各向同性
+# [[symmetry#旋转]]
 - [[encode-decode#直角坐标和极坐标]]
   - 特殊[[general-principles/special-case]]：二维情况，用于计算高斯积分
   - 一般： [相关系数绝对值期望](#绝对值期望)有用到
 - [[iid]]正态，$P(X>0|X+Y>0)$
+- [[symmetry#翻转]]其实可以看成是[[symmetry#旋转]]特例（一维情况）
 # Mill's Inequality
 - $Z\sim N(0,1)$
 - $P(Z>t)=\int_t^\infty \frac 1{\sqrt {2\pi}}e^{-\frac {x^2}2}dx\le \frac 1{\sqrt {2\pi}} \int \frac xt e^{-x^2/2}dx=\frac{1}{\sqrt{2\pi}}\frac{e^{-t^2/2}}{t}$
@@ -47,6 +50,15 @@
     - 那俩0截不截都是0
   - $\rho = \frac{EX^2}{\sqrt{EX^2}\sqrt{EX^2+EZ^2}}=(1+\frac{\sigma_Z^2}{\sigma_X^2})^{-1/2}$
   - 所谓低信噪比，就是$\frac{\sigma_Z^2}{\sigma_X^2}$偏大，结果$\rho$偏小
+## $Var(XY)$
+- $X,Y$正态，相关，求$Var(XY)$
+  1. $Y=\rho X+\sqrt{1-\rho^2}Z$
+  2. $Var(XY)=E(X^2Y^2)-(EXY)^2=E(X^2\rho^2X^2+(1-\rho^2)Z^2X^2)-\cdots$
+  3. 接下来利用$X,Z$ [[1-prob/independent]]，背诵[[normal#moment]]即可
+- 和[[normal#截中间看cov#corr]]类似点
+  - 都是设个$Z$使得$X\perp Z$
+  - [[1-prob/independent]]
+  - [[naming]]
 ## [[cov#corr]]绝对值期望
 - 题目
   - [[iid]] $X$, $Y$，各N维，N很大

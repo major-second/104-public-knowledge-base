@@ -2,6 +2,7 @@
 - 研究的理由
   - 天生物理意义，比如[[poisson-process]]
   - 用来作为[[general-principles/special-case]]帮助理解一些非参模型
+- 注：可能需要[[拟合优度检验]]. 你不能乱给模型
 - 典型例子
   - [[method-of-moments]]
   - [[maximum-likelihood]]

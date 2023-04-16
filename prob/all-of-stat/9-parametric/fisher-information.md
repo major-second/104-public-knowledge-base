@@ -54,7 +54,7 @@ $\frac{\partial}{\partial \theta}\int f(x;\theta)dx=0$
   - $\hat\theta - \theta \approx N(0,J_n)$
   - [[general-principles/special-case]]
     - 一维，$\hat\theta - \theta \approx N(0,1/I(\theta))$
-      - [[fisher-information#bernoulli-binom]]
+      - [[fisher-information#bernoulli-binom#bernoulli]]
       - [[fisher-information#normal]]
     - [[general-principles/independent#diagonal]]情况
 # 算例
