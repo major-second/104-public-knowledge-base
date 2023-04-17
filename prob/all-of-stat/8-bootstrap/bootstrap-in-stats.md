@@ -32,3 +32,5 @@
    3. 即可得到结果$(2\hat\theta_n-\hat \theta ^*_{1-\alpha/2},2\hat \theta_n-\hat \theta^*_{\alpha/2})$
 3. percentile interval: 直接根据bootstrap算出$\hat \theta$的分布找[[character/quantile]]
    1. $(\theta^*_{\alpha/2},\theta^*_{1-\alpha/2})$
+# 应用
+- [[ensemble#bagging]]

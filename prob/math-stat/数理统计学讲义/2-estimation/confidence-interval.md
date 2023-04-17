@@ -27,22 +27,24 @@
   - 满足：**参数落在区间/集合中概率大于等于置信度**$\gamma$
 - 注意必读[[confidence-interval#interpretation]]
 # 方法
+- 基本通用的
+  - [[asymptotically-normal#normal-based interval]]，需要[[standard-error]]
 - [[pivotal-interval]]
 - [[统计量方法]]
-- 基本通用的：[[asymptotically-normal#normal-based interval]]
 - [[hoeffding#等价形式]]
 - [[bootstrap-in-stats#confidence-interval]]
   - 其中有[[pivotal-interval]]
   - 其中有[[asymptotically-normal#normal-based interval]]
+- [[hypothesis-testing#confidence-interval]]
 # interpretation
-- 置信水平$\gamma$不是说$\theta$以$\gamma$概率怎么怎么样
-  - **置信水平不是概率**
+- **置信水平不是概率**
+  - 置信水平$\gamma$不是说$\theta$以$\gamma$概率怎么怎么样
   - 现在不是[[bayes-inference]]
     - 在那里可以说参数有概率分布，先验后验
   - $\theta$是确定数，无概率一说，无先验，无后验
-- 而是说任何$\theta$，$x_i$都以$\gamma$概率使得两个由$x_i$决定的统计量能包括$\theta$
+- 而是说任何$\theta$，生成的$x_i$都以$\gamma$概率使得两个（由$x_i$计算的）统计量能包括$\theta$
 - 且：决定的过程可能比较复杂
-  - 比如$X_1,X_2$ i.i.d.，$\mathbb P(X_1=1)=\mathbb P(X_1=-1)=\frac 12$，$Y_1=X_1+\theta,Y_2=X_2+\theta$
+  - 比如$X_1,X_2$ [[iid]]，$\mathbb P(X_1=1)=\mathbb P(X_1=-1)=\frac 12$，$Y_1=X_1+\theta,Y_2=X_2+\theta$
   - 则置信区间可能是：$\{Y_1-1\}, if Y_1=Y_2; \{(Y_1+Y_2)/2\}, if Y_1\ne Y_1$
   - 置信水平是$\frac 34$
 - 一种不自然的理解方式

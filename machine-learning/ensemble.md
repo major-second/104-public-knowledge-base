@@ -3,10 +3,14 @@
 [toc]
 # bagging
 - 参考[[bootstrap-in-stats]]
-- 相比 [boosting](#boosting)可以[[parallelism]]，例如随机森林
-  - 这个除了[[bootstrap-in-stats]]外
-  - 还注意每次没有使用相同features
-- 可以对比[[augment]]
+- 全称bootstrap aggregating
+- 相比[[ensemble#boosting]]
+  - 可以[[parallelism]]，例如随机森林
+    - 这个除了[[bootstrap-in-stats]]外
+    - 还注意每次没有使用相同features
+  - 能减缓[[overfit]]而不是增加
+- 可对比[[augment]]
+  - 其实也相当于某种增强
 # boosting
 - 串行，不断提升
 ## AdaBoost

@@ -17,6 +17,7 @@
 - 极限情形具有特殊意义，或者[[general-principles/special-case#帮助理解记忆]]
 - [[t-distribution#定义]]在$n$大时变成[[normal]]
 - [[5-brownian-motion-and-stochastic-calculus]] stopping time
+- [[power-level]]
 ### 给出启发
 - 常见套路：先特例找规律然后说答案然后证明
 - 参考

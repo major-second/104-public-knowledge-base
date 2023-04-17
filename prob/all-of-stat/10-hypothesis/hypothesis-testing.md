@@ -3,9 +3,11 @@
   - [[非参数检验]]
 - 总体
   - 单总体
-    - 模型好不好？[[拟合优度检验]]
-    - 是否[[normal]]
-    - [[parametric]]模型设好了，参数是否大于/等于某某
+    - [[parametric-or-not#non-parametric]]
+      - 模型好不好？[[拟合优度检验]]
+      - 是否[[normal]]
+    - [[parametric]]
+      - 模型设好了，参数是否大于/等于某某
   - 两总体
     - 是否[[iid]]
     - 是否[[1-prob/independent]]
@@ -14,21 +16,39 @@
 - $\Theta$分为
   - 对应零假设$H_0$的$\Theta_0$
   - 对应备择假设$H_1$的$\Theta-\Theta_0$
-- 检验法等价于否定域：即认为$X_i\in W$就有$\theta\in \Theta_1$，否定了$\Theta_0$
-  - 度量：[[水平和功效]], [[tradeoff]]
-  - 拓展：随机化检验法：对于任何$X$，出一个$[0,1]$的数，作为“概率”，然后碰运气，不像之前一样只有0或1
-- 和[[confidence-interval]]联系
-  - $H_0:\theta=\theta_0\leftrightarrow H_1:\theta\ne \theta_0$接受域是$A(\theta_0)$，水平是$\alpha$
-  - $S(X_i)$：输入$X_i$组合，输出参数的区间。该区间中参数$\theta$满足$X_i\in A(\theta)$
-  - 这就说明对于一切参数，得到$X_i$使得$\theta\in S(X_i)$或$X_i \in A(\theta)$的概率依据$\alpha$定义大于等于$1-\alpha$
-  - 所以$S(X_i)$是置信水平为$1-\alpha$的置信区间
-    - 括号内是$X_i$，输出的$S(X_i)$是$\theta$的区间，有意思，反之亦然
-  - 总之：置信水平是大数，检验水平是小数
-  - 注：这里对功效没有要求。但如果接受域开太大，显然没有什么有意义结果
+- 一般而言检验法等价于否定域
+  - 认为$X_i\in W\Leftrightarrow\theta\in \Theta_1$
+    - 此时否定了$\Theta_0$
+    - $W$是否定域
+  - 否定域常常是${x:T(x)>c}$形式
+    - $T$是test statistic例如[[t-distribution#t stats]]
+    - $c$是critical value
+- 度量
+  - [[type-i-ii-errors]]
+  - [[power-level]]
+  - [[tradeoff]]思想
+- 拓展：随机化检验法
+  - 对于任何$X$，出一个$[0,1]$的数，作为“概率”，表示是否接受
+  - 相当于某种[[discrete-continuous]]，进行“连续化”“细粒度化”
+## [[confidence-interval]]
+- 有了检验法，如何利用检验法构造[[confidence-interval]]
+- $H_0:\theta=\theta_0\leftrightarrow H_1:\theta\ne \theta_0$接受域是$A(\theta_0)$，水平是$\alpha$
+- $S(X_i)$
+  - 是$X_i$的函数
+  - 输入$X_i$组合
+  - 输出参数$\theta$的区间
+  - 该区间中参数$\theta$满足$X_i\in A(\theta)$
+- 这就说明对于一切参数，$X_i$使得$\theta\in S(X_i)$或$X_i \in A(\theta)$的概率依据$\alpha$定义大于等于$1-\alpha$
+- 所以$S(X_i)$是置信水平为$1-\alpha$的置信区间
+- 总之：置信水平是大数，检验水平是小数
+- 注：这里对功效没有要求。但如果接受域开太大，显然没有什么有意义结果
 # 检验法
 - 一种检验法：[[似然比]]（参数空间为两个元素，是[[UMP]]）
 - 拓展一点：[[单参数]]情形
 - 更加拓展，实用：[[广义似然比]]，先有结果，再有（可能的）最优性质
   - todo 看到132页了
-- [[p-value]]方法：相比直接用[[水平和功效]]中水平$\alpha$确定临界值，能获得更多信息。先有$p$再有$\alpha$
+- [[p-value]]方法：相比直接用[[power-level]]中水平$\alpha$确定临界值，能获得更多信息。先有$p$再有$\alpha$
 - 特殊情形：伯努利分布的$p$的假设检验：[[比率]]
+# 例子
+- one sided: $H_0:\theta=\theta_0\quad vs.\quad H_1:\theta\ne \theta_0$
+- two sided: $H_0:\theta\le \theta_0\quad vs.\quad H_1:\theta> \theta_0$

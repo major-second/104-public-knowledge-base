@@ -1,3 +1,5 @@
+[toc]
+- 程序中的命名：[[2-naming]]
 # 换元或简记
 - 换元积分法
 - 换元简化推导
@@ -13,10 +15,17 @@
   - [[oi-wiki-stl/string]]中的`string::npos`
   - 自己写算法题常见的无意义值（如`-1`）
 - [[normal#cov#corr绝对值期望]]中设一个分布$W$
-# 程序中的命名
-- [[2-naming]]
 # convention
-- "naming convention"
+- 约定俗成
+  - 数学：未知数用$x,y$，参数用$\theta$，已知数用$a,b$，复数用$z$等
+  - 物理：时间用$t$，长度用$L$……
+  - [[2-naming]]计算机中：循环变量`i`，python对象私有属性约定`_`开头，`CamelCase`，`snake_case`
+  - 领域缩写：IB, VC, PE, FA...
+    - [参考](https://zhuanlan.zhihu.com/p/42090782)
+- 有时历史原因，命名稀烂，约定俗成了就一直这样
+  - [[unary]]“最小二乘法”，直接翻译自日文汉字，所以“二乘”非常不好，容易误解为$2\times$
+  - [[type-i-ii-errors]]，根本没任何信息量，只是为了区分而区分
+    - 哈哈你自己不能干这个事，比如`if case1`
 # 命名有时是相对的
 - 没有严格的定义，定义相互转化
 - 例如
