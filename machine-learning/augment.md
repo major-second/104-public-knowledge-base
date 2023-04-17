@@ -1,6 +1,14 @@
+# 操作方法
 - [[transforms]]
-- [[bootstrap-in-stats]]可以看作
-- 参考[[ensemble]]，尤其[[ensemble#bagging]]
+- [[bootstrap-in-stats]]可以看作一种
+  - 参考[[ensemble]]，尤其[[ensemble#bagging]]
+- 加噪声
+  - 参考类似原理的
+    - [[dropout]]
+    - [[activation]]
+  - 对比[[SNR]]和这个噪声，一个增加过拟合，一个减少过拟合
+    - 这个跟[[ensemble#bagging]]有点类似
+    - 你bootstrap自己肯定变分布，但是多搞几次，抵消，更精确！
 # 无监督预训练
 - 如[[nlp-pretrain]]
   - 预训练的目标往往就不直接是需要的目标了，而是一个容易制造数据不需要标注的目标

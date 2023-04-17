@@ -15,3 +15,4 @@
   - 平均值当然可以用积分代替
 - [[1-first-look]]第三题
 - [[gamma-function]]和[[factorial]]关系
+- [[dl-regression-classification]]讲过连续导致问题

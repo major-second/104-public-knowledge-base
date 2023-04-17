@@ -1,7 +1,8 @@
 - 前置
+  - [[gate]]
   - [[lstm]]
-- 相比lstm更简单
-- 门
+    - 相比lstm更简单
+- [[gate]]
   - 更新Update门$z_t=\sigma(W_zv)$
   - 重置reset门$r_t=\sigma(W_rv)$
   - $\tilde{ h}_t=tanh(W\cdot [r_t*h_{t-1},x_t])$

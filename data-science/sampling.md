@@ -3,6 +3,7 @@
   - [[7-numerical-methods]] importance-based sampling
   - [[bootstrap-in-stats]]
   - [[augment]]
+  - 奈奎斯特定理
 # time series
 - [参考](https://zhuanlan.zhihu.com/p/158814757)
 - seq长度，间隔，采样方法

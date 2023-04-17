@@ -5,6 +5,10 @@
   - [[normal]]
 - 是[[feature-engineering]]方式
 - 目标是使得分布满足特定形式，如均匀或[[normal]]
+# 丢失信息
+- 正规化往往会丢信息，关键是这个信息是不是有用的
+- 类比[[11-feature-selection]]：没用的丢弃
+- [[batchnorm#Scale and Drift]]就是减少丢失信息
 # 排序
 - 排序，取[[character/quantile]]，强行转化成均匀分布
 - [[time-series]]中常用的`.rank()`就是。一般`pct=True`，搞到$[0,1]$
@@ -12,7 +16,7 @@
 - 小心
   - [[information-leak]]
     - 避免[[information-leak]]和不[[stationary-processes]]的方法：[[rolling]]再排序
-  - [[encode-decode]]丢失信息，如是否线性相关等
+  - [[normalization#丢失信息]]，如是否线性相关等
 - 应用
   - [[cov#spearman]]
 # 减去均值

@@ -12,8 +12,10 @@
     - 如[[1-monitor-fragmentation]]
     - 如[[MSE#bias-variance tradeoff]]
 - 如果不定义，则往往
-  - 可以考察指定一维（甲）不变时，另一维（乙）的表现
-    - 如[[UMP]]
+  - 可以考察
+    - 指定一维（甲）不变时，另一维（乙）的表现
+      - [[UMP]]指定[[power-level#水平]]不变
+    - [[p-value]]指定某个点必须被拒绝
   - 还可以指定多个甲取值，看各个情况下最佳的乙，这就是[[pareto-efficient]]帕累托前沿
     - 例：[[2-eval]]的P-R曲线
   - 当然可能[[confidence-interval]]这样纯凭感觉

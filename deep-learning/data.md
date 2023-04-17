@@ -1,8 +1,15 @@
-- 数据准备！
-  - “特征”维度：[[feature-engineering]]，[[11-feature-selection]]等
-  - “数据数量”维度
-    - 不足：[[augment]]
-    - 太多：subsampling（无论时间维、空间维等）、[[general-principles/debug]]时使用子集等
-    - 参考[[2-eval]]，需要划分训练验证测试等
-  - 实践：[[dataset]], [[dataloader]]
-  - 是否“太多”参考：[[resource-management/commands]]
+# 实践中数据准备
+- “特征”维度：[[feature-engineering]]，[[11-feature-selection]]等
+- “数据数量”维度
+  - 不足：[[augment]]
+  - 太多：subsampling（无论时间维、空间维等）、[[general-principles/debug]]时使用子集等
+  - 参考[[2-eval]]，需要划分训练验证测试等
+- 实践：[[dataset]], [[dataloader]]
+- 是否“太多”参考：[[resource-management/commands]]
+# 统计上性质
+- 神经网络显然属于[[parametric-or-not#non-parametric]]，没有参数假设
+- 但是需要条件
+  - [[normalization#减去均值]]
+    - 否则[参考](https://zhuanlan.zhihu.com/p/375643761)
+    - [[activation]]中间取sigmoid就有此问题
+  - 避免[[batchnorm#internal-covariate-shift]]

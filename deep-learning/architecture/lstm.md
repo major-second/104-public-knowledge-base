@@ -2,11 +2,9 @@
   - [[rnn]]
   - [[gradient-issue]]
   - [[activation]]
+  - [[gate]]
 - [参考](https://zhuanlan.zhihu.com/p/123211148)
 - [参考](https://zybuluo.com/hanbingtao/note/581764)
-- 门 gate
-  - 输入向量，输出$[0,1]^n$，可以乘到原来向量上面表示控制
-  - 所以[[activation]]常用sigmoid
 - 状态
   - 原来的隐藏状态$h_t$还有
   - 增加表示长期记忆的$c_t$

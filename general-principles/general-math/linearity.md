@@ -21,3 +21,7 @@
   - 套用[[variance#unbiased估计]]，等等
   - 注意这种做法不是[[moment]]估计
 - 比如[[poisson]]一阶矩$\lambda$，二阶矩$\lambda^2+\lambda$，组合出$\lambda^2$
+# 处理非线性
+- [[cov#spearman]]
+- [[principles-for-dl-models#inductive bias]]
+  - [[activation]]人为制造非线性

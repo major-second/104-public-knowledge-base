@@ -1,7 +1,15 @@
 - 不加激活函数的问题：[[linearity]]复合还是[[linearity]]，没有额外表达能力
-- 选择：[参考](https://zhuanlan.zhihu.com/p/30510596)
+- [参考](https://zhuanlan.zhihu.com/p/30510596)
+- [参考](https://zhuanlan.zhihu.com/p/172254089)
 - 看什么标准
   - 导数数值
     - 避免神经元死亡，[[gradient-issue]]等
+      - leaky relu
+      - [[soft#softplus]]
   - 输出值域
-    - 如sigmoid用于[[lstm]]提到“门”
+    - 如sigmoid用于[[gate]]
+- 拓展
+  - 防[[overfit]]：noisy relu
+    - 类比[[dropout]], [[augment#操作方法]]加噪声
+  - 可学习：PReLU
+  - [[data#统计上性质]]说恒正激活函数不太好

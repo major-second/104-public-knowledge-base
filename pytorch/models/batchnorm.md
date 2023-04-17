@@ -1,12 +1,20 @@
 - 前置：[[models/basics]], [[linear-transform]]
+# internal-covariate-shift
+- 前置[[domain-gap#covariate-shift]]
+- 此处含义：某层输入的分布不稳定，在变
 # 原理
 - 是为了保证进激活函数前满足有一定分布，所以一般在线性层（卷积层）后，激活函数前
 - batchnorm的原理导致网络在训练时和测试时行为有根本不同，需要`.train()`和`.eval()`
   - 这个可以自动递归进行
   - 比如[[checkpoint]]中测试前`.eval()`一下某个model，就自动递归`.eval()`其attributes
+# 步骤
+## Standardization
+- [[normalization#减去均值]]
+- [[normalization#除以标准差]]
+## Scale and Drift
 # 参数
 - parameters本身：$\mu,\sigma$
-- 仿射变换[[affine]]
+- affine如果为True，增加[[batchnorm#Scale and Drift]]，否则没有
 - [超参数参考](https://blog.csdn.net/weixin_39228381/article/details/107896863)，例如
   - momentum机制
   - 防止[[trivial-mistakes-in-algo#zero division]]的epsilon

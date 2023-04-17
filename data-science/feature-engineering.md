@@ -1,10 +1,15 @@
-- 前置：肯定要先了解[[category]], [[eda]], [[visualization]]等
+- 前置
+  - [[category]]
+  - [[eda]]
+  - [[visualization]]
+  - [[preprocessing]]
 # integrity
 - 不能有[[information-leak]]
 - 不能疯狂[[overfit]]
   - 比如疯狂堆叠各种运算各种操作（复杂度高），疯狂增加待定参数，使得feature在validation上好，那说白了就是过拟合validation set而已
-  - 参考[[2-eval]]
-  - 一个反例：[[4-design]]中，“1-12月给12个参数”，可能能过拟合几年的（验证集）股市数据，但没有任何经济学意义
+  - 参考[[2-eval]], [[naming]]
+  - 如[[4-design]]中，“1-12月给12个参数”，可能能过拟合几年的（验证集）股市数据，但没有任何经济学意义
+  - 可能被称为（贬义）“数据挖掘”
 # 意义和优美性
 - 首先要有一个建模
   - 可以是mental model，跑不起来的
@@ -17,6 +22,7 @@
   - 当你提出feature不work，主要要反省根本思想、建模上哪里出了问题，而不是马上开始torture表达式
 - 物理量的“量纲”非常重要。比如不同量纲不能相加，比如“无量纲化”思想
   - 举例：想表达“稳定地往一个方向移动”，可以考虑$\frac {位移}{路程} = \frac{x_{T+t}-x_T}{\sum_{i=T}^{T+t-1}|x_{i+1}-x_i|}$，这是比值，无量纲，且思想非常自然
+  - [[normalization]]可用来无量纲化
 # 常见手段
 - 基础手段
   - 数字特征（[[cov]], [[variance]], [[expectation]]等）
