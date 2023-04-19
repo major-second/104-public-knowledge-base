@@ -1,4 +1,7 @@
+- 前置[[batchnorm]]
 - [参考](https://zhuanlan.zhihu.com/p/210761985)
 - 一般不用
-- 但可以[[rl-normalization]]
-- 主要是分布是否变的问题
+- 但可以对输入第一层[[rl-normalization]]
+- 主要是，你自己输入分布都变，还想着解决[[batchnorm#internal-covariate-shift]]，岂不是很搞笑？
+  - 大变管小变
+  - 大道理管着小道理

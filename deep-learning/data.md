@@ -10,6 +10,11 @@
 - 神经网络显然属于[[parametric-or-not#non-parametric]]，没有参数假设
 - 但是需要条件
   - [[normalization#减去均值]]
-    - 否则[参考](https://zhuanlan.zhihu.com/p/375643761)
-    - [[activation]]中间取sigmoid就有此问题
+    - 否则[[data#恒正问题]]
   - 避免[[batchnorm#internal-covariate-shift]]
+  - 分布不稳定，不停改变，也能训，但要注意一些点
+    - 比如[[rl-batch-norm]]问题
+## 恒正问题
+- [参考](https://zhuanlan.zhihu.com/p/375643761)
+- [参考](https://zhuanlan.zhihu.com/p/172254089)，搜索“锯齿”
+- [[activation]]中间取sigmoid就有此问题

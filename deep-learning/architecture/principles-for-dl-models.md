@@ -12,4 +12,4 @@
 - [[domain-gap]]
 - [[SNR]]
 - 某种“密度”
-  - 所以可以[[preprocessing]]
+  - 所以可以[[preprocessing]]，[[12-robust]]

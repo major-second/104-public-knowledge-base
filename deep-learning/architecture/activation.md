@@ -6,10 +6,15 @@
     - 避免神经元死亡，[[gradient-issue]]等
       - leaky relu
       - [[soft#softplus]]
+      - ELU
   - 输出值域
     - 如sigmoid用于[[gate]]
+    - 如ELU, leaky relu防止[[data#恒正问题]]
 - 拓展
-  - 防[[overfit]]：noisy relu
-    - 类比[[dropout]], [[augment#操作方法]]加噪声
+  - 防[[overfit]]加噪声
+    - noisy relu
+    - Randomized LeakyReLU
+    - 类比[[dropout]], [[augment#操作方法]]加噪声等手段
   - 可学习：PReLU
-  - [[data#统计上性质]]说恒正激活函数不太好
+    - 反而增大参数量，小心[[overfit]]
+  - [[data#恒正问题]]

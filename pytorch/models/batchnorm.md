@@ -1,4 +1,7 @@
-- 前置：[[models/basics]], [[linear-transform]]
+- 前置
+  - [[models/basics]]
+  - [[linear-transform]]
+  - [[normalization]]
 # internal-covariate-shift
 - 前置[[domain-gap#covariate-shift]]
 - 此处含义：某层输入的分布不稳定，在变
