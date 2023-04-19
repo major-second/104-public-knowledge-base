@@ -26,6 +26,7 @@
         - 充电闹钟：随便搜搜`Battery Alarm`等[[apple-app]]
     - 电脑软件和设置如[[power-options]]中的
   - 注意无线充电不要买劣质的/用非原装的，否则发热过大，损害电池
+  - 电池老化后关机也会掉电
 - 省电
   - 参考[[power-options]], [[android/battery]]
   - 注意省电和延长寿命有时并不是一致的

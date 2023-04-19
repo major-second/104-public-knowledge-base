@@ -2,6 +2,7 @@
   - 直接`apt install git`即可
 - windows
   - [下载](https://git-scm.com/downloads)
+  - [国内可用镜像](https://npm.taobao.org/mirrors/git-for-windows/)
   - 和vscode及其插件的关系：参考[[extensions/general]]
     - [[view-git-log]]以及`Ctrl+Shift+G`等vscode功能都需要先安装git才能用
     - 相当于vscode只是一个表层接口

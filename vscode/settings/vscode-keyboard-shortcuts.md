@@ -54,7 +54,9 @@
 ## 其它实用快捷键
 - 闲的没事干逛逛`Ctrl+K Ctrl+S`有惊喜
 - [[terminal]]中有很多好用的
-- `alt+左或右`在编辑器切换tab，在[[terminal]]切换`Ctrl+Shift+5`出来的终端
+- 编辑窗口
+  - `ctrl+数字`选哪组窗口
+    - 已经2组，则`Ctrl+3`还能新增一组
 - `Ctrl`按住，`KJ`展开，`KJK1`展开再关闭到第一层，`KJK2`以此类推
   - 当然，当前光标所处的不会被关闭
   - 实用例子：比如你在写[[minimum-beamer/README]]这种文档，那么`\section`是第二层，`\frame`是第三层，所以`Ctrl`然后`KJK3`就可以看到所有frame标题

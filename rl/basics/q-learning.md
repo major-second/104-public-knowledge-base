@@ -6,6 +6,7 @@
 - [参考](https://zhuanlan.zhihu.com/p/110338833)
 - 和[[calculate-v]]中的TD算法总体类似
   - 也有[[self-similarity]], [[general-principles/recursion]]思想
+- 参考[[evaluation#metrics-go-first]]，这里$Q$ table就是所谓的evaluation
 
 # SARSA
 - $Q(S,A)$的更新目标是$R+\gamma Q(S',A')$，其中$S$产生$A$和$S'$产生$A'$是同一策略

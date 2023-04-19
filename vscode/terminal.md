@@ -3,6 +3,7 @@
   - 这点像[[tmux]]，只不过它不能退出后还运行
   - 快捷键：<code>Ctrl+Shift+&#96;</code>新终端，`Ctrl+Shift+5`split
   - `5`？这个是不是想到[[tmux]]的`Ctrl+B Shift+5`
+  - `alt+左或右`切换`Ctrl+Shift+5`出来的终端
 - `x`：隐藏（后台）（快捷键 <code>Ctrl+&#96;</code>）
 - 垃圾桶：真正[[quit]]（快捷键`delete`）
 - [[launch]]出的程序自动打开一个终端
