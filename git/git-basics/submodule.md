@@ -28,6 +28,9 @@
 - 父模块是最新的，子模块不一定也是最新的。父模块完好，子模块也不一定完好
   - 更新：可以单独`cd`进去`pull`，或者`--recurse-submodule`
   - 检查：可以单独`cd`进去`checkout`，或者`--recurse-submodule`
+- 父模块并不是记录子模块在哪个[[git-basics/branch]]，而是记录在哪个[[commit]]
+  - 因此直接[[push-pull]]后，子模块如果不[[checkout]]就会是[[detached]]状态
+  - 此时如果子模块[[commit]]但一直保持[[detached]]，下次再[[push-pull]]后子模块修改丢失！
 ## 删改[[CRUD]]
 https://www.jianshu.com/p/ed0cb6c75e25
 https://blog.csdn.net/weixin_39645249/article/details/110464746
