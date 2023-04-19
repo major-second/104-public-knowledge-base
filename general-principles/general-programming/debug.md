@@ -1,7 +1,7 @@
 - 在正式运行前，往往需要先调试确认没有问题。调试时往往
   - 有debug flag，用于区分运行真正的代码还是测试代码
   - 适当多输出
-    - 参考[[general-principles/logs]]中“等级”，DEBUG肯定是最详细的
+    - 参考[[general-programming/logs]]中“等级”，DEBUG肯定是最详细的
     - 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
   - 需要考虑特例[[general-principles/special-case]]
     - 算法中的[[algorithm/special-case]]
@@ -32,7 +32,7 @@
 - 在跑一个大实验之前，下载大东西等等之前要做的调试
   - 确认小规模全流程没问题
     - 流程问题
-      - 存文件，存[[checkpoint]], [[general-principles/logs]], validation等等
+      - 存文件，存[[checkpoint]], [[general-programming/logs]], validation等等
       - 可能不是一来就跑到这个地方，而是跑了一会才跑到这个地方
       - 你要是一开始没有测试就开很大的实验，那么可能跑了很久到这里才报错停下，那就损失大了
       - 例如`pytorch_lightning`中

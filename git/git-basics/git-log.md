@@ -1,5 +1,5 @@
 - 前置[[commit]]，主要以commit为单位显示
-- 参考[[general-principles/logs]]
+- 参考[[general-programming/logs]]
 - 原始`git log`
 - 用作变量`var=$(git log)`
   - 还可结合[[find-grep]]

@@ -1,0 +1,3 @@
+- [参考](https://www.zhihu.com/question/21459243/answer/26333230)
+- 是程度问题[[spectrum]]，不能没完没了
+  - [[naming]]

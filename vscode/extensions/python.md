@@ -18,4 +18,4 @@
   - `"env"`: [[6-env]]环境变量
     - 一个用途：设置`PYTHONPATH`环境变量（参考[[sys-path]]），防止找不到包
     - 此处可以使用`${workspaceFolder}`变量，方便表示当前目录
-  - `"logToFile": true`选项：[[general-principles/logs]]中提到过
+  - `"logToFile": true`选项：[[general-programming/logs]]中提到过

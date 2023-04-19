@@ -8,8 +8,8 @@
 # 实用功能
 - 找不到这些功能在哪的自己探索
 - 也可以[参考](https://zhuanlan.zhihu.com/p/349488218)
-- 右键某个条目可以快速导出[[general-principles/logs]]或add to收藏
-  - 哈哈，输出[[general-principles/logs]]方便别人修你电脑
+- 右键某个条目可以快速导出[[general-programming/logs]]或add to收藏
+  - 哈哈，输出[[general-programming/logs]]方便别人修你电脑
   - ![](report.png)
 - Computer
   - Summary常用信息，配置等

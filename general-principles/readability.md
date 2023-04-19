@@ -1,7 +1,7 @@
 # 程序
 - [[comment]]
 - 写文档，并考虑[[read-doc]]读文档者感受
-- [[general-principles/logs]]
+- [[general-programming/logs]]
 - 遵守约定俗成的东西
   - 例如[[shrc]]提到一来`cd`不可取
   - 例如循环变量命名常用`i, j`，未知数用$x$，[[binary-search]]命名上下界用`ub, lb`或`hi, lo`
@@ -26,7 +26,7 @@
     - 相比多个随机种子取平均，平时跑时更快，当然可能有不[[integrity]]嫌疑
 # 表
 - 加上有用结果，适当详细化！
-  - 特别是不花时间的，你不妨[[general-principles/logs]]出来看看呗
+  - 特别是不花时间的，你不妨[[general-programming/logs]]出来看看呗
   - 但特别花时间的比如ablation studies不用每次都做
 # 图
 - 一定要坐标轴、标题、图例等
