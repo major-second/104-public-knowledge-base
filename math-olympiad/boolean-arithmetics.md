@@ -1,5 +1,6 @@
 - 参考
   - [[2-brain-teasers#2.7 Modular Arithmetic]]
+  - [[even-odd]]
 - 两个等价类0和1，简洁语言考察奇偶性
 - $1+1=0$表示两个奇数相加等于偶数
 # 例
