@@ -5,6 +5,7 @@
 - 初始化
   - 添加后，需要初始化
   - `git submodule update --init --recursive`（在主模块运行）
+    - 这个可能需要前提：[[https-ssh]], [[known-hosts]]
     - 即可递归地初始化！
     - 效果可以看到`.gitmodules`文件，以及递归初始化了的各个子模块
   - 在别的地方使用子模块，则可能也需要初始化

@@ -11,7 +11,9 @@
   - [[11-planning]]的第四节与这非常相关
   - [[contiguous]]数组提高效率
 - 比如上层整合可能有的时候不把底层的错误传递出来（或者传递不清晰），需要直击底层才能找到错误所在
-  - [[remote-ssh]]插件在远程公钥变了的时候不把错误传递出来，这时你就得知道底层命令`ssh`，才能发现错误所在
+  - 关于[[known-hosts]]错误不清晰传播
+    - [[remote-ssh]]插件在远程公钥变了的时候不把错误传递出来，这时你就得知道底层命令`ssh`，才能发现错误所在
+    - [[submodule#添加和初始化]]命令如果远程unknown直接报错但不明确。相比之下[[clone]]命令提示你可以选择yes现场加[[known-hosts]]就比较好
   - [[view-git-log#git history]]插件在有untracked文件冲突时checkout没反应且不报错。这是你就得知道底层命令`git checkout`，尝试一下，才能发现错误所在
   - [[vscode-git]]
     - 遇到[[submodule]]作为changes出现conflict时

@@ -10,4 +10,4 @@
     - 例如有时[[github]]也有这个问题，报错`kex_exchange_identification: Connection closed by remote host`，你也需要这么做
   - 注：有时会[[leaky-abstraction]]
     - 明明是一个yes就解决的事，vscode就是要报错而且不提示
-    - 那就手动`git`命令行操作吧
+    - `git clone`如果你没加known hosts会让你确认yes，但`git submodule update`如果你没加会直接报错
