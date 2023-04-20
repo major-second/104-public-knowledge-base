@@ -1,11 +1,13 @@
 - 前置
-  - 管理员[[administrator-powershell]] powershell
+  - [[administrator-powershell]]
   - [[7-permissions]]
 - [参考](https://learn.microsoft.com/zh-cn/windows/wsl/install)
-- 管理员[[administrator-powershell]] powershell
+# 安装
+- [[administrator-powershell]]
   - linux系统的[[CRUD]]
     - 不同时期可能不同。时至2023.3
     - 增：`wsl --install`
+      - 第一次运行需要[[administrator-powershell]]
       - 例如`wsl --install -d Ubuntu-20.04`指定distro
     - 删：`wsl --unregister Ubuntu-20.04`即可
     - 查：`wsl --list`

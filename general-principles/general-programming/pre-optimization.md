@@ -1,0 +1,7 @@
+- 差生文具多
+- 读书无用、眼高手低
+- 过度封装、过度抽象
+- 参考
+  - [[leaky-abstraction]]
+  - [[tradeoff]]
+  - [[workaround]]
