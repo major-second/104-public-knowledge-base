@@ -25,11 +25,7 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
   - [[fillna]]
 - 迭代`for k in df`时可以迭代字典的键
   - 相比之下`Series`迭代的是`index`，如`0,1`等
-## 存取`.csv`
-- 参考[[tabular/source]]
-- `df = pd.read_csv('data.csv')`
-- `df.to_csv('data_1.csv')`
-- 注意这两者不“互为逆运算”，因为可能有一列额外的[[pandas-index]]存在
+- 参考[[pd-read-csv]]
 ## `dtype`
 - 创建时`dtype=...`参数
 - `df.astype(...)`
