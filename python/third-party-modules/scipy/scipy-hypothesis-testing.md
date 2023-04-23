@@ -1,0 +1,4 @@
+- 参考
+  - [[normal]], [[asymptotically-normal]]
+  - [[hypothesis-testing]]
+- [normal test](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.normaltest.html#scipy.stats.normaltest)

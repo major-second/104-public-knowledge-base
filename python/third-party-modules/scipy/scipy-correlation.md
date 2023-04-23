@@ -1,3 +1,7 @@
+- 参考
+  - [[unary]]
+  - [[cov#corr]]
+  - [[cov#spearman]]
 - `scipy.stats.pearsonr(x, y)`
   - 参考[[unary]]中相关系数部分
 - `scipy.stats.spearmanr(x, y)`
