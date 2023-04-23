@@ -5,3 +5,4 @@
   - 所以可以求`log`，成为`log_return`
 - 典型语句，来自[[pandas-index]]
   - `df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
+- [参考](https://zhuanlan.zhihu.com/p/91948053)

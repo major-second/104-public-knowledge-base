@@ -9,8 +9,10 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
   - 输入标量
 - `pd.Series(3, index=['a'])`
   - 此时如果使用index则使用单元素表
+- `sr.describe()`给出基本信息
 # `DataFrame`
 - 二维
+- `df.info()`给出基本信息
 - `pd.DataFrame([[1,2],[3,4]])`
   - 自动生成`index`为`0, 1`
   - 这样生成的，`1,3`为一般认为的“时间维”（用于`.loc`等），是一个`column`，和之后“字典”方法需要区别

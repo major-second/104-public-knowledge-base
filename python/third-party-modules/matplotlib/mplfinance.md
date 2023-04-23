@@ -1,0 +1,7 @@
+- 前置
+  - [[matplotlib/basics]]
+  - [[k-line]]
+  - [[plot]]
+- https://zhuanlan.zhihu.com/p/412404949
+- `pip install mplfinance`
+- `import mplfinance`
