@@ -3,6 +3,7 @@
   - 比如[[tesseract]]，新的识别率高
   - 比如`python3`高版本有[[f-string]]
   - 比如[[pip]]升级后才有一些高级的包，否则根本装不了新包
+  - [[cpp-vector]] `emplace_back`（需要C++11）
 # 更新的坏处
 ## 不再兼容
 - 参考[[compatibility]]

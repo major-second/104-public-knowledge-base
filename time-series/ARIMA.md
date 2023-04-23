@@ -1,0 +1,5 @@
+- 前置
+  - [[autoregressive]]
+- [AR 和 MA](https://www.jianshu.com/p/5943eb6bb9bb)
+- [ARMA](https://baike.baidu.com/item/ARMA模型/8048415)
+- [ARIMA](https://blog.csdn.net/m0_46262108/article/details/122806515)

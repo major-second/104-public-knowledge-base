@@ -1,4 +1,5 @@
 https://oi-wiki.org/lang/csl/sequence-container/
+- [[cpp-vector]]
 ## 序列式容器
 ### 好处（主要相比[[array]]）
 - 动态分配内存

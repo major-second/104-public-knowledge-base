@@ -1,5 +1,8 @@
-- [参考文档](https://docs.python.org/zh-cn/3.9/library/multiprocessing.html)
-- 进程相比“线程”，能充分利用多核！
+- 参考
+  - [文档](https://docs.python.org/zh-cn/3.9/library/multiprocessing.html)
+  - 进程相比“线程”，能充分利用多核
+    - [[py-process-thread]]
+    - [知乎](https://zhuanlan.zhihu.com/p/455171966)
 ## 最小唯象例子（利用`Pool`并行）
 - 参考`minimum.py`
   - 这就说明可以简单做并行

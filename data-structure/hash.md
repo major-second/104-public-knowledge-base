@@ -12,6 +12,7 @@
 - 参考[[打表]]
 ## 索引的例子
 - [[counting-sort]]
+- [[sliding-window]] 值域小时[[character/quantile]]
 - [[41-first-missing-positive]]方法一
   - 数组索引就是哈希，[[inplace]]变换不占额外空间
   - 通过正负，用一个`int`同时表示了一个`int`和一个`bool`
