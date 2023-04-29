@@ -1,12 +1,17 @@
 - 参考算法题[[dp]]
-- 概述
-  - 转移过程：下个状态$x_{k+1}=f(x_k, u_k, w_k)$，$u_k$是状态，$w_k$是随机扰动
+## principle of optimality
+- 转移过程
+  - 下个状态$x_{k+1}=f(x_k, u_k, w_k)$，$u_k$是状态，$w_k$是随机扰动
   - 最后一轮profit/cost只取决于状态$x_N$，其它（包括$k=0, \cdots, N-1$的）都可取决于$x_k, u_k, w_k$
   - 目标：优化cost
 - principle of optimality: 最好策略的结尾也是最好的
-  - 因此从后向前递推，从前向后[[oi-wiki-basic/recursion]]（$min ...$中显然用到递归）
-    - 递归出口是$N$处
-  - [[dp]]也提到递推和递归方向相反
+- 因此：考察方向
+  - 从后向前递推，也就是[[backward-induction]]
+  - 从前向后[[oi-wiki-basic/recursion]]
+    - $min ...$中显然用到递归
+  - 递归出口是$N$处（最后）
+  - 两个方向相反
+## 题
 - dice game
   - 从后向前递推
   - 继续/不继续两种决策！

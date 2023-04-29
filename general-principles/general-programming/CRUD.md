@@ -20,3 +20,4 @@
   - `conda env list`
 - [[config]]：`git config key.subkey value`，`git config --list`，`git config --unset key.subkey`
 - [[systemd]]：`systemctl list-unit-files --type=service`，`sudo systemctl <start/stop/enable/disable/restart> ...`
+- [[associative]] `set`: `insert, erase`, `upper_bound, find, begin, rbegin`

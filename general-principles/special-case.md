@@ -59,7 +59,7 @@
 - 多个不同层次退化，更加看出本质
   - [[multi-normal]]
   - [[gamma-distribution]]，[[chi-square]]，[[gamma-distribution#指数分布]]
-  - [[dp]]和[[greedy]]，参考[[dp#举例]]
+  - [[dp]]和[[greedy]]，参考[[dp#多次退化]]
 ## 坏处
 - 有些东西对于特例不work，你不检查就不严谨
   - [[counter-examples]]

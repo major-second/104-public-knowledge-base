@@ -10,3 +10,5 @@
   - 例如[[2343-query-kth-smallest-trimmed-number]]
     - 输入输出有点绕，先在草稿纸上模拟一下
     - 模块化，先写框架，再写核心算法
+  - [[stack]], [[queue]]互转
+    - https://cloud.tencent.com/developer/article/1643318
