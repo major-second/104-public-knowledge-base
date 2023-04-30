@@ -1,0 +1,27 @@
+- 常见：两个数值：成本和回报。指定（最多）总成本，使得回报更大（或反之）
+- 成本常常[[linearity]]，可加，但回报往往不线性
+  - [[marginal]], [[tradeoff]]
+    - 比如[[marginal]]中[[entropy#KL Divergence]]非负，成本是总“概率”，线性可加，但回报是非线性的
+- 如果都线性：往往比较平凡
+  - [[2-linear-optimization]]
+  - [[dp]]
+  - [[knapspack]]
+    - 可能有[[discrete-continuous]]问题，就需要[[dp]]
+    - 限制单个物品一次，就需要[[dp#high-dimension]]
+  - [[似然比]]
+    - 可能有[[discrete-continuous]]问题类似[[knapspack]]
+# 成本线性可加时配对[[forall]]
+- [[hoeffding#lemma]]配对
+- 均值1，方差1的随机变量，$P(X<0)$最值？
+  - [[reduction]]，所有$X<0$的部分显然都接近$X=0$
+  - 每次看**一小对**，在$0$和$1+a$两处
+    - [[variance]] $\frac{at}{1+a}\cdot 1+\frac{t}{1+a}\cdot a^2=at$
+    - 对结果贡献：$\frac{at}{1+a}$
+  - 此时再进行配对
+    - 显然$a$恒为1是参考值
+    - 一部分$a=1-b$，概率$c$
+    - 一部分$a=1+c$，概率$b$
+    - 对[[variance]]贡献恒定$b+c$，相当于对于这一对，$a$恒为1
+    - 则对结果（概率）贡献：$\frac{1-b}{2-b}c+\frac{1+c}{2+c}b$
+    - 由$\frac{1-b}{2-b}c+\frac{1+c}{2+c}b-\frac b2-\frac c2=\frac{2c-2bc-2b+b^2}{2(2-b)}+\frac{2b+2bc-2c-c^2}{2(2+c)}=\frac{4c-4bc-4b+2b^2+2c^2-2bc^2-2bc+b^2c+4b+4bc-4c-2c^2-2b^2-2b^2c+2bc+bc^2}{2(2-b)(2+c)}=\frac{-bc^2-b^2c}{\cdots}<0$得结果
+    - 说明应该$a$恒为1

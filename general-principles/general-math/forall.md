@@ -23,3 +23,10 @@
   - [[concentration]]
   - [[hoeffding]]
     - 这个也是求了界的最值，但问题是通过[[hoeffding#lemma]]先放缩了，所以界更松
+# 微元
+- 参考[[discrete-continuous]]
+- 即使对于连续问题，也考察一小段
+## 例子
+- [[hoeffding#lemma]]
+- [[似然比]]中“拓展”题
+- [[budget-constraint]]中均值1，方差1的随机变量

@@ -8,4 +8,4 @@
 - [[associative]]
 - [[sort-intro]], [[binary-search]]
 - [[stack#单调栈]]
-- [[dp#knapspack]]问题单调加入
+- [[knapspack]]问题按顺序单调加入
