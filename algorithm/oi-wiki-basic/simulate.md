@@ -12,3 +12,8 @@
     - 模块化，先写框架，再写核心算法
   - [[stack]], [[queue]]互转
     - https://cloud.tencent.com/developer/article/1643318
+- 吐槽
+  - https://leetcode.cn/circle/discuss/hRlVL1/
+  - `每次做到大模拟都觉得生不如死，做完也不知道学到了什么。不过暴露出了思维不够缜密，考虑不够周全。`
+  - `业务逻辑不都是大模拟吗`
+  - `有种写游戏脚本的愉悦感`

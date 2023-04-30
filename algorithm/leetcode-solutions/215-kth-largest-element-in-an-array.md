@@ -1,5 +1,5 @@
 - https://leetcode.cn/problems/kth-largest-element-in-an-array/
-- 用[[adapter]]优先队列直接调包解题：
+- 用[[adapter#priority_queue]]直接调包解题：
 ```cpp
 class Solution {
 public:

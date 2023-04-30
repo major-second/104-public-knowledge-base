@@ -29,6 +29,61 @@
   - 如果选最大的任意个不相邻元素，那就是“01”型动态规划，存储两种可能（目前为止最后一个数选了/没选），每次从两种可能优中选优
   - 如果选最大的$n$个不相邻元素，那需要存储的状态更多，也就是之前最后一个数选了/没选，然后最多已经选取了多少个元素
     - 换句话说：你选了太多垃圾元素占“名额”不好
+# 计数方案数
+- 总方案来自于子问题方案
+  - 总方案数来自于子问题方案数
+  - 因此无论是判是否存在还是计数，都可以考虑用dp
+- [[115-distinct-subsequences]]
+## 电话盘
+- ```
+  1 2 3
+  4 5 6
+  7 8 9
+  * 0 #
+  ```
+  - 电话盘，全由数字组成，不以0或1开头，且满足“跳马”关系的n位数电话号有多少
+  - 最佳当然是dp，效率低的也可以是[[backtrack]]
+  - [[graph-for-topo]]
+  ```cpp
+  #include <iostream>
+  #include <vector>
+  using namespace std;
+
+  int main(){
+      vector<vector<int>> graph;
+      graph.push_back(vector<int>{6, 4}); // 0
+      graph.push_back(vector<int>{8, 6}); // 1
+      graph.push_back(vector<int>{7, 9}); // 2
+      graph.push_back(vector<int>{4, 8}); // 3
+      graph.push_back(vector<int>{3, 9, 0}); // 4
+      graph.push_back(vector<int>{}); // 5
+      graph.push_back(vector<int>{1, 7, 0}); // 6
+      graph.push_back(vector<int>{2, 6}); // 7
+      graph.push_back(vector<int>{1, 3}); // 8
+      graph.push_back(vector<int>{2, 4}); // 9
+
+      int length = 7;
+      length--;
+      vector<int> num_prefices = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1};
+      // 0 feasible prefix for valid number with the end of the prefix as 0
+      // 1 feasible prefix for valid number with the end of the prefix as 2, namely 2
+
+      while(length-- > 0){
+          vector<int> new_num_prefices = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          for (int i = 0; i <= 9; i++) for (int dst:graph[i]) new_num_prefices[i] += num_prefices[dst];
+          num_prefices = new_num_prefices;
+          // after 1 iteration
+          // 2 feasible prifices for valid number with the end of the prefix as 0, namely 60 and 40
+          // 2 feasible prifices for valid number with the end of the prefix as 4, namely 34 and 94
+          // etc
+      }
+      int total = 0;
+      for (auto i:num_prefices) total += i;
+      cout<<total<<endl;
+
+      return 0;
+  }
+  ```
 # 其它举例
 - [[368-largest-divisible-subset]]
   - 讲到不能[[greedy]]，需要优中选优

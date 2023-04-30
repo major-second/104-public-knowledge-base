@@ -18,3 +18,6 @@
   - 这也是[[set-operations#union]]应用
 - [[233-number-of-digit-one]]计数时用到
 - [[binomial#斜分]]
+- “问题的不同拆分方式”
+  - [[greedy]]的[[dijkstra]]
+  - [[dp]]的[[bellman-ford]], [[floyd]]

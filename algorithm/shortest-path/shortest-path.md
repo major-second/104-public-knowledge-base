@@ -1,0 +1,5 @@
+- https://oi-wiki.org/graph/shortest-path/
+- [[dijkstra]]
+- [[bellman-ford]]
+- [[floyd]]
+- 拓展：[[floyd]]和[[bellman-ford]]的放松可以联系[[3-search]]中3.6节找启发式函数的“放松”

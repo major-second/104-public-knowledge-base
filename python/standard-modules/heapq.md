@@ -1,0 +1,11 @@
+- https://docs.python.org/3/library/heapq.html
+- 小根堆，`[0]`是根
+  - 对比[[adapter#priority_queue]]
+- 初始化：`[]`或`heapq.heapify(list)`
+- 使用
+  - `heapq.heappush(heap, item)`
+  - `heapq.heappop(heap)`
+  - `heapq.heappushpop(heap, item)`
+  - `heapq.heapreplace(heap, item)`
+    - push和pop顺序和上个不同
+- 文档提到`heapify` [[inplace]]线性完成
