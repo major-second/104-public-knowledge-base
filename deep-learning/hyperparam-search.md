@@ -1,1 +1,2 @@
 - [[bayesian-optimization]]
+- [[itertools]] `product`暴力grid search

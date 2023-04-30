@@ -191,16 +191,19 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
    - 协方差$Cov(A,B)=EAB-EAEB=[-0.15,0.15]$，$\sqrt {VarAVarB}=0.5\sqrt {0.21}$，即得结果
 ## coupon collection
 - A
-  - 还是拆成多个事件，每个都用几何分布，得到调和级数
+  - 拆成多个事件，每个都用[[nega-binom#geometric]]，得到调和级数
 - B
   - 条件期望思想：$Ef(n+1)=\sum(m+1-m/N)P(f(n)=m)=(N-1)/N\cdot E(f(n))+1$
   - [[re-classification]]思想：第i张是新的的概率是$(\frac{N-1}N)^n$，然后线性地相加
-- 拓展题：拿到两颗一样的吃掉，则需要吃掉几颗
-  - 法一：$f(i):=手里有i，到6需要吃多少颗$，这样递推式有三项比较复杂
-  - 法二：比较tricky定义$g(i):=手里有i，到i+1需要吃多少颗$，这样
-    - $g(0)=0$
-    - $g(1)=1/6*(2+g(0)+g(1)),g(1)=2/5$
-    - 说明[[self-similarity]]时要掌握方法，[[naming]]时换个定义说不定就work了，相当于换元
+- 拓展题
+  - 拿到两颗一样的吃掉，则需要吃掉几颗
+    - 法一：$f(i):=手里有i，到6需要吃多少颗$，这样递推式有三项比较复杂
+    - 法二：比较tricky定义$g(i):=手里有i，到i+1需要吃多少颗$，这样
+      - $g(0)=0$
+      - $g(1)=1/6*(2+g(0)+g(1)),g(1)=2/5$
+      - 说明[[self-similarity]]时要掌握方法，[[naming]]时换个定义说不定就work了，相当于换元
+  - 拿到六种结果停止，则总和期望？
+    - [[stopping-rule#Wald引理]]
 # 4.6 order statistics
 - 参考[[order-statistics]]
 - 一来的公式就是[[order-statistics]]的特例。有$n$种可能谁做领导，然后领导$f$一下，剩余的给面子$F^{n-1}$一下
