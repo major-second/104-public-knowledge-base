@@ -11,18 +11,31 @@
 ## principle of optimality
 - [[5-dp#principle of optimality]]
 ## 优中选优
+- “优”都是基于之前算出过的值
 - 递推[[recurrence]]利用之前已经计算过的东西
-- 优中选优。“优”都是基于之前算出过的值
+  - 即子问题的最优
+  - 其实和[[dp#principle of optimality]]道理一样
 - 和[[greedy]]联系
   - 如果不需要选，那就是[[greedy]]
-  - 但有时只是[[naming]]，不同层次来看dp和[[greedy]]
+  - 但有时只是[[naming]]，不同层次来看dp和[[greedy]]而已
+### 优中选优举例
+- 01 [[knapspack]]
+  - 可重复用物品：m个子问题，每个子问题$O(n)$种“优”
+  - 只能用一次：
+    - $nm$个子问题
+    - 每个子问题常数（3）种“优”，两个`max`操作
+- [[floyd]]
+  - $n^3$个子问题，每个子问题常数（2）种优，1个`max`操作
+  - 属于[[dp#01动规]]，非此即彼
+- [[bellman-ford]]
+  - $V^2$个子问题，每个子问题表示某个点最多经过若干条边时最短路长度
+  - 每个子问题**点的入度**种优
+  - 故复杂度$VE$
 # 多次退化
 - 参考[[general-principles/special-case]]思想，多次退化
 - 越来越不贪心，需要存储、优中选优的可能性越来越多
 ## knapspack
 - [[knapspack]]，能体现[[general-principles/special-case]]多次退化
-- 从[[dp#优中选优]]角度讲，这里都是常数种类的“优”，渐近空间复杂度等于渐近时间复杂度
-  - 如只能用一次的[[knapspack]]中，三种“优”，两个`max`操作
 ## [[1388-pizza-with-3n-slices]]
 - 我们先不考虑首尾相接的问题，认为是“$3n$个元素中找$n$个两两不相邻使和最大”
   - 如果选最大的任意个元素，那就是[[greedy]]，不需要选，一股脑所有数放上即可
@@ -98,7 +111,7 @@
 - 选用哪个变量
   - 比如https://leetcode.cn/contest/weekly-contest-286/problems/maximum-value-of-k-coins-from-piles/
     - 需要选择堆编号
-  - 比如[[shortest-path#floyd]]，选择“中转站”编号
+  - 比如[[floyd]]，选择“中转站”编号
 - 注意选择方向
   - 例如[[10-regular-expression-matching]]，从后往前看，即可[[dp#状态压缩]]
 # 状态压缩

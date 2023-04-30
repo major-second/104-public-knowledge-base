@@ -3,9 +3,17 @@
 - **逻辑上两重循环，实现上三重循环**
 - 实际操作中可以[[dp#状态压缩]]（容易论证压缩不影响）
 ```python
-# 初始时f是权（有限或正无穷）
-for k in range(1, n + 1):
-    for x in range(1, n + 1):
-        for y in range(1, n + 1):
+from collections import defaultdict
+f = defaultdict(lambda:defaultdict(lambda:float('inf')))
+f[0][1] = f[1][2] = f[2][3] = 2
+f[1][3] = f[0][3] = 5
+n = 4
+for k in range(n):
+    for x in range(n):
+        for y in range(n):
             f[x][y] = min(f[x][y], f[x][k] + f[k][y])
+    
+    for x in range(n):
+        for y in range(n):
+            print(k, x, y, f[x][y])
 ```

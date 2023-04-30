@@ -1,0 +1,7 @@
+- 参考
+  - [[adapter#deque]]
+  - [[data-structure/deque]]
+- 相比[[adapter#deque]]，名字
+  - 所有名字加上`left`，比如`popleft`，`appendleft`等，有点野鸡
+  - 个人觉得这个不优美在于破坏两边的[[symmetry#翻转]]，认为右天生正宗，左天生是附加
+- [代码](python_deque.py)

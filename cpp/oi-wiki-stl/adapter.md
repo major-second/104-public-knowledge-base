@@ -23,3 +23,6 @@
 - 直接调包解题
   - [[215-kth-largest-element-in-an-array]]
   - [[973-k-closest-points-to-origin]]
+# deque
+- `<deque>`
+- 方法名往往有`front, back`，如`pop_front(), back()`等
