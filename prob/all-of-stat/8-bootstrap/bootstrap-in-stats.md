@@ -21,7 +21,6 @@
   - 写成公式$v_{boot}=\frac 1B \sum_{b=1}^B(T^*_{n,b}-\frac 1B \sum_{r=1}^BT^*_{n,r})^2$
 - 最后问题：怎么[[stochastic-simulation]]出$\hat F_n$
   - 根据[[empirical-distribution-function]]的定义，直接[[iid]]均匀抽即可
-  - 这里是有放回 with replacement，参考[[1-prob/independent]]
 # [[confidence-interval]]
 1. 直接利用算出的[[standard-error]]，计算[[asymptotically-normal#normal-based interval]]
 2. [[pivotal-interval]]

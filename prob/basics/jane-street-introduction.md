@@ -23,7 +23,7 @@
 # Independence
 - [[1-prob/independent]]
 - 可使用乘法
-- 放回/不放回有区别
+- 放回/不放回的区别，参考[[with-replacement]]
 # Random Variables
 - [[random-variable-introduction]]
 - 通俗：把事件attach上数字就是随机变量

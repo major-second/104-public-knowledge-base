@@ -27,5 +27,5 @@
 # 和独立性的关系
 - [[1-prob/independent]]
 - 直接去掉肯定不行。比如所有变量都一样显然没有concentration了
-- 但是可以调整：有放回和无放回
+- 但是可以调整：有放回和无放回，参考[[with-replacement]]
   - 直觉上：无放回concentration更强，更有所谓的“抵消”效果

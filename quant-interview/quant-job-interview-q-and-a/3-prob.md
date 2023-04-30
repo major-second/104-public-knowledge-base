@@ -38,7 +38,7 @@
 19. [[4-probability]] chess tournament
     1.  knock-out tournament: a competition in which a team or player is eliminated once and for all
 20. 略
-21. with replacement有放回抽样
+21. [[with-replacement]]
 22. [[5-markov-chain]]
 23. [[5-martingale-and-random-walk]]
 24. 略

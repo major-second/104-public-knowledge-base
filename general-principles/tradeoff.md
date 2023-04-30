@@ -45,3 +45,6 @@
   - 深度学习[[dataloader]]
   - 牺牲一点随机性，每个batch是[[contiguous]]数组中挖一点
   - 不能牺牲太多随机性否则性能肯定下降
+- exploration-exploitation
+  - [[multi-arm-bandit]]
+  - [[mdp]]，更一般的rl

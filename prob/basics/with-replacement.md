@@ -1,0 +1,11 @@
+- 放回 with replacement，是[[iid]]
+- 否则，不是
+  - 且多次试验求和，[[expectation]]不变[[variance]]变小，风险抵消，参考[[concentration]]
+  - 无放回时[[cov#corr]]小于0
+    - 只要看$X=Y$那些情况的$EXY$相比总的$EXY$要大
+    - 因为[[variance#与$EX^2$关系]]
+    - 所以$X\ne Y$那些情况的$EXY$肯定小
+  - 推论：[[variance]]变小
+    - 还是参考[[variance#与$EX^2$关系]]
+    - $EX^2$项不变
+    - 而$E(X^2)$项的那些交叉项$EXY$相比放回的情形变小（刚刚说的[[cov#corr]]）

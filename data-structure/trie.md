@@ -1,0 +1,2 @@
+- 对比[[hash]]
+- 应用[[1032-stream-of-characters]]

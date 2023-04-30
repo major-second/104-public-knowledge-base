@@ -106,6 +106,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
   - 当然我这符号为了简写，不严谨。严谨可以用条件概率写
   - sanity check, 讲究
 - russian roulette series
+  - 参考[[with-replacement]]
   - 不放回显然是等概率
   - 放回：$P_1=5/6\cdot (1-P_1),P_1=5/11$
   - 后面又是一些计算题
