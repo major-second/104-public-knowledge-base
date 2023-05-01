@@ -2,7 +2,8 @@
 - 时间、空间
 - 最差[[forall]]、平均
   - 参考[[adversary]]
-  - 会被卡最差的：[[hash]], [[cpp-vector]], [[quick-sort]]
+  - 会被卡最差的算法：[[hash]], [[cpp-vector]], [[quick-sort]]
+  - [[enumerate#pruning]]：有时看起来没有改变理论上的最差复杂度，但实际上加上就能过。比如[[464-can-i-win]]
 # 记号
 - $O$, $\Theta$
 # 计算

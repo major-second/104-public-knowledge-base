@@ -31,6 +31,7 @@
   - [[430-flatten-a-multilevel-doubly-linked-list]]
   - [[4-median-of-two-sorted-arrays]]中，其中一个输入为空的情形
   - [[686-repeated-string-match]]中，`l_l==0`情形特殊！
+  - [[464-can-i-win]] 0情况
   - 一个实际例子
     - `1`出现在二维数组`[[0,1],[1,2],[2,3]]`中的`0, 1`两个子数组，想输出`[0, 1]`
     - 解决方案：`a = 1 == torch.tensor([[0,1],[1,2],[2,3]]); b = a.sum(axis=1)`
@@ -38,6 +39,9 @@
 - [[oi-wiki-basic/recursion]]出口（[[divide-and-conquer]]的最底层）往往是特例
   - 往往是空，0，1等等
   - 如[[23-merge-k-sorted-lists]]中，注意“1”也是递归出口
+- 其它特判
+  - [[464-can-i-win]]求和不足
+  - [[1573-number-of-ways-to-split-a-string]]1数量不是3的倍数
 # 图相关
 - 环带来麻烦
   - 例如[[topo]]，[[210-course-schedule-ii]]

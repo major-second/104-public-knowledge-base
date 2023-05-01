@@ -1,0 +1,4 @@
+- `for`完全被执行完了，没有被打断，就执行`else`段
+- 参考使用场景
+  - [[464-can-i-win]]
+    - [[6-adversarial-search]]
