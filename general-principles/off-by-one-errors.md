@@ -13,6 +13,7 @@
 - 考察二维数组中一个点的所有相邻点
   - 在[[329-longest-increasing-path-in-a-matrix]]这种地方有用到
   - 本身小于$长度-1$，其右边才有点（最大等于$长度-1$），不出界
+- [[140-word-break-ii]]
 - [[sklearn/transform]]中
   - 12维选10维，则10个1，1个2，1个3
     - 也就是这里ranking从1开始，已经差了1

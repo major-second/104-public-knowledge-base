@@ -4,6 +4,7 @@
   - [[monotonous]]
 # 实现
 - 调包[[algorithm]]的`binary_search, lower_bound`等
+- python [[bisect]]
 # 拓展
 - 三分法求单峰函数极值
   - `0, 99, 101, 200`，那要么左边两段都减，要么右边两段都增，一定可舍去一段
