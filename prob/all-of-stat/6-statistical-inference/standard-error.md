@@ -32,5 +32,6 @@
     - 例如一元[[unary]]含截距，就是$-2$
   - 推论：100个数据重复变成200个，则
     - $\hat \beta$不变
+    - [[cov#corr]], [[unary#$R^2$]]都不变
     - standard error根据公式变小
     - [[t-distribution#t stats]]（如果零假设是$\beta=0$）变大

@@ -7,6 +7,7 @@
   - [[tradeoff]]
   - [[variance#与$EX^2$关系]]
   - [[moment]]
+- 参考[[转动惯量#平行轴定理]]
 - 特殊情况
   - $\hat \mu = \bar X$
     - 参数$\mu$的估计量$\hat \mu$是统计量$\bar X$

@@ -1,0 +1,11 @@
+- 实践
+  - `import random`
+  - `random.random()`就是0到1
+- [[expectation]] $1/2$
+- [[variance]] $EX^2-(EX)^2=1/3-1/4=1/12$
+  - 也就是均匀细棒的[[转动惯量]]
+- 应用
+  - 生成基本的均匀分布，然后[[monte-carlo]], 乃至[[monte-carlo#接受-拒绝采样]]
+- 在涉及[[normalization#排序]]常常使用
+  - 街上不停找人，多少个人才比第一个高？
+    - $\int_0^1 (1+1/x)dx$发散了

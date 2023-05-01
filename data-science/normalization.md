@@ -10,7 +10,7 @@
 - 类比[[11-feature-selection]]：没用的丢弃
 - [[batchnorm#Scale and Drift]]就是减少丢失信息
 # 排序
-- 排序，取[[character/quantile]]，强行转化成均匀分布
+- 排序，取[[character/quantile]]，强行转化成[[uniform-distribution]]
 - [[time-series]]中常用的`.rank()`就是。一般`pct=True`，搞到$[0,1]$
 - 单调变换时保持不变
 - 小心

@@ -7,3 +7,6 @@
   - 比如标准正态[[normal]]的$F$就是$\Phi$，且性质好
   - 那就$\Phi(0)=0.5,z_{0.5}=\Phi^{-1}(0.5)=0$
 - 特殊称谓：$1/4, 1/2, 3/4$为first quartile, median, third quartile
+- 参考
+  - [[normalization#排序]]
+  - [[uniform-distribution]]

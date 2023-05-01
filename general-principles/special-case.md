@@ -6,6 +6,7 @@
   - [[proportional#等车例题]]
 - 快速判断对错、定性结果
   - [[normal#截一半看cov#corr]]
+  - [[小量近似]]
 - 特例本身具有重要作用
   - [[moment-generating-functions]]中的0处值
   - [[normal#symmetry#旋转]]计算高斯积分

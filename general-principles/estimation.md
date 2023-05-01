@@ -29,12 +29,8 @@
 - [[q-learning-overestimation#single estimator]]
 - [[normal#cov#corr绝对值期望]]用到例如$f(x)=\sqrt x$情况等
 ## 泰勒
-- 物理常用估计式（$x$小）
-  - $sinx\approx x$
-  - $cosx \approx 1-x^2/2$
-  - $(1+x)^n \approx 1+nx$
-  - $ln(1+x)\approx x$
-  - $e^x \approx x$
+- [[小量近似]]
+  - 例如[[转动惯量#平行轴定理]]例题
 ### 牛顿余项
 ### 拉格朗日余项
 ### 柯西余项
