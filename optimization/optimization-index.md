@@ -2,5 +2,9 @@
 - [[4-local-search]]
 - [[deep-learning/optimization]]
 - [[11-feature-selection#近端梯度下降]]
+# 解析求解
+- [[monotonous#数学]]
+- [[multi-ary#定义和计算]]
 - [[lagrange]]
-  - [[portfolio-optimization]]
+  - [[distance-to-hyperplane]]
+  - [[ball-tangent-optimal]]

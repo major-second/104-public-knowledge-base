@@ -1,0 +1,12 @@
+- 前置
+  - [[linear-model-for-portfolio]]
+  - [[linear-transform]]
+- volatility
+  - 一段时间[[sliding-window]]中某个东西的[[variance#standard deviation]]
+  - 已知[[cov]], 可以[[linear-transform]]计算出结果$\sqrt {w'\Sigma_rw}$
+- 然而$\Sigma_r$还是不好算啊
+  - 通过[[linear-model-for-portfolio]], [[linear-transform]]，以及[[iid]]噪声，得到可行的估计值$\Sigma_r = B\Sigma_f B' + \Sigma_\epsilon$
+  - [[iid]]导致对角，参考[[general-principles/independent#diagonal]]
+- 实际计算：$w'\Sigma_rw=b'\Sigma_f b+w'\Sigma_\epsilon w$，大大减少计算量
+  - 看出相当于某种[[encode-decode]]，encode成主要能解释的factors和剩下的[[1-prob/independent]]噪声
+- 推论：[[sharpe-for-portfolio]]

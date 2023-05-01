@@ -74,6 +74,9 @@
 - [[one-hot]]
 - [[word2vec]]
 - [[nlp-pretrain]]
+# 有损压缩
+- 精度和[[complexity]]往往需要[[tradeoff]]
+  - 例子：[[volatility-for-portfolio]]，用factor和idiosyncratic估计[[cov]]矩阵
 # 其它参考
 - 参考[[file-format]]，特别是关于“文本、二进制”的部分
 - [[xxd-diff]]

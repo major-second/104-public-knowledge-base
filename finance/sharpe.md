@@ -1,1 +1,2 @@
 - [sharpe](https://zhuanlan.zhihu.com/p/79861146)
+- 参考[[sharpe-for-portfolio]]给出一个计算例子

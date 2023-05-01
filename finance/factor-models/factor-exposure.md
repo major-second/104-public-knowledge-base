@@ -1,4 +1,4 @@
-- Prerequisite
+- 参考
   - [[barra]]
 - [Reference](https://zhuanlan.zhihu.com/p/38280638)
 - Factor exposure is the sensitivity of a specific stock code or portfolio to a certain factor.

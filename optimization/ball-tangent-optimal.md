@@ -1,0 +1,9 @@
+- 一个常用的玩具优化问题
+- 几何意义[[imagination]]球和[[hyperplane]]相切
+- $max \sum x_i, s.t.||x||=1$
+  - 可以[[lagrange]]
+  - 也有[[symmetry#轮换]]或[[symmetry#旋转]]道理在里面
+- 拓展$max_x \alpha x,s.t. ||x||=1$
+  - 可以[[lagrange]]或者几何直观理解
+  - $x,\alpha$同向即可，$x^*=\alpha/||\alpha||$
+  - [[sharpe-for-portfolio]]用到

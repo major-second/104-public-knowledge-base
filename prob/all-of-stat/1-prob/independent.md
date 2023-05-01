@@ -18,6 +18,3 @@
       - [[normal#截中间看cov#corr]]
       - [[normal#$Var(XY)$]]
     - [[with-replacement]]
-      - “有放回”对应独立
-      - [[bootstrap-in-stats]]当然是有放回
-      - [[concentration]]提到不独立时，“无放回”更能concentrate

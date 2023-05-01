@@ -7,9 +7,10 @@
   - 因此$EX=0$情况$EX^2=VarX$，例如[[fisher-information#均值为0]]
 - 是特殊的中心矩[[moment]]，[[general-principles/special-case]]
   - 当然也就可以先算[[moment]]再算出方差，例如[[gamma-distribution#数字特征]]
+- [[linear-transform]]的方差参见[[linear-transform]]
+# standard deviation
 - 标准差：方差开方
 - 标准误：参考[[standard-error]]，区别于标准差
-- [[linear-transform]]的方差参见[[linear-transform]]
 # 可加性
 - [[1-prob/independent]]独立（其实只需无关）随机变量方差可加
   - 由此，[[iid]]时$\bar X$的方差是$X_i$的$1/n$

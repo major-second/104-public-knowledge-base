@@ -1,4 +1,5 @@
 - 放回 with replacement，是[[iid]]
+  - [[bootstrap-in-stats]]当然是有放回
 - 否则，不是
   - 且多次试验求和，[[expectation]]不变[[variance]]变小，风险抵消，参考[[concentration]]
   - 无放回时[[cov#corr]]小于0
