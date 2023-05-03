@@ -17,3 +17,6 @@
   - [[settings-json]]
     - `"terminal.integrated.enableMultiLinePasteWarning": false,`
     - `"git.confirmSync": false,`
+  - [[py-warnings]]
+      - `from warnings import filterwarnings`
+      - `filterwarnings('ignore', message='DataFrame is highly fragmented*')`

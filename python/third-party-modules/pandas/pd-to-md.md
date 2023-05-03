@@ -1,0 +1,6 @@
+- 前置
+  - [[series-dataframe]]
+  - [[tabular/input]]
+  - [[markdown-basics]]
+  - `pip install tabulate`
+- 用法`df.to_markdown()`
