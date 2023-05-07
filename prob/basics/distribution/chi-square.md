@@ -8,9 +8,11 @@
     - 注意$t=x^2,(dt/dx)^{-1}=(2\sqrt t)^{-1}$
     - 额还有一个正负号导致的2但反正能看出[[gamma-distribution]]参数是$1/2,1/2$了已经
 # [[variance]]
-- 根据[[variance]]，独立随机变量方差可加
-- 只需看$\chi^2(1)=\Gamma(1/2,1/2)$方差为$EX^4-(EX^2)=3\sigma^4-\sigma^4=2\sigma^4=2$，那么$\chi^2(n)$方差就是$2n$，利用了[[variance#可加性]]
-- 这里利用了[[normal]]的中心矩结论
+- 法一：利用[[normal#moment]]结论
+  - $\chi^2(1)=\Gamma(1/2,1/2)$方差为$EX^4-(EX^2)=3\sigma^4-\sigma^4=2\sigma^4=2$
+  - 那么$\chi^2(n)$方差就是$2n$，利用了[[variance#可加性]]
+- 法二：直接用[[gamma-distribution#数字特征]]结论
+  - $Var=\alpha\beta^2 = \frac n2 \cdot 4=2n$
 # [[normal]]的[[variance#unbiased估计]]
 - [[off-by-one-errors]]
 - 由[[normal]]随机变量的线性组合的性质，得：

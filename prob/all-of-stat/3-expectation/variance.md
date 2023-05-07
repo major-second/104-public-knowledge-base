@@ -17,7 +17,9 @@
 - 联合[[linear-transform]]得到常见结论：[[iid]]相加$N$个，方差变为$1/N$，标准差变为$1/\sqrt N$
   - 联想[[central-limit]]
   - [[trivial-mistakes-in-math#开根号]]
-  - 应用[[normal#cov#corr绝对值期望]]
+  - 应用
+    - [[normal#cov#corr绝对值期望]]
+    - [[chi-square#variance]]
 # [[unbiased]]估计
 - 条件$X$方差存在[[iid]]
   - 则$S^2:=\frac 1{n-1}\sum (X_i-\bar X)^2$是方差的无偏估计

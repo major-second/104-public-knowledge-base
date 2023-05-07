@@ -26,6 +26,7 @@
   - [[variance#unbiased估计]]
     - 从而[[t-distribution#应用]]
 - 仅仅是[[naming]]问题
-  - [[gamma-function]]与[[factorial]]
-    - [[gamma-distribution]]
+  - [[gamma-function]]
+    - [[gamma-function]]与[[factorial]]
+    - [[gamma-function]]和[[gamma-distribution]]指数上的差一
   - [[B-function]]
