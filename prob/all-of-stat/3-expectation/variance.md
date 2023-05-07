@@ -38,7 +38,7 @@
 # 与$EX^2$关系
 - 参考
   - [[estimation#$Ef(X)\approx f(EX)$]]
-  - [[MSE#bias-variance tradeoff]]
+  - [[orthogonal-decomposition#projection-to-a-hyperline]]
 - 刚刚[基础](#基础)提过
 - 中心矩[[moment]]方差恒小于等于原点矩$EX^2$
 - 对于$N$大，$EX=0$情况

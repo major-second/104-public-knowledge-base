@@ -3,6 +3,7 @@
   - ISBN: 978-0-387-21736-9
 - 非官方总结，题解等[[github]]链接
   - https://github.com/telmo-correa/all-of-statistics
+    - 这个版本和下面的不同，可能对不上 ISBN: 978-0-387-21736-9
   - https://github.com/aaidrici/AllOfStatistics
     - 这里有题解，当然也有错误
 - Preface

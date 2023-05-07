@@ -3,10 +3,12 @@
 [toc]
 # [[random-variable-functions#pdf-continuous]]
 - $f(x;\mu,\sigma)=\frac{1}{\sqrt {2\pi} \sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$
+- 可记为$\phi(x)$，必须背诵
+- [[random-variable-functions#cdf]]则没有闭式，记为$\Phi(z)$
+  - $\Phi(0)=1/2$
+  - 和[[character/quantile]]关系：$\Phi^{-1}(1/2)=z_{1/2}=0$
 # 应用
 - 由于[[central-limit]]定理，所以实际中常常用到
-- [[random-variable-functions#pdf-continuous]]是有的：$\frac{1}{\sigma \sqrt {2\pi}}exp\{-\frac 1 {2\sigma^2} (x-\mu)^2\}$，记为$\phi(z)$
-- [[random-variable-functions#cdf]]则没有闭式，记为$\Phi(z)$
 - 实际应用：经常[[look-up]]
 # [[moment]]
 - 中心矩

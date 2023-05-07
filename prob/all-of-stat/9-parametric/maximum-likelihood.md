@@ -8,12 +8,7 @@
 - 方法：本质是数分题，求最大值
   - $\Theta$是开集时求导即可
     - 往往取对数再求导
-  - [[naming#换元或简记]]后求导
-    - 对于[[normal]]，可以对$\sigma^2$（记为$\delta$）求导
-    - $(-\frac n2ln\delta-\sum \frac{(x_i-\mu)^2}{2\delta})'=\frac 12(-n/\delta+\sum \frac{(x_i-\mu)^2}{\delta^2})=0$
-    - 因此$\hat \mu=\bar X$, $\hat \sigma^2=\frac 1n(X_i-\bar X)^2$
-    - 参考[[variance#unbiased估计]]，这个并不无偏[[unbiased]]
-  - 注意如果已知$\mu=0$，只估计$\sigma^2$，不能生搬硬套结论！
+  - [[naming#换元或简记]]后求导，例如[[maximum-likelihood-normal]]
 - 极值与最值
   - 求导得到极值，不一定是最大值。这在数分里也是经常需要检验的
   - 由此还引申出一类题目：证明MLE存在

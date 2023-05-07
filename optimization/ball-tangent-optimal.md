@@ -1,4 +1,4 @@
-- 一个常用的玩具优化问题
+- 一个常用的优化问题
 - 几何意义[[imagination]]球和[[hyperplane]]相切
 - $max \sum x_i, s.t.||x||=1$
   - 可以[[lagrange]]
@@ -7,3 +7,8 @@
   - 可以[[lagrange]]或者几何直观理解
   - $x,\alpha$同向即可，$x^*=\alpha/||\alpha||$
   - [[sharpe-for-portfolio]]用到
+- 换个形式：最[[first-principle]]地推导原点到超平面距离
+  - 超平面一般表达式$\alpha^T x+b=0,||\alpha||>0$
+  - 根据距离定义（最小的$||x||$），结合“超平面”约束和刚刚结论得到需要$\alpha,x$共线
+  - $||\alpha||||x^*||=|b|,||x^*||=|b|/||\alpha||$，且$x^*,\alpha$共线
+  - 待求距离$|b|/||\alpha||$

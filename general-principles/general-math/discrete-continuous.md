@@ -24,3 +24,7 @@
   - https://blog.csdn.net/u013597931/article/details/81705718
   1. 直接bin
   2. 建模做[[2-estimation]]如高斯
+# 思维方式
+- [[spectrum]]，程度问题，不是非黑即白
+- 模糊数学：隶属度、命题正确程度
+- “你需要多少钱财富自由”？可以是连续的函数，而不是一个threshold

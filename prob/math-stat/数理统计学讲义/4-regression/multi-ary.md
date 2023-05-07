@@ -17,6 +17,7 @@
     - 注意$X$一般“瘦”，很多行，但列数恒定，是用来回归$Y$的“依据”（“特征”）个数。这也可以记忆各种表达式中只有$X^TX$没有$XX^T$
 
 # 定义和计算
+- 参考[[orthogonal-decomposition#projection]]
 - 要求$||X_{m\times n}\beta_{n\times 1} - Y_{m\times 1}||^2$最小（即最好地拟合现有数据点）
 - $X\beta$所有可能取值就是矩阵$X$的列空间，记为$\mu(X)$，则$Proj_{\mu(X)} Y:=X\hat \beta$，一定存在唯一
 - 充要条件：根据投影定义，$(Y-X\hat \beta)\perp \mu(X)$，于是（根据$\mu(X)$定义）考察$X$每一列，得$ X^TX\hat \beta=X^TY$
