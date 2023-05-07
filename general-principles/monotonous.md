@@ -4,6 +4,7 @@
   - 了解基本性质
     - [[gamma-function]]
   - 证明[[inequalities]]
+  - [[pdf-transform#general]]
 # 算法
 - [[associative]]
 - [[sort-intro]], [[binary-search]]

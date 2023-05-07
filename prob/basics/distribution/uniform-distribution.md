@@ -9,3 +9,5 @@
 - 在涉及[[normalization#排序]]常常使用
   - 街上不停找人，多少个人才比第一个高？
     - $\int_0^1 (1+1/x)dx$发散了
+- 参考
+  - [[pdf-transform#cdf-uniform]]

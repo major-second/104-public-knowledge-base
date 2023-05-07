@@ -1,0 +1,4 @@
+- 应用
+  - [[naming#换元或简记]]
+    - [[pdf-transform]]
+  - [[backward-propagation]]
