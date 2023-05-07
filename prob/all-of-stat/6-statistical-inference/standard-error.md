@@ -5,31 +5,35 @@
 - 计算方法
   - [[bootstrap-in-stats]]
     - 但你总不能老是多次重复实验，这多笨啊
-  - [[maximum-likelihood#equivariance]], [[mle-delta-method]]
+  - [[maximum-likelihood#equivariance]]，“复合”，得到的参数？[[mle-delta-method]]
   - [[fisher-information]]
-  - 直接解析计算
-    - [[bernoulli-binom]]显然可以
+  - [[parametric]]时直接解析计算
+    - [[bernoulli-binom]]
     - [[standard-error#multi-ary SE]]
+    - [[normal]]，[[variance]]估计，[[chi-square]]
 - 应用
   - [[t-distribution]] stats
   - [[confidence-interval]]，尤其是[[asymptotically-normal#normal-based interval]]
+  - [[wald-test]]
 # [[multi-ary]] SE
-- [参考](https://www.statology.org/standard-error-regression/)
-  - 相比[[unary#$R^2$]]，更加“绝对”而非相对
+- 相比[[unary#$R^2$]]，更加“绝对”而非相对
   - 可以和[[confidence-interval]]联系，导出[[confidence-interval]]
     - 参考[[asymptotically-normal]]
-  - 说“我确信95\%概率能……”
-- [参考](https://zhuanlan.zhihu.com/p/358287489)
-  - > 为了得到标准误，我们不可能做很多次科学实验。实际上我们可以做一次样本实验，然后采用估算公式
+  - [参考](https://www.statology.org/standard-error-regression/)
+    - 因为能导出[[confidence-interval]]，所以有时可能认为比[[unary#$R^2$]]“实用”
+- > 为了得到标准误，我们不可能做很多次科学实验。实际上我们可以做一次样本实验，然后采用估算公式
+  - [参考](https://zhuanlan.zhihu.com/p/358287489)
   - 可能用到[[variance#unbiased估计]]，比如下文
 - [推导过程参考](https://stats.stackexchange.com/q/44841)
 - 关键：$Var(\hat \beta) = \sigma^2 (X'X)^{-1}$
-  - 这里用到了[[linear-transform]]的[[cov]]公式
-  - 这里认为$X$是给定的，$Y$才有随机性
-    - 参考[[4-regression]]
+  - 用到了[[linear-transform]]的[[cov]]公式
+  - 假设
+    - $X$是给定的，$Y$才有随机性（参考[[4-regression]]）
+    - $Y$的[[cov]]矩阵已知为$\sigma^2 I$（参考[[multi-ary]]）
   - 注意这个是理论值，实际中还要[[variance#unbiased估计]]，得到$\hat {Var} (\hat \beta)$
     - 此时注意减去自由度不是$-1$而是减去更多
     - 例如一元[[unary]]含截距，就是$-2$
+    - todo
   - 推论：100个数据重复变成200个，则
     - $\hat \beta$不变
     - [[cov#corr]], [[unary#$R^2$]]都不变

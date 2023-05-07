@@ -26,4 +26,6 @@
 - 对于一般情况
   - $\sqrt n\bar X/\sigma$看作$Y_1$
   - $(n-1)S^2/\sigma^2\sim \chi^2(n-1)$
-- 下游：[[t-distribution#应用]]
+- 下游
+  - 是[[parametric]]计算[[standard-error]]的一个例子
+  - [[t-distribution#应用]]
