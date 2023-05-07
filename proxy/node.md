@@ -11,7 +11,7 @@
   - 导入时：[[v2raya]]等软件可以导入文字或二维码
   - [[windows-proxy-client]]中，qv2ray无法扫描二维码。这种就要解码成文字再添加
   - [[android-proxy-client]]扫码当然最方便
-  - [[toolbox/web]]小工具转换二维码和文字
+  - [[web-page-tools]]小工具转换二维码和文字
 - 可导入的链接一般有两种
   - 一种是SERVER，一种是SUBSCRIPTION
     - 后者即别人打包好的定期更新的SERVER集合

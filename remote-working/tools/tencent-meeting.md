@@ -1,5 +1,5 @@
 - 腾讯会议，海外版为 [voovmeeting](https://voovmeeting.com/)
-- 海外版可以浏览器[[toolbox/web]]加入
+- 海外版可以浏览器[[web-page-tools]]加入
   - 效果：一台电脑，两个身份
   - ![](tencent-meeting-double.png)
   - 分别开前后摄像头

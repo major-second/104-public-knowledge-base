@@ -49,7 +49,7 @@
 # downstream
 - [chatpdf](https://www.chatpdf.com/)
   - 读论文读书审稿等用
-  - 文章太长了，用[[toolbox/web]]截取
+  - 文章太长了，用[[web-page-tools]]截取
     - https://www.pdf2go.com/
   - 免费的有每日限流，单文件限大小页数
 - [[cursor-so]]

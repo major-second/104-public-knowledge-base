@@ -16,7 +16,7 @@
     - 歧视性封禁：[[openai-account]]
     - 由于训练数据集大小和质量，性能差异严重：[[chatgpt]]
       - 哈哈，这样的话你可以[[encode-decode]]思想
-        - 先翻译成英文（比如用[[toolbox/web]]中的deepl）
+        - 先翻译成英文（比如用[[web-page-tools]]中的deepl）
         - 处理后再翻回来
 - 中文（字符）造成麻烦
   - 例如[[vscode/edit]]不能自动中文分词，`Ctrl+方向键`没用，[[settings/snippets]]也会造成麻烦
@@ -32,4 +32,4 @@
   - 语音输入又快又好
     - 而且各种语言都能用，还能练口语
     - 比如windows的 win + H，苹果系统自带，以及第三方讯飞输入法等
-  - 在线输入法[[toolbox/web]]：临时用不了时救急：https://www.google.com/inputtools/services/features/input-method.html
+  - 在线输入法[[web-page-tools]]：临时用不了时救急：https://www.google.com/inputtools/services/features/input-method.html

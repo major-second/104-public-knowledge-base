@@ -1,7 +1,12 @@
-- 目的
-  - 找到基，相当于[[encode-decode]]方式，编码成用$\mathbb R^n$表示的向量
-  - 编码结果[[general-principles/independent]]，特别地，交叉项为0，“互不干涉”，可用勾股定理，等等
+# 目的
+- 找到基，相当于[[encode-decode]]方式，编码成用$\mathbb R^n$表示的向量
+- 编码结果[[general-principles/independent]]，特别地，交叉项为0，“互不干涉”，可用勾股定理，等等
+# 例子
+- [[fourier-transform]]
+- [[schmidt]]
+- [[real-symmetric#spectrum-theorem]]
 # projection
+- 是一般的decomposition特例，分成两个相互正交的分量，平行垂直/切向法向...
 - 勾股定理，平方和关系
 ## projection-to-a-hyperplane
 - 超空间中的向量投影到超平面上

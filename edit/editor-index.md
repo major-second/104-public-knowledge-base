@@ -3,7 +3,7 @@
   - vscode: [[vscode-installation]]
   - pycharm: [[pycharm/installation]]
     - IDE当然可作为编辑器
-  - 在线工具: [[toolbox/web]]
+  - 在线工具: [[web-page-tools]]
     - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
     - [[overleaf]]
   - [[cursor-so]]：使用大模型的

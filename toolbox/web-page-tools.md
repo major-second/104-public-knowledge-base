@@ -42,7 +42,10 @@
 - 在线会议
   - 网页版[[teams]], [[tools/zoom]]都挺好用的
   - [[tencent-meeting]]没有方便的在线
-- 电子邮箱
+- 电子邮箱网页版
   - 和[[outlook]]各有优劣！
 - 在线输入法
   - https://www.google.com/inputtools/services/features/input-method.html
+- 数学
+  - https://www.wolframalpha.com/
+  - 可以考虑适当使用[[example-doc/README]]打数学公式

@@ -3,3 +3,5 @@
   - 例子[[89-gray-code]]
 - 构造用于证明（充要性中的一边等）
   - 例子[[1388-pizza-with-3n-slices]]
+- 构造本身可能[[symmetry#break]]，比较“丑”
+  - 例[[schmidt]]，“不对称”

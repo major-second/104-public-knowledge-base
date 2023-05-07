@@ -7,4 +7,4 @@
 - [2023.4左右大封号事件](https://zhuanlan.zhihu.com/p/619557927)
   - 和[[ip-address]], [[openai-api]]滥用, [[region-language]], [[node]]等有关
   - 短时间减少活跃，特别中文，亚太节点
-  - 比如[[toolbox/web]]中的 deepl 翻译成英文，使用英文prompt再回来中文就算可以
+  - 比如[[web-page-tools]]中的 deepl 翻译成英文，使用英文prompt再回来中文就算可以
