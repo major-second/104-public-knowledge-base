@@ -29,3 +29,12 @@
 - $lnx\le x/e$
 ## 其它
 - $\pi > 3$：放缩到六边形
+# 经典不等式
+## 均值不等式
+- 和[[ball-tangent-optimal]]优化问题有关
+- 初等形式
+  - $(\frac{a^{-1}+b^{-1}}2)^{-1}\le \sqrt{ab}\le \frac{a+b}2\le (\frac{a^2+b^2}2)^{1/2}$
+## 排序不等式
+## cauchy
+## [[jensen]]
+## 三角不等式

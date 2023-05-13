@@ -1,5 +1,6 @@
 ## 两个重要极限
 - $lim_{x\to 0} \frac{sinx}x =1$
+  - 应用[[trigonometric-derivative]]
 - $lim_{n\to \infty}(1+\frac 1n)^n=e$
   - 扩展：$lim_{n\to \infty}(1-\frac 1n)^n=1/e$
     - 应用：[[2-eval]]中的自助法

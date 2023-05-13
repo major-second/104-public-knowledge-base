@@ -1,6 +1,7 @@
 # total-probability
-- 前置[[conditional]]
-- [[set-operations#union]]思想，分类讨论
+- 前置
+  - [[conditional]]
+- 思想：[[set-operations#union]]，[[enumerate#分类讨论]]
   - 例题：$51$枚硬币比$50$枚正面多的概率：直接讨论第一枚是正是反。结果根据[[symmetry]]得1/2
 # bayes-theorem
 - 由[全概率公式](#total-probability)和[[conditional]]共同推出

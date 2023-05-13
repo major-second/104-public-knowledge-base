@@ -12,9 +12,10 @@
 - 六面色子，丢出点100次方期望，约等于$6^{100}/6=6^{99}$
 # 数学中
 ## [[inequalities]]
-  - 给出界（所谓“推bound”）
-    - [[2-7-brain-teasers]]第16题
-  - 给出[[enumerate]]范围
+- 给出界（所谓“推bound”）
+  - [[2-7-brain-teasers]]第16题
+- 给出[[enumerate#pruning]]范围
+- 解决关于“取值范围”题，如[[trigonometric]]
 ## 统计
 - [[2-estimation]]
 - [[confidence-interval]]

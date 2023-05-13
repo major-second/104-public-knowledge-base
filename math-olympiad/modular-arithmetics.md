@@ -1,0 +1,3 @@
+- 参考
+  - [[boolean-arithmetics]]
+  - [[2-brain-teasers#2.7 Modular Arithmetic]]

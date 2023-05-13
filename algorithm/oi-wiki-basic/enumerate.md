@@ -9,6 +9,8 @@
 - 顺序
   - 比如暴力枚举（简单从小到大之类的）
   - 但选择合适顺序检查可加快速度
+
+[toc]
 # pruning
 - 可能可以剪枝，减少全集大小
   - 如果全集是某种树结构，满足特定条件就不往下（及时剪枝），则称为[[backtrack]]
@@ -36,12 +38,38 @@
     - [[expectation#linearity]]男女相邻题
     - [[4-probability#4.5]] card game
   - 或[[symmetry]]例子利用对称性检验
-# 拓展
-- [[symmetry]]：机器剪枝人剪枝都很重要
+# 分类讨论
 - 人肉思考，枚举出所有可能性，或推理出所有可能信息
   - [[magic-square-forming]]：写代码前先枚举所有可能幻方
   - [[2-7-brain-teasers]]中19题，单线进行不分枝，直接逻辑推理出结果
-  - 往往需要[[symmetry]]否则人太累了
+  - [[bayes-theorem]]
+- 参考
+  - [[symmetry]]
+  - [[reduction]]
+  - [[enumerate#pruning]]方法
+    - [[estimation]]范围
+    - [[modular-arithmetics]]
+## 比赛得分例
+- 题目
+  - 每场比赛$x>y>z>0$正整数一二三名得分
+  - $ABC$分别获得$22,9,9$分
+  - $B$获得一百米第一名
+  - 谁获得铅球第二名？
+- 出发点：设$k$场比赛，$k(x+y+z)=40$
+- [[estimation]]
+  - $x+y+z\ge 6,k<40/6, k\le 6$
+  - $x\le 9-1=8\Rightarrow k> 22/8,k\ge 3$
+- [[modular-arithmetics]]
+  - $k=4, 5$
+- [[enumerate#pruning]]
+  - $k=4$
+    - $x\le 9-3 * 1=6, x+y+z=10$
+    - $22\le y+3x<4x,x=6$
+    - 容易推出矛盾
+- 因此$k=5, x+y+z=8$
+- 显然$x,y,z=5,2,1$
+# 拓展
+- [[symmetry]]：机器剪枝人剪枝都很重要
 - 全集是博弈树
   - 如枚举证明井字棋无必胜策略
     - 拓展：[[2-7-brain-teasers]]18题：[[topological-space]]和井字棋相同

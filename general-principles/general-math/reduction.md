@@ -12,7 +12,10 @@
   - [[automation/trivial-mistakes]]需要“化归”一开始不同的环境。看起来多了一个操作，但之后更简单
   - [[21-merge-two-sorted-lists]]增加链表头，方便处理空的[[algorithm/special-case]]
   - [[adj-factor]]
-- 利用[[symmetry]]化归，参考[[symmetry]]
+- 利用[[symmetry]]
+  - [[trigonometric#monotonous-例]]只考察$a>0$情况
+- [[enumerate#分类讨论]], [[enumerate#pruning]]
+  - [[trigonometric#monotonous-例]]只考察$b>0$情况
 - 转化为最苛刻情况，最苛刻满足则不苛刻的也满足
   - 九个点，不透明球，求证有一个球外点，至多看到球上6个点
   - 显然最容易看到最多点的是各个无穷远点，相当于看到半球

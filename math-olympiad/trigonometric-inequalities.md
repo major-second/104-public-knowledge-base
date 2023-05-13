@@ -1,0 +1,52 @@
+- 前置
+  - [[trigonometric-equalities]]
+  - [[trigonometric#有界性、值域]]
+    - [[inequalities#放缩到界]]
+  - [[trigonometric#monotonous]]
+# [[trigonometric#几何意义]]
+- 指定范围内$sinx < x< tanx$
+  - 应用：联系[[trigonometric-equalities#六边形图]]，设$x=1/\sqrt n$
+    - 一方面$1/\sqrt n > sin (1/\sqrt n)$
+    - 另一方面$1/sin^2x =csc^2x=1+cot^2x<1+x^{-2}=n+1\Rightarrow sin(1/\sqrt n) > 1/\sqrt {n+1}$
+# 利用[[monotonous]]
+- $a+b,a-b\in (-\pi/2,\pi/2)$推出$cosa >sinb$
+  - **思想：[[reduction]]**
+  - 首先利用[[trigonometric#symmetry]]，只用考察$a>0$情形
+  - 其次利用[[trigonometric#monotonous]]相关性质（单调性、单调区间、零点），只用考察$b>0$情形
+  - 从而$a+b<\pi/2,a<\pi/2-b,cosa>cos(\pi/2-b)=sinb$
+- 推论：[[trigonometric-equalities#辅助角公式]]，$|sina+cosa|\le \sqrt 2 <\pi/2 $，所以可以套用，得到一些关于复合三角函数的不等式
+  - 但这个实际意义不大，只是符号游戏
+# 结合其他[[inequalities]]
+- [[inequalities#均值不等式]]
+- [[jensen]]
+  - 当然这点需要掌握三角函数凹凸性
+# 三角形中
+- 总的来说，有时[[symmetry#轮换]], 有时[[symmetry#break]]
+- 锐角三角形$tanA+tanB+tanC>cotA+cotB+cotC$
+  - 使用[[symmetry#轮换]]，$tanA =tan((\pi-C)-B)>tan(\pi/2-B)=cotB$，三式相加
+- 三角形$sin(A/2)sin(B/2)sin(C/2)\le 1/8$
+  - [[trigonometric-equalities#积化和差]]，关键步骤$sin(B/2)sin(C/2)=\frac {cos\frac{B-C}2-cos\frac{B+C}2}2$
+  - [[inequalities#放缩到界]]
+  - [[inequalities#均值不等式]]
+- $sin A+sinB+sinC \le ?$
+  - 法一
+    - [[trigonometric-equalities#积化和差]], 关键步骤$sinB+sinC=2sin\frac{B+C}2cos\frac{B-C}2\le 2cos\frac A2$
+    - $sinA+2cos \frac A2$可以直接[[monotonous#数学]]求导得最大值在$A=\pi/3$处取得
+    - 这里[[symmetry#break]]，对比[[symmetry#轮换]]
+  - 法二[[jensen]]不等式（套用结论）
+  - 答案在对称的$3\sqrt 3/2$取到
+## 嵌入不等式
+- 对于实数$x,y,z$，求证$f(x,y,z)=x^2+y^2+z^2-2xycosA-2xzcosB-2yzcosC\ge 0$
+- 思考
+  - 可[[reduction]]成$x,y,z\ge 0$（不过没有起到直接作用）
+  - $f(a,b,c)=f(sinA,sinB,sinC)=0$
+- 典型做法
+  - [[symmetry#break]]
+  - 配方
+    - 用[[二次型]]知识
+        - $$\left(\begin{matrix}1&-cosA &-cosB\\-cosA & 1&-cosC \\ -cosB&-cosC &1\end{matrix}\right)$$
+        - $$\left(\begin{matrix}1& &\\ & sin^2 A&-cosC-cosAcosB\\ &\cdots &sin^2 B\end{matrix}\right)$$
+        - $$\left(\begin{matrix}1& &\\ & sin^2 A&\\ & &sin^2 B-\frac{(cosC+cosAcosB)^2}{sin^2A}\end{matrix}\right)$$
+        - $sin^2Asin^2B-(cosC+cosAcosB)^2=0$
+        - 于是得到[[real-symmetric#positive-definite]]二次型
+    - 或初等地：直接使用[[待定系数法]]即可

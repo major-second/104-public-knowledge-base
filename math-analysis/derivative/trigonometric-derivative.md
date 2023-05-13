@@ -1,0 +1,9 @@
+- 前置
+  - [[calculus/limit#两个重要极限]]
+- $(sinx)'=cosx$
+- $(cosx)'=-sinx$
+- 可能造成[[symmetry#相同项]]
+- 证明方法
+  - 法一：[[trigonometric#几何意义]]，物理意义，看“速度”
+  - 法二：定义，[[trigonometric-equalities#和差化积]]
+    - $\frac{sin(x+\Delta x)-sinx}{\Delta x}=\frac{2cos(x+\Delta x/2)sin(\Delta x/2)}{\Delta x}$
