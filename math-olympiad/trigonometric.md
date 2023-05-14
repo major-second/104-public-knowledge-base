@@ -9,7 +9,8 @@
 ## 有界性、值域
 - [[estimation#inequalities]]
 - $|sinx|\le 1, |cosx|\le 1$
-- $|Asinx + Bsinx|\le \sqrt{A^2+B^2}$
+- $|Asinx + Bcosx|\le \sqrt{A^2+B^2}$
+  - [[trigonometric#几何意义]]
 ## [[symmetry]]
 - 关于一些直线[[symmetry#翻转]]对称
 - 关于一些点[[symmetry#旋转]]对称

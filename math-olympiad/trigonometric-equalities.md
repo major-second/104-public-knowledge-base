@@ -1,7 +1,8 @@
+[toc]
 # 辅助角公式
 - $Asinx+Bcosx=\sqrt{A^2+B^2}sin(x+\phi)$
-  - $cos x = A/\sqrt{A^2+B^2}$
-  - $sin x = B/\sqrt{A^2+B^2}$
+  - $cos \phi = A/\sqrt{A^2+B^2}$
+  - $sin \phi = B/\sqrt{A^2+B^2}$
   - $A$ [[trivial-mistakes-in-math#非零]]时，$x=arctan (B/A)$
 - 常用特例：$sinx+cosx = \sqrt 2sin(x+\pi/4)\in [-\sqrt 2, \sqrt 2]$
 # 六边形图
@@ -10,14 +11,20 @@
 tan  1  cot
   sec csc
 ```
+## 余角关系
+- $sinx=cos(\pi/2-x)$，横线
 ## 平方和关系
 - $sin^2x+cos^2x=1$
 - $tan^2x + 1=sec^2x=1/cos^2x$
 - $cot^2x+1=csc^2x=1/sin^2x$
+- 倒三角形
 ## 倒数关系
 - $1/sinx=cscx$
 - $1/cosx=secx$
 - $1/tanx=cotx$
+- 六边形对角线
+## 来源
+- 六边形中相同方向“平移”表示乘或除相同量（[[imagination]]）
 # 和角公式
 - $sin(a+b)=sinacosb+cosasinb$
 - $cos(a+b)=cosacosb-sinasinb$

@@ -3,6 +3,7 @@
   - [[trigonometric#有界性、值域]]
     - [[inequalities#放缩到界]]
   - [[trigonometric#monotonous]]
+[toc]
 # [[trigonometric#几何意义]]
 - 指定范围内$sinx < x< tanx$
   - 应用：联系[[trigonometric-equalities#六边形图]]，设$x=1/\sqrt n$
@@ -37,16 +38,12 @@
   - 答案在对称的$3\sqrt 3/2$取到
 ## 嵌入不等式
 - 对于实数$x,y,z$，求证$f(x,y,z)=x^2+y^2+z^2-2xycosA-2xzcosB-2yzcosC\ge 0$
-- 思考
-  - 可[[reduction]]成$x,y,z\ge 0$（不过没有起到直接作用）
-  - $f(a,b,c)=f(sinA,sinB,sinC)=0$
-- 典型做法
-  - [[symmetry#break]]
-  - 配方
-    - 用[[二次型]]知识
-        - $$\left(\begin{matrix}1&-cosA &-cosB\\-cosA & 1&-cosC \\ -cosB&-cosC &1\end{matrix}\right)$$
-        - $$\left(\begin{matrix}1& &\\ & sin^2 A&-cosC-cosAcosB\\ &\cdots &sin^2 B\end{matrix}\right)$$
-        - $$\left(\begin{matrix}1& &\\ & sin^2 A&\\ & &sin^2 B-\frac{(cosC+cosAcosB)^2}{sin^2A}\end{matrix}\right)$$
-        - $sin^2Asin^2B-(cosC+cosAcosB)^2=0$
-        - 于是得到[[real-symmetric#positive-definite]]二次型
-    - 或初等地：直接使用[[待定系数法]]即可
+- [[symmetry#break]]
+- 配方
+  - 用[[二次型]]知识
+      - $$\left(\begin{matrix}1&-cosA &-cosB\\-cosA & 1&-cosC \\ -cosB&-cosC &1\end{matrix}\right)$$
+      - $$\left(\begin{matrix}1& &\\ & sin^2 A&-cosC-cosAcosB\\ &\cdots &sin^2 B\end{matrix}\right)$$
+      - $$\left(\begin{matrix}1& &\\ & sin^2 A&\\ & &sin^2 B-\frac{(cosC+cosAcosB)^2}{sin^2A}\end{matrix}\right)$$
+      - $sin^2Asin^2B-(cosC+cosAcosB)^2=0$
+      - 于是得到[[real-symmetric#positive-definite]]二次型
+  - 或初等地：直接使用[[待定系数法]]即可
