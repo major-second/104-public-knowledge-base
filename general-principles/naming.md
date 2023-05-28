@@ -7,6 +7,21 @@
 - [[method-of-moments]]为了方便写出反函数，简记$k$阶矩为$V_k$
 - 对换了的新元求导，如[[maximum-likelihood]]中[[normal]]
 - [[pdf-transform]]
+## 一般换什么
+- 根号下
+  - $cos(\sqrt{1-\sqrt{x^2+5x+7}}+\sqrt{x^2+5x+6})=cos(\sqrt{1-t}+\sqrt{t^2-1})$
+    - $t\ge 0,t\le 1,t^2\ge 1,t=1$
+- 分母
+  - $\frac{x^2+y^2+2(x+1)(1-y)}{x-y+1}=\frac{(x-y)^2+2(x-y)+2}{x-y+1}=t+1/t,t=x-y+1$
+## 三角代换
+- 刚刚是“被动技能”，现在往往是“主动技能”
+  - 请熟悉[[trigonometric-equalities]]，特别是[[trigonometric-equalities#六边形图]]
+- $abc+a+c=b$
+  - 先排除[[general-principles/special-case]] $ac=1\Rightarrow a+c=0$无解
+  - 故$b=\frac{a+c}{1-ac},tan\beta = tan(\alpha+\gamma)$
+  - $\frac 1{1+a^2}+\frac 1{1+c^2}-\frac 1{1+b^2}=cos^2\alpha+cos^2\gamma-cos^2(\alpha+\gamma)$
+  - 此时可以考虑初等地二倍角等等
+  - 或者直接[[monotonous]]求导要求$sin2\alpha=sin(2\alpha+2\gamma)$
 # 有名字作为交流基础
 - [[self-similarity]]中设问题
   - 对于新定义，如果你适当定义可以简化问题，等价于不适当定义之后代数变形 [换元](#换元或简记)
@@ -48,3 +63,17 @@
 # 设常数
 - [[integral-constant]]
 - [[proportional]]
+# 凑形式
+## 凑形式设函数
+- 设某个东西为$f$，然后$f$出现不止一次，用于单调性比较大小或取等……
+- 结合[[monotonous]]
+  - [[trigonometric#symmetry]]例题
+  - [[trigonometric-inequalities#trigonometric#几何意义]]例题
+## 裂项
+- $f(n)=g(n)-g(n-1)$，是特殊的凑形式
+- $\frac 1{n(n+1)}$
+- $\frac 1{n(n+1)(n+2)(n+3)}$
+- $\frac 1{cosncos(n+1)}\Rightarrow \frac{sin(n+1-n)}{cosncos(n+1)}=tan(n+1)-tann$
+  - 不过注意[[general-principles/special-case]]，0等
+- $arcsin\frac{\sqrt{(n+1)^2-1}-\sqrt{n^2-1}}{n(n+1)}=arcsin \frac 1n - arcsin \frac 1 {n+1}$
+  - 两边求sin，通过[[trigonometric-equalities#和角公式]]证明

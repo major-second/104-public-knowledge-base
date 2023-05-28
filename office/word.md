@@ -4,5 +4,8 @@
 - 脚注
   - 如图 ![](footnote.png)
   - 注意这个图标 ![](footnote-icon.png) 处可以选择格式，例如使用圈数①，是否每页重新编号等
+  - 编辑脚注
+    - 复制正文时，脚注可能自动带上，如贴给 grammarly时
+    - 默认字数统计一般是不忽略脚注的。想忽略：上方Review-Word Count
 - 快捷键
   - `Ctrl+Shift+C`和`Ctrl+Shift+V`复制粘贴格式（即“格式刷”）

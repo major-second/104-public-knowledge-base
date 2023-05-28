@@ -15,6 +15,7 @@
 - 关于一些直线[[symmetry#翻转]]对称
 - 关于一些点[[symmetry#旋转]]对称
 - 例题：$sinx$奇，$x^3$奇，因此$x^3+sinx=-y^3-siny, x,y\in [-\pi/2,\pi/2]\Rightarrow x=-y$
+  - 设$f(x)=x^3+sinx$, [[naming#凑形式设函数]]
 ## [[monotonous]]
 - 最值点、单调性、单调区间、零点
 - 特殊点和[[trigonometric#symmetry]]的联系

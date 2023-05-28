@@ -1,0 +1,4 @@
+- 前置
+  - [[trigonometric#monotonous]]
+  - [[trigonometric#有界性、值域]]
+  - [[trigonometric-equalities]]

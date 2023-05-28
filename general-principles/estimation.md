@@ -16,6 +16,7 @@
   - [[2-7-brain-teasers]]第16题
 - 给出[[enumerate#pruning]]范围
 - 解决关于“取值范围”题，如[[trigonometric]]
+- [[inequalities#不等取等]]
 ## 统计
 - [[2-estimation]]
 - [[confidence-interval]]

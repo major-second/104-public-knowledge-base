@@ -6,9 +6,12 @@
 [toc]
 # [[trigonometric#几何意义]]
 - 指定范围内$sinx < x< tanx$
-  - 应用：联系[[trigonometric-equalities#六边形图]]，设$x=1/\sqrt n$
-    - 一方面$1/\sqrt n > sin (1/\sqrt n)$
-    - 另一方面$1/sin^2x =csc^2x=1+cot^2x<1+x^{-2}=n+1\Rightarrow sin(1/\sqrt n) > 1/\sqrt {n+1}$
+- 应用：联系[[trigonometric-equalities#六边形图]]，设$x=1/\sqrt n$
+  - 一方面$1/\sqrt n > sin (1/\sqrt n)$
+  - 另一方面$1/sin^2x =csc^2x=1+cot^2x<1+x^{-2}=n+1\Rightarrow sin(1/\sqrt n) > 1/\sqrt {n+1}$
+- 应用：
+  - 一定范围$arcsinx>x$
+  - $a,b,c\in(0,\pi/2),a=cosa, b=sincosb\Rightarrow cosb=arcsinb>b,f(b):=cosb-b>0=f(a)\Rightarrow b<a$
 # 利用[[monotonous]]
 - $a+b,a-b\in (-\pi/2,\pi/2)$推出$cosa >sinb$
   - **思想：[[reduction]]**
@@ -23,6 +26,9 @@
   - 当然这点需要掌握三角函数凹凸性
 # 三角形中
 - 总的来说，有时[[symmetry#轮换]], 有时[[symmetry#break]]
+- 参考
+  - [[trigonometric-equalities]]
+  - [[trigonometric-in-triangle]]
 - 锐角三角形$tanA+tanB+tanC>cotA+cotB+cotC$
   - 使用[[symmetry#轮换]]，$tanA =tan((\pi-C)-B)>tan(\pi/2-B)=cotB$，三式相加
 - 三角形$sin(A/2)sin(B/2)sin(C/2)\le 1/8$
@@ -36,7 +42,13 @@
     - 这里[[symmetry#break]]，对比[[symmetry#轮换]]
   - 法二[[jensen]]不等式（套用结论）
   - 答案在对称的$3\sqrt 3/2$取到
+- $sinA+sinC=sinB(cosA+cosC)$
+  - $B>\pi/2\Rightarrow 0= a+b+c-b-bcosA-cosC<0$矛盾
+  - $B<\pi/2\Rightarrow 0= a+b+c-b-bcosA-cosC>0$矛盾
+  - $B=\pi/2,sinA+sinC=cosA+cosC$
+  - 其实是[[imagination]]几何意义占了主导？但也要结合[[trigonometric-in-triangle#sin]]
 ## 嵌入不等式
+- 参考[[trigonometric-in-triangle#cos]]
 - 对于实数$x,y,z$，求证$f(x,y,z)=x^2+y^2+z^2-2xycosA-2xzcosB-2yzcosC\ge 0$
 - [[symmetry#break]]
 - 配方
