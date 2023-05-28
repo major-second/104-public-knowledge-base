@@ -10,7 +10,12 @@
   - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-basics]]浏览器打开的方式调试
   - [[https-ssh]]
 - 有时候换个东西就能解决问题
-  - 例如有时出现莫名其妙的问题换个打开的软件（如播放器、浏览器）或硬件设备就能解决
+  - 例如有时出现莫名其妙的问题换个
+    - 打开的软件（如播放器、浏览器）
+    - 硬件设备
+    - [[interface]]
+    - [[ip-address]]，网关……
+    - 就能解决。解释不通！
   - 例如语言设置成中/英，显示出的功能可能不同（这个说明有些东西的[[general-principles/independent]]性比你想的差）
     - [举例](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
     - 举例：[[leetcode-solutions/0-metadata]]中英版本收费标准不同（商业层面的价格歧视了），你看得懂中文，就可以去中文力扣省钱

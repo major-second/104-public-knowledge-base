@@ -41,10 +41,16 @@
     - [[nan]]中有提到
     - [[batchnorm]]的官方[文档](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)中也有提到
 - 衍生手段
-  - 两个相同量纲量的加减
+  - 线性组合
+    - 两个相同量纲量的加减
+    - 一般情况线性组合，如[[barra#CNE5]]中很多具体因子计算
   - 两个量的乘除（很多时候乘除某个无量纲量）
   - 两个量做[[unary]]线性回归看相关系数或斜率（斜率当然和协方差[[cov]]关系密切）
     - 还可以错位再看相关，捕捉时间上的先后关系，例如[海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)的“量价”先后动
+## 多项式组合
+- 对于已有$x$，把$x^2,x^3,\cdots$等都当成feature
+- 理论上可线性组合出许多可能多项式，张成线性空间
+- 例如[[barra#CNE5]]中`SIZE`市值和`NonlinearSize`非线性市值
 # 举例
 - [bigquant知识库](https://bigquant.com/community/t/topic/156537)
 - [海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)

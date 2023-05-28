@@ -26,3 +26,5 @@
 - [[cov#spearman]]
 - [[principles-for-dl-models#inductive bias]]
   - [[activation]]人为制造非线性
+- 多项式
+  - [[feature-engineering#多项式组合]]
