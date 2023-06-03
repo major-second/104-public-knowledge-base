@@ -9,17 +9,16 @@
   - 例如[[nbextension]]装不了（可能由于公司电脑合规问题等），就用[[jupyter-tqdm]]代替进行计时
   - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-basics]]浏览器打开的方式调试
   - [[https-ssh]]
-- 有时候换个东西就能解决问题
-  - 例如有时出现莫名其妙的问题换个
-    - 打开的软件（如播放器、浏览器）
-    - 硬件设备
-    - [[interface]]
-    - [[ip-address]]，网关……
-    - 就能解决。解释不通！
-  - 例如语言设置成中/英，显示出的功能可能不同（这个说明有些东西的[[general-principles/independent]]性比你想的差）
-    - [举例](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)
-    - 举例：[[leetcode-solutions/0-metadata]]中英版本收费标准不同（商业层面的价格歧视了），你看得懂中文，就可以去中文力扣省钱
-    - 如果用英文版office，就没有“五号字”这种东西，需要[中文字号对照数字](https://www.jianshu.com/p/e8d263efe7f7)
+- 出现莫名其妙的问题，有时候换个东西就能解决问题，解释不通！
+  - [[file-format#打开方式]]
+    - 如播放器、浏览器
+  - 硬件设备
+    - 换台机器
+    - [[interface]], [[adapter-cable]]
+  - [[ip-address]]，网关
+  - [[region-language]]
+  - 换方式
+    - [[word#另存为]]替代[[word#print to pdf]]解决一些奇怪问题
 - shell这种恶心东西很多时候都是现用现查，尽可能绕过会造成麻烦的点，不求甚解，否则就太恶心了
   - 比如[[6-env]]第七节提到数组变量能不用就不用
   - 比如[[wsl-command]]中可以把[[zsh]]中比较复杂的`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`改成`wget <url>; bash ./install.sh`（跟[[conda/installation]]那样）

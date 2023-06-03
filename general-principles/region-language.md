@@ -11,8 +11,10 @@
   - ubuntu: [[language]], 如[[try-ubuntu]]提到了
   - windows: 开始菜单有地区、语言、输入法设置等
   - 不同语言的区别可能比你想象中的大，并不[[general-principles/independent]]
+    - 显示出的东西、功能不同
+      - [举例](https://support.microsoft.com/zh-cn/office/%E5%B0%86-qqmail-%E5%B8%90%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%88%B0outlook-34ef1254-0d07-405a-856f-0409c7c905eb)，简体中文才能把qq邮箱添加到[[outlook]]
     - 价格歧视：[[leetcode-solutions/0-metadata]]
-    - 是否有地区特色功能：[[word]]
+    - 是否有地区特色功能：[[word#region-language]]
     - 歧视性封禁：[[openai-account]]
     - 由于训练数据集大小和质量，性能差异严重：[[chatgpt]]
       - 哈哈，这样的话你可以[[encode-decode]]思想

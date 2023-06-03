@@ -16,3 +16,4 @@ latex/**/*.pdf
 .idea/104-public-knowledge-base.iml
 .vscode/settings.json
 lightning_logs
+~$*

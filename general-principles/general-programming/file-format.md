@@ -58,8 +58,9 @@
   - 例如[[clone]]的`--bare`就是clone了“序列化”结果
   - [[docx-zip]]也有此意。`.docx`本质是个压缩包，是个文件夹
 ## 格式转换
-- 修改扩展名：只要你知道你在干什么，就可以直接修改扩展名
-### 直接修改文本文件扩展名
+### 修改扩展名
+- 只要你知道你在干什么，就可以直接修改扩展名
+#### 直接修改文本文件扩展名
 - 一般，对于文本文件可以直接修改扩展名。反正都是文本，通用
 - 比如你需要一个`.dll`，可以直接新建文本文件，粘贴所需文本，保存为`.dll`格式
 - 例如创建文本文件
@@ -73,14 +74,16 @@ print("python") #'
   - 改为`.md`用markdown编辑器打开，效果如下![](file-format-example/markdown.png)
   - 改为`.py`，语法高亮如下![](file-format-example/python.png)，用`python`运行结果`python`
   - 改为`.sh`，语法高亮如下![](file-format-example/shell.png)，用`bash`运行结果`shell`
-### 其它直接修改扩展名
+#### 其它直接修改扩展名
 - [[docx-zip]]：直接`.docx`和`.zip`互改
 - [[file-transfer]]中为了保密，不被检测等起见可能直接改扩展名（使得不可打开），传输后再改回。例如微信传`.apk`，一些邮件传[[powershell-basics]]`.ps1`，都不可直接传
 ### 软件打开另存为
 - 用软件打开A格式文件，再用软件的另存为功能得到B格式文件
 - 当然也可能“宽进严出”，Postel's Law一下使得文件是同样格式但是更“好”
+- 例如[[word#另存为]]
 ### 使用专用软件工具
 - [[web-page-tools]]小工具
   - 例如 [miconv](https://miconv.com/)
   - 例如 [pdf2go](https://www.pdf2go.com/)可以把很多东西转化成pdf
 - [[xxd-diff]]把二进制变成文本
+- [[word]] print pdf本质上是`.doc`或`.docx`转`.pdf`
