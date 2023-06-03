@@ -52,3 +52,8 @@ tan  1  cot
   - 帅-帅=哥帅
   - 哥+哥=哥哥
   - 哥-哥=负嫂嫂
+# [[齐次性]]
+- 关于$sin,cos$的
+  - $tan2\alpha = \frac{2sin\alpha cos\alpha}{cos^2\alpha-sin^2\alpha}=\frac{2tan\alpha}{1-tan^2\alpha}$
+  - $cot2\alpha = \frac{cot^2\alpha - 1}{2cot\alpha}$
+- [[trigonometric-in-triangle]]

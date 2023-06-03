@@ -6,6 +6,12 @@
   - “拿$P=NP$压人”
     - [[2-eval]]提到的：如果没有过拟合，相当于$P=NP$就解决了。所以一定会存在过拟合现象
     - [[5-constraint-satisfaction]]，[[3-search]]等很多人工智能算法也很多都在解决NP难问题，所以也当然会被“压”
+# 到已知量
+- 原则就是用尽可能少的量表示整个问题
+- 等量代换，例如
+  - [[trigonometric-equalities]]
+  - [[trigonometric-in-triangle#sin]]
+- 或者设时就注意设什么
 # 例子
 - 局部增大规模/增加额外操作，但总体“统一化”，更简单，是化归手段！
   - [[multi-ary]]一来讲到把$Wx+b$的$b$形式上写成$b \cdot x_0\equiv b\cdot 1$

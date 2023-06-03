@@ -52,6 +52,8 @@
   - 暴力积分做法
   - $P(相交)=\int_0^\pi \frac 1\pi  \frac{2\cdot x(2\pi-x)}{(2\pi)^2}dx=1/3$，也行
     - 这个可以用[[power-rule]]直接看出来积分结果
+- 轮换对称性消去未知数
+  - [[trigonometric-in-triangle#例1]]
 ## 相同项
 - 利用代数式中的相同项
 - [[binomial#奇偶]]
