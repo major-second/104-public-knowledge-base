@@ -39,6 +39,7 @@
   - $(\frac{a^{-1}+b^{-1}}2)^{-1}\le \sqrt{ab}\le \frac{a+b}2\le (\frac{a^2+b^2}2)^{1/2}$
 - 例题$sin^2x cosx=\sqrt{sin^2x \cdot sin^2x \cdot 2cos^2x}/\sqrt 2\le (2/3)^{3/2}/\sqrt 2=2\sqrt 3/9$
 ## 排序不等式
+
 ## cauchy
 - $\sqrt{(a^2+b^2)(c^2+d^2)}\ge |ac+bd|$
 - $||x||||y||\ge |x\cdot y|$
@@ -48,4 +49,5 @@
   - $3sin\alpha cos\beta+sin\beta cos\alpha$
   - 画一个椭圆一个圆，[[imagination]]变化中共线且长度长
 ## [[jensen]]
+- 联系[[marginal]]
 ## 三角不等式

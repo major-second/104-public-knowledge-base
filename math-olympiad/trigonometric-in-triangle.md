@@ -8,6 +8,7 @@
 - $a^2=b^2+c^2-2bccosA$
 - $cosA = \frac{b^2+c^2-a^2}{2bc}$
 - 分子分母[[齐次性]]
+- 推论：结合[[trigonometric-in-triangle#sin]]，得$cotA=cosA/sinA=\frac{D(b^2+c^2-a^2)}{2abc}$
 # 三角形面积公式
 - $2S=absinC=bcsinA=acsinB$
   - 来源：$S=\frac {ah}2,h=bsinC$
@@ -19,6 +20,7 @@
 - $s:=\frac{a+b+c}2$
 - $S=\sqrt{s(s-a)(s-b)(s-c)}=\sqrt{\frac{a+b+c}2\frac{a+b-c}2\frac{a-b+c}2\frac{-a+b+c}2}$
 - 验证：$(a+b+c)(a+b-c)(a-b+c)(-a+b+c)=(a^2+b^2-c^2+2ab)(c^2-a^2-b^2+2ab)=4a^2b^2-(a^2+b^2-c^2)^2$
+  - [[general-principles/special-case#帮助理解记忆]]: $a=3,b=4,c=5,s=6,S=6$
 - 推论：结合[[trigonometric-in-triangle#sin]]得到
   - $D(三角形外接圆直径):=a/sinA=b/sinB=c/sinC=abc/2S=\frac{2abc}{\sqrt{(a+b+c)(a+b-c)(a-b+c)(-a+b+c)}}$
 # 内角和
