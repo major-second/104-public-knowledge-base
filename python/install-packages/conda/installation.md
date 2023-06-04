@@ -1,14 +1,24 @@
 Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序运行环境。且内置常用科学包。
 ## Windows
 - [官网](https://www.anaconda.com/)下载
-- 安装（过程中可能涉及[[windows/env-var]]的更改。是否要改就根据你的想法和需要）
+- 安装
+  - 过程中可能涉及[[windows/env-var#path]]的加入。是否要改就根据你的想法和需要
+  - 如果想要在[[powershell-basics]]中使用`conda`命令，则必须
+    - 要么[[windows/env-var#安装时自动设置path]]
+    - 要么[[windows/env-var#持久设置]]手动设置`path`
+      - `*/Anaconda3`
+      - `*/Anaconda3/Scripts`
+      - `*/Anaconda3/Library`
+      - [参考](https://blog.csdn.net/Python_Smily/article/details/105993200)
 - 开始菜单搜索`Anaconda Prompt`，里面就可以用[[conda/commands]]
   - 当然为了方便，可以把快捷方式发送到桌面
   - 这个`Prompt`能用conda的[[conda/commands]]和`cd`、`python`等命令，但不能`ls`等，所以说和linux终端还是不同
   - 当然这个Prompt和[[powershell-basics]]也不同
     - 具体地：如果你没加[[windows/env-var]]之类的，那么[[powershell-basics]]就没法`conda`
     - 但powershell可以`ls`
-  - 如果又想`ls`（或者其它[[powershell-basics]]命令）怎么办？有个`Anaconda Powershell Prompt`可以兼得
+  - 如果又想`ls`（或者其它[[powershell-basics]]命令）怎么办
+    - 有个`Anaconda Powershell Prompt`可以兼得
+    - 如果你设置了[[windows/env-var#path]]那直接[[powershell-basics]]就可以兼得
 - 注：即使安装了conda，在[[powershell-basics]]也可能无法直接使用`python`命令
   - 如果你想在windows做出和linux类似的**不用conda时是‘默认裸’python，用conda时可选环境**的效果，需要自行[下载安装](https://www.python.org/downloads/windows/)并加一条到`path`这个[[windows/env-var]]
   - 且必须放到靠前的位置，参考[[dont-trust-others]]对微软爹味的控诉
