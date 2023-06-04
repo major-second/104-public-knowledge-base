@@ -33,7 +33,7 @@
   - [[open-source]]：开源可能比较便利、开放、易扩展，但是功能不足
     - 故可以开源做对外“接口”，闭源做核心
     - 例如[[tagui]]和[[my-first-flow]]的关系，[[tagui]]可做“入口”
-  - [[conda/installation]]相比[[pip]]，包少效率高
+  - [[conda-installation]]相比[[pip]]，包少效率高
     - 所以有`conda`去`conda`，没有的包再`pip`
     - 况且`conda.yaml`里有`pip`子树本身就说明`conda`更“高级”。所以可以用`conda.yaml`管理`pip`安装的依赖
     - [[create-env-yaml]]中也是尽量把包写到非`pip`子树处

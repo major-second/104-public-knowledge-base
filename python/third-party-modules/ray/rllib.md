@@ -1,5 +1,5 @@
 - 前置
-  - （可选，推荐）[[conda/installation]]
+  - （可选，推荐）[[conda-installation]]
   - [[pip]]
   - [[pytorch/basics/installation]]或tensorflow
   - 了解[[gym/env]]

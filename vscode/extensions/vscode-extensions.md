@@ -31,7 +31,7 @@
   - 这里参考系统的“内核”和“外壳”[[shell]]思想（其实vscode本身有时就相当于某种“外壳”）
   - [[paste-images-from-clipboard]] needs `sudo apt install xclip` in Ubuntu.
   - 直接下载安装`python`
-    - 或[[conda/installation]]安装后
+    - 或[[conda-installation]]安装后
     - vscode的[[python]]相关插件才有用
     - **插件本身当然不能集成python解释器**！（你想想插件一共才多大呢）
   - [[git-installation]]安装后

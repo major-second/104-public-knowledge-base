@@ -1,5 +1,5 @@
 前置
-- [[conda/installation]]
+- [[conda-installation]]
 
 内容
 - create: `conda create -n <env name> python=x.x`

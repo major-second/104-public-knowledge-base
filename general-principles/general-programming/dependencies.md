@@ -6,7 +6,7 @@
     - 但是有`portable`标记的当然就可以
 - 版本依赖：参考[[version]]
 - 管理版本依赖
-  - 要么使用包管理器比如[[pip]]，[[conda/installation]]等
+  - 要么使用包管理器比如[[pip]]，[[conda-installation]]等
   - 要么自己分析次序、依赖
     - 有些时候依赖是要自己分析总结的
       - 比如涉及硬件，像真机实验中[[hand-eye-calibration]]提到的

@@ -16,7 +16,7 @@
       - 双引号内单引号不用转义，`${}`可用，但双引号和`\`需要转义，分别变成`\"`和`\\`
       - `\\s`，也就是说你在输入`monitor-disk`命令，实际跑的是`grep "[0-9]G\s"`，而`\s`又表示[[regex]]中的空白符，所以是两次转义
   - 启动服务例如[[server-config]]
-  - [[conda/installation]]中提到，用于初始化conda
+  - [[conda-installation]]中提到，用于初始化conda
   - 套娃[[general-principles/recursion]]：写一些用于被`source`的脚本（例如里面有`export`等），然后被其他的脚本`source`
     - 仍然注意`source`和直接运行不同
 - 一些不当的例子

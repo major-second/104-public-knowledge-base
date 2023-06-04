@@ -3,7 +3,7 @@
 
 步骤：
 https://pypi.org/project/pyrealsense2/
-- 举例：如果你有[[conda/installation]]的话，可以
+- 举例：如果你有[[conda-installation]]的话，可以
   - `conda create -n realsense python=3.6`
   - `conda activate realsense`
   - `pip install pyrealsense2`

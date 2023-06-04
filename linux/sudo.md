@@ -14,7 +14,7 @@
 - `sudo su`后一个应用：创建新用户（参考[[7-permissions]]中`useradd`）
 - `sudo`不是万能的！
   - 有时必须以某个账户的身份运行命令
-    - 比如[[conda/installation]]只是给一个用户装的，只能用那个用户使用`conda`命令
+    - 比如[[conda-installation]]只是给一个用户装的，只能用那个用户使用`conda`命令
     - 毕竟只有他的`~/.bashrc`有东西，参考[[6-env]]
     - 这就只能`sudo chmod -R 777`之后，在非超级用户执行命令
       - 当然这很危险，参考[[7-permissions]]

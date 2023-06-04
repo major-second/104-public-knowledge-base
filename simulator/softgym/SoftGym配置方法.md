@@ -4,7 +4,7 @@
 由于当前大多数环境不满足上述要求，此处主要介绍使用docker的配置方法
 ## 准备
 - `git clone https://github.com/Xingyu-Lin/softgym.git`
-- 并完成[[docker/installation]]，[[nvidia-docker]]，[[conda/installation]]
+- 并完成[[docker/installation]]，[[nvidia-docker]]，[[conda-installation]]
 - `sudo docker pull xingyu/softgym`获得配置好的[[docker/image]]
 ## 环境配置部分
 

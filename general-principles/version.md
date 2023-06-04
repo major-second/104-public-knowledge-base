@@ -33,7 +33,7 @@
   - 例如[[aruco]]，在`git clone`时要`-b`选择正确分支
 - 很多地方用`>=`，`==`，`=`等运算符表示版本号
   - 比如`>=`表示数字更大（“之后”）
-  - [[conda/installation]]用`=`表示确定某个版本，[[pip]]用`==`
+  - [[conda-installation]]用`=`表示确定某个版本，[[pip]]用`==`
 - 一般版本号高性能好，功能多，参考[[general-principles/upgrade]]，但不是永远版本越高越好
 ## 数字以外各种标记
 - `lts`长期支持
@@ -95,4 +95,4 @@
       - 所以可以用[[temp-solution]]，[[workaround]]思想，先装cpu torch把`tape_proteins`的检测应付掉，再`pip`装一个gpu的torch（过程中会卸载旧的torch）
     - [[zsh]]相比bash有需要[[escape]] `[`，写成`\[`的特性，但你别忘了bash中直接`\[`也是trivial的转义，还是`[`本身，所以只要把`[`写成`\[`就行
 - 可能被已有的东西干扰，在新环境就能很好求解，参考[[torch-cuda]]在非全新conda环境装`torch`可能导致解出cpu版本，重装[[refresh]]可能解决
-- 可能直接换个求解器（包管理器）就解决了。比如[[conda/installation]]不行就换成[[pip]]
+- 可能直接换个求解器（包管理器）就解决了。比如[[conda-installation]]不行就换成[[pip]]

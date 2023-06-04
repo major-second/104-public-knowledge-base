@@ -27,7 +27,7 @@
     - 注意需要[[configure-proxy]]监听`0.0.0.0`
       - 而且有些客户端如geph还需要[[refresh]]重连（有些却不需要）
     - 然后当然就可以[[zsh]]等
-  - [[conda/installation]]
+  - [[conda-installation]]
 - 之后入口
   - 开始菜单可能有
     - 比如`Ubuntu`等字样

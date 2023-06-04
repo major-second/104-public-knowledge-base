@@ -1,4 +1,4 @@
 - python有些东西是直接可用的（如`print`）
 - 有些东西需要`import`，但不需要安装（即内置库），在[官网](https://docs.python.org/3/)可以搜到文档
-- 有些需要[[pip]]或[[conda/installation]]安装再import才能用
+- 有些需要[[pip]]或[[conda-installation]]安装再import才能用
   - 注意安装用的名称和`import`的名称不一定相同。例如`opencv-python`

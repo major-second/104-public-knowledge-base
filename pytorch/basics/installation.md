@@ -1,5 +1,5 @@
 前置
-- [[conda/installation]]或[[pip]]
+- [[conda-installation]]或[[pip]]
   - 最好[[conda/commands]]首先创建全新`conda`环境，否则可能影响[[dependencies]]求解
 - 如果需要GPU，则需要[[ubuntu-nvidia-drivers]]，并务必提前了解[[torch-cuda]]防止兼容性出问题
 - 如果懒得自己安装，可以用在线的，[比如微软提供的](https://docs.microsoft.com/en-us/learn/modules/intro-machine-learning-pytorch/)
