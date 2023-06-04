@@ -22,7 +22,7 @@
     - 例如`.apk`传输后特判，被手动变为`.apk.1`，为了你好，哈哈哈
   - [[teams]]
   - [[baidu-net-disk]]，[[onedrive]]等非严肃网盘
-  - [[bluetooth/basics]]
+  - [[bluetooth-basics]]
 - [[xxd-diff]]：转换文本和二进制，在只能传输文本的场合实际传输二进制
 - 硬件
   - U盘、移动硬盘（注意[[interface]]种类，是否USB3.0等）

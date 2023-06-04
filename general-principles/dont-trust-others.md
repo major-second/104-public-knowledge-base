@@ -1,17 +1,17 @@
 别人是为了别人的利益，除了你和你的父母所有人都没有义务关心你的利益，也没有那么多义务为你负责。时刻保持警惕，不要轻信别人（包括商业公司以及别人代码的可靠性）
-- 骂商业公司
-  - 骂微软
-    - [[bit-locker]]就是为了商业利益（推广一个东西）经常损害用户利益
-    - [[prevent-auto-update]]里提到微软自动更新让你文档丢失，还不给你关
-    - [[win7-virtual]]讲到为了推广win10，微软给win7设置各种障碍
-    - [[windows/env-var]]中爹味自作主张弄了个假的`python.exe`，除非你手动把`env:path`中最靠前的路径改成python的否则用不了真正的`python.exe`
-  - 骂英伟达
-    - [[ubuntu-nvidia-drivers]]提到由于垄断，不好好维护文档导致推荐版本不对让服务器黑屏
-  - 骂苹果
-    - 自以为聪明，傲慢地取消一大堆[[interface]]，导致必须用扩展坞[[adapter-cable]]，给广大用户造成不便
-    - 垄断，就是不用type-c [[interface]]造成不便
-    - 安装[[apple-app]]必须通过官方途径
-      - 所以必须美区[[general-principles/account]]才能[[ios-proxy-client]]翻墙等
+# 骂商业公司
+- 骂微软
+  - [[bit-locker]]就是为了商业利益（推广一个东西）经常损害用户利益
+  - [[prevent-auto-update]]里提到微软自动更新让你文档丢失，还不给你关
+  - [[win7-virtual]]讲到为了推广win10，微软给win7设置各种障碍
+  - [[windows/env-var]]中爹味自作主张弄了个假的`python.exe`，除非你手动把`env:path`中最靠前的路径改成python的否则用不了真正的`python.exe`
+- 骂英伟达
+  - [[ubuntu-nvidia-drivers]]提到由于垄断，不好好维护文档导致推荐版本不对让服务器黑屏
+- 骂苹果
+  - 自以为聪明，傲慢地取消一大堆[[interface]]，导致必须用扩展坞[[adapter-cable]]，给广大用户造成不便
+  - 垄断，就是不用type-c [[interface]]造成不便
+  - 安装[[apple-app]]必须通过官方途径
+    - 所以必须美区[[general-principles/account]]才能[[ios-proxy-client]]翻墙等
 - 有些学术论文附带的code质量很低、有疏漏、不integral等
   - 有些无意疏忽，也有些有意疏漏（无法复现）
   - 前者可以
@@ -25,12 +25,4 @@
     - 这个软件的作者团队好像起了冲突导致没人维护了
 - 包管理器审核出问题
   - 例如[[pip]]：[[hand-eye-calibration]]中提到`transforms3d`的`0.4`版在2022.12安装会出问题，只能手动装`0.3`
-- 官方文档可能有疏漏，不准确，参考[[read-doc]]
-  - 疏漏
-    - [[mujoco-py]]官方文档的troubleshooting补的包不够
-  - 不准确
-    - 如：franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
-    - 如：[[franka-ros-interface]]文档一堆现象不对应实际
-  - 过时
-    - 例如在2022.6，[[desktop/basics]]中`Desktop`包给出提示要求配置环境变量`TESSDATA_PREFIX`到`tessdata`的上级
-      - 但其实应该配置到`tessdata`的路径本身
+- 文档可能有疏漏，不准确，参考[[read-doc]]

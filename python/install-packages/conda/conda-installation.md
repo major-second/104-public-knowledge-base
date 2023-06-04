@@ -6,10 +6,16 @@ Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序�
   - 如果想要在[[powershell-basics]]中使用`conda`命令，则必须
     - 要么[[windows/env-var#安装时自动设置path]]
     - 要么[[windows/env-var#持久设置]]手动设置`path`
-      - `*/Anaconda3`
-      - `*/Anaconda3/Scripts`
-      - `*/Anaconda3/Library`
-      - [参考](https://blog.csdn.net/Python_Smily/article/details/105993200)
+      - [参考资料](https://blog.csdn.net/Python_Smily/article/details/105993200)
+        - 但这个不完全正确，参考[[read-doc#典型文档种类]]
+      - 实际上还是在`Anaconda Powershell Prompt`中输出`$env:path`进行比较，才得到准确list
+        - `<path\to>\Anaconda3`
+        - `<path\to>\Anaconda3\Library\mingw-w64\bin`
+        - `<path\to>\Anaconda3\Library\usr\bin`
+        - `<path\to>\Anaconda3\Library\bin`
+        - `<path\to>\Anaconda3\Scripts`
+        - `<path\to>\Anaconda3\bin`
+        - `<path\to>\Anaconda3\condabin`
       - 再手动`conda init powershell`类似[[conda-installation#Linux]]
 - 开始菜单搜索`Anaconda Prompt`，里面就可以用[[conda/commands]]
   - 当然为了方便，可以把快捷方式发送到桌面
