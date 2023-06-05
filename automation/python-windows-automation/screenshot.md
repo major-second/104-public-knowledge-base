@@ -1,6 +1,7 @@
 - 前置
     - [[pygetwindow]]
     - [[pyautogui]]
+- 相比[[win-key]]中的，可能不能正确处理[[multi-display]]，导致你待截取的只能在某一块屏
 
 ```python
 import pygetwindow

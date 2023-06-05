@@ -27,11 +27,13 @@
 - 法语（键盘）造成麻烦
   - 默认法语键盘`w, z`对调，数字键也不是数字，等等
   - 平时可能还好，碰到快捷键比如[[editting]]就有时候反应不过来……
-- 输入法（Input Method Editor, IME）
-  - 中文
-    - 拼音：全拼、双拼（需要背键位但是速度快很多）等
-    - 五笔、四角等非拼音，现在不常用了
-  - 语音输入又快又好
-    - 而且各种语言都能用，还能练口语
-    - 比如windows的 win + H，苹果系统自带，以及第三方讯飞输入法等
-  - 在线输入法[[web-page-tools]]：临时用不了时救急：https://www.google.com/inputtools/services/features/input-method.html
+# IME
+- 输入法
+- Input Method Editor, IME
+- 中文
+  - 拼音：全拼、双拼（需要背键位但是速度快很多）等
+  - 五笔、四角等非拼音，现在不常用了
+- 语音输入又快又好
+  - 而且各种语言都能用，还能练口语
+  - 比如[[win-key]]的`win + H`，苹果系统自带，以及第三方讯飞输入法等
+- 在线输入法[[web-page-tools]]：临时用不了时救急：https://www.google.com/inputtools/services/features/input-method.html
