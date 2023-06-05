@@ -1,0 +1,2 @@
+- `pip install pygetwindow`
+- 典型：`window = pygetwindow.getWindowsWithTitle(window_name)[0]`

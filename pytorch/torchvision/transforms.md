@@ -1,9 +1,9 @@
 前置：
-- [[open-convert-save]]
+- [[pil-open-convert-save]]
 
 - `from torchvision import transforms as tfs`
 - `tfs.大写开头类名(参数)`可以得到实际用来transform的函数
-- 原图![](original.png)，参考[[open-convert-save]]`open`到`ori`
+- 原图![](original.png)，参考[[pil-open-convert-save]]`open`到`ori`
     - 零元`h_flip = tfs.RandomHorizontalFlip()(ori)`
       - ![](h-flip.png)
       - 效果随机（之后有的也是）。不一定是这样

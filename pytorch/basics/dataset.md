@@ -35,7 +35,7 @@ training_data = datasets.FashionMNIST(
   - 这里的启示：数据集有可能是完全online生成的，不事先存储任何数据
 ## 个人理解：dataset的作用
 - 防止一开始构造时不必要的耗时太长
-  - 典型操作：一开始`__init__`只读取一个图片路径列表，之后需要时再[[open-convert-save]]中的open和convert图片。而不是一开始打开所有图片
+  - 典型操作：一开始`__init__`只读取一个图片路径列表，之后需要时再[[pil-open-convert-save]]中的open和convert图片。而不是一开始打开所有图片
 - 由现有数据online生成数据时不要offline占用太多硬盘空间
   - 例如[[transforms]]在`__getitem__`中才进行，而不要读取时就offline进行全部存下来
   - 例如由$k$条数据组合出$C_k^2$条配对数据（如手写数字比大小）

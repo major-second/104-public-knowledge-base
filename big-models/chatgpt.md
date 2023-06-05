@@ -4,10 +4,14 @@
   - 可使用中文/英文/各种文字
   - 当然英文效果好
 - 可以编辑之前的提问，或重试等
-- 回答不完整，可以说`continue`或`继续`
-- 某版本更新后，可以
+- 回答不完整
+  - 某[[general-principles/upgrade]]前，可以说`continue`或`继续`
+  - 某[[general-principles/upgrade]]后，可以直接按Continue按钮
+- 不断[[general-principles/upgrade]]，有许多功能更新
   - 储存查看之前的chat内容
-  - 自动生成摘要标题
+  - 自动生成摘要标题作为网页标题
+  - 氪金Upgrade to plus
+  - ...
 # 提示工程
 - 可以循序渐进给出指示
 - 如果它不满足要求/预期，可以

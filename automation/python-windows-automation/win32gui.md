@@ -1,0 +1,9 @@
+- 前置
+  - 是[[pywin32]]一部分
+  - [[handle]]
+- [文档](http://timgolden.me.uk/pywin32-docs/win32gui.html)
+- `PyHANDLE = FindWindow(ClassName, WindowName)`，[参考](http://timgolden.me.uk/pywin32-docs/win32gui__FindWindow_meth.html)
+  - 可得到[[handle]]整数，可称为`hwnd`（`handle, window`）
+- `(left, top, right, bottom) = GetClientRect(hwnd)`
+  - 需要[[handle]]
+  - 注意`in client coordinates`

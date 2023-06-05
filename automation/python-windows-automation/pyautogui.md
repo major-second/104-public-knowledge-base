@@ -1,0 +1,5 @@
+- `pip install pyautogui`
+- 典型
+  - `screenshot = pyautogui.screenshot(region=(window.left, window.top, window.width, window.height))`
+  - 得到可以`.save()`的`PIL`对象
+  - 参考[[pil-open-convert-save]]中的`.save()`
