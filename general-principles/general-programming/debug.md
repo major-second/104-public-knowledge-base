@@ -13,7 +13,7 @@
   - 使用较简单的模式
     - 比如要用单线程
       - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
-      - 多线程时，打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
+        - [[general-programming/debug#方式]]中提到[[multiprocessing-minimum]]会导致[[breakpoint]]断多次
       - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
     - 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
   - 在小规模到大规模前，可能可以加入“中规模”，多加几级
@@ -47,6 +47,21 @@
   - 确认有没有[[silent]]
     - 比如可能需要`y`确认，你没按，它一直等着，你晕不晕吧
   - 有自己独占的就不要用和别人共用的。万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
+## 方式
+- 直接输出
+  - [[stdout]], [[stderr]]
+  - [[general-programming/logs]]等文件
+- 调试器
+  - `ipdb`
+  - [[vscode-python]]
+  - [[vscode-debug-js]]
+- 为何不能依赖调试器？
+  - 比赛等场景不允许用，只能直接输出
+    - [[leetcode-solutions/0-metadata]]等
+  - [[multiprocessing-minimum]]
+    - 打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
+  - 有些函数就是只能非调试器场景使用
+    - [[pygetwindow]]的`.activate()`, `.maximize()`
 ## 小规模没问题，大规模有问题？
 - cpu -> gpu
   - 所以涉及[[device]]要小心

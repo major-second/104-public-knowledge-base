@@ -1,5 +1,5 @@
 ## `launch.json`
-`launch.json`可以指定运行时的各种配置。比如[[python]]中提到的
+`launch.json`可以指定运行时的各种配置。比如[[vscode-python]]中提到的
 ## 新建配置
 - 比如想要用`launch.json`中的一套配置去表示一个`python -m 某某`命令以方便复用。假设目前还没有`launch.json`文件，第一次创建
   - `python -m`含义参考[[module-launch]]

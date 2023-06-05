@@ -24,7 +24,7 @@ writer.close()
 - issue: 如果装了多个版本可能报错duplicate啥的，参考[这个](https://stackoverflow.com/questions/57228487/valueerror-duplicate-plugins-for-name-projector)解决
 - vscode集成：`Ctrl + Shift + P`然后`Python: Launch TensorBoard`
   - 可以自动搜索所有子文件夹中的记录，并启动网页
-  - 前置：用vscode [[python]]插件，并右下角先选好有`tensorboard`包的解释器
+  - 前置：用[[vscode-python]]插件，并右下角先选好有`tensorboard`包的解释器
   - 注：此处如果你版本太低会有[[warning]]，但可以尝试不管
 # 网页中的操作
 - 右上角设置

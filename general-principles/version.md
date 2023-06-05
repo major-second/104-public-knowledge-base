@@ -72,7 +72,7 @@
     - 也就是必须用虚拟环境中的`pip`而不是本地`pip`
   - vscode相关
     - [[remote-ssh]]时，远程[[vscode-extensions]]版本高，本地vscode版本低，可能导致插件用不了。需要更新本地vscode
-    - [[launch]] python时，如果`python`版本过低，就用不了版本高的vscode [[extensions/python]]
+    - [[launch]] python时，如果`python`版本过低，就用不了版本高的[[vscode-python]]
     - [[moveit-installation]]中，上层moveit等版本更新连带导致需要安装更高版本的[[franka-ros]]才行
       - 原因：其实是trivial的。一些路径修改导致不匹配不兼容
   - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到[[hand-eye-calibration]]（上层）的一个旧版本
