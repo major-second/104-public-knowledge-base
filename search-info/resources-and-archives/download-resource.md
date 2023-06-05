@@ -1,5 +1,5 @@
 - 参考
-  - [[identifier]]（找东西用）
+  - [[identifier-for-resources]]（找东西用）
   - [[academic]]（学术资源下载参考）
 - 手机apk
   - 官方：google play

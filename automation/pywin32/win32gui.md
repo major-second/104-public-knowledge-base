@@ -1,0 +1,5 @@
+- 前置
+  - 是[[pywin32]]一部分
+  - [[handle]]
+- [文档](http://timgolden.me.uk/pywin32-docs/win32gui.html)
+- `PyHANDLE = FindWindow(ClassName, WindowName)`，[参考](http://timgolden.me.uk/pywin32-docs/win32gui__FindWindow_meth.html)

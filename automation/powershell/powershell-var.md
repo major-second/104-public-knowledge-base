@@ -21,5 +21,5 @@ C:\Windows
   - 哈哈，区别一下
 - `%SystemRoot%`这种也可以取出
 - `$PSScriptRoot`直接取出脚本所在路径，方便设置相对路径等
-  - 注意运行时的路径不一定等于`$PSScriptRoot`
+  - 注意运行时的路径不一定等于`$PSScriptRoot`，所以很多时候可以一来`cd $PSScriptRoot`，这是一种[[reduction]]
   - 类比bash的[[17-function]]提到的`cd $(dirname $0)`

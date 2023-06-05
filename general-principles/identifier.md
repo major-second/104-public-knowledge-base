@@ -1,0 +1,6 @@
+- [参考](https://en.wikipedia.org/wiki/Identifier)
+- 例子
+  - [wiki上的列表](https://en.wikipedia.org/wiki/Identifier#Identifiers_in_various_disciplines)
+    - 例如ISSN, DOI等等
+  - [[identifier-for-resources]]
+  - 计算机中[[handle]]

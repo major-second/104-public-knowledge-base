@@ -1,0 +1,9 @@
+- 前置[[identifier]]
+- [wiki](https://en.wikipedia.org/wiki/Handle_(computing))
+- 和[[pointer]]区别，[参考](https://en.wikipedia.org/wiki/Handle_(computing)#Comparison_to_pointers)
+  - opacity (whether able to be relocated in memory)
+  - handle leak: similar to memory leak for [[pointer]]s, a form of resource leak
+- 可能指代什么
+  - 参考[[win32gui]] `hwnd` (handle, window)
+  - 参考[[4-more-commands]] `PID` (process ID)
+  - file, socket, job ID...

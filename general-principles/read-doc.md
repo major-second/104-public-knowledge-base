@@ -6,8 +6,8 @@
     - 疏漏
       - [[mujoco-py]]官方文档的troubleshooting补的包不够
     - 不准确
-      - 如：franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
-      - 如：[[franka-ros-interface]]文档一堆现象不对应实际
+      - franka官方声称ping延迟1ms即可，实际上需要0.2ms左右，参考[[troubleshooting]]
+      - [[franka-ros-interface]]文档一堆现象不对应实际
     - 过时
       - 例如在2022.6，[[desktop/basics]]中`Desktop`包给出提示要求配置环境变量`TESSDATA_PREFIX`到`tessdata`的上级
         - 但其实应该配置到`tessdata`的路径本身
