@@ -12,3 +12,5 @@ array([[2, 3],
        [2, 3],
        [2, 3]])
 ```
+# newaxis
+`[:, np.newaxis]`，新增一个axis，相当于`.reshape(-1, 1)`

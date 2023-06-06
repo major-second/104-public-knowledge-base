@@ -6,20 +6,29 @@
   - 二进制，[[7-the-power-of-2]]
   - 尽量统一，如unicode，时间戳等
 - 如何编码
+  - [[file-format]]
   - 整数
+    - 参考[[overflow]]
+    - unsigned问题
+      - [[numpy/basics]]中有提到
+      - [[pil-open-convert-save]]需要
   - [[float]]
-  - 文字（例如[[ascii]], [[encoding]]，unicode等）
-  - 都值得考察
-- 时间戳
-  - [转换器](https://tool.lu/timestamp/)
-  - 例如2022.12，是1671693346秒（十位数）
-  - 那么其它时间戳可能单位不同。例如1649898030311019364（19位数）显然是纳秒
-  - 应用
-    - `python`中`from time import time, time_ns`，然后可以`time(); time_ns()`尝试一下
-      - 这个应用
-        - [[general-principles/debug]]时profiling看什么东西占比时间多
-        - 制造唯一标识符
-    - 例如[[rolling]]，[[timestamps]]讲到。`pandas`很常用
+  - 文字
+    - [[ascii]]
+    - [[encoding]]
+    - [[unicode]]
+  - 图片
+    - [[pil-open-convert-save]]中图片和[[numpy/basics]]数组
+## 时间戳
+- [转换器](https://tool.lu/timestamp/)
+- 例如2022.12，是1671693346秒（十位数）
+- 那么其它时间戳可能单位不同。例如1649898030311019364（19位数）显然是纳秒
+- `python`中`from time import time, time_ns`，然后可以`time(); time_ns()`尝试一下
+  - 这个应用
+    - [[general-principles/debug]]时profiling看什么东西占比时间多
+    - 制造[[identifier]]
+- pandas中
+  - 例如[[rolling]]，[[timestamps]]
 # 算法中
 - 节省空间
   - [[encode-decode#进制转换]]
@@ -68,6 +77,7 @@
 - encode浪费一定空间使得深度学习时性质好
   - 二维sin-cos编码表示二维旋转
   - 三维：用6维表示空间中三维旋转，参见[Visual Imitation Made Easy](https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/resources/paper.pdf)
+- [[visualization]]时[[color]]相当于用二维直观表示三维
 ## 深度学习中encoder-decoder
 - 作为学习表示（representation）的方法：encoder-decoder
 ### NLP
@@ -83,6 +93,7 @@
 - 和[[escape]]有密切关系（“码”不够嘛）
 - python中bytes, str类型相关：如[[subprocess]]用到
 - [[sufficient-statistics]]
+- [[cryptography-examples]], [[steganography]]是特殊的编码手段
 ## 盲目encode的坏处
 - 有损压缩丢失重要信息
   - 做不出题。参考[[imagination]]

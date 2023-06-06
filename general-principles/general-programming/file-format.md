@@ -1,5 +1,6 @@
 [toc]
 - 前置[[encode-decode]]
+- 参考[[steganography]]
 ## 本质
 - 文件格式（扩展名）本质上是一种人为约定，参考[维基百科](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D)
 - 既然是约定，就有时会有“方言”之类的

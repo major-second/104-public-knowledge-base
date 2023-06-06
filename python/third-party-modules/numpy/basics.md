@@ -33,6 +33,10 @@
   - 注意妥善处理涉及负数的问题。比如`np.power((a > 0) * a, alpha) - np.power((a < 0) * -a, alpha)`
 - `arr`有`.mean(), .min(), .max(), .sum()`等常用方法可以直接求常用值
 - `np.linalg.norm(向量)`求模长，也可以`np.linalg.norm(a - b)`求距离
+- `np.unpackbits(arr[:, np.newaxis], axis=1)`
+  - [[encode-decode]]二进制布尔值手段
+  - 用到了[[numpy/reshape#newaxis]]
+  - 需要`uint8`之类的，具体就跟底层[[encode-decode#计算机编码]]有关
 # 特性
 - 速度快，更靠近底层
   - 所以会有[[overflow]]问题！碰到很大的数做运算时小心

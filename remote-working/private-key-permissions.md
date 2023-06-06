@@ -1,3 +1,4 @@
+前置[[generate-key-pair]]
 对于公钥私钥对中的私钥，权限太开放会不给你用
 在Linux环境需要`chmod 600`它
 在Windows需要

@@ -28,6 +28,8 @@
 - 实践
   - [[ic-ir]]
   - [[sharpe]]
+# min to max
+- [[pil-open-convert-save]]中把$[0,255]$到$[0,1]$
 # z-score
 - 相当于[[normalization#减去均值]]，[[normalization#除以标准差]]结合
 - 转化成均值0方差1

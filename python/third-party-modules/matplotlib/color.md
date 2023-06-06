@@ -2,29 +2,36 @@
   - 示例：如[[plot]]加关键字参数`c`或`color`，里面可能写`'b'`，`'black'`，`(1, 0.5, 0.2)`等多种格式
   - 还可以`plt.scatter([1,2], [4,5], c=['r','b'])`这样（[[plot]]不行）
 - 应用：[[visualization]]
-- `cmap`和渐变色应用（使用内置`cmap`把0到1数映射到颜色）
-  - [参考](https://www.codenong.com/8500700/)
-  - 参考[[line-collection]]
-  - 这里的代码也是从那里调整来的
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.collections import LineCollection
+- `cmap`和渐变色应用
+  - 使用内置`cmap`把0到1数映射到颜色
+  - 基础示例
+    - `CMAP = plt.get_cmap('coolwarm')`
+    - `CMAP_COLOR_1 = CMAP(1.0)[:3]`
+    - `CMAP_COLOR_0 = CMAP(0.0)[:3]`
+    - `ax = sns.heatmap(corr_matrix, annot=False, cmap=CMAP, cbar=False)`
+  - 参考
+    - [参考](https://www.codenong.com/8500700/)
+    - [[line-collection]]
+    - 这里的代码也是从那里调整来的
+      ```python
+      import matplotlib.pyplot as plt
+      import numpy as np
+      from matplotlib.collections import LineCollection
 
-x = np.arange(20) / 20
-y = np.array([0.4, 0.5] * 10)
+      x = np.arange(20) / 20
+      y = np.array([0.4, 0.5] * 10)
 
-points = np.array([x, y]).T.reshape(-1, 1, 2)
-print(points.shape)
-segments = np.concatenate([points[:-1], points[1:]], axis=1)
-print(segments.shape)
+      points = np.array([x, y]).T.reshape(-1, 1, 2)
+      print(points.shape)
+      segments = np.concatenate([points[:-1], points[1:]], axis=1)
+      print(segments.shape)
 
-ax = plt.axes()
-# 只需要增加`array`表示数值，`cmap`表示数值映射到颜色，即可画一系列不同颜色的线段
-ax.add_collection(LineCollection(segments, array=np.linspace(0, 1, 20), cmap=plt.get_cmap('copper')))
+      ax = plt.axes()
+      # 只需要增加`array`表示数值，`cmap`表示数值映射到颜色，即可画一系列不同颜色的线段
+      ax.add_collection(LineCollection(segments, array=np.linspace(0, 1, 20), cmap=plt.get_cmap('copper')))
 
-plt.show()
-```
+      plt.show()
+      ```
 - 自定义`cmap`
   - [官方文档](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
   - 最简单的方式
