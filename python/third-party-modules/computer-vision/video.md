@@ -1,5 +1,5 @@
-`pip install opencv-python`
-
+- 前置[[opencv-installation]]
+- 内容
 用于把图片变成video：[参考](https://zhuanlan.zhihu.com/p/128616339)
 其实是很简单的几行脚本，[[interact]]都行
 ```python

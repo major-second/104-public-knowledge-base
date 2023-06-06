@@ -1,0 +1,5 @@
+- `matrix[np.triu_indices(<N>)] = ...`
+- `tril`: 下三角
+- 去除主对角线，从“副对角线”开始
+    - `triu_indices(N, 1)`
+    - `tril_indices(N, -1)`

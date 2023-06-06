@@ -1,0 +1,2 @@
+- 安装`pip install Pillow`
+- 导入`from PIL import Image`
