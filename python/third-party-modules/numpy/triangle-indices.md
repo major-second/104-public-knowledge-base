@@ -1,5 +1,7 @@
-- `matrix[np.triu_indices(<N>)] = ...`
-- `tril`: 下三角
-- 去除主对角线，从“副对角线”开始
+- 前置[[numpy-indexing]]
+- `matrix[np.triu_indices(<N>)] = ...`可赋值
+  - `tril`: 下三角
+- 去除主对角线，从“副对角线”开始怎么做？
     - `triu_indices(N, 1)`
     - `tril_indices(N, -1)`
+    - 由此可想象第二个参数对`triu, tril`分别是何含义

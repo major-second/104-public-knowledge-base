@@ -38,6 +38,7 @@
   - [[2-naming]]计算机中：循环变量`i`，python对象私有属性约定`_`开头，`CamelCase`，`snake_case`
   - 领域缩写：IB, VC, PE, FA...
     - [参考](https://zhuanlan.zhihu.com/p/42090782)
+  - 计算机：[[numpy-indexing#row and column]]
 - 有时历史原因，命名稀烂，约定俗成了就一直这样
   - [[unary]]“最小二乘法”，直接翻译自日文汉字，所以“二乘”非常不好，容易误解为$2\times$
   - [[type-i-ii-errors]]，根本没任何信息量，只是为了区分而区分

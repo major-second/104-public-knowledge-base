@@ -10,4 +10,4 @@
   - 还有其他一些函数可以用来处理连续数组，例如`numpy.require()`函数和`numpy.copy()`函数。
 - 非contiguous来源
   - transpose
-  - slice
+  - [[numpy-indexing#Slicing]]
