@@ -48,7 +48,7 @@
   - 比如vscode编辑器中复制粘贴文本即可
 - 浪费存储空间
   - [[pointcloud/basics]]中的`.ply`
-  - [[numpy/basics#I/O]]中存成[[tabular/source#csv]]
+  - [[numpy-basics#I/O]]中存成[[tabular/source#csv]]
   - 之类，就显然非常浪费空间
 ### 二进制
 和“文本”特点相反

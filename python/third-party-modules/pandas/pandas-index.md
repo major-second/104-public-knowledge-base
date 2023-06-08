@@ -50,7 +50,7 @@
   - `0`号栏此时对应`Date`
 ## `.values`
 - `.values`取出具体数值
-  - 是[[numpy/basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy/basics]]
+  - 是[[numpy-basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy-basics]]
   - 此时可以抹去`.index`，用于不同时间戳数据对齐和运算等
     - 应用：`df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
       - 计算[[returns]]

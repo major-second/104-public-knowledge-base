@@ -8,13 +8,17 @@
 - `np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
   - 默认随机初始化
   - 如果想不随机需要`zeros`等
-- `np.arange(整数)`
-  - 结合[[numpy/reshape]]得到想要的形状
-  - 可方便[[general-programming/debug]]，探索包等
-  - ```python
-    >>> np.arange(10, 25, 2.2)
-    array([10. , 12.2, 14.4, 16.6, 18.8, 21. , 23.2])
-    ```
+- `np.arange(<类似于range()用法>)`
+  - 例子
+    - `np.arange(10)`
+    - `np.arange(10, 0, -1)`
+    - ```python
+      >>> np.arange(10, 25, 2.2)
+      array([10. , 12.2, 14.4, 16.6, 18.8, 21. , 23.2])
+      ```
+  - 应用
+    - 结合[[numpy/reshape]]得到想要的形状，从而可方便[[general-programming/debug]]，探索numpy用法等
+  - 注意
     - [[float]]
     - [[off-by-one-errors]]
 - `np.linspace()`等差数列
@@ -26,15 +30,9 @@
             5.55555556,  6.66666667,  7.77777778,  8.88888889, 10.        ])
     ```
     - [[off-by-one-errors]]
-  - 如应用：[[color]]
+  - 应用例如[[color]]
 # I/O
-- [[file-format#文本]]: `loadtxt`, `genfromtxt`, `savetxt`
-  - todo
-- [[file-format#二进制]]
-  - `np.save(file, array)`
-  - `array = np.load(file)`
-  - `np.savez(file, x=x, y=y)`
-  - `x = np.load(npz_file)['x']`
+- [[save-load]]
 # 操作
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
   - 注意不要少打一对括号
@@ -65,12 +63,14 @@
   - 需要`uint8`之类的，具体就跟底层[[encode-decode#计算机编码]]有关
 # 特性
 - 速度快，更靠近底层
-  - 所以会有[[overflow]]问题！碰到很大的数做运算时小心
+  - 所以会有
+  - [[overflow]]问题！碰到很大的数做运算时小心
     - 一个中招的例子：使用`isnan`然后沿一条轴`sum()`，非0整数，就是有nan的行，这个没问题吧
     - 接下来，我想要过滤出那些自己是nan或者往前看若干时刻内有nan的
     - 于是就不停地`x[1:] += x[-1:]`
     - 啊这，就有可能溢出！
     - 应该用`|=`
+  - [[float]]误差、精度问题
 - 切片和原来共享同样的内存，改一个就全改。这点容易导致[[python/trivial-mistakes]]类似的错误
   - 而且这个更容易误导人造成坑……毕竟python原生list可不会切片了还共享内存
   - 甚至原生list的`l[:]`还是浅拷贝的一种方式

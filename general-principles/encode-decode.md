@@ -10,7 +10,7 @@
   - 整数
     - 参考[[overflow]]
     - unsigned问题
-      - [[numpy/basics]]中有提到
+      - [[numpy-basics]]中有提到
       - [[pil-open-convert-save]]需要
   - [[float]]
   - 文字
@@ -18,7 +18,7 @@
     - [[encoding]]
     - [[unicode]]
   - 图片
-    - [[pil-open-convert-save]]中图片和[[numpy/basics]]数组
+    - [[pil-open-convert-save]]中图片和[[numpy-basics]]数组
 ## 时间戳
 - [转换器](https://tool.lu/timestamp/)
 - 例如2022.12，是1671693346秒（十位数）

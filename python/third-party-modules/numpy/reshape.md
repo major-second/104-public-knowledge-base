@@ -1,4 +1,4 @@
-- 前置[[numpy/basics]]
+- 前置[[numpy-basics]]
 - 参考[[pytorch/misc/reshape]]，两种可做比较
 - 应用
   - [[line-collection]]中制造一系列线段

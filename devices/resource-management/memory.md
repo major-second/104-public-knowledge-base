@@ -5,7 +5,7 @@
   - 16G的普通PC，往往可以设置（至多）2倍物理内存的swap
     - 当然，如果你日常就听听歌追追剧，就0呗嘿嘿
 - 和程序运行相关
-  - [[pickle]], [[pytorch/basics/installation]], [[numpy/basics]]都有`load`之类的功能，把硬盘中的读到内存中
+  - [[pickle]], [[pytorch/basics/installation]], [[numpy-basics]]都有`load`之类的功能，把硬盘中的读到内存中
   - 存读都有时间开销。读取有空间开销
     - 因此[[jupyter-basics]]的一个核心优势：灵活读进东西到内存，然后下游做各种处理。而不是`.py`一样每次只能对内存里的东西做一种操作
   - 监测

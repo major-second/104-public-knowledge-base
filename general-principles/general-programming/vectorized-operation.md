@@ -2,7 +2,7 @@
   - [[functional-programming]]
   - [[parallelism]]
 - 实例
-  - [[numpy/basics]]
+  - [[numpy-basics]]
   - [[tensor-calculator]]
   - [[pandas/installation]]
 - 可能造成思维上麻烦，操作的局限，不细粒度

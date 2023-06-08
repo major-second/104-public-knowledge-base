@@ -1,6 +1,6 @@
 - 前置
   - [[axes]]
-  - [[numpy/basics]]
+  - [[numpy-basics]]
   - 手动设置`xlim, ylim`，可参考[[dynamic]]
 - 需要渐变色（参考[[color]]）等等的时候，每段线段性质不同，为了[[parallelism]]提高效率，需要使用`LineCollection`
 ```python

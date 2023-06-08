@@ -27,9 +27,9 @@
     - [[cpp-vector]]
 ## python
 - [[standard-modules/copy]]
-- 很多对象例如[[numpy/basics]]数组，[[tensor-calculator]]张量等都可以`.copy()`
+- 很多对象例如[[numpy-basics]]数组，[[tensor-calculator]]张量等都可以`.copy()`
 - 表等等可以`[:]`
-  - 注意[[numpy/basics]]和`list`不同，不能`[:]`复制
+  - 注意[[numpy-basics]]和`list`不同，不能`[:]`复制
   - 且这个只复制一层，不是深拷贝
 ### deepcopy
 todo

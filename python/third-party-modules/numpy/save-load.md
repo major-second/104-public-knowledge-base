@@ -1,4 +1,12 @@
-- `np.save(path, array)`
-  - 和[[basics/save]]相反！
-  - 注意[[float]]精度
-- `np.load(path)`
+- 注意[[float]]精度问题，小心精度不对，占用成倍空间
+- [[file-format#二进制]]
+  - `np.save(file, array)`
+    - 和[[basics/save]]顺序相反！
+  - `array = np.load(file)`
+  - `np.savez(file, x=x, y=y)`
+  - `x = np.load(npz_file)['x']`
+- [[file-format#文本]]
+  - 总体和刚刚说的相似
+  - `np.savetxt(file, array)`
+  - `np.genfromtxt`
+  - `np.loadtxt`

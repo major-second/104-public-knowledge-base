@@ -3,7 +3,7 @@
     - `image = Image.open(<文件名>)`
     - `image.save(<文件名>)`
     - `image.convert(<例: 'RGB'>)`
-    - 与[[numpy/basics]]
+    - 与[[numpy-basics]]
        - `image_array = np.array(image)`
        - `image = Image.fromarray(<image_array>)`
        - 本质上是一种[[encode-decode]]

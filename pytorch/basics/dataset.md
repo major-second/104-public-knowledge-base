@@ -43,4 +43,4 @@ training_data = datasets.FashionMNIST(
   - `__getitem__`过程可能添加随机性，但这有时会带来困扰。所以做好注释！
 ## 进阶：效率！
 - dataloader这边每次`__getitem__`的效率请格外注意
-  - 例如不要做很多[[numpy/basics]]和[[pandas/installation]]的复制操作
+  - 例如不要做很多[[numpy-basics]]和[[pandas/installation]]的复制操作

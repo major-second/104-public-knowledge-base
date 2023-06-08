@@ -28,7 +28,7 @@
   - 往往不能向后兼容[[compatibility#backward]]
 - 有时不用数字做版本号
   - 比如[[ros/installation]]，用`a`开始的字母做版本号，越靠后的版本字母越靠后
-  - 比如[[numpy/basics]]除了表层的数字版本号，还有一个靠底层的`0xf, 0x10`等十六进制的版本号，这个和数字版本号不一一对应。[[pytorch/basics/installation]]时可能需要这个版本号满足一定条件，进而依赖于一定版本的numpy
+  - 比如[[numpy-basics]]除了表层的数字版本号，还有一个靠底层的`0xf, 0x10`等十六进制的版本号，这个和数字版本号不一一对应。[[pytorch/basics/installation]]时可能需要这个版本号满足一定条件，进而依赖于一定版本的numpy
 - 安装软件，`git clone`等等时往往都要看清楚版本号
   - 例如[[aruco]]，在`git clone`时要`-b`选择正确分支
 - 很多地方用`>=`，`==`，`=`等运算符表示版本号

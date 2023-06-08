@@ -12,6 +12,6 @@
     - 对于这种空间，可以下标取出`Discrete`空间，例如`s[0]`这样
 - 应用
   - 在[[stable-baselines3/basics]]中需要指定`.observation_space, .action_space`属性
-  - [[gym/wrapper]]往往可以读取unwrapped环境的`observation_space.high`和`observation_space.low`然后做[[numpy/basics]]数组操作，再构造出新的space
+  - [[gym/wrapper]]往往可以读取unwrapped环境的`observation_space.high`和`observation_space.low`然后做[[numpy-basics]]数组操作，再构造出新的space
       - 例如`FrameStack`中使用`np.repeat`操作
       - 参考[[numpy/reshape]]
