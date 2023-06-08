@@ -1,6 +1,6 @@
 Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序运行环境。且内置常用科学包。
 ## Windows
-- [官网](https://www.anaconda.com/)下载
+- [官网](https://www.anaconda.com/download)下载
 - 安装
   - 过程中可能涉及[[windows/env-var#path]]的加入。是否要改就根据你的想法和需要
   - 如果想要在[[powershell-basics]]中使用`conda`命令，则必须

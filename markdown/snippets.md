@@ -3,7 +3,7 @@
 - [[settings/snippets]]
 
 # 内容
-- 看`snippets.json`
+- [参考文件内容](snippets.json)
 - 目前有
   - 插入反引号<code>&#96;</code>
   - 插入一对反引号<code>&#96;&#96;</code>

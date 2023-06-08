@@ -1,0 +1,14 @@
+- [https超链接](https://www.baidu.com)
+- [内链](../.gitignore)
+  - 用`/`不用`\`
+  - 歧视windows系统（？
+- ![](图片.png)
+- [链接到章节](#wikilinks)
+# wikilinks
+- [[wikilinks]]是foam的一大组成部分，可以ctrl + 左键点
+  - 重命名或移动单个文件时自动更新
+  - 移动文件夹时不自动更新
+  - 如果不重名则没关系。重名时foam系统将自动加入上级路径以示区分
+- 文件#章节
+  - 格式：[[note-properties#Special Properties]]
+  - 改动章节时不会自动重命名
