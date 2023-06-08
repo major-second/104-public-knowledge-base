@@ -1,4 +1,5 @@
 https://keybase.io/
+[文档](https://book.keybase.io/)
 # 优缺点
 - 相比[[telegram]]好处
   - 时至2022.4还不用[[proxy-basics]]
@@ -25,6 +26,7 @@ https://keybase.io/
   - 爆炸信息功能（若干秒后自动删）
 - 缺点
   - 不能实时音视频通话
+  - 不能多选信息删除/转发
 # 安装和创建账号
 - 安装是傻瓜式
   - [官网](https://keybase.io/)写得很清楚
