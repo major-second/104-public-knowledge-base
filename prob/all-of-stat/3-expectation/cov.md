@@ -17,6 +17,9 @@
   - $\rho = Cov(X,Y)/\sigma_X\sigma_Y$
 - 对于两个标准正态，[[iid]]则$\rho=0$，否则由于[[variance]]和标准差都是1，则[[cov]]矩阵就是$[[1,\rho],[\rho,1]]$
 - $\rho^2=R^2$不是总成立，参考[[unary#$R^2$]]
+## correlation matrix
+- 联想协方差和协方差矩阵
+- numpy中有[[numpy-basics#Array Mathematics]] `np.corrcoef(arr)`
 ## spearman
 - 先[[data-science/normalization#排序]]再求[[cov#corr]]
 - 实现：如参考[[scipy-correlation]]

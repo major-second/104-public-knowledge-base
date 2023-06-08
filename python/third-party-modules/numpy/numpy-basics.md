@@ -33,6 +33,49 @@
   - 应用例如[[color]]
 # I/O
 - [[save-load]]
+# Data Types
+- [[dtype]]
+# Inspecting Your Array
+- `.dtype`得到dtype，而`.dtype.name`得到字符串
+# Asking For Help
+- `np.info`
+- [[help]]
+# Array Mathematics
+- 逐元素：`exp, sqrt, sin, cos, log`
+  - 注意[[trivial-mistakes-in-math#范围]]
+- 四则运算
+  - `np.add`可替代`+`运算符
+  - 应用：[[map-reduce]]时方便
+## Comparison
+- `==`, `>`等不能用作if条件，否则ambiguous
+  - 参考[[numpy-bool-array]]
+- `np.array_equal`可以，是[[comparison]]手段
+## Aggregate Functions
+- 针对一个函数考察
+  - `.sum()`
+  - `.sum(axis=1)`
+  - `arr.sum()`就是`np.sum(arr)`，也可各自加关键字参数
+  - 内置`sum`是`axis=0`
+- `1.21.5`版本
+  - 没有`arr.median()`只有`np.median(arr)`
+  - 没有`arr.corrcoef()`只有`np.corrcoef(arr)`
+    - 对于二维数组，求[[cov#corr]]
+- `np.max`和`np.amax`分别求最大值的值和下标
+# Copying Arrays
+- 前置[[general-copy]]
+- `arr.copy()`或`np.copy(arr)`**都**是[[general-copy#deepcopy]]
+  - 感觉cheatsheet有点误导性
+  - 不信，试试：
+  - ```python
+    arr = np.random.random((2,2))
+    b = arr.copy()
+    c = np.copy(arr)
+    b[1][1] = c[1][1] = 3
+    print(a, b, c)
+    ```
+- 相对的：[[share-lock]]的
+  - [[numpy-view]]
+  - `[:]`切片
 # 操作
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
   - 注意不要少打一对括号
@@ -42,25 +85,17 @@
   - 把`[(1,2),(3,4)]`变成`2*2`的
   - 把`np.ndarray((2,), dtype=object)`这类的变成正常的（类型为数值）的array
   - [各种stack](https://blog.csdn.net/csdn15698845876/article/details/73380803)
-- `np.max`和`np.amax`分别求最大值的值和下标
-- array做`< > ==`等运算得到布尔的array
-  - 直接用作判断条件是“ambiguous”，会报错，也就是不能直接`if <array>`
-    - 你想想，你这个`if <array>`到底是表示是否空还是是否全`False`，还是什么呢，确实不清楚嘛
-  - 可以`(a > 0) * a`得到`a`的正的部分
-  - 可以`np.where()`筛出为`True`的那些下标，这些下标排成一列
-  - 注意不能使用一元`-`变成`-1`和`0`组成的数组！
-    - 但可用一元`~`否定，二元`&`、`|`（不是`&&`，`||`）
-  - 结合[[quantile]]，`max`等可以找到分位数位置
-    - 求分位数时会在靠近的数间作插值，所以必须先用`<`，不能一来就用`==`
+
 - `np.clip([1,2], 0, 1.5)`输出`array([1. , 1.5])`
 - `np.power(底数, 指数)`
   - 注意妥善处理涉及负数的问题。比如`np.power((a > 0) * a, alpha) - np.power((a < 0) * -a, alpha)`
-- `arr`有`.mean(), .min(), .max(), .sum()`等常用方法可以直接求常用值
 - `np.linalg.norm(向量)`求模长，也可以`np.linalg.norm(a - b)`求距离
 - `np.unpackbits(arr[:, np.newaxis], axis=1)`
   - [[encode-decode]]二进制布尔值手段
   - 用到了[[numpy/reshape#newaxis]]
-  - 需要`uint8`之类的，具体就跟底层[[encode-decode#计算机编码]]有关
+  - 需要`uint8`之类的，具体参考
+    - 底层[[encode-decode#计算机编码]]
+    - [[dtype]]
 # 特性
 - 速度快，更靠近底层
   - 所以会有

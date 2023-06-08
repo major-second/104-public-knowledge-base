@@ -1,5 +1,9 @@
 # 种类
-- 时间、空间
+- 时间
+  - [[about-submit#时间]]
+- 空间
+  - [[memory]]
+  - [[resource-management/disk]]
 - 最差[[forall]]、平均
   - 参考[[adversary]]
   - 会被卡最差的算法：[[hash]], [[cpp-vector]], [[quick-sort]]
@@ -14,6 +18,4 @@
   - [[heap#floyd]]
 # 和实际联系
 - [[tradeoff]]
-- [[memory]], [[resource-management/disk]]
-- [[about-submit#时间]]
 - [[misc/profile]], [[debug-profiling]]

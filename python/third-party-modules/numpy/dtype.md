@@ -1,3 +1,15 @@
-- 用`dtype=`指定类型
-- `numpy.int64`这种和`int`不同。不能高精，**且`isinstance`会报不同结果**（要小心）
-  - 而且一些IDE中并不会显式体现不同，比如`numpy.bool_`和`bool`的真都显示为蓝色的`True`，这个比较坑人
+- 前置
+  - [[numpy-basics#Data Types]]
+  - [[numpy-basics#Inspecting Your Array]]
+  - [[encode-decode#计算机编码]]
+- 参考
+  - [[numpy-bool-array]]
+- 指定
+  - 创建时用`dtype=`关键字参数
+  - `.astype(int)`这种转换
+- `numpy.int64`这种和python原生`int`的不同
+  - 不能高精
+  - **`isinstance`会报不同结果**
+  - 一些IDE中并不会显式体现不同，比如`numpy.bool_`和`bool`的真都显示为蓝色的`True`
+    - 这个比较坑人，无法体现`isinstance`会报不同结果
+    - 属于一种[[fake-sympton]]

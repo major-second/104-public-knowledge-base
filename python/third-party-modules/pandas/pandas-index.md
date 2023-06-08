@@ -27,7 +27,7 @@
   - value是`Series`时，要注意有没有让他的`index`和你的`data`的`index`一致
     - 隐蔽的错误：`a, b = [pd.Series([1,1], index=range(i,i+2)) for i in range(2)]; print((a+b).shape)`
     - 输出`(3,)`
-  - 注意多重`[]`作为等号左边（左值）会导致和[[copy-paste]]有关的问题，参见[[pandas-loc]]
+  - 注意多重`[]`作为等号左边（左值）会导致和[[general-copy]]有关的问题，参见[[pandas-loc]]
 - 查：
   - “子”数据集：`df[[key0, key1]]`
     - 例如做两个变量间的[[regression]]时，如果只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
@@ -35,7 +35,7 @@
 ## `.index`属性
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
   - `example = example.set_index(1)`
-    - 这里不[[inplace]]的话，就是[[copy-paste]]，新复制一个
+    - 这里不[[inplace]]的话，就是[[general-copy]]，新复制一个
     - 所以这句等价于[[inplace]]地`example.set_index(1, inplace=True)`
   - 可以在set前后看`.shape, .dtypes, .sample(3)`的变化
 - `.index`取出index序列

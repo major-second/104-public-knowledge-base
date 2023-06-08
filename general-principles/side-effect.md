@@ -1,6 +1,6 @@
 - 参考
   - [[functional-programming]]
-  - [[copy-paste]]
+  - [[general-copy]]
 # 概述
 - 函数有没有副作用非常重要！
     - 容易犯错：重构时，从函数式思想转到状态式思想，从副作用少到副作用多，过渡时容易想不清楚！
@@ -9,4 +9,4 @@
 # 利用
 - [[disjoint-set]]中查找的“副作用”是路径压缩
 # 问题
-- [[copy-paste]]的对象，互相干扰
+- [[general-copy]]的对象，互相干扰

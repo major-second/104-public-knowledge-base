@@ -11,3 +11,5 @@
     - `man`命令结合[[find-grep]]
       - 例如`man bash | grep -C2 '$@'`
   - [[powershell-basics]]中`help`和`gal`命令
+- 交互式语言如python, R，则有些函数起到此效果
+  - [[numpy-basics#Asking For Help]] `np.info`

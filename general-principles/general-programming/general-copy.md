@@ -1,0 +1,23 @@
+## 参考
+- [[copy-paste]]
+- [[complexity]]
+  - [[tradeoff]]
+  - 拷贝和[[inplace]]相对，效率低
+- 实际消耗
+    - [[memory]]
+    - [[resource-management/disk]]
+## 优劣
+- 好处
+  - 两份相互独立，[[isolation]]，减少[[share-lock]]带来麻烦
+- 坏处
+  - 重复内容，占用时间空间，[[memory]]，[[resource-management/disk]]等
+  - 例[[cpp-vector]]
+## python
+- [[standard-modules/copy]]
+- [[numpy-basics#Copying Arrays]]
+  - 注意和`list`不同，不能`[:]`复制
+- [[tensor-calculator]]
+- 很多对象可`.copy()`
+- `list`等可以`[:]`
+  - 这个只复制一层，不是深拷贝[[general-copy#deepcopy]]
+## deepcopy
