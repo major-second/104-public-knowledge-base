@@ -4,9 +4,13 @@
   - [[encode-decode#计算机编码]]
 - 参考
   - [[numpy-bool-array]]
+  - [[numpy-time]]
 - 指定
   - 创建时用`dtype=`关键字参数
-  - `.astype(int)`这种转换
+  - `.astype(int)`转换
+  - `.view()`转换
+    - 参考[[numpy-view]]
+    - 这需要很了解[[encode-decode#计算机编码]]事情
 - `numpy.int64`这种和python原生`int`的不同
   - 不能高精
   - **`isinstance`会报不同结果**

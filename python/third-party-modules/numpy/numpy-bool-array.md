@@ -1,9 +1,11 @@
 # 前置
-  - [[dtype]]
-  - [[numpy-basics#Comparison]]运算得到布尔array
+- [[dtype]]
+- [[numpy-basics#Comparison]]运算得到布尔array
+- [官方文档](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.bool_)
+  - `bool_`就是`bool8`，即8个bit
 # 用作判断
-  - 直接用作判断条件是“ambiguous”，会报错，也就是不能直接`if <array>`
-  - 你想想，你这个`if <array>`到底是表示是否空还是是否全`False`，还是什么呢，确实不清楚嘛
+- 直接用作判断条件是“ambiguous”，会报错，也就是不能直接`if <array>`
+- 你想想，你这个`if <array>`到底是表示是否空还是是否全`False`，还是什么呢，确实不清楚嘛
 # 应用
 - 可以`(a > 0) * a`得到`a`的正的部分
   - 说明布尔数组可被强制类型转换成整数
