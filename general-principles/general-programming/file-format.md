@@ -36,14 +36,22 @@
   - 如：vscode这样一个软件范围，设置默认打开方式
     - 如[[vscode-pdf]]中提到设置`.pdf`在vscode中的打开方式
 ## 文本和二进制文件
-- 前者直接用编辑器打开可读，后者不可读
-- 前者好处是编辑器打开人类可读，后者好处是节省存储空间
-  - 比如[[pointcloud/basics]]中的`.ply`之类格式就显然非常浪费空间
-- [[xxd-diff]]有提到
+### 文本
+- 人类可读可编辑
+  - 可以用通用编辑器如[[vim-basics]]，[[vscode/edit]]等编辑
+  - 所以很多时候可作为过渡，搭桥
+  - 如[[tabular/source#csv]], [[json]], [[yaml]]
+- 方便[[xxd-diff]]
+  - 进阶：[[xxd-diff]]有提到
   - 把`.pkl`二进制文件`xxd`成文本`.hex`再使用`diff`，这就能体现出具体差别，而非简单地显示“differ”
-  - 文本文件占空间更大，但可能更好传输[[file-transfer]]，适用场景广
-- 前者可以用通用编辑器如[[vim-basics]]，[[vscode/edit]]等编辑，所以很多时候可作为过渡，例如csv格式
-- [[file-handler]]读取文本文件（例如[[json]], [[yaml]]）就是“过渡”的例子
+- 可能更好传输[[file-transfer]]，适用场景广
+  - 比如vscode编辑器中复制粘贴文本即可
+- 浪费存储空间
+  - [[pointcloud/basics]]中的`.ply`
+  - [[numpy/basics#I/O]]中存成[[tabular/source#csv]]
+  - 之类，就显然非常浪费空间
+### 二进制
+和“文本”特点相反
 ## 序列化（编码）
 - 参考[[encode-decode]]
 - 有时文件本身表达的东西不是简单的文本序列，但可以用文本序列存储

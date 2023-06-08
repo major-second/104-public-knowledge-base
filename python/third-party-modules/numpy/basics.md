@@ -1,14 +1,40 @@
-- `pip install numpy`
-- `import numpy as np`
-# 创建array
+- [[meta]] index: [numpy cheat sheets](https://www.kaggle.com/getting-started/255139)
+- [本篇主要参考](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
+  - cheatsheet已有不重复。这里只是一些补充
+- 安装`pip install numpy`
+- 导入`import numpy as np`
+# Creating Arrays
 - `np.array([2])`这种直接得到`[2]`
 - `np.ndarray([2])`得到`.shape`（形状）是`[2]`的数组（一维数组，2个元素）
-  - 默认随机初始化。如果想不随机需要`zeros`
-- `np.arange(整数)`得到0开始的连续整数，可以调试用
-  - 往往结合[[numpy/reshape]]得到想要的形状
-  - `-1`就是自动由其它维计算得到
-- `np.linspace(start, stop, num)`生成等差数列
+  - 默认随机初始化
+  - 如果想不随机需要`zeros`等
+- `np.arange(整数)`
+  - 结合[[numpy/reshape]]得到想要的形状
+  - 可方便[[general-programming/debug]]，探索包等
+  - ```python
+    >>> np.arange(10, 25, 2.2)
+    array([10. , 12.2, 14.4, 16.6, 18.8, 21. , 23.2])
+    ```
+    - [[float]]
+    - [[off-by-one-errors]]
+- `np.linspace()`等差数列
+  - ```python
+    >>> np.linspace(0, 10, 11)
+    array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])
+    >>> np.linspace(0, 10, 10) 
+    array([ 0.        ,  1.11111111,  2.22222222,  3.33333333,  4.44444444,
+            5.55555556,  6.66666667,  7.77777778,  8.88888889, 10.        ])
+    ```
+    - [[off-by-one-errors]]
   - 如应用：[[color]]
+# I/O
+- [[file-format#文本]]: `loadtxt`, `genfromtxt`, `savetxt`
+  - todo
+- [[file-format#二进制]]
+  - `np.save(file, array)`
+  - `array = np.load(file)`
+  - `np.savez(file, x=x, y=y)`
+  - `x = np.load(npz_file)['x']`
 # 操作
 - `np.concatenate((a, b))`，返回拼接结果，不改变`a`，`b`
   - 注意不要少打一对括号

@@ -11,7 +11,8 @@
   - > 在现代电脑游戏中，尤其是休闲游戏、移动游戏和平板电脑游戏中，在游戏外获得的成就被认为是元游戏元素，因为它们是虚拟游戏之外的游戏。也被称为犒赏系统、成就游戏、增强现实游戏和游戏化。
 - meta reviewer: reviewer of reviewers
 # index of index
-- cheat sheet相当于index，则[numpy cheat sheets](https://www.kaggle.com/getting-started/255139)是index of index
+- cheat sheet相当于index，则[numpy cheat sheets](https://www.kaggle.com/getting-started/255139)是index of index，参见[[numpy/basics]]
+- https://zh.wikipedia.org/wiki/%E7%B6%AD%E5%9F%BA%E7%99%BE%E7%A7%91%E5%88%97%E8%A1%A8%E7%B4%A2%E5%BC%95
 # array of array
 - https://github.com/wysteven/book/blob/master/06%20%E8%A1%8C%E5%88%97%E7%AC%AC%E5%85%AD.md
   - > 數列列數。言列列言。爻列列爻。**列列列列**。

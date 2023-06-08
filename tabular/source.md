@@ -1,4 +1,7 @@
 - 表格（结构化数据）参考[[category]]，是机器学习、统计中常用的数据类型
+# csv
+- [[file-format#文本]]格式的一种，具有相应优缺点
+  - 优点比如可以`cat my_csv.csv | head -n 10`，人类可读
 - 了解`tab`制表符（[[regex]]：`\t`）
   - 如果Excel选中复制
   - 或者一些网页表格选中复制（比如[这篇文章](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1608#:~:text=Generative%20models%20offer%20a%20promising,that%20will%20satisfy%20those%20properties%3F)中的）
