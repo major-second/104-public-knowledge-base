@@ -61,6 +61,12 @@
   - 微分中值定理的存在$\xi$，可用于证明很多关于“估计误差”的式子
     - 至少是误差量级吧
   - [[estimation#拉格朗日余项]], [[estimation#柯西余项]]
+## exists extreme value
+- 设最大最小
+  - 逻辑：反正都存在，你为啥不取最值设个字母？
+  - 设了之后可以有额外性质
+- [[gcd-lcm]]
+- [[指数#应用]]设“最小素因子”
 # 设常数
 - [[integral-constant]]
 - [[proportional]]

@@ -46,12 +46,13 @@
 ### 帮助理解记忆
 #### 种类
 - 用特例记忆一般情况（特例好记，一般情况不好记）
-- 用一般情况记忆特例（少记一些东西）
-  - 例如用[[moment]]公式记忆[[variance]]公式
-    - [[gamma-distribution]]
-- 用特例检验你记忆结论正确性
+- 用一般情况记忆特例（少记那些特例）
+- 特例和一般都记，用特例检验你记忆的一般结论正确性
 - 用特例帮助理解，减少抽象程度
 #### 例子
+- 用[[moment]]公式记忆[[variance]]公式
+  - 如[[gamma-distribution]]
+- [[euler-theorem]]中费马小定理
 - [[linear-transform#多元随机变量multivariate]]
 - [[4-probability#4.5]] card game
 - [[q-learning-overestimation]]
