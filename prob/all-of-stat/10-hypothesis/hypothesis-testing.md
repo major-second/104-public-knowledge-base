@@ -3,7 +3,7 @@
   - [[非参数检验]]
 - 总体
   - 单总体
-    - [[parametric-or-not#non-parametric]]
+    - [[non-parametric]]
       - 模型好不好？[[拟合优度检验]]
       - 是否[[normal]]
     - [[parametric]]

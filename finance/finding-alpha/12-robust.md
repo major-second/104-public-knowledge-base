@@ -6,7 +6,7 @@
 - 参考[[normalization#排序]]
 - 提升invariance（对不同universe）
 - ordinal scale
-- 是一种非参数模型（参考[[parametric-or-not]]）
+- 是一种[[non-parametric]]
   - 在参数模型的[[hypothesis-testing]]不通过时常用！
 - 需要更少假设。容易处理极端值
 - quantiles approximation：如最小化平方残差的分位数（"median squares minimization"）

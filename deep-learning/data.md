@@ -7,7 +7,7 @@
 - 实践：[[dataset]], [[dataloader]]
 - 是否“太多”参考：[[resource-management/commands]]
 # 统计上性质
-- 神经网络显然属于[[parametric-or-not#non-parametric]]，没有参数假设
+- 神经网络显然属于[[non-parametric]]，没有参数假设
 - 但是需要条件
   - [[normalization#减去均值]]
     - 否则[[data#恒正问题]]

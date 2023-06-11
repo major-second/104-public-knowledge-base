@@ -16,7 +16,7 @@
 - 有了[[优良标准]]就当然可找[[optimal-estimator]]
 # 相关链接
 - [[confidence-interval]]
-- [[parametric-or-not#non-parametric]]
+- [[non-parametric]]
   - [[empirical-distribution-function]]
   - [[密度函数估计]]
 # 用作精确计算
