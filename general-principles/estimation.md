@@ -19,9 +19,14 @@
 - [[inequalities#不等取等]]
 ## 统计
 - [[2-estimation]]
-- [[confidence-interval]]
-  - [[asymptotically-normal]]
-  - [[LLN]], [[central-limit]]，例如$1000$个[[iid]]伯努利[[bernoulli-binom#bernoulli]]分布求和
+  - [[point-estimation]]
+  - [[confidence-interval]]
+## 渐近行为
+- “认为$n$足够大”
+- [[asymptotically-normal]]
+  - [[asymptotically-normal#normal-based interval]]
+  - 这个“近似估算”和刚刚的[[estimation#统计]]是两回事，虽然也出现在统计学
+- [[LLN]], [[central-limit]]，例如$1000$个[[iid]]伯努利[[bernoulli-binom#bernoulli]]分布求和
 ## 虚假规律
 - 一些不成立的“规律”可以用于给出估计值
 ### $Ef(X)\approx f(EX)$

@@ -1,11 +1,13 @@
 - 前置
   - [[forall#一致]]
   - [[2-estimation]]
-- 置信水平
+  - [[数理统计学讲义/1-introduction#估计量和统计量]]
+- 置信水平$1-\alpha$
   - 类似[[优良标准]]，同样也是参数一律平等
   - 要求参数落在两个统计量间概率一致地大于等于$\gamma$，置信水平$\gamma$
     - 常见0.95（剩余0.05），0.05往往记为$\alpha$
-  - 频率派认为参数不是随机的，区间端点（统计量）随机，[参考](#interpretation)
+  - 频率派认为参数不是随机的，区间端点（是统计量）随机
+    - [[confidence-interval#interpretation]]
 - 优良
   - 定性标准：置信水平高，置信区间小（窄）
   - 但宽度往往是随机变量，没法人为确定
@@ -16,8 +18,8 @@
 - 优良性传递
   - [[相合性]]往往可传递，[[unbiased]]不行
   - 置信区间可以（比如已知$\sigma^2$置信区间，求$\sigma$置信区间）
-# 对比点估计
-- [[2-estimation]]点估计
+# 对比[[point-estimation]]
+- [[point-estimation]]
   - 由样本观测值计算出某个统计量，作为估计量
   - 参考[[数理统计学讲义/1-introduction]]
 - 而现在计算出两个统计量，作为上下限
@@ -28,7 +30,7 @@
 - 注意必读[[confidence-interval#interpretation]]
 # 方法
 - 基本通用的
-  - [[asymptotically-normal#normal-based interval]]，需要[[standard-error]]
+  - [[asymptotically-normal#normal-based interval]]，需要[[standard-error]]，是[[estimation#渐近行为]]
 - [[pivotal-interval]]
 - [[统计量方法]]
 - [[hoeffding#等价形式]]
@@ -37,7 +39,7 @@
   - 其中有[[asymptotically-normal#normal-based interval]]
 - [[hypothesis-testing#confidence-interval]]
 # interpretation
-- **置信水平不是概率**
+- **置信水平不是$\theta$满足条件的概率**
   - 置信水平$\gamma$不是说$\theta$以$\gamma$概率怎么怎么样
   - 现在不是[[bayes-inference]]
     - 在那里可以说参数有概率分布，先验后验

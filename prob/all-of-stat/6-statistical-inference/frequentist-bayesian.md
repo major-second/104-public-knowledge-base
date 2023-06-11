@@ -1,3 +1,5 @@
+- frequentist
+  - [[confidence-interval#interpretation]]
 - bayesian
   - [[bayes-theorem]]
   - [[bayes]]
