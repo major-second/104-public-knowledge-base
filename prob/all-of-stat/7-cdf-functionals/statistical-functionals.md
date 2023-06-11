@@ -1,3 +1,4 @@
+# examples of statistical functionals
 - $T(F)$, function of $F$
   - [[expectation]] $\mu =\int xdF(x)$
   - [[variance]] $\sigma^2=\int (x-\mu)^2 dF$

@@ -7,5 +7,8 @@
   - [[method-of-moments]]
   - [[maximum-likelihood]]
 # parameter of interest
-- 例如参数二维$(\mu,\sigma)$，关心$\mu$ of interest, 则$\sigma$是nuisance
-- 可能是复杂，复合的，例如$P(X>1)=1-\Phi(\frac{1-\mu}{\sigma})$，其中$\Phi$是标准[[normal]]的[[random-variable-functions#cdf]]
+- 例如参数二维$(\mu,\sigma)$
+  - 关心$\mu$则是parameter of interest
+  - 此时$\sigma$是nuisance parameter
+- parameter of interest可能是复杂，复合的
+  - 例如$P(X>1)=1-\Phi(\frac{1-\mu}{\sigma})$，其中$\Phi$是标准[[normal]]的[[random-variable-functions#cdf]]

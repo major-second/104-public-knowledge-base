@@ -3,6 +3,7 @@
 - 如
   - 待推断$F$可取范围是所有可能的[[random-variable-functions#cdf]]
   - [[empirical-distribution-function]]非参地估计出$F$
-    - 从而估计统计泛函[[statistical-functionals]]$\mu = \int xdF$
+    - 从而估计统计泛函[[statistical-functionals]]，例如[[statistical-functionals#examples of statistical functionals]]
     - 此时回忆[[statistical-inference]]说的推断分布**或分布某些性质**
+    - 当然实际上，有时“估计出$F$”这一步被弱化，我们相当于直接得到了[[statistical-functionals]]. 但根据定义可知用的是非参数模型
   - [[bootstrap-in-stats]]估计[[standard-error]], [[confidence-interval]]
