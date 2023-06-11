@@ -1,5 +1,6 @@
 - 别名learning
-- 给定数据，推断分布（或分布某些性质如[[expectation]]）
+- 给定数据$X_1,\cdots,X_n\sim F$，推断分布$F$
+  - 或分布某些性质如[[expectation]]
 - 常见
   - [[2-estimation]]
     - 点估计point estimation

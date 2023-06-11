@@ -1,0 +1,8 @@
+- 前置
+  - [[parametric-or-not]]
+- 如
+  - 待推断$F$可取范围是所有可能的[[random-variable-functions#cdf]]
+  - [[empirical-distribution-function]]非参地估计出$F$
+    - 从而估计统计泛函[[statistical-functionals]]$\mu = \int xdF$
+    - 此时回忆[[statistical-inference]]说的推断分布**或分布某些性质**
+  - [[bootstrap-in-stats]]估计[[standard-error]], [[confidence-interval]]

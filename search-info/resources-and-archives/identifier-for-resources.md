@@ -8,3 +8,7 @@
   - 一个例子：`10.1002/9781119571278`
   - 就方便去[Sci-Hub](https://www.sci-hub.st/)找
   - 也可以去[doi官网](https://www.doi.org/)看
+- 一个通用方式
+  - 白色平台（京东当当淘宝豆瓣 谷歌学术 WOS等）找identifier
+    - 如参考[[academic]]
+  - 灰色平台（如[[download-resource]], [[baidu-net-disk]]）通过identifier找资源
