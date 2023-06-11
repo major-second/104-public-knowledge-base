@@ -1,8 +1,22 @@
+- 前置
+  - [[sampling-distribution]]
+  - [[variance]]
 - 和标准差，[[variance]]关系
   - The standard deviation is a measure of the amount of variation or dispersion of a set of values. It is calculated as the square root of the [[variance]].
   - The standard error is a measure of the variability of the sample mean. It is the standard deviation of the sampling distribution of the mean.
   - In other words, the standard deviation is a measure of the variability within a sample, while the standard error is a measure of the variability between samples.
-- 计算方法
+# estimated SE
+- 确定$n$则
+  - 待[[statistical-inference]]分布$F$以及
+  - 估计量表达式（和各样本$X_i$关系式）
+  - 能确定[[sampling-distribution]]
+- 因此standard error当然是[[statistical-functionals]]
+- 自然也可以各种估计[[2-estimation]]，例如
+  - [[standard-error#multi-ary SE]]
+  - 直接算出用参数表示的[[standard-error]]，然后直接代入参数的[[point-estimation]]值
+    - 这可称为[[parametric]] inference of [[standard-error]]
+    - 例如[[bernoulli-binom#point-estimation]]
+# 计算方法
   - [[bootstrap-in-stats]]
     - 但你总不能老是多次重复实验，这多笨啊
   - [[maximum-likelihood#equivariance]]，“复合”，得到的参数？[[mle-delta-method]]
@@ -11,7 +25,7 @@
     - [[bernoulli-binom]]
     - [[standard-error#multi-ary SE]]
     - [[normal]]，[[variance]]估计，[[chi-square]]
-- 应用
+# 应用
   - [[t-distribution]] stats
   - [[confidence-interval]]，尤其是[[asymptotically-normal#normal-based interval]]
   - [[wald-test]]

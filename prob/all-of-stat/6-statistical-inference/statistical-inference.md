@@ -1,12 +1,12 @@
 - 别名learning
 - 给定数据$X_1,\cdots,X_n\sim F$，推断分布$F$
   - 或分布某些性质如[[expectation]]
-- 常见
+# 分类
+- 多种分类标准
+- [[parametric-or-not]]
+- [[frequentist-bayesian]]
+- > estimation, confidence sets, or hypothesis testing
   - [[2-estimation]]
-    - 点估计point estimation
-      - 参数$\theta$确定但未知，估计值$\hat \theta$是随机变量
-      - 这个$\hat \theta$分布：sampling distribution, 它的标准差称为标准误[[standard-error]]
-      - 往往不能精确计算，需要估计例如[[standard-error#multi-ary SE]]
-      - [[MSE]]，[[standard-error]]，bias形成[[MSE#bias-variance tradeoff]]
-    - 区间估计[[confidence-interval]]
+    - [[point-estimation]] 点估计
+    - [[confidence-interval]] 区间估计
   - [[hypothesis-testing]]

@@ -1,11 +1,12 @@
 - 前置[[2-estimation]]
   - MSE：$E_\theta (\hat \theta - \theta)^2$，也就是估计出的参数和实际参数之间的平方差的期望
   - MSE是评估估计量好坏的一种方法，它的值越小，说明估计量越准确
-- 参考[[优良标准]]
+- 参考[[优良标准]]，[[unbiased]]
 # bias-variance tradeoff
 - 前置
   - [[tradeoff]]
   - [[variance#与$EX^2$关系]]
+    - 马上得到：[[unbiased]]时[[standard-error]]平方就是MSE
   - [[moment]]
 - 参考
   - [[orthogonal-decomposition]]

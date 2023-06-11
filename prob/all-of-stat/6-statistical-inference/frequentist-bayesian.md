@@ -1,0 +1,3 @@
+- bayesian
+  - [[bayes-theorem]]
+  - [[bayes]]

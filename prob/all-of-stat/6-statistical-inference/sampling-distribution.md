@@ -1,0 +1,8 @@
+- 前置[[point-estimation]]
+- 和样本量$n$有关
+- 该分布有[[优良标准]]
+  - [[unbiased]]
+  - [[相合性]]
+  - [[asymptotically-normal]]
+- 分布数字特征例如[[expectation]], [[variance]]在给定$n$时，也是[[statistical-functionals]]
+  - sampling distribution的标准差称为标准误[[standard-error]]

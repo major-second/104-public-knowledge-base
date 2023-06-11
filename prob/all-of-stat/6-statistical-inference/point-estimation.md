@@ -1,0 +1,12 @@
+- 前置
+  - [[random-variable-introduction]]
+  - [[数理统计学讲义/1-introduction#估计量和统计量]]
+  - [[statistical-inference]]
+- 以频率派为例：参数$\theta$确定但未知
+  - 估计值$\hat \theta$是随机变量
+    - 由$X_1,\cdots,X_n$表示，记作$g(X_1,\cdots,X_n)$
+    - 参考中文书的[[数理统计学讲义/1-introduction#估计量和统计量]]，这是个“统计量”
+    - 它的分布称为[[sampling-distribution]]
+- [[MSE#bias-variance tradeoff]]
+  - [[MSE]]，[[standard-error]]，bias三者关系
+  - 推论：若[[unbiased]]或者bias趋于0，且[[standard-error]]趋于0则[[MSE]]趋于0，待估计参数[[converge-in-l2]]从而[[converge-in-probability]]，也就是弱[[相合性]]

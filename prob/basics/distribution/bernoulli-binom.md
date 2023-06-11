@@ -1,5 +1,12 @@
 # bernoulli
 - $P(X=1)=p, P(X=0)=1-p$
+## [[point-estimation]]
+- 注：都确定分布种类，当然[[parametric]]
+- $\hat p_n = \bar X:=n^{-1}\sum_iX_i$
+- [[unbiased]]
+- [[variance]]为$\frac{p(1-p)}n$和[[sampling-distribution]]对应的样本量$n$有关
+- 从而[[standard-error]]为$\sqrt{\frac{p(1-p)}n}$
+  - [[standard-error#estimated SE]]：可以先[[parametric]]估计$p$，再代入$\hat p$值得到
 # binom
 - $P(X=k)=C_m^k \theta^k(1-\theta)^{m-k},k=0,1,\cdots,m$
 - 是独立同分布[bernoulli](#bernoulli)之和（[[可加性]]），因此
