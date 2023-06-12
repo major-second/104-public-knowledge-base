@@ -12,7 +12,7 @@
   - 没法解析计算就[[stochastic-simulation]]计算，最朴素思想是只考察那些得到指定$x^n$的$\theta$（慢）
 - 计算后验之后可从而得到
   - [[point-estimation]]
-    - 例如[[decision]]
+    - 例如[[statistical-decision]]
   - [[confidence-interval]]
   - 参数的函数期望（有了分布当然能算）
 # 硬币例子

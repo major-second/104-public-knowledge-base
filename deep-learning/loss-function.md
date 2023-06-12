@@ -1,0 +1,3 @@
+- 联系[[statistical-decision]]
+  - 注意深度学习中常用的结果和结果求[[ln-loss]]，含义其实不同于[[statistical-decision#loss function]]，那里是参数的距离，这里是预测结果的距离
+  - 但是[[tricks#防过拟合]]中的[[ln-loss]]确实是参数（到0）的距离

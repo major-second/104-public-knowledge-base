@@ -1,0 +1,4 @@
+- 前置[[statistical-decision]]
+- [[ln-loss#l2]]: posterior [[expectation]]
+- [[ln-loss#l1]]: posterior median
+- 01: mode 众数

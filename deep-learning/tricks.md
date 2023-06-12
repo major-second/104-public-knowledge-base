@@ -23,7 +23,7 @@
 - 原理参考[[2-eval]], [[overfit]]等
 - early stop（即：看验证集，别等验证集loss回升了才停）
   - 其实践参考[[tensorboard]], [[checkpoint]]等
-- 增加正则化惩罚项作为损失函数
+- 增加正则化惩罚项到[[loss-function]]
   - 参考[[11-feature-selection]]中LASSO，岭回归
     - 其实[[11-feature-selection]]本身也是很有用的防过拟合手段！
   - l1: 可以导致稀疏性

@@ -16,7 +16,8 @@
   - utility对一局游戏中不同人不同，对一般情况下每个人也不同，不同偏好间我们不认为“谁更理性”
   - utility可以包含利他
 - decision theory: prob + utility
-  - 参考[[decision]]（贝叶斯估计等）
+  - 参考[[statistical-decision]]，[[bayesian-inference]]
+    - 其中有action，decision rule等词
   - 最大化效用期望（MEU）
   - DT-AGENT：注意要实时更新自己认为的概率分布（参考[[bayesian-inference]]）
 ## 12.2 Basic Probability Notation
