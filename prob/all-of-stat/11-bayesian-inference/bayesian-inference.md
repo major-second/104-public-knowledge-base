@@ -1,0 +1,28 @@
+- 前置
+  - [[statistical-inference]]
+  - [[frequentist-bayesian]]
+  - [[jane-street-introduction]]
+  - [[bayes-theorem]]
+  - [[归一化]]
+# 基本思想
+- 参考[[jane-street-introduction]] knowable unknowns
+- 即使是固定的东西也有概率说法
+- 先验、条件、后验
+  - 为了好解析计算，条件常用[[conjugate]]
+  - 没法解析计算就[[stochastic-simulation]]计算，最朴素思想是只考察那些得到指定$x^n$的$\theta$（慢）
+- 计算后验之后可从而得到
+  - [[point-estimation]]
+    - 例如[[decision]]
+  - [[confidence-interval]]
+  - 参数的函数期望（有了分布当然能算）
+# 硬币例子
+- 先验$W\in U[0,1]$
+  - 抛一次硬币，正面概率$1/2$
+- 观察m+n次m正n反，计算后验
+  - $f(w) = \frac{w^m(1-w)^n}{\int_0^1 w^m(1-w)^n dw}$
+  - $=\frac{w^m(1-w)^n}{B(m+1,n+1)}= \frac{w^m(1-w)^n}{m!n!/(m+n+1)!}$
+  - 参考[[B-function]]
+  - $B(m+1,n+1)=\Gamma(m+1)\Gamma(n+1)/\Gamma(m+n+2)=m!n!/(m+n+1)!$
+- 再抛一次正面概率
+  - $B(m+2,n+1)/B(m+1,n+1)=(m+1)/(m+n+2)$
+  - 验算：$m=1,n=0, P=2/3$，符合[[power-rule#速算应用]]快速验证结果

@@ -1,0 +1,4 @@
+- 前置[[bayesian-inference]]
+- 纯粹为了好算。共轭先验不本质
+  - [[normal]]的也是[[normal]]
+  - [[bernoulli-binom#bernoulli]]是[[beta-distribution]]

@@ -19,7 +19,7 @@
 # compared-to-confusion-matrix
 - 两个假设，一共有四个数值
   - 参考[[2-eval]]的$TP, FP, TN, FN$
-  - 但这里的$H_0,H_1$两者间如果没有概率的说法（不是[[bayes-inference]]）
+  - 但这里的$H_0,H_1$两者间如果没有概率的说法（不是[[bayesian-inference]]）
   - 那么就只有两个概率可以实际计算
   - [[2-eval]]的“准确率”算不了
   - 注：[[2-eval]]召回率对应[[power-level]]功效

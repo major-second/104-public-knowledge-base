@@ -21,19 +21,19 @@
 9.  略
     1.  [[5-martingale-and-random-walk]]法：第一问是赌赢一次收手，第二问是赌赢两次收手
     2.  注意这里的$-yp$意思就是如果赌输，就$-yp$，否则$+y(1-p)=+(1-p)(1p=+p)/p$，这样才是鞅
-10. [[bayes]]
+10. [[bayesian-inference]]
 11. 需要合理先验
     1.  比如先验1%，那么100次下来，几乎必定是不正常的……
 12. [[re-classification]]看每个位置
 13. 略
 14. 参见15
-15. [[bayes]]，$1/3, 1/2, 1/3$
+15. [[bayesian-inference]]，$1/3, 1/2, 1/3$
     1.  钻牛角尖：是不是如果两个女孩那么更容易让你知道？
     2.  知道一个女孩的名字，那也就是至少一个女孩嘛
 16. [[symmetry]]
     1.  需要给出：有些非工作日并不是周末
     2.  注意第一天是六、天、一都导致第四个工作日是星期四！！坑
-17. [[bayes]]
+17. [[bayesian-inference]]
 18. [[symmetry]]减去相等情况
 19. [[4-probability]] chess tournament
     1.  knock-out tournament: a competition in which a team or player is eliminated once and for all

@@ -2,4 +2,4 @@
   - [[confidence-interval#interpretation]]
 - bayesian
   - [[bayes-theorem]]
-  - [[bayes]]
+  - [[bayesian-inference]]

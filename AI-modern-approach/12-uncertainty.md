@@ -18,7 +18,7 @@
 - decision theory: prob + utility
   - 参考[[decision]]（贝叶斯估计等）
   - 最大化效用期望（MEU）
-  - DT-AGENT：注意要实时更新自己认为的概率分布（参考[[bayes]]）
+  - DT-AGENT：注意要实时更新自己认为的概率分布（参考[[bayesian-inference]]）
 ## 12.2 Basic Probability Notation
 - 参考[[7-logical-agents]]，那里的句子把世界分成非黑即白，现在只是认为什么世界比较可能
   - mutually exclusive and exhaustive: 恰好一个成立
@@ -67,7 +67,7 @@
 - 满足一些性质（如无矛盾，对应一般的逻辑，传递性等），则前述“概率”是唯一可能的建模方法
 - `however, practical demonstrations sometimes speak louder than proofs. The success of reasoning systems based on probability theory has been much more effective than philosophical arguments in making convert`
 ## 12.3 Inference Using Full Joint Distributions
-- 计算query命题后验（参考[[bayes]]）
+- 计算query命题后验（参考[[bayesian-inference]]）
 - full joint distribution就是一开始KB
 - 边缘概率分布：加起表中一行/一列
   - 名字来源：margins of insurance tables

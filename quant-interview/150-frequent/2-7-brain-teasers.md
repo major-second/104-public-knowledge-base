@@ -1,6 +1,6 @@
 todo
 1. 递推数列
-2. [[bayes]]
+2. [[bayesian-inference]]
 3. 
    1. 法一：神奇对称性，直接说明两种情况互斥包含所有
    2. 法二：[[naming#exists]]思想设而不求
