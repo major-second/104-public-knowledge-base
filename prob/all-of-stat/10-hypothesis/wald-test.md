@@ -4,5 +4,9 @@
   - [[standard-error]]的计算（估计）
 - 用于检验参数是不是给定值
 - 如果确实是给定值，那么根据[[asymptotically-normal]]，一定有$\frac{\hat\theta-\theta_0}{\hat {se}}$趋于$ N(0,1)$
-- 这就控制了[[type-i-ii-errors#type-i-error]]概率，从而确定[[power-level#水平]]，而[[power-level#功效]]没法保证
-- [[standard-error]]估计？各种方法都行，参考[[standard-error]]
+- 这就控制了[[type-i-ii-errors#type-i-error]]概率
+  - 具体：$P_{\theta_0}(|W|>z_{\alpha/2})\to P(|Z|>z_{\alpha/2})=\alpha$
+  - 其中$W\to Z$（标准[[normal]]）
+  - $z_{\alpha/2}$是[[character/quantile]]
+  - 从而确定[[power-level#水平]]，而[[power-level#功效]]没法保证
+- [[standard-error#estimated SE]]估计？那里提到的各种方法都行

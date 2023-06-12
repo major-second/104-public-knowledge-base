@@ -1,7 +1,7 @@
 # 分类
 - [[parametric-or-not]]
   - [[非参数检验]]
-- 总体
+- 总体数量
   - 单总体
     - [[non-parametric]]
       - 模型好不好？[[拟合优度检验]]
@@ -9,8 +9,8 @@
     - [[parametric]]
       - 模型设好了，参数是否大于/等于某某
   - 两总体
-    - 是否[[iid]]
     - 是否[[1-prob/independent]]
+    - 是否[[iid]]
   - 更多总体
 # 单总体[[parametric]]
 - $\Theta$分为
@@ -40,17 +40,22 @@
   - 该区间中参数$\theta$满足$X_i\in A(\theta)$
 - 这就说明对于一切参数，$X_i$使得$\theta\in S(X_i)$或$X_i \in A(\theta)$的概率依据$\alpha$定义大于等于$1-\alpha$
 - 所以$S(X_i)$是置信水平为$1-\alpha$的置信区间
-- 总之：置信水平是大数，检验水平是小数
+- 总之：置信水平是大数（如0.95），检验[[power-level#水平]]是小数（如0.05）
 - 注：这里对功效没有要求。但如果接受域开太大，显然没有什么有意义结果
 # 检验法
-- 一种检验法：[[似然比]]
-  - 参数空间为两个元素，是[[UMP]]
-- 拓展一点：[[单参数]]情形
-- 更加拓展，实用：[[广义似然比]]，先有结果，再有（可能的）最优性质
-  - todo 看到132页了
-- [[p-value]]方法：相比直接用[[power-level]]中水平$\alpha$确定临界值，能获得更多信息。先有$p$再有$\alpha$
-- 特殊情形：伯努利分布的$p$的假设检验：[[比率]]
-- 一个通法：[[wald-test]]
+- 通法
+  - [[p-value]]方法
+    - 相比直接用[[power-level]]中水平$\alpha$确定临界值，能获得更多信息
+    - 先有$p$再有$\alpha$
+  - [[似然比]]
+  - [[wald-test]]
+  - [[permutation-test]]
+    - 联想[[uniform-distribution]]中说到的涉及[[normalization#排序]]
+- 特殊方法
+  - 伯努利分布的$p$的假设检验：[[比率]]
+  - [[pearsons-chi-square-multinomial]]
+    - 需要[[chi-square]]
+  - [[拟合优度检验]]
 # 例子
 - one sided: $H_0:\theta=\theta_0\quad vs.\quad H_1:\theta\ne \theta_0$
 - two sided: $H_0:\theta\le \theta_0\quad vs.\quad H_1:\theta> \theta_0$
