@@ -3,8 +3,9 @@
 - [[deep-learning/optimization]]
 - [[11-feature-selection#近端梯度下降]]
 # 解析求解
-- [[monotonous#数学]]
+- [[optimization-using-derivatives]]
 - [[multi-ary#定义和计算]]
 - [[lagrange]]
   - [[distance-to-hyperplane]]
   - [[ball-tangent-optimal]]
+- [[convex-optimization]]

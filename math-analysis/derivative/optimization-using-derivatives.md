@@ -1,0 +1,4 @@
+- 一元
+  - [[monotonous#数学]]
+- 多元、偏导
+  - [[maximum-likelihood]]

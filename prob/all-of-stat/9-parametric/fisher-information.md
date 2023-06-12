@@ -9,6 +9,7 @@
   - $s(X;\theta):=\frac{\partial logf(X;\theta)}{\partial \theta}$
 - 观察
   - 同时和$\theta,X$有关
+  - 对于某个$\theta$，是[[数理统计学讲义/1-introduction#估计量和统计量]]统计量
   - 这里$X$是一维的
 ## [[random-variable-functions#pdf-continuous]]性质
 $\int f(x;\theta)dx=1$
@@ -63,6 +64,7 @@ $\frac{\partial}{\partial \theta}\int f(x;\theta)dx=0$
 - $f(x;p)=(1-p)^{1-x}p^x$
 - $I(p)=Var(-\frac{1-x}{1-p}+\frac xp)=E()^2$
 - $=q/q^2+p/p^2=\frac{1}{pq}$
+- 回忆[[bernoulli-binom]]的极大似然估计$\hat p = \bar X$，[[standard-error]]为$\sqrt{p(1-p)}=\sqrt{1/I(p)}$
 - 参考[[characters-list]]，[[bernoulli-binom#bernoulli]]方差就是$pq$
 ## [[normal]]
 - $f(x;\mu,\sigma)=\frac 1{\sqrt {2\pi} \sigma}exp(-\frac{(x-\mu)^2}{2\sigma^2})$

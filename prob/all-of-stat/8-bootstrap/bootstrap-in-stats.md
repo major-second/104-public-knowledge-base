@@ -15,11 +15,13 @@
 - 同一个词，侧重点不同，但都体现“自己做”意思
 # 概述
 - 举例：需要估计一个[[statistical-functionals]]：$T_1(F):=Var_F(T)$
-- 如果采用[[statistical-functionals#plug-in estimator]]，可直接代入[[empirical-distribution-function]] $\hat F_n$，也就是$Var_{\hat F_n}(T)$
-- 现在怎么计算$Var_{\hat F_n}(T)$
+  - 回忆[[statistical-functionals#examples of statistical functionals]]
+1. 转化1：如果采用[[statistical-functionals#plug-in estimator]]，可直接代入[[empirical-distribution-function]] $\hat F_n$，也就是$Var_{\hat F_n}(T)$
+2. 转化2：估算$Var_{\hat F_n}(T)$
   - 可以假设我们能[[stochastic-simulation]]出满足$\hat F_n$的许多($B$)个大小为$n$的数据集，对他们分别计算$T$，再求[[variance]]
   - 写成公式$v_{boot}=\frac 1B \sum_{b=1}^B(T^*_{n,b}-\frac 1B \sum_{r=1}^BT^*_{n,r})^2$
-- 最后问题：怎么[[stochastic-simulation]]出$\hat F_n$
+    - 这计算了$B$个$T$，每个$T$需要$n$个样本点
+3. 转化3：怎么[[stochastic-simulation]]出$\hat F_n$
   - 根据[[empirical-distribution-function]]的定义，直接[[iid]]均匀抽即可
 # [[confidence-interval]]
 1. 直接利用算出的[[standard-error]]，计算[[asymptotically-normal#normal-based interval]]
@@ -28,6 +30,7 @@
       1. 这点就和[[pivotal-interval#举例]]中很多例子不同了！
    2. 然后估计$H^{-1}(\alpha/2)\approx \hat \theta^*_{\alpha/2}-\hat \theta_n$
       1. 其中$\hat \theta^*_{\alpha/2}$是样本[[character/quantile]]
+      2. 真实值$\hat \theta$用$\hat\theta_n$估计
    3. 即可得到结果$(2\hat\theta_n-\hat \theta ^*_{1-\alpha/2},2\hat \theta_n-\hat \theta^*_{\alpha/2})$
 3. percentile interval: 直接根据bootstrap算出$\hat \theta$的分布找[[character/quantile]]
    1. $(\theta^*_{\alpha/2},\theta^*_{1-\alpha/2})$

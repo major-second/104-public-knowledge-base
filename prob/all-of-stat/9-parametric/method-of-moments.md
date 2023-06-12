@@ -10,7 +10,7 @@
 - 只要明确上面，就容易理解
   - $\theta_i = f_i(V_1,\cdots,V_m)$（反函数组）
   - 反函数组嘛，那就几个参数就需要几阶矩（几个$V_k$）
-  - 注意这里停留在纯理论，没有进行[[2-estimation]]
+  - 注意这里停留在纯理论，没有进行[[2-estimation]]实际计算
 - 矩法 method of moments
   - 用样本矩估计矩，得到$\hat V_k$
   - 然后代入反函数得到$\hat\theta_i$从而$\hat \theta$
@@ -21,4 +21,7 @@
 - 拓展：$g$变化，不再是幂函数
   - 比如不再是原点矩，改成中心矩
   - $g$还可变成别的，还可以用相同方法
-    - 如[[maximum-likelihood]]中也提到隐式的mle解也类似
+    - 如[[maximum-likelihood]]中也提到隐式的mle解也类似原理
+- 应用
+  - 相比[[maximum-likelihood]]可能好算
+  - 可以作为[[convex-optimization]]的初值

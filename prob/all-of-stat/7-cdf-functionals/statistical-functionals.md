@@ -5,15 +5,18 @@
   - [[character/quantile]] $z_{\alpha}=F^{-1}(\alpha)$
 # plug-in estimator
 - 直接代入[[empirical-distribution-function]] $\hat F_n$
+  - 这个代入（plug-in）请区别于[[bernoulli-binom#point-estimation]]中的代入$p=\hat p$，那里是[[parametric]]
 - [[linearity]]特例
   - $T(F)=\int r(x)dF(x)$，$T(aF+bG)=aT(F)+bT(G)$
   - 此时$T(\hat F_n)$根据[[empirical-distribution-function]]的定义得到$\frac 1n\sum r(X_i)$
-  - [[expectation]], [[variance]]都是
+  - [[expectation]], [[variance]]都是此类
 - 例子
   - [[expectation]]: $\hat \mu =\bar X$
   - [[variance]]: 代入计算得$\hat \sigma^2 = \frac 1n \sum(X_i-\bar X)^2$
     - 这和[[variance#unbiased估计]]不同
-    - 也就有了[[standard-error]]，可以在[[asymptotically-normal]]情况计算[[asymptotically-normal#normal-based interval]]
+    - 也就得到（均值的）[[standard-error]]，可以在[[asymptotically-normal]]情况计算[[asymptotically-normal#normal-based interval]]
+    - 注意书本上强调的“现在可能算不出的[[standard-error]]”是一般的[[statistical-functionals]] $T(\hat F_n)$的[[standard-error]]，不是[[expectation]]的
   - [[moment]]中skewness
   - [[cov#corr]] -> sample correlation
+  - 以上几个都是基于[[linearity]]特例，然后做函数复合（除法，乘方等）
   - [[character/quantile]] -> sample quantile
