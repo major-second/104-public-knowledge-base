@@ -1,0 +1,11 @@
+- LASSO (Least Absolute Shrinkage and Selection Operator)
+  - 无解析解，参考[[lasso#近端梯度下降]]
+# 近端梯度下降
+- $min f(x)+\lambda ||x||_1$，$f$可导，$\nabla f$李普希茨连续
+- $x_k$附近把$f$泰勒展开（且设海瑟矩阵近似为$L/2$）
+- 则$\hat f(x)\approx f(x_k)+\langle \nabla f(x_k),x-x_k\rangle + \frac L2 ||x-x_k||^2$
+- 配方，发现最小值在$x_{k+1}=x_k-\frac 1L\nabla f(x_k)$取得
+- 这和梯度下降在形式上对齐
+- 所以可以类比：对$L_1$正规化后的问题，每次迭代可以写成$x_{k+1}=argmin_x \frac L2 ||x-z||_2^2+\lambda ||x||_1$，多加了一项
+- 这可以分类讨论解析解了。具体地，$|z^i|\le \lambda/L$时就出现0，特征被滤除
+- 注：关键是发现$||x-z||^2$没有“交叉项”，这是[[forall]]思想

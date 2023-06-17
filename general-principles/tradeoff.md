@@ -35,7 +35,6 @@
   - [[hash]]
   - [[打表]]
 # 其它
-- 风险和收益[[portfolio-optimization]]
 - 写代码
   - 代码[[readability]]
   - 写代码时间
@@ -49,3 +48,16 @@
   - [[multi-arm-bandit]]
   - [[mdp]]，更一般的rl
 - [[encode-decode#有损压缩]]
+## 风险和收益
+- [[portfolio-optimization]]
+- [[sharpe]]
+# 不可能三角
+- 原始：[蒙代尔不可能三角](https://www.zhihu.com/question/390881054)
+  - 货币自主权、汇率稳定和资本自由流动之间，必须舍弃一个
+  - 内地舍弃：资本自由流动
+- [各种不可能三角索引](https://www.zhihu.com/question/299541816)
+  - 是一种[[naming]]手段，“借用”名字。毕竟蒙代尔不可能三角太有名了
+- 有时三角可以形成2+1结构，特别是“2”的两者之间很容易互为替代时
+  - 风险低、收益高、容量大不可能三角，[[tradeoff#风险和收益]]
+  - 由于可以加杠杆，“风险低、收益高”两者可以连在一起，用[[sharpe]]考察
+  - 结果就是[[sharpe]]和AUM tradeoff
