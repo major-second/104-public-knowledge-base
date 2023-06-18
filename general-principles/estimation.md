@@ -11,6 +11,10 @@
 - [[normal#cov#corr绝对值期望]]，“集中赤道附近”
 - 六面色子，丢出点100次方期望，约等于$6^{100}/6=6^{99}$
 # 数学中
+## 稳态
+- 非稳态，局部稳态近似
+- 参考[[2-intelligent-agents#2.3 The Nature of Environments]]
+- 例[[poisson-process]]盖革计数器例子
 ## [[inequalities]]
 - 给出界（所谓“推bound”）
   - [[2-7-brain-teasers]]第16题
@@ -36,6 +40,7 @@
 - [[q-learning-overestimation#single estimator]]
 - [[normal#cov#corr绝对值期望]]用到例如$f(x)=\sqrt x$情况等
 ## 泰勒
+- 非线性，局部[[linearity]]近似
 - [[小量近似]]
   - 例如[[转动惯量#平行轴定理]]例题
 ### 牛顿余项

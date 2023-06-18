@@ -2,7 +2,9 @@
 - 意义
   - 一一对应随机变量分布，可还原，和[[cov]], [[expectation]]等不同
   - 独立随机变量和的特征函数是特征函数的积
+    - 应用：[[pure-birth-process]]，先找到[[1-prob/independent]]随机变量和，再找到特征函数
   - 对$t$求导可求矩
+- 参考[[characters-list]]
 # 例题
 - 两个[[iid]]随机变量相加是[[uniform-distribution]] $U[0,1]$
   - $f(t)=Ee^{itx}=\int_0^1 e^{itx}dx=\frac{e^{it}-1}{it}$

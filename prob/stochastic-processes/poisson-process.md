@@ -1,5 +1,7 @@
 - 前置[[poisson]]
   - 来自稀有事件、小数定律
+    - 例子：盖革计数器，若半衰期远远长于考察的$t$，则考察时间内总物质的量近似不变
+    - [[estimation]]
   - $t$时间内表示有多少个事件
   - non-decreasing step function
 - 参考[[1-elements]]

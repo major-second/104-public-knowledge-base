@@ -14,7 +14,7 @@
     - 扩写、润色等：easyessay
     - 校对等：grammerly
   - [[overleaf]]
-  - 当然，[[chatgpt]]肯定很有用
+  - [[chatgpt]]
 - [视频压缩](https://compress-video-online.com/zh)
 - https://www.pdf2go.com/
   - 可以做的：![](pdf2go.png)

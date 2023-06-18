@@ -7,6 +7,9 @@
 - [[method-of-moments]]为了方便写出反函数，简记$k$阶矩为$V_k$
 - 对换了的新元求导，如[[maximum-likelihood]]中[[normal]]
 - [[pdf-transform]]
+- [[first-order-linear#常数变易法]]
+  - [[poisson-process]]
+  - [[pure-birth-process]]
 ## 一般换什么
 - 根号下
   - $cos(\sqrt{1-\sqrt{x^2+5x+7}}+\sqrt{x^2+5x+6})=cos(\sqrt{1-t}+\sqrt{t^2-1})$

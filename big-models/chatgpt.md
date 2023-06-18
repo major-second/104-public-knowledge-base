@@ -6,9 +6,13 @@
     - 用不了的node表现：![](chatgpt-non-usable-node.png)
 # 用法
 - 基本：在下方框敲东西让它回答
-  - 可使用中文/英文/各种文字 [[region-language]]
-  - 当然英文效果好
-  - 中文在2023.6已经可能触发风控被ban 参考[[openai-account]]
+  - [[region-language]]
+    - 可使用中文/英文/各种文字
+    - 当然英文效果好
+    - 中文在2023.6已经可能触发风控被ban
+      - 参考[[openai-account]]
+      - 因此需要[[web-page-tools]]翻译工具结合
+  - 也可结合[[region-language#IME]]语音输入法练口语
 - 可以编辑之前的提问，或重试等，回答可能更好
 - 回答不完整
   - 某[[general-principles/upgrade]]前，可以说`continue`或`继续`

@@ -1,0 +1,9 @@
+- 参考思想
+  - [[estimation]]
+  - [[discrete-continuous]]
+- 例如[[poisson-process]], [[pure-birth-process]]
+  - 本质上是
+    - $P_n(t+h)-P_n(t)=coef\cdot h +o(h)$
+    - $\frac{P_n(t+h)-P_n(t)}h=coef\cdot h +o(1)$
+    - $h\to 0^+$可得单边导数，类似可得另一边
+  - 做法和[[trigonometric-derivative]]之类的类似，先写“正常”式子再取微元
