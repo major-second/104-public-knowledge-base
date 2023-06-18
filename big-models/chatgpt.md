@@ -1,4 +1,8 @@
-- 前置[[openai-account]]
+- 前置
+  - [[openai-account]]
+  - [[proxy-basics]]
+  - 适当[[node]]
+    - 用不了的node表现：![](chatgpt-non-usable-node.png)
 # 用法
 - 在下方框敲东西让它回答
   - 可使用中文/英文/各种文字

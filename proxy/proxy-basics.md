@@ -15,11 +15,11 @@
 |支付宝|不能开代理|
 |连接公用（机场酒店等）wifi的登录|不能开代理
 |公司相关，例如：`Windows开始菜单 - Access work or school`，Teams企业版|有些不能开代理|
-|被gcp或cloudflare等防火墙保护的网站|换个身份说不定就行了（比如校园网ip显然在论文ddl前对overleaf流量特别大）|
+|被特定算法或名单保护的网站。如[[openai-account]] [[chatgpt]]相关，被cloudflare保护等|换个身份说不定就行了（比如校园网ip显然在论文ddl前对overleaf流量特别大可能被ban）|
 |一些每天限额下载，限额使用的网站|换个身份说不定就行了|
 |[[wsa]]安装时|不能代理（否则可能操作复杂），需要翻墙，一般用[[vpn]]
 |[[spotify]]|每14天用指定国家ip登录，可用 cip.cc 查询地址等，参考[[configure-proxy]]
-|[[chatgpt]]|不翻墙可上，但不变ip用不了，所以可能需要[[configure-proxy]]全局代理。可能不能使用公司内网，有法务问题
+|[[chatgpt]]|不翻墙可上，但不变ip用不了，所以可能需要[[configure-proxy]]全局代理。可能不能使用公司内网，有法务问题。一些公交车[[node]]可能被[[chatgpt]] ban
 - 如何使用
   - [[node]]，可以是免费羊毛（这种可能有公安请喝茶风险，是蜜罐），学长送的，学校给的，实验室给的，自己买的
   - 客户端，如[[windows-proxy-client]], [[linux-proxy-client]], [[v2raya]]等

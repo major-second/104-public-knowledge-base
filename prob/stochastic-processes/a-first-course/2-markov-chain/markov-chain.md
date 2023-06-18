@@ -27,7 +27,7 @@
 - $X_{n+1}=(X_n-1)^{+}+\xi_n$
 - 也就是先有一个人排上（但是当前没人也不能变成负的），再排上新人
 - 注意$^+$记号
-  - 在[[random-walk#Wald引理]]中也有
+  - 在[[stopping-rule#Wald引理]]中也有
 ## INVENTORY MODEL
 - 如果少了，补货
 - $X_{n+1}=X_n- \xi_{n+1},s<X_n\le S$
