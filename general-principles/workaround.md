@@ -9,6 +9,7 @@
   - 例如[[nbextension]]装不了（可能由于公司电脑合规问题等），就用[[jupyter-tqdm]]代替进行计时
   - 例如VSCode中的[[jupyter-notebook]]用不了，就用[[vscode/edit]]编辑，但用[[jupyter-basics]]浏览器打开的方式调试
   - [[https-ssh]]
+  - [[chatgpt#绕过限制]]
 - 出现莫名其妙的问题，有时候换个东西就能解决问题，解释不通！
   - [[file-format#打开方式]]
     - 如播放器、浏览器
