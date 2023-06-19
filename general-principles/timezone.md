@@ -2,10 +2,13 @@
 # 总述
 - [wiki](https://zh.wikipedia.org/wiki/%E6%97%B6%E5%8C%BA)
 - [Time in the US](https://en.wikipedia.org/wiki/Time_in_the_United_States)
+- [[web-page-tools]]：https://www.timeanddate.com/worldclock/
 # 列表
 - [列表](https://zh.wikipedia.org/wiki/%E6%97%B6%E5%8C%BA%E5%88%97%E8%A1%A8)
 - [List](https://en.wikipedia.org/wiki/List_of_UTC_offsets)
 - 基准：[UTC (Coordinated Universal Time)](https://zh.wikipedia.org/zh-tw/%E5%8D%8F%E8%B0%83%E4%B8%96%E7%95%8C%E6%97%B6)，即格林威治时间，英国本土
+- UTC +9
+  - 东京
 - UTC +8
   - 北京时间 CST (China Standard Time)
     - 可能和 Central Standard Time 产生歧义

@@ -1,10 +1,13 @@
 在线工具，无需下载，就是好！
-- 大模型相关：[[chatgpt#downstream]]中一些是
+- 大模型相关
+  - [[chatgpt#友情链接]]
 - 代码
-  - 刷题：[[leetcode-solutions/0-metadata]]
+  - 刷题
+    - [[leetcode-solutions/0-metadata]]
   - 在线测试代码
     - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
-- 日程管理：[[dida]]网页版
+- 日程管理
+  - [[dida]]网页版
 - 文章相关
   - [三件套介绍](https://www.bilibili.com/video/BV17e4y1J7hi/?is_story_h5=false&p=1&share_from=ugc&share_medium=android&share_plat=android&share_session_id=b4d31482-9f69-4bcb-953b-77d06a68cade&share_source=WEIXIN&share_tag=s_i&timestamp=1669998588&unique_k=CfxDu9U)
     - deepl, easyessay, grammerly
@@ -49,3 +52,5 @@
 - 数学
   - https://www.wolframalpha.com/
   - 可以考虑适当使用[[example-doc/README]]打数学公式
+- [[timezone]]
+  - https://www.timeanddate.com/worldclock/
