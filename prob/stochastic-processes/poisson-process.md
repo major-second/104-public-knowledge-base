@@ -5,10 +5,13 @@
   - $t$时间内表示有多少个事件
   - non-decreasing step function
 - 参考[[1-elements]]
+
+[toc]
 # 推导
 ## 一阶
 - 计算泊松过程中一段时间内发生0个/1个事件概率
-- 无记忆性（独立[[1-prob/independent]]）
+- 无记忆性
+  - [[1-prob/independent]]
   - 因此$P_0(t+h)/P_0(t) = 1-p(h),\frac{P_0(t+h) - P_0(t)}{h} \to -常数\cdot P_0(t)$（当$h$小）
   - 其中$p(h)$表示泊松过程，$P_0$表示一段时间没有发生事件，常数来自$p(h)/h\to a$
 - 列解微分方程得到
@@ -29,9 +32,25 @@
   - 这个$P_m$恰为参数为$at$的[[poisson]]分布，符合原始物理含义！
   - 除了时间，有时也用于空间分布
 ## 截面
+- 参考[[symmetry#平移]]
 - 给定时间发生事件个数：[[poisson]]，离散
-- 给定事件需要多少时间：[[gamma-distribution]]，特例1个是[[gamma-distribution#指数分布]]
-  - 参考[[可加性]]
+- 给定事件需要多少时间：[[gamma-distribution]]
+  - [[general-principles/special-case]]1个是[[gamma-distribution#指数分布]]
+    - 参考[[可加性]]
+  - 相邻等待时间：[[iid]] [[gamma-distribution#指数分布]]
+    - 可能通过[[functional-equation]] $F(x+y)=F(y)+(1-F(y))F(x)$说明
+    - 参考[[stationary-independent-increment]]
+- 给定$t$时已经发生了$n$次，$X(t)=n$
+  - [[conditional]]
+  - $S_k$表示发生$k$次时花了多少时间
+  - 则$P(S_i<s_i,\forall i)=F(s_1,\cdots,s_n)$
+    - 其中$F$是[[order-statistics#multivariate]]的[[random-variable-functions#cdf]]
+    - 和[[uniform-distribution]]相关
+  - 证明：直接计算
+- [[bernoulli-binom]]
+  - $P(X(u)=k|X(t)=n)$
+  - $P(X_1(t)=k|X_1(t)+X_2(t)=n)$
+  - 本质都是[[symmetry#平移]], [[uniform-distribution]]原理
 # 例题
 - [[proportional#等车例题]]
 ## 曾经到过区间内
@@ -47,3 +66,20 @@
    - 第一次出现指定事件概率是[[gamma-distribution#指数分布]]
    - $2046$次中不出现概率是$1/e$
    - 因此$1000$中出现概率约等于$1-\frac 1{\sqrt e}$
+## electrical pulses
+- 来自[[a-first-course/0]]的简化
+- pulses arrive according to a [[poisson-process]]，每次来时都+1
+  - 这里是简化。原本是随机变量$X$
+- decay exponentially
+- 问题
+  - 求[[characteristic-function]]
+  - 简化问题：设考察1单位时间，$\alpha=1$
+- 法一：[[characteristic-function]]的[[expectation#linearity]]
+  - $\phi(t)=\sum_n \frac{\lambda^n e^{-\lambda}}{n!}[\int_0^1 exp(ite^{-s})ds]^n$
+  - $=e^{-\lambda}\sum_n \frac{[]^n}{n!}=e^{\lambda(\int exp(ite^{-s})ds -1)}$
+- 法二：[[discrete-continuous]]
+  - 不是严格，是一个大致体会
+  - [[bernoulli-binom]]
+  - 分拆成$m$个独立发生的小时间段，$\phi(t)=\prod_k (\frac \lambda m exp(ie^{-k/m}t)+1-\frac \lambda m )$
+  - $ln\phi(t)=\sum_k ln(1+\frac \lambda m (exp(ie^{-k/m}t)-1))\to \sum_k \frac \lambda m [exp(ie^{-k/m}t)-1]\to \lambda  \int_0^1 [exp(ite^{-s})-1] ds$
+  - 注意，给定$t$，总能找到大的$m$，所以有“$\to$”。但是$t$可能很大，所以$exp(ite^{-k/m})-1$不能$\to ite^{-k/m}$

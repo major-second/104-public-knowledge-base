@@ -4,6 +4,8 @@
 - [[autoregressive]]
 - [[stationary-processes]]
 - [[stationary-independent-increment]]
+  - [[poisson-process]]大量用到
+    - 其中还有很多和[[uniform-distribution]]关系密切
 - 平移不影响[[cov#corr]]
 ## 旋转
 - 或说中心对称、各向同性

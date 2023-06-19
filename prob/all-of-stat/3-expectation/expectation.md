@@ -19,6 +19,10 @@
   - 不像方差[[variance]]相加需要无关
     - [[1-prob/independent]]是无关的充分条件
   - 不像相乘的期望需要[[1-prob/independent]]
+- 分类讨论方式利用[[linearity]]，类似[[bayes-theorem#total-probability]]
+  - [[characteristic-function]]
+    - 例如[[poisson-process#electrical pulses]]用到
+  - [[conditional-expectation#Iterated Expecations]]
 ## 例
 - $n$点完全图$n(n-1)/2$条边，任取$m$条成图
   - 形成多少个四边形回路

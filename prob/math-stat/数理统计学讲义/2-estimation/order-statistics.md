@@ -1,3 +1,7 @@
+- 前置
+  - [[symmetry#轮换]]
+
+[toc]
 ## 定义
 - 从小到大排列$X_i$，得到$X_{(1)}\cdots X_{(n)}$
 - 对称性[[symmetry]]得到一个简单性质
@@ -6,6 +10,7 @@
     - 中间的各个序列统计量也有类似的对称性式子
   - 由此可找无偏估计（参考[[unbiased]]）
 ## 数字特征
+### 一般情况
 - [[iid]]，共同分布函数$F(x)$
     - $P(X_{(i)}\le F(x))$，实质上可以看作均匀分布中的$P(X_{(i)}\le p)$
     - 因此就有了先算密度函数再算分布函数的思路
@@ -14,7 +19,7 @@
       - $n-i+1$种谁是重点的可能性，其余的有$C_n^{i-1}$种可能
       - 然后重点自己$f=1$一下，剩下的给面子$x^{i-1}(1-x)^{n-i}$一下
     - 从而$F(x)$可算出
-- 均匀分布特例
+### [[uniform-distribution]]
   - 均值$i/(n+1)$
   - 方差$i(n+1-i)/((n+1)^2(n+2))$
     - 计算方差：参考[[variance]]的$EX^2 - (EX)^2$
@@ -22,6 +27,12 @@
       - $EX^2 = i(i+1)/(n+1)(n+2)$
     - 这里积分是不停使用[[integral-by-parts]]
     - 或者直接调用[[B-function]]结论
+#### [[multivariate]]
+- [[uniform-distribution]] [[multivariate]] [[random-variable-functions#cdf]]
+- $F(s_1,\cdots,s_n):=P(X_{(i)}\le s_i,\forall i)=n!\int_0^{s_1}\int_{x_1}^{s_2}\cdots\int_{x_{n-1}}^{s_n}dx_n\cdots dx_2 dx_1$
+  - [[conditional]]
+  - [[symmetry#轮换]]
+- 应用[[poisson-process#截面]]
 ## 一个有趣思想
 - 参考[[4-probability]]中card game
 - 如何直观记忆$i/(n+1)$

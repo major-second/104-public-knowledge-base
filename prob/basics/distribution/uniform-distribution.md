@@ -11,3 +11,4 @@
     - $\int_0^1 (1+1/x)dx$发散了
 - 参考
   - [[pdf-transform#cdf-uniform]]
+  - [[order-statistics#uniform-distribution]]
