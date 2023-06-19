@@ -1,0 +1,45 @@
+[toc]
+# 总述
+- [wiki](https://zh.wikipedia.org/wiki/%E6%97%B6%E5%8C%BA)
+- [Time in the US](https://en.wikipedia.org/wiki/Time_in_the_United_States)
+# 列表
+- [列表](https://zh.wikipedia.org/wiki/%E6%97%B6%E5%8C%BA%E5%88%97%E8%A1%A8)
+- [List](https://en.wikipedia.org/wiki/List_of_UTC_offsets)
+- 基准：[UTC (Coordinated Universal Time)](https://zh.wikipedia.org/zh-tw/%E5%8D%8F%E8%B0%83%E4%B8%96%E7%95%8C%E6%97%B6)，即格林威治时间，英国本土
+- UTC +8
+  - 北京时间 CST (China Standard Time)
+    - 可能和 Central Standard Time 产生歧义
+  - HKT 香港
+  - 新加坡
+- UTC
+  - 格林威治 GMT，英国本土，伦敦
+- UTC -4
+  - EDT Eastern Daylight Time
+    - Exactly -12 hours compared to Beijing Time
+    - 即：北京晚上八点，EDT同一天早上八点
+- UTC -5
+  - EST Eastern Standard Time
+    - New York, New Jersey, Pennsylvania, Florida (part)
+  - CDT Central Daylight Time
+- UTC -6
+  - CST Central Standard Time
+    - Florida (part), Illinois (Chicago)
+- UTC -7
+  - Mountain Standard Time
+- UTC -8
+  - Pacific Standard Time
+    - California (Los Angeles)
+- UTC -9
+  - Alaska
+# DST
+- [wiki](https://en.wikipedia.org/wiki/Daylight_saving_time)
+- > Daylight saving time (DST), also referred to as daylight savings time, daylight time (United States, Canada, and Australia), or summer time (United Kingdom, European Union, and others)
+  - “夏令时冬令时”
+  - 与standard time 相对
+- 逻辑：
+  - > The idea of **aligning waking hours** to daylight hours to conserve candles was first proposed in 1784 by U.S. polymath Benjamin Franklin. In a satirical letter to the editor of The Journal of Paris, Franklin suggested that waking up earlier in the summer would economize on candle usage; and calculated considerable savings.
+  - 8点天亮 (`darkness falls`) -> 7点天亮，人们习惯点灯到8点，浪费？ -> 调整，还是8点天亮
+- Take ET (Eastern Time) as an example
+  - [ET wiki](https://en.wikipedia.org/wiki/Eastern_Time_Zone)
+  - Recall: EST UTC-5, EDT UTC-4
+  - > On the second Sunday in March, at 2:00 a.m. EST, clocks are advanced to 3:00 a.m. EDT leaving a one-hour gap. On the first Sunday in November, at 2:00 a.m. EDT, clocks are moved back to 1:00 a.m. EST, which results in one hour being duplicated. Southern parts of the zone in Panama and the Caribbean, however, do not observe daylight saving time.
