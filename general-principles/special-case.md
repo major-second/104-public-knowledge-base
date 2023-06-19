@@ -4,8 +4,12 @@
 - 用作计算、解题
   - [[待定系数法]]
   - [[proportional#等车例题]]
-  - 一切矩阵$B$, $AB=BA$
+  - 一切矩阵$B$, $AB=BA$，则$A$是什么？
     - 取单个元素1的矩阵$B$，先取$11,22,\cdots$，知道$A$对角，然后取$12,13,\cdots$即可
+- 特例是计算一般情况的前提
+  - 参考[[1-prob/independent]]
+  - [[yule-process]]
+  - [[gamma-distribution]]、[[bernoulli-binom]]的[[characters-list]]等
 - 快速判断对错、定性结果
   - [[normal#截一半看cov#corr]]
   - [[小量近似]]

@@ -8,9 +8,9 @@
   - $\psi_X(t):=E(e^{tX})$
   - $\psi'=E(Xe^{tX}),\psi'(0)=EX$
   - $\psi^{(n)}(0)=EX^n$
-- 应用
-  - [[markov-chebshev#chernoff bounds]]
-    - 目的：对于随机变量相加十分友好
+- 应用：对于[[1-prob/independent]]随机变量相加十分友好
+  - [[markov-chebshev#chernoff bounds]]：先构造出和[[moment-generating-functions]]相关的不等式，再用来考察[[1-prob/independent]]随机变量
+  - [[yule-process#一般情况]]分布列计算：由[[yule-process#$N=1$]]得到
 # 性质
 - 和[[characteristic-function]]类比
   - [[linear-transform]]时，乘以常数$e^bt$，然后本身核心部分变为$\psi_X(at)$
