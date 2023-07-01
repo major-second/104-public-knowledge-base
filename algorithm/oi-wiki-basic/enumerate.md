@@ -1,3 +1,5 @@
+[toc]
+# basics
 - [原文](https://oi-wiki.org/basic/enumerate/)
 - 先构思全集，再枚举检查过滤
 - 全集
@@ -11,12 +13,13 @@
         - 思路：先定范围再逐段[[monotonous]]
       - $0.9$改成$1$：[[equality-separation]]
     - [[tricks]]
+    - 生成一堆符号组合形成的因子参考[[factors-alphas]]，再过滤
 - 顺序
   - 比如暴力枚举（简单从小到大之类的）
   - 但选择合适顺序检查可加快速度
 
-[toc]
 # pruning
+- python `filter`
 - 可能可以剪枝，减少全集大小
   - 如果全集是某种树结构，满足特定条件就不往下（及时剪枝），则称为[[backtrack]]
   - 如果全集是图结构，那剪枝更加重要，否则出现圈时，可能无限循环，例如[[topo]]深搜法需要维护黑白灰状态
