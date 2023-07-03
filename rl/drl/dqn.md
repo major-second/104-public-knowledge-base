@@ -1,4 +1,4 @@
-- 前置：[[q-learning]], [[deep-learning/basics]]
+- 前置：[[q-learning]], [[deep-learning-basics]]
 - [参考](https://zhuanlan.zhihu.com/p/110620815)
 - 在[[q-learning]]中
   - 维护Q table，即$S,A$组合得到$Q$值
