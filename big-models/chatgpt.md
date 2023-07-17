@@ -68,3 +68,4 @@
     - https://www.pdf2go.com/
   - 免费的有每日限流，单文件限大小页数
 - [[cursor-so]]
+- [[telegram]]（有bot）
