@@ -15,3 +15,5 @@
 - sampling目的
   - 平衡正负
   - 排除干扰关注想要的数据
+    - 例如event-based sampling考察“子问题
+    - > 我只看orderbook变化后的一段

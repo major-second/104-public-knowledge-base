@@ -9,5 +9,5 @@
   - 类比普通的随机变量的[[expectation]], [[cov]], [[cov#corr]]等数字特征
   - 均值
   - 自协方差函数
-  - 自相关系数
+  - 自相关系数[[autocorrelation]]
   - 偏自相关系数
