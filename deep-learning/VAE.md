@@ -3,5 +3,19 @@
   - [[overfit]]
   - [[augment]]
 - [参考知乎](https://zhuanlan.zhihu.com/p/112513743)
-- 加一些噪声：参考[[augment]]，防止[[overfit]]
-- 需要多项[[loss-function]]平衡噪声大小
+# 核心思想
+- 加一些噪声
+  - 参考[[augment]]，防止[[overfit]]
+- 多项[[loss-function]]平衡噪声大小
+# 技术公式
+- 基础
+    - encode原始$a_i$，得到$m_i,\sigma_i$
+    - 得到表示$c_i:=exp(\sigma_i)\cdot e_i+m_i,e_i\sim N$
+    - $c' = decode(c)$
+    - $loss = recon(c',c)+\sum (e^{\sigma_i}-1-\sigma_i+m_i^2)$
+- 注意
+  - $\sigma$此处不直接对应方差，而是$\sigma=0$时，$m_i$基础上加上标准差为1个单位噪声
+  - loss第二项去掉退化为[[autoencoder]]
+  - 几何上对$e^x-1-x$求导，发现我们希望$\sigma_i$
+    - 太大时，“绝对不可接受”，快速到0附近
+    - 太小时，也不好，我们希望它回到0附近有一定噪声，但这个导数更平缓，调节和recon error的[[tradeoff]]
