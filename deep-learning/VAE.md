@@ -1,0 +1,7 @@
+- 前置
+  - [[autoencoder]]
+  - [[overfit]]
+  - [[augment]]
+- [参考知乎](https://zhuanlan.zhihu.com/p/112513743)
+- 加一些噪声：参考[[augment]]，防止[[overfit]]
+- 需要多项[[loss-function]]平衡噪声大小

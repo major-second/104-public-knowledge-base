@@ -78,8 +78,10 @@
   - 二维sin-cos编码表示二维旋转
   - 三维：用6维表示空间中三维旋转，参见[Visual Imitation Made Easy](https://dhiraj100892.github.io/Visual-Imitation-Made-Easy/resources/paper.pdf)
 - [[visualization]]时[[color]]相当于用二维直观表示三维
-## 深度学习中encoder-decoder
-- 作为学习表示（representation）的方法：encoder-decoder
+## [[deep-learning-basics]]
+- 表示学习 representation learning
+- [[autoencoder]]
+- [[VAE]]
 ### NLP
 - [[one-hot]]
 - [[word2vec]]

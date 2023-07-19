@@ -1,3 +1,11 @@
 - 联系[[statistical-decision]]
   - 注意深度学习中常用的结果和结果求[[ln-loss]]，含义其实不同于[[statistical-decision#loss function]]，那里是参数的距离，这里是预测结果的距离
   - 但是[[tricks#防过拟合]]中的[[ln-loss]]确实是参数（到0）的距离
+- 实践中多项loss
+  - 总loss往往是多项叠加，线性组合则系数相当于超参可调
+    - 有些是优化想要的东西本身
+      - 如[[autoencoder]] reconstruction error）
+      - 联想[[MSE]]
+    - 有些项是防止[[overfit]]手段。不加一定导致过拟合
+      - 正则项
+      - [[VAE]]噪声项
