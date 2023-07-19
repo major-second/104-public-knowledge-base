@@ -2,6 +2,7 @@
   - [[autoencoder]]
   - [[overfit]]
   - [[augment]]
+  - [[kl-divergence]]
 - [参考知乎](https://zhuanlan.zhihu.com/p/112513743)
 # 核心思想
 - 加一些噪声
