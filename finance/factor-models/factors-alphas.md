@@ -15,3 +15,4 @@
   - In other words, alpha represents the portion of a security's return that cannot be explained by its exposure to the factors **in the model**
   - In [[CAPM]], those additional factors in [[fama-french]] could be alphas ([[data-science/residual]])
   - "Signal" is often synonym of "Alpha"
+- If one can predict some factors like beta, then those predictions could be viewed as alphas. However for low-frequency, fundamental predictions, quantitative methods won't outperform analysts.

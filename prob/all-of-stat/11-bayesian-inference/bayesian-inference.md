@@ -8,8 +8,9 @@
 - 参考[[jane-street-introduction]] knowable unknowns
 - 即使是固定的东西也有概率说法
 - 先验、条件、后验
-  - 为了好解析计算，条件常用[[conjugate]]
-  - 没法解析计算就[[stochastic-simulation]]计算，最朴素思想是只考察那些得到指定$x^n$的$\theta$（慢）
+  - 为了好解析计算，条件概率常用[[conjugate]]联合概率代替
+  - 没法解析计算就[[stochastic-simulation]]计算
+    - 最朴素思想是只考察那些得到指定$x^n$的$\theta$（慢）
 - 计算后验之后可从而得到
   - [[point-estimation]]
     - 例如[[statistical-decision]]
@@ -26,3 +27,5 @@
 - 再抛一次正面概率
   - $B(m+2,n+1)/B(m+1,n+1)=(m+1)/(m+n+2)$
   - 验算：$m=1,n=0, P=2/3$，符合[[power-rule#速算应用]]快速验证结果
+# 其他例子
+- [[symbolic-regression]]：先验可以是符号树相关的……

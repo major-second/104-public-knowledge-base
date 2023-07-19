@@ -1,0 +1,10 @@
+- [wiki](https://en.wikipedia.org/wiki/Symbolic_regression)
+- 常见
+  - [[genetic]]
+  - [bayesian](https://arxiv.org/pdf/1910.08892.pdf)
+    - 前置[[bayesian-inference]]
+    - 说一个词你就大概懂了：prior of tree structure
+  - [neuro](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159912/pdf/aay2631.pdf)
+    - [[deep-learning-basics]]用在哪了？
+    - 相当于超级“插值”interpolate方法，给出函数取值再寻找[[symmetry]]等等好性质
+    - 这里就有“物理学中常见哪些对称性”这种inductive bias

@@ -64,7 +64,8 @@
 - [[reduction]]
 - 快速给出[[general-principles/special-case]]检验
 - [[enumerate#pruning]]
-  - 特别是 [轮换](#轮换)，我们经常“不失一般性设”
+  - 特别是[[symmetry#轮换]]，我们经常“不失一般性设”
+- [[symbolic-regression]]中先验
 ## break
 - [[power-level]]
 - 有时需要打破对称性，打破僵局，打开局面
