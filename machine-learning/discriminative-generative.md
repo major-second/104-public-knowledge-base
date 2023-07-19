@@ -1,0 +1,24 @@
+- 前置
+  - [[conditional]]
+- [基础](https://zhuanlan.zhihu.com/p/30941701)
+- [详细讲解](https://zhuanlan.zhihu.com/p/266202548)
+# discriminative
+- 直接计算$P(y|x)$，找出最大的$y$作为预测
+- 优点
+  - 计算量小
+- 例子
+  - [[decision-tree]]
+  - [[SVM]]
+  - [[OLS]]
+  - [[deep-learning-basics]]
+# generative
+- 计算$P(x,y)$，从而计算$P(y|x)=\frac{P(x,y)}{P(x)}$
+- 优点
+  - 能生成更多样本
+- 例子
+  - [[naive-bayesian]]
+  - [[gaussian-mixture]]
+  - [[VAE]]
+# 联系
+- 可由生成式模型得到判别式模型（显然反过来不行）
+- 例如从[[gaussian-mixture]]得到判定边界
