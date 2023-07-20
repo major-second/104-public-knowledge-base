@@ -39,6 +39,7 @@
   - 优化似然函数相当于优化$\frac 1n\sum log\frac{f(X_i;\theta)}{f(X_i;\theta^*)}$
   - 后者期望显然是$-D(\theta^*,\theta)$，在$\theta=\theta^*$时最大值0
 # equivariance
+- [[equivariant-invariant#equivariant]]
 - 例子：$\hat \mu = \bar X,\hat{e^\mu}=e^{\bar X}$
 - 证明：设$\tau = g(\theta),\theta=h(\tau)$，则写出$\tau$的似然函数为$\prod_i f(x_i;h(\tau))$，当且仅当$h(\tau)=\theta^*,\tau=g(\theta^*)$时似然函数最大
 # [[asymptotically-normal]]
