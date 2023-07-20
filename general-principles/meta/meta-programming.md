@@ -71,3 +71,10 @@ print 9
   - 这里使用查找替换（“元语言”。如果你用[[sed]]做的替换那么元语言是shell）修改目标语言python3代码
   - 使用元语言python3生成目标语言python2代码
   - 总共套了两层“meta”
+### `python -> python`
+- 功能：表达式转代码
+- [库地址](https://github.com/wukan1986/expr_codegen)
+- 快速用法
+  - 复制[表达式](https://github.com/wukan1986/expr_codegen/blob/main/examples/alpha101.txt)
+    - 参考[[feature-engineering]]
+  - 在线尝试：放入[这里](https://exprcodegen.streamlit.app/)

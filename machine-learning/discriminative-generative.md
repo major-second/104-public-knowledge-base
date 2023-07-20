@@ -2,6 +2,7 @@
   - [[conditional]]
 - [基础](https://zhuanlan.zhihu.com/p/30941701)
 - [详细讲解](https://zhuanlan.zhihu.com/p/266202548)
+- [简单概述](https://zhuanlan.zhihu.com/p/622301302)
 # discriminative
 - 直接计算$P(y|x)$，找出最大的$y$作为预测
 - 优点

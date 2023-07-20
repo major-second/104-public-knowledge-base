@@ -1,4 +1,4 @@
-- github.com
+- https://github.com
   - 可能参考[[dns]]
   - 国内被墙搞不定就用[[other-hubs]]吧
 - git和github是什么关系？

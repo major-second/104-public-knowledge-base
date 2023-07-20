@@ -1,0 +1,4 @@
+- 前置[[lob]]
+- midprice
+- [microprice](https://quant.stackexchange.com/questions/50651/how-to-understand-micro-price-aka-weighted-mid-price)
+  - 和[[imbalance]]相关

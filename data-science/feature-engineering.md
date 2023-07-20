@@ -52,5 +52,8 @@
 - 理论上可线性组合出许多可能多项式，张成线性空间
 - 例如[[barra#CNE5]]中`SIZE`市值和`NonlinearSize`非线性市值
 # 举例
-- [bigquant知识库](https://bigquant.com/community/t/topic/156537)
 - [海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)
+- [alpha101](https://arxiv.org/abs/1601.00991)
+  - [列表](https://github.com/wukan1986/expr_codegen/blob/main/examples/alpha101.txt)
+    - 参考[[meta-programming]]
+  - [分析](https://www.zhihu.com/column/c_1317426644055502848)

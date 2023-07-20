@@ -1,0 +1,16 @@
+- [DIN解说](https://mp.weixin.qq.com/s/YdcmB_7z1xp4YOMP8r_Asg)
+  - [deeplob库](https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books)
+  - [deeplob arxiv](https://arxiv.org/abs/1808.03668)
+    - 前置[[lob]]
+    - 讲到[[domain-gap]], [[normalization#z-score]]
+    - labelling
+      - smoothing (using average)
+      - use threshold, label datapoints as +1/-1/0
+    - [[conv]] (inception其实也是[[conv]])
+      - 废话有点多
+      - stride, 1*2, 整合同一档pv
+      - 类比 micro price 思想
+        - [[price-targets]]
+      - 连zero padding, [[activation]]超参啥的都讲，233
+      - [[1x1conv]]
+    - [[lstm]]

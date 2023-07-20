@@ -6,3 +6,6 @@
     - 截取出非线性中局部近似线性的那一段
     - 同时起到[[feature-engineering]]“缩尾”（winsorize）作用，并引入凹凸性等
     - 注：通常情况我们先[[batchnorm]]再[[activation]]，但你这个场景显然不能
+- [Network In Network](https://arxiv.org/abs/1312.4400)
+  - The feature maps are obtained by sliding the micro networks over the input in a similar manner as CNN
+  - 在 [deeplob](https://arxiv.org/pdf/1808.03668.pdf) 提到、用到

@@ -39,6 +39,9 @@
       - [glassdoor](https://www.glassdoor.com/member/home/index.htm)
       - wall street oasis
       - [私募基金管理人公示](https://gs.amac.org.cn/)
+      - stackexchange
+        - 不同主题有不同的stackexchange专门站
+        - [quant](https://quant.stackexchange.com/)
 - 在[[github]]或者[[other-hubs]]搜索库
   - 例如搜索leetcode，得到两个很有用的库
     - 参见[[leetcode-solutions/0-metadata]]
