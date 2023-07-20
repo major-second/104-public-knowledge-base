@@ -1,0 +1,2 @@
+- ubuntu可以去官网下载[[deb]]安装
+- windows略

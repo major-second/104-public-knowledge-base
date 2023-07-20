@@ -1,3 +1,7 @@
+[toc]
+## 参考
+- [[group]]
+- [[equivariant-invariant]]
 ## 平移
 - [[conv]], [[rnn]]的假设
   - 这作为他们的inductive bias

@@ -9,3 +9,5 @@
 - [[linearity]]常见
 - [[maximum-likelihood#equivariance]]
 # invariant
+# 应用
+- [[principles-for-dl-models]]
