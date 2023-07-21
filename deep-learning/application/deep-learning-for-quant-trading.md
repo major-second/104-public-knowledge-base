@@ -20,8 +20,9 @@
   - [[conv]] (inception其实也是[[conv]])
     - 废话有点多
     - stride, 1*2, 整合同一档pv
-    - 类比 micro price 思想
-      - [[price-targets]]
+    - 4*1：时间维度卷一下
+    - 1*10：一个时间戳所有档，类比 micro price 思想
+      - 参考[[price-targets]]
     - 连zero padding, [[activation]]超参啥的都讲，233
     - [[1x1conv]]
   - [[lstm]]

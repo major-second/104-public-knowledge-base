@@ -1,0 +1,5 @@
+- 一般越大越好训练稳定、快
+- 但注意[[gpu-memory]]别爆了
+- 不过有时太大导致收敛到sharp minima，相当于某种[[overfit]]
+  - [参考](https://arxiv.org/pdf/1808.03668.pdf)
+  - 此时减小batchsize相当于某种“加噪声”

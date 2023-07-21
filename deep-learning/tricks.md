@@ -1,4 +1,9 @@
 - [一篇知乎技巧trick总结](https://zhuanlan.zhihu.com/p/95081141)
+- 常见超参
+  - [[lr-scheduler]]
+  - [[loss-function]]
+  - [[batchsize]]
+  - [[weight-init]]
 ## 动力学
 - 参见[[2-eval]]
 - 实践中常常：训练，验证，测试

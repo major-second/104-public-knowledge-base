@@ -2,6 +2,9 @@
   - [[random-variable-functions#discrete]]
   - $\sum (-plogp)$
   - 根据底不同，所称呼单位不同
+- 参考
+  - [[cross-entropy]]
+  - [[kl-divergence]]
 # KL Divergence
 - $D(P||Q)=\sum p log (p/q)$
   - 注意这里$plogp$符号正，刚刚entropy $plogp$符号负

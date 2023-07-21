@@ -26,8 +26,8 @@
     - （对于有多个Gateway可选的情况）适当选择Gateway
     - 例如Beijing
     - 这个选错了可能导致无法访问你想要的资源
-- 翻墙用getflix vpn用法
-  - 翻墙
+- 翻墙用getflix vpn用法（属于[[bootstrap]]）
+  - 先翻墙
   - 注册当前ip
   - 用他的[[dns]]解锁netflix等网站
 - vpn在第二层或第三层，[[proxy-basics]]在第七层。两者完全不同

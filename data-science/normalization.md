@@ -77,7 +77,7 @@ test_k = 5
 print(calc(test_input, test_k))
 ```
 - 可以把本来不具可比性的数据变成可以比较的“相对值”
-  - [参考链接](https://zh.wikipedia.org/wiki/Z-score)
+  - [参考](https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E5%88%86%E6%95%B8)
 # 为什么
 - 为什么要把均值、方差变为0，1？
 - [参考](https://blog.csdn.net/rope_/article/details/107826059)
