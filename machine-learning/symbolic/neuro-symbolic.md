@@ -19,3 +19,5 @@
   - [[transformer]]
   - train set-to-latent encoder, latent-to-sequence decoder
   - 显然可自动生成sequence和set数据集
+- CVPR 2023 best paper
+  - [解说](https://www.zhihu.com/question/607381076/answer/3084941484)

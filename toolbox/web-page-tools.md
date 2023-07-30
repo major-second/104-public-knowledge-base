@@ -51,6 +51,8 @@
   - https://www.google.com/inputtools/services/features/input-method.html
 - 数学
   - https://www.wolframalpha.com/
-  - 可以考虑适当使用[[example-doc/README]]打数学公式
+  - [画图等工具](https://www.geogebra.org/)
+    - [画图](https://www.geogebra.org/graphing)
+  - 可以考虑适当使用latex（参考[[example-doc/README]]）打数学公式
 - [[timezone]]
   - https://www.timeanddate.com/worldclock/

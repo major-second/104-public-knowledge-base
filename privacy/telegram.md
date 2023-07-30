@@ -8,5 +8,7 @@
 - telegram畅游，注意身心健康哦
 - 一个：[[meta#index of index]]：[使用攻略](https://qianghub.com/telegram-group/)
   - [channel搜索器](https://telemetr.io/en/channels)
+  - [通用搜索器](https://telegramchannels.me/)
+    - 右上角换[[region-language]]以显示不同语言结果
 - [[chatgpt]] bot
   - https://t.me/ChatGPT_General_Bot
