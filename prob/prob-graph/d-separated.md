@@ -1,0 +1,2 @@
+- http://bayes.cs.ucla.edu/BOOK-2K/d-sep.html
+- https://zhuanlan.zhihu.com/p/72011891

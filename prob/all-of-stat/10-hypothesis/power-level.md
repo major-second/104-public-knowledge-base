@@ -17,7 +17,7 @@
     - 这个一般都需要低，是一个比较小的数比如0.1
     - [[type-i-ii-errors]]讲到：like a legal trial，一般保证不要错杀
   - 直观理解：如果检验出来不符合假设了，那可不是随口一说。如果你本不该被否定的，那么被这样检出的概率可小了
-  - [[all-of-stat/0-metadata]]教材定义：size是这里精确的水平，而level是任何大于等于size的数
+  - [[all-of-stat]]教材定义：size是这里精确的水平，而level是任何大于等于size的数
   - 类比
     - 水平为[[general-principles/special-case#极限情形]]0时，对应数理逻辑的[[可靠性]]
       - 我说是定理，就是定理，类比：我说假设不成立，就是假设不成立

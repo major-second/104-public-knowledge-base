@@ -14,7 +14,7 @@
       - 可以给计算机、机器学习的人搞
       - 不是完全严谨。有些证明省略
   - 正逆过程
-    - 正：概率，由机制生成数据，如[[random-variable-introduction]]
+    - 正：概率，由机制生成数据，如[[random-variable-introduction]], [[stochastic-simulation]]
     - 逆：`Data analysis, machine learning and data mining are various names given to the practice of statistical inference, depending on the context.`
     - 所以本书也可以作为比较快速的概率入门
 - Statistics/Data Mining Dictionary对照表有点绝

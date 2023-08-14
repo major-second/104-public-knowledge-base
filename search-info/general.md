@@ -45,7 +45,7 @@
 - 在[[github]]或者[[other-hubs]]搜索库
   - 例如搜索leetcode，得到两个很有用的库
     - 参见[[leetcode-solutions/0-metadata]]
-  - 例如[[all-of-stat/0-metadata]]提到的库
+  - 例如[[all-of-stat]]提到的库
 - 灰色地带
   - Tor浏览器以及暗网
     - 如海盗湾
