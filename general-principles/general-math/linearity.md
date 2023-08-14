@@ -13,6 +13,7 @@
 - 其它例子
   - [[statistical-functionals]]
   - 线性空间
+    - [[norm]]
   - [[partial-sum]]相当于线性求和和差分可交换
 # 估计量线性组合
 - 前置[[2-estimation]]

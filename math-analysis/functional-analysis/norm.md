@@ -1,0 +1,9 @@
+- 定义：非负、齐次、三角不等式
+- 例子
+  - [[ln-loss]]
+- 范数与距离
+    - [范数与距离](https://zhuanlan.zhihu.com/p/363707147)
+    - [[distance]]
+    - 比距离强，还有“数乘”（齐次）相关结构，体会一下[[linearity]]
+      - 线性空间中，范数诱导距离，$d(a,b):=||a-b||$
+      - [范数比距离多的一条有什么用？](https://www.zhihu.com/question/59231575)

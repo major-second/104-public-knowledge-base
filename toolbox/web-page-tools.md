@@ -13,7 +13,9 @@
     - deepl, easyessay, grammerly
     - 翻译工具
       - [deepl](https://www.deepl.com/translator)
-        - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+        - 可以翻译整个文档
+          - 需要[[docx-zip]]破解才能编辑下载下来的文档（时至2022.11有效）
+        - 也可在线单独翻译词句
     - 扩写、润色等：easyessay
     - 校对等：grammerly
   - [[overleaf]]

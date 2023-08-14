@@ -67,6 +67,7 @@ https://keybase.io/
 # 操作
 - 删除之前的记录：可能有延迟。特别是删除图片等
 - 手机截图可能显示这是private content不给你截。你可以在手机设置里打开一个开关使得可以截
+- 手机可以相册中选择上传多张图片
 # 文件管理：左侧Files选项卡
 - 类比[[net-disk]], [[file-transfer]]，保持隐私和持久化
 - ![](keybase-files.png)

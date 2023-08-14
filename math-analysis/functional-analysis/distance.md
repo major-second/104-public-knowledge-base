@@ -1,0 +1,11 @@
+- 定义：非负、对称、三角不等式
+- 实例
+  - [[ln-loss]]
+    - [[norm]]
+  - [[72-edit-distance]]
+- 一些不是距离的，但也能某种定量刻画“差异”，如分布差异
+  - [机器学习中常见散度、距离](https://www.zhihu.com/tardis/zm/art/93853664)
+  - [[kl-divergence]]，不是距离，不对称
+  - [[js-divergence]]，不满足三角不等式
+    - https://www.zhihu.com/question/498258515/answer/2764450779
+  - [一种人定义图距离](https://www.researchgate.net/publication/258399531_Metric_Divergence_Measures_and_Information_Value_in_Credit_Scoring)，看起来不满足三角不等式
