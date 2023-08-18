@@ -18,11 +18,12 @@
     - github提issue说不定会有人回
     - 看别人写的的issue和PR看有没有解决方法
   - 后者就自求多福吧！觉得不行，请谨慎follow工作
-  - 像[[windows-proxy-client]].com/facebookresearch/Ego4d/issues/72)疏忽（数据集写漏了一些）提了issue就有人回
+  - https://github.com/facebookresearch/Ego4d/issues/72 疏忽（数据集写漏了一些）提了issue就有人回
 - 有些时候作者没空维护了（毕竟[[open-source]]用爱发电）
-  - 比如[[franka-ros-interface]]，各种文档和现象不对应
-  - 比如[[windows-proxy-client]]代理中提到的`qv2ray`，在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
-    - 这个软件的作者团队好像起了冲突导致没人维护了
+  - [[franka-ros-interface]]，各种文档和现象不对应
+  - [[windows-proxy-client]]中`qv2ray`
+    - 作者团队好像起了冲突导致没人维护了
+    - 在没联网时也会尝试Update [[node]]订阅，可能导致清空你的节点列表（应该是个疏忽）
 - 包管理器审核出问题
   - 例如[[pip]]：[[hand-eye-calibration]]中提到`transforms3d`的`0.4`版在2022.12安装会出问题，只能手动装`0.3`
 - 文档可能有疏漏，不准确，参考[[read-doc]]

@@ -21,7 +21,7 @@
       - 虽然这个在[[refresh]]之前可能直接用powershell没法直接验证，但是你可以`curl -Proxy <ProxyServer> <URL>`变相验证
       - 也可以`Start-Process powershell.exe -NoNewWindow -Wait -ArgumentList <路径>`这样新起一个进程验证！这是[[refresh]]思想
         - 参考[[run-ps1]]
-- 有些翻墙客户端如`qv2ray`, `geph`能自动帮你设置这个地方的代理
+- 有些翻墙客户端如`geph`能自动帮你设置这个地方的代理
   - 但这时就不灵活，没法自己灵活切换用“哪边的”代理等
 ## 环境变量相关
 ### linux环境变量，终端走代理
@@ -105,8 +105,7 @@ done
   - 有些网站墙内比墙外稳定/速度快
   - 浪费代理流量
 ## Inbound设置
-- 监听：`127.0.0.1`只有自己，`0.0.0.0`也可以给别人用
+- 监听：`127.0.0.1`只有自己，`0.0.0.0`也可以给别人用（包括虚拟机等）
 - 不同客户端设置方法不同
-  - qv2ray[参考](https://github.com/qv2ray/qv2ray/issues/414)，需要手动改`0.0.0.0`
   - clash有General - Allow LAN一键开关比较方便
 - 在[[wsl]]中用代理就需要

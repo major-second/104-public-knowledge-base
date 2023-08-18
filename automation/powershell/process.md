@@ -2,7 +2,8 @@
   - `Stop-Process -Name chrome`
   - 可以开任务管理器看进程名字或输入一部分，tab补全名字
 - 但是暴力关进程很有可能不干净，参考[[finally]]的思想
-  - 例如[[windows-proxy-client]]代理软件`qv2ray`的进程`qv2ray`被关闭时，内核`v2ray`会残留，甚至占用端口
-  - 接上，你把`v2ray`也强制关了可能发现还有问题，比如自动配置代理开关没有给你自动关掉
+  - 例如部分[[windows-proxy-client]]
+    - client进程被关闭时，内核`v2ray`会残留，甚至占用端口
+    - 接上，你把`v2ray`也强制关了可能发现还有问题，比如自动配置代理开关没有给你自动关掉
   - 例如虚拟机[[network]]相关进程暴力停下后，`NAT`和`DHCP`等Service可能会停下，需要任务管理器 - Services手动打开
     - ![](services.png)

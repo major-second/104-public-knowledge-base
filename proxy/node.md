@@ -3,7 +3,7 @@
   - 例如[[windows-proxy-client]]等
   - 也有些客户端集成了节点比如`geph`
   - 客户端和节点配齐了就得到了露出来的端口
-    - 端口例如[[v2raya]]默认的20171，`qv2ray`默认的8889
+    - 端口例如[[v2raya]]默认的20171
   - 之后可以结合[[configure-proxy]]使得能成功翻墙
 - 节点种类不同，适配的协议、客户端和插件可能不同
   - 常见种类有`vmess`，`ssr`等。从分享链接开头可以看出
@@ -11,15 +11,14 @@
 # 导入节点
 - 节点分享可以是文字链接，有时也可导出成二维码
   - 导入时：[[v2raya]]等软件可以导入文字或二维码
-  - [[windows-proxy-client]]中，qv2ray无法扫描二维码。这种就要解码成文字再添加
-  - [[android-proxy-client]]扫码当然最方便
+  - 部分client，特别是[[windows-proxy-client]]无法扫描二维码，就要解码成文字再添加
+  - [[android-proxy-client]]大多可扫码，扫码当然最方便
   - [[web-page-tools]]小工具转换二维码和文字
 - 可导入的链接一般有两种
   - 一种是SERVER，一种是SUBSCRIPTION
     - 后者即别人打包好的定期更新的SERVER集合
   - 导入位置可能不同，使用方法也可能不同
     - [[v2raya]]如图![](node.png)
-    - [qv2ray官网教程](https://qv2ray.net/lang/zh/getting-started/step3.html#%E8%AE%A2%E9%98%85)
   - 第一次导入SUBSCRIPTION之后需要Update，这里需要联网
     - 这里有可能必须翻墙才能上，这就形成了死锁……那就只能[[temp-solution]]一下，比如借师兄的节点
     - 有时会出现的情况：订阅链接本身也是变化的（被铁拳等），也就是套娃
