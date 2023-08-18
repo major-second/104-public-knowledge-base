@@ -1,2 +1,4 @@
 - $\frac{v_b^{(1)}}{v_a^{(1)}+v_b^{(1)}}$
-- 对[[price-targets]] mid price有一定预测作用，但一般靠这个不足以赚钱，谁都知道
+  - 或更多档、或加权更多档
+  - `bid size, ask size`
+- 对[[price-targets]] mid price有一定预测作用，但一般靠这个不足以赚钱，因为谁都知道，不够打赢手续费等

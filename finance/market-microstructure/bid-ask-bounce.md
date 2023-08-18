@@ -1,0 +1,3 @@
+- [参考](https://www.investopedia.com/ask/answers/013015/whats-difference-between-bidask-spread-and-bidask-bounce.asp)
+- 导致[[autocorrelation]]
+- 这是个mid price的缺陷，即一些不想看到的噪音和mid price纠缠到一起，需要解耦

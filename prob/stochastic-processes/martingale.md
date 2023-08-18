@@ -1,0 +1,19 @@
+- [wiki](https://en.wikipedia.org/wiki/Martingale_(probability_theory))
+  - > In probability theory, a martingale is a sequence of random variables (i.e., a stochastic process) for which, at a particular time, the conditional expectation of the next value in the sequence is equal to the present value, regardless of all prior values.
+  - 历史：“倍投法”（二倍法）
+    - 显然是鞅
+- 与[[markov-process]]关系
+  - 互不包含！
+    - https://www.zhihu.com/question/22181185/answer/72296114
+  - 更简单例子
+    - https://www.zhihu.com/question/22181185/answer/34917951
+  - 口头来说
+    - [[martingale]]下一步“均值为0”但分布情况（如方差）可能有记忆性，所以不一定是[[markov-process]]
+    - [[markov-process]]可能均值不为0所以不是[[martingale]]
+      - 比如有时是上鞅/下鞅
+- 注意regardless of all prior values
+  - 因此[[bid-ask-bounce]]能说明midprice不是鞅
+    - 看到之前一段时间的震荡就能推测出接下来情况
+    - 一个误区：看到当前一个价格，不知道接下来是涨是跌，就以为是鞅……这就是没有注意regardless of all prior values
+  - 但这不能说明[[markov-process]]
+- 参考[[5-martingale-and-random-walk]]
