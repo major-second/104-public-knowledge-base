@@ -1,9 +1,10 @@
 ## 常用工具
 - win10: 开始菜单 - 搜索hard disk - 打开![](partition/hard-disk-win10.png)
-在出来的界面中可以添加、删除、压缩卷等
-比如在unallocated的部分，可以添加卷![](partition/add.png)
-  - 局限：对于linux的那些分区只能暴力删除，无法调整
-  - 无法删改[[efi]]
+  - 在出来的界面中可以添加、删除、压缩卷等
+  - 比如在unallocated的部分，可以添加卷![](partition/add.png)
+  - 局限
+    - 对于linux的那些分区只能暴力删除，无法调整
+    - 无法删改[[efi]]
 - win10：开始菜单 - 搜索diskpart
   - 这个是命令行，但功能更多些，比如可以删改[[efi]]
   - 参考[[efi]]

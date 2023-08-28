@@ -1,4 +1,4 @@
-`~/.ssh/config`文件。 #vscode 等应用可以读取它
+`~/.ssh/config`文件。[[vscode]] 等应用可以读取它
 格式参考：
 ```text
 Host <自定义名称>

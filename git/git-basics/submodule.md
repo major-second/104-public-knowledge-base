@@ -3,15 +3,17 @@
   - 前提：submodule至少有一个[[commit]]，否则是[[general-principles/special-case]]，时至2022.12会出现奇怪错误
   - 命令：`git submodule add <repo-link>`
 - 初始化
-  - 添加后，需要初始化
-  - `git submodule update --init --recursive`（在主模块运行）
-    - 这个可能需要前提：[[https-ssh]], [[known-hosts]]
-    - 即可递归地初始化！
-    - 效果可以看到`.gitmodules`文件，以及递归初始化了的各个子模块
-  - 在别的地方使用子模块，则可能也需要初始化
-    - 例如对于只有外层库，没有内层submodule的情况
-      - 如[[github-codespaces]]中的默认状态
-    - 也是最外层使用`git submodule update --init --recursive`初始化
+  - 时机
+    - 刚刚添加（`submodule add`）后
+    - 在别的地方使用子模块，则可能也需要初始化
+      - 例如对于只有外层库，没有内层submodule的情况
+        - 如[[github-codespaces]]中的默认状态
+  - 方法
+    - `git submodule update --init --recursive`（在主模块运行）
+      - 这个可能需要前提：[[https-ssh]], [[known-hosts]]
+      - 即可递归地初始化！
+  - 效果
+    - 可以看到`.gitmodules`文件，以及递归初始化了的各个子模块
 - [[commit]], [[push-pull]]更新
   - [[commit]], [[push-pull]]等，即可同步“增加了子模块”这一信息到相应的（主模块）git库当前[[git-basics/branch]]
     - 当然，经过相应的[[commit]]，就有可能有的[[git-basics/branch]]有子模块，有的没有
