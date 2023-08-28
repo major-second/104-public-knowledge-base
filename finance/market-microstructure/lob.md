@@ -1,2 +1,2 @@
+- [参考链接](https://www.ig.com/en/glossary-trading-terms/order-book-definition)
 - [deeplob](https://arxiv.org/pdf/1808.03668.pdf)里面有介绍
-- 

@@ -11,11 +11,21 @@
   - 可搜[[regex]]
   - 例如[[reinstall-app]]用到`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`
   - 例如验证[[configure-proxy]]可以用`curl ipinfo.io | select content | select-string country`
-- `| Where-Object`
-这个有点坑，`-match`才是[[regex]]匹配，`-contains`竟然是要完全匹配，而不是[[find-grep]]或者`Select-String`那样
+- `-`开头运算符
+  - `-match`是[[regex]]匹配
+  - `-contains`是全字匹配
+  - `-like *substring*`是匹配子串，和[[find-grep]]常用做法一致
 ```powershell
-echo Ubuntu-18.04 | Where-Object { $_ -match ".*Ubuntu.*" }
-echo Ubuntu-18.04 | Where-Object { $_ -contains ".*Ubuntu.*" }
-echo Ubuntu-18.04 | Where-Object { $_ -contains "Ubuntu" }    
-echo Ubuntu-18.04 | Where-Object { $_ -contains "Ubuntu-18.04" }
+PS > (echo Ubuntu-18.04) -match ".*Ubuntu.*"
+True
+PS > (echo Ubuntu-18.04) -contains ".*Ubuntu.*"
+False
+PS > (echo Ubuntu-18.04) -contains "Ubuntu"
+False
+PS > (echo Ubuntu-18.04) -like "*Ubuntu*"
+True
+PS > (echo Ubuntu-18.04) -contains "Ubuntu-18.04"
+True
+PS > (echo My Ubuntu-18.04) -contains "Ubuntu-18.04"
+True
 ```

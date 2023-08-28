@@ -1,0 +1,17 @@
+  - 快捷键
+    - 很多地方可以`Ctrl+F`查找，`Ctrl+H`替换，比如[[word]]
+      - [[general-principles/special-case]]思想：很多地方替换成空就是全部删除。比如vscode, python都是
+    - vscode的[[vscode-keyboard-shortcuts]]，在项目中`Ctrl+Shift+F`全文查找，`Ctrl+P`找文件名
+    - `test $(python -c 'print("121".replace("1", "3"))') = 323; echo $?`
+    - pycharm的[[pycharm/keyboard-shortcuts]]，`Ctrl+Shift+F`全文查找，两次`Shift`找文件名
+      - 此时需要禁用[[region-language]]的繁简切换快捷键（一般是`Ctrl+Shift+F`，产生冲突）
+    - 查找时，往往有区分大小写、全字匹配、正则表达式等按钮/选项，如 ![](vscode-options.png)
+      - 全字匹配 match whole words
+        - 不会错误匹配一些不需要的“子串”，比如abc中的bc
+        - 刚刚的vscode界面中`ab`是
+        - [[powershell/string]]中`-contains`也是
+      - 正则表达式参考[[regex]]
+  - 有些地方不用任何快捷键，直接输入就是查找
+    - 比如任务管理器，vscode资源管理器，桌面无焦点时，等
+  - 很多其它地方也可以使用[[regex]]
+    - 如linux系统的[[find-grep]]

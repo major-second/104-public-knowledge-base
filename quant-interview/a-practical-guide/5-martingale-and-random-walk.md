@@ -28,14 +28,13 @@
     - 法二：$S_n^2-n$是鞅
 - dice game
   - 是随机游走，不是鞅，但wald's equality仍成立，$7/2*2$
-- ticket line
+## ticket line
   - has no change没零钱
   - 联想括号串
     - [[32-longest-valid-parentheses]]，[[22-generate-parentheses]]
-  - 是马尔科夫链不是鞅
   - reflection principle，一一对应思想
     - 经过了-1最终到0的，一一对应最终到-2的
-- coin sequence
+## coin sequence
   - 法一：[[5-markov-chain]]结合[[induction]]
     - 用到[[general-principles/recursion]]思想：不具体管怎么到倒数第二步的
   - 法二：鞅

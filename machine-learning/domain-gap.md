@@ -5,3 +5,8 @@
 - [参考](https://zhuanlan.zhihu.com/p/339719861)
 - 相比一般domain gap，这个是条件分布不变，输入分布变
 - 不同batch之间：[[batchnorm#internal-covariate-shift]]
+- 一个例子：
+  - $A(-3,4),B(-4,3),C(3,-4),D(4,-3)$
+  - 则$ABABABCDCDCD$，看前6或总共12，[[correlation]]不同。也导致“不能泛化”，out-of-sample decay等
+  - 本质就是covariate shift
+  - 参考[[stationary-processes]]

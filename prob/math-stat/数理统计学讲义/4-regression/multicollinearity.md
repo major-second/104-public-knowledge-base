@@ -1,0 +1,19 @@
+- 前置[[multi-ary]]
+- [维基](https://en.wikipedia.org/wiki/Multicollinearity)
+- [[general-principles/special-case]]
+- 现象
+  - 奇异：解不唯一
+  - 接近奇异（高度线性相关）：解容易波动
+    - 即：求逆不稳定，$\epsilon$小变$\hat\beta$大变
+- 判定
+  - 刚刚说的现象
+  - [[correlation]]直接算
+  - VIF
+    - 方差膨胀因子$VIF_i = \frac{1}{1-R_i^2}$
+    - $R_i$是把第i个解释变量作为被解释变量，将其对其它k-1个解释变量做线性回归所得的可决定系数
+    - https://www.zhihu.com/question/270451437/answer/2946064139
+- 解决
+  - [[pca]], [[cholesky]]
+  - [[11-feature-selection]]
+    - 过滤式
+    - 嵌入式（lasso等）

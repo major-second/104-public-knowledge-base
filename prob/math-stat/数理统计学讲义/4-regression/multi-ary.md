@@ -1,3 +1,5 @@
+- 参考[[multicollinearity]]
+
 [[reduction]]
 - 由于可以引入自变量$x_0\equiv 1$，于是可以把$Wx+b$写成$Wx$
 - 由于$Y$的各维间没有本质区别（[[forall]]），因此可以考察$Y$为一维，即$X\beta = Y$
@@ -24,24 +26,6 @@
   - 这里又用到了[[forall]]思想
 - 当然，前述逻辑是用投影存在证明了方程解存在。你也可以根据[[rank]]说明方程解存在
 - 特殊情况：$X^TX$正定（可逆），即$X$“瘦”且列满秩，那$\hat\beta$表达式可直接得：$(X^TX)^{-1}X^TY$
-# 奇异和高度相关情况
-- [[general-principles/special-case]]
-- 奇异：解不唯一
-- 接近奇异（高度线性相关）：解容易波动
-  - 即：求逆不稳定，$\epsilon$小变$\hat\beta$大变
-- 解决
-  - [[pca]], [[cholesky]]
-  - [[11-feature-selection]]
-    - 过滤式
-    - 嵌入式（lasso等）
-- 看出高度相关
-  - 刚刚说的解不稳定
-  - [[cov#corr]]直接算
-  - [[multi-ary#VIF]]
-## VIF
-- 方差膨胀因子$VIF_i = \frac{1}{1-R_i^2}$
-- $R_i$是把第i个解释变量作为被解释变量，将其对其它k-1个解释变量做线性回归所得的可决定系数
-- https://www.zhihu.com/question/270451437/answer/2946064139
 # 性质
 - $Q(\hat \beta)(即“二乘”)=||Y-X\hat \beta||^2=||Y||^2-||X\hat\beta||^2=Y^TY-\hat\beta^TX^TX\hat\beta=Y^TY-Y^TX\beta=(Y,Y-X\beta)$，几何意义也很明显
   - 满秩则进一步$=Y^T(I-X(X^TX)^{-1}X^T)Y:=Y^TAY$

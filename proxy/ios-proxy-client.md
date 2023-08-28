@@ -1,5 +1,6 @@
 - 前置
-  - [[apple-id]]不能是大陆区账号
+  - [[apple-id]]（要会注册各个区域账号）
   - [[apple-app]]
-- 一个可能选择：`ShadowLink`（免费）
+- 翻出国一个可能选择：`ShadowLink`（免费）
   - 收费的可能广告少/支持的[[node]]多等等
+- 翻回国一个可能选择：`Transocks`（免费）
