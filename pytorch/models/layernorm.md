@@ -1,0 +1,5 @@
+- 前置
+  - [[normalization]]
+- 参考
+  - [[batchnorm]]
+- [文章](https://zhuanlan.zhihu.com/p/54530247)

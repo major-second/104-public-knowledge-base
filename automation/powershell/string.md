@@ -8,13 +8,14 @@
     - 结合[[powershell-var]]，例如`$PSScriptRoot.split("\")[-1]`
 - `| Select-String`
   - 参考[[11-basic-scripting-partB]]的管道记号
+  - 类比[[find-grep]]
   - 可搜[[regex]]
   - 例如[[reinstall-app]]用到`Get-AppxPackage -allusers | Select Name, PackageFullName | Select-String WindowsStore`
   - 例如验证[[configure-proxy]]可以用`curl ipinfo.io | select content | select-string country`
-- `-`开头运算符
+- `-`开头的运算符
   - `-match`是[[regex]]匹配
   - `-contains`是全字匹配
-  - `-like *substring*`是匹配子串，和[[find-grep]]常用做法一致
+  - `-like "*substring*"`是匹配子串，和[[find-grep]]常用做法一致
 ```powershell
 PS > (echo Ubuntu-18.04) -match ".*Ubuntu.*"
 True

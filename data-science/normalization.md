@@ -5,8 +5,16 @@
   - [[normal]]
 - 是[[feature-engineering]]方式
 - 目标是使得分布满足特定形式，如均匀或[[normal]]
+- [参考](https://en.wikipedia.org/wiki/Normalization_(statistics))
 # 丢失信息
-- 正规化往往会丢信息，关键是这个信息是不是有用的
+- norm往往会丢信息，关键是这个信息是不是有用的
+  - [领英泛泛而谈](https://www.linkedin.com/advice/0/how-do-you-balance-trade-off-between-data-normalization)
+  - [知乎丢失信息具体例子](https://www.zhihu.com/question/395811291/answer/2141681320)
+    - [[transformer]]使用 [[layernorm]]
+- 举例
+  - 时序数据，每个时刻有若干个对象，每个对象若干维feature
+  - 如果暴力一个维度标准化，可能会抹平某一个维度信息
+    - 例如 1 2和2 4两个序列可能被标准化成都是1 2，保留时序信息抹除截面信息
 - 类比[[11-feature-selection]]：没用的丢弃
 - [[batchnorm#Scale and Drift]]就是减少丢失信息
 # 排序
