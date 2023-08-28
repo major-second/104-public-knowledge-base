@@ -1,0 +1,3 @@
+- 线性：[[multicollinearity]]
+- 参考[[11-feature-selection]]
+- [[deep-learning-basics]]：masked R-CNN等，mask图片或视频部分
