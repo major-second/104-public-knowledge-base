@@ -13,3 +13,4 @@
 - `pybullet`w在后，[参考](https://usermanual.wiki/Document/pybullet20quickstart20guide.479068914/html)
 - 有些地方会明确写出`w`是多少。比如[[hand-eye-calibration]]和[[aruco]]的结果
 - `rosrun tf tf_echo`的w在后
+- [数学原理参考](https://zhuanlan.zhihu.com/p/86224177)

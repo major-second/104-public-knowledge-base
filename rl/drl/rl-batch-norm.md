@@ -1,7 +1,11 @@
 - 前置[[batchnorm]]
 - [参考](https://zhuanlan.zhihu.com/p/210761985)
+  - 有趣
+  - > 请注意，复现得差的DRL代码训练效率低，这味意着采样数据稳定，那么它用了BN反而能获得性能的提升（成绩垫底，发挥稳定，有较大提升潜力）
 - 一般不用
 - 但可以对输入第一层[[rl-normalization]]
 - 主要是，你自己输入分布都变，还想着解决[[batchnorm#internal-covariate-shift]]，岂不是很搞笑？
   - 大变管小变
   - 大道理管着小道理
+- 和[[normalization#丢失信息]]的关系
+  - 如果分布在变，那么均值方差等信息不能丢失！

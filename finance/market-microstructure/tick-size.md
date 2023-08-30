@@ -1,0 +1,5 @@
+- [参考](https://www.investopedia.com/terms/t/tick.asp)
+  - “变化单位”
+  - Since 2001 and the advent of decimalization, the minimum tick size for stocks trading above $1 is one cent.
+- [参考](https://www.investopedia.com/terms/t/tick-size.asp)
+  - Stocks generally trade in one-cent tick size increments, while currencies have tick sizes in pips, and rates in basis points ([[bps]]).

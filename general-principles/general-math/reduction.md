@@ -18,6 +18,10 @@
   - [[automation/trivial-mistakes]]需要“化归”一开始不同的环境。看起来多了一个操作，但之后更简单
   - [[21-merge-two-sorted-lists]]增加链表头，方便处理空的[[algorithm/special-case]]
   - [[adj-factor]]
+  - 到脚本所在目录
+    - [[17-function]] `cd $(dirname $0)`
+    - [[powershell-var]]中`$PSScriptRoot`
+  - 先删除再新建文件/文件夹
 - 利用[[symmetry]]
   - [[trigonometric#monotonous-例]]只考察$a>0$情况
 - [[enumerate#分类讨论]], [[enumerate#pruning]]

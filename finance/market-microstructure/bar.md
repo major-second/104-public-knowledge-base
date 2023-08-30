@@ -1,0 +1,5 @@
+- 前置[[tick]]
+- [tick 到bar](https://blog.csdn.net/weixin_38753422/article/details/95699776)
+  - 需要sample（采样）
+  - OHLC：open, high, low, close
+  - 加V volume

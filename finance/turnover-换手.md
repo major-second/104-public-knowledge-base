@@ -1,0 +1,3 @@
+- [换手率](https://wiki.mbalib.com/wiki/%E6%8D%A2%E6%89%8B%E7%8E%87)
+  - 和流通性联系
+- [[open-close-long-short]]有“换手”性质（多单还是多单，只是转了一手）
