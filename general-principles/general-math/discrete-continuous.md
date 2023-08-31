@@ -20,6 +20,7 @@
   - 你实际的失败次数也拉出一条线，从1到10，根据[[介值定理]]得结论
 # 实际应用
 - [[dl-regression-classification]]讲过连续导致问题
+- [[lob]] [[tick-size]]
 - 朴素贝叶斯怎么处理连续特征
   - https://blog.csdn.net/u013597931/article/details/81705718
   1. 直接bin

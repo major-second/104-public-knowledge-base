@@ -2,6 +2,7 @@
 - 参考
   - [知乎链接](https://www.zhihu.com/question/513782601/answer/2328043857)
   - [IC课件](https://www.ma.imperial.ac.uk/~ajacquie/Gatheral60/Slides/Gatheral60%20-%20Stoikov.pdf)
+- 很多时候没有标准答案，各有优劣
 # midprice
 - $M=\frac 12 (P^a+P^b)$
 - $P^a$是best ask, $P^b$是best bid

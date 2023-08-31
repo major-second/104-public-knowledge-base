@@ -1,6 +1,9 @@
 - 程度问题
 - 比上不足比下有余
-- 没有绝对的某某
+- “没有绝对的某某”
+- > 抛开剂量谈毒性就是耍流氓
+- continuum
 - 参考
   - [[naming]]
   - [[first-principle]]
+  - [[discrete-continuous]]

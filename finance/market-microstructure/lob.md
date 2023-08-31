@@ -1,2 +1,8 @@
 - [参考链接](https://www.ig.com/en/glossary-trading-terms/order-book-definition)
 - [deeplob](https://arxiv.org/pdf/1808.03668.pdf)里面有介绍
+- “看多少档才够”
+  - 跟[[tick-size]]有关，参考[[discrete-continuous]]
+    - 如果太离散（[[tick-size]]太大），很有可能只用看少数档
+    - 如果太连续（[[tick-size]]太小，如部分crypto），可能要看很多档，还要[[bin]]相邻的
+  - [[liquidity]]大，集中在一档，可能需要看的少
+  - 可能判断标准：若干时间的Vol覆盖多少档位上的单

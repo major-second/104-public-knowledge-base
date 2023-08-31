@@ -38,5 +38,6 @@
   - python
     - `python -c "import re; print(re.search('a\s+b', 'acba  baba b'), re.findall('a\s+b', 'acba  baba b'))"`
     - 输出`<re.Match object; span=(3, 6), match='a b'> ['a b', 'a b']`
+  - [[pandas-index]]
 - 拓展：相关算法题。自己实现正则表达式的一些特点
   - [[10-regular-expression-matching]]

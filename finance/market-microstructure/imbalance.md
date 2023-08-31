@@ -1,4 +1,6 @@
 - $\frac{v_b^{(1)}}{v_a^{(1)}+v_b^{(1)}}$
   - 或更多档、或加权更多档
   - `bid size, ask size`
+- 广义：减或除或[[dimensionless]]一下……很多种方式
 - 对[[price-targets]] mid price有一定预测作用，但一般靠这个不足以赚钱，因为谁都知道，不够打赢手续费等
+  - 也导致不同[[price-targets]]可做出的[[correlation]]大小不同
