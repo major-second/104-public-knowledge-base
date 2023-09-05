@@ -49,7 +49,7 @@
       - 如果你只使用hydra的compose功能，那完全可以不调它，只用原生（下层）的[[omegaconf/basic]]. 因为hydra的使用限制太多，有很多tricky的东西
       - 但是[[interpolation]]（惰性求值），[[resolver]]这些omegaconf的功能，原生yaml没有，所以我们要调omegaconf，所以到这一层就是不错的选择
     - 比如数学绘图，有[[matplotlib/basics]] - [[seaborn]]两层。很多时候直接[[seaborn]]好看，但有时需要更底层的[[matplotlib/basics]]指定一些细节
-  - 比如[[robocorp]]中提到`rcc.exe`和vscode集成的关系（集成的必须用`conda.yaml`配置环境，但底层`rcc.exe`比较灵活，不用）
+  - 比如底层的[[rcc]]和集成的[[vscode-extensions]]关系，底层的灵活
   - 比如[[lightning/logs]]中`self.log`不能在一epoch结束时汇总。想汇总需要`self.logger.experiment.add_scalar`，即使用更底层的[[tensorboard]] api
 # 抽象不如你想象的clean
 - 例如：“隔离”做得不好

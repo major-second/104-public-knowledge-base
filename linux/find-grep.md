@@ -32,3 +32,4 @@
   - `-bo`找某个表达式出现的脚标index
     - `echo foobar | grep -bo bar | awk -F: '{print $1}'`
     - 可结合[[awk-cut]]
+  - `-n`输出行号，可结合[[head-tail]]

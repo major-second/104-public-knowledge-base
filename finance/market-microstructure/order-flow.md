@@ -1,3 +1,4 @@
 - 订单流
 - [wiki](https://en.wikipedia.org/wiki/Order_flow_trading)
 - [国内期货数据使用订单流的问题](https://zhuanlan.zhihu.com/p/357924288)
+- 外盘标准的order flow 可重建[[snapshot]]，参考[refinitiv](https://developers.refinitiv.com/en/api-catalog/refinitiv-tick-history/refinitiv-tick-history-rth-rest-api/tutorials#rest-api-tutorial-5-on-demand-market-depth-extraction)

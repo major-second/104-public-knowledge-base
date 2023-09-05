@@ -1,0 +1,9 @@
+- 前置[[robocorp]]
+- [参考](https://github.com/robocorp/rcc#installing-rcc-from-command-line)
+- windows直接找个地方
+  - `curl -o rcc.exe https://downloads.robocorp.com/rcc/releases/latest/windows64/rcc.exe`
+  - 把`exe`所在目录加入[[windows/env-var#path]]
+- 安装过程可能需要[[administrator-powershell]]，开启长路径相关设置等
+  - 可能自动出现，并提示设置
+- 好处：装这个相比[[vscode-extensions]]，灵活，防止了[[leaky-abstraction]]
+  - 比如：集成的必须用conda

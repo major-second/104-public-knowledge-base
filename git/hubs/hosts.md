@@ -14,4 +14,4 @@
   - 除了[[temp-solution]]
   - 还可能是[[configure-proxy]]很麻烦时用于连接一些没被强力墙的网站
     - 如raw.githubusercontent.com，有些时候（如[[zsh]]，[[ros/installation]]），只需改hosts就足够能上了。而那些地方配置代理很麻烦
-    - 如[[browser]]插件直到2022.7，根本没法配置代理
+    - 如[[vscode-browser-extensions]]插件直到2022.7，根本没法配置代理
