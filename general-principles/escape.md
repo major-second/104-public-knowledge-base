@@ -21,7 +21,7 @@
     - `alias monitor-disk="watch -d -n 60 'du -h ~/ | grep \"[0-9]G\\s\"'"`
     - 实际上真正`monitor-disk`时，是不断执行`du -h ~/ | grep "[0-9]K\s"`
     - 也就是双引号里的`", \, "`写作了`\", \\, \"`
-  - [[linux/zip-unzip]]中例子
+  - [[linux-zip-unzip]]中例子
     - `zip -r tmp.zip dir -x "dir/subdir/*"`
       - 可以尝试`echo ./*; echo "./*"`看区别
   - 相比标准的bash, [[zsh]]是[[non-standard]]可能造成额外麻烦，比如`[]`需要转义

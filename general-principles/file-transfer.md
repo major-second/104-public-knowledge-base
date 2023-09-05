@@ -8,7 +8,7 @@
     - 发邮件
     - [[keybase]]
       - 高度机密安全，跨平台，可无限期撤回
-    - 短文字，无需翻墙，可能绕过公司监管：例如博客园、csdn等博客草稿。可能需要和[[linux/zip-unzip]], [[xxd-diff]]联合使用
+    - 短文字，无需翻墙，可能绕过公司监管：例如博客园、csdn等博客草稿。可能需要和[[linux-zip-unzip]], [[xxd-diff]]联合使用
       - 相比之下[[onedrive]] [[github]] [[push-pull]] [[outlook]] [[keybase]]显然会被公司监管禁用哈哈
       - 但博客园这种，公司肯定挂一漏万233
   - 可用命令行的

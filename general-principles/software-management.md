@@ -12,6 +12,10 @@
   - 参考[[file-format]]
   - win的`exe, msi`, linux的`sh, deb`, 安卓`apk, xapk`等
     - [[install-from-sh]]
+- 直接下载绿色软件
+  - Standalone, SA
+  - [[robocorp]]
+  - 有时需要[[windows/env-var]]等等修改
 - 官方或非官方应用商店
   - [[apple-app]], [[huawei-google]]等
 - [[build-from-source]], [[github]], [[other-hubs]]
