@@ -37,7 +37,7 @@ Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序�
   - 即给`777`权限后直接`./某某.sh`，或者`bash 某某.sh`
 - 过程中根据提示操作。其中如果`init`处选了`y`，那么你`cat ~/.bashrc`结尾就能看到添加的一些语句
   - 哦，你用的[[zsh]]就去看`cat ~/.zshrc`
-  - 如果你要两者都用，之后需要`conda init <SHELL>`，参考[[docker/conda]]中的操作
+  - 如果你要两者都用，之后需要`conda init <SHELL>`，参考[[conda-in-docker]]中的操作
 - `conda --version`检查安装结果
 - [[silent]]安装：类似于：
 ```sh

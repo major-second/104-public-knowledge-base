@@ -3,7 +3,7 @@
   - [[temp-solution]]思想
 - 软件、资源收费相关（不想交钱怎么办？）
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
-  - 例如[[tagui]], [[robocorp/basics/installation]]而不是[[my-first-flow]]
+  - 例如[[tagui]], [[robocorp]]而不是[[my-first-flow]]
   - 例如[[spotify]]和墙内音乐软件综合使用，有的有这些版权，有的有那些版权
 - 利用不同[[region-language]]价格歧视
   - 例如[[leetcode-solutions/0-metadata]]

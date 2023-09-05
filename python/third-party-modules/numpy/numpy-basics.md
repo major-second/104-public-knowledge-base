@@ -77,6 +77,8 @@
   - 没有`arr.corrcoef()`只有`np.corrcoef(arr)`
     - 对于二维数组，求[[cov#corr]]
 - `np.max`和`np.amax`分别求最大值的值和下标
+- cumsum: [文档](https://numpy.org/doc/stable/reference/generated/numpy.cumsum.html)
+  - `np.cumsum(a,axis=0)`
 # Copying Arrays
 - 前置[[general-copy]]
 - `arr.copy()`或`np.copy(arr)`**都**是[[general-copy#deepcopy]]

@@ -1,4 +1,4 @@
-- 终端输入`python`命令（或[[conda]]的Anaconda Prompt之类的地方输入），出现`>>>`，即可在此交互操作
+- 终端输入`python`命令（或[[conda-in-docker]]的Anaconda Prompt之类的地方输入），出现`>>>`，即可在此交互操作
 - 特性
   - 一次输入一条语句。例如你接连输入
     - `for i in range(1):`

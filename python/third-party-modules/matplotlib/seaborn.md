@@ -28,3 +28,4 @@ l = [1] * 3 + [5] * 7 + list(range(8, 12))
 for cumulative, kde in [[True, True], [True, False], [False, True], [False, False]]:
     sns.histplot(l, ax=axs[cumulative * 2 + kde], cumulative=cumulative, kde=kde)
 ```
+- 保存：参考[[matplotlib/basics]]

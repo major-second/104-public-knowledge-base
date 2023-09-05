@@ -11,8 +11,12 @@ path/to/a/folder
 ~$*
 ```
 等等（即：可以匹配文件夹，也可以匹配后缀名，等等）
-注意`github`上有一些模板。往往不需要自己纯手动写。
-- 注：自己添加`.gitignore`时一定要慎重，不要想当然。举例：以为`.txt`全是数据文件，没有用，但实际上有`pip`的`requirements.txt`非常重要
+- `github`上有一些模板。往往不需要自己纯手动写。
+  - 例如 https://github.com/github/gitignore
+  - [[c-lang]]: https://github.com/github/gitignore/blob/main/C.gitignore
+  - [[cpp]]: https://github.com/github/gitignore/blob/main/C%2B%2B.gitignore
+  - [[cmake]] https://github.com/github/gitignore/blob/main/CMake.gitignore
+- 自己添加`.gitignore`时一定要慎重，不要想当然。举例：以为`.txt`全是数据文件，没有用，但实际上有`pip`的`requirements.txt`非常重要
 
 ![](ignore-existing-files.png) todo 待整理
 ### 所在位置

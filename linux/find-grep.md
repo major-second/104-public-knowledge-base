@@ -6,6 +6,8 @@
   - `find <目录> -name "*.txt"`找所有`.txt`文件，列成表（注意引号）
 - 结合用法
   - `find <目录> | grep <字符串>`，找文件/文件夹名包含某某的
+  - `find <目录> | grep <字符串> | rm`：确保安全地删除
+    - 例如[[linux-backup-files]]
   - `find <目录> -name dummy.txt | xargs grep <内容>`
   - 刚刚后两者都是把（单个或多个）文件给`grep <内容>`，参考[[11-basic-scripting-partB]]的管道记号
     - 直接管道记号是把那个文件名列表（标准输入`-`）整个作为（一个）文本文件（“metadata”的感觉）

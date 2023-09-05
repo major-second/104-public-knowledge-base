@@ -1,6 +1,7 @@
 前置
-- [[robocorp/basics/installation]]
-- 其中`google-image-search`robot需要[[configure-proxy]]
+- [[robocorp]]
+  - 其中“长路径”相关需要先搞定
+- 其中`google-image-search`robot可能需要[[configure-proxy]]
   - windows使用[[windows/env-var]]
 
 步骤
@@ -9,13 +10,10 @@
 # 例子：`python`最小样例
 - `git clone https://github.com/robocorp/template-python.git`
 - vscode打开此库
-    - 此时对于windows系统可能自动出现[此troubleshooting](https://robocorp.com/docs/troubleshooting/windows-long-path)，和长路径名有关
-    - 照[链接](https://robocorp.com/docs/troubleshooting/windows-long-path)做即可，按指示重启之后可以进入下一步
-    - 注：如果有[[administrator-powershell]] powershell，就可以一行命令`rcc configure longpaths --enable`搞定
 - 左侧出现robocorp图标（那个机器人）
   - 点它，现在开始加载![](my-first-robot.png)
   - 过程可能需要一定时间（主要是下载装包等）
-    - 可能需要为vscode配置代理
+    - 可能需要为vscode配置[[proxy-basics]]
 - 开始运行
   - vscode左侧robocorp图标
   - ![](start.png)中三角播放按钮

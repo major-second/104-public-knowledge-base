@@ -15,7 +15,7 @@
   - [[settings-and-configurations]]
 # 使用
 - 可能是vscode界面（左侧）出现按钮
-  - [[robocorp/basics/installation]]
+  - [[robocorp]]
   - [[remote-ssh]]
 - 可能是`Ctrl + Shift + P`的command palette中出现新命令
   - [[git-project-manager]]

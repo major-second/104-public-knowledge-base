@@ -61,7 +61,7 @@ done
 ### win环境变量
 参考[[windows/env-var]]，[[powershell-var]]
 典型：`$env:http_proxy="http://127.0.0.1:<端口号>"`
-有些软件比如[[robocorp/basics/installation]]会用到
+有些软件比如[[robocorp]]会用到
 ## 其它
 ### 虚拟机和子系统
 - 很多时候找主机ip，使用主机ip的相应露出端口即可
