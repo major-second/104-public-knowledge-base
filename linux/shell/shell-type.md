@@ -1,3 +1,4 @@
+- 例如[[bash]], [[zsh]]
 - 有些种类的`shell`不能自动`source` [[shrc]]
   - 比如交互式的（像直接`bash`命令进去的）会自动`source` [[shrc]]
     - 但直接`bash 1.sh`这样并不会
