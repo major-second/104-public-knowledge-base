@@ -1,0 +1,6 @@
+- [wiki](https://en.wikipedia.org/wiki/Standard_streams)
+- [[i-o]]
+- 作为键盘，显示屏的抽象
+- [[buffer]]
+  - > It is acceptable and normal to direct standard output and standard error to the same destination, such as the text terminal. Messages appear in the same order as the program writes them, unless buffering is involved. For example, in common situations the standard error stream is unbuffered but the standard output stream is line-buffered; in this case, text written to standard error later may appear on the terminal earlier, if the standard output stream buffer is not yet full.
+  - 另一个 line-buffered 的证明：`cat file | wc`和`cat file | head -n 3`处理大文件速度不同

@@ -12,14 +12,7 @@ type: operations
 我们大致了解 #Linux 的 #shell 脚本的编写方式，方便做自动化提高 #工作效率
 本篇包括管道记号`|`，数学运算，退出脚本
 ## 11.6 管道记号
-管道记号：一个命令的输出直接作为下一个命令的输入，不需要缓冲区或者文件啥的
-例如：
-- `set | sort | more`（连续使用2次），表示把`set`的结果排序，并且显示时不一次显示完，而是按回车可以往下走那样
-- `set | sort > <文件>`：先管道再重定向，写给文件
-- 实用应用：
-  - `ps -ef | grep 'python' | grep -v grep | awk '{print $2}'`
-  - `python_pid=$(ps -ef | grep 'python' | grep -v grep | awk '{print $2}')`
-  - `find . -type f -print0 | sort -z | xargs -0 md5sum | md5sum`，参考[[md5sum]]
+- [[unix-pipeline]]
 ## 11.7 执行数学运算
 ### `expr`整数运算
 - `expr 2 \* 3`：注意转义和空格

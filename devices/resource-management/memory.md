@@ -1,3 +1,5 @@
+- 参考
+  - [[buffer]]
 - 基础
   - 内存分为物理内存和虚拟内存或swap，后者位于硬盘，访问性能低，但内存不足时可凑合用
     - 参考 https://www.zhihu.com/question/295194595/answer/999804696
@@ -15,6 +17,8 @@
   - 可以在装系统时[[partition]]
   - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
 - 管理
+  - 适当使用[[buffer]]
+    - 例如[[standard-streams]]中的例子
   - 程序中
     - 垃圾回收
       - python一般是自动地

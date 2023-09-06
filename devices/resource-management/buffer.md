@@ -1,0 +1,7 @@
+- 参考
+  - [[memory]]
+- [wiki](https://en.wikipedia.org/wiki/Data_buffer)
+- 举例
+  - [[standard-streams]]
+    - 不能开太大（整个文件），否则占用[[memory]]
+    - 可能影响顺序
