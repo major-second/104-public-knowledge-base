@@ -4,3 +4,5 @@
   - [[wc]], [[xxd-diff]] `diff`, [[find-grep]] `find`, [[cat-tac]]
 - 处理大规模时，由于其底层实现快，可能比python等随意写的脚本快
 - [参考](https://blog.csdn.net/yang_z_1/article/details/113988960)
+- 效率
+  - [[i-o]]: 使用[[head-tail]] [[more]]等限制输出。尤其在[[cat-tac]], [[find-grep]]时

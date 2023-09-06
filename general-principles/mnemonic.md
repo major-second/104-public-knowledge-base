@@ -1,0 +1,11 @@
+- [wiki](https://en.wikipedia.org/wiki/Mnemonic)
+- 参考
+  - [[encode-decode]]
+  - [[wikilinks]]（建立联系）
+  - [[naming]]（写程序时）
+  - [[symmetry]]
+  - [[enumerate#pruning]]（排除法？）
+- 实在记不住，不如烂笔头：[[read-doc]], [[search-info/general]], [[help]]
+- 例子
+  - [[parameter-expansion]]中，`#`在左边，`%`右边，`#`最小匹配，`##`最大
+    - 建立联系，利用对称

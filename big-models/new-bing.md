@@ -1,11 +1,12 @@
 - 前置
   - [[other-browsers#edge]]
   - [[proxy-basics]]
-- 时至2023.3，可排队，等待测试资格
+- 历史
+  - 2023.3，可排队，等待测试资格
+  - 一开始需要登录微软[[general-principles/account]]，且用[[edge]]，后来不用了
 - 用法
   - 开[[proxy-basics]]
     - 可能并且需要重启浏览器[[refresh]]
-  - 登录微软[[general-principles/account]]
   - 上bing，除了search按钮多了chat按钮，点它！
   - ![](new-bing.png)
 - 特性

@@ -1,8 +1,9 @@
 - O
   - 例如考虑[[tensorboard]]的[[lightning/logs]]是每个epoch还是每个step存
-  - 例如[[tqdm]]在集群上可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
+  - 例如[[tqdm]]有时可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
     - 这和`stderr, stdout`有关
     - 例如[[trainer]]中可以关
+  - [[linux-edit-commands]]时
 - I
   - 主要[[dataloader]]，注意进程个数，同时跑的个数等
   - 可以考虑[[resource-management/disk]]和[[memory]]的选择：往内存放，就可以少读
