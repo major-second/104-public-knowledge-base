@@ -1,11 +1,6 @@
 - 前置
-  - [[robocorp]]中的命令行工具`rcc`
-    - 否则只能用vscode集成的不够灵活的rcc，于是不能使用这里的部分robot
-  - 对于windows需要[[powershell-basics]]可以使用`python`命令
-    - 即安装了`python`
-    - 并把`python.exe`所在路径加入了[[windows/env-var#path]]
-      - 如果你没安装`python`，那么[[powershell-basics]]中输入`python`命令将会到安装界面，而不是正常启动！
-      - 参考[[windows/env-var]]中关于`python`命令的坑
+  - [[robocorp]], [[rcc]]
+  - [[windows-python]]
   - 了解`python -c`，`python -V`
   - 体验[[my-first-robot]]中的两个robot
   - [[yaml]] [[create-env-yaml]]
@@ -35,4 +30,4 @@
   - `robot.yaml`中增加`condaConfigFile`字段来使用`conda.yaml`
 - `ignoreFiles`字段用于指定忽略的文件。参考[[special-files]]
 - 此robot输出python版本是`conda.yaml`指定的版本
-![](conda-yaml-example.png)
+  ![](conda-yaml-example.png)

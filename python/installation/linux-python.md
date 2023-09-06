@@ -1,0 +1,2 @@
+- [[ubuntu]]自带python 2
+- 安装方法参考[[pip]]

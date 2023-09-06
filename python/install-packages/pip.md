@@ -1,5 +1,6 @@
 - `pip`本身来源：
-  - windows：[官网下载](https://www.python.org/downloads/windows/)安装python时，可选同时带上pip
+  - windows
+    - [[windows-python]]可选同时带上pip
     - 之后有可能出现`pip`不行但`python -m pip`可以
   - linux
     - `python2`：`apt install python-pip`
@@ -39,7 +40,7 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
 `termcolor`
     - 然后`pip install -r requirements.txt`即可
     - 注：`requirements.txt`有时还能看到`git`开头的一些行，表示一些从git下载源码安装的包
-  2. 和conda结合：[[create-env-yaml]]中的`dependencies - pip`子树
+  1. 和conda结合：[[create-env-yaml]]中的`dependencies - pip`子树
     - 当然为了更加保险，`dependencies`子树中可以增加`python=版本`和`pip=版本`
 - 一般来说`pip`效率不如`conda`，但有些`pip`有的包`conda`没有，有些包`pip`才有较新版本
   - 所以`pip`简单来说就是质量差，东西多
