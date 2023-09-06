@@ -1,0 +1,6 @@
+- 大致汇总编辑用命令
+- 参考[[CRUD]]
+- 查（只读）用
+  - [[wc]], [[xxd-diff]] `diff`, [[find-grep]] `find`, [[cat-tac]]
+- 处理大规模时，由于其底层实现快，可能比python等随意写的脚本快
+- [参考](https://blog.csdn.net/yang_z_1/article/details/113988960)

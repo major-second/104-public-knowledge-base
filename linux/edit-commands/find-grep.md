@@ -33,3 +33,4 @@
     - `echo foobar | grep -bo bar | awk -F: '{print $1}'`
     - 可结合[[awk-cut]]
   - `-n`输出行号，可结合[[head-tail]]
+  - `-m 1`：正向到一个就停
