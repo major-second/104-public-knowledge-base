@@ -1,0 +1,9 @@
+- online / dynamic / 热插拔
+- online modifications maybe
+  - harmful / glitchy (cause unexpected results)
+    - [[shell/trivial-mistakes]]
+    - 热插拔部分硬件 [[interface]]
+    - 拔[[供电]]
+  - not recognizable
+    - python直接修改文件
+    - 有时需要各种[[refresh]]

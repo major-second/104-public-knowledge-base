@@ -5,6 +5,7 @@
   - 有时我们需要了解精确到哪一等级（层次）就行了，以节省时间精力
     - 比如[[nbextension]]中的：能重新打开窗口就不需要restart整个笔记本
     - 比如[[wsa]]中能不重启解决就不要重启
+- 参考[[online-modifications]]
 ## 重启
 - [[zsh]]中设置默认shell为`zsh`需要**重新登录**
 - [[special-files]]提到

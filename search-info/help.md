@@ -13,3 +13,4 @@
   - [[powershell-basics]]中`help`和`gal`命令
 - 交互式语言如python, R，则有些函数起到此效果
   - [[numpy-basics#Asking For Help]] `np.info`
+- [[chatgpt]]也不是不行
