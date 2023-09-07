@@ -5,7 +5,7 @@
   - 刷题
     - [[leetcode-solutions/0-metadata]]
   - 在线测试代码
-    - [[helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
+    - [[cpp-helloworld]]中的 [coderpad](https://app.coderpad.io/sandbox)等
 - 日程管理
   - [[dida]]网页版
 - 文章相关

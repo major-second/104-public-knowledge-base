@@ -1,0 +1,7 @@
+- [[c-lang]]
+- [[cpp]]
+- 大部分cpp的代码也可通用到c，少数有区别
+  - [这里提到](https://oi-wiki.org/lang/helloworld/)
+  - > C++ 基本兼容 C 语言，并且拥有许多新的功能，可以让选手在赛场上事半功倍
+- c更底层，开发效率较低，轮子少，往往是子集
+- 例如c只有`<stdio.h>`而cpp还有`<iostream>`

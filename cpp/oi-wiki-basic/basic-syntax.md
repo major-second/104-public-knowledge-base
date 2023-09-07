@@ -1,4 +1,4 @@
-- 前置[[helloworld]]
+- 前置[[cpp-helloworld]]
 - 本文 https://oi-wiki.org/lang/basic/
 ## 关于头文件
 - `cstdio`就是`stdio.h`的意思
