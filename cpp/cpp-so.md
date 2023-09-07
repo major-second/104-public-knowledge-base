@@ -1,1 +1,4 @@
 - 运行时可能需要，缺了就[[software-management]]安装一下包
+- [参考](https://www.zhihu.com/tardis/zm/art/235551437)
+- 可能作为隔离，你看不到整个程序源码，但能看到一部分的源码。这部分源码可能[[make]]后称为`.so`
+  - [[stat-command]]也只能看到`.so`时间变了，而executable没变

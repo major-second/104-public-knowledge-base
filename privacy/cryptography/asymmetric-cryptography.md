@@ -1,0 +1,3 @@
+- [wiki](https://en.wikipedia.org/wiki/Public-key_cryptography)
+- > In an asymmetric key encryption scheme, anyone can encrypt messages using a public key, but only the holder of the paired private key can decrypt such a message. The security of the system depends on the secrecy of the private key, which must not become known to any other.
+  - 公钥可以公开

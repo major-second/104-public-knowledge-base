@@ -5,4 +5,4 @@
    2. [参考csdn](https://blog.csdn.net/weixin_38753422/article/details/95699776)
       1. 只要增删单，交易，量价变化，就产生tick
       2. 所以实际上可能有价格不变的tick
-- [国内tick数据实则是快照数据，情况](https://zhuanlan.zhihu.com/p/438594093)
+   3. 从而[[tick-data]]

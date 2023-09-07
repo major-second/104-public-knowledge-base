@@ -1,3 +1,6 @@
-`make -j8`并行跑（8 jobs），更快（但是报错更不清晰）
-所以调试直接`make`，真正跑用`make -j某`
-可能需要[[sudo]]权限
+- [参考](https://www.ruanyifeng.com/blog/2015/02/make.html)
+  - 因此，具体跑了什么命令一般就看`MakeFile`的第一条
+- 其它
+  - 可能需要[[sudo]]权限
+  - `make -j8`并行跑（8 jobs），更快（但是报错更不清晰）
+    - 所以[[general-principles/debug]]直接`make`，真正跑用`make -j某`

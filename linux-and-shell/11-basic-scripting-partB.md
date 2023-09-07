@@ -14,7 +14,7 @@ type: operations
 ## 11.6 管道记号
 - [[unix-pipeline]]
 ## 11.7 执行数学运算
-### `expr`整数运算
+### 数学运算基础
 - `expr 2 \* 3`：注意转义和空格
 - 也有一些前缀表达式，例如`expr index aaba b`这样（找**字符**，不是子串）
 - `expr index + index d`（把关键字解释成字符串）

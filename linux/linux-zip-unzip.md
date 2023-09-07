@@ -9,7 +9,10 @@
           - 不能是`dir/subdir`，因为`dir/subdir`不是文件
           - 不能是`dir/subdir/*`不加引号，因为你`echo dir/subdir/*`就知道什么意思了。这是没有[[escape]]的错误！
     - 解压：`unzip <名字>.zip`
-      - `unzip <名字>.zip -d <新名字>`
+      - `unzip <名字>.zip -d <指定目录，可以新建>`
+      - `unzip <名字>.zip "文件名"`：部分
+        - 可以使用`*`通配符
+      - `-l`：列表
 - tar
     - `tar -xvf file.tar`
     - `tar -xzvf file.tar.gz`
