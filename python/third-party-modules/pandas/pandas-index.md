@@ -33,6 +33,8 @@
     - 例如做两个变量间的[[regression]]时，如果只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
     - 也可以用[[ordered-dict]]思想，即`df[df.columns[0]]`这种
   - [[regex]]: `df.filter(regex=("d.*"))`
+## 行[[CRUD]]
+- 主要参考[[pandas-loc]]
 ## `.index`属性
 - 有了日期时间，即可利用pandas自动读日期时间的功能，设置index
   - `example = example.set_index(1)`

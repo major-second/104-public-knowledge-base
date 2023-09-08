@@ -16,15 +16,18 @@
     - 例如`df.loc[df.index[0], 'key']`
     - 注意后文的`.iloc`并不能`df.iloc[0, 'key']`
   - 千万不能漏了`.loc`写成了`df[0, 'key']`，否则变成了取column
-- loc常见坑：[参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
-- 和普通的`[]`切片不同之处
-  - `.loc[]`**切片含两端**
-  - `.loc`默认是“绝对”的索引，而不是相对
-    - `.loc[0]`中的0是某个数据条目的一个属性（`index`），相当于某种特殊feature，而不是其在某个序列中的排序
-    - 也就是“二次”切片时不能“相对”切。例如`d.loc[3:4]`的结果就不能再`.loc[0]`了！
-    - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
-  - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
-    - 所以对两种出来结果再切片时效果也当然不同
+- 条件
+  - `df.loc[df['a'] > 10, ['a’, 'c']]`
+- loc常见坑
+  - [参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
+  - 和普通的`[]`切片不同之处
+    - `.loc[]`**切片含两端**
+    - `.loc`默认是“绝对”的索引，而不是相对
+      - `.loc[0]`中的0是某个数据条目的一个属性（`index`），相当于某种特殊feature，而不是其在某个序列中的排序
+      - 也就是“二次”切片时不能“相对”切。例如`d.loc[3:4]`的结果就不能再`.loc[0]`了！
+      - 所以`.loc`似乎天然适合用于处理关于日期时间的索引切片
+    - `.loc[单个]`和`.loc[start:end]`出来的数据类型不一样（这点不同于python原生字符串切片）
+      - 所以对两种出来结果再切片时效果也当然不同
+  - 在数据量大时`.loc`占用资源多，所以可以考虑预先存时间戳到索引位置的[[look-up]]等，这是时空[[tradeoff]]
 - `.iloc`：按顺序0开始取
   - 但这个不能`.iloc[<row_indexer>, <column_indexer>]`
-- 在数据量大时`.loc`占用资源多，所以可以考虑预先存时间戳到索引位置的哈希等，这是时空[[tradeoff]]

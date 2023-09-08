@@ -1,9 +1,7 @@
-前置：
-- [[robot-yaml]]
-- [[pip]]
-- 会用浏览器或vscode插件查看[[html]]
-
-内容
+- 前置
+  - [[robot-yaml]]
+  - [[pip]]
+  - 会用浏览器或vscode插件查看[[html]]
 - 在[[robot-yaml]]提到`tasks - <任务名称> - <command | shell | robotTaskName>`，共三种可能
   - 我们已经知道`shell`就是在shell输入命令
     - 比如`python -c "<python语句>"`，`python -V`等
