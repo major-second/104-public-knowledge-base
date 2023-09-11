@@ -45,6 +45,7 @@
       1. 注：不同版本可能具有的方式还不同。比如老[[version]] `pip`就没有`config`命令。需要装新版本。
    3. [[zsh]]的`setopt`
    4. 用命令很多时候等价于封装了的方法2（直接编辑文件）
+   5. [[pd-set-option]]跟这个很像，不过是python而不是shell
 4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全

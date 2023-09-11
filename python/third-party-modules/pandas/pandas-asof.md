@@ -24,3 +24,8 @@
 2018-02-27 09:03:30  30.0 NaN
 2018-02-27 09:04:30  40.0 NaN
 ```
+- [merge_asof](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge_asof.html)
+  - 注意
+    - > direction ‘backward’ (default), ‘forward’, or ‘nearest’ Whether to search for prior, subsequent, or closest matches.
+    - 这就是防止[[information-leak]]
+  - 使用left的index，且right的时间戳不晚于left

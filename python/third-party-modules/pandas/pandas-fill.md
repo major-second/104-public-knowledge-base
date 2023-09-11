@@ -1,0 +1,5 @@
+- 前置[[nan]]
+-把`NaN`填成
+  - 0用`.fillna(0)`
+  - 向前填充（不看未来数据，防止[[information-leak]]）用`ffill`
+  - 相反用`bfill`

@@ -1,0 +1,7 @@
+- 参考[[pandas-cheatsheet]]
+- 联系“多重索引”
+- `df.pivot(index=..., columns=..., values=...)`，则结果行是`index`，列名是`columns`那一列的值
+  - 可能需要
+    - 查看重复：`df.duplicated(subset=..., keep=<first等等>)`
+      - 和“去除”的保持一致
+    - 去除重复：`df.drop_duplicates(subset=..., keep=<first等等>)`

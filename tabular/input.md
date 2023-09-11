@@ -9,3 +9,4 @@
   - excel能打开：![](from-csv.png)
     - 注意选择编码，分隔符等选项（回忆刚刚说`pandas`读入时也需要选择分隔符）
     - 参考[[file-format]]
+  - [[pd-read-csv]]

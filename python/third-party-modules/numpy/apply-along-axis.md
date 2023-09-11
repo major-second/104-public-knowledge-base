@@ -1,0 +1,7 @@
+- 是一种[[functional-programming]]实现
+- 往往比直接循环快
+- https://zhuanlan.zhihu.com/p/82650175
+- `np.apply_along_axis(func, axis, arr)`
+- func是一元函数，接受数组，把数组中元素按脚标取出进行运算，而不是多元函数
+- 注意对于一维数组可能需要[[numpy/reshape]]成二维数组，类似于[[regression]]
+- 常用（由于[[pandas-index]]）`axis=1`，也就是沿pandas的row（行）

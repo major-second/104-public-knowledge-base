@@ -18,6 +18,7 @@
   - 千万不能漏了`.loc`写成了`df[0, 'key']`，否则变成了取column
 - 条件
   - `df.loc[df['a'] > 10, ['a’, 'c']]`
+  - 如果多个条件，可以先取出values再用[[numpy-bool-array]]操作
 - loc常见坑
   - [参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
   - 和普通的`[]`切片不同之处
