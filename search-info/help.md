@@ -14,3 +14,6 @@
 - 交互式语言如python, R，则有些函数起到此效果
   - [[numpy-basics#Asking For Help]] `np.info`
 - [[chatgpt]]也不是不行
+- [[vscode/edit]]
+  - `ctrl+鼠标`定位
+  - 可能需要选解释器等，[[vscode-python]]

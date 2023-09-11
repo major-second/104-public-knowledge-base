@@ -1,0 +1,4 @@
+- [github](https://github.com/robocorp/robo)
+- 安装方法类似[[rcc]]，直接[下载](https://downloads.robocorp.com/robo/releases/index.html)，拷贝到文件夹加入[[windows/env-var]]即可
+  - [[powershell-basics]]直接`robo`看到命令
+- `robo new`创建新项目

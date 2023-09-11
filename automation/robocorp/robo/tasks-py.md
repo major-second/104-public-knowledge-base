@@ -1,0 +1,5 @@
+- 前置
+  - 了解[[dot-robot]]
+  - [[robo]]，`robo new`
+- `tasks.py`和[[dot-robot]]类似，只不过不用`robotframework`语言而用py
+- 进去`robo run`即可运行
