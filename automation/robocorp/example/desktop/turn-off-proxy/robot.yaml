@@ -1,7 +1,0 @@
-tasks:
-  Turn on wi-fi:
-    robotTaskName: Turn off proxy
-artifactsDir: output
-condaConfigFile: conda.yaml
-ignoreFiles:
-  - .gitignore

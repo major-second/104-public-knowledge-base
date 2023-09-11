@@ -1,5 +1,5 @@
 - 前置
-  - [[robot-yaml]]
+  - [[conda-yaml]]
   - [[pip]]
   - 会用浏览器或vscode插件查看[[html]]
 - 在[[robot-yaml]]提到`tasks - <任务名称> - <command | shell | robotTaskName>`，共三种可能
@@ -14,32 +14,30 @@
     Minimal task
         Log    Done.
     ```
+  - [参考例子](../example/dot-robot/tasks.robot)
 - 这是`robotframework`语言。基础语法：
   - 命令和参数
     - 用$\ge 2$个空格分隔“命令”和“参数”
-    - “命令”本身可能含有空格，比如`Wait For Element`
+      - 原因
+        - “命令”本身可能含有空格，比如`Wait For Element`
+        - “参数”可能也有空格
     - “命令”在vscode中可以补全
-    - “参数”可能也有空格，比如[[press-keys]]中
   - 在mandatory参数后可能有optional参数，也用$\ge 2$个空格隔开
-    - 可能形如`timeout=3`，即`key=value`
-    - 可能按位置填入，而不是`key=value`形式
+    - 可能
+      - 形如`timeout=3`，即`key=value`
+      - 按位置填入，而不是`key=value`形式
     - 类似于python可选参数、关键字参数
   - `*** Settings ***`模块中，`Library`语句导入Keywords
     - 这个相当于python导入[[import/basics]]时的`from ... import *`所以很容易重名
       - 此时需要写出全名，比如`RPA.Desktop.Click`
-  - 更多语法直接看[cheat sheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)，基本现用现查即可
-    - 例如使用了`TRY`的`104-public-knowledge-base\automation\robocorp\example\desktop\turn-off-proxy`
-- `robotTaskName`的用法
-    - 修改两个`.yaml`
+  - 直接看[cheat sheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)，基本现用现查即可
+- 修改其它文件
     1. 在[[robot-yaml]]中提到的`robot.yaml`中`robotTaskName`字段
       - 写`.robot`文件中的`Tasks`字段下的task名称
         - 比如刚刚的`Minimal task`
-    2. 同时需要在`conda.yaml`中适当加入内容
-      - 内容参考`104-public-knowledge-base\automation\robocorp\example\dot-robot`
+    2. 同时需要在[[conda-yaml]]中适当加入内容（补包）
       - 可能有`pip`有包`conda`没有的现象参考[[pip]]
         - 例如2022.6，`conda`的`rpaframework`只有`9.x`而`pip`有`14.x`
-    - 创建`.robot`文件
-    - 参考`104-public-knowledge-base\automation\robocorp\example\dot-robot`
 - 这样运行之后结果
   - 在`output`文件夹就除了之前的`stdout.log, stderr.log, *.yaml`，还有`*.xml, *.html`
     - 其中`html`可以[[chrome]]或[[vscode-browser-extensions]]打开
