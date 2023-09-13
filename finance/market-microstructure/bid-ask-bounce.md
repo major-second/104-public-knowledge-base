@@ -1,7 +1,9 @@
 - [参考](https://www.investopedia.com/ask/answers/013015/whats-difference-between-bidask-spread-and-bidask-bounce.asp)
 - 导致[[autocorrelation]]
 - 导致[[price-targets]]缺陷
-  - 这是个mid price的缺陷，即一些不想看到的噪音和mid price纠缠到一起，需要解耦
+  - 这是个mid price的缺陷，即一些不想看到的[[market-microstructure-noise]]和mid price纠缠到一起，需要解耦
+    - 解耦过程：可能类比于[[data-science/residual]]，但是并不是bias，而是零均值的东西
+      - [[market-microstructure-noise#Two Scale]]
   - last traded就更不行了……
   - [[vwap]]在[[liquidity]]不行时，肯定也抖动厉害
     - 你看长时间[[LLN]]？如果本来就要高频交易，怎么办？也不行

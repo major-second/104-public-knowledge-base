@@ -2,3 +2,5 @@
 - 安装方法类似[[rcc]]，直接[下载](https://downloads.robocorp.com/robo/releases/index.html)，拷贝到文件夹加入[[windows/env-var]]即可
   - [[powershell-basics]]直接`robo`看到命令
 - `robo new`创建新项目
+  - 此时只生成`.toml`，[[special-files#dot-gitignore]]和[[tasks-py]]，用不了[[keyword-in-py]]等
+  - 只有最基础功能

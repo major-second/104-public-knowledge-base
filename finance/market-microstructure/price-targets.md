@@ -18,7 +18,7 @@
   - 此处被称为microprice
   - 讲了直觉：$Q^b$大，说明greater buying pressure, fair price is closer to the ask
 - 缺点
-  - 变化频率过高，volatility estimation时noisy
+  - 变化频率过高[[market-microstructure-noise]]太高
   - 不是[[martingale]]
   - 反直觉现象
     - 问题来源：出现跨档

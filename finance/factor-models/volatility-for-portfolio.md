@@ -1,7 +1,8 @@
 - 前置
   - [[linear-model-for-portfolio]]
   - [[linear-transform]]
-- volatility
+  - [[volatility]]
+- [[volatility]]
   - 一段时间[[sliding-window]]中某个东西的[[variance#standard deviation]]
   - 已知[[cov]], 可以[[linear-transform]]计算出结果$\sqrt {w'\Sigma_rw}$
 - 然而$\Sigma_r$还是不好算啊

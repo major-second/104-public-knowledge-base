@@ -1,0 +1,7 @@
+- https://en.wikipedia.org/wiki/Volatility_(finance)
+- > usually measured by the [[variance#standard deviation]] of logarithmic [[returns]].
+  - https://en.wikipedia.org/wiki/Realized_variance: [[variance]]
+- > Historic volatility measures a time series of past market prices. Implied volatility looks forward in time, being derived from the market price of a market-traded derivative (in particular, an option).
+- 不同尺度计算结果不同
+  - profit of market maker
+  - 引出[[market-microstructure-noise]]

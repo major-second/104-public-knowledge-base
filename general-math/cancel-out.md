@@ -1,0 +1,2 @@
+- 恰好把难处理难计算未知项抵消
+- [[market-microstructure-noise#Two Scale]]
