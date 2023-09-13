@@ -1,0 +1,9 @@
+- 参考
+  - [[orthogonal-decomposition]]，正交基不干扰
+- programming
+  - [divide a task](https://www.geeksforgeeks.org/what-is-decomposition-computational-thinking/)
+- 机器学习中
+  - [[data-science/residual]]
+  - [[normalization#丢失信息]]：分解几部分，丢掉一部分
+  - 去除噪声
+    - [[market-microstructure-noise]]
