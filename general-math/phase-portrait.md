@@ -1,0 +1,5 @@
+- [参考](https://en.wikipedia.org/wiki/Phase_portrait)
+  - `phase space, state space`
+  - > a geometric representation of the trajectories of a dynamical system in the phase plane. 
+- 环：表示同频，可能有因果/相关性
+  - [举例](http://www.stats.gov.cn/zs/tjws/tjzb/202301/t20230101_1940241.html)：宏观经济[[business-cycle]]的先行/滞后指标

@@ -4,3 +4,8 @@
     - [[spread]]
 - 影响
   - “看多少档信息才够”。如果流动性好，价位挤在一档，可能需要看的档位少
+- 和[[volatility]]关系
+  - [参考](https://dailypriceaction.com/blog/forex-liquidity-volatility)
+    - 没流动性，跳动多，波动性大
+  - [参考](https://www.cmegroup.com/articles/2022/volatility-spikes-vs-liquidity-a-longer-term-perspective.html)
+    - > Highly liquid benchmark futures products at CME Group are no exception. Indeed, commentators reported the reduced book depth and the widening of effective bid/ask spreads in E-mini S&P 500 (ES) futures in January 2022 at the same time that volatility reached multi-year highs.

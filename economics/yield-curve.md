@@ -1,0 +1,10 @@
+- 参考[[business-cycle]]
+- [参考](https://www.britannica.com/money/topic/yield-curve)
+  - 例如treasure bill
+- normal: in case of default / inflation: upward sloping
+- bleak expectation: downward
+  - "inverted yield curve"
+  - 因此 yield curve 某种程度代表预期
+- > That interest-rate difference (also called the spread) is essentially a measure of the shape of the yield curve, as it represents the difference between a long-term interest rate (the 10-year treasury bond) and a short-term rate (the federal funds rate).
+  - 相当于[[encode-decode]]，用一个数代表
+  - 例如spread大表示steep yield curve, spread负表示inverted yield curve, spread小表示flat yield curve

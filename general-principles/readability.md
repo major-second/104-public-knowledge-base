@@ -35,3 +35,7 @@
   - 分布图更精细，相比[[expectation]], [[moment]]等等
   - 但不够明显。别人不容易懂
   - 单个数值和单个数值表有时更直观。特别是初期探索阶段/成果不明显时（1%在表上根本看不出来）
+## phase diagram
+- [参考](https://en.wikipedia.org/wiki/Phase_diagram)
+## phase portrait
+- [[phase-portrait]]
