@@ -7,7 +7,8 @@
   - `pd.to_datetime('7/8/1952', dayfirst=True)`
   - `pd.to_datetime(<大整数>, unit='ns')`
     - `pd.to_datetime(0)`输出`Timestamp('1970-01-01 00:00:00')`
-    - 这个大整数[[timestamps]]并不是`20220721093000031`这种本质字符串的东西
+    - 这个大整数[[timestamps]]并不是`20220721093000031`这种本质是字符串的东西
+    - 如果结果不对劲，看看单位对不对，是不是`ns`
   - `pd.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])`
     - 返回一个序列`DatetimeIndex`
     - 底层：64-bit的整数（纳秒）

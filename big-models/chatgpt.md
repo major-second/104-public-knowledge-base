@@ -1,6 +1,8 @@
 [toc]
 # 前置
   - [[openai-account]]
+    - 也可用[[telegram]] bot，就无需[[openai-account]]，但可能有限制
+    - `https://t.me/ChatGPT_General_Bot`
   - [[proxy-basics]]
   - 适当[[node]]
     - 用不了的node表现：![](chatgpt-non-usable-node.png)
@@ -68,4 +70,4 @@
     - https://www.pdf2go.com/
   - 免费的有每日限流，单文件限大小页数
 - [[cursor-so]]
-- [[telegram]]（有bot）
+- [[telegram]] bot
