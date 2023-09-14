@@ -2,6 +2,7 @@
   - > In probability theory, a martingale is a sequence of random variables (i.e., a stochastic process) for which, at a particular time, the conditional expectation of the next value in the sequence is equal to the present value, regardless of all prior values.
   - 历史：“倍投法”（二倍法）
     - 显然是鞅
+    - 从此看出，鞅不一定是[[stationary-processes]]
 - 与[[markov-process]]关系
   - 互不包含！
     - https://www.zhihu.com/question/22181185/answer/72296114

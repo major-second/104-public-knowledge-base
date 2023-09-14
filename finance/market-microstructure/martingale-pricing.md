@@ -1,4 +1,5 @@
 - 前置[[martingale]]
 - “不可预测”
 - “有效市场”
-  在实际预测任务中，可以理解成不要有[[bid-ask-bounce]]这种没意义的干扰、[[market-microstructure-noise]]
+  - 在实际预测任务中，可以理解成不要有[[bid-ask-bounce]]这种没意义的干扰、[[market-microstructure-noise]]
+- 参考[[problem-decomposition]]
