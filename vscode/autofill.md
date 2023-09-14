@@ -1,0 +1,7 @@
+- 可能需要
+  - python为例
+    - 插件例如[[vscode-python]]
+    - 选择正确解释器（环境），里面已有包等
+    - 能推断类型
+      - 因此可以`my_class.my_method(instance)`，而不是`instance.my_method`
+  - 其它场景：有时可以推断出现过的文本（单词）

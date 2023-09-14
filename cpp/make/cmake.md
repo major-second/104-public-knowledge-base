@@ -1,3 +1,10 @@
+- 安装：`sudo apt install cmake`
+- 使用
+  - 到项目根目录（一般下属`src`等等）
+  - `mkdir build && cd build`
+  - `cmake ..`
+  - `make`
+  - 则出现可执行文件
 - 如果一次失败后，可能需要把部分多余的（`devel, build`等）删除再重试，参考[[general-programming/cache]]
 - [[configure-proxy]]
   - 在`CMakeLists.txt`开头增加

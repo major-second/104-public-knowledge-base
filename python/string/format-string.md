@@ -1,0 +1,8 @@
+- 可以和[[f-string]]一起用
+- 比[[f-string]]更早
+- https://www.runoob.com/python/att-string-format.html
+- 常用
+  - `{}`
+  - `{0}`
+  - `{1:2f}`
+- 示例：`'{0} {1:.3f}'.format(1,2)`得到`1 2.000`
