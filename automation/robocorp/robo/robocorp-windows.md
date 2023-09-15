@@ -17,3 +17,4 @@
     except:
         print("Connect button in Cisco window doesn't exist!")
     ```
+    - 其它：例如`'type:Edit'`筛选文本框

@@ -42,15 +42,19 @@
     - `library.windows_run("calc.exe")`
     - `library.windows_search("outlook")`
 # [[vscode]]
-- [[vscode-python]]查询api
+- [[vscode-python]]
   - `robo run`运行从而得到`conda`环境
   - 右下角选解释器选该环境
-  - ctrl+鼠标定位到`RPA.Windows`这种
-  - 出来的文件中找到`_get_libraries`，ctrl+鼠标定位，进去`WindowKeywords`这种，即可查api
-- [[debug-console]]等可用。比如
-    ```python
-    from RPA.Windows import Windows
-    library = Windows()
-    print(library.keywords.keys())
-    print(library.list_windows())
-    ```
+  - 查询api
+    - ctrl+鼠标定位到`RPA.Windows`这种
+    - 出来的文件中找到`_get_libraries`，ctrl+鼠标定位，进去`WindowKeywords`这种，即可查api
+  - [[debug-console]]
+    - 可用，且非常方便
+    - [[robocorp-windows]]用例：
+      ```python
+      from RPA.Windows import Windows
+      library = Windows()
+      print(library.keywords.keys())
+      print(library.list_windows())
+      ```
+    - 注：如果`robocorp`包没有，可以`try`跳过

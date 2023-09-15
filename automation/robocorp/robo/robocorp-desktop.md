@@ -1,0 +1,4 @@
+- [参考](https://robocorp.com/docs/development-guide/desktop)
+  - 合规等情况，你只能看到video stream，自然就无法用[[robocorp-windows]]了
+- [举例](https://robocorp.com/portal/robot/robocorp/example-desktop-image-ocr)
+- desktop文档

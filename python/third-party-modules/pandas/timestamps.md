@@ -46,3 +46,6 @@
 - 构造间隔`td = pd.Timedelta(weeks=2,days=10,hours=12,minutes=2.4,seconds=10.3)`
   - 使用：可以直接`date1 = date0 + td`
   - 示例：`2.5 * d1 - 1.5 * d2`报错（时刻不能乘法），但`d1 + 1.5 * (d1 - d2)`可以
+# tzinfo
+- `.tzinfo`
+- 去除，使得可以比较：`.apply(lambda x: x.replace(tzinfo=None))`
