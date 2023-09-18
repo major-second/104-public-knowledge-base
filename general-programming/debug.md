@@ -52,9 +52,12 @@
   - [[stdout]], [[stderr]]
   - [[general-programming/logs]]等文件
 - 调试器
-  - `ipdb`
-  - [[vscode-python]]
-  - [[vscode-debug-js]]
+  - 终端
+    - `ipdb`
+    - [[gdb]]
+  - 编辑器例如[[vscode]]
+    - [[vscode-python]]
+    - [[vscode-debug-js]]
 - 为何不能依赖调试器？
   - 比赛等场景不允许用，只能直接输出
     - [[leetcode-solutions/0-metadata]]等

@@ -3,12 +3,14 @@
   - deeplob等是一个部分
   - [原文](https://arxiv.org/pdf/2307.05522.pdf)
 - interpretability
-  - LIME, SHAP可解释性：不适用，主要因为[[domain-gap]]
+  - LIME, SHAP可解释性：不适用，主要因为
+    - 金融不是[[stationary-processes]]
+    - 太高维了，你逐特征看不出东西
   - 提供的可解释性
     - attention，主要表示不同时间点的相似度
-    - variable selection network，主要表示哪些特征重要，以及重要事件时发生变化
+    - variable selection network，主要表示哪些特征（每个特征都属于某个symbol）重要，以及重要事件时发生变化
     - 总之和[[barra]]那种传统的风控不同
-    - 不过可以说对逐个asset有风控
+    - 不过可以说对逐个asset（symbol）/feature 有风控
 # deeplob
 - [deeplob库](https://github.com/zcakhaa/DeepLOB-Deep-Convolutional-Neural-Networks-for-Limit-Order-Books)
 - [deeplob arxiv](https://arxiv.org/abs/1808.03668)

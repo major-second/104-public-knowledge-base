@@ -28,6 +28,7 @@
     - 隐蔽的错误：`a, b = [pd.Series([1,1], index=range(i,i+2)) for i in range(2)]; print((a+b).shape)`
     - 输出`(3,)`
   - 注意多重`[]`作为等号左边（左值）会导致和[[general-copy]]有关的问题，参见[[pandas-loc]]
+  - 重命名：`.rename(columns=<字典>, inplace=...)`
 - 查：
   - “子”数据集：`df[[key0, key1]]`
     - 例如做两个变量间的[[regression]]时，如果只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集

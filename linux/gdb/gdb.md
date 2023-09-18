@@ -1,0 +1,23 @@
+- [参考](https://zhuanlan.zhihu.com/p/74897601)
+- [[general-programming/debug]]
+- `gdb 文件名`
+- 进入之后，[常用命令](https://zhuanlan.zhihu.com/p/474736535)
+    - [[breakpoint]]
+      - info breakpoints
+      - b 9
+      - b test.c:9
+      - b printNum
+      - b test.c:23 if b==0
+      - rbreak test.c:^print
+        - [[regex]]
+      - tbreak ... # 临时
+    - `run`
+    - `show directories`
+    - `pwd`
+    - `cd ...`
+# `-x`
+- 文件里面写要运行的
+  - `-x <文件>.gdb`
+- 典型：
+  - `set breakpoint pending on`
+  - `b ...`

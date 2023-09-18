@@ -19,7 +19,7 @@
   - [[21-merge-two-sorted-lists]]增加链表头，方便处理空的[[algorithm/special-case]]
   - [[adj-factor]]
   - 到脚本所在目录
-    - [[17-function]] `cd $(dirname $0)`
+    - [[17-function]] `cd $(cd $(dirname $0); pwd)`
     - [[powershell-var]]中`$PSScriptRoot`
   - 先删除再新建文件/文件夹
 - 利用[[symmetry]]
