@@ -20,3 +20,4 @@
   - 各种代码文件中也有各自可用的这种操作
 - `.md`中，剪贴板里是链接（`http://`开头）时，选中文本按`Ctrl+V`不会覆盖而是“给它加上链接”
   - 联想[[paste-image]]的选中文本按`Ctrl+Shift+V`
+- win: shift alt f formatting

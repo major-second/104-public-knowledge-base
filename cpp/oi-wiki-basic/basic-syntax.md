@@ -17,6 +17,7 @@ int x, y;
 scanf("%d%d", &x, &y);
 printf("%d\n%d", y, x);
 ```
+- 注意单引号表示[[cpp-char]]，双引号才是一般的字符串
 ## `#define`
 ### 带参数的宏
 `#define sum(x, y) ((x) + (y))`

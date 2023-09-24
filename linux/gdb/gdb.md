@@ -15,9 +15,19 @@
     - `show directories`
     - `pwd`
     - `cd ...`
+    - `n`逐步
+    - `s`逐步（进入）
+    - [[help]]
+      - `help`
+    - `display 变量名`
+    - `where`
 # `-x`
 - 文件里面写要运行的
   - `-x <文件>.gdb`
 - 典型：
   - `set breakpoint pending on`
+    - 这样[[cpp-so]]调用时遇到的断点可以用
   - `b ...`
+  - `run`
+  - `display ...`
+  - `n`

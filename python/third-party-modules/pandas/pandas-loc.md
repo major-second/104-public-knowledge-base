@@ -32,3 +32,6 @@
   - 在数据量大时`.loc`占用资源多，所以可以考虑预先存时间戳到索引位置的[[look-up]]等，这是时空[[tradeoff]]
 - `.iloc`：按顺序0开始取
   - 但这个不能`.iloc[<row_indexer>, <column_indexer>]`
+- `.at`: 常用于一个元素本身是df等复杂对象，这个不能用loc
+  - `df[col] = pd.Series(dtype=object)`
+  - `df.at[row, col] = sub_df`

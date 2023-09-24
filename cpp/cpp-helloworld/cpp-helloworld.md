@@ -11,4 +11,4 @@
 # linux
 - `sudo apt update && sudo apt install g++` 安装
 - `g++ -v`查看[[version]]
-- `g++ <file>.cpp -o test`输出，`./test`运行
+- `g++ <file>.cpp -o test`输出程序，`./test`运行
