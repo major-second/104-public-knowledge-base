@@ -3,6 +3,7 @@
   - 进程相比“线程”，能充分利用多核
     - [[py-process-thread]]
     - [知乎](https://zhuanlan.zhihu.com/p/455171966)
+    - [知乎](https://zhuanlan.zhihu.com/p/103135242)
 ## 最小唯象例子（利用`Pool`并行）
 - 参考`minimum.py`
   - 这就说明可以简单做并行

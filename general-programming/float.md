@@ -8,9 +8,6 @@
       - 而且[[1739-building-boxes]]还有$n^3 \approx n(n-1)(n-2)$的问题
     - 一定要判断，需要`abs(...) < EPSILON`这样
 - 浮点数本质上是一种[[encode-decode]]方法
-- 关于空间，如[[resource-management/disk]]
-  - 时刻注意精度。常见精度：16，32，64等
-  - 例如在[[save-load]]时可以指定`dtype=np.float32`
 - 克服误差
   - 例如先乘以一个常数，变成整数，把`1+1e-8`和`1+2e-8`变成`1e8+1`和`1e8+2`，然后可以高精
     - [[enumerate]]中有提到（“负环”），平时浮点，有嫌疑的高精
@@ -24,5 +21,11 @@
   - 取整“到哪”不同
   - 十进制取整误差例子
     - [[停牌]]
+# 精度
+- 时刻注意精度。常见精度：16，32，64等
+- 关于空间，如[[resource-management/disk]]
+  - 例如在[[save-load]]时可以指定`dtype=np.float32`
+  - `Tensor`和`torch.tensor`就不同，前者可能出现类型转换，丢失精度
+- 反直觉：32位浮点数精度仅[23bit](https://blog.csdn.net/leenuxcore/article/details/93737756)，存八位数日期就会导致误差。可能偏差1之类的
 # nan
 [[nan]]

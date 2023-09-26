@@ -1,0 +1,4 @@
+- 前置[[cpp-helloworld]]
+- [endl和flush](https://www.apiref.com/cpp-zh/cpp/io/manip/flush.html)
+  - 如果急于`exit(0);`，就可能输出不全
+  - [[finally]]

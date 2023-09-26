@@ -8,7 +8,7 @@
 # 典型操作
 - `size()`
   - 必须取了这个才能做判断条件。不能直接做
-- `find(str, pos)`
+- `find`
   - 默认从`pos=0`开始，从头开始找
   - 没有出现：返回`string::npos`
     - `string::npos`是`-1`转化成`unsigned long`的值，但是具体多少不重要，有这个东西才重要，参考[[naming#exists]]思想
@@ -25,6 +25,7 @@
   - `push_back`一个字符，非常方便
 - `(auto x:s)`，`x`类型是`char`
   - 回忆[[loop]]
+- `std::to_string(例如整数)`
 # 示例
 ```cpp
 string s="123123";
