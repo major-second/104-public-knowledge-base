@@ -33,3 +33,8 @@
 - 可以用`os.getpid()`和`os.getppid()`得到进程号/父进程号
 - 可以外部启动一个终端通过[[4-more-commands]]、[[resource-management/commands]]等监测你的python进程fork出多少子进程
   - 例如`Pool(N)`就会fork出`N`个
+- [典型问题](https://www.zhihu.com/question/39032759)
+  - [[py-interactive]]，则由于动态创建，找不到
+  - 文件中运行若没有保护则[[module-launch]]导入模块时无限循环
+    - [参考](./pool_infinite_loop.py)
+    - [参考](./pool_protected.py)
