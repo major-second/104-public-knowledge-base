@@ -40,3 +40,5 @@ int const *const
 - 编译期可以求得
 - `constexpr int a=10;`
 - 实际上这个理解成数学中“常数”，`const`理解成“只读”挺好的
+# 其它
+- [[associative]]，const的map操作方法有不同，需要`.at()`

@@ -65,6 +65,8 @@ set<int, cmp> s;
   - 或者`(auto& x:s)`（传引用）
   - `x`类型就是`<>`里面填的那个东西
   - 对于`map`就是[[pair]]，这点和python字典不同！
+- [取值方法对比](https://blog.csdn.net/guotianqing/article/details/108896065)
+  - [[const]]则需要`my_map.at(...)`
 ## 无序关联式
 - 参考[[hash]]
 - https://oi-wiki.org/lang/csl/unordered-container/
