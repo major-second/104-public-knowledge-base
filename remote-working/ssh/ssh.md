@@ -8,3 +8,4 @@
   - 在有反向[[forward-port]]时端口一般就不是22
 - [[forward-port]]：`-R`, `-L`
 - 只连接不打开shell：`-N`，常用于[[autossh]]
+- `-o StrictHostKeyChecking=no`：忽略检测对方（否则第一次连对方有一个`yes`确认）
