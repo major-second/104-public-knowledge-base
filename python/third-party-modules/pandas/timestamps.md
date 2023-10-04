@@ -12,6 +12,8 @@
   - `pd.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])`
     - 返回一个序列`DatetimeIndex`
     - 底层：64-bit的整数（纳秒）
+  - 逆操作（[[encode-decode]]）：`df['time'].strftime('%Y-%m')`
+    - [参考](https://blog.csdn.net/Jason_WangYing/article/details/109481802)
 - 加速（手动指定格式）
   - 指定格式如`format='%m/%d/%y'`
     - 注意`%Y`是全称`2022`这种，区别于`%y`

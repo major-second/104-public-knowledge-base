@@ -3,4 +3,5 @@
   - [[tabular/input]]
   - [[markdown-basics]]
   - `pip install tabulate`
-- 用法`df.to_markdown()`
+- 用法`df.to_markdown()`返回字符串
+- [知乎](https://zhuanlan.zhihu.com/p/114041168)

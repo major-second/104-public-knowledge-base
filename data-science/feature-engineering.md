@@ -27,6 +27,9 @@
 - 基础手段
   - 数字特征（[[cov]], [[variance]], [[expectation]]等）
     - 如：滚动[[rolling]]求均值、方差等
+    - MA, EMA, MA之差等
+      - 这些是线性的，其实有点想到[[deep-learning-basics]]的feature extraction
+      - horizon当然是可调参数
   - 对于[[time-series]]，就有速度、加速度、位移、路程等
 - 有时跟[[preprocessing]]不分家
   - [[data-science/normalization]]
@@ -43,6 +46,7 @@
 - 衍生手段
   - 线性组合
     - 两个相同量纲量的加减
+      - A - B 很多时候比 A/B 性质好且数值稳定
     - 一般情况线性组合，如[[barra#CNE5]]中很多具体因子计算
   - 两个量的乘除（很多时候乘除某个无量纲量）
   - 两个量做[[unary]]线性回归看相关系数或斜率（斜率当然和协方差[[cov]]关系密切）

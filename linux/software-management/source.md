@@ -1,7 +1,7 @@
 - 前置[[settings-and-configurations]]
 - `apt`是从软件源上下载软件的
   - `ubuntu`官方源，清华，阿里云等有一般、通用的软件
-  - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]，[[vscode/command-line]]等可能不被这些官方收录
+  - 而[[v2raya]]，[[ros/installation]]，[[docker/installation]]，[[vscode-command-line]]等可能不被这些官方收录
     - 所以需要自己添加
     - 再用`sudo apt update`更新
     - 之后即可以在新的源上获取软件

@@ -11,18 +11,7 @@
   - 如[[orthogonal]]中求$cov(\hat \alpha_i,\hat\beta_j)$
   - 如[[linear-transform]]中求协方差矩阵变换后表达式
   - 一般地，$Cov(\sum a_iX_i, \sum b_jY_j)=\sum\sum a_ib_jCov(X_i,Y_j)$，当然可以特殊化到[[variance]]
-# corr
-- 定义：协方差[[cov]]除以两个随机变量的标准差
-  - 注意不是除以两个方差[[variance]]
-  - $\rho = Cov(X,Y)/\sigma_X\sigma_Y$
-- 对于两个标准正态，[[iid]]则$\rho=0$，否则由于[[variance]]和标准差都是1，则[[cov]]矩阵就是$[[1,\rho],[\rho,1]]$
-- $\rho^2=R^2$不是总成立，参考[[unary#$R^2$]]
-## correlation matrix
-- 联想协方差和协方差矩阵
-- numpy中有[[numpy-basics#Array Mathematics]] `np.corrcoef(arr)`
-## spearman
-- 先[[data-science/normalization#排序]]再求[[cov#corr]]
-- 实现：如参考[[scipy-correlation]]
+# [[correlation]]
 # 无关
 - cov为0称为无关
   - 是[[1-prob/independent]]必要条件

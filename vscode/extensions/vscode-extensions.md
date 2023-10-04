@@ -1,6 +1,6 @@
 # 安装
   - gui：`Ctrl + Shift + X`搜索插件并点击Install安装
-  - 命令行：参考[[vscode/command-line]]
+  - 命令行：参考[[vscode-command-line]]
   - 离线（涉及内网时）
     - https://blog.csdn.net/Sky_fy_1314/article/details/123865926?spm=1001.2101.3001.4242.2&utm_relevant_index=4
       - https://marketplace.visualstudio.com/vscode

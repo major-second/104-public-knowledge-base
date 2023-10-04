@@ -6,3 +6,5 @@
 - 典型语句，来自[[pandas-asof]]
   - `df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
 - [参考](https://zhuanlan.zhihu.com/p/91948053)
+- 作为因子预测未来：高频特别短时间，往往反转趋势
+  - 类比[[bid-ask-bounce]]，然而那个你抢不到单，否则也能赚钱
