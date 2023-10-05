@@ -27,5 +27,4 @@
   - 例如在[[save-load]]时可以指定`dtype=np.float32`
   - `Tensor`和`torch.tensor`就不同，前者可能出现类型转换，丢失精度
 - 反直觉：32位浮点数精度仅[23bit](https://blog.csdn.net/leenuxcore/article/details/93737756)，存八位数日期就会导致误差。可能偏差1之类的
-# nan
-[[nan]]
+# [[nan]]
