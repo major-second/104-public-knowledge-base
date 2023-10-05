@@ -1,4 +1,8 @@
 - [参考](https://robocorp.com/docs/development-guide/desktop)
   - 合规等情况，你只能看到video stream，自然就无法用[[robocorp-windows]]了
-- [举例](https://robocorp.com/portal/robot/robocorp/example-desktop-image-ocr)
 - 这里的locators含义和[[robocorp-windows]]的不同！
+- 例子
+  - [举例](https://robocorp.com/portal/robot/robocorp/example-desktop-image-ocr)
+  - `lib_desktop.type_text('123', enter=True)`
+  - `lib_desktop.wait_for_element(<绝对路径>, timeout=...)`
+  - `lib_desktop.press_keys('ctrl', 'd')`

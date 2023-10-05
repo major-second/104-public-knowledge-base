@@ -10,6 +10,8 @@
   ```
 - [[debug-console]]看`tree`
   - `t = lib_windows.print_tree(calc, return_structure=True)`
+  - 此时能看到`path:...|...`这种，可用来临时调试时`get_elements`
+  - `calc`也可以改成`path:...`
 - 定位元素
     ```python
     try:

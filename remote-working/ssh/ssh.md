@@ -1,11 +1,14 @@
 - 基础：`ssh user@ip`
   - `ip`也可能是域名
   - 参考[[dns]]，[[公网ip]]等
-- 使用指定[[generate-key-pair]]中的私钥：`-i <文件名>`
-  - 请参考[[private-key-permissions]]
-- 指定端口：`-p`（默认`22`）
-  - 注意区别于[[scp]]
-  - 在有反向[[forward-port]]时端口一般就不是22
-- [[forward-port]]：`-R`, `-L`
-- 只连接不打开shell：`-N`，常用于[[autossh]]
-- `-o StrictHostKeyChecking=no`：忽略检测对方（否则第一次连对方有一个`yes`确认）
+- 运行命令：`ssh user@ip <命令>`
+- 参数
+  - `-i <文件名>`
+    - 使用指定[[generate-key-pair]]中的私钥
+    - 请参考[[private-key-permissions]]
+  - 指定端口：`-p`（默认`22`）
+    - 注意区别于[[scp]]
+    - 在有反向[[forward-port]]时端口一般就不是22
+  - [[forward-port]]：`-R`, `-L`
+  - 只连接不打开shell：`-N`，常用于[[autossh]]
+  - `-o StrictHostKeyChecking=no`：忽略检测对方（否则第一次连对方有一个`yes`确认）

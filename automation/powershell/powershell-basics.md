@@ -3,6 +3,7 @@
 - 相当于linux的终端。可以执行命令
   - 不过时至2022还没linux的命令行好用
   - 不客气地说，win命令行，就是垃圾
+- [文档](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.3)
 # 运行
 - 没有权限？参考[[administrator-powershell]]，以及其中的`ExecutionPolicy`相关设置命令
 - 不能双击运行？从而[[windows-link]]也不方便一个快捷键运行？[[file-format]]打开方式选择`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`这种东西

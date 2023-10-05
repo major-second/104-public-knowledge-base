@@ -6,3 +6,4 @@ foreach ($port in 9999, 10000, 10001)
     echo "Trying $proxyServer"
 }
 ```
+- `foreach ($user_at_ip in @('git@github.com', 'test@test')`，注意逗号

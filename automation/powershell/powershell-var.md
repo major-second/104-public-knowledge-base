@@ -14,7 +14,10 @@ C:\Windows
 - 直接`$env:<k> = "<v>"`改动
   - 改动成空就是删除
   - 注意这个和[[6-env]]不同，需要`$`开头
-- 应用：`$env:http_proxy = "http://127.0.0.1:<端口号>"`
+- 应用
+  - [[configure-proxy]]
+    - `$env:http_proxy = "http://127.0.0.1:<端口号>"`
+  - `$env:UserName`用户名
 ## 普通变量
 - `$x = 5; echo $x`
   - [[11-basic-scripting-partA#11.4 使用变量]]中是`x=5`

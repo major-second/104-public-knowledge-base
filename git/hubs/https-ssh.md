@@ -5,8 +5,8 @@
 - 了解[[generate-key-pair]]，[[check-connectivity]]
 
 ## 概述
-- `git clone`https链接不需要加ssh密钥，但ssh链接需要
-- 何时需要ssh链接？
+- `git clone`https链接不需要加ssh密钥[[generate-key-pair]]，但需要[[personal-access-tokens]]，ssh相反
+- 何时必须需要ssh链接？
   - `--recursive`地`git clone`子模块时，默认用ssh链接
   - 有时`https`链接玄学[[clone]]，[[push-pull]]不了，那就要用`ssh`链接，作为[[workaround]]
   - [一个例子](https://stackoverflow.com/questions/7489813/github-push-error-rpc-failed-result-22-http-code-413)：当小的库正常[[push-pull]]，大的就错误码`413`时，可以试试
