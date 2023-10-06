@@ -6,3 +6,6 @@
   - `lib_desktop.type_text('123', enter=True)`
   - `lib_desktop.wait_for_element(<绝对路径>, timeout=...)`
   - `lib_desktop.press_keys('ctrl', 'd')`
+  - `lib_desktop.click('image:...')`
+    - 区分于[[robocorp-windows]]的`click`. 这里的更加general
+      - 例如对于[[keybase]] [[vscode]]这种用react, electron之类的，[[robocorp-windows]]就找不到

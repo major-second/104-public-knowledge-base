@@ -14,6 +14,11 @@
   - 这里和shell不完全一样，比如不能使用`~`
     - 可以使用`..`
     - 默认相对路径，开头`/`则绝对
+- `os.path`
+  - [参考](https://www.runoob.com/python/python-os-path.html)
+  - `.abspath`, `basename`, `dirname`, `exists`, `split`
+  - `.walk`
+  - 结合`__file__`使用，有类似[[powershell-var]] `$PSScriptRoot`效果
 - `shutil`：更多和系统相关的，类似于`sh`的一些基本操作，参考[[cp-mv-rm]]
   - `move`移动
   - `rmtree`递归删除
