@@ -34,14 +34,17 @@
 - 父模块并不是记录子模块在哪个[[git-basics/branch]]，而是记录在哪个[[commit]]
   - 因此直接[[push-pull]]后，子模块如果不[[checkout]]就会是[[detached]]状态
   - 此时如果子模块[[commit]]但一直保持[[detached]]，下次再[[push-pull]]后子模块修改丢失！
-## 删改[[CRUD]]
+## [[CRUD]]
+### 查询
+`git submodule status`
+### 删改
+- win操作可能需要[[administrator-powershell]]
 - https://www.jianshu.com/p/ed0cb6c75e25
 - https://blog.csdn.net/weixin_39645249/article/details/110464746
 - 删除
    - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`
    - `git rm --cached <子模块目录>`，参考[[git-rm]]
    - 当然也需要[[commit]], [[push-pull]]等更新
-- win操作可能需要[[administrator-powershell]]
 ## 问题
 - 有子模块经常会带来杂七杂八麻烦
   - 比如[[settings-json]]中提到的`authentication`相关
