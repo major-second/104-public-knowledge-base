@@ -6,4 +6,4 @@
 - 安装过程可能需要[[administrator-powershell]]，开启长路径相关设置等
   - 可能自动出现，并提示设置
 - 好处：装这个相比[[vscode-extensions]]，灵活，防止了[[leaky-abstraction]]
-  - 比如：集成的必须用[[conda-yaml]]
+  - 比如：集成的必须用[[robocorp-conda-yaml]]

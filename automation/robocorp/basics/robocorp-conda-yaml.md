@@ -1,11 +1,15 @@
 - 前置
   - [[robot-yaml]]
-  - [[create-env-yaml]]
+  - [[create-env-from-yaml]]
 - [参考](https://robocorp.com/docs/setup/environment-control)
 - [参考本地文件](../example/robot-yaml/conda/conda.yaml)
-- 书写格式参考[[create-env-yaml]]
+- 书写格式参考[[create-env-from-yaml]]
   - 由于指定了`conda.yaml`，故运行这个robot可以`rcc run`或用vscode集成的插件两种方式，不是非得[[rcc]]
   - `robot.yaml`中增加`condaConfigFile`字段来使用`conda.yaml`
+  - 可以增加`name`，用来自己创建环境（在他自动创建的之外）
 - 结果
   - 此robot输出python版本是`conda.yaml`指定的版本，和直接`python`命令输出的不同，就知道`conda.yaml`的作用了
   - ![](conda-yaml-example.png)
+  - 环境是它自动创建的，不是手动创建的
+    - 但你自己可以[[create-env-from-yaml]]自己手动创建一个
+    - [[vscode-python]]选解释器时可以看到自己创建的随机路径名和解释器

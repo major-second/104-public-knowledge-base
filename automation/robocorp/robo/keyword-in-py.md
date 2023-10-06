@@ -4,8 +4,8 @@
 - [[robo]]中`robo new`生成最小例子，不太实用，连[[keyword]]都用不了
 - 你可能要
   - 参考[这个](https://github.com/robocorp/template-python)
-  - 引入[[conda-yaml]]文件，[[robot-yaml]]文件
-    - 注意原来生成的`toml`和[[conda-yaml]]东西不能冲突
+  - 引入[[robocorp-conda-yaml]]文件，[[robot-yaml]]文件
+    - 注意原来生成的`toml`和[[robocorp-conda-yaml]]东西不能冲突
     - 例如
       - `pyproject.toml`
         ```toml
@@ -28,9 +28,9 @@
           - pip:
             - rpaframework==24.0.0        # https://rpaframework.org/releasenotes.html
         ```
-  - 补些包（参考[[conda-yaml]]）
+  - 补些包（参考[[robocorp-conda-yaml]]）
     - 至少`robotframework`包得有吧
-- 虽然参考了[[conda-yaml]]，但这里还是用`robo run`而不是[[rcc]]
+- 虽然参考了[[robocorp-conda-yaml]]，但这里还是用`robo run`而不是[[rcc]]
 - 此时在[[tasks-py]]中即可导入和使用包
   - 一个例子： https://robocorp.com/docs/libraries/rpa-framework/rpa-windows
   - 导入

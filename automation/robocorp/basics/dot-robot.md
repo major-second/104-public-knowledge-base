@@ -1,5 +1,5 @@
 - 前置
-  - [[conda-yaml]]
+  - [[robocorp-conda-yaml]]
   - [[pip]]
   - 会用浏览器或vscode插件查看[[html]]
 - 在[[robot-yaml]]提到`tasks - <任务名称> - <command | shell | robotTaskName>`，共三种可能
@@ -37,7 +37,7 @@
     1. 在[[robot-yaml]]中提到的`robot.yaml`中`robotTaskName`字段
       - 写`.robot`文件中的`Tasks`字段下的task名称
         - 比如刚刚的`Minimal task`
-    2. 同时需要在[[conda-yaml]]中适当加入内容（补包）
+    2. 同时需要在[[robocorp-conda-yaml]]中适当加入内容（补包）
       - 可能有`pip`有包`conda`没有的现象参考[[pip]]
         - 例如2022.6，`conda`的`rpaframework`只有`9.x`而`pip`有`14.x`
 - 这样运行之后结果

@@ -34,5 +34,5 @@
     ignoreFiles:
       - .gitignore
     ```
-- [[conda-yaml]]
+- [[robocorp-conda-yaml]]
 - [[dot-robot]]

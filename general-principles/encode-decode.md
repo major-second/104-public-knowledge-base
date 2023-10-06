@@ -93,9 +93,9 @@
 - 参考[[file-format]]，特别是关于“文本、二进制”的部分
 - [[xxd-diff]]
 - 和[[escape]]有密切关系（“码”不够嘛）
-- python中bytes, str类型相关：如[[subprocess]]用到
+- 把环境抽象成文本序列，如[[docker-file]], [[create-env-from-yaml]]
 - [[sufficient-statistics]]
-- [[cryptography-examples]], [[steganography]]是特殊的编码手段
+- [[cryptography-examples]], [[steganography]]是特殊的编码手段，可能保密、安全等
 ## 盲目encode的坏处
 - 有损压缩丢失重要信息
   - 做不出题。参考[[imagination]]
