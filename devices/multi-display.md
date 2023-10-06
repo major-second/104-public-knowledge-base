@@ -11,4 +11,7 @@
   - 不过仔细一点鼠标拖着窗口一点点往边上靠，还是能实现此功能的，例如一点一点把鼠标从`1`屏幕的中间移到右边界，就可以成功这样
   - ![](long-screenshot.png)
 - extend时截图可以跨屏，如上图效果
-- 当不规整时（一竖一横），有盲区
+- [[non-standard]]带来的问题
+  - 当不规整时（一竖一横），有盲区
+  - 一些软件可能在变display settings时不能自动适应，导致看不到了，这时需要[[refresh]]例如重启软件
+    - 举例：[[windows-proxy-client]]中的clash、`Remote Desktop Connection`都出现过
