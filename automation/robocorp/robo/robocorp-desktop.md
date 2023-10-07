@@ -4,8 +4,11 @@
 - 例子
   - [举例](https://robocorp.com/portal/robot/robocorp/example-desktop-image-ocr)
   - `lib_desktop.type_text('123', enter=True)`
+    - 202310: 没法设置延时可能有些场景不稳定，可以试试[[py-keyboard]]
   - `lib_desktop.wait_for_element(<绝对路径>, timeout=...)`
   - `lib_desktop.press_keys('ctrl', 'd')`
+    - 202310: 三个键同时按不work，可以试试[[py-keyboard]]
   - `lib_desktop.click('image:...')`
     - 区分于[[robocorp-windows]]的`click`. 这里的更加general
       - 例如对于[[keybase]] [[vscode]]这种用react, electron之类的，[[robocorp-windows]]就找不到
+  - `lib_desktop.click('point:100,10', action='double_click')`

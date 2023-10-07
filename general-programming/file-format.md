@@ -89,10 +89,14 @@ print("python") #'
 ### 软件打开另存为
 - 用软件打开A格式文件，再用软件的另存为功能得到B格式文件
 - 当然也可能“宽进严出”，Postel's Law一下使得文件是同样格式但是更“好”
-- 例如[[word#另存为]]
+- 例
+  - [[word#另存为]]
 ### 使用专用软件工具
 - [[web-page-tools]]小工具
   - 例如 [miconv](https://miconv.com/)
   - 例如 [pdf2go](https://www.pdf2go.com/)可以把很多东西转化成pdf
 - [[xxd-diff]]把二进制变成文本
 - [[word]] print pdf本质上是`.doc`或`.docx`转`.pdf`
+- tabular: [[input]], [[tabular/source]], [[feather]]等
+## 优劣
+- 例如tabular优劣：[[tabular-formats]]

@@ -1,6 +1,7 @@
 - 前置
   - [[keyword-in-py]]
   - [[debug-console]]
+  - [[api-ui-images]]，这里windows elements相比[[robocorp-desktop]]常用的`image:`，是更好的
 - 运行并前置
   ```python
   from RPA.Windows import Windows
@@ -20,3 +21,6 @@
         print("Connect button in Cisco window doesn't exist!")
     ```
     - 其它：例如`'type:Edit'`筛选文本框
+- `lib_windows.screenshot(locator, "desktop.png")`
+  - 和[[screenshot]]可替代
+- `lib_windows.maximize_window(window)`

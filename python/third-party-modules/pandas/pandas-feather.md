@@ -1,0 +1,6 @@
+- 前置
+  - [[feather]]
+- https://blog.csdn.net/qq_32830061/article/details/103070051
+- `df.to_feather(文件名)`
+- `pd.read_feather(文件名)`
+- 可能需要`reset_index()`变为标准`index`，记得把index存下来备用

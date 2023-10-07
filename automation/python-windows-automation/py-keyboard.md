@@ -4,12 +4,13 @@
   - [[keyboard-shortcuts]]
   - [[use-keyboard-shortcuts-for-editing]]
   - [[vscode-keyboard-shortcuts]]
+  - 可能和[[robocorp-desktop]]功能相同
 - 例子
   - ```python
     import keyboard
-    keyboard.press_and_release('ctrl + `')
+    keyboard.send('ctrl + `')
     keyboard.write('python -c \'print("1")\'')
-    keyboard.press_and_release('enter')
+    keyboard.send('enter')
     ```
   - `keyboard.write(content, delay)`
     - 坑：编辑器例如[[vscode]]导致按键和实际输入差别
