@@ -38,13 +38,14 @@
 ### 查询
 `git submodule status`
 ### 删改
-- win操作可能需要[[administrator-powershell]]
 - https://www.jianshu.com/p/ed0cb6c75e25
-- https://blog.csdn.net/weixin_39645249/article/details/110464746
+- win操作可能需要[[administrator-powershell]]
 - 删除
    - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`
    - `git rm --cached <子模块目录>`，参考[[git-rm]]
    - 当然也需要[[commit]], [[push-pull]]等更新
+- 修改
+  - 修改`.gitmodules`，然后`git submodule sync`
 ## 问题
 - 有子模块经常会带来杂七杂八麻烦
   - 比如[[settings-json]]中提到的`authentication`相关

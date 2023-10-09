@@ -2,15 +2,33 @@
 - [[git-installation]]
 - linux需要`apt install openssh-client`
   - windows在安装git时应该默认安装好了（要是没有就自己补）
-- 了解[[generate-key-pair]]，[[check-connectivity]]
+- 了解[[generate-key-pair]]，[[check-connectivity]], [[ssh/ssh]]
 
 ## 概述
-- `git clone`https链接不需要加ssh密钥[[generate-key-pair]]，但需要[[personal-access-tokens]]，ssh相反
+- 区别
+  - [[clone]] https链接
+    - 不需要加ssh密钥[[generate-key-pair]]
+    - 但需要[[personal-access-tokens]]
+  - ssh相反
+    - 具体增加ssh密钥的操作参考
+      - [官方教程](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+      - 自己使用
+        - 可以用[[client-config]]
+          - [参考](https://blog.csdn.net/junbujianwpl/article/details/78650105)
+          - ```text
+            Host github.com
+              User git
+              Hostname github.com
+              IdentityFile ~/.ssh/id_ed25519
+            ```
+          - 也可以用[[config]]，例如`git config --global core.sshCommand "ssh -i $GIT_SSH_KEYFILE -o StrictHostKeyChecking=no"`
+  - url体现：典型如下
+     - https: `https://github.com/username/reponame.git`
+     - ssh: `git@github.com:username/reponame.git`
 - 何时必须需要ssh链接？
-  - `--recursive`地`git clone`子模块时，默认用ssh链接
+  - 很多[[submodule]]，不想逐个输入密码时
   - 有时`https`链接玄学[[clone]]，[[push-pull]]不了，那就要用`ssh`链接，作为[[workaround]]
-  - [一个例子](https://stackoverflow.com/questions/7489813/github-push-error-rpc-failed-result-22-http-code-413)：当小的库正常[[push-pull]]，大的就错误码`413`时，可以试试
-- 具体增加ssh密钥的操作参考[官方教程](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+    - [一个例子](https://stackoverflow.com/questions/7489813/github-push-error-rpc-failed-result-22-http-code-413)：当[[submodule]]正常[[push-pull]]，主模块错误码`413`时，可以试试
 ## 得到文本
 查看是否有公钥`ls -al ~/.ssh`
 - 有`id_ed25519.pub`的话跳过生成，直接`cat`它

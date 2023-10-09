@@ -5,6 +5,7 @@
   - [[use-keyboard-shortcuts-for-editing]]
   - [[vscode-keyboard-shortcuts]]
   - 可能和[[robocorp-desktop]]功能相同
+  - [文档](https://github.com/boppreh/keyboard#api)
 - 例子
   - ```python
     import keyboard

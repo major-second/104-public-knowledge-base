@@ -4,8 +4,11 @@
   - 做了设置没，设置对不对
   - 软件读取的是哪里的设置
   - 读取设置的格式、解析方法是否正确
-- 设置具有优先级（一般小的优先于大的）
-  - 比如工作空间优先于用户级优先于系统级优先于默认
+- 设置具有优先级
+  - 一般小范围的优先于大的，类似于作用域的 shadowing
+     - 比如
+       - 工作空间优先于用户级优先于系统级优先于默认
+       - 当前跑的命令行参数优先于当前shell的[[6-env]]优先于文件里写的比如[[client-config]]
   - 例如[[settings-json]]中，打开的文件夹中`.vscode/settings.json`优先于用户级`settings.json`，又优先于默认设置
   - 例如[[config]]中，`git config --local`优先于`git config --global`
   - 例如[[administrator-powershell]]中`-Scope`小的优先于`-Scope`大的

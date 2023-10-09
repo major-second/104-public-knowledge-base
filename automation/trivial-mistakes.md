@@ -3,7 +3,9 @@
     - 如power automate，[[my-first-flow]]中的输入`updates`到开始菜单时就需要保证输入时是英文输入法
     - 如robocorp，[[press-keys]]中也提到了
   - 鼠标位置导致图片、ui元素等高亮。移动鼠标到边上即可
-  - 大小不一：比如先疯狂`Ctrl` + `+`，再指定次数的`Ctrl` + `-`
+  - 大小不一：比如
+    - 先疯狂`Ctrl` + `+`，再指定次数的`Ctrl` + `-`
+    - 直接reset，例如[[vscode-keyboard-shortcuts]] `ctrl + numpad0`
   - 比如[[window]]操作，`get`后`set`大小或最大化等
   - [[reduction]]常见模式：没选中就选，已经选中了就不管。比如可以用[[on-error]]直接忽略错误实现
 - 做事没头没尾
