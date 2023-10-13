@@ -23,6 +23,7 @@
     - 不能多元输入
     - 输出的就是正儿八经的`list`，而不是`map`对象
   - 有些复杂情况比如[[lightning/basics]]中的启动训练就不能用这种简单方式并行了
+- 改成[[pathos]]可能能解决一些问题，比如[[pickle]]导致的等
 - 如果你使用[[launch]]，打个断点可以看到`Pool(5)`后左侧[[call-stack]]就出现5个进程及相应进程号
   - 如果在`if __name__`一句打断点，则可以进入子进程的[[call-stack]]如图
   - ![](subprocess-call-stack.png)

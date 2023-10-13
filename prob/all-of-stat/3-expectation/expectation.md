@@ -23,6 +23,9 @@
   - [[characteristic-function]]
     - 例如[[poisson-process#electrical pulses]]用到
   - [[conditional-expectation#Iterated Expecations]]
+- 计算机中应用
+  - [[feature-engineering]]时
+  - 计算各个的期望相比计算和的期望更好，因为基本一样的计算量，你多了一些中间值可以用
 ## 例
 - $n$点完全图$n(n-1)/2$条边，任取$m$条成图
   - 形成多少个四边形回路

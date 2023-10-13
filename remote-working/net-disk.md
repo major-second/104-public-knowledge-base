@@ -13,9 +13,12 @@
 - [[git-basics/basics]]
   - [[github]]
   - [[other-hubs]]例如[[keybase]]
+- [[dropbox]]
 - 常用metric
   - 空间
   - 速度（上传下载）
   - 是否支持分享、图片外链等
   - 是否拖拽上传文件、文件夹
   - 是否有网页[[web-page-tools]]版
+  - 收费
+  - [[CLI]]

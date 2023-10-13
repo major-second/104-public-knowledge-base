@@ -7,3 +7,4 @@
 - `sudo apt install tree`
   - 递归[[general-principles/recursion]]可视化高级`ls`
   - `tree -L 2`限制层数
+  - `tree -P ...`找pattern

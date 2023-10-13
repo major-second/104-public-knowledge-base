@@ -39,46 +39,5 @@
     {
         "key": "ctrl+k w",
         "command": "-workbench.action.closeEditorsInGroup"
-    },
-    {
-        "key": "ctrl+shift+alt+o",
-        "command": "workbench.action.closeOtherEditors"
-    },
-    {
-        "key": "ctrl+shift+alt+j",
-        "command": "workbench.action.openSettingsJson"
-    },
-    {
-        "key": "ctrl+shift+alt+b",
-        "command": "browser.open"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "-workbench.action.reloadWindow",
-        "when": "isDevelopment"
-    },
-    {
-        "key": "ctrl+shift+alt+r",
-        "command": "workbench.action.reloadWindow"
-    },
-    {
-        "key": "ctrl+shift+alt+c",
-        "command": "workbench.action.remote.close"
-    },
-    {
-        "key": "ctrl+shift+alt+p",
-        "command": "gitProjectManager.openProject"
-    },
-    {
-        "key": "ctrl+alt+p",
-        "command": "-gitProjectManager.openProject"
-    },
-    {
-        "key": "ctrl+shift+alt+0",
-        "command": "gitProjectManager.refreshProjects"
-    },
-    {
-        "key": "ctrl+shift+alt+s",
-        "command": "workbench.userDataSync.actions.syncNow"
     }
 ]

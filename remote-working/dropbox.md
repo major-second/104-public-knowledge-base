@@ -1,0 +1,15 @@
+- dropbox.com
+- 收费正常，主流公道，有成熟好用[[CLI]]的[[net-disk]]
+- [cli文档](https://help.dropbox.com/installs/linux-commands)
+  - [这里](https://linux.dropboxstatic.com/packages/ubuntu/)注意未必要下载太新的否则apt可能装不了
+  - `wget ...`然后`sudo apt update`, `sudo apt install ./<名字>.deb`装[[deb]]
+  - `dropbox start -i`安装
+  - `dropbox start`开始（可能需要做些操作连接账户）
+- 用法
+  - `~/Dropbox`默认作为同步目录
+  - 排除`exclude`的[[CRUD]]
+    - `dropbox exclude`
+    - `dropbox exclude add`
+      - 常用场景：想上传之后不占本地空间，就`exclude add`
+    - `dropbox exclude remove`
+    - 这里使用`*`是匹配本地`ls`的而不是`dropbox exclude`的

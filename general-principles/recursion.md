@@ -3,11 +3,22 @@
   - [[self-similarity]]
   - [[induction]]
   - [[dp]]
-# 算法题中[[oi-wiki-basic/recursion]]
-- 例如[[10-regular-expression-matching]]
-# 互相递归调用
-- [[q-v]]
-  - 防止互相递归不好计算：[[q-learning]]
+# 算法题中
+- [[oi-wiki-basic/recursion]]
+  - 例如[[10-regular-expression-matching]]
+# 其它
+## 其它例子
+- [[blockchain]]创世区块
+## 无限循环
+- 递归没有出口/没考虑好情况可能导致无限递归循环，出现TLE等
+- [[bootstrap]]中如果找不到[[workaround]]就可能出现鸡生蛋蛋生鸡无限循环
+  - 所以很多时候第一个代理[[proxy-basics]]客户端这种“突破口”很重要
+- 但数学中往往可以“自相似”[[self-similarity]]
+  - 例如$x = 1-x$，并不会无限循环，而可以解出$x$
+  - 稍微复杂点：[[success-runs#expected rounds to success]]暴力做法，不断递归带着$E_0$走路，最后两边都是$E_0$，就解出来了
+## 互相递归调用
+  - [[q-v]]
+    - 防止互相递归不好计算：[[q-learning]]
 # 一般程序中
 ## 命令行
 - 有些自动递归（这时要防止递归运行太多太慢）
@@ -55,10 +66,3 @@ def to_map(obj):
         return [type(obj)(i) for i in zip(*map(to_map, obj.items()))]
     return [obj]
 ```
-# 无限循环
-- 递归没有出口/没考虑好情况可能导致无限递归循环，出现TLE等
-- [[bootstrap]]中如果找不到[[workaround]]就可能出现鸡生蛋蛋生鸡无限循环
-  - 所以很多时候第一个代理[[proxy-basics]]客户端这种“突破口”很重要
-- 但数学中往往可以“自相似”[[self-similarity]]
-  - 例如$x = 1-x$，并不会无限循环，而可以解出$x$
-  - 稍微复杂点：[[success-runs#expected rounds to success]]暴力做法，不断递归带着$E_0$走路，最后两边都是$E_0$，就解出来了

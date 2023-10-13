@@ -1,0 +1,3 @@
+- [参考](https://blog.csdn.net/whatday/article/details/123269604)
+- [参考](https://stackoverflow.com/a/21345308)
+- 相比[[multiprocessing-minimum]]，可以用lambda，local函数等。本质是[[pickle]]太差！
