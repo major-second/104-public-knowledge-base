@@ -1,0 +1,3 @@
+- [[e-book]]: https://zlibrary-china.se/book/17670691/077dec
+- Advances in Financial Machine Learning
+- Marcos Lopez de Prado

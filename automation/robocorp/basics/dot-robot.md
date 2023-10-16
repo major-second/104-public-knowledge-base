@@ -29,7 +29,7 @@
         - 按位置填入，而不是`key=value`形式
       - 类似于python可选参数、关键字参数
     - `*** Settings ***`模块中，`Library`语句导入Keywords
-      - 这个相当于python导入[[import/basics]]时的`from ... import *`所以很容易重名
+      - 这个相当于python导入[[python-import]]时的`from ... import *`所以很容易重名
         - 此时需要写出全名，比如`RPA.Desktop.Click`
     - 直接看[cheat sheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)，基本现用现查即可
   - 除了基础语法，当然还需要[[keyword]]

@@ -9,7 +9,7 @@
   - 使用较少资源（gpu、cpu等）和待测试数据，降低成本，加快调试迭代速率
     - 而且像[[launch]]这类的“高级”调试器（相比直接print），运行速度能接受的数据量更小……
   - 适当调整顺序，使得一些耗时长的东西靠后运行，以最短时间cover最多行代码，以加快迭代速率
-    - 例如[[import/basics]]许多自己的文件，你可以把加载时间长的文件放后面
+    - 例如[[python-import]]许多自己的文件，你可以把加载时间长的文件放后面
   - 使用较简单的模式
     - 比如要用单线程
       - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等

@@ -29,6 +29,8 @@ error
   - 如果`import`的文件里也有`import`语句（或`from ... import`语句，等等），则可用`.`取出！比如`c.b`，`b.a_number`这样
   - 不能`import name.varname`（体现在上文输出中的`error`，参考`d.py`），但是可以`from name import varname`
     - 当然，你`import c`后用`c.b`取出的东西和`from c import b`得到的`b`相同
+  - 文件名当然有要求，比如不能数字开头
+    - 所以一种practice: 数字开头的`.py`是运行入口（`__main__`），其它是工具组件
 # 特性
 ## 关于路径
 - 即使你`import`了非本路径的东西，整个程序运行的路径也还是本路径

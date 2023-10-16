@@ -48,7 +48,7 @@
   - [[software-management/source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
-- python导入东西的重置：参考[[import/basics]]
+- python导入东西的重置：参考[[python-import]]
 - [[node]]中提到的geph，改变是否监听等需要断开重连
 - 对话大模型[[chatgpt]] [[new-bing]]
 # 副作用
