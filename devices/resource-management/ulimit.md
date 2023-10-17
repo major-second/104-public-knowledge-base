@@ -4,3 +4,6 @@
   - 可能结合[[shrc]]
   - `ulimit -S -m <单位kb内存>`
   - `ulimit -S -v <单位kb虚拟内存>`
+- 请先自己测试不同场景是否奏效
+  - 例如终端中，[[debug-console]], [[jupyter-basics]], [[jupyter-notebook]]插件……
+  - 现象：太小了`ls`用不了，适当小`import pandas`失败……等等
