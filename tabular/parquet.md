@@ -1,0 +1,2 @@
+- 和[[feather]]类似，列存
+- [参考](https://zhuanlan.zhihu.com/p/341572070)

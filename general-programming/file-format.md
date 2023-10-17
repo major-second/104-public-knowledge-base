@@ -1,4 +1,5 @@
 [toc]
+## 总体
 - 前置[[encode-decode]]
 - 参考[[steganography]]
 ## 本质
@@ -98,5 +99,6 @@ print("python") #'
 - [[xxd-diff]]把二进制变成文本
 - [[word]] print pdf本质上是`.doc`或`.docx`转`.pdf`
 - tabular: [[input]], [[tabular/source]], [[feather]]等
-## 优劣
+## 性能等优劣
 - 例如tabular优劣：[[tabular-formats]]
+- [大数据管理，存储格式，压缩格式](https://zhuanlan.zhihu.com/p/635442922)

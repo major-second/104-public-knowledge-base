@@ -1,5 +1,6 @@
 - 参考
   - [[buffer]]
+  - [[resource-management/commands]]
 - 基础
   - 内存分为物理内存和虚拟内存或swap，后者位于硬盘，访问性能低，但内存不足时可凑合用
     - 参考 https://www.zhihu.com/question/295194595/answer/999804696
@@ -28,3 +29,5 @@
       - 这就是上下文管理器，相当于把你手动的[[finally]]动作给自动化了
     - [[matplotlib/basics]]这种需要手动`plt.close()`
   - windows运行中参考[[quit]]
+  - 有时可以让系统帮你管理，OOM (out of memory)时，自动被[[kill]]
+    - 但你不能依赖。因为有时会把整个系统搞崩

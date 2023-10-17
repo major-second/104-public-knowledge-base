@@ -15,5 +15,7 @@
   - `sep, delimiter, delim_whitespace`参数指定delimiter
     - `delim_whitespace=True`等效于`sep='\s+'`不等效于`sep=' '`
     - 参考[[regex]]
+  - `skiprows=2, nrows=3`: 如果从0开始编号，则取了2，3，4行
+  - `skiprows=lambda x: x > 0 and x % 2 == 0`
 - `df.to_csv('data_1.csv')`
   - 注意这两者不“互为逆运算”，因为可能有一列额外的[[pandas-index]]存在

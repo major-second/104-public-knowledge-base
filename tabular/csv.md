@@ -1,7 +1,8 @@
 - [[file-format#文本]]格式的一种，具有相应优缺点
   - 优点
     - 可以`cat my_csv.csv | head -n 10`，人类可读
-    - 机器也可以按行读，如[[head]]只处理一部分。[[feather]]不行
+    - 机器也可以按行读，如[[head]]只处理一部分（行式存储）
+      - [[feather]]不行
 - 了解`tab`制表符（[[regex]]：`\t`）
   - 如果Excel选中复制
   - 或者一些网页表格选中复制（比如[这篇文章](https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcms.1608#:~:text=Generative%20models%20offer%20a%20promising,that%20will%20satisfy%20those%20properties%3F)中的）

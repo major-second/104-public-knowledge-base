@@ -1,0 +1,6 @@
+- [参考](https://zhuanlan.zhihu.com/p/647508754)
+- 增加（一般软约束，否则之后只能小不能大）
+  - 针对进程
+  - 可能结合[[shrc]]
+  - `ulimit -S -m <单位kb内存>`
+  - `ulimit -S -v <单位kb虚拟内存>`
