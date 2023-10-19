@@ -17,3 +17,4 @@ latex/**/*.pdf
 .vscode/settings.json
 lightning_logs
 ~$*
+*.so

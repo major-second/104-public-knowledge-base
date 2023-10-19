@@ -1,3 +1,4 @@
+pip install pybind11
 EXT_SUFFIX=$(python3-config --extension-suffix)
 INCLUDES=$(python3 -m pybind11 --includes)
 rm ./*.so
