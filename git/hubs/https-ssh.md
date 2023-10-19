@@ -25,6 +25,7 @@
   - url体现：典型如下
      - https: `https://github.com/username/reponame.git`
      - ssh: `git@github.com:username/reponame.git`
+- ssh连接可以方便换人，不同人用不同私钥
 - 何时必须需要ssh链接？
   - 很多[[submodule]]，不想逐个输入密码时
   - 有时`https`链接玄学[[clone]]，[[push-pull]]不了，那就要用`ssh`链接，作为[[workaround]]

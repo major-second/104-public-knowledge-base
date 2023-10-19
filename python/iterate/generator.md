@@ -1,0 +1,3 @@
+- [参考](https://blog.csdn.net/zhong_jay/article/details/91799459)
+- 没有`yield`语句时（或手动return），自动抛出`StopIteration`表示结束。`for`循环自动停下
+  - 但手动`raise StopIteration`不能自动停下，而是报错

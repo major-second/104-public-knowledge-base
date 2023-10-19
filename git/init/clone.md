@@ -8,6 +8,7 @@
   - `--bare`：clone bare repo
     - 参考[[file-format]]中“序列化”思想
     - 例如在[[fork-private]]用到
+  - 指定使用的[[https-ssh]] key: [参考](https://lunashu.org/git-clone-ssh-key/)，改[[client-config]]或者`ssh-add`
 - 做了的动作
   - 下载文件到新的文件夹
     - 一般是在某文件夹下没有`bar`子文件夹时，`clone`名为`bar`的库

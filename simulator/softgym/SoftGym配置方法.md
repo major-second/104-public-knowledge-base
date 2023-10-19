@@ -37,7 +37,7 @@ sudo nvidia-docker run \
 export PATH=/home/yourong/anaconda3/bin:$PATH
 ```
 
-如此便可正常使用conda来创建环境，并且安装pybind11
+如此便可正常使用conda来创建环境，并且安装[[pybind11]]
 
 ```
 conda install pybind11

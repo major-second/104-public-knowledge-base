@@ -7,3 +7,6 @@
   - [[normalization#丢失信息]]：分解几部分，丢掉一部分
   - 去除噪声
     - [[market-microstructure-noise]]
+  - 分类，每个模型管一部分
+    - [[conditional]]
+    - [把极端值分类出来](https://zhuanlan.zhihu.com/p/465942651)

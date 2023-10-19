@@ -18,15 +18,19 @@
   - 可以在装系统时[[partition]]
   - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
 - 管理
-  - 适当使用[[buffer]]
+  - 适当使用[[buffer]]，调整buffer大小
     - 例如[[standard-streams]]中的例子
   - 程序中
     - 垃圾回收
       - python一般是自动地
         - 但：人要对变量做管理，及时释放，分段小部分小部分处理，防止爆内存
           - 爆了的时候可能错误/[[warning]]都没有，很烦人
-    - 文件一般用`with`自动关
-      - 这就是上下文管理器，相当于把你手动的[[finally]]动作给自动化了
+    - 文件
+      - 一般用`with`自动关
+        - 这就是上下文管理器，相当于把你手动的[[finally]]动作给自动化了
+      - 分段读
+        - 参考[[read-by-chunk]]
+        - 数据格式参考：[[tabular-formats#行式和列式]]
     - [[matplotlib/basics]]这种需要手动`plt.close()`
   - windows运行中参考[[quit]]
   - 有时可以让系统帮你管理，OOM (out of memory)时，自动被[[kill]]

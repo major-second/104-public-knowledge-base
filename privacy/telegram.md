@@ -14,6 +14,7 @@
   - 之后换新手机时，即使你用的海外手机号你不再有access也没事。因为已经登录的电脑上会显示验证码。这就是[[bootstrap]]
 - 要定期登录，否则号可能有麻烦
 - `@一串字母`就很有可能是交流群！
+  - 也可以由`t.me`开头链接分享
 - telegram畅游，注意身心健康哦
 - 一个：[[meta#index of index]]：[使用攻略](https://qianghub.com/telegram-group/)
   - [channel搜索器](https://telemetr.io/en/channels)

@@ -26,3 +26,4 @@
     - 是内置的`dict`或`list`结构对象
     - `json.dump(<对象>, f)`即可写入
       - 当然这个file handler必须是`open(..., 'w')`这样得到的（写模式）
+  - [[read-by-chunk]]
