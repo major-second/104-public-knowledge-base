@@ -1,0 +1,2 @@
+- [参考](https://www.runoob.com/cplusplus/cpp-namespaces.html)
+- 实际例子：比如你即使有了`#include <vector>`，有了[[cpp-vector]]，如果没有`using namespace std;`，则还要写`std::vector<...>`

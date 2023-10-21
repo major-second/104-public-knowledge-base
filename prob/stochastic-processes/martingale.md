@@ -17,4 +17,6 @@
     - 看到之前一段时间的震荡就能推测出接下来情况
     - 一个误区：看到当前一个价格，不知道接下来是涨是跌，就以为是鞅……这就是没有注意regardless of all prior values
   - 但这不能说明[[markov-process]]
-- 参考[[5-martingale-and-random-walk]]
+- 参考
+  - [[5-martingale-and-random-walk]]
+  - [[filtration]]

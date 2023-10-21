@@ -21,6 +21,10 @@
     - 其实刚刚两个例子都体现Ito's lemma思想
   - 对称性：三次方期望也是0
     - 推论：$B_t, B_t^2$相关系数0
+  - returns的[[autocorrelation]]: 根据[[stationary-independent-increment]]性质，其实就是计算$E(B_t(B_s-B_{s-t}))(s>t)$
+    - $E(B_tB_s)=t$，其实就是取最小值，因为$B_tB_s=B_t^2+B_t(B_s-B_t)$
+    - 因此自相关系数正比于$2t-s$
+    - 也就是不相交时恰好0，重叠一半时0.5，等等
 - $B_1>0, B_2<0$概率
   - 相当于考察两个正态随机变量[[multi-normal]]
   - 画图，相当于全平面中占$\pi/4$角度，所以$\frac 18$

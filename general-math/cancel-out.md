@@ -1,2 +1,6 @@
 - 恰好把难处理难计算未知项抵消
-- [[market-microstructure-noise#Two Scale]]
+  - [[market-microstructure-noise#Two Scale]]
+- 其它
+    - [[data-science/residual]]思想
+    - [[autocorrelation#adjust autocorrelation]]
+      - https://en.wikipedia.org/wiki/Cochrane%E2%80%93Orcutt_estimation

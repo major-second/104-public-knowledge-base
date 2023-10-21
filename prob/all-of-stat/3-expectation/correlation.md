@@ -7,6 +7,9 @@
 ## correlation matrix
 - 联想协方差和协方差矩阵
 - numpy中有[[numpy-basics#Array Mathematics]] `np.corrcoef(arr)`
+- 实操
+  - [[pandas]]中有`df.corr()`
+  - 得到矩阵可以[[seaborn]] `sns.headmap(..., annot=True)`
 ## spearman
 - 先[[data-science/normalization#排序]]再求相关
 - 实现：如参考[[scipy-correlation]]

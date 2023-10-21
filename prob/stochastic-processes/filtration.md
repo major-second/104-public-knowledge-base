@@ -1,0 +1,3 @@
+- [参考](https://www.zhihu.com/question/20606081)
+  - 时间演化，信息流
+- [[information-leak]]

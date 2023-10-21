@@ -14,3 +14,4 @@
 - 实际应用
   - [[ARIMA]]
   - 股价，不是[[stationary-processes]]，但可以作差
+    - 推论：[[autocorrelation]]

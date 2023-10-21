@@ -26,3 +26,4 @@
 # deque
 - `<deque>`
 - 方法名往往有`front, back`，如`pop_front(), back()`等
+- 注意`pop_front`并不返回值。需要先`[0]`得到值

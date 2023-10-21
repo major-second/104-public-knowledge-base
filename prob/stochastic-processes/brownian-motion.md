@@ -1,2 +1,3 @@
 - 来源：花粉碰撞，物理上的时间平移[[symmetry]]，[[LLN]]下就是每个时间间隔都是正态……
 - 所以本质上也和[[random-walk]]有关
+- 参考[[5-brownian-motion-and-stochastic-calculus]]

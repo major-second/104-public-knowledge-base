@@ -1,1 +1,11 @@
 - https://en.wikipedia.org/wiki/Autocorrelation
+- halflife: autocorrelation衰减到一半时的时间
+- [实际计算](https://stackoverflow.com/questions/36038927/whats-the-difference-between-pandas-acf-and-statsmodel-acf)
+  - [[pandas]]和[[statsmodel]]还定义不同
+  - [[pandas]]: `df.autocorr()`
+    - [参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.autocorr.html)
+# adjust autocorrelation
+- https://en.wikipedia.org/wiki/Cochrane%E2%80%93Orcutt_estimation
+  - 直接改模型，不是普通的线性回归模型
+  - [[cancel-out]]
+- 拓展视野，[[deep-learning-basics]]中的：https://arxiv.org/abs/2101.12578
