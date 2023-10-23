@@ -1,6 +1,9 @@
 ## 缺失值
 - [参考](https://zhuanlan.zhihu.com/p/137175585)
 ## 其它
+- [[normalization]]
+- [[sklearn]] [文档](https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing)
+- 小心[[information-leak]]
 - 减某个基础值
   - 使得均值为0
   - 或满足其它目的（排除公共变量，市场影响等）
@@ -9,6 +12,7 @@
   - 例子[[returns]]
   - 但注意[[general-principles/special-case]]除以0的问题
 - 过滤异常值
+  - [[12-robust]]
   - 强行特判[[general-principles/special-case]]过滤
   - winsorization缩尾
     - 用[[numpy-basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收

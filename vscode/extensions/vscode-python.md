@@ -1,5 +1,14 @@
 - 注意版本可能要和`python`版本相适配
 - 任意打开`.py`文件，右下角就可选解释器
+- [[settings-json]]
+  - `pylance`解析时，如果你这个库有需要额外添加的[[sys-path]]，想让`pylance`能识别到，就不妨在这个库的`.vscode/settings.json`添加这种
+  ```json
+  {
+      "python.analysis.extraPaths": [
+      "${workspaceFolder}/pattern_recognition"
+      ],
+  }
+  ```
 - [[launch]]中`launch.json`可能配置的东西：
   - 运行什么文件
   - 在什么目录下运行（防止`python`找不到包）

@@ -8,4 +8,3 @@
 - https://en.wikipedia.org/wiki/Cochrane%E2%80%93Orcutt_estimation
   - 直接改模型，不是普通的线性回归模型
   - [[cancel-out]]
-- 拓展视野，[[deep-learning-basics]]中的：https://arxiv.org/abs/2101.12578

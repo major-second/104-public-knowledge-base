@@ -3,8 +3,12 @@
   - [[variance]]
   - [[linear-transform]]
   - [[normal]]
+- 参考
+  - [[preprocessing]]
+  - [[dimensionless]]
+  - [参考preprocessing](https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing)
 - 是[[feature-engineering]]方式
-- 目标是使得分布满足特定形式，如均匀或[[normal]]
+- 目标是使得分布满足特定形式，如均匀、[[normal]]，或[[moment]]满足指定条件……
 - [参考](https://en.wikipedia.org/wiki/Normalization_(statistics))
 # 丢失信息
 - norm往往会丢信息，关键是这个信息是不是有用的
@@ -26,7 +30,7 @@
     - 避免[[information-leak]]和不[[stationary-processes]]的方法：[[rolling]]再排序
   - [[normalization#丢失信息]]，如是否线性相关等
 - 应用
-  - [[cov#spearman]]
+  - [[spearman]]
 # 减去均值
 - 参考[[data-science/residual]]
 # 除以标准差

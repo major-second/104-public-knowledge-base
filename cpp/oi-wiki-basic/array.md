@@ -22,3 +22,5 @@ https://oi-wiki.org/lang/array/
 - 不行的初始化
   - `n[100] = {0};`不在定义时，没法这样初始化
   - `n[nums] = {0};`：可变数组不行
+- 实际中常用和[[const]]结合
+  - `constexpr std::array<int, 2> name{1, 2};`

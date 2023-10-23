@@ -12,19 +12,13 @@
 - 设置是“层次化”的，参考[[settings-and-configurations]]
   - 用户等级的`settings.json`往往存在本地电脑中和用户相关的文件夹中，比如windows10中在`Roaming`文件夹中的某个地方
   - 打开的文件夹的`.vscode/settings.json`文件会覆盖用户等级的`settings.json`
-## 一个具体应用
-- 例如`pylance`解析时，如果你这个库有需要额外添加的[[sys-path]]，想让`pylance`能识别到，就不妨在这个库的`.vscode/settings.json`添加这种
-```json
-{
-    "python.analysis.extraPaths": [
-    "${workspaceFolder}/pattern_recognition"
-    ],
-}
-```
+## 具体应用例子
 - 具体怎么找到应该添加什么内容？刚刚提到过
   - 可以先用gui设置
   - 然后再去用户等级`settings.json`找到相应内容，剪切
   - 粘贴到打开的文件夹的`.vscode/settings.json`文处
+- [[vscode-python]]
+- [[vscode-cpp]]
 ## 一些常用设置项
 - `"editor.wordWrap": "on"`打开自动换行
   - 可能需要删除`"editor.accessibilitySupport": "on"`才能用
