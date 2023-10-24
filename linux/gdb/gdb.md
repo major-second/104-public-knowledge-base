@@ -2,6 +2,7 @@
 - [[general-programming/debug]]
 - `gdb 文件名`
 - 进入之后，[常用命令](https://zhuanlan.zhihu.com/p/474736535)
+    - `set args`
     - [[breakpoint]]
       - info breakpoints
       - b 9
@@ -19,8 +20,11 @@
     - `s`逐步（进入）
     - [[help]]
       - `help`
-    - `display 变量名`
     - `where`
+    - `display 变量名`
+    - 栈
+      - `bt` `backtrace`显示运行栈
+      - `f 0` `fname 0`栈顶，以此类推
 # `-x`
 - 文件里面写要运行的
   - `-x <文件>.gdb`

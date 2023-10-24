@@ -42,7 +42,7 @@
 15. 
     1.  `const`修饰函数，不能修改`*this`的非`mutable`变量
     2.  `static`对类定义，没有`*this`概念！
-16. 参考[[construct]]，[[initializer-list]]
+16. 参考[[construct]]，[[member-initializer-lists]]
 17. 参考[[oo/copy]]
 18. 刚刚说过了，共享指针，传值拷贝，结合造成了野指针
 19. 

@@ -1,8 +1,0 @@
-- 初始化列表
-    - `class B {public: const int a; B(const int b) {a=b+1;}};`不给通过
-    - 需要`class B {public: const int a; B(const int b): a(b+1){}};`
-    - `B myB(3); cout<<myB.a;`输出4
-    - 还有引用，无默认构造函数的对象等情况也需要
-    - 而且相比函数体内初始化，还节省了“先初始化，再拷贝”，效率也更高
-    - [参考](https://zhuanlan.zhihu.com/p/33004628)
-    - [[2-4-cpp]]考到了

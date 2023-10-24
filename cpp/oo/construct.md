@@ -2,7 +2,7 @@
 - 构造函数和`public`变量例子：
   - `class A {public: int a; A(int b) {a=b+1;}};`
   - `A myA(3); cout<<myA.a;`输出4
-- 另一种构造：[[initializer-list]]
+- 另一种构造：[[member-initializer-lists]]
 - 注意括号里啥都没有，`A a()`这样（`A`是类名），会被认为是声明一个（零元）[[func]]`a`
   - 所以要`A a`才是没有传入参数地构造一个对象
   - 在[[bitset]]有用到

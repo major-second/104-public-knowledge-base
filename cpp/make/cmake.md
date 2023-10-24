@@ -14,4 +14,5 @@
     ```
 - 可能需要[[sudo]]权限
 - `-D`用来添加参数，格式为`-DKEY=value`
-- 示例：[OpenCV](https://docs.opencv.org/4.2.0/d7/d9f/tutorial_linux_install.html)
+  - 示例：[OpenCV](https://docs.opencv.org/4.2.0/d7/d9f/tutorial_linux_install.html)
+  - `-DCMAKE_BUILD_TYPE=Debug`：可能用于生成debug的用于[[gdb]]
