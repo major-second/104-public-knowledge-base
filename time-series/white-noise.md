@@ -1,0 +1,2 @@
+- [[stationary-time-series]]
+- 抽[[autocorrelation]]，计算分布可做[[hypothesis-testing]]

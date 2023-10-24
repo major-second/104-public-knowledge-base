@@ -1,0 +1,4 @@
+- [参考](https://en.wikipedia.org/wiki/Lag_operator)
+- 可形成polynomial，以简化模型表述
+  - [[ARIMA]]，单位根，$(1-L)^d$
+  - 拓展：$1-L^s$，seasonality

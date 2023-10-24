@@ -34,12 +34,16 @@
 # 减去均值
 - 参考[[data-science/residual]]
 # 除以标准差
+- [[dimensionless]]
 - 理论
   - [[central-limit]]
   - [[asymptotically-normal]]
 - 实践
   - [[ic-ir]]
   - [[sharpe]]
+- [[rolling]] [[sliding-window]]
+  - 防止[[information-leak]]标准差
+  - 如果window很长：不会丢失短期相对大小/波动
 # min to max
 - [[pil-open-convert-save]]中把$[0,255]$到$[0,1]$
 # z-score

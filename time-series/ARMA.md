@@ -1,0 +1,4 @@
+- 前置
+  - [[lag-operator-polynomial]]
+- $ARMA(p',q): (1-\sum_{i=1}^{p'} \alpha_iL^i)X_t = (1+\sum_{i=1}^q\theta_i L^i)\epsilon_t$
+- 

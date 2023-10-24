@@ -1,0 +1,2 @@
+- [[stationary-processes]]
+- [参考](https://zhuanlan.zhihu.com/p/26227700)，[[autocorrelation]]迅速衰减到0则平稳

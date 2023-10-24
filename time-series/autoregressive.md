@@ -6,8 +6,9 @@
   - 随机干扰可能和将来序列值有关（干扰是原因）
   - 但干扰不是结果（这种“结果”应该建模起来）
 - 常见数字特征
-  - 类比普通的随机变量的[[expectation]], [[cov]], [[cov#corr]]等数字特征
-  - 均值
+  - 类比普通的随机变量的[[expectation]], [[cov]], [[correlation]]等数字特征
   - 自协方差函数
-  - 自相关系数[[autocorrelation]]
-  - 偏自相关系数
+  - [[autocorrelation]]
+    - 拖尾，和[[moving-average]]相对
+  - [[partial-correlation]]
+    - 各个$\phi_i$，截尾

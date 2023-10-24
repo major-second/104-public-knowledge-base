@@ -1,10 +1,16 @@
 - https://en.wikipedia.org/wiki/Autocorrelation
+  - regression analysis一阶包括检验、adjust
 - halflife: autocorrelation衰减到一半时的时间
 - [实际计算](https://stackoverflow.com/questions/36038927/whats-the-difference-between-pandas-acf-and-statsmodel-acf)
   - [[pandas]]和[[statsmodel]]还定义不同
   - [[pandas]]: `df.autocorr()`
     - [参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.autocorr.html)
+- [参考](https://zhuanlan.zhihu.com/p/26525852)
+  - 可能有个小细节，分母平均用的是总体平均
 # adjust autocorrelation
+- [[autoregressive]]
 - https://en.wikipedia.org/wiki/Cochrane%E2%80%93Orcutt_estimation
   - 直接改模型，不是普通的线性回归模型
   - [[cancel-out]]
+  - 估计自相关系数：残差$\epsilon_t$在$\epsilon_{t-1}$上回归
+    - 相比[[autoregressive]]不是一步到位
