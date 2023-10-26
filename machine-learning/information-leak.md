@@ -1,8 +1,23 @@
 - 时间序列：小心用到未来信息
   - 最理想的是1234训练验证56测试，而不是1245训练验证36测试，否则有风险
     - 但这样可能导致[[domain-gap]]增大
-  - 全集做排序`rank()`，也是典型的用到未来信息
   - [[transformer]]中mask也是为了防止info leak
-- 无意中用到测试集
-  - 全集算分位数用于clip [[feature-engineering]]，这怎么行？当然应该训练集上算！
-  - 划分出错
+- “无意中”用到测试集
+  - 全集做排序`rank()`
+    - 应该[[rolling]] rank
+  - 全集算分位数用于clip [[feature-engineering]]
+    - 当然应该训练集上算！
+  - [[correlation]]其实严格上用到测试集均值方差也有此嫌疑
+  - [[7-cross-validation]]
+    - [[autocorrelation]]
+    - datapoints overlapping in calculation
+- non technical原因
+  - [[fundamental-data]]
+# 解决方法
+- [[7-cross-validation#7.3]]
+  - drop有leak的$i$，如$Y_i$和$Y_j$不能有overlapping periods
+  - 即使有leak，也影响小，也行
+    - [[early-stopping]]
+    - [[ensemble#bagging]]
+      - [[sequential-bootstrap]]
+- [[7-cross-validation#7.4]]

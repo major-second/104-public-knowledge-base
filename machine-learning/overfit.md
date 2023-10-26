@@ -21,3 +21,5 @@
 - [[ensemble#bagging]]
   - 注意[[ensemble#boosting]]反而加剧了过拟合
 - [[tricks]]
+# 参考
+- [[7-cross-validation]]提到overfitting is like "file lossy-compression" algorithms

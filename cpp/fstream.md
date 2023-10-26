@@ -1,4 +1,5 @@
 - [参考](https://www.runoob.com/cplusplus/cpp-files-streams.html)
+- 注意在什么地方启动的程序，使用相对路径时小心
 - ```cpp
   #include <fstream>
   #include <iostream>

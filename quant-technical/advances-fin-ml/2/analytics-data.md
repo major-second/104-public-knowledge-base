@@ -1,0 +1,7 @@
+- derived, from original, [[fundamental-data]], [[market-data]], [[alternative-data]]甚至自己套娃
+- statistics: 例如sentiment extracted from news / social media, from [[alternative-data]]也算
+- 优势：别人帮你处理
+- 劣势
+  - 别人帮你处理
+  - 你不是唯一消费者
+  - costly 

@@ -7,7 +7,7 @@
 # time series
 - [参考](https://zhuanlan.zhihu.com/p/158814757)
 - seq长度，间隔，采样方法
-- [[market-microstructure/bar]]
+- [[bar-data]]
 - 固定量
   - 时间、量、额
     - 实际中对于不等间距时间序列可能还有：固定个数点

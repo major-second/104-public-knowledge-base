@@ -1,0 +1,4 @@
+- heteroscedasticity
+- 异方差性
+- 随机误差项具有不同方差
+- 处理：加权[[OLS]]等

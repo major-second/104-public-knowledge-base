@@ -1,0 +1,58 @@
+- 前置
+  - [[MSE]]
+  - [[平方和分解]]
+  - [[tradeoff]]
+  - [[variance#与$EX^2$关系]]
+    - 马上得到：[[unbiased]]时[[standard-error]]平方就是MSE
+  - [[moment]]
+- 参考
+  - [[orthogonal-decomposition]]
+## 基础
+- 特殊情况
+  - $\hat \mu = \bar X$
+    - 参数$\mu$的估计量$\hat \mu$是统计量$\bar X$
+  - $E(\bar X-\mu)^2=E((\bar X-E\bar X)+(E\bar X-\mu))^2=Var\bar X+0(交叉项)+Bias^2$
+  - 注意$E\bar X-\mu$是常数，记为了偏差bias
+- 一般情况：$\hat \theta$
+  - $E(\hat \theta - \theta)^2 = E((\hat\theta - E(\hat \theta))^2 +(E(\hat\theta)-\theta)^2)(交叉项为0)=Var\hat \theta+Bias^2$
+- 实质
+  - 方差(Var)
+    - 即中心[[moment]]
+  - 均方误差(Mean Squared Error, MSE)
+    - 原点[[moment]]
+  - 实际上就是相对谁作差的那个常数不同，分别是$E\hat \theta,\theta(真实值),0$
+  - 这个常数动一动就是偏差-方差分解
+  - 当然动到$E\hat \theta$则有某项“最小”，是某种意义“正交投影”
+  - 这可以帮助理解记忆“分解”的含义
+- 这个方差开方，也称为[[standard-error]]
+- 偏差和方差都趋向于0
+  - 推出MSE趋向于0
+  - 根据[[converge-in-l2]]
+  - 至少有弱[[相合性]]
+## 机器学习中
+- 参考
+  - [[overfit]]
+  - [[6-ensemble-methods]]
+- bias: fail to recognize, underfit
+- var: too sensitive to even minimal changes in the training set, [[overfit]]
+## bias-variance-noise
+- [参考](https://blog.csdn.net/weixin_45884316/article/details/110410866)
+  - 仍然有[[平方和分解]]
+- [[6-ensemble-methods]]提到
+- noise
+  - 是[[supervised-learning]]用的标签本身就有噪音
+  - 有个 GT $f(x)$是生成label的GT机制，但实际上标签不是$f(x)$，而是$f(x) + \epsilon$（噪声）
+  - 在机器学习范畴内无论如何无法解决
+- [新名字](https://zhuanlan.zhihu.com/p/656915794)
+  - aleatoric uncertainty vs. epistemic uncertainty，前者基本就是noise
+  - [SDE-Net原文](https://arxiv.org/pdf/2008.10546.pdf)
+  - [wiki](https://en.wikipedia.org/wiki/Uncertainty_quantification)
+## 推广
+- 变成[[high-dimension]]，相应方差变成2范数等，乘积变成内积等……（略）
+- Bregman Loss
+  - $\phi: \mathbb R^d \to \mathbb R$严格凸可导
+  - 诱导Bregman Loss Function $l_\phi(\theta,\hat \theta)=\phi(\theta) - \phi(\hat\theta) - (\theta - \hat \theta)^T \nabla \phi(\hat\theta)$，相当于泰勒高阶项
+  - 正定（来自严格凸），不一定对称
+  - 当$\phi=\frac 12 ||\theta||_2^2$，退化成普通的MSE
+    - 这个很好理解，因为二次函数肯定可以精确地二阶泰勒展开
+  - 限制$\theta$向量各维正（比如有实际物理意义），则$\phi=\sum \theta_ilog\theta_i$时，代入化简……再代入$\theta$各维和为1，得到[[kl-divergence]]

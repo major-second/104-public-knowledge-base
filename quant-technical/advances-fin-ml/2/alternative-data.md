@@ -1,0 +1,9 @@
+- > individuals (social media, news, web searches, etc.), business processes (transactions, corporate data, government agencies, etc.), and sensors (satellites, geolocation, weather, CCTV, etc.). Some popular satellite image or video feeds include monitoring of tankers, tunnel traffic activity, or parking lot occupancies.
+- 优势：快
+  - before [[fundamental-data]] (accounting), before [[market-data]] (price in), before [[analytics-data]] (写出来)
+  - 所以显然优势：信息量大，有效！
+    - 几乎和[[fundamental-data]]相对了
+- 劣势：cost, privacy
+- > Remember, data that is hard to store, manipulate, and operate is always the most promising.
+  - competitors may give up midway...
+  - 本质上：甩锅数据团队！总劳动量一致

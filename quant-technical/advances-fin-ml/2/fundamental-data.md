@@ -1,0 +1,13 @@
+- accounting, lapse
+- 小心[[information-leak]]
+  - not necessarily published at the end of the reporting period
+      - > You could not believe how many papers are published every year using misaligned fundamental data, especially in the factor-investing literature.
+      - 相当于backfilling
+  - 修正
+    - 公司会事后修正
+    - reinstate
+    - 部分数据商提供多版本，请仔细查看日期
+- 特点
+  - extremely regularized and low frequency
+  - accessible, public
+  - 自己看几乎不会有啥价值，但也许可以和别人结合？

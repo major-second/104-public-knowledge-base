@@ -50,6 +50,7 @@
 - [[normal#cov#corr绝对值期望]]，忽略截距
 - [[gamma-function]]中$\Gamma (a+1/2)/\Gamma(a)$
 # 算法实际应用
-- 作为[[workaround]]给出实际可行算法
+- 作为[[workaround]]给出实际可行算法，有时候无法追求完美。你总得有个办法估算吧
   - [[q-learning]]
     - 虽然有[[q-learning-overestimation]]问题
+  - [[bar-data#information-driven bars]], [[EMA]]估计
