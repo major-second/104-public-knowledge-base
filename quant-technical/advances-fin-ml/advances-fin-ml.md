@@ -1,3 +1,4 @@
 - [[e-book]]: https://zlibrary-china.se/book/17670691/077dec
 - Advances in Financial Machine Learning
 - Marcos Lopez de Prado
+- 特别实际，前置[[sklearn]], [[pandas]]等

@@ -6,6 +6,8 @@
 
 # [[2-financial-data-structures]]
 - irregular -> regular
+- [参考](https://zhuanlan.zhihu.com/p/158814757)
+- 别忘了bar长度本身可调。可能根据实际需求，不能太浪费也不能太粗糙
 ## standard bars
 - time bars
   - 内容
@@ -44,9 +46,12 @@
 ## information-driven bars
 - [[market-microstructure]]
 - imbalanced signed volumes -> informed traders
+- [[estimation]]某个量按照之前[[EMA]]等等应该是多少
+  - 积累超出了，就取bar
 - tick imbalance bars
-  - 根据方向给+-1，无变化承前
-  - 累加得到tick imbalance $\theta_T$
+  - $b$记号：根据方向给+-1，无变化承前
+  - 累加得到tick imbalance $\theta_T$，就是待考察的量
 - tick run bars
+  - 看$b_t$正或负积累数量
+  - 强调了sequence break！中间断了，总数超过就行
 - volume / turnover也有类似上面的版本
-- 一些[[estimation]]就用近期的[[EMA]]

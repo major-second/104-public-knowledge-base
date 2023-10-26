@@ -2,6 +2,7 @@
   - [[可加性]]
   - [[characteristic-function]]
   - [[variance#可加性]]
+  - [[sampling]]
 - 独立一定[[cov#无关]]，反之未必
   - [[normal]]下等价
 # [[multi-ary]]
@@ -12,3 +13,5 @@
 - 两个[[uniform-distribution]]卷成三角，再卷再卷卷成[[central-limit]], [[normal]]
 ## [[characteristic-function]]
 - 变量相加相当于[[characteristic-function]]相乘
+# 机器学习中
+- [[iid]]
