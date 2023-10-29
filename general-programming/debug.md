@@ -63,6 +63,8 @@
     - [[leetcode-solutions/0-metadata]]等
   - [[multiprocessing-minimum]]
     - 打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
+      - Run to a certain line功能因此很不好用
+    - 可能缓解方法：设定精细condtional [[breakpoint]]
   - 有些函数就是只能非调试器场景使用
     - [[pygetwindow]]的`.activate()`, `.maximize()`
 ## 小规模没问题，大规模有问题？

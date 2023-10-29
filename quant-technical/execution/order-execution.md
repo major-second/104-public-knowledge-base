@@ -1,0 +1,8 @@
+- 参考
+  - [[market-microstructure]]
+  - 给出仓位
+    - [[10-bet-sizing]]或[[portfolio-optimization]]得到，根据频率不同
+- 算法
+  - [[twap]]
+  - [[vwap]]
+  - [[10-bet-sizing]]也有一些直接给出的算法

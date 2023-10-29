@@ -21,7 +21,7 @@
   - 类比
     - 水平为[[general-principles/special-case#极限情形]]0时，对应数理逻辑的[[可靠性]]
       - 我说是定理，就是定理，类比：我说假设不成立，就是假设不成立
-    - 无法直接类比[[2-eval]]的precision
+    - 无法直接类比[[confusion-matrix]]的precision
       - 因为我们现在是[[数理统计学讲义/1-introduction]]中的频率学派
       - 不是[[bayes-inference]]
       - 无法计算“否定假设时，确实应该被否定的概率”

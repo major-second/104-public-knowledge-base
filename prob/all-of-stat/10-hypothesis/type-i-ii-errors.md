@@ -8,6 +8,9 @@
 - 对应[[power-level#水平]]
   - 一般较小。一般不要错杀
   - 书上说`like a legal trial`
+- [[confusion-matrix]]中false positive
+  - 即：检验出否定作为positive
+  - 参考[[3-labeling]]
 # type-ii-error
 - 真实是$H_1$，错误地肯定了（放过）：第二类错误
 - 对应[[power-level#功效]]

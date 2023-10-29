@@ -1,11 +1,23 @@
 - 前置[[pandas-index]]
+- [文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)
 - row indexer
-  - `.loc['2014-01-20']`
-  - 乃至`.loc['2014-01-20':'2014-01-22']`，`.loc['2006-12']`等和时间相关的feature
-  - 切片的第三个分量
-    - 比如`1, -1, -4`这种都行，表示“间隔条目数”
-    - 所以和第一第二个分量的“数据类型”未必相同
-    - 第一第二个分量可能是[[timestamps]]，第三个可能是整数
+  - 基础：单点
+    - `.loc['2014-01-20']`
+  - [[timestamps]]相关
+    - `.loc['2014-01-20':'2014-01-22']`
+    - `.loc['2006-12']`
+  - 切片
+    - 如果df [[pandas-index]]没有被排序不放心切片，可以传入
+      - > Conditional that returns a boolean Series
+        - `df.loc[df['a'] > 10, ['a’, 'c']]`
+      - > Multiple conditional using & that returns a boolean Series
+        - 复杂的：可以先取出values再用[[numpy-bool-array]]操作
+      - > Callable that returns a boolean Series
+        - input是整个 [[series-dataframe]]
+    - 第三个分量
+      - 比如`1, -1, -4`这种都行，表示“间隔条目数”
+      - 所以和第一第二个分量的“数据类型”未必相同
+        - 典型第一第二个分量可能是[[timestamps]]，第三个可能是整数
 - row and column indexers
   - `df.loc[0, 'key'] = value`这样比`df['key'][0] = value`好
   - 后者会报[[warning]]，和[[general-copy]]有关
@@ -16,12 +28,8 @@
     - 例如`df.loc[df.index[0], 'key']`
     - 注意后文的`.iloc`并不能`df.iloc[0, 'key']`
   - 千万不能漏了`.loc`写成了`df[0, 'key']`，否则变成了取column
-- 条件
-  - `df.loc[df['a'] > 10, ['a’, 'c']]`
-  - 如果多个条件，可以先取出values再用[[numpy-bool-array]]操作
 - loc常见坑
-  - [参考文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html?highlight=loc#pandas.DataFrame.loc)
-  - 和普通的`[]`切片不同之处
+  - 和普通python的`[]`切片不同之处
     - `.loc[]`**切片含两端**
     - `.loc`默认是“绝对”的索引，而不是相对
       - `.loc[0]`中的0是某个数据条目的一个属性（`index`），相当于某种特殊feature，而不是其在某个序列中的排序
