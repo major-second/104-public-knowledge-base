@@ -1,0 +1,14 @@
+- 前置
+  - [[PIN]]，且继承记号
+  - [[bar-data]], volume bar
+- [参考](https://academic.oup.com/jfec/article/6/2/171/874320)
+  - 找到页码176，直观式子
+  - total trades $E[TT]=\alpha\mu+2\epsilon$
+  - trade imbalance $E[K]=\alpha\mu(2\delta-1)$
+    - "intensity" of the informed & imbalance of coming news
+  - $E[|K|] = \alpha \mu$
+- 在[[advances-fin-ml]]书中，$K$记为了$V^B-V^S$
+- 利用以上几个式子作为理论依据，可[[estimation#传递性]] [[PIN]]
+- $VPIN=E(PIN):=E[\frac{\alpha\mu}{\alpha\mu+2\epsilon}]\approx \frac{E[\alpha\mu]}{E[\alpha\mu+2\epsilon]}\approx \frac{\sum_{\tau=1}^n|V^B-V^S|}{\sum_{\tau=1}^n(V^B+V^S)}$
+  - volume bar使得分母可以化为$nV$
+- 实际上你没有理论，直接唯象[[imbalance]]就行了233，最终表达式非常直观

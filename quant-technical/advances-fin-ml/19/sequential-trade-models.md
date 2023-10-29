@@ -1,0 +1,4 @@
+- > randomly selected traders arrive at the market sequentially and independently.
+  - noise traders
+  - informed traders
+- [[PIN]]

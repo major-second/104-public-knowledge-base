@@ -54,3 +54,8 @@
   - [[q-learning]]
     - 虽然有[[q-learning-overestimation]]问题
   - [[bar-data#information-driven bars]], [[EMA]]估计
+# 传递性
+- 传递，间接，$E(f(x,y))\approx f(E(x),E(y))$思想
+  - 数学上精确成立的：[[maximum-likelihood#equivariance]]
+  - [[unbiased]]找无偏估计的例子（线性组合等）
+  - [[VPIN]]由$E(\alpha\mu),E(\alpha\mu+2\epsilon)$得到$E(PIN):=E(\frac{\alpha\mu}{\alpha\mu+2\epsilon})$

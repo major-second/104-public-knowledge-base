@@ -1,0 +1,20 @@
+- Probability of Information-based Trading
+- 1996
+- game between position takers and market makers
+- 4个参数
+  - $\alpha,\delta$
+    - $1-\alpha$无信息，$S_0$
+    - $\alpha\delta$ bad news, $S_B$
+    - $\alpha(1-\delta)$ good news, $S_G$
+  - [[poisson-process]] intensity of informed and uninformed ($\mu, \epsilon$)
+- 由此可推导做市商breakeven bid/ask level
+  - $PIN_t:=\frac{\alpha_t\mu}{\alpha_t\mu +2\epsilon}$，意义显然
+  - [[general-principles/special-case]]: $\delta=1/2$，$E[A_t-B_t]=\frac{\alpha_t\mu}{\alpha_t\mu +2\epsilon }(S_G-S_B)$，恰好出现$PIN_t$
+  - 更进一步[[general-principles/special-case]]
+    - 如果$\alpha\mu$很大，informed多，则做市商接近在$S_G,S_B$处挂单，“谨慎”，[[spread]]大
+    - 如果$\epsilon$很大，反之
+- [[parametric]] [[estimation]]方法
+  - [[maximum-likelihood]] [[poisson-process]]
+  - 根据：观察到的带符号交易量
+  - 例如：$V_B$表示traded against the ask (buy-initiated trades)
+    - 对应有good news, $\alpha(1-\delta)$概率，buy-initiated侧intensity从$\epsilon$增加到$\mu+\epsilon$

@@ -1,2 +1,0 @@
-- [参考概述](https://quantresearch.org/VPIN.pdf)
-- [from pin to vpin](https://sci-hub.st/10.1016/j.srfe.2012.10.002)
