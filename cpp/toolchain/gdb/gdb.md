@@ -1,5 +1,6 @@
 - 前置
   - 可能需要[[cmake]]改参数使得生成可以debug的二进制
+    - 例如`-DCMAKE_BUILD_TYPE=Debug`
 - [参考](https://zhuanlan.zhihu.com/p/74897601)
 - [[general-programming/debug]]
 - `gdb 文件名`

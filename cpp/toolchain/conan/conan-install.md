@@ -1,0 +1,6 @@
+- 前置
+  - conan包（可能现成或[[conan-create]]得到）
+- 用法
+  - 直接`conan install <文件夹>`
+    - 可能作为[[cmake]]的前置
+  - 把`conan install <文件夹>`和之后步骤比如[[cmake]]写到一个脚本或者[[makefile]]

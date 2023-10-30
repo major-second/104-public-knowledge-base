@@ -1,0 +1,3 @@
+- 属于[[c-cpp]]包管理器，类比[[pip]], [[conda]]
+- [v1文档](https://docs.conan.io/1/index.html)
+- 现在也有v2

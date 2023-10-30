@@ -1,0 +1,10 @@
+- 前置
+  - [[conan]]
+- [文档](https://docs.conan.io/1/creating_packages/getting_started.html)
+- 典型
+  - `conan create .`
+    - 此时和[[make]]不同，并不是本文件夹的[[binary-executable]]就变了，而是放到[[general-programming/cache]]，称为conan cache
+    - 输出信息有`Package folder <你的~>/.conan/data/<name>/<version>/<一堆>/package/<一堆随机数>`这种
+  - 可以
+    - 去`~/.conan/data`（Package folder）看情况确认
+  - 之后[[conan-install]]使用
