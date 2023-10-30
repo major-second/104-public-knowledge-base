@@ -1,0 +1,11 @@
+- 对比[[vscode-keyboard-shortcuts]]
+  - 有些快捷键在这里被占用了
+  - `Ctrl+K`
+    - chord: `Ctrl + M` `某某`, 比如`Ctrl + M, Ctrl + O`打开文件夹
+  - `Ctrl+Y`
+    - 还原：从`Ctrl+Y`变成`Ctrl+Shift+Z`
+- 对比[[remote-ssh]]
+  - 自带，不用装
+- 对比[[vscode-command-line]]
+  - `cursor`命令而非`code`命令
+- 毕竟还不成熟，可能有些[[vscode-extensions]]不如原版上线快，原版vscode能用这里不能用
