@@ -1,0 +1,3 @@
+- [python doc](https://technical-analysis-library-in-python.readthedocs.io/en/latest/ta.html#)
+- [python github](https://github.com/ta-lib/ta-lib-python)
+- [微信文章](https://mp.weixin.qq.com/s/nLOCNim0XRjqs_2iLDMO8Q)

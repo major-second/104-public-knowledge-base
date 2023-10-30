@@ -40,4 +40,4 @@
 - troubleshooting: [参考这个](https://zhuanlan.zhihu.com/p/639956119)，可能程序员写反了东西，所以需要把 [[openai-api]]关掉
   - 202309
 - 记得及时复制提示（避免intermittent的服务器错误导致丢失东西）
-- 可以后台运作
+- 跑AI生成时，可以后台运作

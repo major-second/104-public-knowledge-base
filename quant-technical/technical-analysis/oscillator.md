@@ -1,0 +1,1 @@
+- [参考](https://www.investopedia.com/terms/o/oscillator.asp)
