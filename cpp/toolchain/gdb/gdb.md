@@ -1,10 +1,16 @@
 - 前置
-  - 可能需要[[cmake]]改参数使得生成可以debug的二进制
-    - 例如`-DCMAKE_BUILD_TYPE=Debug`
+  - 生成可以debug的[[binary-executable]]
+    - 否则报错`(No debugging symbols found in test)`，也用不了
+    - [[linux-cpp-compilers]]: `-g` flag
+    - [[cmake]]：`-D`改参数
+      - 例如`-DCMAKE_BUILD_TYPE=Debug`
+  - [[general-programming/debug]]
+  - `sudo apt install gdb`
 - [参考](https://zhuanlan.zhihu.com/p/74897601)
-- [[general-programming/debug]]
-- `gdb 文件名`
-- 进入之后，[常用命令](https://zhuanlan.zhihu.com/p/474736535)
+- 用法
+  - `gdb 文件名`
+  - 进入之后，用gdb命令
+- [常用命令](https://zhuanlan.zhihu.com/p/474736535)
     - `set args`
     - [[breakpoint]]
       - info breakpoints
@@ -28,13 +34,4 @@
     - 栈
       - `bt` `backtrace`显示运行栈
       - `f 0` `fname 0`栈顶，以此类推
-# `-x`
-- 文件里面写要运行的
-  - `-x <文件>.gdb`
-- 典型：
-  - `set breakpoint pending on`
-    - 这样[[cpp-so]]调用时遇到的断点可以用
-  - `b ...`
-  - `run`
-  - `display ...`
-  - `n`
+    - `q`退出

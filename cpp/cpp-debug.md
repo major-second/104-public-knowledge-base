@@ -1,0 +1,5 @@
+- 前置
+  - [[gdb]]
+    - `-g`
+  - [[gflags]]
+  - [[general-programming/debug]]

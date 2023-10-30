@@ -1,0 +1,4 @@
+- 安装方法
+  - [[apt]]，例如[[gflags]]就是`sudo apt-get install libgflags-dev`
+- 使用方法
+  - 
