@@ -1,5 +1,16 @@
 - 参考
   - [[readability]]
-- 文字报告: comprehensive, details, [[general-programming/logs]], records, step-by-step
+- 文字报告
+  - comprehensive, details, [[general-programming/logs]], records, step-by-step
+- 图表
+  - [[readability#图]] [[readability#表]]
+  - 图表最吸引人
+    - 利用这一点（否则别人不想看）
+      - 报告中，要多图表
+      - 图表放前
+    - 因为这一点必须做的（否则别人被图表distract，或被图表吸引然后觉得不好懂）
+      - 图表中必须体现重点内容。重点内容不能exclusively在文字中但不在图表中
+        - 起码也要放caption吧
+      - 图表必须做得好、清晰，参考[[readability]]
 - 口头讨论: motivation, inspiration, summary, creativity
 - PPT太多字别人看不完！可以少点字，然后讲稿多些

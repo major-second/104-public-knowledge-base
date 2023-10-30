@@ -6,20 +6,24 @@
 # integrity
 - 不能有[[information-leak]]
 - 不能疯狂[[overfit]]
-  - 比如疯狂堆叠各种运算各种操作（复杂度高），疯狂增加待定参数，使得feature在validation上好，那说白了就是过拟合validation set而已
+  - 如非必要，勿增实体（各种乱七八糟操作）
+  - 疯狂堆叠表达式
+    - 各种运算各种操作（复杂度高）
+    - 比如“看起来这个分布图上呈现某某特征所以我乘一下这个，除一下那个”，就不好
+    - 每一个操作、公式都要有实际含义、依据
+    - 当你提出feature不work，主要要反省根本思想、建模上哪里出了问题，而不是马上开始torture表达式
+  - 疯狂增加待定参数，使得feature在validation上好，那说白了就是过拟合validation set而已
+    - 如[[4-design]]中，“1-12月给12个参数”，可能能过拟合几年的（验证集）股市数据，但没有任何经济学意义
   - 参考[[2-eval]], [[naming]]
-  - 如[[4-design]]中，“1-12月给12个参数”，可能能过拟合几年的（验证集）股市数据，但没有任何经济学意义
   - 可能被称为（贬义）“数据挖掘”
 # 意义和优美性
 - 首先要有一个建模
-  - 可以是mental model，跑不起来的
-  - 对事情背后的逻辑有一个自己大概的认识（有点像思维中有“隐变量”）
+  - 可以是
+    - mental model，跑不起来的
+      - 对事情背后的逻辑有一个自己大概的认识（有点像思维中有“隐变量”）
+    - 一定程度上能跑起来的，如[[PIN]]基于的
   - 甚至可以形成一个脑海中的贝叶斯网络（参考[[12-uncertainty]]），有因果联系等
   - 然后对着这个模型试图用公式表达feature，每个公式、记号的目的都是（最简洁地）表达你想要的意思
-- 如非必要，勿增实体（各种乱七八糟操作）
-  - 比如“看起来这个分布图上呈现某某特征所以我乘一下这个，除一下那个”，就不好
-  - 每一个操作、公式都要有实际含义、依据
-  - 当你提出feature不work，主要要反省根本思想、建模上哪里出了问题，而不是马上开始torture表达式
 - 物理量的“量纲”非常重要
   - [[normalization]], [[preprocessing]]
   - 不同量纲不能相加
@@ -31,29 +35,46 @@
     - MA, EMA, MA之差等
       - 这些是线性的，其实有点想到[[deep-learning-basics]]的feature extraction
       - horizon当然是可调参数
-  - 对于[[time-series]]，就有速度、加速度、位移、路程等
+  - 对于[[time-series]]，就有速度、加速度、位移、路程等，以及[[MA]], [[autoregressive]]等传统的
 - 有时跟[[preprocessing]]不分家
   - [[data-science/normalization]]
   - [[data-science/residual]]
-  - 缩尾winsorization
+  - [[12-robust]]
+    - 缩尾winsorization
   - 特判[[general-principles/special-case]]
-- 凡是涉及除以的，都要注意非负性。常见可用的
-  - 本身物理意义非负，如路程、交易量
-  - 平方、绝对值或其和等
-  - [[variance]]方差，标准差等
+  - outliers
+- 凡是涉及除以的，都要注意非负性、非零性
+  - 非负
+    - 本身物理意义非负
+      - 路程
+      - [[traded-volume]]
+      - [[turnover-换手]]
+    - 平方、绝对值或其和等
+      - [[variance]]
+      - [[variance#standard deviation]]
+      - 路程也算
   - 注意如果可能出现0，还要考虑加一个常数
     - [[nan]]中有提到
     - [[batchnorm]]的官方[文档](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)中也有提到
 - 衍生手段
   - 线性组合
     - 两个相同量纲量的加减
+      - [[cancel-out]]
       - A - B 很多时候比 A/B 性质好且数值稳定
     - 一般情况线性组合，如[[barra#CNE5]]中很多具体因子计算
   - 两个量的乘除
-    - 很多时候乘除某个无量纲量
-    - 乘法常要求其中一个或两个均值0，则结果和原来的[[cov#无关]]
-  - 两个量做[[unary]]线性回归看相关系数或斜率（斜率当然和协方差[[cov]]关系密切）
-    - 还可以错位再看相关，捕捉时间上的先后关系，例如[海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)的“量价”先后动
+    - 乘除某个[[dimensionless]]比值或multiplier
+    - 乘法
+      - 捕捉互动
+      - 常要求其中一个或两个均值0，则结果和原来的[[cov#无关]]
+        - 可以[[dimensionless]]或不是，都行
+    - 同量纲相除
+      - 参考[[dimensionless]]
+  - 两个量做[[unary]]线性回归看相关系数或斜率
+    - 当然和协方差[[cov]]关系密切
+      - 其实相当于若干[[normalization]]后的乘法，“互动”
+    - 还可以错位再看相关，捕捉时间上的先后关系
+      - 例如[海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)的“量价”先后动
 ## 多项式组合
 - 对于已有$x$，把$x^2,x^3,\cdots$等都当成feature
 - 理论上可线性组合出许多可能多项式，张成线性空间

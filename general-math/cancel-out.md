@@ -1,5 +1,9 @@
-- 恰好把难处理难计算未知项抵消
+- 把难处理难计算未知项抵消
   - [[market-microstructure-noise#Two Scale]]
+- [[feature-engineering]]手段
+  - 把co-movement的噪音抵消，大幅提升模型效果（作差）
+    - 最简单的[[normalization#减去均值]]就是
+    - 同单位量作差
 - 其它
     - [[data-science/residual]]思想
     - [[autocorrelation#adjust autocorrelation]]

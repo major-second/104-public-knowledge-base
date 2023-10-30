@@ -1,5 +1,8 @@
 - LASSO (Least Absolute Shrinkage and Selection Operator)
+- 相比[[ridge]]
   - 无解析解，参考[[lasso#近端梯度下降]]
+    - 所以慢
+  - 更加“严苛”进行[[11-feature-selection]]，造成稀疏性，希望0
 # 近端梯度下降
 - $min f(x)+\lambda ||x||_1$，$f$可导，$\nabla f$李普希茨连续
 - $x_k$附近把$f$泰勒展开（且设海瑟矩阵近似为$L/2$）

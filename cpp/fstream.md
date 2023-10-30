@@ -8,10 +8,10 @@
   int main ()
   {
       
-  char data[100];
+  char data[100]; // 如果读入数等等，可能需要 double data; 等
   
   ofstream outfile;
-  outfile.open("afile.dat");
+  outfile.open("afile.dat"); 
   cout << "Writing to the file" << endl;
   cout << "Enter your name: "; 
   cin.getline(data, 100);
@@ -21,7 +21,7 @@
   cin.ignore();
   outfile << data << endl;
   outfile.close();
-  ifstream infile; 
+  ifstream infile; // 也可以 ifstream file("name");
   infile.open("afile.dat"); 
   cout << "Reading from the file" << endl; 
   infile >> data; 
