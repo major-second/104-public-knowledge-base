@@ -17,3 +17,7 @@
 - 极端空间换时间[[tradeoff]]
 - [[counting-sort]]
 - [[radix-sort]]
+# 实际中
+- 字典序
+  - [[version]]和[[format-string]]都提到过直接字符串排序导致`1, 10, 11, 2, 3`的问题
+- 数字大小排序

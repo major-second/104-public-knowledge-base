@@ -2,6 +2,7 @@
   - [[naming#exists]]
   - [[forall#一致]]
   - [[complexity]]
+  - [[general-programming/debug]]当然可以使用这个思想，构造[[test-suite]]
 - 总述
   - 一旦要求[[forall#一致]]，[[complexity]]“最坏情况”等等
   - 那么你只要对于任何情况，存在一个“刁难人”的情况即可

@@ -1,0 +1,3 @@
+- 原因
+  - imbalanced categories
+  - [[sampling]]频率不对
