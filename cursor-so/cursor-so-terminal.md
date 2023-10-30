@@ -1,0 +1,4 @@
+- 类似[[terminal]]，但是有和gpt互动功能，如把终端内容加入chat，或生成command等
+- `Ctrl K`生成command
+- `Ctrl Shift L`加入chat
+- `Alt D` debug

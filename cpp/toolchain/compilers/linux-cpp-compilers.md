@@ -1,0 +1,14 @@
+- 前置
+  - [[apt]]
+  - [[cpp-helloworld]]
+- 安装`g++`
+  - [参考](https://zhuanlan.zhihu.com/p/476988995)
+    - > 一般自带
+    - 也可以手动
+    - `sudo apt update && sudo apt install g++` 安装
+    - `g++ -v`查看[[version]]
+- 使用
+  - `g++ <file>.cpp -o test`输出程序，`./test`运行
+  - 因此
+    - 改源码不能像[[python]]一样重新运行马上反应改变，而是要编译
+    - 更不能像[[shell]]一样运行中热[[online]]改变代码
