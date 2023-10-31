@@ -4,6 +4,7 @@
 - Practical Applications
   - [[where-object]]
     - `ls -R | Where-Object { $_.Extension -eq ".pdf" }`
+    - `ls -R | sort -Property Length -Descending | Where-Object { $_.Length -gt 1MB }`
   - For objects, use `select` for properties of the object
     - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`
       - 可检验[[windows-proxy-client]]配置

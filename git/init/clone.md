@@ -3,7 +3,11 @@
   - [[hubs/troubleshooting]]
 - [参考文档](https://git-scm.com/docs/git-clone)
 - 其它技巧
-  - `--depth=1`可以避免`clone`全部历史导致时间过长
+  - shallow cloning
+    - 参数：`--depth=1`
+    - 可以避免`clone`全部历史导致大小过大/时间过长
+      - 比如已经删除过大文件，不在最新commit，普通`clone`仍有，shallow就没有
+    - 但无法查看或[[checkout]]历史等
   - `--recursive`递归clone [[submodule]]
   - `--bare`：clone bare repo
     - 参考[[file-format]]中“序列化”思想

@@ -1,0 +1,10 @@
+- 运行时可能需要，缺了就
+  - 第三方：[[software-management]]安装一下包
+  - 自己的：编译
+- [参考](https://www.zhihu.com/tardis/zm/art/235551437)
+- 可能作为隔离手段
+  - 你看不到整个程序源码
+    - [[binary-executable#源码保密]]
+  - 但能看到一部分的源码
+    - 这部分源码[[make]]后成为`.so`
+  - [[stat-command]]也只能看到`.so`时间变了，而[[binary-executable]]没变
