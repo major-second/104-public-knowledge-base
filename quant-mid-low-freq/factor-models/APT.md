@@ -1,0 +1,7 @@
+- 前置[[CAPM]]
+- 参考[[1-因子投资基础]]
+- $E(R_i^e)=\beta'_i\lambda$
+  - $E(R_i^e)$：预期超额收益
+  - $\beta_i'$：[[factor-exposure]]
+  - $\lambda$：factor expected return
+- 联系[[CAPM]]：只有一个$\beta$，市场组合的预期超额收益率就是$\lambda$

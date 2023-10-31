@@ -1,2 +1,5 @@
 - 恒非负
 - 直观来说，大表示比较尖，中间集中，两边长尾把四次方拉得很大
+- [参考](https://mp.weixin.qq.com/s/Lj9RWx7f9wLB8S9H9AUk_Q)
+  - 太大表示只会看极端值，平时都不求有功但求无过
+    - 考虑[[4-sample-weights]]？

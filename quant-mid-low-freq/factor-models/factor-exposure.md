@@ -1,9 +1,15 @@
+- factor loading
+- 因子暴露，因子载荷
 - 参考
   - [[barra]]
+  - [[1-因子投资基础]]
+  - [[APT]]
 - [Reference](https://zhuanlan.zhihu.com/p/38280638)
+
 - Factor exposure is the sensitivity of a specific stock code or portfolio to a certain factor.
-  - For example, when purchasing a specific stock code of a bank, according to the multi-factor model like [[barra]], you will be exposed to the banking industry factor `BANKS`
-  - Another example is, if you build a portfolio, going long on high-SMB stocks and short on low-SMB stocks, then this portfolio is based on the SMB factor in the [[fama-french]] three-factor model.
+  - When purchasing a specific stock code of a bank, according to the multi-factor model like [[barra]], you will be exposed to the banking industry factor `BANKS`
+  - If you build a portfolio, going long on high-SMB stocks and short on low-SMB stocks, then this portfolio is based on the SMB factor in the [[fama-french]] three-factor model.
+    - But not exposed to original [[CAPM]] $\beta$.
 - Portfolios based on specific factors are built according to the weights of that factor
   - 然后相应[[pnl]]可以作为因子的[[pnl]]
   - [Reference](https://zhuanlan.zhihu.com/p/38280638)提到问题：很多时候不[[general-principles/independent]]等

@@ -1,8 +1,9 @@
 - Reference
+  - [[CAPM]]减去无风险部分得到超额
+  - [[factors-alphas]]：除去模型里有的factors，剩余就是alphas（errors，误差）
+    - [行业和市值中性化](https://zhuanlan.zhihu.com/p/408134295)
   - [[architecture/residual]]
   - [[cancel-out]]
-  - [[data-science/normalization#减去均值]]
-  - [[factors-alphas]]：除去模型里有的factors，剩余就是alphas
-  - [[autocorrelation#adjust autocorrelation]]
-  - [行业和市值中性化](https://zhuanlan.zhihu.com/p/408134295)
+    - [[data-science/normalization#减去均值]]
+    - [[autocorrelation#adjust autocorrelation]]
   - [除去季节和趋势因子](https://zhuanlan.zhihu.com/p/26328525)

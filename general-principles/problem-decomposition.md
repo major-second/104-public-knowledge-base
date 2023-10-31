@@ -1,8 +1,9 @@
 - 参考
   - [[orthogonal-decomposition]]，正交基不干扰
+  - 和[[end-to-end]]相对
 - programming
   - [divide a task](https://www.geeksforgeeks.org/what-is-decomposition-computational-thinking/)
-- 机器学习中
+- DS/统计/ML中
   - [[data-science/residual]]
   - [[normalization#丢失信息]]：分解几部分，丢掉一部分
   - 去除噪声
