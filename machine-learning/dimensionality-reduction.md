@@ -1,0 +1,11 @@
+- 参考
+  - [[11-feature-selection]]
+  - 消除[[redundancy]]
+  - [[encode-decode]]
+- 方法
+  - [[11-feature-selection]]
+  - [[pca]]
+  - [[1-因子投资基础]]
+    - 例子[[barra]]
+- 联系
+  - 和数据集大小联系，得到某种“密度”，“数据够不够”

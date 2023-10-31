@@ -4,7 +4,9 @@
 # 计算机编码
 - 总体原则
   - 二进制，[[7-the-power-of-2]]
-  - 尽量统一，如unicode，时间戳等
+  - 尽量统一
+    - [[unicode]]
+    - [[timestamps]]
 - 如何编码
   - [[file-format]]
   - 整数
@@ -18,7 +20,7 @@
     - [[encoding]]
     - [[unicode]]
   - 图片
-    - [[pil-open-convert-save]]中图片和[[numpy-basics]]数组
+    - [[pil-open-convert-save]]中图片和[[numpy-basics]]数组关系
 ## 时间戳
 - [转换器](https://tool.lu/timestamp/)
 - 例如2022.12，是1671693346秒（十位数）
@@ -62,8 +64,9 @@
       - 其长度不同，当然编码不同
       - 其长度相同，那么它们如果用`0-9`编码不同，`1-10`编码还是不同！
 # 数学中
-- [[parametric-or-not]]
+- [[parametric-or-not]], [[parametric]]
   - 是否合理？比如[[拟合优度检验]]
+- [[sufficient-statistics]]
 - [[topological-space]], [[graph-for-topo]]，去除无关要素，只看连通性
 ## 直角坐标和极坐标
 - [[3-calculus]]
@@ -72,7 +75,7 @@
 - 总共有多少种状态，多少进制，决定有多少位
   - [[8-brain-teasers]]第12题，二进制；13题三进制
   - [[2-brain-teasers]] defective ball，三进制
-# 数据科学中
+# 数据科学
 - [[normalization#排序]], [[character/quantile]]作为某种编码
 - encode浪费一定空间使得深度学习时性质好
   - 二维sin-cos编码表示二维旋转
@@ -86,15 +89,15 @@
 - [[one-hot]]
 - [[word2vec]]
 - [[nlp-pretrain]]
-# 有损压缩
+# 其它
 - 精度和[[complexity]]往往需要[[tradeoff]]
   - 例子：[[volatility-for-portfolio]]，用factor和idiosyncratic估计[[cov]]矩阵
 # 其它参考
 - 参考[[file-format]]，特别是关于“文本、二进制”的部分
 - [[xxd-diff]]
+- DS/ML中[[dimensionality-reduction]]
 - 和[[escape]]有密切关系（“码”不够嘛）
 - 把环境抽象成文本序列，如[[docker-file]], [[create-env-from-yaml]]
-- [[sufficient-statistics]]
 - [[cryptography-examples]], [[steganography]]是特殊的编码手段，可能保密、安全等
 ## 盲目encode的坏处
 - 有损压缩丢失重要信息

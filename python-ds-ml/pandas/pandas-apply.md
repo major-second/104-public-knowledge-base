@@ -1,4 +1,4 @@
 - 例如
   - `df['dtime'] = df['dtime'].apply(lambda x: x.replace(tzinfo=None))`
-    - 去除[[timestamps#tzinfo]]
+    - 去除[[pd-timestamps#tzinfo]]
   - `df.apply(...)`类比[[apply-along-axis]]，函数要求输入一元。但输出类型灵活

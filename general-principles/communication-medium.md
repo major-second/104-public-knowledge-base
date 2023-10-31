@@ -12,5 +12,7 @@
       - 图表中必须体现重点内容。重点内容不能exclusively在文字中但不在图表中
         - 起码也要放caption吧
       - 图表必须做得好、清晰，参考[[readability]]
-- 口头讨论: motivation, inspiration, summary, creativity
+- 口头讨论
+  - motivation, inspiration, summary, creativity
+  - interactive效率高（相比群/聊天框里打字）
 - PPT太多字别人看不完！可以少点字，然后讲稿多些

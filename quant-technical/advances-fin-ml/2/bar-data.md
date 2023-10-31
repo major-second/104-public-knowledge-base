@@ -11,7 +11,7 @@
 ## standard bars
 - time bars
   - 内容
-    - [[timestamps]]
+    - [[pd-timestamps]]
     - [[vwap]]
     - OHLC：open, high, low, close
     - volume

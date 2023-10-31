@@ -1,6 +1,6 @@
 - 前置
   - [[pandas-index]]
-  - [[timestamps]]
+  - [[pd-timestamps]]
 # `pd.DatetimeIndex`
 ```python
 df = pd.DataFrame({'a': [10., 20., 30., 40., 50.],

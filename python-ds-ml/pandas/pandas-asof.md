@@ -1,5 +1,5 @@
 - 前置
-  - 常用于[[timestamps]], [[datetime-index]]
+  - 常用于[[pd-timestamps]], [[datetime-index]]
   - 防止看到未来信息，[[information-leak]]
 - [文档](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.asof.html)
 
