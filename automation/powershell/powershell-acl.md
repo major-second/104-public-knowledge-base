@@ -1,7 +1,7 @@
 - 前置
   - [[powershell-basics]]
 - 参考
-  - [[7-permissions]]
+  - 相当于[[7-permissions]]
   - [参考](https://blog.51cto.com/ganzy/6926601)
 - 例子
     - `$ACL = Get-ACL -Path "Test1.txt"`

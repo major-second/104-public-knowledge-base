@@ -1,0 +1,12 @@
+- References
+  - [[unix-pipeline]]
+  - [[ps-item]] explains the `$_` symbol
+- Practical Applications
+  - [[where-object]]
+    - `ls -R | Where-Object { $_.Extension -eq ".pdf" }`
+  - For objects, use `select` for properties of the object
+    - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`
+      - 可检验[[windows-proxy-client]]配置
+    - [[reinstall-app]]中也有
+  - [[powershell/string]] `select-string`
+    - `curl ipinfo.io | select content | select-string country`

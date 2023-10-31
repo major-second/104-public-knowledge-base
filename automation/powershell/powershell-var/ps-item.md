@@ -1,0 +1,7 @@
+- 参考
+  - [[functional-programming]]
+  - [SO](https://stackoverflow.com/questions/3494115/what-does-mean-in-powershell)
+  - [[where-object]]
+- 最简单例子
+  - `1,2,3 | ForEach-Object {Write-Host $_}`
+    - 对比[[lambda]]，可以看出由于一元函数的常用性，相当于省略了`lambda x:...`中一元`x`的声明

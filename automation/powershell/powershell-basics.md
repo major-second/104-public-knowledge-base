@@ -1,12 +1,10 @@
 # 概述
 - 开始菜单或vscode下方都有powershell
-- 相当于linux的终端。可以执行命令
+- 相当于linux的终端, [[bash]]
+  - 可以执行命令
   - 不过时至2022还没linux的命令行好用
-  - 不客气地说，win命令行，就是垃圾
 - [文档](https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/00-introduction?view=powershell-7.3)
-# 运行
-- 没有权限？参考[[administrator-powershell]]，以及其中的`ExecutionPolicy`相关设置命令
-- 不能双击运行？从而[[windows-link]]也不方便一个快捷键运行？[[file-format]]打开方式选择`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`这种东西
+- 运行：[[run-ps1]]
 # 基础命令
 - `help <命令>`，`gal <命令>`看命令的基本信息，例如`gal rm`
   - 比如`rm`其实是`Remove-Item`，`ls`其实是`Get-ChildItem`
@@ -27,9 +25,7 @@
       - 比如`-Proxy`临时[[configure-proxy]]而不是`-x`
       - 比如有些电脑上加上`-UseBasicParsing`才能用
     - [[https-ssh]]有提到`ssh-keygen.exe`特性也和linux下`ssh-keygen`不完全一样
-- `select`字段
-  - `curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore | select statuscode`，输出`200`这种
-  - [[reinstall-app]]中提到了
+- [[ps-pipeline]]
 # 基础技巧
 - 编辑技巧：可以用上下方向键看历史，`Tab`补全等
   - `*.zip`再`Tab`这样还能自动找匹配来补全，非常好用

@@ -1,0 +1,2 @@
+- `ls -R | Where-Object { $_.Extension -eq ".pdf" }`
+- [[functional-programming]]中的filter

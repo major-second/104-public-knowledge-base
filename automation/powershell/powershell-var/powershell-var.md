@@ -1,0 +1,8 @@
+- 前置
+  - [[powershell-basics]]
+  - 了解[[windows/env-var]]
+- 典型种类
+  - [[ps-general-var]]
+  - [[ps-env-var]]
+  - 特殊变量
+    - [[ps-item]]，用于[[ps-pipeline]]等

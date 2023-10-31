@@ -1,0 +1,7 @@
+- `$x = 5; echo $x`
+  - 对比：[[11-basic-scripting-partA#11.4 使用变量]]中是`x=5`，不带空格
+- `$PSScriptRoot`
+  - 在脚本运行中，直接取出脚本所在路径，方便设置相对路径等
+    - 注意脚本运行时的路径不一定等于`$PSScriptRoot`，所以很多时候可以一来`cd $PSScriptRoot`，这是一种[[reduction]]
+      - 类比[bash](https://blog.csdn.net/10km/article/details/51906821)的`$(cd $(dirname $0); pwd)`
+  - 在[[interactive-terminal]]中，输出空
