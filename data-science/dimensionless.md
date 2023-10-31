@@ -1,14 +1,7 @@
 - [wiki](https://en.wikipedia.org/wiki/Dimensionless_quantity)
 - dimensionless quantity, 无量纲量
-- multiplier, 乘数
-- 比值
-  - 自身做分母
-    - 变化率，[[returns]]
-    - 短[[MA]]/长[[MA]]
-      - 当期值/[[MA]]当然是特例
-  - [[normalization#除以标准差]]
-  - 想表达“稳定地往一个方向移动”，可以考虑$\frac {位移}{路程} = \frac{x_{T+t}-x_T}{\sum_{i=T}^{T+t-1}|x_{i+1}-x_i|}$
-  - [[imbalance]]及类似物
-      - [[VPIN]]: $\frac{\sum |a-b|}{\sum (a+b)}$
-      - [[imbalance]]: $\frac{a-b}{a+b}$
-      - [[accumulation-distribution-line]]: $\frac{左-右}{总长}$，或说$\frac{左-右}{左+右}$
+- 例子
+  - multiplier, 乘数，往往无量纲
+  - 比率，变化率
+    - [[returns]]
+- 制造方法：[[division]]

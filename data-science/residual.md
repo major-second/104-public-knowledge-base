@@ -1,6 +1,7 @@
 - Reference
   - [[architecture/residual]]
-  - [[data-science/normalization]]减去均值化为均值0
+  - [[cancel-out]]
+  - [[data-science/normalization#减去均值]]
   - [[factors-alphas]]：除去模型里有的factors，剩余就是alphas
   - [[autocorrelation#adjust autocorrelation]]
   - [行业和市值中性化](https://zhuanlan.zhihu.com/p/408134295)

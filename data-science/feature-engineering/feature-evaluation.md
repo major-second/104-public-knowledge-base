@@ -1,0 +1,8 @@
+- $y$本身
+  - [[autocorrelation]]（变化速度）
+  - [[moment]]
+    - [[expectation]], [[variance]], [[skewness]], [[kurtosis]]
+  - [[multicollinearity]], 需要[[orthogonal-decomposition]]
+- $\hat y, y$关系
+  - [[correlation]]
+  - [[ic-ir]], [[sharpe]]等，考虑二阶量（“稳定性”）

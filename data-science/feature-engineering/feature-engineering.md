@@ -35,7 +35,9 @@
     - MA, EMA, MA之差等
       - 这些是线性的，其实有点想到[[deep-learning-basics]]的feature extraction
       - horizon当然是可调参数
-  - 对于[[time-series]]，就有速度、加速度、位移、路程等，以及[[MA]], [[autoregressive]]等传统的
+  - [[time-series]]
+    - 速度、加速度、位移、路程等
+    - [[MA]], [[autoregressive]]等传统模型
 - 有时跟[[preprocessing]]不分家
   - [[data-science/normalization]]
   - [[data-science/residual]]
@@ -43,42 +45,9 @@
     - 缩尾winsorization
   - 特判[[general-principles/special-case]]
   - outliers
-- 凡是涉及除以的，都要注意非负性、非零性
-  - 非负
-    - 本身物理意义非负
-      - 路程
-      - [[traded-volume]]
-      - [[turnover-换手]]
-    - 平方、绝对值或其和等
-      - [[variance]]
-      - [[variance#standard deviation]]
-      - 路程也算
-  - 注意如果可能出现0，还要考虑加一个常数
-    - [[nan]]中有提到
-    - [[batchnorm]]的官方[文档](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)中也有提到
-- 衍生手段
-  - 线性组合
-    - 两个相同量纲量的加减
-      - [[cancel-out]]
-      - A - B 很多时候比 A/B 性质好且数值稳定
-    - 一般情况线性组合，如[[barra#CNE5]]中很多具体因子计算
-  - 两个量的乘除
-    - 乘除某个[[dimensionless]]比值或multiplier
-    - 乘法
-      - 捕捉互动
-      - 常要求其中一个或两个均值0，则结果和原来的[[cov#无关]]
-        - 可以[[dimensionless]]或不是，都行
-    - 同量纲相除
-      - 参考[[dimensionless]]
-  - 两个量做[[unary]]线性回归看相关系数或斜率
-    - 当然和协方差[[cov]]关系密切
-      - 其实相当于若干[[normalization]]后的乘法，“互动”
-    - 还可以错位再看相关，捕捉时间上的先后关系
-      - 例如[海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)的“量价”先后动
-## 多项式组合
-- 对于已有$x$，把$x^2,x^3,\cdots$等都当成feature
-- 理论上可线性组合出许多可能多项式，张成线性空间
-- 例如[[barra#CNE5]]中`SIZE`市值和`NonlinearSize`非线性市值
+- [[arithmetic-calculation]]
+- [[polynomial-features]]
+- [[binning]]
 # 举例
 - [海通高频因子](https://www.htsec.com/jfimg/colimg/upload/20181106/32441541468174586.pdf)
 - [alpha101](https://arxiv.org/abs/1601.00991)

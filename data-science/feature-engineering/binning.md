@@ -1,0 +1,4 @@
+- `bin`，箱
+- [[discrete-continuous]]
+- [参考第三节](https://mp.weixin.qq.com/s/Lj9RWx7f9wLB8S9H9AUk_Q)
+  - [[oscillator]]：有时极端地方才有预测力
