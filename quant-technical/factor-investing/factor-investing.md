@@ -1,1 +1,4 @@
 - [z-lib](https://zh.zlibrary-east.se/book/12576012/e84b77)
+- [川总知乎：因子投资小册子](https://zhuanlan.zhihu.com/p/79431970)
+    - 有意思评论
+      - > Alpha的学术界致力于把一些简单的alpha变成beta，然后对beta进行各种细枝末节上的改进发论文，实在发现不了新的alpha或者无法改进已有beta了，就开始进行总结，总结也被人总结完了，就开辟一个新领域叫因子择时（其实就是beta 择时，跟趋势跟踪没啥区别，一个是大beta一个是小beta）继续灌水。
