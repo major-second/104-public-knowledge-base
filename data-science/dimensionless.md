@@ -5,3 +5,10 @@
   - 比率，变化率
     - [[returns]]
 - 制造方法：[[division]]
+# 无量纲是相对的
+- [[naming#命名有时是相对的]]
+- [[bps]]
+  - 利率或[[returns]]改变量的度量单位，万分之一
+  - 也常用于度量[[transaction-cost]]
+- [[sharpe]]也有这个意思
+  - 但也可以看成[[normalization#除以标准差]]
