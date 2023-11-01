@@ -10,6 +10,7 @@
     - 这两根轴不一定同单位
   - `ax.set_yscale("log")`对数坐标
   - `.yticks([])`去除`y`刻度
+    - 如果里面写指定的表：指定刻度是什么
   - `.invert_xaxis()`：`x`轴反向
   - `ax.set_xlabel("X-axis Label")`
     - `ax.xaxis.set_label_position('top')`

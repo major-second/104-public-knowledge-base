@@ -1,3 +1,6 @@
 - 前置
   - [[asymmetric-cryptography]]
+    - wallet address钱包地址是可以给别人，公开……的
+    - [[private-key-私钥]]当然不行
 - [basics](https://blog.thirdweb.com/web3-wallet/)
+- 举例[[metamask]]

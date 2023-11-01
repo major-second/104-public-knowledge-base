@@ -30,12 +30,21 @@
   - 特别是不花时间的，你不妨[[general-programming/logs]]出来看看呗
   - 但特别花时间的比如ablation studies不用每次都做
 # 图
-- 一定要坐标轴、标题、图例等
-  - 参考[[matplotlib/basics]], [[axis]]
-- 分布图和单个数值的区别
-  - 分布图更精细，相比[[expectation]], [[moment]]等等
-  - 但不够明显。别人不容易懂
-  - 单个数值和单个数值表有时更直观。特别是初期探索阶段/成果不明显时（1%在表上根本看不出来）
+- 一定要坐标轴说明、坐标轴旁刻度ticks、标题、图例legend等
+  - [[matplotlib/basics]]
+  - [[axis]]
+- 分布图和单个数值的区别，[[encode-decode]]
+  - 分布图
+    - 更精细，不丢失信息
+  - 单个数值和数值构成的表
+    - 例子
+      - [[数字特征]]
+        - [[expectation]], [[moment]]
+      - 线性相关性用[[correlation]]概括
+      - [[autocorrelation]] acf用halflife概括
+    - 有时更直观
+      - 特别是初期探索阶段/成果不明显时（1%在表上根本看不出来）
+    - 方便做比较。图不好直接比
 ## phase diagram
 - [参考](https://en.wikipedia.org/wiki/Phase_diagram)
 ## phase portrait

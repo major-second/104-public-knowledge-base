@@ -9,3 +9,4 @@
   - 还能和[[time-series]]中`index`取出多个键一起使用
   - 但这样没法精确控制颜色，linestyle等
 - 关键字参数：`linewidth, color, marker, markersize`等
+- [[algorithm/special-case]]: 1个点，导致实际上没有线画出来（如果其它坐标轴等都正常就是没有图，就可能是这个）

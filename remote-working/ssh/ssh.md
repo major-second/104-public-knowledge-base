@@ -4,7 +4,7 @@
 - 运行命令：`ssh user@ip <命令>`
 - 参数
   - `-i <文件名>`
-    - 使用指定[[generate-key-pair]]中的私钥
+    - 使用指定[[private-key-私钥]]
     - 请参考[[private-key-permissions]]
   - 指定端口：`-p`（默认`22`）
     - 注意区别于[[scp]]

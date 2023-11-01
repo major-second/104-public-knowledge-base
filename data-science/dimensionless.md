@@ -8,7 +8,10 @@
 # 无量纲是相对的
 - [[naming#命名有时是相对的]]
 - [[bps]]
-  - 利率或[[returns]]改变量的度量单位，万分之一
+  - 固收利率或[[returns]]改变量的度量单位，万分之一
+    - 此时和[[returns]]“量纲相同”
+      - 反之，[[returns]]的相对变化量在这个sense下“无量纲”
   - 也常用于度量[[transaction-cost]]
+    - 此时却和[[returns]]“量纲相同”
 - [[sharpe]]也有这个意思
   - 但也可以看成[[normalization#除以标准差]]

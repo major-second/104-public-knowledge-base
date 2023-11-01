@@ -1,0 +1,4 @@
+- 前置[[asymmetric-cryptography]]
+- 泄露后果严重，例如
+  - [[crypto-wallets]]
+  - [[ssh/ssh]]
