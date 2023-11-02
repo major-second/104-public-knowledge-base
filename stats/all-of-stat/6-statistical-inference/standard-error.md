@@ -11,7 +11,7 @@
   - 估计量表达式（和各样本$X_i$关系式）
   - 能确定[[sampling-distribution]]
 - 因此standard error当然是[[statistical-functionals]]
-- 自然也可以各种估计[[2-estimation]]，例如
+- 自然也可以各种估计[[estimation-in-stats]]，例如
   - [[standard-error#multi-ary SE]]
   - 直接算出用参数表示的[[standard-error]]，然后直接代入参数的[[point-estimation]]值
     - 这可称为[[parametric]] inference of [[standard-error]]

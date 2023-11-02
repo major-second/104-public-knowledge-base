@@ -17,7 +17,7 @@
 - 无论[[frequentist-bayesian]]，给定$\theta$时，$\hat\theta,a,L(\theta,\hat\theta)$都是个概率分布
 - 所以无论[[frequentist-bayesian]]，都可以求$E_\theta(L)$称为risk
 # 无法[[forall#一致]]
-- [[2-estimation]]估计里面经常需要一致
+- [[estimation-in-stats]]估计里面经常需要一致
   - 比如[[优良标准]]
 - 然而现在[[statistical-decision#risk]]很难（对参数）一致最小，那
   - 可以保守

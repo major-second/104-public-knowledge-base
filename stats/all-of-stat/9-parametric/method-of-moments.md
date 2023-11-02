@@ -10,7 +10,7 @@
 - 只要明确上面，就容易理解
   - $\theta_i = f_i(V_1,\cdots,V_m)$（反函数组）
   - 反函数组嘛，那就几个参数就需要几阶矩（几个$V_k$）
-  - 注意这里停留在纯理论，没有进行[[2-estimation]]实际计算
+  - 注意这里停留在纯理论，没有进行[[estimation-in-stats]]实际计算
 - 矩法 method of moments
   - 用样本矩估计矩，得到$\hat V_k$
   - 然后代入反函数得到$\hat\theta_i$从而$\hat \theta$

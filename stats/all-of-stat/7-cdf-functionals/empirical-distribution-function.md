@@ -4,7 +4,7 @@
   - [[bernoulli-binom]]
 - $\hat F_n(x)=1/n\cdot \sum_{i=1}^nI(X_i\le x)$
   - 频率估计概率
-  - 对于一个点$x$，是点估计[[2-estimation]]
+  - 对于一个点$x$，是点估计[[estimation-in-stats]]
     - 均值方差[[MSE]]等参考[[bernoulli-binom#point-estimation]]
     - 当然也有强[[相合性]]等[[优良标准]]
 - 考察不是一个点的性质而是“总体”的某种“一致性”

@@ -1,0 +1,6 @@
+- 前置
+  - [[eigenvalue]]
+  - [[variance]], [[MSE]]
+  - [[dimensionality-reduction]]
+- [参考](https://zhuanlan.zhihu.com/p/342129669)
+  - 注意假设了高[[SNR]]，[[variance]]大的认为有信息，而非噪声

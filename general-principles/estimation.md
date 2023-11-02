@@ -22,7 +22,7 @@
 - 解决关于“取值范围”题，如[[trigonometric]]
 - [[inequalities#不等取等]]
 ## 统计
-- [[2-estimation]]
+- [[estimation-in-stats]]
   - [[point-estimation]]
   - [[confidence-interval]]
 ## 渐近行为

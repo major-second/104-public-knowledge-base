@@ -24,7 +24,7 @@
 - 朴素贝叶斯怎么处理连续特征
   - https://blog.csdn.net/u013597931/article/details/81705718
   1. 直接bin
-  2. 建模做[[2-estimation]]如高斯
+  2. 建模做[[estimation-in-stats]]如高斯
 # 思维方式
 - [[spectrum]]，程度问题，不是非黑即白
 - 模糊数学：隶属度、命题正确程度

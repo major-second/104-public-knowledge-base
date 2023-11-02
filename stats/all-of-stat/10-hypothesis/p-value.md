@@ -1,3 +1,4 @@
+- 前置[[hypothesis-testing]]
 - 单边情形下（统计量$\phi$大于某$C$就否定）样本值$x$
   - $\alpha$：对于所有接受域里的$\theta$，统计量大于某值$C$的概率小于等于$\alpha$
   - $p$：对于所有接受域里的$\theta$，统计量大于$\phi(x)$的概率小于等于$p$
@@ -10,3 +11,5 @@
   - 注意要通过估计、常识等，判断“是在哪边”
 - p-value不是$P(H_0|Data)$，这点类似[[confidence-interval#interpretation]]
   - 说明这些[[naming]]起得还是不错的。p-value不是概率，置信水平也不是
+- 联系
+  - [[overfit]]: [[p-value-hacking]]

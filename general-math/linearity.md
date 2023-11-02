@@ -16,7 +16,7 @@
     - [[norm]]
   - [[partial-sum]]相当于线性求和和差分可交换
 # 估计量线性组合
-- 前置[[2-estimation]]
+- 前置[[estimation-in-stats]]
 - 有几个[[unbiased]]估计量可以线性组合成其它[[unbiased]]估计量
 - 这几个估计量可以用其它[[2-estimation#方法]]得到，例如
   - [[moment]]

@@ -1,0 +1,6 @@
+- 前置
+  - [[p-value]]
+  - [[overfit]]
+- [参考](https://www.howsci.com/p-hacking.html)
+  - 使得结果假阳性，[[type-i-ii-errors#type-i-error]]
+- “做很多次，直到work”：[[multiple-hypothesis-testing]]

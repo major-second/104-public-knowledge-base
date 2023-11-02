@@ -1,16 +1,19 @@
 - 时间序列：小心用到未来信息
+  - [[transformer]]中mask
   - 最理想的是1234训练验证56测试，而不是1245训练验证36测试，否则有风险
     - 但这样可能导致[[domain-gap]]增大
-  - [[transformer]]中mask也是为了防止info leak
 - “无意中”用到测试集
-  - 全集做排序`rank()`
-    - 应该[[rolling]] rank
-  - 全集算分位数用于clip [[feature-engineering]]
-    - 当然应该训练集上算！
+  - 全集操作
+    - 做排序`rank()`
+      - 应该[[rolling]] rank/训练集rank
+    - 算[[character/quantile]]用于clip等[[feature-engineering]]
+      - 当然应该训练集上算！
+    - 做平均用于[[pandas-fill]] [[nan]]等
+      - 可以考虑[[MA]]
   - [[correlation]]其实严格上用到测试集均值方差也有此嫌疑
   - [[7-cross-validation]]
     - [[autocorrelation]]
-    - datapoints overlapping in calculation
+    - datapoints overlapping in calculation, not [[iid]]
 - non technical原因
   - [[fundamental-data]]
 # 解决方法

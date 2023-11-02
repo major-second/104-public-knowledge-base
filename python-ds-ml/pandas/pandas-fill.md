@@ -1,6 +1,13 @@
-- 前置[[nan]]
--把`NaN`填成
-  - 0用`.fillna(0)`
-    - `fillna`常数时，也要当心[[information-leak]]
-  - 向前填充（不看未来数据，防止[[information-leak]]）用`ffill`
-  - 相反用`bfill`
+- 前置
+  - [[nan]]
+  - [[information-leak]]
+- 把`NaN`填成
+  - 常数：例如0用`.fillna(0)`
+    - 数据科学层面
+      - 当心[[information-leak]]，例如总体平均不行，应该[[MA]]
+      - 当心破坏分布，如[[expectation]], [[kurtosis]]
+  - 向前填充，用`ffill`
+    - 不看未来数据，防止[[information-leak]]
+    - 实际中不合理之处：一大段都[[nan]]，难道一直用之前的值？
+  - 向后填充，相反，用`bfill`
+- [参考处理nan引入未来信息](https://zhuanlan.zhihu.com/p/662390860)

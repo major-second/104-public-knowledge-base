@@ -2,6 +2,9 @@
   - [[empirical-distribution-function]]
   - [[statistical-functionals#plug-in estimator]]
   - [[variance]], [[standard-error]]
+- 参考
+  - [[monte-carlo]]
+  - [[estimation-in-stats]]
 # 词源
 - boot, 靴带 -> “自己提自己上天”
 - 参考[[bootstrap]]，是一个词
@@ -36,3 +39,4 @@
    1. $(\theta^*_{\alpha/2},\theta^*_{1-\alpha/2})$
 # 应用
 - [[ensemble#bagging]]
+- [[multiple-hypothesis-testing]]检测和排除

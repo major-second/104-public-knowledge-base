@@ -1,3 +1,4 @@
+- [[estimation]]
 - 参数取值空间：$\mathbb R^m$子集
 - 待估计：$\theta$的函数
   - 回忆[[数理统计学讲义/1-introduction]]中说是“泛函”
@@ -6,9 +7,11 @@
 # 方法
 - 通法
   - [[maximum-likelihood]]
+    - 从而[[maximum-likelihood#equivariance]]
   - [[method-of-moments]]
   - [[statistical-functionals#plug-in estimator]]
   - [[linearity#估计量线性组合]]
+  - [[bootstrap-in-stats]]，特别无法解析求解时
 - 一个必记特例：[[variance#unbiased估计]]
 # 性质
 - [[优良标准]]

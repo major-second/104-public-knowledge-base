@@ -6,7 +6,7 @@
 - [[parametric-or-not]]
 - [[frequentist-bayesian]]
 - > estimation, confidence sets, or hypothesis testing
-  - [[2-estimation]]
+  - [[estimation-in-stats]]
     - [[point-estimation]] 点估计
     - [[confidence-interval]] 区间估计
   - [[hypothesis-testing]]

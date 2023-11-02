@@ -1,6 +1,6 @@
 - 前置
   - [[forall#一致]]
-  - [[2-estimation]]
+  - [[estimation-in-stats]]
   - [[数理统计学讲义/1-introduction#估计量和统计量]]
 - 置信水平$1-\alpha$
   - 类似[[优良标准]]，同样也是参数一律平等
