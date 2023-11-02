@@ -1,0 +1,14 @@
+- [[4-decision-tree]]
+# 基础
+- [参考](https://zhuanlan.zhihu.com/p/85731206)
+## ID3
+- [[information-gain]]
+  - 偏向无限细分
+- 没有[[pruning]]
+  - 同样偏向无限细分
+- 容易[[overfit]]
+- 但不是机器学习预测场景，而是直接写程序之类的场景，可能还挺好用？哈哈
+## C4.5
+- [[information-gain#ratio]]
+## CART
+# 进阶

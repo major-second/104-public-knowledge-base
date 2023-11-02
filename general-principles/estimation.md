@@ -21,8 +21,7 @@
 - 给出[[enumerate#pruning]]范围
 - 解决关于“取值范围”题，如[[trigonometric]]
 - [[inequalities#不等取等]]
-## 统计
-- [[estimation-in-stats]]
+## [[estimation-in-stats]]
   - [[point-estimation]]
   - [[confidence-interval]]
 ## 渐近行为

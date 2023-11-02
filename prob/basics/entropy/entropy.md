@@ -1,0 +1,8 @@
+- 一个随机变量自己
+  - [[random-variable-functions#discrete]]
+  - $\sum (-plogp)$
+  - 根据底不同，所称呼单位不同
+- 参考
+  - [[cross-entropy]]
+  - [[kl-divergence]]
+  - [[conditional-entropy]]

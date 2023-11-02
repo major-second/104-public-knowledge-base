@@ -1,0 +1,10 @@
+- 参考
+    - [参考](https://en.wikipedia.org/wiki/Conditional_entropy)
+    - [[entropy]]
+- [[encode-decode]]
+  - $H(Y|X)$: how much information (on average) the variable $X$ encodes about $Y$.
+  - $H(Y|X)=\sum Pr(x)H(Y|X=x)$
+    - $H(Y|X=x)$是[[entropy]]
+- [[general-principles/special-case]]
+  - $X$完全决定$Y$，条件熵0
+- 务必区分于[[cross-entropy]]，那个是看分布是否接近

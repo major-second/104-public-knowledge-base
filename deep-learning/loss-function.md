@@ -10,6 +10,10 @@
       - 正则项
       - [[VAE]]噪声项
   - 总之，从loss我们可以看出希望什么，例如[[VAE#技术公式]]
+- [参考](https://zhuanlan.zhihu.com/p/607177948)
+  - 是否[[convexity]]重要
 # 例子
 - [[ln-loss]]
 - [[cross-entropy]]
+- [[ic-ir]]
+  - 小心非凸
