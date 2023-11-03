@@ -1,0 +1,3 @@
+- `df.resample('5min').first()`：每个5分钟取第一个数据
+- `df.resample('5min').sum()`：每个5分钟求和
+- 参考[[bar-data]]

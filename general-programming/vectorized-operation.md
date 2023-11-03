@@ -3,8 +3,10 @@
   - [[parallelism]]
 - 实例
   - [[numpy-basics]]
+    - [[apply-along-axis]]
   - [[tensor-calculator]]
   - [[pandas/installation]]
+    - [[pandas-apply]]
 - 可能造成思维上麻烦，操作的局限，不细粒度
   - 这时可考虑[[numba]]等
 - [[manipulation]]和[[indexing]]综合应用例题
