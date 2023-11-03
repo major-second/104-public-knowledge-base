@@ -2,5 +2,6 @@
   - [[general-programming/debug]]
   - [[gdb]]
     - `-g`
-  - [[gflags]]
-    - 因为不是脚本语言，改代码必须重新编译，不像[[python]], [[shell]]，所以没有命令行参数，就不灵活
+  - 因为不是脚本语言，改代码必须重新编译，不像[[python]], [[shell]]，所以没有命令行参数，就不灵活
+    - 所以至少[[cpp-cmd-line-args]]
+    - 最好进阶：[[gflags]]

@@ -14,3 +14,25 @@
       - `1default`
 - 应用
   - [[cpp-debug]]
+# 其它
+## 设置方式
+- bool
+```sh
+a.out --is_handsome
+a.out --nois_handsome
+a.out --is_handsome=true
+a.out --is_handsome=false
+```
+- string
+```sh
+a.out --hobby="play football"
+a.out -hobby="play football"
+a.out --hobby "play football"
+a.out -hobby "play football"
+```
+## 不影响[[cpp-cmd-line-args]]
+```cpp
+int main(int argc, char** argv) {
+    gflags::ParseCommandLineFlags(&argc, &argv, true);
+    ...
+```

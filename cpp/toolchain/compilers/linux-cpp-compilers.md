@@ -1,17 +1,18 @@
-- 前置
+- Prerequisites
   - [[apt]]
   - [[cpp-helloworld]]
-- 安装`g++`
-  - [参考](https://zhuanlan.zhihu.com/p/476988995)
-    - > 一般自带
-    - 也可以手动
-    - `sudo apt update && sudo apt install g++` 安装
-    - `g++ -v`查看[[version]]
-- 使用
-  - `g++ <file>.cpp -o test`输出程序，`./test`运行
-  - 因此
-    - 改源码不能像[[python]]一样重新运行马上反应改变，而是要重新编译
-    - 更不能像[[shell]]一样运行中热[[online]]改变代码
-  - flags
-    - 优化等级：推荐使用`-O2`
-    - `-g`：使得[[gdb]]可用于[[cpp-debug]]
+- Install `g++`
+  - [Reference](https://zhuanlan.zhihu.com/p/476988995)
+    - > Usually comes pre-installed
+    - Can also be installed manually
+    - Use `sudo apt update && sudo apt install g++` to install
+    - Use `g++ -v` to check the [[version]]
+- Usage
+  - `g++ <file>.cpp -o test` to compile the program, `./test` to run it
+  - Therefore,
+    - Modifying the source code does not immediately cause changes like in [[python]]. It needs to be recompiled
+    - Unlike [[shell]], it is not possible to make changes to the code while it is running
+      - [[online]]
+  - Flags
+    - Optimization level: Recommended to use `-O2`
+    - `-g`: Enables [[gdb]] for [[cpp-debug]]

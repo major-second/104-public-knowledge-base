@@ -1,44 +1,41 @@
-- 参考
-  - [[chatgpt]]
-  - [[waitlists]]
-  - [[gpt-4]]
-  - [[git-basics/basics]]的`git add`很有帮助
-- 官网（下载）：[cursur.so](https://www.cursor.so/)
 - 前置
-  - [[openai-account]]，[[openai-api]]
-    - （在上方最小化按钮旁边的齿轮处加）
+  - 官网（下载）：[cursur.so](https://www.cursor.so/)
+  - [[chatgpt]]
+    - [[gpt-4]]可用
+      - 在Edit或Chat时，跳出窗口中右下角可选
+  - 在上方最小化按钮旁边的齿轮处加
+    - [[openai-account]]
+    - [[openai-api]]
+      - 202309 [参考这个](https://zhuanlan.zhihu.com/p/639956119)，可能程序员写反了东西
+      - 所以需要反而把 [[openai-api]]关掉，变成Not Using Key
+- 参考
+  - [[git-basics/basics]]
+    - `git add`很有帮助
+  - 被收入[[editor-index]]
   - 了解[[vscode]]有帮助
     - [[cursor-versus-vscode]]
-# 用法
-- 生成和交互代码
-  - 最常用快捷键
-    - `Ctrl+M Ctrl+O`打开文件夹
-    - `Ctrl+K` Edit
-      - 在已有代码基础上编辑
-      - 把注释[[comment]]或部分代码变成代码
-      - 代码重构
-    - `Ctrl+L` (New) Chat
-      - 解说，闲聊，不改变当前代码
-      - 但也可以（chat以迭代）生成代码块，并复制过来
-      - 每次按，[[refresh]] 了 chat thread
-      - `@`可以提到东西
-    - `Ctrl+退格` 取消
-    - `Ctrl+Enter` 接受
-      - 如果不想全部接受，可以
-        - 先`git add`这个文件
-        - 接受（虽然你不想接受全部，但先接受全部）
-        - 之后对比`Staged`和`Working Copy`新旧版本，选择性接受
-  - 被收入[[editor-index]]
-  - 当然免费的会达到maximum capacity，这时就需要[[aggregation]]
-- 其它用法
-  - 翻译
-    - 选中`# 皮带 电蚊拍 洗牙器 自行车头盔`，`Ctrl + K`，翻译成英文，输出`# Belt, electric mosquito swatter, dental scaler, bicycle helmet`
-- 生成后可以
-  - accept, reject
-  - 手动删除手动修改，而不简单接受或拒绝
-    - 此时不能使用`ctrl + backspace`快捷键否则直接reject
-# 注意
-- troubleshooting: [参考这个](https://zhuanlan.zhihu.com/p/639956119)，可能程序员写反了东西，所以需要把 [[openai-api]]关掉
-  - 202309
+# 基础用法
+- 免费的会达到maximum capacity，这时就需要[[aggregation]]
+- `Ctrl+M Ctrl+O`打开文件夹
+- `Ctrl+K` Edit
+  - 作用
+    - 在已有代码基础上编辑
+      - 甚至也可翻译
+    - 把[[comment]]，[[pseudo-code]]或部分不完整代码变成代码
+    - 代码重构
+  - 过程中也可以
+    - 对话多次
+      - 每次回车确认
+    - quick question，过程中问相关问题
+- `Ctrl+/`切换是否[[gpt-4]]
+- `Ctrl+L` (New) Chat
+  - 解说，闲聊，不改变当前代码
+  - 但也可以迭代生成和refine代码块，并复制过来
+  - 每次按都[[refresh]] 了 chat thread
+  - `@`可以提到东西
+- `Ctrl+退格` `Ctrl+N`拒绝
+  - 因此编辑需要[[keys]]时，可能需要`Ctrl+Delete`代替`Ctrl+backspace`
+- `Ctrl+Enter` `Ctrl+Shift+Y`接受
+## 注意
 - 记得及时复制提示（避免intermittent的服务器错误导致丢失东西）
-- 跑AI生成时，可以后台运作
+- 跑AI生成时，可以后台运行，你去干别的
