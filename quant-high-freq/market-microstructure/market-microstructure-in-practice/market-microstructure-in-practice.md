@@ -1,6 +1,4 @@
-这个文件夹放的是 #读书笔记
-主要内容：市场微观结构
-注：可以看[[26-intra-day-data]]快速入门一下，大致知道市场微观结构是个啥
+- [[market-microstructure]]
 - 封面 ![](cover.png)
 - 书名：Market Microstructure in Practice
 - ISBN：9789813231122

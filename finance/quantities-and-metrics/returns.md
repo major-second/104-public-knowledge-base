@@ -3,8 +3,12 @@
   - 今开到明天开盘：往往记为`return_oo`，open to open
   - 对于任意一种，都是$(后-前)/前$，相对值，为正数
   - 所以可以求`log`，成为`log_return`
-- 典型语句，来自[[pandas-asof]]
-  - `df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
+- [[pandas-asof]]
+  - 典型语句
+    - `df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`
+  - 如果[[bar-data]]，已经time bar过了，则参考[[time-series]]操作
+    - `shift()`, `np.log`等等
+    - 特别注意[[off-by-one-errors]]：如果看leading return，则0号位看 `[1:6]` 也就是 `1, 2, 3, 4, 5`是看了5期。`0`自己不算
 - [参考](https://zhuanlan.zhihu.com/p/91948053)
 - 作为因子预测未来：高频特别短时间，往往反转趋势
   - 类比[[bid-ask-bounce]]，然而那个你抢不到单，否则也能赚钱

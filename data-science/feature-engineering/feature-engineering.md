@@ -36,10 +36,14 @@
       - 这些是线性的，其实有点想到[[deep-learning-basics]]的feature extraction
       - horizon当然是可调参数
   - [[time-series]]
+    - 实操常常[[pandas]]
+    - `shift` `diff`
+    - [[rolling]] [[ewm]]
     - 速度、加速度、位移、路程等
     - [[MA]], [[autoregressive]]等传统模型
 - 有时跟[[preprocessing]]不分家
   - [[data-science/normalization]]
+    - [[normalization#排序]]
   - [[data-science/residual]]
   - [[12-robust]]
     - 缩尾winsorization

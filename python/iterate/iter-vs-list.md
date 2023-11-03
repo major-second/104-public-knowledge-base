@@ -1,0 +1,10 @@
+- 参考
+  - [[itertools]]
+- 前置
+  - [[functional-programming]]
+- iter相比list
+  - 优点
+    - 不是傻傻一开始计算完
+    - 可以无穷生成，联系[[generator]]
+  - 可能造成问题
+    - 使用不当（重复用）时，导致元素用掉。毕竟iter（`map`, `chain`, `filter`）等和list不一样！

@@ -1,0 +1,6 @@
+- 看形状，大致猜，拟合
+  - 或：手动构造出想要形状
+    - [[activation]]
+    - [[10-bet-sizing]]
+- 作近似，加快计算速度
+  - [[gini]]相比[[information-gain#ratio]]等

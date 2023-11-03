@@ -45,3 +45,5 @@
 - 以上只讲了bet sizing得到仓位，没有讲[[order-execution]]. 可以先最简单[[twap]]之类执行
 # 10.6
 - 本节讲了一种具体的同时得到仓位和[[order-execution]]的算法
+- [[fit-using-expressions]]
+  - $\frac x{\sqrt{\omega +x^2}}$
