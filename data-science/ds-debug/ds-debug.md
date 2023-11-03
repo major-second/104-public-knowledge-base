@@ -1,0 +1,15 @@
+- 参考
+  - [[general-programming/debug]]
+  - [[hypothesis-testing]]
+  - [[moment]]
+- 不能像开发层面“能跑”的[[general-programming/debug]]一样用最少的数据，而是用适量数据，看出统计性质
+  - 联想[[hypothesis-testing]]，[[type-i-ii-errors#type-i-error]]一般很低。也就是如果小数据集就出问题，就肯定有问题
+- 例子
+    - [[moment]] [[correlation]] [[autocorrelation]]等指标是否大体正确
+      - [[unbiased]]
+        - 如果你$y,x$都希望zero meaned，则应该做有截距回归，然后检验截距是否约为0
+    - [[deep-learning-basics]]
+        - 玩具数据集是否可成功[[deep-learning/optimization]]拟合
+          - 比如单层拟合线性
+        - 更复杂的玩具数据集是否可用稍微复杂一点的网络[[overfit]]
+        - 同时考察[[tensorboard]]

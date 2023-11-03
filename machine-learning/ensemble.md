@@ -36,3 +36,6 @@
   - 结果在不同时段/数据集更稳定，相当于某种“互补”、去噪
   - 可以理解成多个单变量线性回归的stacking
   - 但太多了显然会[[overfit]]
+- 手动[[feature-engineering]]中部分操作
+  - [[naming#命名有时是相对的]]，你已经很不[[end-to-end]]了，还可以更加手工
+  - 比如两个高度相关的，手动$a+b$，$rank(a)+rank(b)$等权，不要[[OLS]] suffers from [[multicollinearity]]

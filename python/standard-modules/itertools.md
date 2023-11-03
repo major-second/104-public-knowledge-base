@@ -1,4 +1,6 @@
-- 前置[[map-reduce]], [[iterable-iterator]]
+- 前置
+  - [[map-reduce]]
+  - [[iter-vs-list]]
 - [文档](https://docs.python.org/zh-cn/3/library/itertools.html)
 # 基础
 - `from itertools import *`

@@ -1,52 +1,64 @@
-- 在正式运行前，往往需要先调试确认没有问题。调试时往往
-  - 有debug flag，用于区分运行真正的代码还是测试代码
-  - 适当多输出
-    - 参考[[general-programming/logs]]中“等级”，DEBUG肯定是最详细的
-    - 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
-  - 需要考虑特例[[general-principles/special-case]]
+- 在正式运行前，往往需要先调试确认没有问题
+
+[toc]
+# 原则
+## 适当多输出
+- 参考[[general-programming/logs]]中“等级”（verbosity），DEBUG肯定是最详细的
+- 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
+  - 需考虑特例[[general-principles/special-case]]
     - 算法中的[[algorithm/special-case]]
-    - 空输入造成问题例如[[finetune]]，[[submodule]]中都有
-  - 使用较少资源（gpu、cpu等）和待测试数据，降低成本，加快调试迭代速率
-    - 而且像[[launch]]这类的“高级”调试器（相比直接print），运行速度能接受的数据量更小……
-  - 适当调整顺序，使得一些耗时长的东西靠后运行，以最短时间cover最多行代码，以加快迭代速率
-    - 例如[[python-import]]许多自己的文件，你可以把加载时间长的文件放后面
-  - 使用较简单的模式
-    - 比如要用单线程
-      - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
-        - [[general-programming/debug#方式]]中提到[[multiprocessing-minimum]]会导致[[breakpoint]]断多次
-      - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
-    - 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
-  - 在小规模到大规模前，可能可以加入“中规模”，多加几级
-    - 例如看到性能瓶颈所在
+    - 空输入造成问题
+      - [[finetune]]
+      - [[submodule]]
+## 加快迭代
+- 有debug flag，用于区分运行真正的代码还是测试代码
+  - 如[[6-env]]，[[gflags]]等
+- 使用较少资源（[[gpu]]、[[cpu]]等）和数据量，降低成本，加快调试迭代速率
+  - 注意：像[[launch]]这类的“高级”调试器（相比直接print），能接受的数据量更小……否则很卡或者卡死
+- 适当调整顺序，使得一些耗时长的东西靠后运行，以最短时间cover最多行代码，以加快迭代速率
+  - 例如[[python-import]]许多自己的文件，你可以把加载时间长的文件放后面
+## 使用最简单的起步
+- 比如单线程
+  - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
+    - [[general-programming/debug#方式]]中提到[[multiprocessing-minimum]]会导致[[breakpoint]]断多次
+  - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
+- 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
+## 中间层级
+- 在小规模到大规模前，可能可以加入“中规模”，多加几级。原因：
+    - [[debug-profiling]]看到性能瓶颈所在
       - 有一次在`matplotlib`中，[[scatter]]了几百万个点导致慢，233
-    - 例如“能跑通 -> 数据科学(例如[[domain-gap]]，[[tricks]]层面)性质没问题 -> 跑全集”
-- 可以分成多段，逐段（或单元）测试调试
-  - 参考[[unittest]]
-  - 如果几个bug堆到一起，会非常非常麻烦。例如一次经验
-      - [[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序
-      - 且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]
-      - 且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值
-      - 结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
-  - 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
-  - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
-- 在跑一个大实验之前，下载大东西等等之前要做的调试
-  - 确认小规模全流程没问题
-    - 流程问题
-      - 存文件，存[[checkpoint]], [[general-programming/logs]], validation等等
-      - 可能不是一来就跑到这个地方，而是跑了一会才跑到这个地方
-      - 你要是一开始没有测试就开很大的实验，那么可能跑了很久到这里才报错停下，那就损失大了
-      - 例如`pytorch_lightning`中
-        - `sanity_check`就是默认在训练前先尝试`val`一下，参考[[lightning/basics]]
-          - 注：这个它默认每次都自动做。那么当然，你其实针对一套数据和代码只做一次就行，否则又变成浪费时间了
-        - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
-    - 本质上错误
-      - 比如[[hand-eye-calibration]]中可以先跑少数几个点看结果靠不靠谱，排除选错坐标系等情况
-  - 确认断点、调试用的脚手架等都被去除了！要不然
-    - 跑了一晚上，早上起来发现卡在断点，尴尬
-    - 有时自己有一些“跳过大规模”的`if else`操作，自己都忘了
-  - 确认有没有[[silent]]
-    - 比如可能需要`y`确认，你没按，它一直等着，你晕不晕吧
-  - 有自己独占的就不要用和别人共用的。万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
+    - [[ds-debug]]
+    - 单进程到[[multiprocessing]]看有没有引入额外锅
+    - 可能多覆盖了一些错误例
+## [[unittest]]
+- 如果几个bug堆到一起，会非常非常麻烦。例如一次经验
+    - [[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序
+    - 且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]
+    - 且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值
+    - 结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
+- 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
+- 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
+## 跑长时间大程序之前
+- 包括下载大东西，跑很多运算
+- 确认小规模全流程没问题
+  - 流程问题
+    - 存文件，存[[checkpoint]], [[general-programming/logs]], validation等等
+    - 可能不是一来就跑到这个地方，而是跑了一会才跑到这个地方
+    - 你要是一开始没有测试就开很大的实验，那么可能跑了很久到这里才报错停下，那就损失大了
+    - 例如`pytorch_lightning`中
+      - `sanity_check`就是默认在训练前先尝试`val`一下，参考[[lightning/basics]]
+        - 注：这个它默认每次都自动做。那么当然，你其实针对一套数据和代码只做一次就行，否则又变成浪费时间了
+      - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
+  - 本质上错误
+    - 比如[[hand-eye-calibration]]中可以先跑少数几个点看结果靠不靠谱，排除选错坐标系等情况
+- 确认断点、调试用的脚手架或临时代码等都被去除了！要不然
+  - 跑了一晚上，早上起来发现卡在断点或[[conditional-breakpoint]]，尴尬
+  - 有时自己有一些“跳过大规模”的`if else`操作，自己都忘了
+- 有没有[[silent]]
+  - 比如可能需要`y`确认，你没按，它一直等着，你晕不晕吧
+- 有没有其他用户
+  - 有自己独占的就不要用和别人共用的
+  - 万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
 ## 方式
 - 直接输出
   - [[stdout]], [[stderr]]
@@ -61,19 +73,20 @@
 - 为何不能依赖调试器？
   - 比赛等场景不允许用，只能直接输出
     - [[leetcode-solutions/0-metadata]]等
-  - [[multiprocessing-minimum]]
+  - [[multiprocessing]]时
     - 打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
       - Run to a certain line功能因此很不好用
     - 可能缓解方法：设定精细condtional [[breakpoint]]
   - 有些函数就是只能非调试器场景使用
     - [[pygetwindow]]的`.activate()`, `.maximize()`
-## 小规模没问题，大规模有问题？
-- cpu -> gpu
-  - 所以涉及[[device]]要小心
+## 提升规模造成问题的点
+- [[device]]: [[cpu]] -> [[gpu]]
   - 参考[[torch-cuda]]
   - 比如[[rnn]]提到的
-- 资源占用（如爆内存、显存、[[parallelism]]不好导致时间久）等
-  - [[memory]], [[about-submit]]等
+- 资源占用（如爆[[memory]]、[[gpu-memory]]、[[parallelism]]不好导致时间久）等
+  - [[memory]]
+  - [[gpu-memory]]
+  - [[about-submit]]
   - 确认有没有僵尸进程没`kill`掉，参考[[4-more-commands]]
     - 否则明明本来资源够的，也可能不够（如显存、内存等）
   - 磁盘空间够不够, [[resource-management/disk]]
@@ -82,14 +95,13 @@
     - 常见模式
       - code是`/home`，data是`/DATA/disk1`（外接的TB级的硬盘）
       - code是`/`，data是`/home`（参考[[partition]]）
-- 考虑[[general-principles/special-case]]
-  - 要不然搞了半天被一个0或者过严的assert中断，烦烦！
-  - 调试数据集如果是子集，就特别小心这个问题
-  - 小规模没问题，大规模有问题之后，可以考虑在测试数据中加入之前没考虑到的[[general-principles/special-case]]
-    - “增加测试用例，[[adversary]]”
-- 例子
-  - 大规模，文件个数变多，出现[[sort-intro#实际中]]提到的`1, 10, 11, 2, 3`问题
-## 比较，确保结果相同
+- 覆盖不全
+  - 调试数据集如果是很小的子集，可能覆盖不全，特别一些[[algorithm/special-case]]
+  - 小规模没问题，大规模有问题之后，可以在测试数据中加入之前没考虑到的测试用例
+    - [[adversary]]
+  - 例子
+    - 大规模，文件个数变多，出现[[sort-intro#实际中]]提到的`1, 10, 11, 2, 3`问题
+## 对拍
 - 算法竞赛中对拍[[comparison]]
   - 用简单好写但慢的算法和复杂难写但快的算法比较结果是否相同
 - 测试中对拍
@@ -97,17 +109,18 @@
   - 需要掌握[[non-determinism]]防止随机性的影响
   - 可以是用[[xxd-diff]]比较文本，或者[[pickle/basics]]读取并比较等
   - 注意[[python/equality]]的判断。比如pytorch张量的相等判断[[misc/equality]]
-## 一条原则：“代码和数据”
-- 出bug除了代码出问题，也可能数据出问题！
-- 如：不同code（通常是不同版本的code）生成的数据（遵守不同contract的数据）
-  - 最难debug的是缺乏类型检查（python，还不用typing的那种），并且意义不同的值具有相同类型的数据
-  - 也就是表面上遵守相同contract，但实际不是
-  - 参考[[warning]]
-- 有随机性的code生成几次数据，没有“对应着”使用
-  - 在需要连续作很多步处理的场景中，如果你第一步用这个种子对应的数据，第二步用那个种子对应的数据，就可能有麻烦
-- 数据中有个别脏的
-  - 例如[[nan]]
-  - [[seaborn]]中有一个`.dropna()`例子
-  - 例如有个别损毁（少个key啥的），你不过滤一下，就导致整个没法用……
 ## 其它
-- 光跑完还不行，还要调试时间、资源消耗[[debug-profiling]]，优化！
+- [[debug-profiling]]
+  - 光跑完还不行，还要调试时间、资源消耗！
+- [[code-data]]：出bug除了代码出问题，也可能数据出问题！
+  - 如：不同code（通常是不同版本的code）生成的数据格式不同
+    - 最难debug的是
+      - 缺乏类型检查
+        - 如python，还不用typing
+      - 并且意义不同的值具有相同类型
+    - 的数据
+    - 极具误导性！参考[[warning]]
+  - 有随机性的code生成几次数据，没有“对应着”使用（随机种子不对齐）
+  - 数据中有个别脏的
+    - [[nan]]，[[dropna]]
+    - 大数据集，有个别文件/条目损毁（少个field啥的），不过滤一下，就导致整个没法用……
