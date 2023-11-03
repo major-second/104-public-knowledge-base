@@ -1,0 +1,12 @@
+# mingw-w64
+- [参考](https://zhuanlan.zhihu.com/p/76613134)
+  - 用到了内置[[gcc]]
+- [下载](https://sourceforge.net/projects/mingw-w64/)
+  - `Files` tab
+  - 搜索`online`
+    - 如果用不了，改用[[workaround]]，在刚刚同样界面下载下面的离线包
+    - 注意选择架构（例如`x86-64`）等等选项
+- 可能需要添加[[windows/env-var]]使得使用方便
+- `g++.exe <file>.cpp -o <file>.exe` to compile the program
+  - 类似[[linux-cpp-compilers]]
+- 终端或双击运行`.exe` [[binary-executable]]
