@@ -7,6 +7,8 @@
       - 谷歌结果和YouTube广告等
       - linkedin是否有 connect 等功能，分享的profile别人是否要翻墙
   - 系统/应用商店设置换身份：如[[huawei-google]]，[[wsa]]都需要
+  - 其它政治相关
+    - [[gpu]]卡脖子
 - 语言相关
   - ubuntu: [[language]], 如[[try-ubuntu]]提到了
   - windows: 开始菜单有地区、语言、输入法设置等

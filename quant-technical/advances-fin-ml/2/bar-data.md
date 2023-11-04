@@ -9,7 +9,7 @@
 - [参考](https://zhuanlan.zhihu.com/p/158814757)
 - 别忘了bar长度本身可调。可能根据实际需求，不能太浪费也不能太粗糙
 ## standard bars
-- time bars
+### time bars
   - 内容
     - [[pd-timestamps]]
     - [[vwap]]
@@ -28,15 +28,16 @@
   - 直接看多少个tick，代表信息量
   - > Price changes over a fixed number of transactions may have a Gaussian distribution
   - 小心[[auction-trades]]导致的 outliers （一个tick代表的信息量很大）
-- volume bars
+### volume bars
   - [[order-fragmentation]]或者[[matching-engine]]拆都有可能破坏tick bar有效性
   - 对于[[market-microstructure]]相关features，用volume bar可能天然方便
-- dollar bars
+### dollar bars
   - [[dollar-volume]]
     - xs，gold bars would make for a fun pun
   - appreciation升值
   - > the number of shares traded is a function of the actual value exchanged
     - 总结，金融市场，钱作为信息量度量可能最[[first-principle]]
+      - 考虑外汇市场更明显：显然只会考察USD, Euro, yen等
       - [[tick]]和时间多多少少也有点价值？
   - empirical evidence: 计算一定时间bar数，dollar bar挺稳定，相比volume和tick
   - corporate action可能也使得volume [[non-stationary]]

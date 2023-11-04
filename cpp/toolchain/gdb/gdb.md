@@ -21,7 +21,8 @@
       - rbreak test.c:^print
         - [[regex]]
       - tbreak ... # 临时
-    - `run`
+    - `run`，`r`开始（或重新开始）
+      - 区分`c`继续
     - `show directories`
     - `pwd`
     - `cd ...`
@@ -30,7 +31,8 @@
     - [[help]]
       - `help`
     - `where`
-    - `display 变量名`
+    - `print` `p` 变量名，单次打印
+    - `display 变量名`，以后该变量有变动一直打印，相当于[[debugger-watch]]
     - 栈
       - `bt` `backtrace`显示运行栈
       - `f 0` `fname 0`栈顶，以此类推

@@ -1,0 +1,9 @@
+- [参考](https://zhuanlan.zhihu.com/p/357715431)
+- [主要参数](https://zhuanlan.zhihu.com/p/411325881)
+  - [[gpu-memory]]
+  - [[cuda]] [[nvlink]]等支持
+  - 制程
+- [[region-language]]政治卡脖子
+  - [A100禁售](https://zhuanlan.zhihu.com/p/560089085)
+  - 替代品
+    - 其它型号，性能差，[[gpu-memory]]可能不够等

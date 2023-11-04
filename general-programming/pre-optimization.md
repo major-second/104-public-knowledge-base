@@ -1,7 +1,11 @@
-- 差生文具多
-- 读书无用、眼高手低
-- 过度封装、过度抽象
+- 格言
+  - 差生文具多
+  - 读书无用、眼高手低
+  - 过度封装、过度抽象
 - 参考
   - [[leaky-abstraction]]
   - [[tradeoff]]
   - [[workaround]]
+- 应该
+  - [[general-programming/debug#使用最简单的起步]]
+  - 第一条pipeline快速点，粗糙点，低成本（时间金钱人力等）先跑通

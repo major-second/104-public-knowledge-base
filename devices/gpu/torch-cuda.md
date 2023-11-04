@@ -1,5 +1,6 @@
 # 前置
 - [[ubuntu-nvidia-drivers]]
+- [[cuda]]
 - 了解[[6-env]]，[[os-shutil]]等
 # 基础讲解
 - 如何得到能用cuda的torch并验证

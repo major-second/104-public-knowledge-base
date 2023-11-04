@@ -1,0 +1,2 @@
+- [参考](https://www.investopedia.com/terms/d/dollar-volume-liquidity.asp)
+- [[bar-data#dollar bars]]
