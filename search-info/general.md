@@ -9,6 +9,8 @@
       - 要加引号成`"python -m"`这样搜
     - `site:网址`限制网址
 - [[find-replace]]
+- [[read-doc]]
+  - 特别[[read-doc#cheat sheet]]等
 - 资源站
   - [[download-resource]]
   - [[resources-and-archives/aliyun]]

@@ -1,0 +1,38 @@
+- [[interactive]]输入命令
+- 可放到文件，则[[gdb-x]]
+- [[read-doc#cheat sheet]]
+  - [参考](https://gabriellesc.github.io/teaching/resources/GDB-cheat-sheet.pdf)
+- [常用命令](https://zhuanlan.zhihu.com/p/474736535)
+    - `set args`
+    - [[breakpoint]] [[CRUD]]
+      - 增加
+        - b 9
+        - b test.c:9
+        - b printNum
+        - b test.c:23 if b==0
+        - rbreak test.c:^print
+          - [[regex]]
+        - tbreak ... # 临时
+      - 查
+        - `info breakpoints`
+        - `i b`
+      - 删除
+        - `d 号码`
+    - `run`，`r`开始（或重新开始）
+      - 区分`c`继续
+    - `show directories`
+    - `pwd`
+    - `cd ...`
+    - `n`逐步
+    - `s`逐步（进入）
+    - [[help]]
+      - `help`
+    - `where`
+    - `print` `p` 变量名，单次打印
+    - `display 变量名`
+      - 以后该变量有变动一直打印，相当于[[debugger-watch]]
+      - 删除：`undisplay display 编号`
+    - 栈
+      - `bt` `backtrace`显示运行栈
+      - `f 0` `fname 0`栈顶，以此类推
+    - `q`退出

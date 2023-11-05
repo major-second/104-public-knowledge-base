@@ -1,5 +1,6 @@
 ## 参考
 - [[copy-paste]]
+- [[share-lock]]
 - [[complexity]]
   - [[tradeoff]]
   - 拷贝和[[inplace]]相对，效率低

@@ -1,7 +1,9 @@
-# 典型文档种类
-- 官方文档
-  - 好处：稳妥。零基础开始一步一步来一般总能找到想要的
-  - 坏处：有时没有翻译。有时不方便速查。有时零基础看不懂
+# 官方文档
+  - 好处
+    - 稳妥。零基础开始一步一步来一般总能找到想要的
+  - 坏处
+    - 有些需要[[proxy-basics]]
+    - 有时没有翻译。有时不方便速查。有时零基础看不懂
   - 例子
     - [[bash]]
   - 而且官方文档也不能全信，[[dont-trust-others]]
@@ -16,14 +18,17 @@
       - 当然也可能是你自己查错版本了
         - 注意查看你软件的[[version]]，必须找对应版本的文档！
         - 例如[[rllib]]中针对的是`1.13.0`而不是`2.0.0`
-- 爱好者整理的cheatsheet
+# cheat sheet
+  - 爱好者整理
   - 一般正确率有保证，且方便速查。特别是已经看过官方文档有基础后速查
   - 例如[[git-installation]]中[cheatsheet](https://ndpsoftware.com/git-cheatsheet.html#loc=stash;)
   - 例如[[dot-robot]]中[cheatsheet](https://robocorp.com/docs/languages-and-frameworks/robot-framework/cheat-sheet)
   - 例如 https://explainshell.com
+# 二手资料
 - CSDN，Stackoverflow，简书等国内外网站整理的二手资料
   - 可能不够准确，例如[[conda-installation#Windows]]提到的
   - 但可能是中文阅读速度快，或者作者总结把握了要点等等
+# [[aggregation]]
 - 对于这些，需要[[aggregation]]
   - 对于一些热门的东西，可能可以去CSDN之类查查速成、翻译等，并看看有没有cheat sheet
   - 对于冷门的，就去官方吧

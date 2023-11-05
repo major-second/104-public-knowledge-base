@@ -1,0 +1,3 @@
+- [[general-programming/debug]]
+- 避免[[pre-optimization]]
+- mock object

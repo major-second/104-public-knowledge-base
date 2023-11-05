@@ -1,9 +1,30 @@
 - 在正式运行前，往往需要先调试确认没有问题
 
 [toc]
+# 典型工具
+- 直接输出
+  - [[stdout]], [[stderr]]
+  - [[general-programming/logs]]等文件
+- 调试器
+  - 终端
+    - `ipdb`
+    - [[gdb]] [[cpp-debug]]
+  - 编辑器例如[[vscode]]
+    - [[debug-console]]
+    - [[vscode-python]]
+    - [[vscode-debug-js]]
+- 为何不能依赖调试器？
+  - 比赛等场景不允许用，只能直接输出
+    - [[leetcode-solutions/0-metadata]]等
+  - [[multiprocessing]]时
+    - 打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
+      - Run to a certain line功能因此很不好用
+    - 可能缓解方法：设定精细condtional [[breakpoint]]
+  - 有些函数就是只能非调试器场景使用
+    - [[pygetwindow]]的`.activate()`, `.maximize()`
 # 原则
-## 适当多输出
-- 参考[[general-programming/logs]]中“等级”（verbosity），DEBUG肯定是最详细的
+## [[general-programming/logs]]
+- [[general-programming/logs#verbosity]]，DEBUG肯定是最详细的
 - 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
   - 需考虑特例[[general-principles/special-case]]
     - 算法中的[[algorithm/special-case]]
@@ -13,16 +34,18 @@
 ## 加快迭代
 - 有debug flag，用于区分运行真正的代码还是测试代码
   - 如[[6-env]]，[[gflags]]等
-- 使用较少资源（[[gpu]]、[[cpu]]等）和数据量，降低成本，加快调试迭代速率
-  - 注意：像[[launch]]这类的“高级”调试器（相比直接print），能接受的数据量更小……否则很卡或者卡死
 - 适当调整顺序，使得一些耗时长的东西靠后运行，以最短时间cover最多行代码，以加快迭代速率
   - 例如[[python-import]]许多自己的文件，你可以把加载时间长的文件放后面
-## 使用最简单的起步
-- 比如单线程
-  - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
-    - [[general-programming/debug#方式]]中提到[[multiprocessing-minimum]]会导致[[breakpoint]]断多次
-  - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
-- 比如调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
+### [[prototype]]
+- 使用较少资源和数据量，降低成本，加快调试迭代速率
+  - [[gpu]]、[[cpu]]
+  - 注意：像[[launch]]这类的“高级”调试器（相比直接print），能接受的数据量更小……否则很卡或者卡死
+- 使用最简单的pipeline起步
+  - 单线程
+    - 而不用distributed data parallel (ddp), [[multiprocessing-minimum]]等
+      - [[general-programming/debug#方式]]中提到[[multiprocessing-minimum]]会导致[[breakpoint]]断多次
+    - 报错也会更模糊，例如[[make]]中的`-j8`会导致报错被“埋起来”
+  - 调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
 ## 中间层级
 - 在小规模到大规模前，可能可以加入“中规模”，多加几级。原因：
     - [[debug-profiling]]看到性能瓶颈所在
@@ -39,7 +62,9 @@
 - 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
 - 例如“模拟”算法题[[oi-wiki-basic/simulate]]常常需要分块调试
 ## 跑长时间大程序之前
-- 包括下载大东西，跑很多运算
+- 包括
+  - 下载大东西
+  - 跑很多运算
 - 确认小规模全流程没问题
   - 流程问题
     - 存文件，存[[checkpoint]], [[general-programming/logs]], validation等等
@@ -59,34 +84,16 @@
 - 有没有其他用户
   - 有自己独占的就不要用和别人共用的
   - 万一[[isolation]]没做好，对面来个新手把服务器搞崩了，就好玩了
-## 方式
-- 直接输出
-  - [[stdout]], [[stderr]]
-  - [[general-programming/logs]]等文件
-- 调试器
-  - 终端
-    - `ipdb`
-    - [[gdb]]
-  - 编辑器例如[[vscode]]
-    - [[vscode-python]]
-    - [[vscode-debug-js]]
-- 为何不能依赖调试器？
-  - 比赛等场景不允许用，只能直接输出
-    - [[leetcode-solutions/0-metadata]]等
-  - [[multiprocessing]]时
-    - 打一个[[breakpoint]]会被断多次，使得调试过程不够清晰
-      - Run to a certain line功能因此很不好用
-    - 可能缓解方法：设定精细condtional [[breakpoint]]
-  - 有些函数就是只能非调试器场景使用
-    - [[pygetwindow]]的`.activate()`, `.maximize()`
 ## 提升规模造成问题的点
-- [[device]]: [[cpu]] -> [[gpu]]
-  - 参考[[torch-cuda]]
-  - 比如[[rnn]]提到的
-- 资源占用（如爆[[memory]]、[[gpu-memory]]、[[parallelism]]不好导致时间久）等
+- [[device]] [[cpu]] -> [[gpu]]
+    - [[gpu-memory]]
+    - 参考[[torch-cuda]]
+    - 比如[[rnn]]提到的
+- 资源占用
   - [[memory]]
   - [[gpu-memory]]
   - [[about-submit]]
+  - [[parallelism]]不好导致时间久
   - 确认有没有僵尸进程没`kill`掉，参考[[4-more-commands]]
     - 否则明明本来资源够的，也可能不够（如显存、内存等）
   - 磁盘空间够不够, [[resource-management/disk]]

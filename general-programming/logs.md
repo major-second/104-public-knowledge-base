@@ -9,8 +9,8 @@
   - 例子
     - 比如[[11-basic-scripting-partA]]说的`>>`或`>`重定向
     - 比如商业软件[[aida64]]给出报告
-  - 等级
-    - 常见`[0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']`
-    - 设置`DEBUG`也能看到`INFO`，以此类推
-    - 例如[[nbextension]]中`jupyter contrib nbextension install --Application.log_level=30 --user`
-    - 设置太高了可能就是[[silent]]，设置太低就太啰嗦
+# verbosity
+- 例如`[0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']`
+- 设置`DEBUG`也能看到`INFO`，以此类推
+- 例如[[nbextension]]中`jupyter contrib nbextension install --Application.log_level=30 --user`
+- 设置太高了可能就是[[silent]]，设置太低就太啰嗦
