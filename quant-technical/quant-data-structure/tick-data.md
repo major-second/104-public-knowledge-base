@@ -1,0 +1,13 @@
+- 联系[[order-flow]]
+- 参考
+  - [[tick]]
+  - [[naming]]
+- 国内tick数据实则常常指快照数据 [[snapshot]]
+  - [参考](https://zhuanlan.zhihu.com/p/438594093)
+  - 不过至少也有“最细粒度”含义
+- 国际
+    - tick by tick (TBT) data
+      - 相当于包含所有最细粒度[[quote-data]] / [[trade-data]]，凡是变化都记一笔
+      - [参考](https://quantra.quantinsti.com/glossary/TBT-Data)
+      - [参考](https://en.wikipedia.org/wiki/High_frequency_data)
+    - 有时口语中也指逐笔 [[quote-data]]/[[trade-data]]

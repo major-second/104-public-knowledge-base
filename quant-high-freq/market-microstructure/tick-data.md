@@ -1,3 +1,0 @@
-- 联系[[order-flow]]
-- [国内tick数据实则是快照数据，情况](https://zhuanlan.zhihu.com/p/438594093)
-- 一般的：例如[参考](https://developers.refinitiv.com/en/api-catalog/refinitiv-tick-history/refinitiv-tick-history-rth-rest-api/tutorials#rest-api-tutorial-5-on-demand-market-depth-extraction) raw format

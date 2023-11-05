@@ -24,10 +24,13 @@
     - 一定程度上能跑起来的，如[[PIN]]基于的
   - 甚至可以形成一个脑海中的贝叶斯网络（参考[[12-uncertainty]]），有因果联系等
   - 然后对着这个模型试图用公式表达feature，每个公式、记号的目的都是（最简洁地）表达你想要的意思
-- 物理量的“量纲”非常重要
-  - [[normalization]], [[preprocessing]]
-  - 不同量纲不能相加
-  - [[dimensionless]]
+- 物理意义
+  - [[intensive-extensive-properties]]
+  - 量纲
+    - 量纲对齐
+      - 不同量纲不能相加减
+    - [[dimensionless]]
+      - [[normalization]], [[preprocessing]]
 # 常见手段
 - 基础手段
   - 数字特征（[[cov]], [[variance]], [[expectation]]等）

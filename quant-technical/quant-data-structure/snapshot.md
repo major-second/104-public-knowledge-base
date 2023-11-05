@@ -1,0 +1,5 @@
+- [参考](https://en.wikipedia.org/wiki/High_frequency_data) "Data on order book snapshots"
+- 其他参考
+  - [[tick-data]]
+  - [[lob]]
+  - [[intensive-extensive-properties]]
