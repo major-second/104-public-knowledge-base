@@ -1,0 +1,9 @@
+- https://www.zhihu.com/question/30113132/answer/431786548
+- 参考
+  - [[returns]]
+  - [[LLN]]
+    - 时序上[[可加性]]
+      - 相反，ratio [[returns]] [[cross-sectional]]可加
+  - [[brownian-motion]]
+    - 这里是几何布朗运动
+    - [[itos-lemma]]

@@ -1,0 +1,2 @@
+- [[normalization]]必须要！
+- regularization constant可调防止[[overfit]]

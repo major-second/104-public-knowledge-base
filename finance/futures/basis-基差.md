@@ -1,0 +1,3 @@
+- [参考](https://zhuanlan.zhihu.com/p/115505160)
+- [参考](https://zhuanlan.zhihu.com/p/142808422)
+- > 期货价格高于现货我们一般叫期货升水，期货价格低于现货我们叫期货贴水

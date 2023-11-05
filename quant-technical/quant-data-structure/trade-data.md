@@ -1,2 +1,3 @@
 - 往往和[[quote-data]]相对
 - [参考](https://en.wikipedia.org/wiki/High_frequency_data) "Trade data"
+- 最细粒度：逐笔成交
