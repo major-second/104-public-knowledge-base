@@ -4,5 +4,6 @@
 - 典型种类
   - [[ps-general-var]]
   - [[ps-env-var]]
-  - 特殊变量
-    - [[ps-item]]，用于[[ps-pipeline]]等
+  - 特殊
+    - [[ps-item]]，用于[[ps-pipeline]]等 `$_`
+    - [[script-in-out#输出]] `$?`

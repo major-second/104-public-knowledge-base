@@ -7,6 +7,7 @@
     - `if (curl -TimeoutSec 3 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore) {echo 1} else {echo 2}`，如果你没有[[proxy-basics]]就直接啥也不输出，只报错
     - 而同样没有[[proxy-basics]]的情况，`curl -TimeoutSec 3 https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore; if ($?) {echo 1} else {echo 2}`输出`2`
 - 举例
+  - [逻辑运算符](https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_logical_operators?view=powershell-7.3)
   - 简单表达式判断
     ```powershell
     $x = 3; `

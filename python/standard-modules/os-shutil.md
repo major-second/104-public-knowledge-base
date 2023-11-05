@@ -9,6 +9,8 @@
   - `os.listdir`列出文件夹下文件
     - 不一定按顺序
     - 例如[[lightning/basics]]提到这会对`trainer.test`造成麻烦
+  - `os.startfile`开始运行程序
+    - 如果不想让python脚本停止继续运行，可以结合[[start-join]]，弄子进程
   - [[ln-s]]：`os.symlink('target.txt', 'link.txt')`
     - 当然，需要目录存在这点也是一样的
   - 这里和shell不完全一样，比如不能使用`~`
