@@ -4,3 +4,5 @@
     - 例如ISSN, DOI等等
   - [[identifier-for-resources]]
   - 计算机中[[handle]]
+  - 域名
+    - https://www.zhihu.com/question/20091009/answer/3274784222

@@ -3,12 +3,15 @@
   - [知乎链接](https://www.zhihu.com/question/513782601/answer/2328043857)
   - [IC课件](https://www.ma.imperial.ac.uk/~ajacquie/Gatheral60/Slides/Gatheral60%20-%20Stoikov.pdf)
 - 很多时候没有标准答案，各有优劣
+  - [[aggregation]]
 # midprice
 - $M=\frac 12 (P^a+P^b)$
 - $P^a$是best ask, $P^b$是best bid
 - 缺点
-  - [[bid-ask-bounce]]，没有解耦
+  - [[bid-ask-bounce]]
     - 从而也[[autocorrelation]]，不是[[martingale]]
+    - 没法[[problem-decomposition]]掉无意义赚不了钱的bounce
+    - 假阳性
   - 相对于[[quote]]变化频率太低
   - 没考虑volume
 # weighted midprice
@@ -25,3 +28,4 @@
 # microprice
 # start and end
 - 除了数值本身，还要看起止点怎么选择。比如指定时间/量/event...
+  - [[bar-data]]

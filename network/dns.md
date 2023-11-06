@@ -1,4 +1,5 @@
 https://blog.csdn.net/Asukaaaa/article/details/83341075
+[[identifier]]域名
 # dns污染
 - 排查网络故障时，如果域名不通，ip通，就要检查dns！
   - 例如中国防火墙墙[[github]]就是这样（2023.3），被“污染”

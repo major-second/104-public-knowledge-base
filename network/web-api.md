@@ -1,0 +1,9 @@
+- [[api]]
+- [[openai-api]]
+- 用法
+  - [[curl-wget]]
+  - 直接[[chrome]]等浏览器打开
+  - 举例：[[binance]]
+    - https://fapi.binance.com/fapi/v1/depth?symbol=BTCUSDT&limit=1000
+    - 直接打开或`curl`都行
+- 常用[[json]]，内容称为`payload`
