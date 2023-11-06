@@ -1,14 +1,36 @@
-制造、查看日志非常重要！自己方便看[[readability]]，别人方便看和诊断
-- 查看
-  - 查看日志有用的例子
-    - 比如[[assets]]中查看终端错误信息
-    - 比如[[lightning/logs]]
-    - 再比如[github issue](https://github.com/microsoft/debugpy/issues/102)说的打印并查看日志错误信息，解决问题
-      - 核心：`"logToFile": true`选项
-- 制造日志的方法
-  - 例子
-    - 比如[[11-basic-scripting-partA]]说的`>>`或`>`重定向
-    - 比如商业软件[[aida64]]给出报告
+- 制造、查看日志
+  - 自己方便
+    - [[readability]]
+    - [[general-programming/debug]]
+      - [[assets]]中查看终端错误信息
+      - [[pl-logs]]
+      - 比如[github issue](https://github.com/microsoft/debugpy/issues/102)说的打印并查看日志错误信息，解决问题
+        - 核心：`"logToFile": true`选项
+          - [[launch]]
+  - 别人方便看和诊断
+    - [[aida64]]给别人
+- [[settings-and-configurations]]
+  - 命令行flags，如[[cp-mv-rm]] `-v`, verbose
+  - [[vscode-python]]
+- 程序中
+  - 插桩
+    - [[echo]]
+    - [[python]] `print`
+    - [[cpp-io]]
+  - 结合[[general-programming/debug]]
+    - [[debug-console]]
+      - [[breakpoint]]，并在[[debug-console]] 运行程序
+      - [[logpoint]]
+    - [[gdb]]
+      - `display`, `p`等[[gdb-commands]]
+  - 调包，[[pl-logs]]
+- 输出位置
+  - [[terminal]]输出
+    - 能看到的terminal
+    - [[vscode-output]]，相当于被包装
+  - [[redirect]]
+- 其它
+  - 商业软件[[aida64]]给出报告
 # verbosity
 - 例如`[0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']`
 - 设置`DEBUG`也能看到`INFO`，以此类推

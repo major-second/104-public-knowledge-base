@@ -60,7 +60,7 @@
 ## 原因实例
 - trivial修改
   - [[moveit-real-robot]]提到的更新时，有个文件名改变，从`panda_control_moveit_rviz.launch`变成`franka_control.launch`，功能不变
-  - [[lightning/logs]]中提到不同版本默认路径可能是`lightning_logs`或`default`
+  - [[pl-logs]]中提到不同版本默认路径可能是`lightning_logs`或`default`
   - [[franka-ros-interface]]（爱好者自己写的包，不维护了），`.launch`文件中出现多余参数，接口不匹配
 ## 上层依赖底层
 - 常见现象：上层依赖底层

@@ -1,5 +1,5 @@
 - O
-  - 例如考虑[[tensorboard]]的[[lightning/logs]]是每个epoch还是每个step存
+  - 例如考虑[[tensorboard]]的[[pl-logs]]是每个epoch还是每个step存
   - 例如[[tqdm]]有时可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
     - 这和`stderr, stdout`有关
     - 例如[[trainer]]中可以关
