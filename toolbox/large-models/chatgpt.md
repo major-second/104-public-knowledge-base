@@ -69,5 +69,5 @@
   - 文章太长了，用[[web-page-tools]]截取
     - https://www.pdf2go.com/
   - 免费的有每日限流，单文件限大小页数
-- [[cursor-so]]
+- [[cursor-ide]]
 - [[telegram]] bot

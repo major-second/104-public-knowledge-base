@@ -7,4 +7,4 @@
   - 看有哪些hook：可以看官方文档/基类中有哪些方法/自动补全看有哪些等
 - 例子
   - [[linalg]]中最小二乘线性回归时，可以考虑每个`on_validation_start`计算训练集的斜率截距，然后`val`时和`test`时具体计算时不用重复计算
-    - 注：这里应该在`val`开始时计算。如果在`train`结束时计算，那么`sanity_check`（lightning在train前自动进行的val）可能出问题！参考[[general-principles/debug]]
+    - 注：这里应该在`val`开始时计算。如果在`train`结束时计算，那么`sanity_check`（lightning在train前自动进行的val）可能出问题！参考[[general-programming/debug]]

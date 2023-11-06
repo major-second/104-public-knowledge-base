@@ -2,7 +2,7 @@
 - 参考[[imagination]]
 - 原则
   - 模块化
-    - 调试也可模块化（参考[[general-principles/debug]]）
+    - 调试也可模块化（参考[[general-programming/debug]]）
   - 先草稿纸上写，再逐步转化成代码。过程中不要脱离草稿纸
   - 减少重复代码
 - 例子

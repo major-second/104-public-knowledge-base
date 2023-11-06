@@ -1,16 +1,25 @@
-自己做定制和优化固然好，但是时刻要留心眼。是不是可能就是它出锅？毕竟其他人可能只考虑了标准情况，没有考虑全部情况
-- 比如用[[zsh]]
-  - 对于中括号`[]`就会出问题
+- 自己定制和[[marginal]]优化固然好
+  - 站在巨人肩膀上
+  - 但是时刻要留心眼。是不是可能就是它出锅？
+  - 毕竟其他人可能只考虑了标准情况，没有考虑全部情况
+- [[zsh]]，相比[[bash]]确实好用
+  - 对于中括号`[]`出问题
+  - [[shell-array]] [[off-by-one-errors]]
   - 在[[dev-env]]中也会带来错误
-  - 对`echo "\\n"`的输出结果也和[[11-basic-scripting-partA]]讲的不同
+  - 对`echo "\\n"`的输出结果和[[11-basic-scripting-partA]]讲的不同
   - 对`sudo apt remove *nvidia*`的结果也不同
   - [[franka-ros-interface]]只能用`bash`
-- 比如[[proxy-basics]]讲到有些地方开了代理就上不了
-- 比如[[nbextension]]可能导致[[jupyter-tqdm]]中`tqdm_notebook`用不了（不兼容）
-- 比如对于[[pytorch/basics/installation]]
-  - 不常用的conda [[channel]]可能缺少最新版本
-  - 非[pytorch官方](https://pytorch.org/get-started/previous-versions)指定`-f`的[[pip]]源也可能没有对应版本等
-- 比如[[adapter-cable]]中提到的“诱骗线”不是原装线，显然容易坏，不稳定，你出差在外要是彻底不带原装适配器，还是有风险的（万一坏了就没得充电了
+- [[proxy-basics]]讲到有些地方开了代理就上不了
+- 装多东西，[[compatibility]]被破坏
+  - [[nbextension]]可能导致[[jupyter-tqdm]]中`tqdm_notebook`用不了（不兼容）
+- [[channel]]
+  - 对于[[pytorch/basics/installation]]
+    - 不常用的conda [[channel]]可能缺少最新版本
+    - 非[pytorch官方](https://pytorch.org/get-started/previous-versions)指定`-f`的[[pip]]源也可能没有对应版本等
+- [[adapter-cable]]中提到的“诱骗线”
+  - 不是原装线，显然容易坏，不稳定，你出差在外要是彻底不带原装适配器，还是有风险的（万一坏了就没得充电了
   - 一种可能的解决方案是随身包带诱骗线，行李箱还是放原装适配器
-- 比如[[outlook]]有时可能收不到邮件，网页版邮箱可以
-- [[multi-display]]拔出变成单屏可能导致部分程序消失，必须重连[[multi-display]]拖到主屏解决
+- [[outlook]]
+  - 有时可能收不到邮件，网页版邮箱可以
+- [[multi-display]]
+  - 拔出变成单屏可能导致部分程序消失，必须重连[[multi-display]]拖到主屏解决

@@ -10,7 +10,7 @@
     - 当然现在有时多卡还是会有未知麻烦，莫名其妙报错。直接`devices=[0]`比较保险吧！参考[[workaround]]
   - `logger=...`指定[[pl-logs]]所用的logger
   - `max_epochs`指定最多多少轮
-  - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
+  - `fast_dev_run`只训练几个batch作为[[general-programming/debug]]
   - `limit_train_batches`防止一个epoch过多，不好validate
     - 需要和shuffle了的[[dataloader]]配合使用
   - `enable_progress_bar=False`关闭[[third-party-modules/tqdm]]输出

@@ -1,7 +1,7 @@
 # 概述
 - 对于特例（空，0等）往往需要特判
   - 特判既包括你代码的特判，也包括人肉输入特殊数据（空）等做测试集
-  - 参考[[general-principles/debug]]
+  - 参考[[general-programming/debug]]
 - 拿到问题，优先考虑特判的好处
   - 助于严谨，防止特殊值报错
     - 例如[[finetune]]有提到

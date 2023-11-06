@@ -22,7 +22,7 @@
     - `bash -c 'sleep 1; echo 1' & bash -c 'sleep 2; echo 2' & wait; echo 3`
     - `for i in {1..4}; do bash -c "sleep $i; echo $i" &; done; wait; echo 5`
 # python
-- for循环非常慢。但很多时候可以先写一个慢的然后让[[cursor-so]], [[chatgpt]]改
+- for循环非常慢。但很多时候可以先写一个慢的然后让[[cursor-ide]], [[chatgpt]]改
 - 调包并行
   - 如[[multiprocessing-minimum]]中利用多进程`Pool`的`p.map`并行
   - 如[[numpy-basics]]可以`np.random.randint()`并行生成随机数

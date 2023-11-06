@@ -15,12 +15,12 @@
   - 这为了防止你误以为是[[copy-paste]]，结果按下`Ctrl+C`停下server
   - 在停止前强行让你确认！
   - 当然你熟悉了这个feature后，还有其它用途，比如按`Ctrl+C`再按`n`恢复，此时可展现`http://<ip>:<port>/?token=<一串字符>`
-- 调试[[general-principles/debug]]
+- 调试[[general-programming/debug]]
   - 有[[jupyter-hotkeys]]
   - 正在运行时左侧有`[*]`记号
   - 运行完左侧数字表示运行顺序
   - 上面有一些常见按钮（如保存、停止、重启等）
-  - 不能[[breakpoint]]，所以要参考[[general-principles/debug]]的技巧
+  - 不能[[breakpoint]]，所以要参考[[general-programming/debug]]的技巧
 - 编辑：有[[jupyter-hotkeys]]
 # 其它运行方式
 - 使用vscode [[jupyter-notebook]]插件调试编辑

@@ -28,7 +28,7 @@
     - 原始代码来自[[basics/optimization]]中提到的`pytorch/basics/minimum.ipynb`
 - features
   - 默认设置在训练前会先`val`一下（默认过俩batch，不是全过哈），称为`sanity_check`
-    - 可确保`val`可以正常进行，这是[[general-principles/debug]]的思想
+    - 可确保`val`可以正常进行，这是[[general-programming/debug]]的思想
     - 有时会带来一点小麻烦
       - 比如[[linalg]]中“最小二乘法”那里
       - 比如你使用了[[hook]]，在`on_validation_end`这种地方记录[[tensorboard]]结果，那么sanity check本来是不该被记录的，却被记录了

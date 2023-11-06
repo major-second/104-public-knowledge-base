@@ -19,7 +19,7 @@
     - 实践中可能需要[[trainer]]的一些设置，例如`limit_train_batches`
 - 欠拟合、学习率太大BS太小都好解决（反正训练集摆在那，你拟合好就行）
   - 你连过拟合训练集都做不到那一定代码除了严重问题，别想别的了
-  - 可以先[[general-principles/debug]]过拟合特别小数据集
+  - 可以先[[general-programming/debug]]过拟合特别小数据集
 - 过拟合的解决不平凡，从而引出“正则化”
 - 训练集一般需要`shuffle`
   - 尤其一种情况：训练集中batch数量很多，故每个epoch只随机取出一部分，然后epoch结束即做val，避免val间隔太大看不到曲线趋势。此时当然必须`shuffle`

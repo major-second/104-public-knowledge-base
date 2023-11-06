@@ -1,3 +1,3 @@
 - 有力竞争者（替代品）
-  - [[cursor-so]]：使用[[chatgpt]]等大模型
+  - [[cursor-ide]]：使用[[chatgpt]]等大模型
   - [[vim-basics]]：速度快，特别网速慢时仅终端即可用

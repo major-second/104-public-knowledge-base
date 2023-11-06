@@ -73,7 +73,7 @@
     - 例如`pytorch_lightning`中
       - `sanity_check`就是默认在训练前先尝试`val`一下，参考[[lightning/basics]]
         - 注：这个它默认每次都自动做。那么当然，你其实针对一套数据和代码只做一次就行，否则又变成浪费时间了
-      - `fast_dev_run`只训练几个batch作为[[general-principles/debug]]
+      - `fast_dev_run`只训练几个batch作为[[general-programming/debug]]
   - 本质上错误
     - 比如[[hand-eye-calibration]]中可以先跑少数几个点看结果靠不靠谱，排除选错坐标系等情况
 - 确认断点、调试用的脚手架或临时代码等都被去除了！要不然

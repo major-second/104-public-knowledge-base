@@ -6,7 +6,7 @@
     - 比如你原本所在node可能性能差没有[[torch-cuda]]，`qrsh`后就有
   - 总体透明，[[general-principles/independent]]
     - 当然，由于可能的某种[[leaky-abstraction]]，有时可能会导致一些奇怪问题。可以`cat, vim`待检查文件等确认
-  - 交互式，一般用来[[general-principles/debug]]，没问题再提交！
+  - 交互式，一般用来[[general-programming/debug]]，没问题再提交！
 - 举例`qrsh -now n -l 'h_rt=24:0:0,h_vmem=500G'`
   - `-now n`：排队等。你可能看到终端完全卡住，过一会才成功
   - `-now y`：如果不马上给我，就别等了

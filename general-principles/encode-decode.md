@@ -27,7 +27,7 @@
 - 那么其它时间戳可能单位不同。例如1649898030311019364（19位数）显然是纳秒
 - `python`中`from time import time, time_ns`，然后可以`time(); time_ns()`尝试一下
   - 这个应用
-    - [[general-principles/debug]]时profiling看什么东西占比时间多
+    - [[general-programming/debug]]时profiling看什么东西占比时间多
     - 制造[[identifier]]
 - pandas中
   - 例如[[rolling]]，[[timestamps]]

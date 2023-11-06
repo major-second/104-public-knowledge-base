@@ -1,0 +1,31 @@
+- 参考
+  - [[vscode]]
+  - [[cursor-ide]]
+  - [[openai-api]]
+# 密切关系
+- [[vscode]] Visual Studio Code (VS Code) is a free source-code editor made by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+- OpenAI, on the other hand, is an artificial intelligence research lab consisting of both for-profit and non-profit arms. OpenAI's mission is to ensure that artificial general intelligence (AGI) benefits all of humanity.
+      - Microsoft and OpenAI have a unique relationship. In 2020, Microsoft made a $1 billion investment in OpenAI to support the latter's efforts to build artificial general intelligence that can tackle more complex tasks that current AI systems can't handle. As part of the partnership, OpenAI will run its services on Microsoft's Azure cloud platform.
+- [[cursor-ide]] is an IDE that heavily reuses VS Code mechanisms like [[settings-json]], [[vscode-extensions]], and [[launch]]. It provides a cloud-based development environment that allows developers to write, run, and debug their code from any device.
+  - [官网](https://cursor.sh/)宣传：Migrate in one click
+- [[cursor-ide]]中使用[[openai-api]]等获得[[gpt-4]], [[chatgpt]]等结果
+- 成环了是吧233
+# 对比
+- [[cursor-ide]]视角对比[[vscode]]
+- [[pricing]]: cursor并非免费开源
+- [[vscode-keyboard-shortcuts]]
+  - 有些快捷键在cursor被占用了，所以改变
+  - `Ctrl+K` [[cursor-ide#edit]]
+  
+    - chord: `Ctrl + M` `某某`
+    - 比如`Ctrl + M, Ctrl + O`打开文件夹
+  - `Ctrl+Shift+Y` [[cursor-ide#chat]] follow up
+- [[remote-ssh]]
+  - 自带，不用装
+- 对比[[vscode-command-line]]
+  - `cursor`命令而非`code`命令
+- 毕竟还不成熟
+  - 可能有些[[vscode-extensions]]不如原版上线快，原版vscode能用这里不能用
+  - 可能有些额外的bug，vscode没有
+    - 202311: [[robocorp]]存在下[[launch#launch-json]]设置[[python-interpreter]]可能无效
+    - [[non-standard]]
