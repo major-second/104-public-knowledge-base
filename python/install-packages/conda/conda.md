@@ -1,0 +1,8 @@
+- 前置
+  - [[python]]
+  - [[package-manager]]
+- Anaconda是包和环境管理器 [[package-manager]]
+  - 利于制造出互不干扰的[[python]]程序运行环境
+- Miniconda: 规模更小。很多时候够用了
+  - [[docker]]常用
+- conda环境中可使用[[pip]]

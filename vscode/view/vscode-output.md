@@ -1,0 +1,5 @@
+- 和[[vscode-terminal]]并列
+- `Ctrl Shift U`
+- 相当于[[general-programming/logs]]，用于调试
+- 右上角下拉框可查看不同程序相关
+  - 如[[python]], [[latex]]等等

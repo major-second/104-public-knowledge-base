@@ -22,8 +22,12 @@
     - 这样就不用每次重新复制长串命令
     - 例如本来的参数列表为`--id 1 --learning-rate 0.0001`，对应的你要写成`"args": ["--id", "1", "--learning-rate", "0.0001"]`
   - `"justMyCode": false`：逐步运行进第三方库
-  - `"python"`: 指定python解释器
-    - 可以先`which`命令快速找到解释器路径，再填入这里
+  - `"python"`
+    - 指定[[python-interpreter]]
+    - 可以
+      - 先`conda env list` / `which`（linux专用）
+      - 快速找到解释器路径
+      - 再填入这里
   - `"env"`: [[6-env]]环境变量
     - 一个用途：设置`PYTHONPATH`环境变量（参考[[sys-path]]），防止找不到包
     - 此处可以使用`${workspaceFolder}`变量，方便表示当前目录

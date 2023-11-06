@@ -1,7 +1,9 @@
 - 前置
   - [[yaml]]
   - [[conda/commands]]
-- [参考](https://zhuanlan.zhihu.com/p/586560032)
+- 参考
+  - [[pip]]
+  - [参考](https://zhuanlan.zhihu.com/p/586560032)
 - 用yaml列举好某个环境名，需要的包等信息
   - 可以有
     - 环境名称

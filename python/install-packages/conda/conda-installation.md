@@ -1,4 +1,4 @@
-Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序运行环境。且内置常用科学包。
+- 前置[[conda]]
 ## Windows
 - [官网](https://www.anaconda.com/download)下载
 - 安装
@@ -7,7 +7,7 @@ Anaconda是包和环境管理器，利于制造出互不干扰的`python`程序�
     - 要么[[windows/env-var#安装时自动设置path]]
     - 要么[[windows/env-var#持久设置]]手动设置`path`
       - [参考资料](https://blog.csdn.net/Python_Smily/article/details/105993200)
-        - 但这个不完全正确，参考[[read-doc#典型文档种类]]
+        - 但这个不完全正确，毕竟[[read-doc#二手资料]]
       - 实际上还是在`Anaconda Powershell Prompt`中输出`$env:path`进行比较，才得到准确list
         - `<path\to>\Anaconda3`
         - `<path\to>\Anaconda3\Library\mingw-w64\bin`
