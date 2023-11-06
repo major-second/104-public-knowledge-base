@@ -39,4 +39,4 @@
     - 如海盗湾
   - [[telegram]]频道
   - 来自暗网或[[telegram]]频道的加密货币付费社工库
-    - 参考[[deposit]]充加密货币
+    - 参考[[binance-deposit]]充加密货币

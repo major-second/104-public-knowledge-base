@@ -1,0 +1,5 @@
+- 前置[[crypto-currency/blockchain]]
+- 基础信息，作大致了解
+  - [非小号](https://www.feixiaohao.co/)
+  - [币萌](https://bimeng.org/)
+    - [[telegram]]搜索tokenmore有一些人和频道，可能有进一步信息
