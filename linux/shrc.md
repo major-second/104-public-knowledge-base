@@ -19,6 +19,8 @@
   - [[conda-installation]]中提到，用于初始化conda
   - 套娃[[general-principles/recursion]]：写一些用于被`source`的脚本（例如里面有`export`等），然后被其他的脚本`source`
     - 仍然注意`source`和直接运行不同
-- 一些不当的例子
+- 错误
   - 在`~/.bashrc`中写`cd ...`等，它们容易让别人迷惑
     - [[explicit-implicit]]
+  - 写进去一些灾难性的东西，需要特别小心，否则[[interactive-terminal]]可能一直打不开，遇到[[bootstrap]]困境
+    - 比如写进去太小的[[ulimit]]，导致每次一打开[[interactive-terminal]]就限制，然后就退出……

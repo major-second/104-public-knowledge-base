@@ -1,0 +1,10 @@
+- [[problem-decomposition]]
+- 打开黑箱！不要只会[[fit-using-expressions]]
+- 例1
+  - [[kurtosis]]太高，中间很多接近0，旁边一些significant的
+  - 其实可能是两个东西，可以考虑分两种情况等
+  - 或一些[[smoothing]] / 计算概率，代理值……（比如针对[[25-event-driven]]）
+- 例2
+  - 两个峰，实际上是一个01变量和另一个正态。应当拆成2个feature
+- 例3
+  - [[skewness]]过大，实则是$X+e^Y$，$X,Y$都是[[normal]]，此时你直接log不好！

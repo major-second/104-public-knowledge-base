@@ -1,0 +1,4 @@
+- 参考
+  - [[map-reduce]]
+  - [[rolling]]
+  - [知乎](https://zhuanlan.zhihu.com/p/81849938)

@@ -1,6 +1,7 @@
 `awk`, `cut`用来做简单字符串操作，和[[find-grep]], [[sed]]常常一起使用
-## 例1
+## 简单例子
 - [[4-more-commands]]中`ppid=$(ps -ef | grep 'sleep 3' | grep -v grep | awk '{print $3}')`
+- [[memory]]中`available_memory=$(top -b -n 1 | grep "MiB Mem" | awk '{print $4}')`
 ## 例2
 - 较复杂，使用了[[find-grep]]以及[[11-basic-scripting-partB]]中`expr`等技术
 - 需求：把
@@ -31,3 +32,4 @@ done
 ```
 - 注意[[off-by-one-errors]]
   - `cut`是1开始，左右都包括，而`grep -bo`是0开始
+  - `awk`的`print`是1开始

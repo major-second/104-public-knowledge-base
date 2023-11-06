@@ -15,9 +15,15 @@
     - linux: [[resource-management/commands]], 或[[nbextension]]中`Variable Inspector`等
     - windows: 任务管理器
 - 设置方法
-  - 可以在装系统时[[partition]]
-  - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
+  - 虚拟内存
+    - 可以在装系统时[[partition]]
+    - 可以[参考](https://blog.csdn.net/qq_41739313/article/details/121156321)增加swap分区或swap文件
 - 管理
+  - 查询
+    - `available_memory=$(top -b -n 1 | grep "MiB Mem" | awk '{print $4}')`
+      - [[find-grep]], [[awk-cut]]
+    - 其实还有简单的`free -m`
+  - [[resource-management/commands]]
   - 适当使用[[buffer]]，调整buffer大小
     - 例如[[standard-streams]]中的例子
   - 程序中

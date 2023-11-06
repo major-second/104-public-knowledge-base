@@ -1,2 +1,4 @@
 - [[normalization]]必须要！
-- regularization constant可调防止[[overfit]]
+- regularization constant
+  - 可调，防止[[overfit]]
+  - 由于weight越大，weight^2越大，故使用不当可能严重欠拟合，对好feature坏feature权重都类似数量级

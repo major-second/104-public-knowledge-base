@@ -28,7 +28,12 @@
 - 有时想要求数据数字特征满足某些性质
   - 有时要使得[[variance]], [[expectation]]为指定值，有时要使得最大最小值为指定值
   - 通过某种变换，变成正态/均匀分布，参考[[data-science/normalization]]
-    - [[data-science/normalization#排序]]
-    - [[data-science/normalization#z-score]]
-    - [[12-robust]]提到Fisher变换$F(x)=\frac 12 ln(\frac{1+x}{1-x})$就是把某个量变为近似的正态分布
-    - [[batchnorm]]
+    - 例子
+      - [[data-science/normalization#排序]]
+      - [[data-science/normalization#z-score]]
+      - [[12-robust]]提到Fisher变换$F(x)=\frac 12 ln(\frac{1+x}{1-x})$就是把某个量变为近似的正态分布
+      - [[batchnorm]]
+      - 恒正，看起来像$e^X$（其中$X$是[[normal]]），显然应该log
+    - 本质上有点[[fit-using-expressions]]嫌疑，唯象！如果能白箱解决还是白箱解决
+      - 例如：本质上是$Z+e^X$的，你看到[[skewness]]，显然应该拆出来
+      

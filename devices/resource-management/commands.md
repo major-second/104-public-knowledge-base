@@ -10,7 +10,7 @@
     - 安装：`sudo apt install htop`
     - `htop`使用，`q`退出
     - 很方便看多少核，多少内存，使用情况等
-  - 爱好者写的可交互看显卡、cpu、内存的[python包](https://www.zhihu.com/question/376875425/answer/1728922058)：`nvitop`
+  - 爱好者写的可交互看[[gpu]] [[cpu]] [[memory]]的[python包](https://www.zhihu.com/question/376875425/answer/1728922058)：`nvitop`
     - 需要[[pip]]
     - 安装
       - `pip3 install git+https://github.com/XuehaiPan/nvitop.git#egg=nvitop`（github上获取最新版安装）
@@ -21,3 +21,8 @@
   - 注：这些地方的显示可能是[[fake-sympton]]，例如云服务器管理商用“半虚拟化”限制使用配置大小等
 - 限制
   - [[ulimit]]
+- 查询数值
+  - [[memory]]
+    - `free -m`
+  - [[cpu]]
+    - 

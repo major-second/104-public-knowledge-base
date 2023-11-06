@@ -2,8 +2,10 @@
 - 增加（一般软约束，否则之后只能小不能大）
   - 针对进程
   - 可能结合[[shrc]]
-  - `ulimit -S -m <单位kb内存>`
-  - `ulimit -S -v <单位kb虚拟内存>`
+  - [[memory]]
+    - `ulimit -S -m <单位kb内存>`
+    - `ulimit -S -v <单位kb虚拟内存>`
+  - [[cpu]]：应该用[[cpulimit]]
 - 请先自己测试不同场景是否奏效
   - 例如终端中，[[debug-console]], [[jupyter-basics]], [[jupyter-notebook]]插件……
   - 现象：太小了`ls`用不了，适当小`import pandas`失败……等等

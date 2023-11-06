@@ -2,5 +2,8 @@
   - 或：手动构造出想要形状
     - [[activation]]
     - [[10-bet-sizing]]
+    - [[12-robust]]: [[sigmoid]]
+  - 警惕只唯象搞的坏处！说不定可以打开黑箱
+    - [[feature-decomposition]]
 - 作近似，加快计算速度
   - [[gini]]相比[[information-gain#ratio]]等

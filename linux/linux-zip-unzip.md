@@ -16,6 +16,8 @@
 - tar
     - `tar -xvf file.tar`
     - `tar -xzvf file.tar.gz`
+      - 节省gzip相关那步
+    - `-C 目标文件夹`
 - gzip
   - `gzip -d file.gz`
 - 可以结合[[scp]]使用，加快跨机器拷贝速度

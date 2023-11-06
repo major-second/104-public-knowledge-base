@@ -4,6 +4,7 @@
     - [[py-process-thread]]
     - [知乎](https://zhuanlan.zhihu.com/p/455171966)
     - [知乎](https://zhuanlan.zhihu.com/p/103135242)
+  - [[resource-management/commands]] 查看逻辑[[cpu]]个数，大致作为`Pool`进程个数参考
 ## 最小唯象例子（利用`Pool`并行）
 - 参考`minimum.py`
   - 这就说明可以简单做并行

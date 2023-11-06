@@ -7,3 +7,4 @@
     - 这个在写脚本思想上有map reduce意味
 - 理论
   - [[rnn#parallelizing]]中用到！
+  - 联系[[stream-computing]]
