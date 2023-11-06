@@ -14,6 +14,7 @@
 - 过滤异常值
   - [[12-robust]]
   - 强行特判[[general-principles/special-case]]过滤
+  - [[pandas-clip]]
   - winsorization缩尾
     - 用[[numpy-basics]]的`np.clip`乃至[[3-linear-regression]]提到的sigmoid函数把两边太高的收一收
     - 可用[[character/quantile]]

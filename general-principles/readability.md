@@ -49,3 +49,9 @@
 - [参考](https://en.wikipedia.org/wiki/Phase_diagram)
 ## phase portrait
 - [[phase-portrait]]
+# 文字，caption
+- 适当括号解释不常用的或有歧义的词，或者换个说法
+- 歧义
+  - [[naming#命名有时是相对的]]
+  - [[naming#有名字作为交流基础]]
+- 明确定语（A的B）

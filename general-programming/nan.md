@@ -4,6 +4,9 @@
   - `float('nan')`（python原生）
   - `np.nan`（[[numpy-basics]]）表示
 - 注：因此：对于原本是整数类型的地方，就没法手动设`nan`
+- 用处
+  - [[explicit-implicit]]，传出错误/警告相当于[[raise]]
+  - [[pandas-clip]]这种表达特定含义（不做clip）
 # 检测
 - 单个数是否是`nan`用`torch.isnan`或`np.isnan`看
 - 许多数（数组）：
