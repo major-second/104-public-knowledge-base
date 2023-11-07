@@ -1,0 +1,4 @@
+- 参考
+  - [[heap-堆区]]
+  - [[memory]]
+  - [[return-local-pointer]]

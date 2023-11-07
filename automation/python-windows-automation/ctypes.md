@@ -1,0 +1,5 @@
+- `ctypes` is a Python package that provides C compatible data types, and allows calling functions in DLLs or shared libraries. It can be used to wrap these libraries in pure Python.
+- `ctypes.windll.user32.MessageBoxW`
+  - This function is used to create a message box on a Windows system. The message box contains a message and title, and some options for the user to choose from.
+  - [ref](https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-messageboxw)
+  - 其实是在调用windows的[[api]]

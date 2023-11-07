@@ -6,3 +6,6 @@
 - [[master-theorem]]套用
   - $T(n)=2T(n/2)+logn$
   - [[complexity]]为$O(n)$
+# 其它
+- [[heap-堆区]]
+  - [[naming#历史遗留]]
