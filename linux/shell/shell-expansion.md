@@ -1,3 +1,4 @@
 - [参考](https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-Expansions)
 - [[ast]]
-- [[shell-quotes]]
+- [[shell-quotes]]：最后一步被去掉了
+- [[filename-expansion]]
