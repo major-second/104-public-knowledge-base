@@ -3,3 +3,4 @@
   - This function is used to create a message box on a Windows system. The message box contains a message and title, and some options for the user to choose from.
   - [ref](https://learn.microsoft.com/zh-cn/windows/win32/api/winuser/nf-winuser-messageboxw)
   - 其实是在调用windows的[[api]]
+  - 如果人不想中断，想让他自动停止，可以[[start-join]]模式

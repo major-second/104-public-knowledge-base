@@ -1,0 +1,3 @@
+- [参考](https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-Expansions)
+- [[ast]]
+- [[shell-quotes]]

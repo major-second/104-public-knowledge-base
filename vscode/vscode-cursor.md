@@ -20,6 +20,7 @@
     - chord: `Ctrl + M` `某某`
     - 比如`Ctrl + M, Ctrl + O`打开文件夹
   - `Ctrl+Shift+Y` [[cursor-ide#chat]] follow up
+    - `Ctrl+Shift+Alt+Y`用于[[debug-console]]
 - [[remote-ssh]]
   - 自带，不用装
 - 对比[[vscode-command-line]]

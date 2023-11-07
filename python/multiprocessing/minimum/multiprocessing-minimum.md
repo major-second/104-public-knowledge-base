@@ -6,7 +6,7 @@
     - [知乎](https://zhuanlan.zhihu.com/p/103135242)
   - [[resource-management/commands]] 查看逻辑[[cpu]]个数，大致作为`Pool`进程个数参考
 ## 最小唯象例子（利用`Pool`并行）
-- 参考`minimum.py`
+- [参考](minimum.py)
   - 这就说明可以简单做并行
   - 典型输出
 ```text
@@ -18,7 +18,10 @@
 2.041583776473999
 ```
 - 注
-  - 参考[[availability]]，由于不能pickle太复杂的东西，所以这里的`f`不能用`lambda`定义
+  - 参考[[availability]]，由于不能pickle太复杂的东西，所以
+    - 这里的`f`
+      - 不能用`lambda`定义
+      - 不能定义在局部
   - 不能不写`if __name__ == "__main__":`这行“保护”，否则多进程时会“导入模块”，引发副作用，导致`Runtime Error`，参考[文档](https://docs.python.org/3.9/library/multiprocessing.html#multiprocessing-programming)
   - 这个`p.map`不像普通的`map`一样
     - 不能多元输入
