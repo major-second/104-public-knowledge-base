@@ -37,6 +37,9 @@
   - [[tensorboard]]左侧搜索可以用
   - python
     - `python -c "import re; print(re.search('a\s+b', 'acba  baba b'), re.findall('a\s+b', 'acba  baba b'))"`
+    - 先compile相当于[[general-programming/cache]]
+      - `my_re = re.compile(my_regex)`
+      - `if my_re.match(...)`
     - 输出`<re.Match object; span=(3, 6), match='a b'> ['a b', 'a b']`
       - 该object的`.group()`, `.span()`等[得到结果](https://blog.csdn.net/qq_33210042/article/details/116794784)
   - [[pandas-index]]

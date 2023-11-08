@@ -2,3 +2,5 @@
 - [[discrete-continuous]]
 - [参考第三节](https://mp.weixin.qq.com/s/Lj9RWx7f9wLB8S9H9AUk_Q)
   - [[oscillator]]：有时极端地方才有预测力
+- 好好的[[normal]]，你就没必要disruptive, arbitrary, unnatural分箱了，显得丑
+- [[feature-engineering#意义和优美性]]

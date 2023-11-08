@@ -9,6 +9,14 @@
   - `os.listdir`列出文件夹下文件
     - 不一定按顺序
     - 例如[[lightning/basics]]提到这会对`trainer.test`造成麻烦
+  - `os.walk`遍历文件夹
+    - [参考](https://blog.csdn.net/qq_41562433/article/details/82995098)
+    - 参数
+      - `followlinks`: [[ln-s]]后用
+    - 生成结果
+      - `root`：当前根（总共出现子/孙文件夹数+根本身个）
+      - `dirs`：子孙文件夹，list
+      - `files`：子孙文件，list
   - `os.startfile`开始运行程序
     - 如果不想让python脚本停止继续运行，可以结合[[start-join]]，弄子进程
   - [[ln-s]]：`os.symlink('target.txt', 'link.txt')`

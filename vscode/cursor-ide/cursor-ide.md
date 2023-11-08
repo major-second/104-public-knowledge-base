@@ -6,13 +6,15 @@
   - Add the following at the gear icon next to the minimize button
     - [[openai-account]]
     - [[openai-api]]
-      - 202309 [Refer to this](https://zhuanlan.zhihu.com/p/639956119), the programmer might have written something in reverse
-      - Therefore, you need to turn off [[openai-api]], set it to `Not Using Key`
+      - if you exceeded your quota, you need to turn off [[openai-api]], set it to `Not Using Key`
+        - However, In this case you can only make 100 requests per month which leads to [[pricing]]
 - References
   - [[git-basics/basics]]
   - Included in [[editor-index]]
   - Understanding [[vscode]] is helpful
     - [[vscode-cursor]]
+  - [知乎](https://zhuanlan.zhihu.com/p/615818924)
+     - 使用示例：https://www.zhihu.com/question/590152131/answer/2941812514
 # Basic Usage
 - The free version will reach maximum capacity, at this point you need [[aggregation]]
 - `Ctrl+M Ctrl+O` to open a folder

@@ -1,6 +1,7 @@
 - 前置
   - [[vpn]], [[proxy-basics]], [[sms]]
   - [[temp-solution]]思想
+- https://cursor.sh/pricing
 - 软件、资源收费相关（不想交钱怎么办？）
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
   - 例如[[tagui]], [[robocorp]]而不是[[my-first-flow]]
