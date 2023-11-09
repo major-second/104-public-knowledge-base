@@ -1,10 +1,9 @@
 - 前置
   - [[vpn]], [[proxy-basics]], [[sms]]
   - [[temp-solution]]思想
-- https://cursor.sh/pricing
 - 软件、资源收费相关（不想交钱怎么办？）
 - 找[[open-source]]的[[workaround]]，并[[aggregation]]等
-  - 例如[[tagui]], [[robocorp]]而不是[[my-first-flow]]
+  - 例如[[tagui]], [[robocorp]]而不是[[my-first-flow]]，且[[aggregation]]
   - 例如[[spotify]]和墙内音乐软件综合使用，有的有这些版权，有的有那些版权
 - 利用不同[[region-language]]价格歧视
   - 例如[[leetcode-solutions/0-metadata]]
@@ -16,13 +15,15 @@
   - [序列号收集站](https://keypro2.ru)
   - 乃至去暗网等
 - 电子付费产品去第三方买，更灵活/便宜
-  - 淘宝买内网的
-    - 如[[baidu-net-disk]]等
+  - 淘宝
+    - 买内网的
+      - 如[[baidu-net-disk]]等
+    - 买国际的说不定也行，如[[github-copilot]]
   - [stacksocial](https://stacksocial.com/)买外网的
     - 如[[vpn]]中的getflix vpn，终身只需50美元
     - 可能需要[[proxy-basics]], VISA贷记卡，注册 Link 支付账号等
     - 时至2023.1，默认支付方式一直显示state must be filled. 但 Link 可以
-- 白嫖教育版，如[[mosek-licensing]]
+- 白嫖教育版，如[[mosek-licensing]], [[github-copilot]]
 - 多账号（ip）薅羊毛
   - [[chatgpt]]中的chatpdf
   - [[openai-api]]多账号薅羊毛

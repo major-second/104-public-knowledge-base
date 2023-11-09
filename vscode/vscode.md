@@ -1,3 +1,5 @@
 - 有力竞争者（替代品）
-  - [[cursor-ide]]：使用[[chatgpt]]等大模型
+  - [[cursor-ide]]：使用[[chatgpt]], [[gpt-4]]等大模型
   - [[vim-basics]]：速度快，特别网速慢时仅终端即可用
+- [[account]]
+  - 左下角头像，点击可以登录/登出

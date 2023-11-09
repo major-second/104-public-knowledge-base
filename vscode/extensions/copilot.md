@@ -4,3 +4,10 @@
   - `"github.copilot.advanced"`：换开源版等
     - 待确认
   - `"github.copilot.enable"`：让markdown可用等
+- [[vscode-keyboard-shortcuts]]
+  - 去[[vscode-keyboard-shortcuts]]设置快捷键
+  - [[vscode-terminal]]
+      - `github.copilot.terminal.suggestCommand`
+  - [[vscode/edit]]
+      - `inlineChat.start`
+        - `/fix`等命令：指定特别动作
