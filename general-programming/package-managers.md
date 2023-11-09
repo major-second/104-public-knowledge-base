@@ -1,0 +1,10 @@
+- 例子
+  - [[python]]
+    - [[pip]]
+    - [[conda]]
+  - [[c-cpp]]
+    - [[conan]]
+  - [[linux]]系统层面
+    - `apt`
+- [wiki](https://en.wikipedia.org/wiki/Package_manager)
+- 相当于软件包的[[CRUD]]

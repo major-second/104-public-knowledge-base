@@ -6,8 +6,9 @@
 - 一般原则
   - 删除再增加等同于修改，所以可以只会三个
   - 有时增也是修改
-  - “查”可能需要[[search-info/general]]技巧！特别是[[regex]]
+  - “查”可能需要[[search-info/general]]技巧！特别是[[regex]] [[glob]]
 # 举例
+- 各类[[package-managers]]
 - [[wsl]]
   - `wsl --install -d <distro>`
   - `wsl --unregister Ubuntu-20.04`

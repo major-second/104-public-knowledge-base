@@ -78,5 +78,5 @@ rm a.py
 
 # 进阶
 
-- 使用 [[create-python-package]] 和 [[pip]] 来优雅地导入不直接在当前文件夹下的文件
+- 使用 [[create-python-package-for-pip]] 和 [[pip]] 来优雅地导入不直接在当前文件夹下的文件
   - [[sys-path]]直接加？太tricky！

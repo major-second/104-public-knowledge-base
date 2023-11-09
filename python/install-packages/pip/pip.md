@@ -1,3 +1,4 @@
+- [[package-managers]]
 - `pip`本身来源：
   - windows
     - [[windows-python]]可选同时带上pip
@@ -33,6 +34,7 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
 - 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
     - clone源码，进去
     - `pip install -e .`
+      - 可用于[[create-python-package-for-pip]]后安装自己的
     - 此时`pip list`可以看到有的包是在本地某个源码文件夹装的
 - 批量安装依赖
   1. 原生方法：有个`requirements.txt`里面一行一行写需要什么包，该文件内容形如

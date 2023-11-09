@@ -1,6 +1,7 @@
 - Preparatory Knowledge
   - [[python-import]]
   - [Reference](https://www.geeksforgeeks.org/create-access-python-package/)
+  - [参考](https://www.pythoncentral.io/how-to-create-a-python-package/)
 
 # Overview
 - A directory is identified as a package in Python if it includes an `__init__.py` file. This file is executed when the package is imported and can contain any Python code.
