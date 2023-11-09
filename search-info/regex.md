@@ -37,6 +37,7 @@
   - [[tensorboard]]左侧搜索可以用
   - python
     - `python -c "import re; print(re.search('a\s+b', 'acba  baba b'), re.findall('a\s+b', 'acba  baba b'))"`
+    - `match`要求开头开始，`search`只要中间出现即可，`findall`找全部
     - 先compile相当于[[general-programming/cache]]
       - `my_re = re.compile(my_regex)`
       - `if my_re.match(...)`

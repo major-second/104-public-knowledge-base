@@ -21,6 +21,7 @@
       - gui无法正常stage和commit
       - 必须手动命令行`git add <submodule文件夹名>`
     - 遇到你手动删除了[[known-hosts]]文件时，只有命令行`git push`才能弹出让你确认信任远程输入`yes`的提示。直接gui push没有提示直接报错
+  - [[cursor-ide]]你的[[openai-api]]用光了只报错something went wrong不说结果
   - [[client-config]]中提到注释必须单独成行。如果没有做到，那么直接`ssh`连接会报错，但vscode会吃掉报错信息
   - [[assets]]中的这个![](assets.png)
   - [[moveit-real-robot]]的命令不能运行，要[[fci]]里的底层命令才能传递出真正的错误原因
