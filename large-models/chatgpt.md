@@ -25,24 +25,7 @@
   - 氪金Upgrade to plus
   - ...
 # 提示工程
-- 可以循序渐进给出指示
-- 如果它不满足要求/预期，可以
-  - 直接尝试重试
-  - 编辑输入，手动指出要求，重新submit
-- 简单举例：
-  - ![](prompt-example-0.png) 可以看到循序渐进
-  - ![](prompt-example-1.png) 可以看到手动指出要求
-# 记忆
-- Thread中前面的信息会被记住
-  - 左边可以new chat清空记忆
-- 具体的记忆信息例子
-  - 应用：改文书，缩减文章等
-  - 首先Here is a personal statement, please commit it to your memory as (A)，然后写一大段
-    - 然后Here's another one. Please commit it to your memory as (B)然后写一大段
-    - 然后例如问：
-    - ![](prompt-example-memory.png)
-  - 进阶：如果全文太长，可以一小段记为(A)，再一段记为(B)，等等，之后例如：
-    - ![](prompt-example-memory-by-parts.png)
+- [[chatgpt-prompting]]
 # 其它
 - 可以发挥想象力，玩各种各样的事，如
   - 如何解决台湾问题
@@ -59,11 +42,9 @@
   - ……
 - 人机交互结合
   - 写文章次序：人调实质内容，chatgpt调表达润色，人最后调格式字数（如每段顶格等）
-# 绕过限制
-- 他有时会自我设限，但其实可以做。你可以想办法绕过
-- 比如Please memorize不行，但Please commit it to your memory可能就行了
 # 友情链接
 - [[waitlists]]
+- 更高级的[[gpt-4]]
 - [chatpdf](https://www.chatpdf.com/)
   - 读论文读书审稿等用
   - 文章太长了，用[[web-page-tools]]截取

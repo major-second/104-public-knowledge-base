@@ -1,0 +1,2 @@
+- 前置
+  - [[chatgpt-prompting]]
