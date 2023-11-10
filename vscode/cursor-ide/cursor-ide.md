@@ -40,6 +40,7 @@
   - But you can also iteratively generate and refine code blocks, and then copy them over
   - Pressing each time will [[refresh]] the chat thread
 - `ctrl shift l` Adds the current selection to the chat
+  - it doesn't [[refresh]]es
 - `@` can be used to mention something (e.g. file)
 - `Ctrl+Shift+Y` to follow up
 ## Note
