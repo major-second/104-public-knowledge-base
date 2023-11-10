@@ -11,3 +11,14 @@
     - 有些时候依赖是要自己分析总结的
       - 比如涉及硬件，像真机实验中[[hand-eye-calibration]]提到的
       - 比如[[version]]说有时候包管理器会比较傻，无法求解出想要的结果，需要自己管理
+- 硬件[[gpu]] [[memory]]等依赖
+  - “最低配置”
+  - [[nvlink]]
+  - [[cuda]]相关坑
+- 上层和底层
+  - 包有时需要一些更底层的依赖，例如python包只是一些上层[[api]]而已
+    - 其实这个有点像vscode插件和python解释器的关系，参见[[vscode-extensions]]
+    - [[mujoco-py]]中的mujoco
+    - [[mpi4py]]中需要
+      - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
+      - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)

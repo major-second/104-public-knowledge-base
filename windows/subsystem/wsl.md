@@ -36,3 +36,6 @@
   - [[wsl-command]]
     - 在[[powershell-basics]]中运行
     - 可以高度自动化，[[silent]]
+- 特别注意[[disk]]容量。如果不够，可能损坏，你整个系统无了
+  - 此时只能重装整个WSL作为[[refresh]]，即`wsl --unregister ...`
+  - [[backup]]

@@ -6,3 +6,6 @@
   - 计算机中[[handle]]
   - 域名
     - https://www.zhihu.com/question/20091009/answer/3274784222
+  - 随机，仅用作查重
+    - [[robocorp-conda-yaml]]
+    - [[commit]]

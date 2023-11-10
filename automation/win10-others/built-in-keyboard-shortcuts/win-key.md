@@ -7,6 +7,7 @@
 - `Win + A`在win11调出面板，有wifi，[[bluetooth-basics]]，[[devices/battery]]查看等，第二次收起
 - `Win + Shift + S`截图，截到后自动到剪贴板，且能和[[win-key#win-v]]结合
 - `Win + H`语音[[region-language#IME]]
+- `Win + S`搜索，在[[robocorp-windows]]用到
 # win-v
 - 是一种[[copy-paste]]
 - 第一次按，一键打开剪贴板功能

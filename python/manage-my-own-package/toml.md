@@ -1,0 +1,4 @@
+- [参考](https://zhuanlan.zhihu.com/p/582651418)
+  - `setup.py` is [[deprecated]]
+- [[keyword-in-py]]用到
+- 本地[[create-python-package-for-pip]]：[参考](https://stackoverflow.com/questions/75159453/specifying-local-relative-dependency-in-pyproject-toml)

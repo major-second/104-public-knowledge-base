@@ -9,6 +9,8 @@
   lib_windows.windows_search('calculator')
   calc = lib_windows.control_window('regex:.*Calc.*')
   ```
+  - 注意`windows_search`实际上是[[simulate]]了`win + s`然后搜索，自然跟[[subprocess]]两回事
+    - [[win-key]]
 - [[debug-console]]看`tree`
   - `t = lib_windows.print_tree(calc, return_structure=True)`
   - 此时能看到`path:...|...`这种，可用来临时调试时`get_elements`

@@ -1,6 +1,8 @@
 前置
 - [[conda-installation]]
 
+[参考](https://docs.conda.io/projects/conda/en/stable/commands/index.html)
+
 内容
 - create: `conda create -n <env name> python=x.x`
     - 使用yaml文件创建：参考[[create-env-from-yaml]]，是`conda env create -f <path_to_yaml_file>`

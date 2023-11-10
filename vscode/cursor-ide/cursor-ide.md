@@ -32,7 +32,6 @@
 - `Ctrl+/` to toggle whether to use [[gpt-4]]
 - `Ctrl+Backspace` `Ctrl+N` to reject
   - Therefore, when editing requires [[keys]], you may need to use `Ctrl+Delete` instead of `Ctrl+Backspace`
-  
 - `Ctrl+Enter` `Ctrl+Shift+Y` to accept
 ## chat
 - `Ctrl+L` (New) Chat
@@ -40,6 +39,7 @@
   - does not change the current code
   - But you can also iteratively generate and refine code blocks, and then copy them over
   - Pressing each time will [[refresh]] the chat thread
+- `ctrl shift l` Adds the current selection to the chat
 - `@` can be used to mention something (e.g. file)
 - `Ctrl+Shift+Y` to follow up
 ## Note

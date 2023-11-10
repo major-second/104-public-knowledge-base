@@ -27,31 +27,6 @@
 pip 22.2.1 from /home/<用户>/anaconda3/envs/<conda环境>/lib/python3.7/site-packages/pip (python 3.7)
 pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.6)
 ```
-- 普通使用
-  - 一般直接`pip install 包名`
-  - 根据前述讨论，当你在`conda`环境中，有可能需要`python3 -m pip install`
-  - 有时（如[[gym/env]]，[[rllib/basics]]等）可能出现`包名[额外说明]`格式，例如`gym[atari]`
-- 从源码安装python包（比如需要指定版本，比如conda和pip都找不到包时）
-    - clone源码，进去
-    - `pip install -e .`
-      - 可用于[[create-python-package-for-pip]]后安装自己的
-    - 此时`pip list`可以看到有的包是在本地某个源码文件夹装的
-- 批量安装依赖
-  1. 原生方法：有个`requirements.txt`里面一行一行写需要什么包，该文件内容形如
-`gym==0.19`
-`termcolor`
-    - 然后`pip install -r requirements.txt`即可
-    - 注：`requirements.txt`有时还能看到`git`开头的一些行，表示一些从git下载源码安装的包
-  1. 和conda结合：[[create-env-from-yaml]]中的`dependencies - pip`子树
-    - 当然为了更加保险，`dependencies`子树中可以增加`python=版本`和`pip=版本`
-- 一般来说`pip`效率不如`conda`，但有些`pip`有的包`conda`没有，有些包`pip`才有较新版本
-  - 所以`pip`简单来说就是质量差，东西多
-- 当然，`pip install`得到的包有时需要一些更底层的依赖。也就是python包只是一些上层接口而已
-  - 其实这个有点像vscode插件和python解释器的关系，参见[[vscode-extensions]]
-  - 比如[[mujoco-py]]中的mujoco
-  - 比如[[mpi4py]]中需要
-    - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
-    - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)
 - [[settings-and-configurations]]
   - 要不然直接编辑文件
   - 要不然使用`pip config`命令（需要较新[[version]]）
@@ -60,4 +35,3 @@ pip 21.3.1 from /home/<用户>/.local/lib/python3.6/site-packages/pip (python 3.
   - 但是清华、中科大等源可能缺东西。可以`-i https://pypi.python.org/simple/`使用`pypi`源
     - 只要下载一次[[general-principles/cache]]了，以后就可以在本地用
 - `sudo rm -r ~/.cache/pip`清除[[general-principles/cache]]
-- 涉及内网，不能联网：常常`pip install filename.whl`这样

@@ -22,7 +22,9 @@
     - 这里的`f`
       - 不能用`lambda`定义
       - 不能定义在局部
-  - 不能不写`if __name__ == "__main__":`这行“保护”，否则多进程时会“导入模块”，引发副作用，导致`Runtime Error`，参考[文档](https://docs.python.org/3.9/library/multiprocessing.html#multiprocessing-programming)
+  - `if __name__ == "__main__":`
+    - 不能不写这行“保护”，否则多进程时会“导入模块”，引发副作用，导致`Runtime Error`，参考[文档](https://docs.python.org/3.9/library/multiprocessing.html#multiprocessing-programming)
+    - 不能写成`assert __name__ == "__main__"`，因为多进程会导入模块
   - 这个`p.map`不像普通的`map`一样
     - 不能多元输入
     - 输出的就是正儿八经的`list`，而不是`map`对象

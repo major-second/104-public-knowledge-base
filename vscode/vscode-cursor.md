@@ -16,11 +16,12 @@
 - [[vscode-keyboard-shortcuts]]
   - 有些快捷键在cursor被占用了，所以改变
   - `Ctrl+K` [[cursor-ide#edit]]
-  
     - chord: `Ctrl + M` `某某`
     - 比如`Ctrl + M, Ctrl + O`打开文件夹
   - `Ctrl+Shift+Y` [[cursor-ide#chat]] follow up
     - `Ctrl+Shift+Alt+Y`用于[[debug-console]]
+  - `Ctrl+Shift+L` [[cursor-ide#chat]]
+    - [[windows]], [[linux]]: `alt enter`
 - [[remote-ssh]]
   - 自带，不用装
 - 对比[[vscode-command-line]]
