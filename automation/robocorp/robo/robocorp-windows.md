@@ -17,14 +17,6 @@
   - 注意`windows_search`实际上是[[simulate]]了`win + s`然后搜索，自然跟[[subprocess]]两回事，不构成父子进程关系
     - [[win-key]]
 
-## Child Windows
-    ```python
-    parent_window = lib_windows.control_window('regex:.*Powershell.*')
-    child_window = lib_windows.control_child_window(parent_window, 'regex:.*Ubuntu.*')
-    ```
-  - 在这种情况下，你可以首先使用`control_window`方法定位到父窗口，然后使用`control_child_window`方法定位到子窗口。
-  - 这种方法可以解决`control_window`方法无法定位到子窗口的问题。
-
 # Locating elements in windows
 - **Using [[debug-console]] to view `tree`**
   - `t = lib_windows.print_tree(calc, return_structure=True)`

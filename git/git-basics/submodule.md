@@ -1,7 +1,16 @@
 ## 添加和初始化
 - 添加
-  - 前提：submodule至少有一个[[commit]]，否则是[[general-principles/special-case]]，时至2022.12会出现奇怪错误
   - 命令：`git submodule add <repo-link>`
+  - troubleshooting
+    - 需要submodule至少有一个[[commit]]，否则是[[general-principles/special-case]]，时至2022.12会出现奇怪错误
+    - parent module should be on a [[git-basics/branch]], not [[detached]]
+      - it's better to use `-b branch` to ensure the branch
+    - if you failed once, please delete 
+      - the submodule folder
+      - the ultimate (root) parent module's `.git/<path/to>/submodule_name`
+        - 这个就有点dirty了……
+      - to [[refresh]]
+      - 这是[[dot-git]] 隐藏文件带来问题，[参考](https://blog.csdn.net/weixin_44622464/article/details/114933261)
 - 初始化
   - 时机
     - 刚刚添加（`submodule add`）后
