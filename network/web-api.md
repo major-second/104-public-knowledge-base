@@ -1,4 +1,4 @@
-- [[api]]
+- [[API]]
 - [[openai-api]]
 - 用法
   - [[curl-wget]]

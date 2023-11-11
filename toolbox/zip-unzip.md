@@ -1,5 +1,0 @@
-- 参考[[file-format]], [[encode-decode]]
-- windows 10等：可以点进`.zip`文件（基本上）像普通文件夹一样管理（如复制东西出来）
-- `.rar, .7z`等格式，或者英文系统中使用中文路径（参考[[region-language]]）：可能需要下载安装7-zip
-- linux上常见的
-  - [[linux-zip-unzip]]

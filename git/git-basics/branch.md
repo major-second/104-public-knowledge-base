@@ -19,3 +19,4 @@
 - 解除detached状态：`git branch name; git checkout name`，这样就有了一个branch名
   - 或：`git branch -D main; git branch main; git checkout main`指定当前commit对应已有的`main` branch
 - 注：github默认branch以前是`master`，现在是`main`，因为`master`和slave涉嫌种族歧视黑人（啊这）
+  - 造成过的麻烦：[[submodule]] 指定branch时想当然写了`main`，结果因为是老库，实际上应该是`master`（当然也可能反之）

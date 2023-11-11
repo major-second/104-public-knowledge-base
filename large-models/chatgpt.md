@@ -4,8 +4,8 @@
     - 也可用[[telegram]] bot，就无需[[openai-account]]，但可能有限制
     - `https://t.me/ChatGPT_General_Bot`
   - [[proxy-basics]]
-  - 适当[[node]]
-    - 用不了的node表现：![](chatgpt-non-usable-node.png)
+    - 且适当[[node]]，比如hk不行
+      - 用不了的node表现：![](chatgpt-non-usable-node.png)
 # 用法
 - 基本：在下方框敲东西让它回答
   - [[region-language]]
@@ -44,7 +44,7 @@
   - 写文章次序：人调实质内容，chatgpt调表达润色，人最后调格式字数（如每段顶格等）
 # 友情链接
 - [[waitlists]]
-- 更高级的[[gpt-4]]
+- 更高级的：[[gpt-4]]
 - [chatpdf](https://www.chatpdf.com/)
   - 读论文读书审稿等用
   - 文章太长了，用[[web-page-tools]]截取

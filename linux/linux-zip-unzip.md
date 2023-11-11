@@ -1,4 +1,5 @@
 - https://zhuanlan.zhihu.com/p/511765254
+- [[zip-unzip]]
 - zip, unzip
     - 前置：`sudo apt install zip unzip`
     - 压缩成`.zip`
@@ -14,11 +15,20 @@
         - 可以使用`*`通配符
       - `-l`：列表
 - tar
-    - `tar -xvf file.tar`
-    - `tar -xzvf file.tar.gz`
-      - 节省gzip相关那步
-    - `-C 目标文件夹`
+    - 解压
+      - `tar -xvf file.tar`
+      - `tar -xzvf file.tar.gz`
+        - 节省gzip相关那步
+      - `-C 目标文件夹`
+    - 压缩
+      - `tar -czvf filename.tar folder`
+      - The `tar` command is used to compress a file or folder, similar to `zip`. However, there are some differences:
+        - `tar -cvf` without `-z` is faster than `zip` but it consumes more space. This is because this does not perform any compression on its own, it merely packages a group of files into a single file.
+        - On the other hand, `zip` compresses the files, which takes more time but results in a smaller file size.
+        - Therefore, if speed is a priority over space, or if the files being compressed are already compressed (such as `.jpg` or `.mp3`, [[data-compression-ratio]]), `tar` is a better choice. If space is a priority, `zip` would be a better choice.
 - gzip
   - `gzip -d file.gz`
 - 可以结合[[scp]]使用，加快跨机器拷贝速度
 - 可以结合[[xxd-diff]]用文本传递整个文件夹
+  - [[file-transfer]]
+    - 毕竟所有压缩都是[[encode-decode]]，当然也联系[[serialization]]

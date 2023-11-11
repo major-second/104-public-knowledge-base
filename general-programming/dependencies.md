@@ -16,7 +16,7 @@
   - [[nvlink]]
   - [[cuda]]相关坑
 - 上层和底层
-  - 包有时需要一些更底层的依赖，例如python包只是一些上层[[api]]而已
+  - 包有时需要一些更底层的依赖，例如python包只是一些上层[[API]]而已
     - 其实这个有点像vscode插件和python解释器的关系，参见[[vscode-extensions]]
     - [[mujoco-py]]中的mujoco
     - [[mpi4py]]中需要

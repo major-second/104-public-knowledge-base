@@ -1,0 +1,8 @@
+- 前置
+  - [[github]]
+- 一般都是整个[[clone]]
+  - 但`https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/.gitignore`这种地方可以直接[[curl-wget]]单个文件
+  - 比如上面的链接对应的是`https://github.com/ohmyzsh/ohmyzsh/blob/master/.gitignore`
+  - 必须public库才有
+  - 有时可用作[[file-transfer]]或[[net-disk]]手段，作为[[CLI]]非常方便
+  - 联系[[dropbox#Raw content download]]

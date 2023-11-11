@@ -54,7 +54,7 @@
 # [[vscode-python]]
   - `robo run`运行从而得到`conda`环境
   - 右下角选解释器选该环境
-  - 查询[[api]]
+  - 查询[[API]]
     - ctrl+鼠标定位到`RPA.Windows`这种
     - 出来的文件中找到`_get_libraries`，ctrl+鼠标定位，进去`WindowKeywords`这种，即可查api
   - [[debug-console]]
