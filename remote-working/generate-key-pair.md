@@ -1,12 +1,16 @@
 - 生成密钥对：
   - linux
     - `ssh-keygen -t rsa`生成`id_rsa`和`id_rsa.pub`
-      - `-t`参数可以选择算法。例如[[https-ssh]]中，github要求用`-t ed25519`生成`ed25519`算法的密钥对
+      - `-t`参数可以选择算法
+      - 例如[[github]]要求[[https-ssh]]中用`-t ed25519`生成`ed25519`算法的密钥对
     - 静默[[silent]]生成：
       - `ssh-keygen -t rsa -N '' -f <path>/id_rsa`
     - 其中`-N ''`表示passphrase为空。否则就需要输入指定密码（口令）才能使用此密钥
   - windows: 各个参数等用法可能因为powershell的一些特性使得和linux不同。反正直接`cd`到指定地方`ssh-keygen.exe -t <类型>`然后按提示操作肯定能完成
 - 公钥放到指定位置：接下来为了在`<username>`账户使用私钥`id_rsa`登录，需要把`id_rsa.pub`复制到`/home/<username>/.ssh`下作为`authorized_keys`文件，不然在私钥登录时会提示`Permission denied (Publickey)`.
   - 多个用户可以共用一个公钥
-- 私钥的使用：把私钥拷到需要的设备上，然后例如使用[[client-config]]或者`-i`参数等等都能使用
+- [[private-key-私钥]]的使用
+  - 把私钥拷到需要的设备上
+    - [[copy-paste]]文件不容易出错。直接拷文本，少了个空行都不行，格式要求严格
+  - 然后例如使用[[client-config]]或者`-i`参数等等都能使用
   - 注意权限问题：[[private-key-permissions]]

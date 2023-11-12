@@ -1,5 +1,19 @@
-- [[github]]
+- 前置
+  - [[github]] [[account]]
 - [参考](https://zhuanlan.zhihu.com/p/622688210)
-- [[pricing]]
-  - 平替[[aws-codewhisperer]]
-  - 淘宝学生认证
+
+- 安装
+  - [[vscode-extensions]]直接搜索copilot
+  - [[pricing]]？
+    - 平替[[aws-codewhisperer]]
+    - 淘宝[[github#edu pack]]
+  - `Ctrl Shift P` `.*copilot.*sign in`登录[[account]]
+- [[settings-json]]中
+  - `"github.copilot.enable"`：设置可用的地方，例如让[[markdown]]可用等（默认不行）
+- [[vscode-keyboard-shortcuts]]
+  - 去[[vscode-keyboard-shortcuts]]设置快捷键
+  - [[vscode-terminal]]
+      - `github.copilot.terminal.suggestCommand`
+  - [[vscode/edit]]
+      - `inlineChat.start`
+        - `/fix`等命令：指定特别动作

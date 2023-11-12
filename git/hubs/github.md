@@ -7,3 +7,6 @@
   - github是一个托管平台，可以一定程度上理解为网盘。除了github肯定还有其他的提供商
 - github本身一般只能一次[[clone]]一个完整的库
   - 例外：[[github-raw]]
+# edu pack
+- [[pricing]]
+- https://education.github.com/pack

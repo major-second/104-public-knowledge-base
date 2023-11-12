@@ -18,7 +18,8 @@
   - 淘宝
     - 买内网的
       - 如[[baidu-net-disk]]等
-    - 买国际的说不定也行，如[[github-copilot]]
+    - 买国际的说不定也行，如
+      - [[github#edu pack]] -> [[github-copilot]]
   - [stacksocial](https://stacksocial.com/)买外网的
     - 如[[vpn]]中的getflix vpn，终身只需50美元
     - 可能需要[[proxy-basics]], VISA贷记卡，注册 Link 支付账号等

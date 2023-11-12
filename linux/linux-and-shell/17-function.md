@@ -59,6 +59,13 @@ echo $(func) # $()包裹运行得到结果
     - 很多时候这是运行脚本第一步[[reduction]]
     - 类似[[powershell-var]]中`$PSScriptRoot`
   - `$#`是参数个数
+  - 常用：判断个数
+    ```bash
+    if [ $# -ne 1 ]; then
+        echo "Error: Exactly one argument is required."
+        exit 1
+    fi
+    ```
 - 不需要写“形参”，就可以直接用`$1, $2`等
   - 和powershell的[[script-in-out]]形成区别！
 - 如果出现`.sh`脚本中定义了函数，你调用脚本时赋予了1个实参`a`，但脚本中调用函数没有赋予实参，那么函数中不可以用`$1`获得实参`a`
