@@ -1,0 +1,15 @@
+- 前置
+  - [[CRUD]]
+  - [[pip-install]]
+- Create
+  - [[pip-install]]
+- Read
+  - `pip list`
+  - [[find-grep]]结合
+- Delete
+  - `pip uninstall 包名`
+- Update
+  - [[general-software-technical/upgrade]]
+    - To upgrade a package: `pip install --upgrade package-name`
+  - To install a specific [[version]] of a package: `pip install package-name==version-number`
+  - `pip install --force-reinstall ...`
