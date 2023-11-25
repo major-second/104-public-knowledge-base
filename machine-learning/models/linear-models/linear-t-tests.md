@@ -1,0 +1,8 @@
+- 参考
+  - [[t-distribution]]
+  - [[hypothesis-testing]]
+  - [[f-stats]]
+- [参考](https://zhuanlan.zhihu.com/p/36782834)
+- $t_j = \frac{\hat w_j - w_j}{\sqrt{\hat \sigma^2 (X^TX)_{jj}^{-1}}}=\frac{\hat w_j-w_j}{\hat{se}(w_j)}\sim t\_distribution_{n-k}$
+  - 因此[[multicollinearity]]会导致抖动，分母大，t统计量小，不显著
+    - 对比[[f-stats]]

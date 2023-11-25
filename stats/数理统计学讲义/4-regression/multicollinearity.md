@@ -3,10 +3,18 @@
 - [[general-principles/special-case]]
 - 现象
   - 奇异：解不唯一
+    - $X$ [[rank]]不足！
+    - 本来$X$一般瘦，比如$10\times 3$，最多[[rank]] 3
+    - 但你比如rank 2则$rank(X^T X)= rank(X)=2$，那就奇异了
   - 接近奇异（高度线性相关）：解容易波动
     - 即：求逆不稳定，$\epsilon$小变$\hat\beta$大变
+    - 自然容易导致oos decay大
+    - 这个角度讲[[ridge]]那个$+\lambda I$“球”很好用
+  - [[linear-t-test]]变得不显著
+  - [[f-stats]]
+    - IS该显著还是显著，OOS不稳定
 - 判定
-  - 刚刚说的现象
+  - 刚刚说的现象（不稳定等）
   - [[correlation]]直接算
   - VIF
     - 方差膨胀因子$VIF_i = \frac{1}{1-R_i^2}$
@@ -16,4 +24,6 @@
   - [[pca]], [[cholesky]]
   - [[11-feature-selection]]
     - 过滤式
-    - 嵌入式（lasso等）
+    - 嵌入式
+      - [[lasso]]
+      - [[ridge]]: 直接$+\lambda I$，球撑起来，强行可逆

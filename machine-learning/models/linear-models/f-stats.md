@@ -1,0 +1,7 @@
+- 前置[[f]]
+- [参考](https://www.statisticshowto.com/probability-and-statistics/f-statistic-value-test/)
+  - [[ANOVA]]中 F value = variance of the group means (Mean Square Between) / mean of the within group variances (Mean Squared Error)
+  - 和[[OLS]]相同思想
+- [参考](https://www.cnblogs.com/tinglele527/p/12015449.html)
+  - 其实f-stats表达式就是$ESS/RSS$乘以常数，参考[[r-squared]]
+  - 所以[[multicollinearity]]会导致F检验仍显著，但[[linear-t-tests]]出问题

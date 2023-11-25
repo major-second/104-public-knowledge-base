@@ -6,3 +6,4 @@
   - [[twap]]
   - [[vwap]]
   - [[10-bet-sizing]]也有一些直接给出的算法
+- [参考知乎](https://zhuanlan.zhihu.com/p/54932657)

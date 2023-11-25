@@ -1,1 +1,12 @@
-在设定的时间范围内对根据对市场成交量分布的预测进行下单，降低市场冲击，最小化与市场VWAP的偏差
+- [参考知乎](https://zhuanlan.zhihu.com/p/54932657)
+- > 在设定的时间范围内对根据对市场成交量分布的预测进行下单，降低市场冲击，最小化与市场VWAP的偏差
+- [参考](https://www.quantconnect.com/docs/v2/writing-algorithms/algorithm-framework/execution/supported-models)
+- [代码](https://github.com/QuantConnect/Lean/blob/master/Algorithm.Framework/Execution/VolumeWeightedAveragePriceExecutionModel.py)
+- > 通常来说，VWAP策略会使用过去M个交易日分段成交量的加权平均值作为预测成交量，这里就要涉及到M和权数的确定
+  - 当然，当前时间前一段的成交量也有参考价值
+- 变种
+  - volume participation: 需要执行大单，固定自己参与比例
+    - 小单，哪来比例？忽略不计。你说5%，瞬间就无了
+    - > 该策略适用于规模较大、计划多个交易日完成的订单交易，此时若能选择合适的固定百分比，使得成交能够有效完成，则VP 是一种可以较好跟踪市场均价的算法交易策略
+  - MVWAP：相当于在普通VWAP上叠加一个均线策略
+    - 总之这里可以加入很多[[technical-analysis]]

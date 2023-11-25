@@ -3,3 +3,7 @@
   - Since 2001 and the advent of decimalization, the minimum tick size for stocks trading above $1 is one cent.
 - [参考](https://www.investopedia.com/terms/t/tick-size.asp)
   - Stocks generally trade in one-cent tick size increments, while currencies have tick sizes in pips, and rates in basis points ([[bps]]).
+- crypto小，一些期货品种大
+  - 可能联系[[discrete-continuous]]
+  - ticksize小，连续，可以解一些方程得最优
+  - ticksize大，离散，可能就是分类问题，非常唯象、p-quant

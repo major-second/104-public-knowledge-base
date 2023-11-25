@@ -31,10 +31,12 @@
   - Click on 'Share'.
   - Click on 'Create a link'.
   - Once the link is created, click on 'Copy link'.
-  - The copied link will lead to a preview page. To make it a direct download link, replace the "www" at the beginning of the URL with "dl".
+- The copied link will lead to a preview page. To make it a direct download link
+  - replace the `www.dropbox` at the beginning of the URL with `dl.dropboxusercontent`.
+  - delete `&dl=x` at the end
 - This is similar to [[github-raw]], where you can directly download a single file without needing a client [[git-installation]].
   - For folders, you can't create such links directly
-  - [[zip-unzip]]
+  - but, [[zip-unzip]]
 - [Reference](https://www.dropboxforum.com/t5/Create-upload-and-share/public-links-to-raw-files/td-p/110391)
   - > A share link with "www" at the beginning will open in the preview page.
   - > A share link with "dl" at the beginning will tell your browser to handle the file as it sees fit (display in the browser, open in a configured application, or present it for download).

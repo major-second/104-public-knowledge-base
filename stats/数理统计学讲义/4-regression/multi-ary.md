@@ -1,4 +1,6 @@
-- 参考[[multicollinearity]]
+- 参考
+  - [[multicollinearity]]
+  - [[OLS]]
 
 [[reduction]]
 - 由于可以引入自变量$x_0\equiv 1$，于是可以把$Wx+b$写成$Wx$
