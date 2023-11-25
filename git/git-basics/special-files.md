@@ -19,6 +19,8 @@ path/to/a/folder
 - 自己添加`.gitignore`时一定要慎重，不要想当然。举例：以为`.txt`全是数据文件，没有用，但实际上有`pip`的`requirements.txt`非常重要
 
 ![](ignore-existing-files.png) todo 待整理
+
+- 可能用法：`git clean -fdx`时，根据内容，清理文件
 ### 所在位置
 参考[文档](https://git-scm.com/docs/gitignore)，如果在某个文件夹下有`.gitignore`那么只在某个文件夹及其子文件夹等等下生效。
 一般不这么做（因为会导致你难以找到这个文件“到底被谁ignore了”）

@@ -19,3 +19,6 @@
 5. [[construct]]构造函数和析构函数
    1. py的GC都不是程序员控制的，自然没有
    2. 但是有[[python/magic]]方法`__init__`
+# override-overload-overwrite
+- [参考](https://stackoverflow.com/questions/4738315/c-overriding-overwriting)
+- > In C++ terminology, you have overriding (relating to virtual methods in a class hierarchy) and overloading (related to a function having the same name but taking different parameters). You also have hiding of names (via explicit declaration of the same name in a nested declarative region or scope). The C++ standard does not use the term "overwrite" except in its canonical English form (that is, to replace one value with a new value, as in the assignment x = 10 which overwrites the previous value of x).

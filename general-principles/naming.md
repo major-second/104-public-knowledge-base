@@ -1,5 +1,7 @@
 [toc]
-- 程序中的命名：[[2-naming]]
+- 程序中的命名
+  - [[2-naming]]
+  - [[object-oriented#override-overload-overwrite]] overload
 # 换元或简记
 - 换元积分法
 - 换元简化推导

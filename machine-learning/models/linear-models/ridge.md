@@ -1,6 +1,14 @@
+- 前置
+  - [[OLS]]
+  - [[multicollinearity]]
+  - [[semi-positive-definite]]
+  - [[11-feature-selection]]
 - [[normalization]]：进入前必须要！因为inductive bias是各向同性，加“球”
 - regularization constant
   - 可调，防止[[overfit]]
   - 由于weight越大，weight^2越大，故使用不当可能严重欠拟合，对好feature坏feature权重都类似数量级
+# closed-form-solution
+- $\beta = (X^TX+\lambda I)^{-1} X^TY$
+- 注意$X^TX$ [[semi-positive-definite]]，则$X^TX+\lambda I$ [[postive-definite]]，可逆
 - [[rolling]] train
   - [参考](https://stats.stackexchange.com/questions/400907/how-to-compute-the-change-of-ridge-regression-solution-when-one-row-of-data-chan)
