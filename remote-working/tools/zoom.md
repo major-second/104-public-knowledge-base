@@ -5,6 +5,9 @@
   - 如果你用google等需要代理的账户登录zoom，则登录那一下当然要开代理，但是登录之后就可以又关掉，以确保连接速度。这是[[temp-solution]]思想
 - 可以官网下载插件从而可和[[outlook]]联动
 - 开着会议时可能导致听音乐音质变差（因为音乐和语音不同）
+# [[account]]
+- 启动会议需要登录，加入不需要。也可直接浏览器
+  - 因此一个账户就可以用两个浏览器例如[[chrome]], [[edge]]自行测试功能，例如[[tools/zoom#transcription]]
 # transcription
 - 自动听写字幕
 - 前置：[[laptop-camera]]，[[chrome/settings]]

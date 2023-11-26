@@ -36,3 +36,6 @@
 - <code>&#96;&#96;</code>
 - 等价于`$()`
 - [[meta-programming]]
+# 其它需要双引号的
+- [[11-basic-scripting-partA#11.4.3 命令替换]] `"$()"`
+- [[12-condition]] `-n "$1"`

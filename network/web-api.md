@@ -1,5 +1,6 @@
 - [[API]]
 - [[openai-api]]
+- [[binance-api]]
 - 用法
   - [[curl-wget]]
   - 直接[[chrome]]等浏览器打开
