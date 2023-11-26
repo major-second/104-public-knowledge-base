@@ -1,7 +1,5 @@
-协程(Coroutine)是编译器级的控制单位，又称用户级线程(user-level thread),完全在用户态下进程内部实现调度。
-对比：进程(Process)和线程(Thread, 准确来说为kernel-level thread)为操作系统级的控制单位，由os实现调度。
-![](user-thread.png)
-
-协程实现的是非抢占式的调度，即一个进程中包含多个协程，在这个进程被os调度的时间片内，进程内部的调度器调度某个协程运行，每个协程主动阻塞自身以让出cpu时间。
-
-优势：减小线程调度开销与创建线程内存开销，减少同步加锁的开销
+- Coroutine is a control unit at the compiler level, also known as user-level thread, which is completely scheduled within the user state of the process.
+- Comparison: Process and Thread (accurately, kernel-level thread) are control units at the operating system level, scheduled by the OS.
+  - ref: [[process-thread]]
+- Coroutine implements non-preemptive scheduling, that is, a process contains multiple coroutines. Within the time slice when the process is scheduled by the OS, the internal scheduler of the process schedules a certain coroutine to run, and each coroutine actively blocks itself to yield CPU time.
+- Advantages: Reduces the overhead of thread scheduling and the memory overhead of creating threads, and reduces the overhead of synchronization and locking.

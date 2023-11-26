@@ -65,6 +65,6 @@ fab returns 5
 没错，我们称其为[协程](../os-knowledge/coroutine.md)(即用户级线程)！
 每次调用yield即阻塞该协程，直到收到send传来的消息继续运行！
 
-注：在现代python版本中(>=3.5)，推荐使用[[async]]/await方法来实现上述功能
+注：在现代python版本中(>=3.5)，推荐使用[[async-await]]/await方法来实现上述功能
 
 
