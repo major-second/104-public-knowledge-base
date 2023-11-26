@@ -7,7 +7,9 @@
   - [[jupyter-hotkeys]]命令模式`H`
 - 命令
   - linux中
-    - `which`看在哪或[[alias]] [[17-function]]是啥
+    - `which`看[[binary-executable]]在哪
+    - [[alias]] [[17-function]]等，`which`未必用得了，就`type -a`
+    - `readlink -f $(which c++)`这种，看[[ln-s]]
     - `man`命令结合[[find-grep]]
       - 例如`man bash | grep -C2 '$@'`
   - [[powershell-basics]]中`help`和`gal`命令

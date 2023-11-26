@@ -4,4 +4,6 @@
   - 可能需要[[sudo]]权限
   - `make -j8`并行跑（8 jobs），更快（但是报错更不清晰）
     - 所以[[general-programming/debug]]直接`make`，真正跑用`make -j某`
-  - [[refresh]]: `make clean && make compile`
+  - [[refresh]]
+    - 比如`make clean && make compile`
+      - 当然你要查项目的[[makefile]]里是否真的有`clean`这个[[phony]] target

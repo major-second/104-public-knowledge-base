@@ -1,4 +1,5 @@
-- 基础[参考](helloworld.cpp)
+- 最基本：`std::cin, std::cout, std::endl`
+  - [参考](helloworld.cpp)
   - 记忆
     - 输出，`cout << 1;`，意为`1`流到`cout`然后到显示器之类的地方
       - 输入相反

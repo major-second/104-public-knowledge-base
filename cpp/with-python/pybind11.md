@@ -1,4 +1,6 @@
-- 前置[[pip]]
-  - `pip install pybind11`
+- 前置
+  - [[pip]]
+    - `pip install pybind11`
+  - [[linux-cpp-compilers]]，尤其讲到一些flags
 - [参考](https://zhuanlan.zhihu.com/p/215078395)
-- 
+- 编译命令等在 [这里](compile.sh)

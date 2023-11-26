@@ -1,0 +1,2 @@
+- 参考[[ln-s]]制造
+- 比如应用[[linux-cpp-compilers]]
