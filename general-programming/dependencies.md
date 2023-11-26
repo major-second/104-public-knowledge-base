@@ -4,13 +4,18 @@
       - 或者是`PATH`等环境变量[[6-env]]就不对了
       - Flash小游戏这种，你本地变位置，存档就没了
     - 但是有`portable`标记的当然就可以
-- 版本依赖：参考[[version]]
-- 管理版本依赖
-  - 要么使用包管理器比如[[pip]]，[[conda-installation]]等
-  - 要么自己分析次序、依赖
-    - 有些时候依赖是要自己分析总结的
-      - 比如涉及硬件，像真机实验中[[hand-eye-calibration]]提到的
-      - 比如[[version]]说有时候包管理器会比较傻，无法求解出想要的结果，需要自己管理
+- 文件间依赖关系
+  - [[makefile]], [[cpp-so]]
+- data dependency (todo)
+  - 哈哈，[[code-data]]
+- 版本依赖
+  - 参考[[version]]
+  - 管理版本依赖
+    - [[package-managers]]
+    - 要么自己分析次序、依赖
+      - 有些时候依赖是要自己分析总结的
+        - 比如涉及硬件，像真机实验中[[hand-eye-calibration]]提到的
+        - 比如[[version]]说有时候包管理器会比较傻，无法求解出想要的结果，需要自己管理
 - 硬件[[gpu]] [[memory]]等依赖
   - “最低配置”
   - [[nvlink]]

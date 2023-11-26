@@ -8,4 +8,5 @@
     - 参考[[pybind11]], [[linux-cpp-compilers]]
 - 取用：`$(变量名)`
 - 特殊
-  - `$@`, `$<`：target, dependency
+  - `$@` target
+  - `$<` dependency

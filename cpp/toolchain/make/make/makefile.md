@@ -13,6 +13,7 @@
   three:
   	touch three
 
+  .PHONY: clean
   clean:
   	rm -f one two three
   ```
