@@ -1,3 +1,4 @@
 - [参考](https://www.binance.com/en/binance-api)
 - [[binance]]
 - [[web-api]]
+- [使用文档例如](https://binance-docs.github.io/apidocs/pm/cn/#um-trade-2)

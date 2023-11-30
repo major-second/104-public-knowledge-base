@@ -66,7 +66,7 @@ type: operations
 - SUID的典型例子：`ls -l /usr/bin/passwd`. 可以看到其`-rwsr-xr-x root root`，`s`表示其它用户调用这个程序时“临时获得”`root`的权限，以便修改密码。
 - SBIT（黏着位）其实和前两个关系不大
 ## 总结与问答练习
-0. Q: 俗话说的好：增删改查。那么怎么增删改查用户呢？
+0. Q: 俗话说的好：[[CRUD]]。那么怎么增删改查用户呢？
 A: `cat /etc/...`（7.1.1和7.1.2）相当于查（在这里改太危险了）
 `useradd`是增，`userdel`是删
 `usermod`、`passwd`等几个命令（在7.1.5）是改
@@ -96,3 +96,8 @@ For directories, when a directory's sticky bit is set, the filesystem treats the
 `ls`
 3. Q: 天天权限不够，那权限是越高越好吗？
 A: 不是。首先会导致危险，其次[[private-key-permissions]]和[[dot-ssh]]都提到了有时系统会强制让太高权限的用不了
+## setfacl
+- 例子
+  - `sudo mkdir /home/shared_a_b && sudo setfacl -m u:a:rwx /home/shared_a_b && sudo setfacl -m u:b:rwx /home/shared_a_b && sudo setfacl -m o::--- /home/shared_a_b`
+## getfacl
+- 直接用，`getfacl <...>`

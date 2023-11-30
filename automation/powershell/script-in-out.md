@@ -8,4 +8,4 @@
 - `exit`
 - `exit 0`成功，`exit 1`失败，和[[11-basic-scripting-partB]]一样
 - `$?`则`False`对应失败，`True`对应成功，而**不是返回值直接做类型转换**！
-- `$?`可以作为[[condition]]的条件
+- `$?`可以作为[[ps-condition]]的条件

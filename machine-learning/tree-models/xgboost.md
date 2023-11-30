@@ -1,5 +1,5 @@
 - [介绍](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
-
+# 使用
 ```python
 import xgboost as xgb
 from sklearn.datasets import load_iris
@@ -33,3 +33,5 @@ best_preds = np.asarray([np.argmax(line) for line in preds])
 # Print accuracy
 print("Accuracy = ", accuracy_score(y_test, best_preds))
 ```
+# 原理
+- [参考](https://zhuanlan.zhihu.com/p/562983875)

@@ -1,2 +1,5 @@
-- 参考[[ln-s]]制造
-- 比如应用[[linux-cpp-compilers]]
+- [[ln-s]]制造
+  - 注意[[ln-s#查看效果]]方法
+- 应用
+  - [[linux-cpp-compilers]]
+  - [[what-does-ls-do]]

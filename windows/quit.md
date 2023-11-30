@@ -11,9 +11,9 @@
     - ![](quit-keybase.png)
     - 托盘图标-右上角图标-quit Keybase
 - 关不干净？
-  - [[task-manager]]杀掉进程或者powershell暴力关[[process]]
+  - [[task-manager]]杀掉进程或者powershell暴力关[[ps-process]]
     - 很多时候管用，比如[[wsa]]
     - 用于[[refresh]]
     - 注意可能要等一小段时间才能关干净
   - 但是碰到[[vpn]]里的GlobalProtect这种流氓软件就不管用了……
-  - 而且可能有负面效果，比如[[process]]提到的
+  - 而且可能有负面效果，比如[[ps-process]]提到的

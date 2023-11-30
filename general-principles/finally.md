@@ -8,6 +8,6 @@
   - [[automation/trivial-mistakes]]
   - [[memory]]占用过多（如python或[[matplotlib/basics]]打开太多文件）
 - 不做的反例
-  - 暴力[[process]]杀进程，可能导致[[process]]提到的不良后果。往往需要[[refresh]]解决
+  - 暴力[[ps-process]]杀进程，可能导致[[ps-process]]提到的不良后果。往往需要[[refresh]]解决
   - [[matplotlib/basics]]图像重叠
   - [[iostream]]提到的flush

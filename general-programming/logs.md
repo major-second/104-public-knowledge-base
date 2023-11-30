@@ -23,7 +23,9 @@
       - [[logpoint]]
     - [[gdb]]
       - `display`, `p`等[[gdb-commands]]
-  - 调包，[[pl-logs]]
+  - 调包
+    - [[pl-logs]]
+    - [[py-logging]]
 - 输出位置
   - [[terminal]]输出
     - 能看到的terminal

@@ -5,7 +5,7 @@
 ```python
 from cache_decorator import Cache
 from time import sleep
-@Cache(cache_path='cache/{function_name}/{_hash}.json')
+@Cache(cache_path='cache/{function_name}/{_hash}.json') # 默认是什么自己ctrl左键点进去看文档。注意有相对路径的坑
 def foo(bar):
     sleep(5)
     return {2 * bar: bar, 3 * bar: [bar, 2]}
@@ -19,7 +19,8 @@ print(foo(1))
   - 如：有`str`类型参数时可以`{形参名}`这样
 - 注意需要检查函数`return`结果是否可以存成指定格式
   - 如
-    - `.json`无法存[[series-dataframe]]这种
+    - `.json`无法存[[series-dataframe]]这种，方便存字典等
+      - 可用于[[encode-decode]]
     - `.pkl`要参考[[availability]]
   - 否则用不了
 - 存完之后可以看到[[metadata]]

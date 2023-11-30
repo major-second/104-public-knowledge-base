@@ -1,0 +1,10 @@
+- [[6-env]] `PATH`变量，找路径
+- [[linux-softlinks]]
+  - [[ln-s#查看效果]]
+- [[system-calls]]
+    - Command Execution: When you type /usr/bin/ls and press enter, the shell creates a new process to execute the ls program. The shell does this by making a system call to the kernel. The system call could be fork() or clone(), depending on the system. This creates a new process that is a copy of the current process.
+    - Loading the Program: The new process then replaces its image with the ls program by using the exec() system call. This loads the ls program into memory and starts its execution.
+    - Reading Directory Contents: The ls program makes system calls to read the contents of the directory. These could be open(), read(), readdir(), stat(), etc. These system calls communicate with the file system driver in the kernel, which in turn communicates with the disk to read the directory contents.
+    - Writing to Standard Output: The ls program formats the directory contents into a human-readable form and writes this to standard output. It does this by making write() system calls to file descriptor 1, which is the file descriptor for standard output.
+- Displaying on Terminal: The standard output of a program running in a terminal is connected to the terminal. So, when ls writes to standard output, the terminal receives this data and displays it to the user. The terminal uses a terminal driver in the kernel to handle the display of characters.
+  - [[stdout]]
