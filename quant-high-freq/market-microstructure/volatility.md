@@ -5,3 +5,12 @@
 - 不同尺度计算结果不同
   - profit of market maker
   - 引出[[market-microstructure-noise]]
+- [参考](https://mp.weixin.qq.com/s/3XYWwqDBzBMpLfy0Y70dvg)
+  - 预测
+    - 可以[[MA]], [[EMA]]等
+      - 本质就是[[4-sample-weights]]怎么分
+      - 可以经验拍脑袋，也可以最小[[MSE]]
+        - 参数很少不至于过拟合
+    - 利用系统性风险因子参考[[barra]]
+  - > 但是return仅仅刻画了收盘价一个维度上的信息，并且由收盘价计算的return严重依赖于对时间切片的采样，所以在衡量波动率上是明显不足的。这些年更精确的估计模型不断出现，其中之一是Parkinson的波动率估计模型，它在理论上和实践上都被证明比收益率更好用。
+  - $\frac 1{4ln2} (ln \frac {H_t}{L_t})^2$

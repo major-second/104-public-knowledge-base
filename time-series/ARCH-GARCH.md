@@ -1,0 +1,4 @@
+- 联系、参考
+  - [[heteroskedasticity]]
+  - [[volatility]]预测也相当于这种思想（人为定线性权）
+  - 基础：[[autoregressive]]

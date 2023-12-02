@@ -99,5 +99,6 @@ A: 不是。首先会导致危险，其次[[private-key-permissions]]和[[dot-ss
 ## setfacl
 - 例子
   - `sudo mkdir /home/shared_a_b && sudo setfacl -m u:a:rwx /home/shared_a_b && sudo setfacl -m u:b:rwx /home/shared_a_b && sudo setfacl -m o::--- /home/shared_a_b`
+- `-R`递归
 ## getfacl
 - 直接用，`getfacl <...>`

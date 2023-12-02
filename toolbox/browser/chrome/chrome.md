@@ -1,2 +1,3 @@
 - ubuntu可以去官网下载[[deb]]安装
 - windows略
+- [[account]]: 如果登陆了多个google account则每次打开浏览器可能要选。比较麻烦。为了[[windows-link]]方便，可以把角上有图标的直接作为快捷方式

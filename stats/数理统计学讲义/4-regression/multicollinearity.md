@@ -1,4 +1,6 @@
-- 前置[[multi-ary]]
+- 前置
+  - [[multi-ary#定义和计算]]
+  - [[regression-projection]]
 - [维基](https://en.wikipedia.org/wiki/Multicollinearity)
 - [[general-principles/special-case]]
 - 现象

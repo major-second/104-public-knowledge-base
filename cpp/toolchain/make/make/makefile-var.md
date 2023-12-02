@@ -6,6 +6,7 @@
     PYBIND11_INCLUDES = $(shell python3 -m pybind11 --includes)
     ```
     - 参考[[pybind11]], [[linux-cpp-compilers]]
+    - [[shell-type]]可以用`SHELL := /bin/bash -i`指定
 - 取用：`$(变量名)`
 - 特殊
   - `$@` target

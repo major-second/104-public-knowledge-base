@@ -1,0 +1,4 @@
+- [参考](https://blog.csdn.net/m0_59741202/article/details/128734435)
+  - [[stack]]
+  - 推导：[[general-principles/recursion]] [[self-similarity]]思想，$C_3=C_0C_2+C_1C_1+C2C_0$
+- [百科](https://baike.baidu.com/item/%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0/6125746)

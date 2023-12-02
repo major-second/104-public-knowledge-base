@@ -32,7 +32,7 @@
   - has no change没零钱
   - 联想括号串
     - [[32-longest-valid-parentheses]]，[[22-generate-parentheses]]
-  - reflection principle，一一对应思想
+  - [[reflection-principle]]，一一对应思想
     - 经过了-1最终到0的，一一对应最终到-2的
 ## coin sequence
   - 法一：[[5-markov-chain]]结合[[induction]]

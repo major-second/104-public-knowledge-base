@@ -5,6 +5,9 @@
 - [[fourier-transform]]
 - [[schmidt]]
 - [[real-symmetric#spectrum-theorem]]
+- 对随机变量
+  - [[chi-square]]
+  - [[multi-ary#例题]]
 # projection
 - 是一般的decomposition特例，分成两个相互正交的分量，平行垂直/切向法向...
 - 勾股定理，平方和关系
@@ -14,7 +17,7 @@
   - 参考[[ball-tangent-optimal]]
   - 结论：超平面$\alpha^Tx + b=0,||\alpha||>0$，原点到它距离$|b|/||\alpha||$
 - 实例
-  - [[multi-ary#定义和计算]]
+  - [[regression-projection]]
 ## projection-to-a-hyperline
 - 最常用[[general-principles/special-case]]：hyperline $x_1=\cdots=x_n$
   - $argmin_z \sum (x_i-z)^2=\bar x :=\sum x_i/n$

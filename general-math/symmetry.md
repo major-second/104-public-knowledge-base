@@ -10,7 +10,8 @@
 - [[stationary-independent-increment]]
   - [[poisson-process]]大量用到
     - 其中还有很多和[[uniform-distribution]]关系密切
-- 平移不影响[[cov#corr]]
+- 平移不影响[[correlation]]
+  - 造成[[correlation#与r-squared关系]]的问题
 ## 旋转
 - 或说中心对称、各向同性
 - [[linearity]]圆上三个点题
@@ -37,7 +38,7 @@
 - [[pnl]]
   - 交易品种是否可双向做
   - 如期货，[[binance]]虚拟币可以，可转债不行
-- [[正交矩阵]]行列式是-1时为翻转
+- [[orthogonal-matrix]]行列式是-1时为翻转
   - 相比之下前面 [[symmetry#平移]] [[symmetry#旋转]] 为1
 - 偶函数$-t$到$t$积分
   - [[power-rule#速算应用]]
@@ -71,7 +72,6 @@
   - 特别是[[symmetry#轮换]]，我们经常“不失一般性设”
 - [[symbolic-regression]]中先验
 ## break
-- [[power-level]]
 - 有时需要打破对称性，打破僵局，打开局面
 1. [[geometry]]点在多边形内题
 2. 16个硬币8轻8重，给定0号，判断它是轻是重（3次天平称）
@@ -95,3 +95,7 @@
       - 待求+同侧1个 != 外面2个，不妨设>
         - A和同侧比，如果相等，都是重，如果不等，显然
 3. [[construction]]时，例如[[schmidt]]，执着于“对称”啥也搞不成，必须“索性开始”
+- 概念定义例子
+  - [[power-level]]
+- 辩证看待
+  - [[multi-ary#例题]]

@@ -2,3 +2,6 @@
 - [[binance]]
 - [[web-api]]
 - [使用文档例如](https://binance-docs.github.io/apidocs/pm/cn/#um-trade-2)
+- 质量很糟糕，直至202311都有很多很底层的函数的坑正在陆陆续续修
+  - [[dont-trust-others]]
+  - [[leaky-abstraction]]：越质量差，你越要深入底层

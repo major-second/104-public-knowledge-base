@@ -21,13 +21,7 @@
     - 注意$X$一般“瘦”，很多行，但列数恒定，是用来回归$Y$的“依据”（“特征”）个数。这也可以记忆各种表达式中只有$X^TX$没有$XX^T$
 
 # 定义和计算
-- 参考[[orthogonal-decomposition#projection]]
-- 要求$||X_{m\times n}\beta_{n\times 1} - Y_{m\times 1}||^2$最小（即最好地拟合现有数据点）
-- $X\beta$所有可能取值就是矩阵$X$的列空间，记为$\mu(X)$，则$Proj_{\mu(X)} Y:=X\hat \beta$，一定存在唯一
-- 充要条件：根据投影定义，$(Y-X\hat \beta)\perp \mu(X)$，于是（根据$\mu(X)$定义）考察$X$每一列，得$ X^TX\hat \beta=X^TY$
-  - 这里又用到了[[forall]]思想
-- 当然，前述逻辑是用投影存在证明了方程解存在。你也可以根据[[rank]]说明方程解存在
-- 特殊情况：$X^TX$正定（可逆），即$X$“瘦”且列满秩，那$\hat\beta$表达式可直接得：$(X^TX)^{-1}X^TY$
+- 参考[[orthogonal-decomposition#projection]], [[regression-projection]]
 # 性质
 - $Q(\hat \beta)(即“二乘”)=||Y-X\hat \beta||^2=||Y||^2-||X\hat\beta||^2=Y^TY-\hat\beta^TX^TX\hat\beta=Y^TY-Y^TX\beta=(Y,Y-X\beta)$，几何意义也很明显
   - 满秩则进一步$=Y^T(I-X(X^TX)^{-1}X^T)Y:=Y^TAY$
@@ -51,3 +45,36 @@
       - 再注意$tr(X(X^TX)^{-1}X^T)=tr(X^TX(X^TX)^{-1})=p$，即得待求$EQ=\sigma^2(n-p)$
     - 因此$E\hat \beta=\beta,E\hat\sigma^2:=E\frac {Q(\hat \beta)}{n-p}=\sigma^2$为无偏估计
   - 但：$\beta$在$X$不满秩时未必有无偏估计
+# 例题
+- $corr(y,a)=p, corr(y,b)=q$，则$\hat y$ regressed on $(a,b)$
+  - 新的[[r-squared]]范围？
+    - 法一：[[regression-projection]]
+      - a是一根轴，y是斜线，b是圆锥母线
+      - 拎着y转b
+      - 如果y a b共面则$R^2=1$，是最大值
+      - 转到和“共面”相对的某种“垂直”处$R^2$最小
+        - 这个最小也很容易说明，你投影到二维平面长度至少是投影到直线的长度
+      - conclusion: the new R2 is at most 1 and at least the maximum of previous 2 R2s.
+    - 法二：
+      - [[orthogonal-decomposition]]
+      - 利用[[correlation#与cov关系]]相当于算cov
+      - $b = c_1 a+ c_2a',c_1^2+c_2^2=1,a\perp a'$
+      - $E(yb) = c_1p+c_2E(ya')=q$
+      - $E(y\hat y_{a,b})=E(y\hat y_{a,a'})=d_1p+d_2E(ya')$
+        - 其中$d_1,d_2\quad s.t.d_1^2+d_2^2=1,d_1/d_2=p/E(ya') $
+          - 注：这个$d_1/d_2$ [[ball-tangent-optimal]]结论很好用
+        - $d_1=p/\sqrt\cdots, d_2=E(ya')/\sqrt\cdots$
+      - 则$E(y\hat y_{a,b})=\sqrt{p^2+E^2(ya')} $
+        - 此时：[[symmetry#break]]
+          - $p\ge q$时可以$|c_1|\le 1,E(ya')=0$
+          - 但$p<q$时麻烦，使得$E(y\hat y_{a,b})$最小时应为[[ball-tangent-optimal]]得到$c_1/c_2=p/E(ya'),\sqrt {p^2+E^2(ya')}=q$
+          - 但得到结果：最小$R^2$确实是$max(p^2,q^2)$
+        - 此时可以看到[[symmetry#break]]和[[symmetry]]的对立统一：正因为[[symmetry#break]]了，我们才要用[[symmetry]]简化运算
+  - 已知新旧所有[[r-squared]]求$corr(\hat y, a)$
+      - [[orthogonal-decomposition]]
+        - 继承上题，$d_1/d_2=p/E(ya')$
+        - 故$E(\hat y a)/E(\hat y a')=d_1/d_2=E(ya)/E(ya')$
+        - [[linearity]]易知$E(\hat y (na+n'a'))/E(\hat y (ma+m'a'))=E( y (na+n'a'))/E( y (ma+m'a')),E(\hat yb)/E(\hat ya)=E(yb)/E(ya)=q/p$
+        - 结合$corr(\hat y,y)=E(\hat y y)=d_1E( y a) +d_2E( y a')=\sqrt{E^2( y a)+E^2(y a')}=\sqrt {R^2}$
+        - 得$E(\hat ya)=E(ya)\frac{\sqrt{E^2(\hat y a)+E^2(\hat y a')}}{\sqrt{E^2( y a)+E^2( y a')}}=p\frac{1}{\sqrt {R^2}}$
+        - $E(\hat y b)=q/\sqrt {R^2}$

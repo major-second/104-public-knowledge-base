@@ -35,9 +35,10 @@
 - 参考[[data-science/residual]]
 # 除以标准差
 - [[dimensionless]]
-- 理论
+- 理论中
   - [[central-limit]]
   - [[asymptotically-normal]]
+  - [[correlation#与cov关系]]
 - 实践
   - [[ic-ir]]
   - [[sharpe]]
