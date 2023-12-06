@@ -19,6 +19,12 @@
 - 原点矩$V_1=\mu, V_2=\mu^2+\sigma^2, V_3 = \mu^3 + 3\mu \sigma^2,V_4=\mu^4 + 6\mu^2\sigma^2+3\sigma^4$
     - 原点矩表达式这里可以看出二项式系数（14641）（最后一项是二项式系数1乘以中心矩$3\sigma^4$）
     - 换句话说：背诵了中心矩表达式，可以快速推出原点矩
+## 例题
+- 标准正态，$Cov(X,Y)=\rho$
+根据相关系数，设$Y=\rho X + \alpha Z, \alpha = \sqrt {1-\rho^2}, X\perp Z$
+$Cov(X^2,Y^2)=E(X^2Y^2)-EX^2EY^2= E(X^2(\rho^2 X^2+(1-\rho^2)Z^2+2\rho\alpha XZ))-(EX^2)^2$
+$=\rho^2 EX^4+(1-\rho^2) (EX^2)^2 - (EX^2)^2$
+$=2\rho ^2$
 # [[symmetry#旋转]]
 - [[encode-decode#直角坐标和极坐标]]
   - 特殊[[general-principles/special-case]]：二维情况，用于计算高斯积分

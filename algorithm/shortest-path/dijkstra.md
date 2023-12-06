@@ -26,11 +26,11 @@ def dijkstra(e,s):
 - 参考
   - [[heapq]]
   - [[adapter#priority_queue]]
-- 贪心[[greedy]]地每次找到离单源最近
+- [[greedy]]地每次找到离单源最近
   - 比较[[dp]]的[[bellman-ford]]和[[floyd]]
   - 这里拆分的“子问题”（一个点到另一个点）是可以贪心的
   - 那里的“子问题”（有限条边/有限个点最短路）是需要[[dp]]的
-  - [[re-classification]]
+    - 即[[re-classification]]
 - 用[[adapter#priority_queue]]维护其它点到出发点的距离
   - 不是“到前沿的距离”！！
   - 对比[[minimum-spanning-tree]]中的prim

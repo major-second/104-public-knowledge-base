@@ -1,3 +1,4 @@
 - 读书笔记
-- [libgen链接](https://libgen.gs/edition.php?id=136284823)
 - 俗称绿宝书
+- [[e-book]]
+  - [z-lib](https://zh.z-library.se/book/932120/2e888a/a-practical-guide-to-quantitative-finance-interviews.html)

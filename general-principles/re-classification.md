@@ -19,5 +19,6 @@
 - [[233-number-of-digit-one]]计数时用到
 - [[binomial#斜分]]
 - “问题的不同拆分方式”
-  - [[greedy]]的[[dijkstra]]
-  - [[dp]]的[[bellman-ford]], [[floyd]]
+  - [[greedy]]的[[dijkstra]]，对比：
+    - [[dp]]的[[bellman-ford]], [[floyd]]
+- [[consecutive-monotonous-numbers-count]]两种解法

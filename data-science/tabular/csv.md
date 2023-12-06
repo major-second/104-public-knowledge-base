@@ -17,3 +17,7 @@
     - 默认分隔符是逗号。所以刚刚提到的`\t`替换成`,`就使得这里方便了
     - 当然你不替换，然后在excel读取时选分隔符也行
   - 参考：[[pd-read-csv]]
+- [[vscode-extensions]]
+  - rainbow csv
+    - 方便对齐，[[readability]]
+  - excel viewer

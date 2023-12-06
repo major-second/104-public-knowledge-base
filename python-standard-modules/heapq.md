@@ -1,6 +1,6 @@
 - https://docs.python.org/3/library/heapq.html
 - 小根堆，`[0]`是根
-  - 对比[[adapter#priority_queue]]
+  - 对比[[adapter#priority_queue]]，那里顺序同样是从小到大，但`top()`是取最大
 - 初始化：`[]`或`heapq.heapify(list)`
 - 使用
   - `heapq.heappush(heap, item)`

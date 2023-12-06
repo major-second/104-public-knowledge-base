@@ -1,4 +1,10 @@
 - heteroscedasticity
 - 异方差性
+- 参考[[multi-ary]]“弱”假设，此处就不满足了
 - 随机误差项具有不同方差
-- 处理：加权[[OLS]]等
+- 处理
+  - 加权[[OLS]]
+  - 如果噪声本来就是乘性，$y=bx(1+\epsilon)$，那么应当回到[[OLS]]推出最小二乘的原始思路
+    - 那里是[[normal]]的[[maximum-likelihood-normal]]，$\epsilon = y-bx$代入[[normal]]的密度函数，要求MLE，其实就是最小二乘
+      - 参考[[multi-ary]]“强”假设
+    - 这里同样写$\epsilon = y/bx-1$，然后MLE即可

@@ -1,0 +1,5 @@
+- [[iid]]，任意分布，连续取，取到第一个不单调递增就停，问取出多少期望
+- 参考[[uniform-distribution]]，等效成[[uniform-distribution]]
+- [[re-classification]]两种方法
+  - $f(x)=1+\int_x^1 f(t)dt,f(1)=1$，$f(x)=e^{1-x}$，待求$=f(0)=e$
+  - $\sum_{n=2}^{\infty} [n(\frac 1{(n-1)!}-\frac 1{n!})]=\sum_{n=2}^\infty \frac 1{(n-2)!}=e$

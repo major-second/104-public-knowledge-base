@@ -1,0 +1,4 @@
+- $X>0, Y>0$，$E(X/Y)$与$EX/EY$关系
+- 首先[[normalization]]成均值都为1
+- 独立时：[[cauchy]], $EYE(1/Y):=EZ_1^2EZ_2^2\ge E^2Z_1Z_2=1$
+- 同分布时：[[jensen]], $logE(X/Y)\ge ElogX-ElogY=0$

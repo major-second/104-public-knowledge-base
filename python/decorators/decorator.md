@@ -1,0 +1,2 @@
+- [参考](https://www.datacamp.com/tutorial/decorators-python)
+- 和[[try-except]]联系：[参考](https://www.geeksforgeeks.org/error-handling-in-python-using-decorators/)

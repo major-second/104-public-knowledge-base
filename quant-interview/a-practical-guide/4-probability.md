@@ -7,16 +7,21 @@
   - event, union, intersection, complement, mutually exclusive
   - random variable: $\Omega \to \mathbb R$
   - $E[I_A] = P(A)$
-- Coin toss game
-  - 设而不求！设$x,y$利用对称性（参考[[2-brain-teasers]]）
+## Coin toss game
+  - 设而不求！设$x,y$利用对称性
+    - [[2-brain-teasers#2.4 Application of Symmetry]]
+  - [[re-classification]]有两种解法
+    - 讨论第一枚硬币正还是反
+    - 对于$n\quad v.s. \quad n+1$，讨论后$n$个硬币的$>=<$
 - card game
   - jack, queen, king, ace
   - 也是利用对称性
-- drunk passenger
+## drunk passenger
   - 参考[[general-principles/recursion]]
   - $x_{100} = 1/100 \cdot (1+x_{99}+...+x_2)$
   - 最后发现是$1/2$
   - 这个递推式也有直觉解释：1在100前被占还是100在1前被占
+  - 拓展：最后两个人都坐对？类似地归纳，$1/3$
 - N points on a circle
   - 法一：考虑$N$个互斥事件，于是$N/2^{N-1}$
   - 法二：任取$N$条直径再每条直径二选一

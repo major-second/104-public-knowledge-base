@@ -1,0 +1,5 @@
+- four digital spot asset exchanges that contribute to the CME futures settlement price, Bitstamp, Coinbase, Kraken, and itBit.
+- https://www.investopedia.com/terms/s/settlementprice.asp
+    - > Settlement prices are often based on the average price of the contract over a specified period, calculated at both the open and close of each trading day, though not all markets use the same formula.
+    - > Typically, the settlement price is set by determining the weighted average price over a certain period of trading, typically shortly before the close of the market.
+    - > On the Chicago Mercantile Exchange, the settlement prices of certain equity futures were determined by a volume-weighted average of pit trading activity in the 30 seconds between 3:14:30 p.m. and 3:15:00 p.m. Central Daylight Time (CDT). Beginning in December of 2014, the time was shifted to 12:59:30 p.m. and 1:00:00 p.m. CDT, respectively, maintaining the previous 30-second window but basing it on a different time period.

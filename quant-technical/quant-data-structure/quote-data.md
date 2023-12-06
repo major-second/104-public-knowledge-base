@@ -2,9 +2,9 @@
 - 参考
   - [[lob]]
   - [[snapshot]]
-  - 约定俗成Level1 - Level3
+  - 约定俗成Level1 - Level3含义
     - [参考](https://www.investopedia.com/terms/l/level3.asp)
-    - 中国期货Level2 [[lob]] [[snapshot]]，没有更细粒度
+    - 中国期货Level2 [[lob]] [[snapshot]]，没有更细粒度（“逐笔委托”）的数据
 - 往往和[[trade-data]]相对
 - 最细粒度：“逐笔委托”
   - [参考](https://www.htsec.com/jfimg/colimg/upload/20211229/85181640762667184.pdf)

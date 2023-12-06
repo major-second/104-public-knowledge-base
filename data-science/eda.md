@@ -1,5 +1,7 @@
 EDA (Exploratory Data Analysis)，即对数据进行探索性的分析。充分了解数据，为之后的数据清洗和特征工程等提供想法和结论
 - 参考
+  - 可以先拿文本、excel等粗略翻有所感受，无需一来就上代码（其实不一定方便）
+    - 特别多个文件对齐时，直接同时打开多个编辑器是最快的
   - [一个EDA过程](https://blog.csdn.net/AvenueCyy/article/details/104405747)（这个针对非时序数据）
   - [[linux-edit-commands]]初步
   - [[matplotlib/basics]]

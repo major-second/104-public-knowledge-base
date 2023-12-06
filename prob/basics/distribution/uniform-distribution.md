@@ -8,7 +8,8 @@
   - 生成基本的均匀分布，然后[[monte-carlo]], 乃至[[monte-carlo#接受-拒绝采样]]
 - 在涉及[[normalization#排序]]常常使用
   - 街上不停找人，多少个人才比第一个高？
-    - $\int_0^1 (1+1/x)dx$发散了
+    - 快速反应过来：[[nega-binom#geometric]]，$\int_0^1 (1+1/x)dx$发散了
+  - [[consecutive-monotonous-numbers-count]]
 - 参考
   - [[pdf-transform#cdf-uniform]]
   - [[order-statistics#uniform-distribution]]

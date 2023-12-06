@@ -78,3 +78,13 @@
         - 结合$corr(\hat y,y)=E(\hat y y)=d_1E( y a) +d_2E( y a')=\sqrt{E^2( y a)+E^2(y a')}=\sqrt {R^2}$
         - 得$E(\hat ya)=E(ya)\frac{\sqrt{E^2(\hat y a)+E^2(\hat y a')}}{\sqrt{E^2( y a)+E^2( y a')}}=p\frac{1}{\sqrt {R^2}}$
         - $E(\hat y b)=q/\sqrt {R^2}$
+- 标准正态，已知$corr(Y,X_1)=\rho_1, corr(Y,X_2)=\rho_2, corr(X_1,X_2)=\rho_3$，求二元回归$\rho$
+  - 设$X_2 = \rho_3 X_1 + \alpha_3 Z_1, X_1\perp Z_1$
+  - $Y=\rho_1 X_1 + aZ_1+bZ_2$
+  - 此时有$\rho_2=E(X_2 Y)=\rho_1\rho_3+a\alpha_3 $
+  - 即$(\rho_2-\rho_1\rho_3)^2 = a^2(1-\rho_3^2)$
+  - $R^2=\rho_1^2+a^2 = \rho_1^2+(\rho_2-\rho_1\rho_3)^2/(1-\rho_3^2)=(\rho_1^2+\rho_2^2-2\rho_1\rho_2\rho_3)/(1-\rho_3^2)$
+  - [[general-principles/special-case]]检验
+    - $\rho_3=0\Rightarrow R^2=\rho_1^2+\rho_2^2$
+    - $\rho_1=1,\rho_2=\rho_3\Rightarrow R^2=1$
+    - $\rho_1,\rho_2$具有[[symmetry#轮换]]

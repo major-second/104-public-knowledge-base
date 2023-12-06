@@ -1,0 +1,3 @@
+- [参考](https://oi-wiki.org/ds/seg/)
+- 主要维护区间信息
+  - 对于不是区间信息的，其实未必有必要，比如[[partial-sum#例题]]，使用[[partial-sum]]更有效率
