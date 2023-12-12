@@ -27,3 +27,4 @@
     - [[mpi4py]]中需要
       - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
       - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)
+- data dependency

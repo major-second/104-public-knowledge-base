@@ -7,3 +7,4 @@
   - 可能联系[[discrete-continuous]]
   - ticksize小，连续，可以解一些方程得最优
   - ticksize大，离散，可能就是分类问题，非常唯象、p-quant
+- ticksize / price，如果太大，出现[[discrete-continuous]]问题，需要[[normalization]]

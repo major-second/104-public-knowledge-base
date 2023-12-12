@@ -1,0 +1,3 @@
+- https://pypi.org/project/sortedcontainers/
+- `SortedList`, `SortedSet`, `SortedDict`
+- 参考相应[[associative]], `set`, `map`等

@@ -19,6 +19,7 @@
 - 给出界（所谓“推bound”）
   - [[2-7-brain-teasers]]第16题
 - 给出[[enumerate#pruning]]范围
+  - 例如[[有界存在最值]]
 - 解决关于“取值范围”题，如[[trigonometric]]
 - [[inequalities#不等取等]]
 ## [[estimation-in-stats]]

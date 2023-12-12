@@ -6,7 +6,14 @@
   - 注意如果“性质最好”，那$P(X<x)=P(X\le x)=F(x)$，否则不一定
   - 比如标准正态[[normal]]的$F$就是$\Phi$，且性质好
   - 那就$\Phi(0)=0.5,z_{0.5}=\Phi^{-1}(0.5)=0$
-- 特殊称谓：$1/4, 1/2, 3/4$为first quartile, median, third quartile
 - 参考
   - [[normalization#排序]]
   - [[uniform-distribution]]
+# 中位数
+- 特殊称谓：$1/4, 1/2, 3/4$为first quartile, median, third quartile
+- $\theta$为中位数，$\mu$为平均
+  - $E|x-\mu|vs. E|x-\theta|$，后者直觉更小
+  - 证明
+    - 两者相减，积分分成三份
+    - 不妨$\mu <\theta$
+    - 看$[-\infty, \mu], [\mu, \theta],[\theta, +\infty]$三段，简单[[inequalities#放缩到界]]即可

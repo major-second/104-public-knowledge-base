@@ -17,7 +17,7 @@
   - jack, queen, king, ace
   - 也是利用对称性
 ## drunk passenger
-  - 参考[[general-principles/recursion]]
+  - 参考[[general-principles/recursion]], [[induction]]
   - $x_{100} = 1/100 \cdot (1+x_{99}+...+x_2)$
   - 最后发现是$1/2$
   - 这个递推式也有直觉解释：1在100前被占还是100在1前被占
@@ -122,7 +122,7 @@ $$AD = \left(\begin{matrix}1&2\\1&1\end{matrix}\right) A, A=\left(\begin{matrix}
 - gambler's ruin problem
   - [[naming#exists]]思想，设数，递推
   - 注意1/2是特例
-- basketball scores
+## basketball scores
   - 可以用[[induction]]数学归纳法
     - 其实本质是[[5-martingale-and-random-walk]]中的归纳
   - 分类讨论，全概率公式

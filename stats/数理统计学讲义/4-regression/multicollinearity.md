@@ -12,7 +12,7 @@
     - 即：求逆不稳定，$\epsilon$小变$\hat\beta$大变
     - 自然容易导致oos decay大
     - 这个角度讲[[ridge]]那个$+\lambda I$“球”很好用
-  - [[linear-t-test]]变得不显著
+  - [[linear-t-tests]]变得不显著
   - [[f-stats]]
     - IS该显著还是显著，OOS不稳定
 - 判定

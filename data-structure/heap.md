@@ -1,6 +1,8 @@
 - 参考
     - [[heapq]]
     - [[adapter#priority_queue]]
+- 大根堆：max-heap，根最大
+- 反之，小根堆，min-heap
 # floyd
 - 建堆算法，自下而上，每次下筛
 - [[master-theorem]]套用
@@ -9,3 +11,8 @@
 # 其它
 - [[heap-堆区]]
   - [[naming#历史遗留]]
+# 应用
+- 滑动窗口中[[character/quantile]]
+  - 注意区别于[[215-kth-largest-element-in-an-array]]！这里是窗口中的第n大，所以是需要动态pop出的
+  - baseline：可以使用一个queue和一个set（[[associative]]）
+  - 改进：[参考](https://www.cnblogs.com/wkynf/p/16905445.html)，使用大小两个堆，然后“延迟删除”，就是记录哪些该删，但[[lazy]]，而不是马上去堆里线性复杂度找删

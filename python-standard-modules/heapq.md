@@ -8,4 +8,7 @@
   - `heapq.heappushpop(heap, item)`
   - `heapq.heapreplace(heap, item)`
     - push和pop顺序和上个不同
+    - 因此区别：是否根据大小关系确定是否replace
+    - 对于`heappushpop`，如果小根堆，则新的元素更小时结果不变，没有replacement
 - 文档提到`heapify` [[inplace]]线性完成
+  - 可能参考[[heap#floyd]]

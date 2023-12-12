@@ -14,6 +14,7 @@
   - 应用：[[pivotal-interval]]，[[广义似然比]]
   - 注意区分$n$和$n-1$
   - [[pivotal-interval]]中的$\sqrt n$是$(\bar X-\mu)$那里来的，不是$\xi/\sqrt {\eta/(n-1)}$来的
+- [[linear-t-tests]]
 # [[general-principles/special-case#极限情形]]
 - $n$趋于无穷时，该分布趋于标准[[normal]]
 - 严格说法

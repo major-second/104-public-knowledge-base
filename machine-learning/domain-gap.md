@@ -12,3 +12,6 @@
   - 则$ABABABCDCDCD$，看前6或总共12，[[correlation]]不同。也导致“不能泛化”，out-of-sample decay等
   - 本质就是covariate shift
   - 参考[[stationary-processes]]
+# [[tradeoff]]
+- 数据量小：显然“集中”，密度大，gap小，资源占用小（有时这是硬约束）
+- 数据量大：数据量大本身可训练更复杂模型
