@@ -7,12 +7,7 @@
 - 由于$Y$的各维间没有本质区别（[[forall]]），因此可以考察$Y$为一维，即$X\beta = Y$
 
 像[[4-regression]]说的设$e$（引入误差：$Y=X\beta + e$）
-不过可能有额外条件（推出不同理论需要的额外条件不同）
-- 弱：$Ee_i=0,Ee_ie_j=0,Vare_i=\sigma^2$
-  - 参考[[cov#无关]]
-- 强：[[iid]], [[normal]]
-  - 或用[[multi-normal]]表示为$e\sim N(0,\sigma^2 I)$
-  - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解。相应可以解有关[[standard-error]], [[t-distribution#t stats]]的题
+- 此时参考[[OLS#假设]]
 - 记号
   - $||a||$模长
   - $Proj_M a $为$a$在$M$投影向量，$a = Proj_M a +某个垂直于M的向量$

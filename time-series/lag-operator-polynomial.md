@@ -2,3 +2,7 @@
 - 可形成polynomial，以简化模型表述
   - [[ARIMA]]，单位根，$(1-L)^d$
   - 拓展：$1-L^s$，seasonality
+- [单位根](https://en.wikipedia.org/wiki/Unit_root)
+  - 只有单位圆内的：stationary
+  - 去掉$d$个单位根就是$d$次差分，之后stationary
+- 检验单位根即检验是否stationary, [[ad-fuller]]

@@ -100,5 +100,6 @@ A: 不是。首先会导致危险，其次[[private-key-permissions]]和[[dot-ss
 - 例子
   - `sudo mkdir /home/shared_a_b && sudo setfacl -m u:a:rwx /home/shared_a_b && sudo setfacl -m u:b:rwx /home/shared_a_b && sudo setfacl -m o::--- /home/shared_a_b`
 - `-R`递归
+- 注：出现[[ln-s]]时可能有坑：[[ln-s]]的源处绝对路径每一层都要有权限！
 ## getfacl
 - 直接用，`getfacl <...>`

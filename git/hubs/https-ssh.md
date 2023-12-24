@@ -21,7 +21,12 @@
               Hostname github.com
               IdentityFile ~/.ssh/id_ed25519
             ```
-          - 也可以用[[config]]，例如`git config --global core.sshCommand "ssh -i $GIT_SSH_KEYFILE -o StrictHostKeyChecking=no"`
+        - 也可以用[[config]]，例如`git config --global core.sshCommand "ssh -i $GIT_SSH_KEYFILE -o StrictHostKeyChecking=no"`
+          - 这个替换之后，可能只能适配部分hub，比如只有[[github]]或者[[other-hubs]]
+          - 可能导致现象
+            - `ssh -T git@github.com`正常
+            - `git pull`等不正常
+          - 所以更加推荐[[client-config]]，设置的更为专用
   - url体现：典型如下
      - https: `https://github.com/username/reponame.git`
      - ssh: `git@github.com:username/reponame.git`

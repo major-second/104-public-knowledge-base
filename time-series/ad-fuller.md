@@ -1,0 +1,2 @@
+- https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test
+- 前置[[lag-operator-polynomial]]，检验单位根

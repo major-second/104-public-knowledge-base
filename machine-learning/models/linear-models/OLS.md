@@ -1,1 +1,46 @@
 - [[multi-ary]]
+# 假设
+- [参考](https://juejin.cn/s/ols%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%81%87%E8%AE%BE)
+- 基础
+  - 当然首先要$Y=X\beta +\epsilon$线性关系，否则你模型选择都不对
+    - 如果不对，那都不是[[OLS]]的问题，你[[lasso]] [[ridge]]怎么线性回归都不行
+    - [[linearity]]
+  - 没有完美[[multicollinearity]]
+  - 样本点[[iid]]
+    - 否则可能[[domain-gap]], [[4-sample-weights]]等
+- 推出不同理论需要的额外条件（假设）不同
+- 弱：$Ee_i=0,Ee_ie_j=0,Vare_i=\sigma^2$
+  - 参考[[cov#无关]]
+    - 否则出现误差项[[autocorrelation]]
+  - 比[[iid]]弱
+    - 简记
+    - 比独立弱，就是无关
+    - 比同分布弱，就是同方差，没有[[heteroskedasticity]]
+  - 均值为零可以推出最小二乘法结果[[unbiased]]，同方差可以推出某种最优（最小方差无偏估计）
+    - 这里的“结果”指的是[[OLS#公式]]
+- 强：加上[[iid]], [[normal]]
+  - 或用[[multi-normal]]表示为$e\sim N(0,\sigma^2 I)$
+  - 推论：$\hat\beta$也满足[[multi-normal]]，因为有闭式解
+    - 相应可以解有关[[standard-error]], [[t-distribution#t stats]]的题
+  - 正态假设一般用于[[linear-t-tests]], [[f-stats]]等统计量和[[hypothesis-testing]]
+    - 如果不涉及这些，其实“弱”就够了
+  - 当然正态假设也给最小二乘法以[[maximum-likelihood-normal]]意义
+    - 所以对于[[heteroskedasticity]]，你当然可以说破坏了正态假设时的[[maximum-likelihood]]性质
+      - 但更自然的说法是：不再是最小方差无偏估计。毕竟你连上一步同方差都没有，直接假设正态不合理，233
+# 公式
+- 详细参考[[regression-projection]]
+- 简记：对于可逆情况，$Y=X\beta+\epsilon$则
+  - 方程$X^T Y=X^TX\beta$
+  - $X^TX$整体具有很强意义，需要感知一下！
+    - 一般是胖矩阵乘瘦矩阵（样本量大）
+    - 得到不大的方阵
+      - 这个方阵一般不大，所以[[OLS#分布式计算]]一般不关这里的事
+        - 不关下面说的正交对角化、求逆等的事！
+    - [[positive-definite]]
+      - 可[[正交矩阵]]对角化
+    - $X^TX$本身是个意象，甚至成为了trading firm名字XTX
+  - 结果$\beta = (X^TX)^{-1}X^T Y$
+# 分布式计算
+- 记得刚刚提过$^{-1}$操作并非“需要分布式”的。所以一般只需要关注乘法的分布式
+- 对于胖矩阵乘瘦矩阵，直接拆成很多没那么胖的乘很多没那么瘦的，分块最后乘完求和即可
+- 或：[[deep-learning/optimization]]优化器，近似找解

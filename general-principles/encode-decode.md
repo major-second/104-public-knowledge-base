@@ -71,10 +71,7 @@
 ## 直角坐标和极坐标
 - [[3-calculus]]
 - [[normal#symmetry#旋转]]
-# 智力题
-- 总共有多少种状态，多少进制，决定有多少位
-  - [[8-brain-teasers]]第12题，二进制；13题三进制
-  - [[2-brain-teasers]] defective ball，三进制
+# [[identifiable-states]]
 # 数据科学
 - [[normalization#排序]], [[character/quantile]]作为某种编码
 - encode浪费一定空间使得深度学习时性质好

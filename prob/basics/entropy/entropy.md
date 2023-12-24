@@ -6,3 +6,4 @@
   - [[cross-entropy]]
   - [[kl-divergence]]
   - [[conditional-entropy]]
+  - [[identifiable-states]], $S=ln\Omega$
