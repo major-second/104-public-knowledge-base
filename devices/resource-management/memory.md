@@ -6,7 +6,8 @@
     - 参考 https://www.zhihu.com/question/295194595/answer/999804696
   - windows的虚拟内存相当于linux的swap
   - 16G的普通PC，往往可以设置（至多）2倍物理内存的swap
-    - 当然，如果你日常就听听歌追追剧，就0呗嘿嘿
+    - 当然，如果你日常就听听歌追追剧，就0呗
+  - swap开太高，参考[[warning]]，就是实际上内存不够用了，系统还[[transparent]]认为够，可能导致[[i-o]]负载过高服务器爆掉
 - 和程序运行相关
   - [[pickle]], [[pytorch/basics/installation]], [[numpy-basics]]都有`load`之类的功能，把硬盘中的读到内存中
   - 存读都有时间开销。读取有空间开销

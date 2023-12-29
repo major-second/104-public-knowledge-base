@@ -1,0 +1,8 @@
+- 去噪，[[bias-variance-tradeoff#bias-variance-noise]]
+- [[discrete-continuous]]
+  - 滤波，脉冲变为密度函数
+    - [[svm]] 核方法，还能调核参数……
+  - interpolation，内插
+- [[gcn]]，图相当于学出隐空间近的，可平滑，考虑近邻影响
+  - 直觉上这肯定需要足够数据量，否则意义不足
+- 联系cluster比如[[kmeans]]
