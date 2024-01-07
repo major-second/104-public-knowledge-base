@@ -1,0 +1,3 @@
+- https://unix.stackexchange.com/questions/144016/what-is-a-pager
+- 例如`git config --list --global` [[config]]用到
+  - 可能导致subshell中卡住，此时曾经解决方法`GIT_PAGER=cat git config --list --global`

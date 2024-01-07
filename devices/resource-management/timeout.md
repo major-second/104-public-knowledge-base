@@ -1,0 +1,8 @@
+- `timeout`
+  - 用法：`timeout <seconds> <command>`
+  - `ulimit`这种内置命令用不了
+  - 根据`$?`判断是否timeout
+  - 判断real time而非[[cpu]] time
+    - 例如`sleep 10`, real time 多，cpu time几乎没有
+- `ulimit -t`
+  - 改变此shell的[[cpu]] time上限

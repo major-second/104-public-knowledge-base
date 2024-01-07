@@ -25,6 +25,7 @@
 # 原则
 ## [[general-programming/logs]]
 - [[general-programming/logs#verbosity]]，DEBUG肯定是最详细的
+- shell的`strace`命令，详细输出所有，包括[[system-calls]]
 - 不过为了防止[[i-o]]太多烦人，可以同级只输出一个
   - 需考虑特例[[general-principles/special-case]]
     - 算法中的[[algorithm/special-case]]

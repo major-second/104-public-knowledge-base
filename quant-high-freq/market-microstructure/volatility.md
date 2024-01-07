@@ -2,9 +2,18 @@
 - > usually measured by the [[variance#standard deviation]] of logarithmic [[returns]].
   - https://en.wikipedia.org/wiki/Realized_variance: [[variance]]
 - > Historic volatility measures a time series of past market prices. Implied volatility looks forward in time, being derived from the market price of a market-traded derivative (in particular, an option).
+- 相比[[returns]]是二阶量、无方向
+  - 更容易预测
+    - 当然，用于盈利更不直接
+    - profit of market maker
+      - “波动太小，不好做”：死水一潭，没人动，没韭菜没散户没主观trader套期保值等……mm没有盈利来源
+      - 当然，波动过大总导致mm爆仓，被[[adverse-selection]]等
+      - 不同周期下看的各个波动率决定mm的行动
+  - 可以和有方向量互动，例如[[multiplication]]等得到有方向量
 - 不同尺度计算结果不同
-  - profit of market maker
-  - 引出[[market-microstructure-noise]]
+  - 参考[[market-microstructure-noise#Two Scale]]
+- 关于taking中的应用
+  - 例如预测一阶[[returns]]很极端，且二阶波动率大于多少才开仓，避免难以成交
 - [参考](https://mp.weixin.qq.com/s/3XYWwqDBzBMpLfy0Y70dvg)
   - 预测
     - 可以[[MA]], [[EMA]]等
