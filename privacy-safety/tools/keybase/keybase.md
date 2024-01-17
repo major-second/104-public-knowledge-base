@@ -27,6 +27,8 @@ https://keybase.io/
 - 缺点
   - 不能实时音视频通话
   - 不能多选信息删除/转发
+  - 曾经出过证书过期问题（20231231），[参考](https://github.com/keybase/keybase-issues/issues/4219)
+    - [[dont-trust-others]]
 # 安装和创建账号
 - 安装是傻瓜式
   - [官网](https://keybase.io/)写得很清楚

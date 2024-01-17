@@ -1,7 +1,9 @@
 - 前置
-  - （可选，推荐）[[conda-installation]]
-  - [[pip]]
-  - [[pytorch/basics/installation]]或tensorflow
+  - [[package-managers]]
+    - [[pip]]
+    - （可选，推荐）[[conda-installation]]
+  - [[pytorch]]或tensorflow
+  - [[ray]]
   - 了解[[gym/env]]
 # 基础
 - [文档](https://docs.ray.io/en/releases-1.13.0/ray-overview/index.html)

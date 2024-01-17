@@ -9,3 +9,4 @@
   - [[distance-to-hyperplane]]
   - [[ball-tangent-optimal]]
 - [[convex-optimization]]
+  - [[cvxpy]]

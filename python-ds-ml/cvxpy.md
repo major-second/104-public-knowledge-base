@@ -1,0 +1,3 @@
+- https://www.cvxpy.org/
+- https://www.cvxpy.org/tutorial/index.html
+- [[optimization-index]]
