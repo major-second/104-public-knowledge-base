@@ -8,6 +8,8 @@
     - 区别于[[cache-decorator]]，这个是一次运行之内的（内存中的）缓存，不能跨越多次运行，并不是硬盘上的缓存
     - 如果你的计算不是特别特别久，不建议使用[[cache-decorator]]，否则要不断access硬盘，反而更慢，参考[[tradeoff]]
   - [[jupyter-notebook/cache]]
+  - [[conda]]占位置的cache
+    - 可以`conda clean --all`
   - [[pip]]和[[conda/commands]]，下载了包会自动缓存
     - 所以有时可以联系[[temp-solution]]，一次下载，之后就都不用下载，很方便
 - 缓存有时的坏处

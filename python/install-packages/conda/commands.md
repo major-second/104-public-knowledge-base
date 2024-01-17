@@ -17,3 +17,4 @@
 - leave an env: `conda deactivate`
 - 已经装过的包列表：`conda list`，可以结合[[find-grep]]中`grep`使用
   - 举例：`conda list | grep torch`
+- 清理[[general-programming/cache]]: `conda clean --all`
