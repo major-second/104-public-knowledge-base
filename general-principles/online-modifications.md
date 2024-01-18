@@ -7,3 +7,7 @@
   - not recognizable
     - python直接修改文件
     - 有时需要各种[[refresh]]
+- [[machine-learning]]中
+  - 例子：[optiver比赛记录](https://zhuanlan.zhihu.com/p/678286556)
+  - [[deep-learning-basics]]当然很容易
+  - [[ensemble#bagging]]相对比[[ensemble#boosting]]肯定容易
