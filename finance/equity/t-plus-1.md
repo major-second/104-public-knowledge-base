@@ -1,0 +1,4 @@
+- 中国特有
+- 增大不自然程度，非[[first-principle]]程度，使得问题复杂
+  - 例如close auction 相比 open auction就是这样
+- 但可能得到盈利空间，alphas

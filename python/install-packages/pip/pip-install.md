@@ -9,6 +9,8 @@
       - 当然，更一般的就是`pip install -e <相对或绝对路径>`
         - 这甚至被用在[[create-env-from-yaml]]中
     - 此时`pip list`可以看到有的包是在本地某个源码文件夹装的
+    - 使用 [[toml]] 文件：[参考](https://stackoverflow.com/questions/62983756/what-is-pyproject-toml-file-for)
+      - 和`requirements.txt`类似
 - 批量安装依赖
   1. 原生方法：有个`requirements.txt`里面一行一行写需要什么包，该文件内容形如
       ```text
@@ -17,7 +19,7 @@
       ```
     - 然后`pip install -r requirements.txt`即可
     - 注：`requirements.txt`有时还能看到`git`开头的一些行，表示一些从[[github]]等源码安装的包
-  1. 和conda结合：[[create-env-from-yaml]]中的`dependencies - pip`子树
+  2. 和conda结合：[[create-env-from-yaml]]中的`dependencies - pip`子树
     - 当然为了更加保险，`dependencies`子树中可以增加`python=版本`和`pip=版本`
 - 一般来说`pip`效率不如`conda`，但有些`pip`有的包`conda`没有，有些包`pip`才有较新版本
   - 所以`pip`简单来说就是质量差，东西多

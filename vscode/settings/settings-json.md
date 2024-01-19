@@ -32,5 +32,13 @@
 - `"http.proxy": "http://<ip>:<port>"`：设置代理
   - 默认情况：可能是继承了[[6-env]]的环境变量
   - 这又是“用户级覆盖系统级”的例子
+- [[file-format#打开方式]]
+  - 例如
+    ```json
+    "workbench.editorAssociations": {
+        "*.xlsx": "cweijan.officeViewer",
+        "*.md": "default"
+    }
+    ```
 - [[vscode-issues]]中所说的`"remote.SSH.remotePlatform"`如果没有自动生成，就要手动加上
 - 当然，这些设置项的名称和细节可能随着版本和系统不同而变化

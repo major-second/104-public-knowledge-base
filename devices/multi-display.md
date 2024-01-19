@@ -15,3 +15,6 @@
   - 当不规整时（一竖一横），有盲区
   - 一些软件可能在变display settings时不能自动适应，导致看不到了，这时需要[[refresh]]例如重启软件
     - 举例：[[windows-proxy-client]]中的clash、`Remote Desktop Connection`都出现过
+  - 屏幕太多/太大鼠标找不到
+    - 双击ctrl可以聚焦
+      - 但有cooldown

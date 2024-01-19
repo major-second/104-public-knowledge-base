@@ -1,0 +1,4 @@
+- [[microsoft-office]]比如[[word]] [[excel]]打开
+  - 联想：[[excel-viewer]]
+- 但是可能把[[markdown]]编辑器改成富文本的。不想要的话可以参考[[file-format#打开方式]]修改
+  - [[settings-json]]
