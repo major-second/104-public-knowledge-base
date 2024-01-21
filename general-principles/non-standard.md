@@ -23,3 +23,5 @@
   - 有时可能收不到邮件，网页版邮箱可以
 - [[multi-display]]
   - 拔出变成单屏可能导致部分程序消失，必须重连[[multi-display]]拖到主屏解决
+- [[debug-console]]
+  - 占用内存多几倍。如果[[memory]]要求大，大任务，就别开vscode调试

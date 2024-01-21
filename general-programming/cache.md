@@ -12,6 +12,7 @@
     - 可以`conda clean --all`
   - [[pip]]和[[conda/commands]]，下载了包会自动缓存
     - 所以有时可以联系[[temp-solution]]，一次下载，之后就都不用下载，很方便
+  - [[memory]] `free -m`能看到的`buffer/cache`部分。导致看起来占用内存不多实际上[[garbage-collection]]成问题
 - 缓存有时的坏处
   - 明明有些东西该[[refresh]]更新了，你却缓存了没更新（例如[[cache-decorator]]存储的函数运行结果），当然就导致错误
   - 占用硬盘空间。例如[[pip]]和[[conda-installation]]的缓存文件

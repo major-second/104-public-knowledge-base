@@ -24,6 +24,7 @@
     - `available_memory=$(top -b -n 1 | grep "MiB Mem" | awk '{print $4}')`
       - [[find-grep]], [[awk-cut]]
     - 其实还有简单的`free -m`
+      - 结果和`top`类的可能有区别。例如可以看到`buffer/cache`，参考[[general-programming/cache]]
   - [[resource-management/commands]]
   - 适当使用[[buffer]]，调整buffer大小
     - 例如[[standard-streams]]中的例子

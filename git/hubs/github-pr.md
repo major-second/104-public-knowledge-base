@@ -1,0 +1,4 @@
+- 前置[[git-basics/branch]]
+- 常见自己搞branch开发，然后提PR合并到main等
+- 自己的branch往往可以[[push-pull#push]] force，但肯定一般的main不建议
+  - `git commit --amend` + force push，可以做到“reviewer要求修改，我简单修改一下”，[参考](https://shengyu7697.github.io/github-update-pull-request/)

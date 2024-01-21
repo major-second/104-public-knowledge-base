@@ -3,6 +3,7 @@
   - 今开到明天开盘：往往记为`return_oo`，open to open
   - 对于任意一种，都是$(后-前)/前$，相对值，为正数
   - 所以可以求`log`，成为`log_return`
+- [[data-science/residual]]掉[[barra]]，则可以得到 "alpha"，参考[[factors-alphas]]
 - [[pandas-asof]]
   - 典型语句
     - `df['mid'].asof(df.index + pd.Timedelta(seconds=30)).values - df['mid']`

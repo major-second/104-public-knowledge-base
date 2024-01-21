@@ -10,6 +10,10 @@
   - [官网](https://cursor.sh/)宣传：Migrate in one click
 - [[cursor-ide]]中使用[[openai-api]]等获得[[gpt-4]], [[chatgpt]]等结果
 - 成环了是吧233
+- [[help]]中提到`Get-Command code`
+  - 可能得到`~\AppData\Local\Programs\cursor\resources\app\bin\code.cmd`
+  - 这时`code`也会重定向到`cursor`，覆盖[[vscode-command-line]]
+  - 解决方法：调整[[windows/env-var#path]]顺序，把vscode的放前面
 # 对比
 - [[cursor-ide]]视角对比[[vscode]]
 - [[pricing]]: cursor并非免费开源
