@@ -6,7 +6,7 @@
   - [[yaml]]
 - [官网教程](https://robocorp.com/docs/setup/robot-structure)
 ## 典型设置
-- minimal robot structure及`robot.yaml`的地位
+- minimal robot structure及`robot.yaml`的地位 ([[repo-structure]])
   ```text
   ├── conda.yaml
   ├── .gitignore

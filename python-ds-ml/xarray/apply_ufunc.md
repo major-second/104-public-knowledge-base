@@ -1,0 +1,5 @@
+- 前置
+    - [[xarray]]
+    - [[functional-programming]]
+    - [[vectorized-operation]]
+      - 所以常见`vectorized=True`

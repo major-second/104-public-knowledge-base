@@ -8,3 +8,13 @@
 - 例子
   - [[linalg]]中最小二乘线性回归时，可以考虑每个`on_validation_start`计算训练集的斜率截距，然后`val`时和`test`时具体计算时不用重复计算
     - 注：这里应该在`val`开始时计算。如果在`train`结束时计算，那么`sanity_check`（lightning在train前自动进行的val）可能出问题！参考[[general-programming/debug]]
+  - [[vscode]]例子
+    - `ctrl+shift+f`修改文件时
+      - 例如修改[[json]]
+        - [[jupyter-notebook]] `.ipynb`当然也是
+    - 重命名（例如修改[[python-import]]）
+    - [[CRUD]]文件
+      - 例如改文件名时[[wikilinks]]自动更新
+      - 注：移动文件夹时无法自动更新
+    - 好处：自动化处理。坏处：慢！
+      - 所以例如需要速度时可以关掉hook或者找不用hook的

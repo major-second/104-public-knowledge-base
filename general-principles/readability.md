@@ -1,13 +1,12 @@
 # 程序
 - [[comment]]
+  - 进阶：[[literal-programming]]
 - 写文档，并考虑[[read-doc]]读文档者感受
   - 给用户的文档
   - 给开发者的需求文档（怎么当好甲方）
 - [[general-programming/logs]]
-- 遵守约定俗成的东西
-  - 例如[[shrc]]提到一来`cd`不可取
-  - 例如循环变量命名常用`i, j`，未知数用$x$，[[binary-search]]命名上下界用`ub, lb`或`hi, lo`
-  - 例如[[pep8]]这类规范
+- [[naming#convention]]
+- [[repo-structure]]
 # presentation
 - focus more on your progress since last update
 - 参考[[minimum-beamer/README]]

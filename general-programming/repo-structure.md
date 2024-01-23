@@ -1,0 +1,40 @@
+- 功能
+  - constant file
+    - 很多大写变量
+  - helper function (utils) file
+  - tests
+    - [[pytest]]: `tests` folder
+  - demo
+    - [[readability]]
+    - [[jupyter-notebook]]
+  - 辅助构建等
+    - [[makefile]]
+    - [[cmakelists-txt]]
+    - 脚本例如[[bash]]
+  - [[git]] 相关
+    - [[special-files]]
+    - 隐藏文件`.git`
+  - 往往被[[special-files#dot-gitignore]]包括的
+    - [[logs]]
+      - [[pl-logs]]
+    - data / cache
+      - [[cache-decorator]]
+      - 往往[[special-files#dot-gitignore]]
+      - input, intermediate, output, [[visualization]]...
+    - build出的东西
+      - [[binary-executable]]
+    - [[python-virtual-env]]
+    - [[settings-and-configurations]]（部分ignore）
+      - [[omegaconf/basic]]
+      - [[launch#launch-json]]
+      - dockerignore（类比gitignore）
+- language specific, “结构性”
+  - [[python]]
+    - [[create-python-package-for-pip]]
+    - `__pycache__`
+  - [[robocorp]]
+    - [[robot-yaml#典型设置]]
+- "magic"指定文件名
+  - [[docker-file]]
+  - [[makefile]]
+  - [[cmakelists-txt]]

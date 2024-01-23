@@ -1,1 +1,2 @@
 - [[rust]] [[package-managers]]
+- [[linux]]默认在奇葩路径`~/.cargo/bin`，所以在[[zsh]]这种就要重新加[[6-env]]

@@ -1,0 +1,2 @@
+- [[win-key]]和`ctrl alt del`等特殊快捷键可能传不进远程桌面[[remote-desktop]]等，只能在宿主
+  - 往往：[[win-key]]只要把[[remote-desktop]]拉成全屏就行，而`ctrl alt del`往往在软件中有专门按钮
