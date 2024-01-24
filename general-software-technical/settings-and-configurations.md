@@ -25,14 +25,18 @@
   - [nitrome games合集](https://archive.org/details/all_nitrome_games)中也有这样的例子：要覆盖`settings.sol`
 - 有趣的事实：硬件也有设置。例如[[laptop-camera]]中所有“与”条件中的第一个：打开硬件开关！
 ## 常见设置方法
-1. 参考[[6-env]]，设置环境变量
-   1. 乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等
-   - 使得每次开终端时自动设置
+1. 设置环境变量
+   1. [[6-env]], [[windows/env-var]], [[docker/env-var]]
+   2. 乃至把设置环境变量的`export`命令放到`~/.bashrc`或`~/.zshrc`等，[[bashrc]]
+      - 使得每次开终端时自动设置
 2. 编辑特定文件
-   1. 比如Linux的`~/.bashrc`，`~/.condarc`，`/etc/ssh/sshd_config`
-      1. 参考：[[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]，[[shrc]]
-   2. Windows的`known_hosts`
-   3. [[vscode/settings]]：`settings.json`文件
+   1. [[linux]]
+      1. [[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]，[[shrc]]
+   2. Windows
+      1. `known_hosts`
+   3. [[vscode/settings]]
+      1. [[launch#launch-json]]
+      2. [[settings-json]]
    4. 有时还需要结合[[find-grep]]找到到底去哪里设置
       1. 比如franka机器人的`xacro`文件，参考[[franka-panda/limit]]
    5. `.d`的作用
@@ -41,6 +45,7 @@
       3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
       4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker/source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
       5. 删除也可以方便地删除一部分，这在[[software-management/source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
+      6. 类似的做法：[[bashrc]]中`source ~/.bash_env_0`，分成多个部分等
    6. 为了达成同一目的，可能有多个文件，之间可能具有“优先级”而出现一些值的覆盖，参考上一节“优先级”
 3. 用命令
    1. 比如`git config`，参考[[config]]
@@ -49,11 +54,15 @@
    3. [[zsh]]的`setopt`
    4. 用命令很多时候等价于封装了的方法2（直接编辑文件）
    5. [[pd-set-option]]跟这个很像，不过是python而不是shell
-4. 用GUI设置。比如Windows的属性，或者Ubuntu的Settings等
+4. 用GUI设置
+   1. Windows的属性、控制面板、[[start-menu]]搜索等
+   2. Ubuntu的Settings
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全
 6. 有意思的：windows10有Settings和Control Panel共存（历史遗留问题）
    1. 前者更现代，后者功能更强，能变更多细致东西（如[[dns]]就需要控制面板）
       1. 参考[[leaky-abstraction]]，[[aggregation]]
 ## “临时设置”和其作用
-主条目[[temp-solution]]
+- [[temp-solution]]
+- 例子
+  - `KEY=VALUE commmand`

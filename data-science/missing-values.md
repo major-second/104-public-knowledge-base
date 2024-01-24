@@ -1,0 +1,14 @@
+- 联系
+  - [[nan]]
+  - [[outliers]]
+- 处理
+  - [[fillna]]
+    - [[ffill-bfill]]
+      - bfill是不看未来信息
+    - interpolation
+    - 具体方法肯定需要根据
+  - [[dropna]]
+  - 模型能不能处理缺失值是重要性能指标，不能的话，[[dropna]]损失数据
+- 例子
+  - [[停牌]]
+  - [[rolling]]
