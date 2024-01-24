@@ -41,3 +41,8 @@
   - 可以take这种weight改[[loss-function]]
     - 注：总weight加不到J？可能相当于一些[[regularization]]，不那么强调眼前数据！
   - `class_weight='balanced_subsample'`，正负样本 in-bag平衡
+# 其他联系
+- [[tradeoff]] 或 [[8-ensemble]] 或 防止[[overfit]]等原因都导致实际中更加合理的weight在训练中不一定用（比如训练中简单等权）
+  - 效率：[[sklearnex]]可能用不了一些
+  - [[overfit]]（因子也有等权加）
+  - 可能的伤害：等权好，考虑[[market-impact]]的不等权的不好？可能只fit小市值，实际上没法[[order-execution]]

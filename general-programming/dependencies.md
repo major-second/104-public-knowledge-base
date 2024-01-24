@@ -27,4 +27,5 @@
     - [[mpi4py]]中需要
       - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
       - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)
+  - [[repo-structure]]内部也有一些文件夹/文件上层，一些底层。底层的`core.py`等改得太频繁被称为[[ad-hoc-hacky-dirty]]
 - data dependency

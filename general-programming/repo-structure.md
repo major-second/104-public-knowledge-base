@@ -1,3 +1,4 @@
+- [[dependencies]]
 - 功能
   - constant file
     - 很多大写变量

@@ -4,7 +4,8 @@
 - 处理
   - [[fillna]]
     - [[ffill-bfill]]
-      - bfill是不看未来信息
+      - ffill常用，“不看未来信息”
+      - bfill一个情景：涉及[[停牌]]，我们需要计算机器学习的output，那T日买入，“T+1卖不了就T+2，再不行就T+3，...”
     - interpolation
     - 具体方法肯定需要根据
   - [[dropna]]

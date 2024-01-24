@@ -1,0 +1,10 @@
+# [[deep-learning]]
+- [[pytorch]]
+    - [[lightning/basics]]
+- paddle
+- tensorflow
+- caffe
+# [[4-decision-tree]]
+- [[lightgbm]]
+- [[xgboost]]
+- [[catboost]]
