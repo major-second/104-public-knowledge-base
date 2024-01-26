@@ -6,7 +6,9 @@
   - `git commit --amend` + force push，可以做到“reviewer要求修改，我简单修改一下”，[参考](https://shengyu7697.github.io/github-update-pull-request/)
     - [[commit]]
   - 也可以直接在同一个branch上新增commit
-- 和[[github-issues]]关系：[参考](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)，可以自动关联PR和issues，通过PR后自动close issue
+- 和[[github-issues]]关系：[参考](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+  - 可以自动关联PR和issues，通过PR后自动close issue
+  - 在PR的评论区 `close` [[github-issues]]
 - Review
   - 自动：例如本地`just mypy`这类命令行跑一下（你本地不跑，上云还得跑）
     - 自动不通过就没有手动了

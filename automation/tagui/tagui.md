@@ -1,17 +1,15 @@
 ## 优劣
-是开源的
-- 好处
+- 好处 [[open-source]]
   - 方便运行，分享，复制等
   - 一行命令`tagui <某>`即可执行，也可自动定时执行，双击图标执行等
   - 可以不联网运行（所以可以用来做排查网络的bot）
   - 不像商业的[[my-first-flow]]那样有很多限制
-- 坏处
+- 坏处：性能差
   - ocr识别率极度低下
   - 功能少
   - `hover`, `click`命令会漂移，需要连续发几个才会逐渐“收敛”。比如`hover -> hover -> click`
 ## 安装
 https://tagui.readthedocs.io/en/latest/setup.html
-文档很清楚了
 一些关键
 - 其安装依赖于chrome, java等（其懒人installer会装依赖）
 - 对于windows，请安装到无需管理员的文件夹，否则可能需要[[administrator-powershell]]权限的powershell才能用`tagui`命令，烦

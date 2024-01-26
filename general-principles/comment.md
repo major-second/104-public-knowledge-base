@@ -24,3 +24,10 @@
       - 反而是能插HDMI公对公的
   - 正面例子：飞机上的安全带用法 ![](lift.png)
     - 让你往上抬打开它，很清晰
+# “有用的”注释
+- [[shebang]] `#! /bin/bash`
+- [[encode-decode]]
+- [[find-grep]]中排除行（有点类似手动[[comment#ignore]]）
+- 游戏（非实用）：参考[[file-format#直接修改文本文件扩展名]]
+## ignore
+- [[linting]] [[just]] [[mypy]] [[PEP8]]...

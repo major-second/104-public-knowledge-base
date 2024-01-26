@@ -9,20 +9,28 @@
   - 比如[[window]]操作，`get`后`set`大小或最大化等
   - [[reduction]]常见模式：没选中就选，已经选中了就不管。比如可以用[[on-error]]直接忽略错误实现
 - 做事没头没尾
-  - 比如登录outlook忘记退，导致下次自动登录了，找不到登录按键
-  - 比如vscode没有close remote，导致下次一来还想登录remote
   - 一定要[[finally]]，做事有头有尾！
-  - 当然[[reduction]]有时可代替有头有尾。比如先清除之前残留，再做事，走之前再清除。即[[file-format]]提到的Postel's law
+  - 比如登录[[outlook]]忘记退，导致下次自动登录了，找不到登录按键
+  - 比如vscode没有close [[remote-ssh]]，导致下次一来还想登录remote
+  - 当然[[reduction]]有时可代替有头有尾
+    - 比如先清除之前残留，再做事，走之前再清除
+      - 即[[file-format]]提到的Postel's law
     - 例如[[tmux]]先`kill-session`再`new`
-    - 相比之下，“有则`attach`无则`new`”可能也行，不过我犯过一个错误就是让机器人一进去马上按`Ctrl+C`停止。这在`attach`行，在`new`会导致`~/.bashrc`执行不完，参考[[6-env]]. 所以还是`kill-session`再`new`最保险
-- 网络环境不同。参考[[proxy-basics]]
+      - 相比之下，“有则`attach`无则`new`”可能也行
+        - 不过一个麻烦：若机器人一进去马上按`Ctrl+C`停止
+          - 这在`attach`不会出问题
+          - 在`new`会导致`~/.bashrc`执行不完，参考[[6-env]]
+          - 所以还是`kill-session`再`new`最保险
+- 网络环境不同
+  - [[proxy-basics]]
+  - [[vpn]]
 - 魔数（泛化）问题：[[generalization]]
 - 其它
   - 例如[[wait-for]]图得到的[[power-automate/var]]是相对于全屏幕，之后用的时候又写了相对窗口
   - 即：同样的[[power-automate/var]]含义不一致！
 - 突发弹窗（说实话这种你很难考虑全，碰到了只能自认倒霉）
   - vscode突然提示分隔符unusual
-  - anaconda突然提示更新
+  - [[conda]]突然提示[[general-software-technical/upgrade]]
 - 有时由于别人的程序缺陷，第一次运行和后面各次运行效果不同
   - 比如[[vpn]]软件globalprotect在win11第一次启动不弹窗
   - 比如[[xbox-bar]]很多时候第一次按`Win+Alt+R`没反应
@@ -31,7 +39,7 @@
   - 特定操作的问题：[[tencent-meeting]]共享屏幕时会吃掉一些快捷键，但不共享就不会
   - 远程桌面有时会吃掉特定的一些快捷键，例如`ctrl + alt + enter`
     - [[vscode-keyboard-shortcuts]]可以自己设置，就还好
-- 焦点在哪个窗口/窗口哪个部分
+- 焦点在哪个窗口/窗口哪个部分（面板）
   - 参考
-    - `ctrl shift e`, `ctrl b`相当于[[reduction]]可在[[vscode]]中去掉左边
+    - `ctrl shift e`, `ctrl b`相当于[[reduction]]可在[[vscode]]中去掉左边，确保焦点不在那个面板
     - [[vscode/edit]]中焦点影响的坑

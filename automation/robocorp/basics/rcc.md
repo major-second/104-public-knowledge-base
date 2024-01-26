@@ -5,6 +5,7 @@
   - `curl -o rcc.exe https://downloads.robocorp.com/rcc/releases/latest/windows64/rcc.exe`
 - 安装过程可能需要[[administrator-powershell]]，开启长路径相关设置等
   - 可能自动出现，并提示设置
+    - 所以[[powertoys]]也有
 - 好处
   - 灵活，防止了[[leaky-abstraction]]
   - 相比[[vscode-extensions]]

@@ -32,6 +32,7 @@
 - `"http.proxy": "http://<ip>:<port>"`：设置代理
   - 默认情况：可能是继承了[[6-env]]的环境变量
   - 这又是“用户级覆盖系统级”的例子
+- `"workbench.editor.wrapTabs": true`: wrapTabs，类比word wrap在tab特别多时好用
 - [[file-format#打开方式]]
   - 例如
     ```json

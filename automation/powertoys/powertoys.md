@@ -1,0 +1,5 @@
+- 底层有[[rcc]]
+- https://aka.ms/powertoys
+  - 包括“长路径”相关设置也有
+- 默认`win shift /`展现快捷键
+- `win shift T` [[ocr]]
