@@ -1,0 +1,12 @@
+- DevOps, devops
+- 工具
+  - [[git-basics/basics]]
+    - [[github]], [[gitlab]]
+  - [[shell]] [[linux]]
+- 相关概念
+  - [[ci]]
+    - [[lint]]
+    - [[test-suite]] [[pytest]] [[comparison]]
+  - [[resource-consumption]]
+  - [[automation]]
+  - [[integration-webhook]]

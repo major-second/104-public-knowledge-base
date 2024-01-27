@@ -1,0 +1,3 @@
+- 自动测试，[[lint]], [[formatting]]等，保持良好习惯
+- [[just]]
+- [[drone]]

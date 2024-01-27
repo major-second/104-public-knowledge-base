@@ -1,0 +1,7 @@
+- 参考
+    - [[web-api]]
+    - [[hook]]
+    - [[github]], [[gitlab]]
+    - 例如[[gitlab]]有 integration / webhook两个东西
+      - integration比较系统化，推荐
+        - 比如[[slack-extensions#integration-webhook]]

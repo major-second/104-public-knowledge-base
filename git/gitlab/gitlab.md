@@ -1,0 +1,8 @@
+- [[other-hubs]]
+- 区别于[[github]], 往往是企业组织内部，并不对外网[[open-source]]
+  - 类似[[github-enterprise]]
+- 中文（中国分部）：极狐
+- 和[[feishu]], [[wechat-tips]], [[slack-extensions#integration-webhook]]等都可以联动
+  - [参考](https://about.gitlab.com/solutions/slack/)
+  - [参考中文](https://docs.gitlab.cn/jh/user/project/integrations/slack.html)
+  - [[integration-webhook]]
