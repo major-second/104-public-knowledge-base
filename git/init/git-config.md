@@ -18,3 +18,5 @@
     - 参考[[settings-and-configurations]]的“优先级”思想
     - `git config --global --list | xargs printf '%s\n'`：[[silent]]，不需要`q`退出
   - `git config --unset user.name`这种：去除键值对
+  - `git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -p 2221"`: [[ssh/ssh]]使用什么
+    - 替代手段：[[client-config#设置默认端口和key]]

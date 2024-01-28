@@ -9,4 +9,4 @@
 - [miniconda](https://www.codenong.com/49338902/)
   - `-b -p <PREFIX>`
 - [[generate-key-pair]]也有静默生成
-- [[config]]里，默认显示config列表按q退出，但你可以`xargs`给`printf`，就变成了直接输出
+- [[git-config]]里，默认显示config列表按q退出，但你可以`xargs`给`printf`，就变成了直接输出

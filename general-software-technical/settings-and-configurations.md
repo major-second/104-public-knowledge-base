@@ -10,7 +10,7 @@
        - 工作空间优先于用户级优先于系统级优先于默认
        - 当前跑的命令行参数优先于当前shell的[[6-env]]优先于文件里写的比如[[client-config]]
   - 例如[[settings-json]]中，打开的文件夹中`.vscode/settings.json`优先于用户级`settings.json`，又优先于默认设置
-  - 例如[[config]]中，`git config --local`优先于`git config --global`
+  - 例如[[git-config]]中，`git config --local`优先于`git config --global`
   - 例如[[administrator-powershell]]中`-Scope`小的优先于`-Scope`大的
   - 例如[[6-env]]，环境变量最小作用域进程，且同样是小的优先于大的
 - 设置方法是否相同：
@@ -48,7 +48,7 @@
       6. 类似的做法：[[bashrc]]中`source ~/.bash_env_0`，分成多个部分等
    6. 为了达成同一目的，可能有多个文件，之间可能具有“优先级”而出现一些值的覆盖，参考上一节“优先级”
 3. 用命令
-   1. 比如`git config`，参考[[config]]
+   1. 比如`git config`，参考[[git-config]]
    2. 比如`pip config set <key> <value>`命令，参考[[pip]]
       1. 注：不同版本可能具有的方式还不同。比如老[[version]] `pip`就没有`config`命令。需要装新版本。
    3. [[zsh]]的`setopt`

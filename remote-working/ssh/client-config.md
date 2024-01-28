@@ -23,4 +23,4 @@ Host <自定义名称>
 - `Host`和`HostName`相同，都是[[ip-address]]或域名
 - 则可用于
   - `ssh <user>@<ip>`直接成功
-  - git [[remote]]设置后，不需要[[config]] `core.sshCommand`等
+  - git [[remote]]设置后，不需要[[git-config]] `core.sshCommand`等

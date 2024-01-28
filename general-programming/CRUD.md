@@ -20,6 +20,6 @@
     - 当然，实际使用还要`conda activate <env name>`
   - `conda deactivate; conda env remove -n <env name>`
   - `conda env list`
-- [[config]]：`git config key.subkey value`，`git config --list`，`git config --unset key.subkey`
+- [[git-config]]：`git config key.subkey value`，`git config --list`，`git config --unset key.subkey`
 - [[systemd]]：`systemctl list-unit-files --type=service`，`sudo systemctl <start/stop/enable/disable/restart> ...`
 - [[associative]] `set`: `insert, erase`, `upper_bound, find, begin, rbegin`

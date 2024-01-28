@@ -73,7 +73,7 @@ done
   - 别忘了linux中改Inbound（[[v2raya]]：开启端口分享）
   - 别忘了这下绕过的ip除了`localhost`，还有相应的这个内网ip
 ### 其它读取自己独立设置的软件
-- 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[config]]
+- 有些软件读取自己设置而非系统设置。参考[[cmake]]，[[ros/installation]]，[[git-config]]
   - 有时嫌改这种设置太麻烦，可以改[[hosts]]或[[dns]]作[[temp-solution]]
 - 有些软件默认读系统设置或环境变量，但自己也可以独立设置，例如[[curl-wget]]中`curl -x`
   - 参考[[settings-and-configurations]]
