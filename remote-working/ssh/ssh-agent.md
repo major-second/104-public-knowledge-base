@@ -1,0 +1,7 @@
+- runs in the background and may store [[private-key-私钥]]
+- 可能[[settings-and-configurations]]层面覆盖你指定的`-i`之类的，导致confusing
+  - 特别比如[[github]]这种不同私钥会导致输出不同用户这种
+- [[CRUD]]
+    - `ssh-add <key>`: adding
+    - `ssh-add -l`: listing
+    - `ssh-add -D`: deleting all

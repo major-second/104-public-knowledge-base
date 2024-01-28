@@ -6,6 +6,10 @@
 - `/gcal`命令 [[CLI]]
   - `/gcal today`看今天，等
 - 但也有[[GUI]]可以设置event，邀请别人，发邮件等
+# [[standuply]]
+- 设置report名字后，`/run name`可以跑，并在slack收结果
+- `/standup [@user1 @user2] [#channel]` 相当于快速问卷
+  - 比如使用例子：`关一下服务器行不行`
 # [[gitlab]]
 - 参考[[gitlab]]
 # [[integration-webhook]]

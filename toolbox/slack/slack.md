@@ -3,9 +3,11 @@
   - windows
     - https://slack.com/intl/en-gb/downloads/instructions/windows
 - 当然也有网页版，移动版
-- 不同[[account]]可以有不同[[slack-workspaces]]，同一个账号也可以有不同[[slack-workspaces]]
+- [[account]]
+  - [[region-language]]：可能不能用部分国内邮箱。建议[[outlook]], [[gmail]]
+  - 不同[[account]]可以有不同[[slack-workspaces]]，同一个账号也可以有不同[[slack-workspaces]]
   - 无论网页版还是桌面都可以多开且边栏快速切换，比[[wechat-tips]]显然方便很多
-# 功能
+# 核心功能
 - 回复，reply in thread
   - 默认不在聊天框中出现
     - 只有点信息下的`1 reply`这种才能看到
@@ -17,8 +19,10 @@
   - 可
     - 编辑内容
     - 选择回复thread是否在聊天框出现
-  - 没有撤回，只能编辑成`.`
+  - 有段时间
+    - 没有撤回，只能编辑成`.`
     - 不能编辑成空！否则变成“删除线”
+  - 但202401可以删除了。编辑成空也自动变为删除
 - 自带拼写检查
   - 红色波浪线
   - 右键可修正
@@ -47,6 +51,9 @@
     - 一般回复
     - 对信息“表态”而非正式回复，作为话题终结，非常适宜
   - 别人不会收到提醒
+# canvas
+- 可以边栏看到canvas功能用于新建或者channel中新建，作为共同知识等
+- 和自己的聊天可以作为没有时效性的 [[dida]]等
 # 范围
 - 私信
   - 个人私信，给自己发东西作为草稿

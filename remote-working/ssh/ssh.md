@@ -12,3 +12,4 @@
   - [[forward-port]]：`-R`, `-L`
   - 只连接不打开shell：`-N`，常用于[[autossh]]
   - `-o StrictHostKeyChecking=no`：忽略检测对方（否则第一次连对方有一个`yes`确认）
+  - `-v` [[general-programming/logs#verbosity]]，比如[[private-key-私钥]]用的是哪个
