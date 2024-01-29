@@ -16,7 +16,7 @@
       - 完整（懒人最少bug版）的`xargs`命令用法：参考[[md5sum]]的`find . -type f -print0 | sort -z | xargs -0`
       - 一是排序，让`md5sum`有确定性
       - 二是人为指定分隔符，避免空格出问题
-- 其它`grep`用法
+- 其它`grep`用法 [[command-line-flags]]
   - `-C`看上下文（比如[[fsck]]的emergency mode中救命，可关键了）
   - 使用[[regex]]
     - 比如`nvidia-smi | grep '[4-7]\s\+T'`只看后4张卡

@@ -1,0 +1,3 @@
+- [[pep8]]
+- [[vscode-keyboard-shortcuts]]: `shift alt f`
+- [[linting]], [[ruff]]

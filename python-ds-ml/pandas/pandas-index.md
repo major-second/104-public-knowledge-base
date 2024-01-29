@@ -52,6 +52,12 @@
   - 来自[[time-series]]
   - `opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0, parse_dates=True)`
   - `0`号栏此时对应`Date`
+- `df.set_index(<col name>)`
+  - 当然也有是否[[inplace]]之分
+- `df.reset_index()`
+  - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reset_index.html#pandas.DataFrame.reset_index
+  - `drop=False`：默认。丢掉的index作为普通列留下
+- [[reindex]]
 ## `.values`
 - `.values`取出具体数值
   - 是[[numpy-basics]]的数组，于是可进行`numpy`的索引等操作，参考[[numpy-basics]]

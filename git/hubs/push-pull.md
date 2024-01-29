@@ -9,6 +9,12 @@
 4. Use command such as"init","pull","clone","commit -m", and"push", [reference](https://blog.csdn.net/weixin_42449339/article/details/112410926)
    1. 也可以先[[init]], [[commit]]，先没有任何remote，之后再加，参考[[remote]]
    2. 这里特别注意是否加`-u`或`--set-upstream`，参考[[remote]]
+# pull
+- `--recurse-submodule`选项：可递归pull [[submodule]]
+- 多个分支
+  - 可能需要指定`git pull origin main`这种
+  - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
+  - [[checkout]]结合：`git checkout main; git pull`
 # 其它
 - [[reset]]再`push --force`
   - 可以减少显示的[[commit]]的数量
@@ -23,7 +29,3 @@
   - 注意前提是[[checkout]]到你想要的[[git-basics/branch]]
   - 这时往往可加`--set-upstream`参数：关联本地branch和远程branch，之后就只需`git push`即可，在[[git-basics/branch]]也提到了
   - `git pull`也是同理（包括`checkout`，`--set-upstream`等逻辑）
-- `git pull`命令变种
-  - `--recurse-submodule`选项：可递归pull [[submodule]]
-  - [pull所有分支](https://blog.csdn.net/wu1169668869/article/details/83345633)
-- 如果你有多个分支，那需要指定`git pull origin main`这种，才把本地的`main`也同步到对应`origin/main`的位置

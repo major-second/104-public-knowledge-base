@@ -7,7 +7,7 @@
   - linux系统的[[CRUD]]
     - 不同时期可能不同。时至2023.3
     - 增：`wsl --install`
-      - 第一次运行需要[[administrator-powershell]]
+      - 第一次运行需要[[administrator-powershell]]，也就是先开启功能。以后可能就好了
       - 例如`wsl --install -d Ubuntu-20.04`指定distro
     - 删：`wsl --unregister Ubuntu-20.04`即可
     - 查：`wsl --list`

@@ -1,0 +1,6 @@
+- [参考](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reindex.html#pandas.DataFrame.reindex)
+- 形状变成新的，内容尽量维持原来
+  - 可以改变顺序，粒度，范围……
+  - 和[[pd-timestamps]]肯定可以结合
+- `reindex_like`：联想[[numpy-basics]]的`zeros_like`等，输入的不是[[pandas-index]]而是目标长得像的`df`
+- 但是总体上index的column没变，所以和[[pandas-index]]的`reset_index`接`set_index`完全不是一个

@@ -13,3 +13,7 @@
   - 自动：例如本地`just mypy`这类命令行跑一下（你本地不跑，上云还得跑）
     - 自动不通过就没有手动了
   - 手动：设置Reviewer有哪些，这些人会自动收到邮件等
+# [[merge]]
+- 常见merge后删除[[remote]]的branch
+  - 此时本地可以选择删除本地+“本地显示remote”的对应branch使得简洁
+  - 否则有时可能有confusing 现象，比如明明已经merge，因为remote已经删除，所以显示没有merge，而且[[push-pull#pull]]也不动
