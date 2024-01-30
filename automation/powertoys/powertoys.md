@@ -22,3 +22,4 @@
   - [[windows/env-var]]
   - [[regedit]]
 - [[power-options]]：stay awake
+  - 点进去有更多设置（比如常亮）浪费哈哈

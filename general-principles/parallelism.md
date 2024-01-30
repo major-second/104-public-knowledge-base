@@ -1,6 +1,7 @@
 - 参考
   - [[map-reduce]]
   - [[vectorized-operation]]
+  - [[blocking-run]]
 # [[tradeoff]]
 - 速度：GPU > CPU的[[numpy-basics]]运算 > python的完全`for`循环串行（臭名昭著慢）
 - 所能承载的数据量：一般相反。例如服务器上显存往往在10G量级，内存[[memory]]往往在100G量级

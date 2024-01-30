@@ -6,3 +6,5 @@
     - 例如`sleep 10`, real time 多，cpu time几乎没有
 - `ulimit -t`
   - 改变此shell的[[cpu]] time上限
+- schedule任务batch，短的长的放一起可能导致 mis-syncronization，以及浪费……
+  - 这肯定是浪费啊，你如果只run短的可能五分钟run完了。如果短的长的一起可能两个小时才能取出全部结果。没必要！
