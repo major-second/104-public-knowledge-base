@@ -3,6 +3,7 @@
   - [[design-overview]]用来看例程
 - 参考
   - https://docs.mosek.com/9.3/pythonfusion/case-studies-portfolio.html#
+  - [[kelly-criterion-凯利公式]]
 - 基本遵从[[3-3-3-markowitz]]解说，加了一些细节
   - 是否能做空决定是否有$x_j\ge 0$约束
   - [[cholesky]]分解是写成[[3-2-conic-quadratic-modeling]]的一种选择，但不唯一，别的可能更快

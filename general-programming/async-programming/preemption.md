@@ -1,0 +1,3 @@
+- [[async-programming]]
+  - [[async-await]]没有，所以必须多释放，不能一个[[coroutine]]一直占，否则你就有的进不来了
+- [[linux-kernel]]有patch可以设置

@@ -14,7 +14,11 @@
 - 参考[[gitlab]]
 # [[integration-webhook]]
 - legacy / will be deprecated
-- 被slack apps替代
-- 名称：Incoming webhooks
-  - 例如[[gitlab]]可以用，设置中有slack
+- 被gitlab slack apps替代
+  - 但是对于内网的gitlab还是没法替代hhh
+- 名称：Incoming webhooks. 搜索这个名字的app选择channel给出[[integration-webhook]]然后复制给别人
+  - 例如[[gitlab]]可以用，设置中有integration版块，可以复制hook过来
   - 这样[[push-pull#push]]时会自动通知
+# [[chatgpt]]
+- 搜索`gpt`，有个名字叫`Q`的就是集成在 slack中的 chatgpt
+- 可以 `@`它问问题，thread中回复，转发内容等，很方便

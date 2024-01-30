@@ -1,0 +1,5 @@
+- [wiki](https://en.wikipedia.org/wiki/Kelly_criterion)
+  - [[utility-function]]
+    - 针对$U(x) = Elog(X)$优化，而不是针对$E(X)$优化
+    - [[general-principles/special-case]]: $U(0)=-\infty$，符合直观（不想输光）
+- 例题[[2-brain-teasers#8-vs-5-game]]

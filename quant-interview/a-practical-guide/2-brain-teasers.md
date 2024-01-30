@@ -65,6 +65,13 @@
 ### 乒乓球胜利
 - 一个序列，乒乓球每次谁嬴谁输，比如`aabbbaaa`等等，[[oi-wiki-basic/simulate]]可以得到赢输
 - 脑筋急转弯：直接看最后一个点即可，xs
+### 8-vs-5-game
+- 一个游戏，输赢概率各一半，赚钱赚80%，赔钱赔50%
+- 你不能每次都allin啊要不然稳亏。只要
+  - [[kelly-criterion-凯利公式]]一下，可以稳赚
+  - [[10-bet-sizing]]
+  - 优化$Elog(outcome)$
+  - 所以$\frac {log(1+.8x)+log(1-.5x)}2$最大，要求$\frac{.8}{1+.8x}=\frac{.5}{1-.5x},x=\frac 38$
 # 2.4 Application of Symmetry
 - coin piles
   - 无需等分。只需拿出20个，把它们都翻面即可

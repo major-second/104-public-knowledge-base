@@ -1,1 +1,3 @@
 - [data dependency management](https://en.wikipedia.org/wiki/Package_manager#Data_Dependency_Management)
+- [示例工具](https://amplitude.com/blog/data-dependency)
+- [参考文章](https://alirezasadeghi1.medium.com/techniques-for-managing-dependency-between-data-pipelines-a2f18d28757)
