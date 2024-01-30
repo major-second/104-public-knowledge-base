@@ -8,4 +8,4 @@
     - `apt`
 - [wiki](https://en.wikipedia.org/wiki/Package_manager)
 - 相当于软件包的[[CRUD]]
-- 拓展：[data dependency](https://en.wikipedia.org/wiki/Package_manager#Data_Dependency_Management)
+- 拓展：[[data-dependency-management]]

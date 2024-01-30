@@ -5,8 +5,9 @@
       - Flash小游戏这种，你本地变位置，存档就没了
     - 但是有`portable`标记的当然就可以
 - 文件间依赖关系
-  - [[makefile]], [[cpp-so]]
-- data dependency (todo)
+  - [[makefile]]
+  - [[cpp-so]]
+- [[data-dependency-management]] (todo)
   - 哈哈，[[code-data]]
 - 版本依赖
   - 参考[[version]]
@@ -28,4 +29,3 @@
       - linux先`sudo apt install libopenmpi-dev`使得有`mpi.h`头文件等
       - windows可以搜索安装microsoft mpi![](microsoft-mpi.png)
   - [[repo-structure]]内部也有一些文件夹/文件上层，一些底层。底层的`core.py`等改得太频繁被称为[[ad-hoc-hacky-dirty]]
-- data dependency
