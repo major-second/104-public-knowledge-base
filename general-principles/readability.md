@@ -4,9 +4,11 @@
 - 写文档，并考虑[[read-doc]]读文档者感受
   - 给用户的文档
   - 给开发者的需求文档（怎么当好甲方）
+- [[help]]
 - [[general-programming/logs]]
 - [[naming#convention]]
 - [[repo-structure]]
+- [[gui]]
 # presentation
 - focus more on your progress since last update
 - 参考[[minimum-beamer/README]]

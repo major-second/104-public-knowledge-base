@@ -1,5 +1,24 @@
 - 底层有[[rcc]]
 - https://aka.ms/powertoys
   - 包括“长路径”相关设置也有
-- 默认`win shift /`展现快捷键
+- 不开机启动则这些用不了
+# 常用快捷键
+- `win shift /`展现快捷键 [[help]]
+  - 一些[[win-key]]原生快捷键
 - `win shift T` [[ocr]]
+  - 但官方这里还是推荐[[win-key]]原生的
+- `Alt space`快捷栏
+  - 好用例如
+  - `<`切换窗口
+  - `$`搜索设置
+- [[powertoys-keyboard-manager]]可以自定义快捷键
+- 双击左`ctrl` highlights mouse, 在[[multi-display]]很有用
+- `win ctrl T`置顶
+  - 但如果“敌方”是本就全屏的[[remote-desktop/citrix]]则还是打不过，xs
+    - 说明全屏还是不一样。[[remote-desktop/citrix#keyboard shortcuts]]也是啊
+# 非快捷键 utilities
+- [[settings-and-configurations]] [[gui]] wrappers
+  - [[hosts]]
+  - [[windows/env-var]]
+  - [[regedit]]
+- [[power-options]]：stay awake

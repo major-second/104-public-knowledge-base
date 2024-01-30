@@ -54,9 +54,15 @@
    3. [[zsh]]的`setopt`
    4. 用命令很多时候等价于封装了的方法2（直接编辑文件）
    5. [[pd-set-option]]跟这个很像，不过是python而不是shell
-4. 用GUI设置
-   1. Windows的属性、控制面板、[[start-menu]]搜索等
-   2. Ubuntu的Settings
+4. [[gui]]
+   1. 好处：直观易懂 [[readability]]
+   2. 往往经过包装。底层是其他方法
+   3. Windows
+      1. 属性
+      2. 控制面板
+      3. [[start-menu]]搜索
+      4. [[powertoys]]更上层包装
+   4. Ubuntu的Settings
 5. 用一些定制好的界面（UI），修改文本文件，比如[[linux-kernel]]里的
    1. 本质上效果就是编辑文本。但是有界面，比较方便安全
 6. 有意思的：windows10有Settings和Control Panel共存（历史遗留问题）

@@ -1,11 +1,17 @@
-和`windows`键相关的快捷键
-当然[[built-in-keyboard-shortcuts/window]]也提到一些
+- 和`windows`键相关的快捷键
+  - 当然[[built-in-keyboard-shortcuts/window]]也提到一些
 
 - `Win` + `+/-`：整体的放大缩小（以当前鼠标位置为中心）
 - `Win`键打开开始菜单
 - `Win + L`锁定（然后可以擦屏幕、键盘等）
 - `Win + A`在win11调出面板，有wifi，[[bluetooth-basics]]，[[devices/battery]]查看等，第二次收起
-- `Win + Shift + S`截图，截到后自动到剪贴板，且能和[[win-key#win-v]]结合
+- `Win + Shift + S`截图，截到后自动到剪贴板
+  - 且能和[[win-key#win-v]]结合
+  - 下方也有提取文字[[ocr]]功能
+    - 竞争对手
+      - [[wechat-tips]]发出后直接图中拖动复制
+      - [[powertoys]]
+      - [[apple-photo]]
 - `Win + H`语音[[region-language#IME]]
 - `Win + S`搜索，在[[robocorp-windows]]用到
 # win-v
