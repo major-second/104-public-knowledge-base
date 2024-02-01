@@ -1,3 +1,11 @@
 # general-principles
 - [[estimation#抓大放小]]
-- [[inequalities#放缩到界]]肯定很容易浪费。比如本来应该[[inequalities#十字放缩]]的东西（有的空间大时间短有的相反），不好！此时应当拆分任务
+  - 例如典型的服务器上，[[cpu]]运算慢但内存大，[[gpu]]运算快但显存小
+    - 所以[[linalg]]中“最小二乘”`lstsq`这种场景往往只能用cpu（batchsize往往几百万等，无法放到[[gpu-memory]]），且比较慢
+      - “只能用cpu”是硬约束了
+    - 网络的并行运算（每个batch例如几千）则用`gpu`
+    - 但batch要是太小就又是`cpu`快了（比如可能有传输损耗）
+- [[inequalities#放缩到界]]肯定很容易浪费
+  - 本来应该[[inequalities#十字放缩]]的东西（有的空间大时间短有的相反），应当拆分任务
+- 找到瓶颈 [[bottleneck]]
+  - 举例：[[deep-learning-basics]] train相比test [[gpu]] / [[i-o]]显然多很多，所以可以合理安排 train / test，合理[[parallelism]]增大总效率

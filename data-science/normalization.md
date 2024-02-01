@@ -9,6 +9,9 @@
   - [参考preprocessing](https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing)
 - 是[[feature-engineering]]方式
 - 目标是使得分布满足特定形式，如均匀、[[normal]]，或[[moment]]满足指定条件……
+  - 总体讲肯定就是两类方法：你想要 A -> B嘛
+    - 那要不然直接到B，比如[[character/quantile]]
+    - 要不然 A + (B - A)，比如[[normalization#减去均值]]
 - [参考](https://en.wikipedia.org/wiki/Normalization_(statistics))
 # 丢失信息
 - norm往往会丢信息，关键是这个信息是不是有用的

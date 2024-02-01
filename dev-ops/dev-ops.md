@@ -7,6 +7,6 @@
   - [[ci]]
     - [[lint]]
     - [[test-suite]] [[pytest]] [[comparison]]
-  - [[resource-consumption]]
+  - [[resource-management]]
   - [[automation]]
   - [[integration-webhook]]

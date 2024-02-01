@@ -3,4 +3,8 @@
 - 例如
   - `df['dtime'] = df['dtime'].apply(lambda x: x.replace(tzinfo=None))`
     - 去除[[pd-timestamps#tzinfo]]
-  - `df.apply(...)`类比[[apply-along-axis]]，函数要求输入一元。但输出类型灵活
+  - `df.apply(...)`类比[[apply-along-axis]]
+    - 但函数要求输入是一元的
+    - 输出类型灵活
+    - 慢！
+      - 拓展：[[groupby]]和这个类似，不过输入dataframe. 慢也慢！

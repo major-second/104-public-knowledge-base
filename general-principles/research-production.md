@@ -1,0 +1,4 @@
+- 节约各种[[resource-management]]
+  - 特别地：人的时间！快速迭代
+- [[general-programming/debug#加快迭代]]
+- 代理指标，不精确，[[estimation]]

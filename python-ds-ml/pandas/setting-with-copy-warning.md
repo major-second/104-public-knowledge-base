@@ -1,0 +1,12 @@
+- 前置
+  - [[general-copy]]
+  - [[warning]]
+  - [[pandas-loc]]
+- [参考](https://stackoverflow.com/questions/20625582/how-to-deal-with-settingwithcopywarning-in-pandas)
+  - 错误：`df[df['A'] > 2]['B'] = new_val`
+  - 正确：`df.loc[df['A'] > 2, 'B'] = new_val`
+  - [[false-positive]] warning
+    - `df = df[df['A'] > 2]`
+    - `df['B'] = new_val`
+    - 所以换名字可能就不会warning了
+- `pd.options.mode.chained_assignment = None`忽略[[warning]]

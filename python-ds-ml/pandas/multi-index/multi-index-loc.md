@@ -2,10 +2,14 @@
   - [[multi-index]]
   - [[pandas-loc]]
   - [[pandas-index]]
+- [文档](https://pandas.pydata.org/docs/user_guide/advanced.html)
+
 - 基础
   - 推荐：`df.loc[("bar", "two")]`
     - 相比`df.loc['bar', 'two']`歧义小
-    - 注意和输入list语义不同！list导向[[pandas-index#列CRUD]]
+    - 注意和输入list语义不同！
+      - > Or in other words, tuples go horizontally (traversing levels), lists go vertically (scanning levels).
+      - 注意，这里loc本来用来取row，所以它这么说。在取列时，horizontally和vertically是相反的
   - “首层”
     - `df.loc["bar"]`
   - 连续段（slice）

@@ -16,6 +16,7 @@
 - `win ctrl T`置顶
   - 但如果“敌方”是本就全屏的[[remote-desktop/citrix]]则还是打不过，xs
     - 说明全屏还是不一样。[[remote-desktop/citrix#keyboard shortcuts]]也是啊
+  - 可以多选！
 # 非快捷键 utilities
 - [[settings-and-configurations]] [[gui]] wrappers
   - [[hosts]]

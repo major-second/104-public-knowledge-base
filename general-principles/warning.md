@@ -12,8 +12,7 @@
   - [[android/battery]]提到冷天手机电量显示，“显示30%突然关机”，不行！
 - 所以很多包会在一些能运行但实际上很容易导致错误的场景中提醒你
   - 例如`(4096, 1)`形状和`(4096,)`形状张量算loss会出现[[broadcast]]导致的错误，这时torch会报警
-- 如果你明确了自己在干什么，也可以无视警告
-  - 例如[[tensorboard]]旧版本，vscode报警可以不管
+- 如果你明确了自己在干什么，也可以无视警告（disable）
   - 例如[[software-management/source]]提到的`is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list:20`
   - [[settings-json]]
     - `"terminal.integrated.enableMultiLinePasteWarning": false,`
@@ -21,3 +20,4 @@
   - [[py-warnings]]
       - `from warnings import filterwarnings`
       - `filterwarnings('ignore', message='DataFrame is highly fragmented*')`
+  - [[setting-with-copy-warning]]

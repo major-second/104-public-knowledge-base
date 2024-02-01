@@ -20,3 +20,4 @@
   - 常用：`A, B`上下加，`Y, M`改性质
   - `C, X, Z, V, Shift+V`就是`Ctrl+`相应键的意思
   - `双击I, 双击0`暂停和重启
+- 在[[jupyter-notebook]] vscode插件中？大同小异
