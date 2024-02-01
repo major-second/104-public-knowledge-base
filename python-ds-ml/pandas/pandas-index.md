@@ -34,6 +34,11 @@
     - 例如做两个变量间的[[regression]]时，如果只需要[[dropna]]涉及他俩的`NaN`，而不需要全部drop，就需要此“子”数据集
     - 也可以用[[ordered-dict]]思想，即`df[df.columns[0]]`这种
   - [[regex]]: `df.filter(regex=("d.*"))`
+- 列的其他好处
+  - 可以使用`.attribute`语法，比`['attribute']`看起来好看
+  - [[meta-programming]] using backends
+    - [[pandas-query]]
+    - [[pandas-eval-expr]]
 ## 行[[CRUD]]
 - 主要参考[[pandas-loc]]
 ## `.index`属性

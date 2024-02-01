@@ -1,5 +1,11 @@
-- [[slack]]
+# general
+- 前置
+  - [[slack]]
 - 安装：`<name>.slack.com/apps`下属url
+  - 注意选择[[slack-workspaces]]
+- general用法
+  - 可以在app 的 pane选择相应图标直接对话
+  - 可以 `@`进channel参与。例如[[slack-extensions#chatgpt]]
 # [[tools/zoom]]
 - `/zoom`等命令，聊天框中创建会议，加入等等
 # [[google-calendar]]

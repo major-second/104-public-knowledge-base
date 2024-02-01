@@ -5,3 +5,5 @@
     - 注意脚本运行时的路径不一定等于`$PSScriptRoot`，所以很多时候可以一来`cd $PSScriptRoot`，这是一种[[reduction]]
       - 类比[bash](https://blog.csdn.net/10km/article/details/51906821)的`$(cd $(dirname $0); pwd)`
   - 在[[interactive-terminal]]中，输出空
+- `$home`相当于你敲`~`但是自动展开
+  - [[windows/env-var#path]]中，需要用`$home`而不是`~`

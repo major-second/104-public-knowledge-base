@@ -8,7 +8,7 @@
   - 在[[dev-env]]中也会带来错误
   - 对`echo "\\n"`的输出结果和[[11-basic-scripting-partA]]讲的不同
   - 对`sudo apt remove *nvidia*`的结果也不同
-  - [[franka-ros-interface]]只能用`bash`
+  - [[franka-ros-interface]]一些包开发时不谨慎，导致只能用`bash`
 - [[proxy-basics]]讲到有些地方开了代理就上不了
 - 装多东西，[[compatibility]]被破坏
   - [[nbextension]]可能导致[[jupyter-tqdm]]中`tqdm_notebook`用不了（不兼容）
@@ -23,5 +23,6 @@
   - 有时可能收不到邮件，网页版邮箱可以
 - [[multi-display]]
   - 拔出变成单屏可能导致部分程序消失，必须重连[[multi-display]]拖到主屏解决
-- [[debug-console]]
+- [[debug-console]]，特别是[[breakpoint]]
   - 占用内存多几倍。如果[[memory]]要求大，大任务，就别开vscode调试
+- [[windows/env-var]]讲的[[cursor-ide]] [[terminal]]错误留存很久环境变量，必须关掉重开才能更新

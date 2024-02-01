@@ -1,0 +1,4 @@
+- [[meta-programming]]
+  - 联系[[pandas-eval-expr]]
+- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.query.html#pandas.DataFrame.query
+- `df.query('A > B')`
