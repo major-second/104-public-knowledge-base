@@ -1,0 +1,20 @@
+- 前置
+  - [[multi-index]]
+  - [[pandas-loc]]
+  - [[pandas-index]]
+- 基础
+  - 推荐：`df.loc[("bar", "two")]`
+    - 相比`df.loc['bar', 'two']`歧义小
+    - 注意和输入list语义不同！list导向[[pandas-index#列CRUD]]
+  - “首层”
+    - `df.loc["bar"]`
+  - 连续段（slice）
+    - `df.loc[("baz", "two"):("qux", "one")]`
+- 使用[[python-slice]]
+  - `dfmi.loc[(slice("A1", "A3"), slice(None), ["C1", "C3"]), :]`
+    - 注意这里需要区分[[series-dataframe]]了
+      - 对于二维，总体来说都需要`.loc[<row_indexer>, <column_indexer>]`
+      - 否则就是`.loc[<row_indexer>]`
+  - 更native：
+    - `idx = pd.IndexSlice`
+    - `dfmi.loc[idx[:, :, ["C1", "C3"]], idx[:, "foo"]]`
