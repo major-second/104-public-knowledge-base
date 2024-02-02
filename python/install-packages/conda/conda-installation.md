@@ -17,6 +17,7 @@
         - `<path\to>\Anaconda3\bin`
         - `<path\to>\Anaconda3\condabin`
       - 再手动`conda init powershell`类似[[conda-installation#Linux]]
+        - 此时可能弹出安全提示，必须同意才能生效
 - 开始菜单搜索`Anaconda Prompt`，里面就可以用[[conda/commands]]
   - 当然为了方便，可以把快捷方式发送到桌面
   - 这个`Prompt`能用conda的[[conda/commands]]和`cd`、`python`等命令，但不能`ls`等，所以说和linux终端还是不同
