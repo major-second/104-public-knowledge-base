@@ -21,6 +21,7 @@
   - 参数`"args"`
     - 这样就不用每次重新复制长串命令
     - 例如本来的参数列表为`--id 1 --learning-rate 0.0001`，对应的你要写成`"args": ["--id", "1", "--learning-rate", "0.0001"]`
+    - `"args": "${command:pickArgs}"`：手动输入
   - `"justMyCode": false`：逐步运行进第三方库
   - `"python"`
     - 指定[[python-interpreter]]

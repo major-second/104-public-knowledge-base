@@ -7,3 +7,4 @@
 2. vscode集成安装：安装指定[[vscode-extensions]]
   > Install extensions. Robocorp extensions will take care of all the dependencies you need to develop robots. Install both the **Robocorp Code** and **Robot Framework Language Server** extensions for Visual Studio Code from the Visual Studio Marketplace to get full benefits.
 - 可选：[[rcc]]
+- 参考：[[powertoys]]
