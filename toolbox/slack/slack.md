@@ -57,6 +57,7 @@
 # canvas
 - 可以边栏看到canvas功能用于新建或者channel中新建，作为共同知识等
 - 和自己的聊天可以作为没有时效性的 [[dida]]等
+- 多人可以共同编辑，也会有 [[share-lock]]，但可以右键 take over
 # huddle
 - 语音交流
 - 可以给出系统级通话来信类似[[whatsapp]]
