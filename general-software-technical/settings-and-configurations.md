@@ -72,3 +72,8 @@
 - [[temp-solution]]
 - 例子
   - `KEY=VALUE commmand`
+## 硬件校准
+- 麦克风，扬声器，触屏等和现实世界结合。设置不在纯 in-silico 里
+- 举例
+  - [[multi-display]]：校准哪个系统里识别的屏幕是哪个触屏
+  - 投影仪：平行四边形/梯形等校准

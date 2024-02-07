@@ -18,6 +18,7 @@
     - 如果你的`.ipynb`引用的一些`.py`中的东西变化了，你应该`Restart`才能使得生效
     - 注：`.ipynb`中代码变化当然不需要`Restart`
 - feature
-  - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径
-  - 解决方法参考[[sys-path]]和[[vscode/settings]]中有关`pylance`的部分
+  - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径。和[[run-jupyter]]不同。这就是[[non-standard]]
+  - 解决方法参考[[sys-path]]和[[settings-json]]中有关`pylance`的部分
     - 两者一个是处理实际能不能跑，一个是让静态分析能找到包
+  - [[cursor-ide]] 202402: 触屏上下滑动？可能只能在代码段用，output段用不了，但左侧边栏滑动和右侧滚动条拖动仍可以

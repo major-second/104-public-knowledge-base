@@ -1,6 +1,8 @@
 - 笔记本接显示器后可以有许多模式，最常见的是"extend"
   - 各种模式的含义示例如图![](display-mode.png)
-  - 该界面由笔记本的某个[[fn-keys]]控制。此设置优先于下一步提到的设置
+  - 该界面可以
+    - 由笔记本的某个[[fn-keys]]控制。此设置优先于下一步提到的设置
+    - 由 [[win-key]] `win + P`快速切换
 - [[fn-keys]]控制显示模式合适后，桌面右键`Display settings`可以做进一步设置
   - ![](extend-arrangement.png)
   - 可以选择左右或上下排列
@@ -19,3 +21,6 @@
     - [[powertoys]]
       - 双击ctrl可以聚焦
         - 但有cooldown
+- 触屏绑定
+  - 作用：避免失灵，错位张冠李戴等刚刚设置 display settings 时常见现象
+  - [参考](https://www.dell.com/support/kbdoc/zh-cn/000132341/windows-8%E5%92%8C10-%E5%85%B7%E6%9C%89%E5%A4%9A%E4%B8%AA%E8%A7%A6%E6%91%B8%E6%98%BE%E7%A4%BA%E5%99%A8%E6%97%B6%E7%9A%84%E8%A7%A6%E6%91%B8%E5%B1%8F%E5%8A%9F%E8%83%BD%E9%97%AE%E9%A2%98)

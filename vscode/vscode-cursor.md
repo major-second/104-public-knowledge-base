@@ -32,7 +32,6 @@
   - `cursor`命令而非`code`命令
 - 毕竟还不成熟, [[non-standard]]
   - 可能有些[[vscode-extensions]]不如原版上线快，原版vscode能用这里不能用
-    - 比如[[github-copilot]]
+    - 比如[[github-copilot]]有段时间是的
   - 可能有些额外的bug，vscode没有
-    - 202311: [[robocorp]]存在下[[launch#launch-json]]设置[[python-interpreter]]可能无效
-  - 坐等[[general-software-technical/upgrade]]
+  - 坐等[[general-software-technical/upgrade]]，不断更新进步

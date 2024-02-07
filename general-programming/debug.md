@@ -7,8 +7,11 @@
   - [[general-programming/logs]]等文件
 - 调试器
   - 终端
-    - `ipdb`
+    - [[python]]
+      - `ipdb`
+      - [[pdb]]
     - [[gdb]] [[cpp-debug]]
+    - 一般性能更好。相比 [[vscode]] [[cursor-ide]]等，不会成太多倍数消耗 [[memory]]等
   - 编辑器例如[[vscode]]
     - [[debug-console]]
     - [[vscode-python]]

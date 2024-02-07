@@ -1,4 +1,5 @@
 # [[monte-carlo]]
+- [[stochastic-simulation]]
 - 理论基础[[LLN]]
 - 实际应用：比如模拟一堆股价路径看期望，应用于[[6-option]]定价
   - 对于欧式期权可以直接模拟一步到位。一般来说不能这样
@@ -7,10 +8,10 @@
     - [[monte-carlo]]提到接受拒绝采样
     - 放缩一下，知道正态pdf除以一个好生成的pdf $\lambda e^{-\lambda x}$不超过……
     - 生成单边再分给两边即可
-  - 法二：生成分位数
+  - 法二：生成[[character/quantile]]，利用[[random-variable-functions#cdf]]
     - $U=F(X)$，$F$是正态cdf，$X$是正态随机变量，则$U$显然是均匀随机变量
     - $X=F^{-1}(U)$即得
-- 减少[[variance]]，加快收敛速度
+- [[variance-reduction]]，加快收敛速度
   - 原始naive法：方差和次数成反比
   - antithetic：让$Y(\epsilon_1, \cdots, \epsilon_N)$和$Y(-\epsilon_1, \cdots, -\epsilon_N)$总是一起出现，因为两者实际中往往负相关
   - moment matching: 均值和方差去match指定值
