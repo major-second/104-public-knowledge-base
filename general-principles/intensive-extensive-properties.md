@@ -5,7 +5,9 @@
 - 温度，密度……
 - 状态
 - [[snapshot]]
+- 参考[[category]]，很多时候intensive不是“定比”
 # extensive
 - 广延量
 - 长度，质量……
 - [[trade-data]], [[traded-volume]], [[turnover-换手]]
+- [[weighted-average]]常用逻辑：权可加、定比等，另一个可能是intensive等

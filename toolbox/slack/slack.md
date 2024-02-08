@@ -70,5 +70,6 @@
     - “锁”图标：private group
   - 大群交流
     - 小心打扰别人
-# 插件
+# 其他
+- [[settings-and-configurations]]：例如手机电脑 notification settings可以不同
 - [[slack-extensions]]

@@ -13,3 +13,9 @@
 # 无监督预训练
 - 如[[nlp-pretrain]]
   - 预训练的目标往往就不直接是需要的目标了，而是一个容易制造数据不需要标注的目标
+# [[synthetic-dataset]]
+- 参考[[regularization]]
+- synthetic数据肯定效果没那么好，但对结果有增益。类比augment
+- 例子
+  - [[sim-to-real]]
+  - 用opening auction信息量大的有类似效应的数据加入closing auction prediction task

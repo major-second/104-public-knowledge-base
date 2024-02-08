@@ -1,2 +1,5 @@
 - [[stochastic-simulation]]
-- [[7-numerical-methods]]
+- [[7-numerical-methods#monte-carlo]]
+- 联想 [[variance#可加性]]，[[central-limit]]，理解`reduction`含义
+- 例如[[monte-carlo]]变成 [[quasi-monte-carlo]]就是一种方法，方差下降更快
+  - [参考](https://en.wikipedia.org/wiki/Quasi-Monte_Carlo_method)

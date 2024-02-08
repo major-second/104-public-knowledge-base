@@ -2,6 +2,9 @@
     - [[web-api]]
     - [[hook]]
     - [[github]], [[gitlab]]
-    - 例如[[gitlab]]有 integration / webhook两个东西
+    - [[github]]
+      - https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks#creating-a-repository-webhook
+    - [[gitlab]]
+      - 有 integration / webhook两个东西
       - integration比较系统化，推荐
-        - 比如[[slack-extensions#integration-webhook]]
+        - 比如[[slack-extensions#integration-webhook]]就使用 integration
