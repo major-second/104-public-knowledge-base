@@ -1,5 +1,5 @@
 `vscode`毕竟本体还是编辑器，当然要掌握常见编辑技巧
-- 可以参考[[editting]], [[keys]]
+- 可以参考[[general-win-editting-keys]], [[keys]]
 - 有个Editor Playground教你常用技巧
   - 比如`Alt`多光标，`Alt+上下`移动行，`Alt+Shift+上下`复制行
     - 节省[[copy-paste]]剪贴板使用很好用

@@ -1,0 +1,3 @@
+- [S4](https://arxiv.org/pdf/2111.00396.pdf)
+  - [S4 code](https://github.com/state-spaces/s4)
+- [S5](https://arxiv.org/pdf/2208.04933.pdf)

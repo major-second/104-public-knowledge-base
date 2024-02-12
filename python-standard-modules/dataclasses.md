@@ -1,0 +1,5 @@
+- [[object-oriented]]
+- https://docs.python.org/3/library/dataclasses.html
+- 相当于自动生成`__init__`
+- 如果你除了标准的init还需要别的操作，那就`__post_init__`
+- 参考[[python/magic]]

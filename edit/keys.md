@@ -1,4 +1,4 @@
-- 参考[[editting]]
+- 参考[[general-win-editting-keys]]
 - `PgUp, PgDn, Home, End`（可加shift）
   - 可能需要参考[[fn-keys]]才能用
 - `Del, Backspace`

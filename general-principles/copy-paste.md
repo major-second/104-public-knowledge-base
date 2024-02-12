@@ -1,6 +1,6 @@
 # 日常使用中的复制粘贴
 ## 快捷键
-- [[editting]]的`Ctrl+C, Ctrl+V`（最常见）
+- [[general-win-editting-keys]]的`Ctrl+C, Ctrl+V`（最常见）
   - 还有[[win-key#win-v]]高级剪贴板
 - [[jupyter-hotkeys]]的`C, V`
 - shell中的`Ctrl+Shift+C, Ctrl+Shift+V`

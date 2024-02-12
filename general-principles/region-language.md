@@ -40,7 +40,7 @@
   - 例如windows如果一直用英文系统，那么自带[[zip-unzip]]工具压缩东西不能出现中文。替代方法：7-zip
 - 法语（键盘）造成麻烦
   - 默认法语键盘`w, z`对调，数字键也不是数字，等等
-  - 平时可能还好，碰到快捷键比如[[editting]]就有时候反应不过来……
+  - 平时可能还好，碰到快捷键比如[[general-win-editting-keys]]就有时候反应不过来……
 # IME
 - 输入法
 - Input Method Editor, IME

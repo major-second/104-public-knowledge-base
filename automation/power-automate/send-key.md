@@ -1,5 +1,5 @@
 前置：
-- 参考[[editting]]，[[built-in-keyboard-shortcuts/window]]，[[fn]]等快捷键
+- 参考[[general-win-editting-keys]]，[[built-in-keyboard-shortcuts/window]]，[[fn]]等快捷键
 - 了解[[keyboard-shortcuts]]等
 
 ## 用途
