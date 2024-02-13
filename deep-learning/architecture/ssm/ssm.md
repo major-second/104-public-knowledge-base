@@ -13,13 +13,9 @@
   - $y$: output
   - $A$等等：矩阵
   - $D$可以被[[data-science/residual]]掉，视为[[skip-connection]]，减少思考复杂度
+  - 进一步的，$y=Cx$也就是个投影（latent state -> output，[[encode-decode]]），所以核心就是$\dot x = Ax+Bu$了
 - 计算困难
-  - 直接爆算：相当于强行令 [[rnn]] hidden dim = input dim，没法[[dimensionality-reduction]]，所以计算量太大
-    - $N$: input
-    - $M$: hidden
-    - $L$: seq length
-    - 则 [[rnn]] naive版本 $O((NM+M^2)L)$，但 本模型出现 $N^2L$项
+  - 直接爆算复杂度太高
   - 通过算法降低复杂度也不行
     - 因为$A$的数值性质往往非常差，`highly non-normal in the linear algebraic sense`
-    - 直觉上和其有信息量有关
-    - 否则根据（高维）[[first-order-linear]]结论，容易知道结果“平凡”
+    - 参考：[[s4]]，核心是导致[[diagonalization]]而不是[[real-symmetric#spectral-theorem]]，则非正交矩阵，最大数值太大

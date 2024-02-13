@@ -4,7 +4,7 @@
 # 例子
 - [[fourier-transform]]
 - [[schmidt]]
-- [[real-symmetric#spectrum-theorem]]
+- [[real-symmetric#spectral-theorem]]
 - 对随机变量
   - [[chi-square]]
   - [[multi-ary#例题]]
@@ -32,3 +32,7 @@
     - $z=0$得到[[moment]]中心矩
     - $z=\bar x$得到[[moment]]原点矩或[[variance]]（“最小”）
   - [[maximum-likelihood-normal]]
+# 乘法变加法
+- [[cartesian-product]]
+- [[naive-bayesian]]
+- [[s4#architecture-details]]

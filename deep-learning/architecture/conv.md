@@ -1,1 +1,4 @@
 - [[symmetry#平移]]
+  - [[s4]]: 利用时间轴平移对称性，得到卷积
+- 加速
+  - [[fourier-transform]]

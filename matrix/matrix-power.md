@@ -1,0 +1,3 @@
+- [[real-symmetric#spectral-theorem]]
+- [[diagonalization]]
+- 应用[[s4]]
