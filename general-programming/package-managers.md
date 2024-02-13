@@ -10,3 +10,8 @@
 - [wiki](https://en.wikipedia.org/wiki/Package_manager)
 - 相当于软件包的[[CRUD]]
 - 拓展：[[data-dependency-management]]
+# source
+- [[region-language]]
+- [[proxy-basics]]
+- [[gfw]]
+- [[pip]] [[conda]] [[poetry-install]] [[software-management/source]]

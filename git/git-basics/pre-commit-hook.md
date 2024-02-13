@@ -1,1 +1,13 @@
-- [[hook]]
+- 前置
+  - [[hook]]
+  - [[commit]]
+  - [[pip]]
+- [文档](https://pre-commit.com/)
+- 安装
+  - `pip install pre-commit`
+  - 你的repo目录下 `pre-commit install`
+- 使用：参考文档
+  - 最简单
+  - 创建 `touch .pre-commit-config.yaml`
+  - 去里面，粘贴 `pre-commit sample-config`得到的简单东西
+  - `pre-commit run --all-files`检验

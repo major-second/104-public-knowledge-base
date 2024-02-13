@@ -1,0 +1,6 @@
+- [参考](https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option)
+- [[CRUD]]
+    - `poetry env list`
+    - `poetry env remove <current environment>`
+    - `poetry install`
+- [[refresh]]: 卸载后设置`poetry config virtualenvs.in-project true`，即可避免[[vscode-python]]找不到[[python-interpreter]]

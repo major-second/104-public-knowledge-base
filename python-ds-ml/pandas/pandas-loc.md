@@ -10,6 +10,11 @@
     - 如果df [[pandas-index]]没有被排序不放心切片，可以传入
       - > Conditional that returns a boolean Series
         - `df.loc[df['a'] > 10, ['a’, 'c']]`
+        - 拓展
+          - `df[df['symbol'].str.contains('USDT')]`
+          - `df['year'] = df['timestamp'].dt.year`
+            - 这是[[timestamps]]使用
+          - 总之就是减少[[pandas-apply]]，提高效率
       - > Multiple conditional using & that returns a boolean Series
         - 复杂的：可以先取出values再用[[numpy-bool-array]]操作
       - > Callable that returns a boolean Series
