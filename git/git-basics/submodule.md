@@ -52,6 +52,7 @@
 - 删除
    - `git submodule deinit <子模块目录> # 执行后子模块目录被清空`
    - `git rm --cached <子模块目录>`，参考[[git-rm]]
+     - 确认可直接删除也可以`git rm -r ...`
    - 可能需要手动修改`.gitmodules`
      - 但其实你不修改，也发现[[push-pull]]时不会涉及那个你删了的东西了
    - 当然也需要[[commit]], [[push-pull]]等更新

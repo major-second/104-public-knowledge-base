@@ -11,3 +11,6 @@
 - 右键，可以group, sort等
   - 比如常见的：group by type，sort by date，在[[apple-photo]]中有很多live photo时，导出时很有用
   - group之后按相应group可以选中所有
+# [[settings-and-configurations]]
+- 开始菜单 file explorer options
+- 可以选择是否可见隐藏文件（比如针对 [[git]]时有用），是否可见 [[file-format]]扩展名等
