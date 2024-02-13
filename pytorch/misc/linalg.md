@@ -17,7 +17,7 @@
       - 千万别用`val_h, val_y`做线性回归，否则就information leak了
       - 思想上是刚刚的几句
         - 但实际上如果你使用`pytorch_lightning`，不应该把它们都写到`validation_step`
-        - 而应当在`on_validation_start`这个[[hook]]处计算斜率截距，之后不再重复计算
+        - 而应当在`on_validation_start`这个[[pl-hook]]处计算斜率截距，之后不再重复计算
       - 和[[regression]]计算结果可能稍有差距
 - 注：想要bias比较麻烦，需要参考[[multi-ary]]手动操作
 ```python

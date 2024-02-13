@@ -1,3 +1,3 @@
 - `git commit -m 消息`
 - `--amend`在[[github-pr]]提到
-- `-n`忽略自动的[[hook]]
+- `-n`忽略自动的[[pre-commit-hook]]

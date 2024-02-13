@@ -1,0 +1,7 @@
+- [[callback]]
+  - https://stackoverflow.com/questions/11087543/what-is-the-difference-between-hook-and-callback
+- 例子
+  - [[pl-hook]]
+  - [[pre-commit-hook]]
+  - [[vscode]]等ide自动设置的，导致[[CRUD]]文件或文件夹特别慢但可自动化一些功能
+  - [[integration-webhook]]

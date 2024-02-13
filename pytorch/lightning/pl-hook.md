@@ -1,4 +1,6 @@
-- 前置[[lightning/basics]]
+- 前置
+  - [[lightning/basics]]
+  - [[hook]]
 - 基础
   - 除了`training_step`等最常见的待重载函数外，还有一些为了提升灵活性的hook
   - 在基类中运行到指定时刻，会调用hook，例如`on_validation_start`在每次`validation`开始前调用

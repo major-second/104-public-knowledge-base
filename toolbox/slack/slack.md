@@ -59,6 +59,7 @@
 - 和自己的聊天可以作为没有时效性的 [[dida]]等
 - 多人可以共同编辑，也会有 [[share-lock]]，但可以右键 take over
 - 快捷键：[[general-win-editting-keys]], 但是注意还原是`ctrl shift z`
+- [[non-standard]]：canvas毕竟不是核心功能。碰到过不良网络环境（公用）时DM没问题canvas有问题
 # huddle
 - 语音交流
 - 可以给出系统级通话来信类似[[whatsapp]]

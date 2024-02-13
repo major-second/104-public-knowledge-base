@@ -8,7 +8,7 @@
     - github enterprise
     - gitlab
     - 可能需要[[vpn]]
-    - 可能有公司定制的规则例如[[hook]], review制度等
+    - 可能有公司定制的规则例如[[pre-commit-hook]], review制度等
   - 例如你要存密码等重要信息（"key"），那就可以用[[keybase]]的hub功能
   - 例如[[my-own-vscode-extension#publish]]需要 [Azure DevOps](https://azure.microsoft.com/services/devops/)
 - 不同hub可以共享同样的[[https-ssh]]公钥

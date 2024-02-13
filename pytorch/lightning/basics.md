@@ -31,7 +31,7 @@
     - 可确保`val`可以正常进行，这是[[general-programming/debug]]的思想
     - 有时会带来一点小麻烦
       - 比如[[linalg]]中“最小二乘法”那里
-      - 比如你使用了[[hook]]，在`on_validation_end`这种地方记录[[tensorboard]]结果，那么sanity check本来是不该被记录的，却被记录了
+      - 比如你使用了[[pl-hook]]，在`on_validation_end`这种地方记录[[tensorboard]]结果，那么sanity check本来是不该被记录的，却被记录了
   - 训练过程中自动调用[[third-party-modules/tqdm]]（或jupyter中的[[jupyter-tqdm]]）显示结果
   - 定期自动存[[checkpoint]], [[pl-logs]]等，非常方便
     - 存、取、用checkpoint参考[[checkpoint]]

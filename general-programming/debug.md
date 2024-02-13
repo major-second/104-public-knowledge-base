@@ -61,7 +61,7 @@
 ## [[unittest]]
 - 如果几个bug堆到一起，会非常非常麻烦。例如一次经验
     - [[os-shutil]]提到的`os.listdir`不按顺序导致[[lightning/basics]]测试结果不按顺序
-    - 且[[lightning/basics]]中提到的sanity check导致多调用[[hook]]
+    - 且[[lightning/basics]]中提到的sanity check导致多调用[[pl-hook]]
     - 且[[unary]]中提到的把“总平方和”理解成了$y_i^2$忘了减平均值
     - 结果就是[[tensorboard]]出来的结果完全不能看，乱七八糟，而且怎么都de不出来
 - 例如[[jupyter-basics]]的原生在线用法不支持断点，所以要多分几段
