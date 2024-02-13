@@ -1,0 +1,11 @@
+- 参考
+  - [[generate-key-pair]]
+  - [[asymmetric-cryptography]]
+  - [[dot-ssh]]
+- 和[[private-key-私钥]]相对
+  - 更短
+  - 可以告诉别人
+  - 放到别的机器上往往是[[dot-ssh]]中的`authorized_keys`文件，在[[server-config]]中可以设置
+    - 注意也有[[7-permissions]]要求：`600`
+    - 且属主必须对，否则`chown`一下
+      - 常见问题：别人帮你创建的`.ssh`，属主不是你

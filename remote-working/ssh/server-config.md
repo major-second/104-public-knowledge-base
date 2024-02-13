@@ -20,7 +20,7 @@
     - 之后即可密码ssh到root
   - 密钥登录：一般只需维持默认设置
     - 但是可能要变`AuthorizedKeysFile`字段
-    - 之后**根据此字段**，把[[generate-key-pair]]中生成的`*.pub`（公钥）拷贝成为**指定路径，指定文件名**的文件
+    - 之后**根据此字段**，把[[generate-key-pair]]中生成的`*.pub`（[[public-key-公钥]]）拷贝成为**指定路径，指定文件名**的文件
       - 默认文件名`authorized_keys`
     - 为了安全可以`PasswordAuthentication no`
   - [[jumptainer]]设置
