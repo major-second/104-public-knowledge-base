@@ -2,6 +2,7 @@
   - [[python]]
     - [[pip]]
     - [[conda]]
+    - [[poetry]]
   - [[c-cpp]]
     - [[conan]]
   - [[linux]]系统层面

@@ -1,0 +1,11 @@
+- 前置
+  - https://python-poetry.org/docs/#system-requirements
+    - [[python]] 3.8+ 跨平台
+  - 使用[[pipx]]安装
+- 属于 [[package-managers]]
+- 使用
+  - [init a pre-existing project](https://python-poetry.org/docs/basic-usage/#initialising-a-pre-existing-project)
+  - `poetry init`，然后根据提示填入东西，创建[[pyproject-toml]]
+    - [[interactive]]！
+  - 然后[[poetry-install]]装[[dependencies]]
+- [[poetry-dependency-specification]]

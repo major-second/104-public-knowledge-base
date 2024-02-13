@@ -1,0 +1,10 @@
+- [[poetry]]
+- [[version]]
+- [[dependencies]]
+- [文档](https://python-poetry.org/docs/dependency-specification/)
+- 基本都在`[tool.poetry.dependencies]`下
+  - [[poetry]]基础使用时可能就加了一些
+- 可以设置[[git-basics/basics]]库依赖
+  - `numpy = { git = "https://github.com/numpy/numpy.git", tag = "v0.13.2" }`
+- 可以设置本地依赖
+  - `my-package = { path = "../my-package/", develop = false }`
