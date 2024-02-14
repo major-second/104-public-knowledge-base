@@ -109,3 +109,7 @@ done
 - 不同客户端设置方法不同
   - clash有General - Allow LAN一键开关比较方便
 - 在[[wsl]]中用代理就需要
+## 格式、解析等
+- 参考[[settings-and-configurations]]
+  - 比如`apt`和`pip`不能正确解析`127.0.0.1:端口号`，但`curl`可以。`apt`需要写`http://127.0.0.1:端口号`
+  - 有些要写`http://`，有些不用，以及端口号怎么写……

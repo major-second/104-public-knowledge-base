@@ -12,7 +12,11 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
 - `sr.describe()`给出基本信息
 # `DataFrame`
 - 二维
-- `df.info()`给出基本信息
+- 基本信息
+  - `df.info()`输出基本信息（不是返回）
+  - `df.describe()`返回一个有基本统计量的df
+  - `df.head(<n>)`
+  - `df.to_string()`变为可读字符串（小心太大）
 - `pd.DataFrame([[1,2],[3,4]])`
   - 自动生成`index`为`0, 1`
   - 这样生成的，`1,3`为一般认为的“时间维”（用于`.loc`等），是一个`column`，和之后“字典”方法需要区别
@@ -31,4 +35,5 @@ pandas的两类最基础对象：`Series`（一维）, `DataFrame`（二维）
 ## `dtype`
 - 创建时`dtype=...`参数
 - `df.astype(...)`
+  - `...`可以是单个类型，也可以是dict表示一部分的转换类型
 - 对于`df`，没有`dtype`但有`dtypes`表示每一列的类型
