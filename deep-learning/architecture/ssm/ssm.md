@@ -14,6 +14,9 @@
   - $A$等等：矩阵
   - $D$可以被[[data-science/residual]]掉，视为[[skip-connection]]，减少思考复杂度
   - 进一步的，$y=Cx$也就是个投影（latent state -> output，[[encode-decode]]），所以核心就是$\dot x = Ax+Bu$了
+- 对比 [[rnn]]
+  - 本身 $\dot x$而不是$x$，可以看成一直都有[[skip-connection]]防止[[gradient-issue]]
+  - 中间线性没有加[[activation]]，使得可以[[fourier-transform]], [[parallelism]]等等
 - 计算困难
   - 直接爆算复杂度太高
   - 通过算法降低复杂度也不行

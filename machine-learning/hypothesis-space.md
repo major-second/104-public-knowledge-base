@@ -3,3 +3,8 @@
     - [[overfit]]的解释：拟合噪音/**假设空间过大，高概率不收敛到想要的简单的那块**
 - [[parametric-inference]]相当于简单几维
 - 实际工作中随着经验积累，往往参数量越来越小。比如先画curve，然后分段线性/树简单模型，有感觉之后甚至可以直接猜形状、指数……
+- 参数化往往基于一个确定基础
+  - 有边缘提取，就想到[[conv]]，[[pooling]]，[[symmetry#平移]]，[[equivariant-invariant]]
+  - 有min, max, mean等可交换算子，就想到 交换[[equivariant-invariant]] NN
+  - [[s4]]: HiPPO -> s4 parametrizatoin
+  - [[activation]]中的 randomized leaky ReLU, MaxOut等

@@ -1,0 +1,3 @@
+- [parallel scan](https://www.zhihu.com/question/27547892/answer/336421027)
+- 参考[[fourier-transform]]
+- [RWKV](https://github.com/BlinkDL/RWKV-LM)

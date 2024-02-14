@@ -7,7 +7,7 @@
 - 所能承载的数据量：一般相反。例如服务器上显存往往在10G量级，内存[[memory]]往往在100G量级
 # 并行计算算法
 - [[fourier-transform#FFT]]
-- [parallel scan](https://www.zhihu.com/question/27547892/answer/336421027)
+- [[parallel-scan]]
 # 机器学习中
 - 神经网络与并行
   - batch维度上肯定可以，这是深度学习算法的巨大优势
