@@ -11,3 +11,4 @@
     - [[interactive]]！
   - 然后[[poetry-install]]装[[dependencies]]
 - [[poetry-dependency-specification]]
+- [[poetry-shell-run]]

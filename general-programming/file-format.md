@@ -34,9 +34,12 @@
     - 如果默认打开方式不行，可能需要右键选择正确打开方式
     - 可能已经列出了，选一下默认打开方式就行
     - 而例如[[ise]]中，就默认没有列出，只能手动找相应程序
-  - 如：vscode这样一个软件范围，设置默认打开方式（比如用什么[[vscode-extensions]]）
-    - 如[[vscode-pdf]]中提到设置`.pdf`在vscode中的打开方式
-    - [[office-viewer]]中也有类似
+  - 如：vscode这样一个软件范围，设置默认打开方式
+    - [[vscode-extensions#打开方式]]
+    - 参考[[settings-json]]
+    - 如
+      - [[vscode-pdf]]
+      - [[office-viewer]]
 ## 文本和二进制文件
 ### 文本
 - 人类可读可编辑

@@ -26,6 +26,10 @@
 - 管理插件：`Ctrl+Shift+X`出来的界面，可以卸载或禁用等
 - 注：有时若干个插件是打成包的，比如`python`，其中包含了[[jupyter-notebook]]
   - 卸载也是一起卸载
+## 打开方式
+- [[file-format#打开方式]]
+- 可以vscode资源管理器右键`open with`设置，也可以设置默认
+- [[settings-json]]中`"workbench.editorAssociations"`
 # 插件和其它软件关系
 - 有时，本身完成实际功能的软件并不是vscode，也不集成在vscode插件中。vscode插件只是调用接口
   - 这里参考系统的“内核”和“外壳”[[shell]]思想（其实vscode本身有时就相当于某种“外壳”）

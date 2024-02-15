@@ -21,6 +21,7 @@ path/to/a/folder
 ![](ignore-existing-files.png) todo 待整理
 
 - 可能用法：`git clean -fdx`时，根据内容，清理文件
+  - 注意如果你没有[[stash]]，则新增文件会被清理！非常危险！
 ### 所在位置
 参考[文档](https://git-scm.com/docs/gitignore)，如果在某个文件夹下有`.gitignore`那么只在某个文件夹及其子文件夹等等下生效。
 一般不这么做（因为会导致你难以找到这个文件“到底被谁ignore了”）

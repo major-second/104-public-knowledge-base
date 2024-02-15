@@ -2,6 +2,7 @@
   - [[hook]]
   - [[commit]]
   - [[pip]]
+  - [[yaml]]
 - [文档](https://pre-commit.com/)
 - 安装
   - `pip install pre-commit`

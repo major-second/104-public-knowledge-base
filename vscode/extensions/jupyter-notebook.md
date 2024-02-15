@@ -12,13 +12,22 @@
   - 需要指定解释器（vscode相应面板右上角），并`pip install ipykernel`补包
 - [[vscode/settings]]中`"jupyter.debugJustMyCode": false`使得可以进入深层代码
 - 实用功能
-  - `+`新建两种block
-  - `Outline`给出提纲（注：`[toc]`是不能用的，参考[[enhanced]]）
-  - `Restart`清空变量，重新启动
-    - 如果你的`.ipynb`引用的一些`.py`中的东西变化了，你应该`Restart`才能使得生效
-    - 注：`.ipynb`中代码变化当然不需要`Restart`
+  - 按钮
+    - `+`新建block
+    - “播放上”“播放下”分别运行上方所有cell（**不含**）和下方所有cell（**含**）
+    - `Outline`给出提纲
+      - 设置 [[markdown]] cell且用上 `#`, `##`等标题语法，左侧可显示outline方便快速跳转
+      - `[toc]`是不能用的，参考[[enhanced]]
+    - `Restart`清空变量，重新启动 [[refresh]]
+      - 如果你的`.ipynb`引用的一些`.py`中的东西变化了，你应该`Restart`才能使得生效
+      - 注：`.ipynb`中代码变化当然不需要`Restart`
+    - `Go to`去正在跑的cell
+  - 其他功能
+    - [[cursor-ide]] 202402: 触屏上下滑动？可能只能在代码段用，output段用不了，但左侧边栏滑动和右侧滚动条拖动仍可以
+    - 鼠标悬停左下角计时或状态“打勾”显示最后时间
+    - 鼠标双击左侧收缩或展开代码或output段
 - feature
   - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径。和[[run-jupyter]]不同。这就是[[non-standard]]
-  - 解决方法参考[[sys-path]]和[[settings-json]]中有关`pylance`的部分
-    - 两者一个是处理实际能不能跑，一个是让静态分析能找到包
-  - [[cursor-ide]] 202402: 触屏上下滑动？可能只能在代码段用，output段用不了，但左侧边栏滑动和右侧滚动条拖动仍可以
+    - 解决方法参考[[sys-path]]和[[settings-json]]中有关`pylance`的部分
+      - 两者一个是处理实际能不能跑，一个是让静态分析能找到包
+

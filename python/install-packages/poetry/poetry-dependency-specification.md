@@ -8,3 +8,5 @@
   - `numpy = { git = "https://github.com/numpy/numpy.git", tag = "v0.13.2" }`
 - 可以设置本地依赖
   - `my-package = { path = "../my-package/", develop = false }`
+    - `develop = true`类似[[pip]]的`-e` [[command-line-flags]]
+- 更改刷新？根据命令行提示，如果和[[poetry-lock]]不一致，就`poetry lock`命令
