@@ -2,4 +2,7 @@
 - Comparison: Process and Thread (accurately, kernel-level thread) are control units at the operating system level, scheduled by the OS.
   - ref: [[process-thread]]
 - Coroutine implements non-preemptive scheduling, that is, a process contains multiple coroutines. Within the time slice when the process is scheduled by the OS, the internal scheduler of the process schedules a certain coroutine to run, and each coroutine actively blocks itself to yield CPU time.
-- Advantages: Reduces the overhead of thread scheduling and the memory overhead of creating threads, and reduces the overhead of synchronization and locking.
+  - so in [[python]] [[async-await]] you may `await asyncio.sleep(0)` to release the occupation of the control.
+  - [参考](https://stackoverflow.com/questions/65973786/why-does-asyncio-sleep0-make-my-code-faster)
+- Advantages: Reduces the overhead of thread scheduling and the memory overhead of creating threads, and reduces the overhead of synchronization and locking ([[share-lock]]).
+- 和[[py-process-thread#伪多线程]]类比，都是[[i-o]]密集时好用。不过一个用户控制一个系统控制

@@ -1,3 +1,4 @@
+# 何时密集
 - O
   - 例如考虑[[tensorboard]]的[[pl-logs]]是每个epoch还是每个step存
   - 例如[[tqdm]]有时可能疯狂输出一步一输出（而不是本地的正常行为），需要关掉
@@ -8,7 +9,11 @@
   - 主要[[dataloader]]，注意进程个数，同时跑的个数等
   - 可以考虑[[resource-management/disk]]和[[memory]]的选择：往内存放，就可以少读
   - 调试时建议[[jupyter-basics]]，读进一次到内存不用反复读
-- 联系[[memory]]，虚拟内存/swap可能导致磁盘io过高
+- general
+  - 联系[[memory]]，虚拟内存/swap可能导致磁盘io过高
+  - 对外联网。很多时候在等网
+  - 高强度写[[logs]]
+- 此时往往可用[[coroutine]], [[py-process-thread#伪多线程]]等提速
 # 峰谷、波动思想
 - 思考题：利用此思想。地铁上行扶梯为什么比下行多？
 - 正确、合理答案：上行流量有波动
