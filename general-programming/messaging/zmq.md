@@ -1,0 +1,1 @@
+- 用[[ipc]]则比[[websocket]]快

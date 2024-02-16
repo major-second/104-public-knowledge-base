@@ -1,0 +1,13 @@
+- 消息
+- 消息中间件
+- pub / sub模型
+- [[serialization]]
+  - [[json]]
+- 例子
+  - [[zmq]]
+  - [[nats]]
+- 用途
+  - [[process-thread]]
+    - [[ipc]]
+    - 隔离，不同人的东西
+    - 也可以跨语言

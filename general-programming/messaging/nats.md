@@ -1,0 +1,3 @@
+- [[websocket]]
+- 可搜索`nats-py`等有python
+  - 且直接[[pip-install]] `pip install nats-py`就行，不用别的
