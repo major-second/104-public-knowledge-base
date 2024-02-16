@@ -1,5 +1,5 @@
 - 前置
-  - [[powershell-basics]]
+  - [[powershell]]
   - 了解[[windows/env-var]]
 - 典型种类
   - [[ps-general-var]]

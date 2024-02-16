@@ -22,7 +22,7 @@
   - [参考](../example/robot-yaml/minimal/robot.yaml)（虽然会报警告）
   - 各个key含义几乎都是自明的
 - 这个robot
-  - [[powershell-basics]]**进`robot.yaml`所在目录**后，用`rcc run`运行
+  - [[powershell]]**进`robot.yaml`所在目录**后，用`rcc run`运行
   - 不能用vscode运行
     - vscode不够灵活，要求用conda环境，参考[[rcc]]
 - 效果是使用默认`python`解释器`print`一行`hello world`

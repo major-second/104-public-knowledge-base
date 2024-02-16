@@ -1,5 +1,5 @@
 - 前置
-  - [[powershell-basics]]
+  - [[powershell]]
 - 参考
   - 相当于[[7-permissions]]
   - [参考](https://blog.51cto.com/ganzy/6926601)

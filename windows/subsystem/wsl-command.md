@@ -2,12 +2,12 @@
 # 基础
 ## 概述
 - 前置
-  - [[powershell-basics]]
+  - [[powershell]]
   - [[escape]]
   - [[wsl]]
   - [[shell-type]]
     - 也就是如果需要[[shrc]]，可能需要用`bash -ic`替代下文`bash -c`
-- windows的[[powershell-basics]]中，`wsl`命令（不是linux系统中的命令）
+- windows的[[powershell]]中，`wsl`命令（不是linux系统中的命令）
   - 可用于[[silent]]操作[[wsl]]，特别是[[silent]]地[[refresh]]重启WSL，非常方便
 ## 基础举例
 - 例：直接`wsl`
@@ -39,8 +39,8 @@ done
   - [[echo]]彩色的
 - 以上两个例子都是[[escape]]2次
 - 这和powershell特性无关，只和[[echo]]特性有关
-## [[powershell-basics]]和shell两种[[escape]]转义混合
-- 基本[[powershell-basics]]例子：<code>wsl -e bash -c "a=1; echo &#96;$a"</code>
+## [[powershell]]和shell两种[[escape]]转义混合
+- 基本[[powershell]]例子：<code>wsl -e bash -c "a=1; echo &#96;$a"</code>
 - 两种转义`\`, <code>&#96;</code> 混合例子
   - <code>wsl -e bash -c "ifconfig | grep 'inet\s' | grep -v '127.0' | awk '{print &#96;$2}'"</code>
   - 极度实用！在windows访问linux端口就需要！例如[[v2raya]]

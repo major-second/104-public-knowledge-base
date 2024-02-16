@@ -1,4 +1,4 @@
-- vscode集成了终端（可能是windows的[[powershell-basics]]或者linux的shell），参考[[vscode-keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
+- vscode集成了终端（可能是windows的[[powershell]]或者linux的shell），参考[[vscode-keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
 - 可以`+`增加window或两个框（split）按钮增加pane
   - 这点像[[tmux]]，只不过它不能退出后还运行
   - 快捷键：<code>Ctrl+Shift+&#96;</code>新终端，`Ctrl+Shift+5`split

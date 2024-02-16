@@ -76,9 +76,15 @@ https://keybase.io/
 - 安装成功后可以类似[[net-disk]]一样拖动上传
 - 在windows的`KBFS (K:)`中用[[file-explorer]]管理（[[CRUD]]方式和普通[[file-explorer]]中相同）
 - 可以打开同步功能，就会在这个设备上同步
-# git
+# [[git]]
 - 是一种[[other-hubs]]
-- `Ctrl+7`快捷键，可以创建库，复制相应链接（`keybase://`开头）
-  - 用于[[remote]]
+- `Ctrl+7`快捷键
+  - 可以创建库[[init]]
+    - 复制相应链接（`keybase://`开头）
+    - 用于[[remote]]
+  - 本地正常[[commit]] [[push-pull]]等
 - 可以用于私人、[组队](#teams)等等
-- 速度不会那么快，但可以作为[[net-disk]]的一个选择
+- 速度不会那么快，但
+  - 可以作为[[net-disk]]的一个选择
+  - 且不用[[proxy-basics]], [[dns#dns污染]]等处理（时至 202402）
+- troubleshooting: 莫名其妙缺文件，[[windows-link]]一下就行，[参考](https://github.com/keybase/client/issues/15176#issuecomment-531444986)，注意是[[windows-cmd]]不是[[powershell]]

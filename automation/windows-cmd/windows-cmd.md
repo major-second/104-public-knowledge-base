@@ -1,0 +1,4 @@
+- 命令提示符，cmd
+- [[cli]]
+- 区别[[powershell]]
+  - 比如这里没有`ls`那里有，这里有`mklink`（[[windows-link]]）那里没有

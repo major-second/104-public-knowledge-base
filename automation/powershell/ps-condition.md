@@ -36,5 +36,5 @@
     ```
   - [[ip-address]]是否在国内
     - `if ((curl ipinfo.io | select content | select-string country) -like "*CN*") {}`
-  - 文件是否存在（可用于防止[[powershell-basics]] `rm`报错）
+  - 文件是否存在（可用于防止[[powershell]] `rm`报错）
     - `if (test-path ...)`

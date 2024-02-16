@@ -12,7 +12,7 @@
     - `readlink -f $(which c++)`这种，看[[ln-s]]
     - `man`命令结合[[find-grep]]
       - 例如`man bash | grep -C2 '$@'`
-  - [[powershell-basics]]中
+  - [[powershell]]中
     - `help`和`gal`命令
     - `Get-Command`
       - 例如[[vscode-cursor]]中，`Get-Command code`
