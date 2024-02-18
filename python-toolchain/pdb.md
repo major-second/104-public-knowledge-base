@@ -1,3 +1,11 @@
 - [[breakpoint]]：直接使用 `breakpoint()`函数
   - 然后 `python 文件.py`运行到了就会断
 - 常见操作：https://zhuanlan.zhihu.com/p/37294138
+  - 查
+    - `p`
+    - `l`
+  - 运行
+    - `s`
+    - `n`
+    - `r`
+    - `c`

@@ -16,6 +16,7 @@
 - [[pandas-agg-basics]]中很多都能用
   - `min, max, sum, mean, median, std, var, count`
   - `groupby(key).transform('mean')`: 不改变形状，原来多少row还是多少row，只是把新的加上
+  - `last, tail`不同：是否自动找前面的非[[nan]]数值
 - [[pandas-apply]]：以dataframe为单位
   - 效率也一样低
 # multiple-columns

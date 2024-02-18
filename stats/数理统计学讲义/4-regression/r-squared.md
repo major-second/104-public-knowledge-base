@@ -7,3 +7,4 @@
     - 此时$R^2=\frac{回归平方和}{总平方和}$
   - 注意$\frac{回归平方和}{总平方和}$并不一定是$R^2$
     - 你如果把$\frac{回归平方和}{总平方和}$定义成$R^2$，测试集out of sample的$R^2$就有可能大于1了
+- 注意一个还没经过scaling的feature（“有linear prediction power”）显然不能直接看$R^2$，要不然肯定是负的。需要scale（或者几个feature combo到一起训个简单模型例如[[lasso]]）等等才看
