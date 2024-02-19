@@ -1,2 +1,3 @@
 - [[cartesian-product]]
 - [[itertools]]
+- 可用[[visualization]]，画出heatmap等，防止过于sharp的minimum，确认[[convexity]]等

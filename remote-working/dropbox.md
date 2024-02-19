@@ -41,3 +41,5 @@
   - > A share link with "www" at the beginning will open in the preview page.
   - > A share link with "dl" at the beginning will tell your browser to handle the file as it sees fit (display in the browser, open in a configured application, or present it for download).
   - > A share link with "dl" at the beginning and "?dl=1" at the end will force your browser to download the file.
+## Others
+- `dropbox sharelink <file>`

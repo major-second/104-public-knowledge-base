@@ -46,7 +46,7 @@
 - 可能需要提取文档核心信息并做出合理取舍
   - 选择性忽视一些不重要（乃至错误）的信息
     - 比如[从宇宙大爆炸开始讲的文档例子](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)，“从头开始讲”，我们不一定要从头开始做
-      - 而且这个`upgrade`还有可能导致[[general-principles/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
+      - 而且这个`upgrade`还有可能导致[[general-software-technical/upgrade]]中说的不靠谱的问题。所以千万别上他的道！
   - 识别出一些东西是可做可不做的，不要也没啥关系（而且可能过程很艰难，根本跑不通……）。那就直接舍弃
   - 识别出一些东西间[[dependencies]]不是“串行”而是可能部分[[parallelism]]的（自己人肉[[topo]]排序），从而加快安装效率
 - 可能在看懂文档基础上，适当整合和自动化让自己更方便

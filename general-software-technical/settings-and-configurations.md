@@ -31,7 +31,7 @@
       - 使得每次开终端时自动设置
 2. 编辑特定文件
    1. [[linux]]
-      1. [[server-config]]，[[client-config]]，[[software-management/source]]，[[condarc]]，[[shrc]]
+      1. [[server-config]]，[[client-config]]，[[package-managers-source]]，[[condarc]]，[[shrc]]
    2. Windows
       1. `known_hosts`
    3. [[vscode/settings]]
@@ -43,8 +43,8 @@
       1. 比如`source.list`和`source.list.d`的关系
       2. 你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`
       3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
-      4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker/source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
-      5. 删除也可以方便地删除一部分，这在[[software-management/source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
+      4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker-apt-source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
+      5. 删除也可以方便地删除一部分，这在[[package-managers-source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
       6. 类似的做法：[[bashrc]]中`source ~/.bash_env_0`，分成多个部分等
    6. 为了达成同一目的，可能有多个文件，之间可能具有“优先级”而出现一些值的覆盖，参考上一节“优先级”
 3. 用命令

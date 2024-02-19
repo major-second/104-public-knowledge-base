@@ -1,5 +1,5 @@
 [toc]
-- 参考[[compatibility]], [[general-principles/upgrade]]
+- 参考[[compatibility]], [[general-software-technical/upgrade]]
 # 版本号
 ## 查看版本号
 - 命令行：往往是`--version, -V, -version`等
@@ -36,7 +36,7 @@
     - 比如`>=`表示数字更大（“之后”）
     - [[conda-installation]]用`=`表示确定某个版本，[[pip]]用`==`
   - 参考[[poetry-dependency-specification]]有更多
-- 一般版本号高性能好，功能多，参考[[general-principles/upgrade]]，但不是永远版本越高越好
+- 一般版本号高性能好，功能多，参考[[general-software-technical/upgrade]]，但不是永远版本越高越好
 ## 数字以外各种标记
 - `lts`长期支持
 - `dev`开发中
@@ -80,7 +80,7 @@
   - [[hand-eye-calibration]]中提到的：如果你opencv版本过低，或[[moveit-real-robot]]版本过低那么只能[[checkout]]到[[hand-eye-calibration]]（上层）的一个旧版本
 - 也有可能要求旧底层，底层太新反而不行（如新版有太严的安全限制，太新的功能等）
   - [nitrome games合集](https://archive.org/details/all_nitrome_games)，他的README里提到有的游戏只能用老旧的Flash Player 13才能打开
-- “更新[[general-principles/upgrade]]导致用不了”：参考[[general-principles/upgrade]]
+- “更新[[general-software-technical/upgrade]]导致用不了”：参考[[general-software-technical/upgrade]]
 ## 推论
 - 上层版本越高，需求的底层版本也越高
 - 所以在两头确定时，中间可行的版本可能就只有一个范围。不能太高也不能太低

@@ -1,7 +1,7 @@
 - 有时可以先临时解决，然后再永久解决
   - [[bootstrap]]
   - 比如先[[connect-base]]中连机械臂网口，设置好控制柜ip后[[connect-controller]]连控制柜网口
-  - [[software-management/source]]中县临时改成不安全的`http`，装个包再改回来，解决证书的问题
+  - [[package-managers-source]]中县临时改成不安全的`http`，装个包再改回来，解决证书的问题
   - 比如[[tty]]用作[[ubuntu/troubleshooting]]
 - 有时，临时配置先看看效果，之后不一定一直用
   - 比如`export`环境变量[[6-env]]，但不写到`~/.bashrc`

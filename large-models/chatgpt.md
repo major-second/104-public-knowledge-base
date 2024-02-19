@@ -17,9 +17,9 @@
   - 也可结合[[region-language#IME]]语音输入法练口语
 - 可以编辑之前的提问，或重试等，回答可能更好
 - 回答不完整
-  - 某[[general-principles/upgrade]]前，可以说`continue`或`继续`
-  - 某[[general-principles/upgrade]]后，可以直接按Continue按钮
-- 不断[[general-principles/upgrade]]，有许多功能更新
+  - 某[[general-software-technical/upgrade]]前，可以说`continue`或`继续`
+  - 某[[general-software-technical/upgrade]]后，可以直接按Continue按钮
+- 不断[[general-software-technical/upgrade]]，有许多功能更新
   - 储存并查看之前的chat内容
   - 自动生成摘要标题作为网页标题
   - 氪金Upgrade to plus

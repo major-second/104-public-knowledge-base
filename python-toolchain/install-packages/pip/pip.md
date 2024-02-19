@@ -10,7 +10,7 @@
         - 此时`pip3 --version`查看版本
         - `pip --version`一下，发现这个在`/usr/lib/python3`而不在`python2.7`
           - 这和`apt install python-pip`后现象完全不同
-        - `pip3 install --upgrade pip`做[[general-principles/upgrade]]
+        - `pip3 install --upgrade pip`做[[general-software-technical/upgrade]]
     - 关于`python3 -m pip`和`pip3`区别，[参考](https://stackoverflow.com/questions/41307101/difference-between-pip3-and-python3-m-pip)
       - 产生该现象的原因：可能是本地`python`版本比`conda`虚拟环境版本低
         - 此时，本地`pip`能为虚拟环境装包，但可能缺包！

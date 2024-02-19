@@ -12,6 +12,7 @@
   - [[false-positive]] warning
     - `df = df[df['A'] > 2]`
     - `df['B'] = new_val`
-    - 这种你本来就想这么干（想要setting with copy）
-    - 所以换名字可能就不会warning了
-    - 或者 `.copy(deep=False)`
+    - 这种你本来就想这么干（想要setting with copy），这个警告是多余的
+    - 所以可能做法
+      - 换名字，不要`df = df[...]`
+      - 加入`.copy(deep=False)`

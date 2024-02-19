@@ -24,7 +24,7 @@
 - [[torch-cuda]]中提到有时[[conda/commands]]和[[pip]]**卸载**已有的[[pytorch/basics/installation]]就能**重装**成功GPU版本的`torch`
 ## 更新文件
 - [[dot-ssh]]中的**重新创建文件夹**
-- [[software-management/source]]中处理`Conflicting values set for option Signed-By regarding source ...`的方法：删掉并**重新写文件**
+- [[package-managers-source]]中处理`Conflicting values set for option Signed-By regarding source ...`的方法：删掉并**重新写文件**
 - 及时**删除**[[general-principles/cache]]并**重新生成**，防止接下来使用错误的缓存文件
 - 清理[[cookies]]
 ## 硬件层面
@@ -45,7 +45,7 @@
   - [[configure-proxy]]中提到的powershell需要新开进程才能用上新的代理设置
     - `Start-Process powershell.exe -NoNewWindow -Wait -ArgumentList <路径>`
   - [[yama-ptrace-scope]]中的`sudo sysctl -p /etc/sysctl.d/10-ptrace.conf`
-  - [[software-management/source]]的`sudo apt update`
+  - [[package-managers-source]]的`sudo apt update`
 - 连接学校/公司内网等需要登录的，如果登录界面出问题，尝试手机wi-fi设置中forget这个网络，然后再连接
 - 做事没有有头有尾（[[finally]]处搞出来的锅）往往都要“重置”解决
 - python导入东西的重置：参考[[python-import]]

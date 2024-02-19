@@ -1,5 +1,5 @@
 - [参考](https://linux.cn/article-11619-1.html)
-- 使用[[software-management/source]]中的ppa，即`sudo add-apt-repository -y ppa:teejee2008/ppa; sudo apt update; sudo apt install -y timeshift`安装
+- 使用[[package-managers-source]]中的ppa，即`sudo add-apt-repository -y ppa:teejee2008/ppa; sudo apt update; sudo apt install -y timeshift`安装
 - 为了防止占用太多`/`空间，请在设置里改，避免占用太多系统盘（参考[[partition]]）
 - 后台运行确实是会卡的，所以其实大部分情况下没必要开hourly
   - daily就很够了

@@ -2,7 +2,7 @@
   - [[sequence]]
   - [[general-copy]]
 - http://c.biancheng.net/view/6826.html
-  - emplace_back可以不拷贝，节省开销，但是需要[[general-principles/upgrade]]
+  - emplace_back可以不拷贝，节省开销，但是需要[[general-software-technical/upgrade]]
 - `.reserve()`预留，减少[[general-copy]]
   - 否则 https://oi-wiki.org/lang/csl/sequence-container/#vector-%E7%9A%84%E5%AE%9E%E7%8E%B0%E7%BB%86%E8%8A%82
   - [[amortized]]复杂度是$O(1)$，但是会有很多[[general-copy]]开销

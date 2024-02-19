@@ -1,5 +1,5 @@
 - 前置
-  - 过程中需要添加软件[[software-management/source]]
+  - 过程中需要添加软件[[package-managers-source]]
   - 需要[[systemd]]
     - [[sysvinit]]好像不行
 # 安装

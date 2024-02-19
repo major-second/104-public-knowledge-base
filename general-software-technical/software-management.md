@@ -8,7 +8,7 @@
 ## [[CLI]]
 - [[package-managers]]
   - [[apt-install]]
-    - [[software-management/source]]
+    - [[package-managers-source]]
   - [[scoop]]
   - [[pip]]
     - [[pipx]]

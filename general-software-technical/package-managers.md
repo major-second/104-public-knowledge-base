@@ -14,4 +14,4 @@
 - [[region-language]]
 - [[proxy-basics]]
 - [[gfw]]
-- [[pip]] [[conda]] [[poetry-install]] [[software-management/source]]
+- [[pip]] [[conda]] [[poetry-install]] [[package-managers-source]]

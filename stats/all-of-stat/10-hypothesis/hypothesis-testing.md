@@ -59,3 +59,4 @@
 # 例子
 - one sided: $H_0:\theta=\theta_0\quad vs.\quad H_1:\theta\ne \theta_0$
 - two sided: $H_0:\theta\le \theta_0\quad vs.\quad H_1:\theta> \theta_0$
+- 两总体 [[t-statistics]]检验：[参考](https://www.jmp.com/zh_cn/statistics-knowledge-portal/t-test/two-sample-t-test.html)

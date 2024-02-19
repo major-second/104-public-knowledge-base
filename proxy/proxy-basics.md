@@ -31,5 +31,5 @@
   - 代理比直连有时候会慢，[[vpn]]由于照顾公司，那就更慢。所以：可以不用代理那就不用呗
     1. 有些时候改[[hosts]]即可，不一定非得正儿八经挂代理。其作用参见[[hosts]]
       - 原理是墙分为多种，有的是直接打死，有的只是[[dns]]污染
-    2. 有些时候可以通过[[channel]]，[[pip]]设置，[[software-management/source]]等，通过[[settings-and-configurations]]使用国内[[mirror]]镜像或源，而不用国外的源
+    2. 有些时候可以通过[[channel]]，[[pip]]设置，[[package-managers-source]]等，通过[[settings-and-configurations]]使用国内[[mirror]]镜像或源，而不用国外的源
   - 所以一定要熟练开关代理，设置是否全局，参考[[configure-proxy]]

@@ -5,7 +5,14 @@
 - 和[[private-key-私钥]]相对
   - 更短
   - 可以告诉别人
+  - 类似于锁，被钥匙“开”，但不完全类比。因为你公钥越多，一般表示你信任别人越多，越容易被打开（“easy”）
+# 应用
+- [[ssh/ssh]]
   - 放到别的机器上往往是[[dot-ssh]]中的`authorized_keys`文件，在[[server-config]]中可以设置
     - 注意也有[[7-permissions]]要求：`600`
     - 且属主必须对，否则`chown`一下
       - 常见问题：别人帮你创建的`.ssh`，属主不是你
+  - [[known-hosts]]
+- [[package-managers-source]]
+  - 你加了就是信任别人。谁都不信任就装不了软件
+  - [[apt-install]]的`keyrings`
