@@ -3,6 +3,7 @@
   - `bid size, ask size`
 - 可以[[grid-search]]的参数
   - [[normalization]]怎么做
+    - 很多时候做一下$\frac{A-B}{A+B}$就是比单纯$A-B$效果好（normalized）
     - 相比数据本身，较长的[[sliding-window]]？
     - 哪些[[normalization]]维度？例如time of the day
   - horizon长度

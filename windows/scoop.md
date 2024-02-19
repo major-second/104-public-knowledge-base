@@ -12,3 +12,4 @@
     Type 'scoop help' for instructions.
     (base) PS C:\WINDOWS\system32>
     ```
+- 简单软件[[CRUD]]：`scoop install`, `scoop uninstall`
