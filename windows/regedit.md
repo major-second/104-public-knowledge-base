@@ -1,0 +1,3 @@
+- 注册表
+- `win + r`, `regedit`, `enter`
+- 或[[powertoys]]有包装

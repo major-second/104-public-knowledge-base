@@ -3,11 +3,16 @@
 - [[powershell-var]]
 - 比如程序中途的`$env:path = `
 # 持久设置
-- [[settings-and-configurations]]
-  - [[GUI]]: 开始菜单搜索`env`，找到`Edit*env*`选项，然后用GUI可以方便地设置环境变量
+- 需求例子
     - [[robocorp]]中的`rcc.exe`
     - [[wsa]]中的`adb.exe`
-    - [[conda-installation]]可以选择手动加
+    - [[vscode]]
+    - [[cursor-ide]]
+- [[settings-and-configurations]]
+  - [[GUI]]
+    - 原生：开始菜单搜索`env`，找到`Edit*env*`选项，然后用GUI可以方便地设置环境变量
+    - [[powertoys]]包装了一层
+    - 软件安装过程中：[[conda-installation]]可以选择安装过程中手动加
   - [[cli]]
     - `setx /?` [[help]]
     - `setx PATH "$env:path;/test"` default: by user

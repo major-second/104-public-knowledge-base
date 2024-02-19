@@ -1,9 +1,12 @@
 - 前置
   - https://python-poetry.org/docs/#system-requirements
-    - [[python]] 3.8+ 跨平台
+    - [[python]] 3.8+
+    - 跨平台
+      - 当然你应当熟悉[[windows-python]], [[linux-python]]等等
+        - 例如[[linux-python]]中只有`python3`没有`python`的处理方法
   - 使用[[pipx]]安装
     - `pipx install poetry`
-    - 对于[[linux]]可能需要确保[[6-env]]，即根据提示运行`pipx ensurepath`
+    - 可能需要确保[[6-env]]，即根据提示运行`pipx ensurepath`
 - 属于 [[package-managers]]
 - 使用
   - [init a pre-existing project](https://python-poetry.org/docs/basic-usage/#initialising-a-pre-existing-project)

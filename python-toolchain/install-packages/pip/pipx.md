@@ -5,6 +5,9 @@
     - 可能要`pipx install python`等
 - linux直接 [[apt-install]]
   - `sudo apt install pipx`
+  - 可能需要`python`，而不能是`python3`命令（只有`python3`没有`python`不行）
+    - 所以可以在[[conda]]环境中，或者手动[[ln-s]] `python`到`python3`，或者[[apt-install]] `python-is-python3`，等等
 - 一般可安装出 globally available的新命令
   - 而不是仅仅在[[python]]中可[[python-import]]的
   - 例如安装出[[poetry]]从而有`poetry`命令
+- 安装后往往需要`pipx ensurepath`确保 [[6-env]] 或 [[windows/env-var]]

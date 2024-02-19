@@ -7,10 +7,13 @@
 # 安装
 ## [[CLI]]
 - [[package-managers]]
-  - [[apt]]
+  - [[apt-install]]
     - [[software-management/source]]
+  - [[scoop]]
   - [[pip]]
+    - [[pipx]]
   - [[conda]]
+  - [[poetry]]
   - [[conan]]
 ## 下载安装包/程序安装
 - 安装包可能需要访问网络再下载东西也可能不要（“离线包”）
@@ -40,14 +43,31 @@
 - [[apple-app]]
 - [[huawei-google]]
 ## [[build-from-source]]
-[[github]], [[other-hubs]]
+- [[github]], [[other-hubs]]
 ## 系统内置
 自己设置之类地方探索探索就有
+## 手动安装可能所需步骤
+- [[windows/env-var]]
+- [[ln-s]]
+  - [[linux-python]] `python-is-python3`这种
 # 查询
 - 更新，版本管理
-  - [[version]], [[dependencies]]
-# 删除
-- 以及管理开机自启[[startup]]，互相唤醒，后台等
-- [[disk]], [[memory]]
-- [[quit]], [[aida64]]
-- [[optimize]]
+  - [[version]], [[dependencies]], [[windows/upgrade]]
+# 停删清理卸载
+- “对付流氓软件”
+- 优化管理杀后台等
+  - 管理开机自启[[startup]]，互相唤醒，后台等
+  - [[disk]], [[memory]]
+  - [[quit]], [[aida64]]
+  - [[optimize]]
+- 卸载
+  - “彻底卸载”
+  - 不良现象：安装再卸载，再也装不回去了
+  - 残留文件（往往可直接删除）
+    - [[settings-and-configurations]]
+    - 安装包
+    - [[general-programming/cache]]
+      - 包括[[package-managers]]的cache，例如`scoop cache rm *`清理
+  - [[windows/env-var]]
+    - 特别是[[windows/env-var#path]]
+  - [[regedit]]
