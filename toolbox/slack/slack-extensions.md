@@ -6,6 +6,7 @@
 - general用法
   - 可以在app 的 pane选择相应图标直接对话
   - 可以 `@`进channel参与。例如[[slack-extensions#chatgpt]]
+- [参考](https://silenceallat.top/save_html/%E5%B0%91%E6%95%B0%E6%B4%BE/file/Slack%20%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E5%80%BC%E5%BE%97%E6%8E%A8%E8%8D%90%E7%9A%84%20Bot%20-%20%E5%B0%91%E6%95%B0%E6%B4%BE.html)
 # [[tools/zoom]]
 - `/zoom`等命令，聊天框中创建会议，加入等等
 # [[google-calendar]]
@@ -33,3 +34,9 @@
 # [[chatgpt]]
 - 搜索`gpt`，有个名字叫`Q`的就是集成在 slack中的 chatgpt
 - 可以 `@`它问问题，thread中回复，转发内容等，很方便
+# 其他
+- [[cloud-storage]]
+  - [[dropbox]]（自动preview，方便分享等）
+  - [[google-drive]]
+- `latexbot`: [[latex]]
+  - command: `/latex`

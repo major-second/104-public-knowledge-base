@@ -6,3 +6,4 @@
 - 一个实际问题：对于时间序列数据（如一年内）
   - 留出最后若干天：最保险，无[[information-leak]]风险
   - 但缺点：训练和测试有[[domain-gap]]，导致验证效果不准确
+    - 但有时这是优点，比如train和validate [[domain-gap]]太小，可能导致sharp minimum，[[overfit]]，难以检验generalizability，从而test效果不好

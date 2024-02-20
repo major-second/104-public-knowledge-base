@@ -2,7 +2,7 @@
   - [[scp]]（前置[[ssh/ssh]]）
   - [[sftp]]
   - [[mobaxterm]]传输功能（它可不只是终端哦）
-- [[net-disk]]
+- [[cloud-storage]]
 - 多平台互通
   - 需要GUI
     - 发邮件

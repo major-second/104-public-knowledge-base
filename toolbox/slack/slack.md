@@ -7,6 +7,7 @@
   - [[region-language]]：可能不能用部分国内邮箱。建议[[outlook]], [[gmail]]
   - 不同[[account]]可以有不同[[slack-workspaces]]，同一个账号也可以有不同[[slack-workspaces]]
   - 无论网页版还是桌面都可以多开且边栏快速切换，比[[wechat-tips]]显然方便很多
+- [使用入门](https://sspai.com/post/47602)
 # 核心功能
 - 部分[[markdown]]语法比如 `**加粗**` 和代码块
   - 走出行内代码块：右边按右
@@ -63,6 +64,10 @@
 # huddle
 - 语音交流
 - 可以给出系统级通话来信类似[[whatsapp]]
+# remind
+- `/remind` [[cli]]
+- 右键信息 remind
+- 都可以给自己或团队（[[slack/slack#范围]]，channel）reminders
 # 范围
 - 私信
   - 个人私信，给自己发东西作为草稿

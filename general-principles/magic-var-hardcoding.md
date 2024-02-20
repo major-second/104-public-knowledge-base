@@ -1,0 +1,4 @@
+- 魔数，magic number
+- hardcode
+  - > 对于简单的模型可以直接把系数hardcode进去
+- [[code-data]], [[naming#命名有时是相对的]]

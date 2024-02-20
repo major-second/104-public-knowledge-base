@@ -2,7 +2,7 @@
 - Prerequisites
   - [[curl-wget]]
   - [[CLI]]
-  - [[net-disk]]
+  - [[cloud-storage]]
 - Dropbox is a commonly used, reasonably priced, mainstream cloud storage service with a mature and user-friendly [[CLI]]
   - [[pricing]]
 - Official website: https://dropbox.com
@@ -10,8 +10,9 @@
 # Usage
 ## Sync Folder
 - [[CLI]] [documentation](https://help.dropbox.com/installs/linux-commands)
-  - Note: When downloading from [this link](https://linux.dropboxstatic.com/packages/ubuntu/), maybe you should avoid some later versions as it may not be compatible with [[apt]].
-    - [[general-software-technical/upgrade]], [[compatibility]]
+  - [download](https://www.dropbox.com/install-linux)
+  - Note: maybe you should avoid some too-late [[version]]s as some dependencies may be not accessible in the standard [[package-managers-source]] of your system (like `apt`).
+    - ref: [[general-software-technical/upgrade]], [[compatibility]]
   - Installation: Use `wget ...` to download the .deb file, then use `sudo apt update`, `sudo apt install ./<filename>.deb` to install the .deb file.
     - [[deb]]
   - Run `dropbox start -i` to install Dropbox.

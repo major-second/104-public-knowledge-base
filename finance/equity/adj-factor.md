@@ -1,4 +1,5 @@
 - [复权](https://www.jianshu.com/p/df4a577fc7fe)
+- corp action, 公司变化
 - 英文往往记为`adjustment, adj`
 - 复权因子`adj_factor`
 - 价格乘以`adj_factor`才有意义，绝对价格无意义

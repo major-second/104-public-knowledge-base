@@ -5,3 +5,4 @@
 - 对于非技术人员难上手，不直观
   - [[readability]]
 - [[command-line-flags]]
+- 广义上，即时通讯[[telegram]], [[slack/slack]]等中的命令比如 `/zoom`也属于

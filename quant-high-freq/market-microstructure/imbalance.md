@@ -17,3 +17,4 @@
      1. 实际上price并不是一个简单的midprice
      2. 参考[[price-targets]]
         1. 现象：不同[[price-targets]]可做出的[[correlation]]大小不同，但不一定代表不同的profitability
+- 拓展：有时本质上是两分布之间的差距，所以可以用[[t-statistics]]，[[hypothesis-testing]]，[[kl-divergence]]，乃至binary classification
