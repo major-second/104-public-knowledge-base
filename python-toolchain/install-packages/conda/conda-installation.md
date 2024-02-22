@@ -18,6 +18,7 @@
         - `<path\to>\Anaconda3\condabin`
       - 再手动`conda init powershell`类似[[conda-installation#Linux]]
         - 此时可能弹出安全提示，必须同意才能生效
+  - [[windows/env-var]]自然也可能成为[[software-management#停删清理卸载]]的残留项
 - 开始菜单搜索`Anaconda Prompt`，里面就可以用[[conda/commands]]
   - 当然为了方便，可以把快捷方式发送到桌面
   - 这个`Prompt`能用conda的[[conda/commands]]和`cd`、`python`等命令，但不能`ls`等，所以说和linux终端还是不同
@@ -28,9 +29,7 @@
     - 有个`Anaconda Powershell Prompt`可以兼得
     - 如果你设置了[[windows/env-var#path]]那直接[[powershell]]就可以兼得
 - 注：即使安装了conda，在[[powershell]]也可能无法直接使用`python`命令
-  - 如果你想在windows做出和linux类似的**不用conda时是‘默认裸’python，用conda时可选环境**的效果，需要自行[下载安装](https://www.python.org/downloads/windows/)并加一条到`path`这个[[windows/env-var]]
-  - 且必须放到靠前的位置，参考[[dont-trust-others]]对微软爹味的控诉
-  - ![](windows-add-path.png)
+  - 如果你想在windows做出和linux类似的**不用conda时是‘默认裸’python，用conda时可选环境**的效果，需要参考[[windows-python]]
 ## Linux
 - [官网](https://www.anaconda.com/)下载（可能浏览器下也可能找到对应链接后`wget`下载）
   - 总之得到某个`.sh`

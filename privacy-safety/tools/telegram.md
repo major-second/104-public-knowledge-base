@@ -3,20 +3,29 @@
   - 如果没有海外手机号需要[[sms]]接码平台
 - 步骤
   - [官网](https://desktop.telegram.org/)，下载手机版，电脑版
-  - 手机安装telegram应用，注册账号，让他发[[sms]]，输入[[sms]]，注册
+  - 手机安装telegram应用，注册账号
     - 有海外手机号当然正常
+      - 输入手机号码
+      - 让他发[[sms]]
+      - 输入[[sms]]
+      - 手机注册成功
+      - 全程不涉及电脑
     - 没有的话，输入手机号和接验证码都参考[[sms]]，即
-      - 电脑买（别人的）手机号码
+      - 电脑（[[sms]]接码网站）操作，买（别人的）手机号码
       - 手机填别人的手机号码（而不是手机本身的号码）
       - 电脑再接收验证码
       - 手机上对着填验证码
+    - 手机登录成功
   - 电脑安装应用，用手机扫码登上
   - 之后换新手机时，即使你用的海外手机号你不再有access也没事。因为已经登录的电脑上会显示验证码。这就是[[bootstrap]]
+    - [参考](https://www.reddit.com/r/Telegram/comments/15z6hjz/i_lost_access_to_the_phone_number_associated_with)
+      - > It says I can only change my phone number on mobile telegram apps. I am on the most recent windows version
+      - > Then log in to your old account on a mobile device. You will then receive a verification code on your desktop. Enter this code into the verification code field on the mobile device, and then you will be able to change it.
 - 要定期登录，否则号可能有麻烦
 - `@一串字母`就很有可能是交流群！
   - 也可以由`t.me`开头链接分享
 - telegram畅游，注意身心健康哦
-- 一个：[[meta#index of index]]：[使用攻略](https://qianghub.com/telegram-group/)
+- 一个：[[meta#meta index]]：[使用攻略](https://qianghub.com/telegram-group/)
   - [channel搜索器](https://telemetr.io/en/channels)
   - [通用搜索器](https://telegramchannels.me/)
     - 右上角换[[region-language]]以显示不同语言结果
