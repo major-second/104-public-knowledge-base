@@ -6,6 +6,8 @@
     - 比如[[nbextension]]中的：能重新打开窗口就不需要restart整个笔记本
     - 比如[[wsa]]中能不重启解决就不要重启
 - 参考[[online-modifications]]
+- 相反的：热启动，[[online]]
+  - 例如[[shell]]允许现改代码，[[vscode-keyboard-shortcuts]]允许现改`keybindings.json`
 ## 重启
 - [[zsh]]中设置默认shell为`zsh`需要**重新登录**
 - [[special-files]]提到

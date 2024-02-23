@@ -1,4 +1,7 @@
 - 前置[[git-installation]]
-  - 其实vscode的git功能更像是“无需安装的插件”，和[[extensions/general]]
+  - 其实vscode的git功能更像是“无需安装的插件”
+  - 联想 [[git-project-manager]], [[view-git-log]]
+  - 联想 [[cursor-ide]]中的[[remote-ssh]]
 - `Ctrl Shift G`调出界面
+  - 但注意 [[view-git-log#git lens]]可能会改你的快捷键！
   - 里面有基本功能比如看已编辑文件，[[commit]]，[[push-pull]]

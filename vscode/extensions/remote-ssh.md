@@ -1,7 +1,8 @@
 - 前置
   - [[ssh/ssh]]
   - [[server-config]]，确认命令行[[ssh/ssh]]可用
-  - 插件：remote ssh
+  - [[vscode-extensions]]：remote ssh
+  - 或[[cursor-ide]]：不需要安装插件，直接自带
 - remote ssh可以几乎如本地般体验地远程开发
   - 参考[[shell]]，[[leaky-abstraction]]思想。其实remote ssh有时让人感觉是一个系统shell（外壳）了
 - [[wsl-develop]]一般都是用remote ssh

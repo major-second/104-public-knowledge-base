@@ -15,3 +15,6 @@
 - 2023.3时，比它好用bug少
   - 比如[git history](#git-history)有时不reload不更新
   - 比如git graph可以看到没有[[commit]]的本地change等等
+# git lens
+- 略微臃肿，且可能占用 `ctrl shift g`快捷键，且pro要收费
+- 不过功能多

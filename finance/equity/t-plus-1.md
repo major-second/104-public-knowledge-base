@@ -1,4 +1,7 @@
 - 中国特有
+- [[symmetry#break]]
+  - 买：一定要看t1 pred，因为你起码1天才能卖
+  - 卖：5分钟很负也应该卖，30分钟很负也应该卖（对比下）
 - 增大不自然程度，非[[first-principle]]程度，使得问题复杂
   - 例如close auction 相比 open auction就是这样
 - 但可能得到盈利空间，alphas
