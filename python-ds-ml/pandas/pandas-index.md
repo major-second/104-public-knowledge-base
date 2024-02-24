@@ -3,6 +3,7 @@
   - `import pandas as pd; import numpy as np; example = pd.DataFrame({i:np.arange(3)+i for i in range(4)}, index=np.arange(3)-1)`
 - 本文档不是指狭义的`.index`，而是泛泛说indexing
 - 拓展[[multi-index]]
+- 注意[[pandas-cheatsheet]]有assert性质常用语句
 [toc]
 ## 行、列
 - `print(example.keys(), example.columns, example.index, len(example))`

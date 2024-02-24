@@ -3,8 +3,11 @@
   - `bid size, ask size`
 - 可以[[grid-search]]的参数
   - [[normalization]]怎么做
-    - 很多时候做一下$\frac{A-B}{A+B}$就是比单纯$A-B$效果好（normalized）
-    - 相比数据本身，较长的[[sliding-window]]？
+    - 很多时候做一下$\frac{A-B}{A+B}$就是比单纯$A-B$效果好
+      - 但是也不绝对
+        - 分母可能导致数值性质不好
+        - 可能错误[[normalization#丢失信息]]，反而是 $A-B$就好！
+    - 相比数据本身，较长的[[sliding-window]]作为分母？
     - 哪些[[normalization]]维度？例如time of the day
   - horizon长度
   - [[bar-data]]标准

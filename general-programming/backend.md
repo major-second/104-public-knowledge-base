@@ -1,0 +1,8 @@
+- 参考
+  - [[leaky-abstraction]]
+  - [[api]]
+- 举例
+  - [[poetry-shell-run]]: python作为shell
+  - [[pybind11]]: python作为cpp
+  - [[system-calls]]: shell作为[[c-lang]]
+  - [[mosek]], [[mujoco-py]]: 多语言同一后端，语言只是[[api]]

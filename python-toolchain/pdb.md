@@ -1,5 +1,10 @@
-- [[breakpoint]]：直接使用 `breakpoint()`函数
-  - 然后 `python 文件.py`运行到了就会断
+- [[breakpoint]]
+  - 直接使用 `breakpoint()`函数
+    - 然后 `python 文件.py`运行到了就会断
+  - 中途[[online]] [[CRUD]]
+    - 增：`b lineno`等等
+    - 删：`cl 编号`或者`cl`（全部）
+    - 查：`b`
 - 常见操作：https://zhuanlan.zhihu.com/p/37294138
   - 查
     - `p`
@@ -9,3 +14,4 @@
     - `n`
     - `r`
     - `c`
+    - `unt lineno`

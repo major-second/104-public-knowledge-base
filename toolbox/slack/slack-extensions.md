@@ -17,8 +17,11 @@
 - 设置report名字后，`/run name`可以跑，并在slack收结果
 - `/standup [@user1 @user2] [#channel]` 相当于快速问卷
   - 比如使用例子：`关一下服务器行不行`
-# [[gitlab]]
-- 参考[[gitlab]]
+# [[git]]
+- [[github]]
+  - 使用extension, connect（可能需要浏览器登录github认证得到验证码），然后可以`/github subscribe`之类的命令
+- [[gitlab]]
+  - 参考[[gitlab]]
 # [[integration-webhook]]
 - legacy / will be deprecated
 - 被gitlab slack apps替代
