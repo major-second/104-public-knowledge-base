@@ -1,6 +1,9 @@
 - https://en.wikipedia.org/wiki/Volatility_(finance)
 - > usually measured by the [[variance#standard deviation]] of logarithmic [[returns]].
   - https://en.wikipedia.org/wiki/Realized_variance: [[variance]]
+  - 举例：股票daily vol，表示close to close 若干天logreturn 的[[variance#standard deviation]]
+    - 所以单独看一天意义有限
+    - 所以一个volatility模型可能的metric：下一天logreturn除以我的模型，得到分布是否接近[[normal]] $N(0,1)$
 - > Historic volatility measures a time series of past market prices. Implied volatility looks forward in time, being derived from the market price of a market-traded derivative (in particular, an option).
 - 相比[[returns]]是二阶量、无方向
   - 更容易预测

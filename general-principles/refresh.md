@@ -27,8 +27,10 @@
 ## 更新文件
 - [[dot-ssh]]中的**重新创建文件夹**
 - [[package-managers-source]]中处理`Conflicting values set for option Signed-By regarding source ...`的方法：删掉并**重新写文件**
-- 及时**删除**[[general-principles/cache]]并**重新生成**，防止接下来使用错误的缓存文件
+- 及时**删除**[[general-programming/cache]]并**重新生成**，防止接下来使用错误的缓存文件
 - 清理[[cookies]]
+- [[make]]设计所解决的问题
+- 脚本语言可能改代码重新保存就行，[[c-cpp]], [[rust]]等等需要重新编译等
 ## 硬件层面
 - [[interface]]提到的重新插拔接口
   - 比如[[wired-connection]]

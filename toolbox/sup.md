@@ -1,0 +1,2 @@
+- https://app.supbot.com/dashboard
+- 类似 [[standuply]]，但是免费版可以15个人，小团队够用了

@@ -12,6 +12,7 @@
 - general
   - 联系[[memory]]，虚拟内存/swap可能导致磁盘io过高
   - 对外联网。很多时候在等网
+    - [[network-i-o]]当然也算io
   - 高强度写[[logs]]
 - 此时往往可用[[coroutine]], [[py-process-thread#伪多线程]]等提速
 # 峰谷、波动思想
