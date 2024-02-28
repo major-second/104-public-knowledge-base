@@ -42,7 +42,11 @@
     - 注：总weight加不到J？可能相当于一些[[regularization]]，不那么强调眼前数据！
   - `class_weight='balanced_subsample'`，正负样本 in-bag平衡
 # 其他联系
-- [[tradeoff]] 或 [[8-ensemble]] 或 防止[[overfit]]等原因都导致实际中更加合理的weight在训练中不一定用（比如训练中简单等权）
-  - 效率：[[sklearnex]]可能用不了一些
-  - [[overfit]]（因子也有等权加）
-  - 可能的伤害：等权好，考虑[[market-impact]]的不等权的不好？可能只fit小市值，实际上没法[[order-execution]]
+- [[tradeoff]] 或 [[8-ensemble]] 或 防止[[overfit]]等原因，都导致实际中更加合理的weight在训练中不一定用（比如训练中可能使用简单等权）
+  - 效率问题：[[sklearnex]]一些函数可能用不了不等权
+  - 防[[overfit]]
+    - 因子也有rank + rank, norm + norm等
+- 和[[intensive-extensive-properties]]联系
+  - weight往往是可加，[[intensive-extensive-properties#extensive]]，且总和有意义
+    - 比如常数1
+    - 比如求质心，weight就是字面意义质量，则加权平均中分母是“总质量”

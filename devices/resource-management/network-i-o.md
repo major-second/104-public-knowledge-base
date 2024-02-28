@@ -1,2 +1,3 @@
 - [[i-o]]
 - `iftop`
+  - 需要抓包，所以可能需要`sudo iftop`

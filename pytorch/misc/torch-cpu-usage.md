@@ -1,0 +1,4 @@
+- `torch.set_num_threads(cpu_num)`
+- 参考
+  - 链接：https://blog.csdn.net/lei_qi/article/details/115358703
+  - [[cpu#num-threads]]

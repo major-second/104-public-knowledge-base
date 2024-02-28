@@ -1,0 +1,4 @@
+- 参考[[11-feature-selection]]
+- 单个feature验证，如[[correlation]]，做[[11-feature-selection#过滤式选择]]
+- [[4-decision-tree]]: feature importance
+  - 一般经验：同个量级的，本质上没太大差别

@@ -19,10 +19,10 @@
   - `nvidia-smi`看显卡使用情况
     - 需要[[ubuntu-nvidia-drivers]]
   - 注：这些地方的显示可能是[[fake-sympton]]，例如云服务器管理商用“半虚拟化”限制使用配置大小等
+  - [[network-i-o]] `iftop`
 - 限制
   - [[ulimit]]
 - 查询数值
   - [[memory]]
     - `free -m`
   - [[cpu]]
-    - 
