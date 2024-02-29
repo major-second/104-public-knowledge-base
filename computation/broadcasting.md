@@ -1,0 +1,3 @@
+- [[xarray]]
+  - [参考](https://docs.xarray.dev/en/stable/user-guide/terminology.html#term-Broadcasting)
+- 一个常见错误：[[loss-function]]计算时，`(n, 1)`的和`(n,)`的数组相减，会得到`(n, n)`的结果。此时会有[[warning]]

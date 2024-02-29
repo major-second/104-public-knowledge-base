@@ -40,6 +40,7 @@
 # [[chatgpt]]
 - 搜索`gpt`，有个名字叫`Q`的就是集成在 slack中的 chatgpt
 - 可以 `@`它问问题，thread中回复，转发内容等，很方便
+- 240228 [[pricing]]有官方后门，他直接提示你 `Need more time? Re-install for +14 days.`，然后你就可以再用14天，可以看成他想提升市占率
 # 其他
 - [[cloud-storage]]
   - [[dropbox]]（自动preview，方便分享等）

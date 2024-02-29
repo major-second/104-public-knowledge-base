@@ -30,4 +30,8 @@
 - [[find-grep]]中排除行（有点类似手动[[comment#ignore]]）
 - 游戏（非实用）：参考[[file-format#直接修改文本文件扩展名]]
 ## ignore
-- [[linting]] [[just]] [[mypy]] [[PEP8]]...
+- [[linting]] [[just]] [[mypy]] [[PEP8]] [[ruff]]: 用注释排除[[linting]]警告（你需要很明确地知道你在干什么）
+  - [例](https://zhuanlan.zhihu.com/p/623677671)
+    - 文件级：开头`# ruff: noqa ...`
+    - 行级：`# noqa ...`
+    - 不同等级的[[settings-and-configurations]]

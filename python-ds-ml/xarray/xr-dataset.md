@@ -1,0 +1,9 @@
+- [[xarray]]
+- https://docs.xarray.dev/en/stable/user-guide/terminology.html#term-Dataset
+  - > A dict-like collection of DataArray objects with aligned dimensions. Thus, most operations that can be performed on the dimensions of a single DataArray can be performed on a dataset. Datasets have data variables (see Variable below), dimensions, coordinates, and attributes.
+  - dict collection of `DataArray` objects, 那就可以看成[[vectorized-operation]]方式
+- [[broadcasting]]
+  - 不同component的维数可能不同，比如有的是`(long, lat)`，有的是`(long, lat, time)`，这时候就可以自动broadcasting
+- 类比[[series-dataframe]]
+  - `DataArray`和`Dataset`的关系类似于`Series`和`DataFrame`
+  - `Dataset`的字典键相当于`DataFrame`的列名

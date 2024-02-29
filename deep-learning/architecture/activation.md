@@ -7,6 +7,7 @@
       - leaky relu
       - [[soft#softplus]]
       - ELU
+      - SiLU
   - 输出值域
     - 如sigmoid用于[[gate]]
     - 如ELU, leaky relu防止[[data#恒正问题]]

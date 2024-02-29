@@ -5,6 +5,7 @@
 - 联系
   - [[pytorch]]
 - https://xarray.dev/
+- [基础术语](https://docs.xarray.dev/en/stable/user-guide/terminology.html#term-Broadcasting)
 -   ```python
     """
     To try Xarray in the browser,

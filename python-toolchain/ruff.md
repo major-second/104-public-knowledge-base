@@ -1,3 +1,4 @@
 - [[python]] [[linting]]
 - 有[[vscode-extensions]]
-  - 有些时候可以autofix，当然也可以强行 [[comment#“有用的”注释]]强行去除
+  - 有些时候可以autofix，当然也可以强行 [[comment#ignore]]强行去除
+  - [参考](https://zhuanlan.zhihu.com/p/623677671)

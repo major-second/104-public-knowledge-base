@@ -31,3 +31,7 @@ code --install-extension ms-python.python
 - 列出[[vscode-extensions]]：`code --list-extensions`
 - 查看版本：`code --version`
 - `root`身份启动：`code --no-sandbox --user-data-dir <文件夹>`
+# [[powershell]]
+- [[windows/env-var#path]]设置两个坑
+  - 不要被[[cursor-ide]]的设置覆盖！所以要把vscode的排前一点
+  - 结尾是`/bin`，例如应该是 `C:\Program Files\Microsoft VS Code\bin`而不是`C:\Program Files\Microsoft VS Code`，因为后者会导致`code`命令定向到`code.exe`而不是`code.cmd`，所以无法使用[[command-line-flags]]

@@ -2,10 +2,13 @@
   - [[ssh/ssh]]
   - [[server-config]]，确认命令行[[ssh/ssh]]可用
   - [[vscode-extensions]]：remote ssh
-  - 或[[cursor-ide]]：不需要安装插件，直接自带
+  - 或[[cursor-ide]]
+    - 不需要安装插件，直接自带
+    - 但 [[vscode-keyboard-shortcuts]]的[[json]] key不同
 - remote ssh可以几乎如本地般体验地远程开发
   - 参考[[shell]]，[[leaky-abstraction]]思想。其实remote ssh有时让人感觉是一个系统shell（外壳）了
 - [[wsl-develop]]一般都是用remote ssh
 - `~/.vscode-server`是server
+  - 相应[[cursor-ide]]当然就是`~/.cursor-server`
   - 需要[[refresh]]时可删除
   - 离线安装时需要拷过来
