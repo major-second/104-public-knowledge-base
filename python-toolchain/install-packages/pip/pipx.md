@@ -1,12 +1,18 @@
 - [参考](https://github.com/pypa/pipx)
-- windows推荐用[[scoop]]
-  - 根据官网写的命令和命令给出的提示安装。注意
-    - 可能要 [[refresh]]重启终端等
-    - 可能要`pipx install python`等
+- windows
+  - 推荐用[[scoop]]，方便
+    - 根据pipx官网写的命令和命令给出的提示安装
+      - 注意
+        - 可能要 [[refresh]]重启终端等
+        - 202403有卸载不干净，用以前的[[python-interpreter]]，你解释器路径变了会导致问题。可以用先安装[[windows-python]]再`python -m pip install pipx`代替
 - linux直接 [[apt-install]]
   - `sudo apt install pipx`
   - 可能需要`python`，而不能是`python3`命令（只有`python3`没有`python`不行）
-    - 所以可以在[[conda]]环境中，或者手动[[ln-s]] `python`到`python3`，或者[[apt-install]] `python-is-python3`，等等
+    - 参考[[windows-python]], [[linux-python]]解决
+      - 即
+        - 可以在[[conda]]环境中
+        - 或者手动[[ln-s]] `python`到`python3`
+        - 或者[[apt-install]] `python-is-python3`，等等
 - 一般可安装出 globally available的新命令
   - 而不是仅仅在[[python]]中可[[python-import]]的
   - 例如安装出[[poetry]]从而有`poetry`命令

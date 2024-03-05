@@ -1,5 +1,6 @@
 - 一般ffill没有[[information-leak]]
   - annotate B to A，ffill指B中“A能看到的最近的过去时间”的过来
-- bfill用途举例：[[停牌]]，此时生成target y用，不用担心[[information-leak]]问题
+- bfill用途举例：[[停牌]]，生成target y用
+  - 因为是生成target, 不用担心[[information-leak]]问题
 - [[aggregation]]常用。多个数据channel，有的字段多更新慢，有的字段少更新快，则那些多余字段往往ffill
   - 相当于[[missing-values]]处理

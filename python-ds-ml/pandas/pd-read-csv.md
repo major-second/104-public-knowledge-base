@@ -19,3 +19,5 @@
   - `skiprows=lambda x: x > 0 and x % 2 == 0`
 - `df.to_csv('data_1.csv')`
   - 注意这两者不“互为逆运算”，因为可能有一列额外的[[pandas-index]]存在
+# 拓展
+- read_feather, read_parquet, read_excel等都有，不过可能需要不同的包，比如`pyarrow`，`openpyxl`等

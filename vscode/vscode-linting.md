@@ -1,0 +1,7 @@
+- [[linting]]
+- 下方栏，打开python文件时python字样左侧大括号就是
+- 功能
+    - [[isort]]
+    - [[ruff]]插件则可用[[ruff]]
+    - 自动补充[[python-import]]
+    - [[python-typing]]

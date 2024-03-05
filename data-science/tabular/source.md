@@ -1,4 +1,5 @@
 - 表格（结构化数据）参考[[category]]，是机器学习、统计中常用的数据类型
-- [[csv]]
+- [[csv]], [[excel]]（低技术力，人易读）
+- [[tabular-formats]]
 - [[series-dataframe]]
 - “结构化数据”

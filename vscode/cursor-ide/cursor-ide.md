@@ -44,7 +44,11 @@
   - it doesn't [[refresh]]es
 - `@` can be used to mention something (e.g. file)
 - `Ctrl+Shift+Y` to follow up
-- For each chat input press `Ctrl+Enter` to use the code base as the context
+- Chat inputs
+  - For each chat input, press `Ctrl+Enter` to use the code base as the context
+  - `Enter`: normal
+  - `Alt+Enter`: no context
+  - `More` panel in chats: toggle various settings like [[github-copilot]]
 ## Note
 - Remember to copy the prompts in time (to avoid intermittent server errors causing loss of information)
 - When running AI generation, it can run in the background while you do other things
