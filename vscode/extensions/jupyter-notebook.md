@@ -30,4 +30,9 @@
   - 注意vscode调试`.ipynb`时，是在文件当前目录运行的，有时可能导致`sys.path`缺路径。和[[run-jupyter]]不同。这就是[[non-standard]]
     - 解决方法参考[[sys-path]]和[[settings-json]]中有关`pylance`的部分
       - 两者一个是处理实际能不能跑，一个是让静态分析能找到包
-
+- [[general-programming/debug]]
+  - 热键
+    - `Ctrl+Enter`运行当前cell
+    - `Shift+Enter`运行当前cell并跳到下一个
+    - `Alt+Enter`运行当前cell并新建一个cell
+    - `Ctrl+Alt+Shift+Enter` debug，可以打[[breakpoint]]

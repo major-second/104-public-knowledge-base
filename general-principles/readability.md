@@ -9,6 +9,7 @@
 - [[naming#convention]]
 - [[repo-structure]]
 - [[gui]]
+- 一个争议例子：[Yoda conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
 # presentation
 - focus more on your progress since last update
 - 参考[[minimum-beamer/README]]

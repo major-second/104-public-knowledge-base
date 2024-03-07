@@ -3,5 +3,13 @@
 - 功能
     - [[isort]]
     - [[ruff]]插件则可用[[ruff]]
-    - 自动补充[[python-import]]
     - [[python-typing]]
+      - 自带checker
+      - [[mypy]]
+    - 自动补充[[python-import]]
+      - [[settings-json]]
+        ```json
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.autoSearchPaths": true,
+        // if "false", may be problematic regarding relative / absolute imports
+        ```

@@ -23,6 +23,8 @@
       - 即可递归地初始化！
   - 效果
     - 可以看到`.gitmodules`文件，以及递归初始化了的各个子模块
+  - 问题
+    - 子模块比父模块本来就更加新，则`update`反而可能把他变老且变成[[detached]]
 - [[commit]], [[push-pull]]更新
   - [[commit]], [[push-pull]]等，即可同步“增加了子模块”这一信息到相应的（主模块）git库当前[[git-basics/branch]]
     - 当然，经过相应的[[commit]]，就有可能有的[[git-basics/branch]]有子模块，有的没有

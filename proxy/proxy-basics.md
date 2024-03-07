@@ -26,6 +26,11 @@
   - 客户端，如[[windows-proxy-client]], [[linux-proxy-client]], [[v2raya]]等
     - 有些客户端如`geph`集成了[[node]]
   - [[configure-proxy]]使得使用上刚刚说的[[node]]和客户端
+  - 傻瓜式全集成软件（往往收费/有政治目的）
+    - `getflix`
+    - `geph`
+    - 翻回国
+      - [穿梭](https://www.transocks.com/)
 - 坏处
   - 开代理有时会造成安全风险，导致一些东西不给你用。比如公司账号无法登录等
   - 代理比直连有时候会慢，[[vpn]]由于照顾公司，那就更慢。所以：可以不用代理那就不用呗

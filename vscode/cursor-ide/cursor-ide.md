@@ -44,6 +44,7 @@
   - it doesn't [[refresh]]es
 - `@` can be used to mention something (e.g. file)
 - `Ctrl+Shift+Y` to follow up
+  - [[tapping]] is sometimes not usable at 240305, so please use the shortcut key `Ctrl+Shift+Y`
 - Chat inputs
   - For each chat input, press `Ctrl+Enter` to use the code base as the context
   - `Enter`: normal

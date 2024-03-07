@@ -1,7 +1,7 @@
 - detached状态：没有对应任何一个（本地或远程）的[[git-basics/branch]]
   - 在detached状态，如果不加tag或变成临时[[git-basics/branch]]，那么你的修改是很容易丢失的
     - 例如[[checkout]]了别的
-    - 例如父模块递归[[push-pull]]，参考[[submodule]]
+    - 例如父模块递归[[push-pull]]时，参考[[submodule]]
   - 当然从好处讲，也很容易舍弃
     - 所以对于临时尝试不妨可以这样
   - 注：push时如果弹出报错`undefined`啥的，那你就在detached状态

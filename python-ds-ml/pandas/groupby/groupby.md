@@ -11,6 +11,7 @@
 # kwargs
 - `sort`：默认会排序！可能不需要
 - `as_index`：默认对dataframe会把group标准变为index
+  - 如果False，可能麻烦的是`.groupby(...).sum()['Key']`结果不是一列Key而是两列（带有index）
 # 用法
 - `for`迭代循环得到 `label, sub_df`
 - [[pandas-agg-basics]]中很多都能用
