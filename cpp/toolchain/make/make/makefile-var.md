@@ -11,7 +11,9 @@
 - 特殊
   - `$@` target
   - `$<` dependency
-- `$$`是[[escape]]，可以变成[[shell]]中的`$`，从而使用 `$()`和`${}`
+- `$$`是[[escape]]，可以变成[[shell]]中的`$`，从而使用 [[shell]]中的 `$()`和`${}`
   - 但由于使用的shell种类等拉拉杂杂问题，终端有的变量make未必有
-    - `SHELL := /bin/bash`可能解决一些问题
+    - 可能解决一些问题的
+      - `SHELL := /bin/bash`
+      - 使用`bash -i` [[shell-type]]（交互式）
     - [[non-standard]]

@@ -13,7 +13,9 @@
     - 换阿里云搞定
 - 换源或增加源 [[CRUD]]
   - [[cli]]
-    - 具体地：在文件`/etc/apt/sources.list`中
+    - `sudo add-apt-repository ppa:deadsnakes/ppa`，在[[linux-python]]用到
+  - 文件编辑
+    - 在文件`/etc/apt/sources.list`中新增
       - 也可以`/etc/apt/sources.list.d/<filename>`
         - 参考[[settings-and-configurations]]
       - 且在使用脚本自动安装软件时，`.d`操作是标准操作，防止互相干扰
@@ -34,7 +36,7 @@
     - 添加一次即可
       - 所以，之后如果要重装这些软件，如果嫌每次`apt update`太慢，则可以不运行
       - 参见[[read-doc]]
-  - 除了添加`ubuntu`官方、软件开发者官方的源，还可能有一些个人维护的源，即“ppa”
+  - 除了添加`ubuntu`官方、软件开发者官方的源，还可能有一些个人维护的源，即`ppa`，可能有新版本方便[[general-software-technical/upgrade]]，但你需要相信对方
 - 更新软件源列表：`sudo apt update`
   - 这是安全的，和[[general-software-technical/upgrade]]一定要区分开！`upgrade`千万谨慎执行！因为可能破坏[[dependencies]]
 ## 举例

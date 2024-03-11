@@ -25,6 +25,8 @@
     - 可以看到`.gitmodules`文件，以及递归初始化了的各个子模块
   - 问题
     - 子模块比父模块本来就更加新，则`update`反而可能把他变老且变成[[detached]]
+      - `git submodule update --remote --merge`参数不会变老，但仍然[[detached]]
+      - 参考[[remote]], [[merge]]
 - [[commit]], [[push-pull]]更新
   - [[commit]], [[push-pull]]等，即可同步“增加了子模块”这一信息到相应的（主模块）git库当前[[git-basics/branch]]
     - 当然，经过相应的[[commit]]，就有可能有的[[git-basics/branch]]有子模块，有的没有
@@ -65,4 +67,7 @@
   - 比如[[settings-json]]中提到的`authentication`相关
   - 比如[[github-codespaces]]不能自动得到，需要手动初始化一下
 ## 典型应用
-和[[fork-private]]以及[[pip]]中`pip install -e .`结合，使得可以修改并使用第三方源码
+- 和[[fork-private]]以及
+  - [[pip]]中`pip install -e .`
+  - 或[[poetry-dependency-specification]] 中 `develop = true`
+- 结合，使得可以使用**并修改**第三方源码

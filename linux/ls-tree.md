@@ -8,3 +8,5 @@
   - 递归[[general-principles/recursion]]可视化高级`ls`
   - `tree -L 2`限制层数
   - `tree -P ...`找pattern
+  - `tree --filelimit 10`超过指定文件数就不显示
+  - [参考](https://linuxsimply.com/tree-command-in-linux/)

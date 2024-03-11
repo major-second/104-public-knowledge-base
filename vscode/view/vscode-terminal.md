@@ -1,11 +1,15 @@
 - vscode集成了终端（可能是windows的[[powershell]]或者linux的shell），参考[[vscode-keyboard-shortcuts]]<code>Ctrl+&#96;</code>快捷打开
 - 可以`+`增加window或两个框（split）按钮增加pane
   - 这点像[[tmux]]，只不过它不能退出后还运行
-  - 快捷键：<code>Ctrl+Shift+&#96;</code>新终端，`Ctrl+Shift+5`split
-  - `5`？这个是不是想到[[tmux]]的`Ctrl+B Shift+5`
+  - 快捷键
+    - <code>Ctrl+Shift+&#96;</code>新终端
+    - `Ctrl+Shift+5`split
+      - `5`？这个是不是想到[[tmux]]的`Ctrl+B Shift+5`
   - `alt+左或右`切换`Ctrl+Shift+5`出来的终端
-- `x`：隐藏（后台）（快捷键 <code>Ctrl+&#96;</code>）
-- 垃圾桶：真正[[quit]]（快捷键`delete`）
+- `x`按钮：隐藏（后台）
+  - 快捷键 <code>Ctrl+&#96;</code>
+- 垃圾桶：真正的[[quit]]
+  - 快捷键`delete`
 - [[launch]]出的程序自动打开一个终端
   - 有现成的会用现成的
     - 2023.1 [[vscode-python]]有个bug：可能必须用现成的才能正常读取`cwd`
@@ -15,5 +19,5 @@
   - 可能会缺少权限。所以一个命令如果在这里跑不通，就去其它终端试试，参考[[7-permissions]]
     - 例如linux系统物理机：桌面直接打开的终端
   - 可能没法显示东西
-- `Ctrl+左键点击`终端显示的路径字符串，可以在编辑器中打开
-  - 因此可以结合`$(pwd)`等东西便捷地使用，到处打开编辑东西
+- `Ctrl+左键点击`终端显示的路径字符串（**不能被空格隔开**），可以在编辑器中打开
+  - 因此可以结合`$(pwd)`，程序print等，便捷地使用，到处打开编辑东西/查看[[logs]]
