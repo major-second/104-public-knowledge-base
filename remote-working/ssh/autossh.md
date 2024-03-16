@@ -1,2 +1,10 @@
-- 用途：例如断了自动重连，对于[[jumptainer]]这种非常实用
+- 用途：例如断了自动重连，对于[[jumptainer]]这种非常实用，参考[[jumptainer]]
 - 看帮助，只有`-V`版本，`-f`后台，`-M`监视等参数，其它参数直接传给[[ssh/ssh]]
+- E.g.
+  - In [[tmux]], `autossh -M 4010 -R 2422:localhost:22 ubuntu@online-server`
+    - This is blocking, so you need to
+      - `Ctrl+B` and then `d` to detach, or
+      - `Ctrl+B` and then `"` to split
+      - Ref: [[tmux]]
+    - This `2422` refers to `online-server`'s
+  - and then you can monitor it by `lsof -i:4010`

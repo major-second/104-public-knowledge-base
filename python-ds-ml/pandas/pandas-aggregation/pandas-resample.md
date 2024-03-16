@@ -1,3 +1,4 @@
 - `df.resample('5min').first()`：每个5分钟取第一个数据
 - `df.resample('5min').sum()`：每个5分钟求和
 - 参考[[bar-data]]
+- `.ffill()`：forward fill，注意默认可能造成第0行（首行）变成NaN，因为第一行是0.5，resample后的数据第0行意图是0，第1行是1，就会出现

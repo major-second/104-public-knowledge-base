@@ -11,3 +11,4 @@
     url = "https://pypi.tuna.tsinghua.edu.cn/simple"
     priority = "primary"
     ```
+  - `poetry`会利用已有[[proxy-basics]]所以国内需要关掉才能访问清华源

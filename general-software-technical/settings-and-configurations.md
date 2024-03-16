@@ -41,12 +41,15 @@
    4. 有时还需要结合[[find-grep]]找到到底去哪里设置
       1. 比如franka机器人的`xacro`文件，参考[[franka-panda/limit]]
    5. `.d`的作用
-      1. 比如`source.list`和`source.list.d`的关系
-      2. 你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`
-      3. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
-      4. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker-apt-source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
-      5. 删除也可以方便地删除一部分，这在[[package-managers-source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
-      6. 类似的做法：[[bashrc]]中`source ~/.bash_env_0`，分成多个部分等
+      1. 比如
+         1. `source.list`和`source.list.d`的关系
+            1. 你可以放很多扩展名为`.list`的文件，文件名可以不同，也不一定为`source`，比如`1.list, 2.list, ...`
+            2. 把它们放到`/path/to/source.list.d/`目录，相当于`/path/to/source.list`里具有多个文件的内容
+            3. 所以直接在`.d`文件夹里加文件，其实等价于编辑某个特定文件，这在[[docker-apt-source]]中有应用：添加到`/etc/apt/apt.conf.d/`中任意一个文件，相当于增加一部分内容到`/etc/apt/apt.conf`
+            4. 删除也可以方便地删除一部分，这在[[package-managers-source]]中就提到了：当gpg key出问题时，删除对应`.list`和gpg key，不影响其它`.list`
+         2. `cat ../sshd_config`
+            1. 里面可能显式出现`Include /etc/ssh/sshd_config.d/*.conf`
+      2. 类似的做法：[[bashrc]]中`source ~/.bash_env_0`，分成多个部分等
    6. 为了达成同一目的，可能有多个文件，之间可能具有“优先级”而出现一些值的覆盖，参考上一节“优先级”
 3. [[cli]]命令
    1. 比如`git config`，参考[[git-config]]

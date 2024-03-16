@@ -1,12 +1,25 @@
+- 如果使用[[aws]]等云服务需要：
+  - （网页）控制台，打开指定端口inbound防火墙
+  - [[server-config]]（参考[[jumptainer]]）
 - 命令行：参考[[ssh/ssh]]中`-L`, `-R`
   - 远程forward port：远程访问某个端口变成访问本地的端口：`-R`
-    - 例如`ssh -R 18889:localhost:8889 user@ip`，你本地`8889`有个[[configure-proxy]]好的代理，那远程就可以用`18889`端口使用代理
-    - 当然可用于翻墙的[[temp-solution]]
-    - 可以用于[[autossh]], [jumptainer]
+    - 可用于翻墙的[[temp-solution]]
+      - a用`ssh -R 18889:localhost:8889 user@ip`连接b
+      - 你a的`8889`有个[[configure-proxy]]好的代理
+      - 那b就可以用b自己的`18889`端口使用代理
+    - 用于[[autossh]], [[jumptainer]]
+      - 此时往往a用`ssh -R <port>:localhost:22 user@ip`连接b，然后b就可以用`ssh -p <port> user_at_a@localhost`连接a
+      - 可结合[[autossh]]
+      - 注意：需要`b`的ip或域名，但是`a`的用户名和密码 或 [[pubkey-authentication]]
+      - 打开了防火墙等等后，就可以用外面的`c`连接`user_at_a@ip_of_b`来连接`a`了
   - 本地forward port：本地访问某个端口变成访问远程的端口：`-L`
     - 例如`ssh -L localhost:11111:localhost:20171 user@ip`，你远程`20171`有个[[configure-proxy]]好的代理，那本地就可以用`11111`端口使用代理
     - 当然可用于翻墙的[[temp-solution]]
     - [[tensorboard]], [[v2raya]]常用：访问本地（例如`6006, 2017`）变成访问远程
   - 速记：L四R三，L访问本地变远
+  - 常见搭配
+    - `-N`
+    - [[tmux]]
+    - [[autossh]] `-M -N`等
 - vscode[[remote-ssh]]时的转发：![](forward-port-vscode.png)![](forward-port-vscode-2017.png)，然后右边三个按钮都很香很好用
   - 一般相当于`-L`：本地访问某个端口变成访问远程的端口
