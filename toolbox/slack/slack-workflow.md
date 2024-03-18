@@ -1,0 +1,2 @@
+- ![](slack-workflow-example.png)
+- 可以自动化流程，自动重复，让人点ok，等等。通过自动化流程，也可替代[[standuply]] [[sup]]等

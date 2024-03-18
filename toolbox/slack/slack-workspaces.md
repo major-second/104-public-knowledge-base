@@ -1,4 +1,4 @@
-- [[slack]]
+- [[slack/slack]]
 - 名称往往是`<name>.slack.com`
   - 所以创建workspace时建议全英文，否则会导致乱码
     - [[region-language]]

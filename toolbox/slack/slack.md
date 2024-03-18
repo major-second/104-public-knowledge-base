@@ -70,13 +70,18 @@
 - 都可以给自己或团队（[[slack/slack#范围]]，channel）reminders
 # 范围
 - 私信
-  - 个人私信，给自己发东西作为草稿
-  - 一般地私信个人
-- channeling
-  - 拉小组（新增channel）/组内交流
-    - “锁”图标：private group
-  - 大群交流
-    - 小心打扰别人
+  - 个人私信
+    - 给自己发东西作为草稿
+    - 一般地私信个人
+  - 团体私信（临时小群），类比[[wechat-tips]]，但是不如[[slack/slack#channeling]]正式/持久
+## channeling
+- [[naming]]：往往可加前缀方便自动排序区分，如`admin-`, `dev-`等
+- 拉小组（新增channel）/组内交流
+  - “锁”图标：private group
+- 大群交流
+  - 小心打扰别人
+- 可以加入外部连接成员（邮箱邀请等），但不免费，需要[[pricing]]
 # 其他
 - [[settings-and-configurations]]：例如手机电脑 notification settings可以不同
 - [[slack-extensions]]
+- [[pricing]]: 可能需要能付款的信用卡。年付款不够可以用月付款。不付款无法有external connection，无限保存记录等功能，但是问题不大
