@@ -1,0 +1,6 @@
+- [[pdb]]
+- [[ipdb]]
+- [[jupyter-basics]]本身就可以看成一个debugger
+    - 更别说还有[[nbextension]]中`ctrl + B` panel等
+- [[jupyter-notebook/magic]]中的`%debug`
+- [[vscode-python]]

@@ -1,6 +1,6 @@
 - 和[[file-explorer]]密切相关
   - 如果任务栏没了等等问题，可能[[task-manager]]重启[[file-explorer]]
-  - 或者把[下文](#non-standard解决方案)删掉等等
+  - 或者把[[taskbar#non-standard解决方案]]删掉等等
 - 下文大部分针对win11
 # 设置
 - personalization - taskbar
@@ -19,7 +19,7 @@
 - https://github.com/valinet/ExplorerPatcher
 - 目的：在win11下用win10风格
 - 慎重，可能出锅
-  - 曾经导致资源管理器用不了
+  - 曾经导致[[file-explorer]]用不了
   - 当时为了卸载，只能用[[aida64]]作为[[temp-solution]]
 - 安装之后右键任务栏选项
     - 比如[[multi-display]]时如何显示

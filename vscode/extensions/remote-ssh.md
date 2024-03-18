@@ -11,4 +11,5 @@
 - `~/.vscode-server`是server
   - 相应[[cursor-ide]]当然就是`~/.cursor-server`
   - 需要[[refresh]]时可删除
+    - 例如清除[[6-env]]时
   - 离线安装时需要拷过来

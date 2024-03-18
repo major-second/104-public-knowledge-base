@@ -1,3 +1,11 @@
-可以写一些非`python`的代码
-- 例如`!pip config`，`!pip install`等
-- [[jupyter-notebook/cache]]也有
+- 可以写一些简单[[shell]]代码（但太复杂了肯定还是有[[non-standard]]的问题）
+    - 例如`!pip config`，`!pip install <...>`等
+    - 可以用`{}`包裹python变量填入，类比[[f-string]]
+- `%` magic
+    - [[jupyter-notebook/cache]]
+    - `%debug`用于[[python-debug]]
+      - 使用底层是[[ipdb]]，故可能比相当于有一个简易的[[debug-console]]性能消耗更少
+      - 可以
+        - 在出现exception时回到当时状态（[[call-stack]]最顶层）
+        - print变量
+      - 不能输入多行代码/自动补全，还是不太方便
