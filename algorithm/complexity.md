@@ -18,4 +18,4 @@
   - [[heap#floyd]]
 # 和实际联系
 - [[tradeoff]]
-- [[misc/profile]], [[debug-profiling]]
+- [[misc/profile]], [[time-consumption-profiling]]

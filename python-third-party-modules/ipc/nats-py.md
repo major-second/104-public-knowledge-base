@@ -26,7 +26,7 @@
     if __name__ == '__main__':
         asyncio.run(main())
     ```
-# [[context-manager]]
+# [[with-context-manager]]
 - https://nats-io.github.io/nats.py/modules.html#asyncio-client
 ```python
 import asyncio

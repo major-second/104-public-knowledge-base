@@ -31,7 +31,7 @@
     - "Quick question", ask related questions during the process
 - `Ctrl+/` to toggle whether to use [[gpt-4]]
 - `Ctrl+Backspace` `Ctrl+N` to reject
-  - Therefore, when editing requires [[keys]], you may need to use `Ctrl+Delete` instead of `Ctrl+Backspace`
+  - Therefore, when editing requires [[vim-keys]], you may need to use `Ctrl+Delete` instead of `Ctrl+Backspace`
 - `Ctrl+Enter` to accept all
 - `Ctrl+Shift+Y` to accept a part
 ## chat

@@ -1,5 +1,7 @@
 [toc]
 - 参考[[compatibility]], [[general-software-technical/upgrade]]
+# semantic-versioning
+- 一种版本号的规范
 # 版本号
 ## 查看版本号
 - 命令行：往往是`--version, -V, -version`等

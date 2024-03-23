@@ -1,0 +1,7 @@
+- 不同选择
+  - [[bash]] [[zsh]]
+- [[shell-type]]
+- 语法太讨厌？[[python]]!
+  - 注意一个和[[python]]区别：[[online-modifications]]程度不同
+    - bash运行中修改文件有效，故非常容易出错
+    - [[python]]运行中修改文件无效

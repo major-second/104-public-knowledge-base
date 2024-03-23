@@ -6,3 +6,6 @@
   - 注意优先级从左到右而不是[[python]]先与再或，所以需要`()`
 - `{}`: [[subprocess]]
 - `>, >>, <, <<`: [[redirection]]
+- 参考
+    - https://www.jianshu.com/p/8ac1fee78e14
+    - https://www.cnblogs.com/aaronLinux/p/8340281.html

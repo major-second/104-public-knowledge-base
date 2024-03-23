@@ -1,0 +1,13 @@
+- 自动识别链接
+  - 可能场合
+    - [[terminal]]中
+    - [[markdown]]等文档或代码中
+      - [[markdown-links]]
+  - 可能类型
+    - 超链接，[[url]]
+    - 文件链接
+      - 有可能文件名不能带空格等，[[leaky-abstraction]]
+    - 文件和行号
+- 跳转
+  - 一般`ctrl+悬浮`，`ctrl+鼠标左键`等
+  - 悬浮可能看到[[read-doc]]（[[python]]的`__doc__`等）

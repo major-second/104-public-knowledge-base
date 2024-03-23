@@ -7,3 +7,5 @@ class Color(enum.Enum):
 print(Color.RED)
 print(Color.RED.value)
 ```
+- [[naming#有名字作为交流基础]]，防止手输字符串等
+- [[naming-in-coding]]

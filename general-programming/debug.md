@@ -53,7 +53,7 @@
   - 调试某个函数本身时，先不用[[cache-decorator]]，否则[[jupyter-basics]]中进不去函数
 ## 中间层级
 - 在小规模到大规模前，可能可以加入“中规模”，多加几级。原因：
-    - [[debug-profiling]]看到性能瓶颈所在
+    - [[time-consumption-profiling]]看到性能瓶颈所在
       - 有一次在`matplotlib`中，[[scatter]]了几百万个点导致慢，233
     - [[ds-debug]]
     - 单进程到[[multiprocessing]]看有没有引入额外锅
@@ -122,7 +122,7 @@
   - 可以是用[[xxd-diff]]比较文本，或者[[pickle/basics]]读取并比较等
   - 注意[[python/equality]]的判断。比如pytorch张量的相等判断[[misc/equality]]
 ## 其它
-- [[debug-profiling]]
+- [[time-consumption-profiling]]
   - 光跑完还不行，还要调试时间、资源消耗！
 - [[code-data]]：出bug除了代码出问题，也可能数据出问题！
   - 如：不同code（通常是不同版本的code）生成的数据格式不同

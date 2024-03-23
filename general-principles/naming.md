@@ -1,7 +1,5 @@
 [toc]
-- 程序中的命名
-  - [[2-naming]]
-  - [[object-oriented#override-overload-overwrite]] overload
+- [[naming-in-coding]]
 # 换元或简记
 - 换元积分法
 - 换元简化推导
@@ -32,32 +30,46 @@
   - 对于新定义，如果你适当定义可以简化问题，等价于不适当定义之后代数变形 [换元](#换元或简记)
     - [[4-probability#coupon collection]]拓展题
 - [[induction]]中设命题
-- 程序的flag
-  - [[oi-wiki-stl/string]]中的`string::npos`
-  - 自己写算法题常见的无意义值（如`-1`）
+- [[naming-in-coding]]中的
+  - flag
+    - [[oi-wiki-stl/string]]中的`string::npos`
+    - 自己写算法题常见的无意义值（如`-1`）
+  - [[enum]]，防止手输字符串等
+  - 方便跳转 [[ide-follow]]
+    - [[wikilinks]]
+    - 变量名，函数名，`Ctrl+左键`
 - [[normal#cov#corr绝对值期望]]中设一个分布$W$
 # convention
-- 循环变量命名常用`i, j`，未知数用$x$，[[binary-search]]命名上下界用`ub, lb`或`hi, lo`
-- [[pep8]]这类规范
-## 约定俗成
-- 数学：未知数用$x,y$，参数用$\theta$，已知数用$a,b$，复数用$z$等
-- 物理：时间用$t$，长度用$L$……
-- [[2-naming]]计算机中：循环变量`i`，python对象私有属性约定`_`开头，`CamelCase`，`snake_case`
-- 领域缩写：IB, VC, PE, FA...
+- 约定俗成
+- 数学、计算机通用
+  - 循环变量命名常用`i, j`，$\sum$记号中也是
+- 数学中例子
+  - 未知数用$x$
+  - 已知数$a,b,c$
+  - 复数用$z$
+  - 最优用$x*$
+  - [[estimation-in-stats]]用$\hat x$
+  - 参数用$\theta$
+- 物理中例子
+  - 时间用$t$，长度用$L$……
+- 程序中
+  - [[naming-in-coding]]
+- 领域缩写
+  - 金融的IB, VC, PE, FA...
   - [参考](https://zhuanlan.zhihu.com/p/42090782)
-- 计算机：[[numpy-indexing#row and column]]
-## 历史遗留
-- https://www.zhihu.com/question/276016774/answer/385381844
-  - [[heap-堆区]]和[[heap]]的关系
 ## 有误导性
 - 可能让人误解，但是不是命名的锅，是你自己水平不够
-  - [[non-parametric]]，英文名non翻译成中文非
-  - 然而如果你中文水平不行，会以为非参数是“无参数，参数维数为0”，实则不是。反而是维数接近无穷
-- 历史原因，命名稀烂，约定俗成了就一直这样
-  - [[unary]]“最小二乘法”，直接翻译自日文汉字，所以“二乘”非常不好，容易误解为$2\times$
+  - [[non-parametric]]
+    - 英文non翻译成中文非
+    - 如果你中文水平不行，会以为非参数是“无参数，参数维数为0”，实则不是。反而是维数接近无穷
+    - 实则是断句问题。“非 / 参数模型”就比较清楚
+- 有问题的：常常是历史遗留
+  - https://www.zhihu.com/question/276016774/answer/385381844
+    - [[heap-堆区]]和[[heap]]的关系
+  - [[unary]]“最小二乘法”，直接翻译自日文汉字，“二乘”非常不好，容易误解为$2\times$
   - [[type-i-ii-errors]]，数字区分，根本没任何信息量，只是为了区分而区分
     - 哈哈你自己不能干这个事，比如`if case1`
-      - [[2-naming]]
+      - 参考[[2-naming]] [[naming-in-coding]]
 # 命名有时是相对的
 - [[spectrum]]
 - 没有严格的定义，定义相互转化
@@ -73,6 +85,8 @@
   - 不需要具体知道是什么，也不需要求，也暂时求不出来
   - 但只需要知道他存在，就会很有帮助
 - 例
+  - [[integral-constant]]
+  - [[proportional]]
   - [[广义逆]]中的$\forall \alpha, \exists \beta$
     - 不需要知道$\beta$具体是啥，但反正$(X'X)(X'X)^-X'\alpha - X'\alpha=(X'X)(X'X)^-X'X\beta - X'X\beta=0$
     - 于是$ (X'X)(X'X)^-X' = X'$
@@ -85,9 +99,6 @@
   - 设了之后可以有额外性质
 - [[gcd-lcm]]
 - [[指数#应用]]设“最小素因子”
-# 设常数
-- [[integral-constant]]
-- [[proportional]]
 # 凑形式
 ## 凑形式设函数
 - 设某个东西为$f$，然后$f$出现不止一次，用于单调性比较大小或取等……

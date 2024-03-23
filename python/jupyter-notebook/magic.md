@@ -4,7 +4,9 @@
 - `%` magic
     - [[jupyter-notebook/cache]]
     - `%debug`用于[[python-debug]]
-      - 使用底层是[[ipdb]]，故可能比相当于有一个简易的[[debug-console]]性能消耗更少
+      - 使用底层是[[ipdb]]，故可能比相当于有一个简易的[[debug-console]]
+        - 性能消耗更少
+        - tricky 点比如无法序列化`pandas`的`DataFrame`，`numpy`的`ndarray`等
       - 可以
         - 在出现exception时回到当时状态（[[call-stack]]最顶层）
         - print变量

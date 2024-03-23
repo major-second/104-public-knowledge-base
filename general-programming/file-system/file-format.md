@@ -1,13 +1,18 @@
 [toc]
 ## 总体
-- 前置[[encode-decode]]
-- 参考[[steganography]]
+- 参考
+  - [[file-name]] [[naming#convention]]
+  - [[encode-decode]]
+  - [[steganography]]
 ## 本质
-- 文件格式（扩展名）本质上是一种人为约定，参考[维基百科](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D)
-- 既然是约定，就有时会有“方言”之类的
-  - 例如[csv格式](https://baike.baidu.com/item/CSV)的“方言”：有时以逗号分隔，有时以制表符`\t`分隔等
-  - 微小差别，并无统一标准，只需简单处理即可使用
-  - 参考[[input]]
+- 文件格式（扩展名）本质上是一种人为约定
+  - 参考
+    - [[naming#convention]]
+    - [维基百科](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D)
+  - 既然是约定，就有时会有“方言”之类的
+    - 例如[csv格式](https://baike.baidu.com/item/CSV)的“方言”：有时以逗号分隔，有时以制表符`\t`分隔等
+    - 微小差别，并无统一标准，只需简单处理即可使用
+    - 参考[[input]]
 - 同样一种文件格式，有些打开它的程序识别的约定contract严格，有些宽松
   - 例如有些程序可能可以识别各种分隔符的`csv`，而有些只能识别`\t`分隔的
 - 有些存储它的程序给出的约定严格，有些宽松

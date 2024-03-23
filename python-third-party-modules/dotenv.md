@@ -1,0 +1,3 @@
+- https://pypi.org/project/python-dotenv/
+- [[6-env]], [[os-shutil]]，但单独成文件，且往往可只供给python更加干净
+- 可以做到“模拟”`export`，但是只在python中生效
