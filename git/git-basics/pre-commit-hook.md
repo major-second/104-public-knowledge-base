@@ -4,9 +4,11 @@
   - [[pip]]
   - [[yaml]]
 - [文档](https://pre-commit.com/)
+- [intro](https://pre-commit.com/#intro)
 - 安装
   - `pip install pre-commit`
   - 你的repo目录下 `pre-commit install`
+    - 对repo卸载：目录下`pre-commit uninstall`
 - 使用：参考文档
   - 最简单
   - 创建 `touch .pre-commit-config.yaml`

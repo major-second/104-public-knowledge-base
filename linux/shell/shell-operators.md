@@ -1,0 +1,8 @@
+- `|`
+- `&` [[parallelism]]
+- 逻辑运算符，结合[[return-code]]进行[[12-condition]]
+  - `&&`
+  - `||`
+  - 注意优先级从左到右而不是[[python]]先与再或，所以需要`()`
+- `{}`: [[subprocess]]
+- `>, >>, <, <<`: [[redirection]]

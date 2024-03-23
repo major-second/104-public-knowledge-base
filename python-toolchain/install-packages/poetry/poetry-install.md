@@ -12,3 +12,6 @@
     priority = "primary"
     ```
   - `poetry`会利用已有[[proxy-basics]]所以国内需要关掉才能访问清华源
+- 根目录和`--no-root` [[command-line-flags]]
+  - `poetry install --no-root`：忽略根目录本身，不认为是个包
+  - 如果没有`--no-root`，则根目录本身需要是包，需要有`pyproject.toml`，`<package name>/<file name>.py`，`README.md`等结构，否则不会识别成包
